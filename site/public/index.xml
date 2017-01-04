@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Suresh Kumar Gadi</title>
+    <link>https://suku.ga/index.xml</link>
+    <description>Recent content on Suresh Kumar Gadi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Jan 2017 10:03:10 -0600</lastBuildDate>
+    <atom:link href="https://suku.ga/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>about</title>
+      <link>https://suku.ga/about/</link>
+      <pubDate>Tue, 03 Jan 2017 10:03:10 -0600</pubDate>
+      
+      <guid>https://suku.ga/about/</guid>
+      <description>&lt;p&gt;Neque porro quisquam est qui dolorem
+ipsum quia dolor sit amet consectetur
+adipisci velit.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>second</title>
+      <link>https://suku.ga/article/second/</link>
+      <pubDate>Mon, 02 Jan 2017 23:34:30 -0600</pubDate>
+      
+      <guid>https://suku.ga/article/second/</guid>
+      <description>&lt;p&gt;Fusce lacus magna, maximus nec sapien eu,
+porta efficitur neque. Aliquam erat volutpat.
+Vestibulum enim nibh, posuere eu diam nec,
+varius sagittis turpis.&lt;/p&gt;
+
+&lt;p&gt;Praesent quis sapien egestas mauris accumsan
+pulvinar. Ut mattis gravida venenatis. Vivamus
+lobortis risus id nisi rutrum, at iaculis.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>first</title>
+      <link>https://suku.ga/article/first/</link>
+      <pubDate>Mon, 02 Jan 2017 23:34:04 -0600</pubDate>
+      
+      <guid>https://suku.ga/article/first/</guid>
+      <description>&lt;p&gt;In vel ligula tortor. Aliquam erat volutpat.
+Pellentesque at felis eu quam tincidunt dignissim.
+Nulla facilisi.&lt;/p&gt;
+
+&lt;p&gt;Pellentesque tempus nisi et interdum convallis.
+In quam ante, vulputate at massa et, rutrum
+gravida dui. Phasellus tristique libero at ex.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

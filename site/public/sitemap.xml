@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://suku.ga/about/</loc>
+    <lastmod>2017-01-03T10:03:10-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://suku.ga/article/second/</loc>
+    <lastmod>2017-01-02T23:34:30-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://suku.ga/article/first/</loc>
+    <lastmod>2017-01-02T23:34:04-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://suku.ga/article/</loc>
+    <lastmod>2017-01-02T23:34:30-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://suku.ga/</loc>
+    <lastmod>2017-01-03T10:03:10-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
