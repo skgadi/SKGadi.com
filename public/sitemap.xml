@@ -2,29 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://suku.ga/courses/2016-07-12%20Control%20Digital/</loc>
+    <lastmod>2017-01-03T23:12:36-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://suku.ga/about/</loc>
     <lastmod>2017-01-03T10:03:10-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://suku.ga/article/second/</loc>
+    <loc>https://suku.ga/articles/second/</loc>
     <lastmod>2017-01-02T23:34:30-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://suku.ga/article/first/</loc>
+    <loc>https://suku.ga/articles/first/</loc>
     <lastmod>2017-01-02T23:34:04-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://suku.ga/article/</loc>
+    <loc>https://suku.ga/posts/One%20day%20LaTeX%20workshop/</loc>
+    <lastmod>2016-06-16T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://suku.ga/articles/</loc>
     <lastmod>2017-01-02T23:34:30-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://suku.ga/courses/</loc>
+    <lastmod>2017-01-03T23:12:36-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://suku.ga/</loc>
-    <lastmod>2017-01-03T10:03:10-06:00</lastmod>
+    <lastmod>2017-01-03T23:12:36-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://suku.ga/posts/</loc>
+    <lastmod>2016-06-16T00:00:00-06:00</lastmod>
     <priority>0</priority>
   </url>
   

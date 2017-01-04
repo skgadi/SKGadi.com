@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Suresh Kumar Gadi</title>
+    <title>Home</title>
     <link>https://suku.ga/index.xml</link>
-    <description>Recent content on Suresh Kumar Gadi</description>
+    <description>Recent content on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Jan 2017 10:03:10 -0600</lastBuildDate>
+    <copyright>2017 Suresh Kumar Gadi</copyright>
+    <lastBuildDate>Tue, 03 Jan 2017 23:12:36 -0600</lastBuildDate>
     <atom:link href="https://suku.ga/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Control Digital</title>
+      <link>https://suku.ga/courses/2016-07-12%20Control%20Digital/</link>
+      <pubDate>Tue, 03 Jan 2017 23:12:36 -0600</pubDate>
+      
+      <guid>https://suku.ga/courses/2016-07-12%20Control%20Digital/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>about</title>
@@ -23,10 +33,10 @@ adipisci velit.&lt;/p&gt;
     
     <item>
       <title>second</title>
-      <link>https://suku.ga/article/second/</link>
+      <link>https://suku.ga/articles/second/</link>
       <pubDate>Mon, 02 Jan 2017 23:34:30 -0600</pubDate>
       
-      <guid>https://suku.ga/article/second/</guid>
+      <guid>https://suku.ga/articles/second/</guid>
       <description>&lt;p&gt;Fusce lacus magna, maximus nec sapien eu,
 porta efficitur neque. Aliquam erat volutpat.
 Vestibulum enim nibh, posuere eu diam nec,
@@ -40,10 +50,10 @@ lobortis risus id nisi rutrum, at iaculis.&lt;/p&gt;
     
     <item>
       <title>first</title>
-      <link>https://suku.ga/article/first/</link>
+      <link>https://suku.ga/articles/first/</link>
       <pubDate>Mon, 02 Jan 2017 23:34:04 -0600</pubDate>
       
-      <guid>https://suku.ga/article/first/</guid>
+      <guid>https://suku.ga/articles/first/</guid>
       <description>&lt;p&gt;In vel ligula tortor. Aliquam erat volutpat.
 Pellentesque at felis eu quam tincidunt dignissim.
 Nulla facilisi.&lt;/p&gt;
@@ -51,6 +61,41 @@ Nulla facilisi.&lt;/p&gt;
 &lt;p&gt;Pellentesque tempus nisi et interdum convallis.
 In quam ante, vulputate at massa et, rutrum
 gravida dui. Phasellus tristique libero at ex.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>One day LaTeX workshop</title>
+      <link>https://suku.ga/posts/One%20day%20LaTeX%20workshop/</link>
+      <pubDate>Thu, 16 Jun 2016 00:00:00 -0600</pubDate>
+      
+      <guid>https://suku.ga/posts/One%20day%20LaTeX%20workshop/</guid>
+      <description>
+
+&lt;p&gt;This workshop presents an introduction to the programming language LaTeX  for the first time users.&lt;/p&gt;
+
+&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
+
+&lt;iframe height=&#34;480&#34; src=&#34;https://drive.google.com/file/d/0B6A_I6W9HjBDb29KdUJsZXFYblU/preview&#34; width=&#34;100%&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;other-files&#34;&gt;Other files&lt;/h2&gt;
+
+&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
+
+&lt;p&gt;A PC with the following software installed. Or having a good Internet connection to work with ShareLaTeX&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Latest version of TeXLive.&lt;/li&gt;
+&lt;li&gt;A LaTeX IDE (Ex. TeXstudio)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;venue&#34;&gt;Venue&lt;/h2&gt;
+
+&lt;p&gt;Facultad de Contaduría y Administración, Blvd. Revolución 151 Ote., Torreón, CP 2700&lt;/p&gt;
+
+&lt;h2 id=&#34;time&#34;&gt;Time&lt;/h2&gt;
+
+&lt;p&gt;9AM to 2PM on 16th June 2016&lt;/p&gt;
 </description>
     </item>
     
