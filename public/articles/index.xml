@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Articles on Home</title>
-    <link>https://suku.ga/articles/index.xml</link>
+    <link>https://suresh.ml/articles/index.xml</link>
     <description>Recent content in Articles on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2017 Suresh Kumar Gadi</copyright>
     <lastBuildDate>Mon, 02 Jan 2017 23:34:30 -0600</lastBuildDate>
-    <atom:link href="https://suku.ga/articles/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://suresh.ml/articles/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>second</title>
-      <link>https://suku.ga/articles/second/</link>
+      <link>https://suresh.ml/articles/second/</link>
       <pubDate>Mon, 02 Jan 2017 23:34:30 -0600</pubDate>
       
-      <guid>https://suku.ga/articles/second/</guid>
+      <guid>https://suresh.ml/articles/second/</guid>
       <description>&lt;p&gt;Fusce lacus magna, maximus nec sapien eu,
 porta efficitur neque. Aliquam erat volutpat.
 Vestibulum enim nibh, posuere eu diam nec,
@@ -29,10 +29,10 @@ lobortis risus id nisi rutrum, at iaculis.&lt;/p&gt;
     
     <item>
       <title>first</title>
-      <link>https://suku.ga/articles/first/</link>
+      <link>https://suresh.ml/articles/first/</link>
       <pubDate>Mon, 02 Jan 2017 23:34:04 -0600</pubDate>
       
-      <guid>https://suku.ga/articles/first/</guid>
+      <guid>https://suresh.ml/articles/first/</guid>
       <description>&lt;p&gt;In vel ligula tortor. Aliquam erat volutpat.
 Pellentesque at felis eu quam tincidunt dignissim.
 Nulla facilisi.&lt;/p&gt;

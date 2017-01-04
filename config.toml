@@ -1,7 +1,7 @@
 theme = "skgadi"
 languageCode = "en-us"
 title = "Home"
-baseurl = "https://suku.ga/"
+baseurl = "https://suresh.ml/"
 [params]
 commonTitle = "Suresh Kumar Gadi"
 SubTitle = "Profesor investigador, FIME, UAdeC"

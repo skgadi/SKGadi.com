@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Home</title>
-    <link>https://suku.ga/posts/index.xml</link>
+    <link>https://suresh.ml/posts/index.xml</link>
     <description>Recent content in Posts on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2017 Suresh Kumar Gadi</copyright>
     <lastBuildDate>Thu, 16 Jun 2016 00:00:00 -0600</lastBuildDate>
-    <atom:link href="https://suku.ga/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://suresh.ml/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>One day LaTeX workshop</title>
-      <link>https://suku.ga/posts/One%20day%20LaTeX%20workshop/</link>
+      <link>https://suresh.ml/posts/One%20day%20LaTeX%20workshop/</link>
       <pubDate>Thu, 16 Jun 2016 00:00:00 -0600</pubDate>
       
-      <guid>https://suku.ga/posts/One%20day%20LaTeX%20workshop/</guid>
+      <guid>https://suresh.ml/posts/One%20day%20LaTeX%20workshop/</guid>
       <description>
 
 &lt;p&gt;This workshop presents an introduction to the programming language LaTeX  for the first time users.&lt;/p&gt;

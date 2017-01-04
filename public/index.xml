@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home</title>
-    <link>https://suku.ga/index.xml</link>
+    <link>https://suresh.ml/index.xml</link>
     <description>Recent content on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2017 Suresh Kumar Gadi</copyright>
     <lastBuildDate>Tue, 03 Jan 2017 23:12:36 -0600</lastBuildDate>
-    <atom:link href="https://suku.ga/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://suresh.ml/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Control Digital</title>
-      <link>https://suku.ga/courses/2016-07-12%20Control%20Digital/</link>
+      <link>https://suresh.ml/courses/2016-07-12%20Control%20Digital/</link>
       <pubDate>Tue, 03 Jan 2017 23:12:36 -0600</pubDate>
       
-      <guid>https://suku.ga/courses/2016-07-12%20Control%20Digital/</guid>
+      <guid>https://suresh.ml/courses/2016-07-12%20Control%20Digital/</guid>
       <description></description>
     </item>
     
     <item>
       <title>about</title>
-      <link>https://suku.ga/about/</link>
+      <link>https://suresh.ml/about/</link>
       <pubDate>Tue, 03 Jan 2017 10:03:10 -0600</pubDate>
       
-      <guid>https://suku.ga/about/</guid>
+      <guid>https://suresh.ml/about/</guid>
       <description>&lt;p&gt;Neque porro quisquam est qui dolorem
 ipsum quia dolor sit amet consectetur
 adipisci velit.&lt;/p&gt;
@@ -33,10 +33,10 @@ adipisci velit.&lt;/p&gt;
     
     <item>
       <title>second</title>
-      <link>https://suku.ga/articles/second/</link>
+      <link>https://suresh.ml/articles/second/</link>
       <pubDate>Mon, 02 Jan 2017 23:34:30 -0600</pubDate>
       
-      <guid>https://suku.ga/articles/second/</guid>
+      <guid>https://suresh.ml/articles/second/</guid>
       <description>&lt;p&gt;Fusce lacus magna, maximus nec sapien eu,
 porta efficitur neque. Aliquam erat volutpat.
 Vestibulum enim nibh, posuere eu diam nec,
@@ -50,10 +50,10 @@ lobortis risus id nisi rutrum, at iaculis.&lt;/p&gt;
     
     <item>
       <title>first</title>
-      <link>https://suku.ga/articles/first/</link>
+      <link>https://suresh.ml/articles/first/</link>
       <pubDate>Mon, 02 Jan 2017 23:34:04 -0600</pubDate>
       
-      <guid>https://suku.ga/articles/first/</guid>
+      <guid>https://suresh.ml/articles/first/</guid>
       <description>&lt;p&gt;In vel ligula tortor. Aliquam erat volutpat.
 Pellentesque at felis eu quam tincidunt dignissim.
 Nulla facilisi.&lt;/p&gt;
@@ -66,10 +66,10 @@ gravida dui. Phasellus tristique libero at ex.&lt;/p&gt;
     
     <item>
       <title>One day LaTeX workshop</title>
-      <link>https://suku.ga/posts/One%20day%20LaTeX%20workshop/</link>
+      <link>https://suresh.ml/posts/One%20day%20LaTeX%20workshop/</link>
       <pubDate>Thu, 16 Jun 2016 00:00:00 -0600</pubDate>
       
-      <guid>https://suku.ga/posts/One%20day%20LaTeX%20workshop/</guid>
+      <guid>https://suresh.ml/posts/One%20day%20LaTeX%20workshop/</guid>
       <description>
 
 &lt;p&gt;This workshop presents an introduction to the programming language LaTeX  for the first time users.&lt;/p&gt;
