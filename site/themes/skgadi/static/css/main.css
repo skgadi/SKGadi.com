@@ -1,0 +1,61 @@
+html, body {
+	font-family: Courier New;
+/*	font-size: 25px;*/
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: #555;
+	color: green;
+}
+
+a, h1, h2, h3, h4{
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a{
+	color: green;
+}
+
+a:hover, h1:hover, h2:hover, h3:hover, h4:hover{
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+hr {
+	border-width: 1px;
+	margin: 0px;
+	padding: 0px;
+	border-color: green;
+}
+
+table, tbody, tr, td, th {
+	padding: 0px;
+	margin: 0px;
+	
+}
+
+.shadowBox {
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	background: #000;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border-width: 5px;
+	border-style: solid;
+}
+
+p {
+	text-align: justify;
+}
+
+
+
+nav>ul>li {
+	float: Left;
+	list-style-type: none;
+}

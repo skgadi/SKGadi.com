@@ -1,0 +1,47 @@
+{{ partial "header.html" . }}
+<table style="width: 100%;">
+<tr>
+	<td valign="top" width="33%">
+		<table>
+			<tr>
+				<td><h2>Posts</h2></td>
+				<td>(<a href="{{ .Site.BaseURL }}posts" style="font-size: 12px;" >View all</a>)</td>
+			</tr>
+		</table>
+		{{- range first 10 .Data.Pages -}}
+			{{- if eq .Type "posts"}}
+				<a href="{{ .Permalink }}">{{ .Title }}</a><br/>
+			{{- end -}}
+		{{- end }}
+		
+	</td>
+	<td valign="top" width="33%">
+		<table>
+			<tr>
+				<td><h2>Articles</h2></td>
+				<td>(<a href="{{ .Site.BaseURL }}articles" style="font-size: 12px;" >View all</a>)</td>
+			</tr>
+		</table>
+		{{- range first 10 .Data.Pages -}}
+			{{- if eq .Type "articles"}}
+				<a href="{{ .Permalink }}">{{ .Title }}</a><br/>
+			{{- end -}}
+		{{- end }}
+	</td>
+	<td valign="top" width="33%">
+		<table>
+			<tr>
+				<td><h2>Courses</h2></td>
+				<td>(<a href="{{ .Site.BaseURL }}articles" style="font-size: 12px;" >View all</a>)</td>
+			</tr>
+		</table>
+		{{- range first 10 .Data.Pages -}}
+			{{- if eq .Type "courses"}}
+				<a href="{{ .Permalink }}">{{ .Title }}</a><br/>
+			{{- end -}}
+		{{- end }}
+	</td>
+</tr>
+</table>
+<br/>
+{{ partial "footer.html" . -}}

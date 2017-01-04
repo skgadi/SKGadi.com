@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ .Title }} - {{ .Site.Params.CommonTitle }}</title>
+	{{ .Hugo.Generator }}
+	<meta charset=utf-8>
+	
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">
+	<link rel="icon" type="image/png" href="{{ .Site.BaseURL }}images/favicon.png">
+</head>
+<body>
+<div class="shadowBox" style="width: 1000px; margin: 50px auto; ">
+<div> <center>
+<table start="margin: auto;" cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding-right: 5px;">
+	<img src="{{ .Site.BaseURL }}images/logos/skgadi.png"/ style="height:55px; display: block;">
+</td><td>
+	<div style="display: inline-block" >
+		<a href="/" style="font-size: 200%">{{- .Site.Params.CommonTitle }}</a><br/>
+		<div style="text-align: right; font-size: 75%;" >{{- .Site.Params.SubTitle }}&nbsp;</div>
+	</div>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<hr>
+
+<div style="width: 80%; margin:auto;">

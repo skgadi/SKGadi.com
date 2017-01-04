@@ -1,0 +1,101 @@
+</div>
+<hr>
+<center>
+<table>
+<tr valign="top">
+{{ $currentPage := . }}
+{{ range .Site.Menus.main }}
+	{{ if .HasChildren }}
+<td style="padding: 0px 10px;">
+		<a href="{{ .URL }}"> {{- .Name -}}</a>
+<ul style="margin: 0px;">
+		{{ range .Children }}
+<li>
+			<a href="{{ .URL }}"> {{- .Name -}}</a>
+</li>
+		{{ end }}
+</ul>
+	{{else}}
+<td style="padding: 0px 10px;">
+		<a href="{{ .URL }}"> {{- .Name -}}</a>
+</td>
+	{{end}}
+</td>
+{{end}}
+</tr>
+</table>
+</center>
+<hr>
+<center>
+<table style="font-size: 75%;">
+<tr>
+{{- if .Site.Params.email -}}
+<td style="padding: 0px 5px;">{{- .Site.Params.email -}}</td>
+{{- end -}}
+
+{{- if .Site.Params.ORCID -}}
+<td style="padding: 0px 5px;"><a href="https://orcid.org/{{ .Site.Params.ORCID }}"><img src="{{ .Site.BaseURL }}images/logos/orcid-logo.png" style="height: 15px;display: block;"/></a></td>
+{{- end -}}
+
+{{- if .Site.Params.GScholar -}}
+<td style="padding: 0px 5px;"><a href="https://scholar.google.co.in/citations?user={{ .Site.Params.ORCID }}"><img src="{{ .Site.BaseURL }}images/logos/google-scholar.png" style="height: 15px;display: block;"/></a></td>
+{{- end -}}
+
+{{- if .Site.Params.LinkedIn -}}
+<td style="padding: 0px 5px;"><a href="https://mx.linkedin.com/in/{{ .Site.Params.LinkedIn }}"><img src="{{ .Site.BaseURL }}images/logos/linkedin.png" style="height: 15px;display: block;"/></a></td>
+{{- end -}}
+
+{{- if .Site.Params.Twitter -}}
+<td style="padding: 0px 5px;"><a href="https://twitter.com/{{ .Site.Params.Twitter }}"><img src="{{ .Site.BaseURL }}images/logos/twitter.png" style="height: 15px;display: block;"/></a></td>
+{{- end -}}
+
+
+{{- if .Site.Params.GPlus -}}
+<td style="padding: 0px 5px;"><a href="https://plus.google.com/{{ .Site.Params.GPlus }}"><img src="{{ .Site.BaseURL }}images/logos/google-plus.png" style="height: 15px;display: block;"/></a></td>
+{{- end -}}
+
+{{- if .Site.Params.Maps -}}
+<td style="padding: 0px 5px;"><a href="{{ .Site.Params.Maps }}"><img src="{{ .Site.BaseURL }}images/logos/map-pin.png" style="height: 15px;display: block;"/></a></td>
+{{- end -}}
+
+{{- if .Site.Params.Phone -}}
+<td style="padding: 0px 5px;"><img src="{{ .Site.BaseURL }}images/logos/phone.png" style="height: 15px;display: block;"/></td><td>{{ .Site.Params.Phone }}</td>
+{{- end -}}
+
+{{- if .Site.Params.Fax -}}
+<td style="padding: 0px 5px;"><img src="{{ .Site.BaseURL }}images/logos/fax-icon.png" style="height: 15px;display: block;"/></td><td>{{ .Site.Params.Fax }}</td>
+{{- end -}}
+
+</tr>
+{{- if .Site.Params.Address -}}
+<tr><td colspan="1000" style="text-align: center;">
+{{- .Site.Params.Address -}}
+</td></tr>
+{{- end -}}
+
+</table>
+</center>
+<hr>
+
+<center>
+<table style="font-size: 75%;">
+	<tr>
+		<td>
+			Thanks to&nbsp;
+		</td><td>
+			<img src="{{ .Site.BaseURL }}images/logos/github.png" style="height: 15px;"/>
+		</td><td>
+			<a href="https://github.com/">GitHub</a> and&nbsp;
+		</td><td>
+			<img src="{{ .Site.BaseURL }}images/logos/netlify.png" style="height: 15px;"/>
+		</td><td>
+			<a href="https://www.netlify.com/">netlify</a> for providing hosting.
+		</td>
+	</tr><tr>
+	<td colspan="50" style="text-align: center;">Copyright &copy;&nbsp;{{- .Site.Params.Copyright }}</td>
+	</tr>
+</table>
+</center>
+</div>
+</body>
+</html>
