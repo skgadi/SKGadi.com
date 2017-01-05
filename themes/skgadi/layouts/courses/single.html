@@ -1,0 +1,60 @@
+{{ partial "header.html" . }}
+<h1>{{ .Title }}</h1>
+<hr/>
+<!--h4>{{ .Date.Format "2-Jan-2006" }}</h4-->
+<h2>Course details</h2>
+<center>
+<table class="TableWithBorders"> <tbody>
+<tr>
+	<td>School</td><td><a href="GSKSchoolURL">{{ .Params.GSKSchool }}</a></td>
+	<td>Department</td><td><a href="GSKDepartmentURL">{{ .Params.GSKDepartment }}</a></td>
+</tr><tr>
+	<td>Start date</td><td>{{ .Params.GSKStartDate }}</td>
+	<td>End date</td><td>{{ .Params.GSKEndDate }}</td>
+</tr><tr>
+	<td>Total course time</td><td>{{ .Params.GSKTotalPeriod }}</td>
+	<td>Time per week</td><td>{{ .Params.GSKPeriodPerWeek }}</td>
+</tr><tr>
+	<td>Strength</td><td>{{ .Params.GSKStrength }}</td>
+	<td>Time per week</td><td>{{ .Params.GSKPeriodPerWeek }}</td>
+</tr>
+</tbody></table>
+</center>
+{{- if .Params.CourseMaterial -}}
+<h2>Course material</h2>
+<center>
+<table class="TableWithBorders"> <tbody>
+	{{- range .Params.CourseMaterial -}}
+<tr><td><a href="{{ .URL }}">{{ .Name }}</a></td><td><a href="{{ .URL }}" target="_blank">Open in new window</a></td></tr>
+	{{- end -}}
+</tbody></table>
+</center>
+{{- end -}}
+
+{{- if .Params.Homeworks -}}
+<h2>Homeworks</h2>
+<center>
+<table class="TableWithBorders"> <tbody>
+<tr><td><b>Description</b></td><td><b>Due date</b></td><td><b>Questions</b></td><td><b>Answers</b></td></tr>
+	{{- range .Params.Homeworks -}}
+<tr><td>{{ .Name }}</td><td>{{ .Date }}</td><td><a href="{{ .QuestionsURL }}">Open</a></td><td><a href="{{ .AnswersURL }}">Open</a></td></tr>
+	{{- end -}}
+</tbody></table>
+</center>
+{{- end -}}
+
+{{- if .Params.Exams -}}
+<h2>Exams</h2>
+<center>
+<table class="TableWithBorders"> <tbody>
+<tr><td><b>Description</b></td><td><b>Date</b></td><td><b>Questions</b></td><td><b>Answers</b></td></tr>
+	{{- range .Params.Exams -}}
+<tr><td>{{ .Name }}</td><td>{{ .Date }}</td><td><a href="{{ .QuestionsURL }}">Open</a></td><td><a href="{{ .AnswersURL }}">Open</a></td></tr>
+	{{- end -}}
+</tbody></table>
+</center>
+{{- end -}}
+<br/>
+<!--h2>{{ .Params.Exams }}</h2-->
+{{ .Content }}
+{{ partial "footer.html" . -}}

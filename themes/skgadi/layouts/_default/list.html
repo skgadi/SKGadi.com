@@ -1,6 +1,9 @@
 {{ partial "header.html" . }}
 <h1>{{.Title}}</h1>
-{{- range first 10 .Data.Pages }}
-	<a href="{{ .Permalink }}">{{ .Title }}</a><br/>
-{{- end }} <br/>
+<ol reversed="reversed">
+{{- range .Data.Pages }}
+	<li><a href="{{ .Permalink }}">{{ .Title }}</a><br/></li>
+{{- end }}
+</ol>
+<br/>
 {{ partial "footer.html" . -}}
