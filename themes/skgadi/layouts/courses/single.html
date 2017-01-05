@@ -25,7 +25,7 @@
 <center>
 <table class="TableWithBorders"> <tbody>
 	{{- range .Params.CourseMaterial -}}
-<tr><td><a href="{{ .URL }}">{{ .Name }}</a></td><td><a href="{{ .URL }}" target="_blank">Open in new window</a></td></tr>
+<tr><td>{{ .Name }}</td><td><a href="{{ .URL }}"><img src="{{ $.Site.BaseURL }}images/page.png" style="height: 32px;display: block;"/></a></td><td><a href="{{ .URL }}" target="_blank"><img src="{{ $.Site.BaseURL }}images/perfomance_analysis.png" style="height: 32px;display: block;"/></a></td></tr>
 	{{- end -}}
 </tbody></table>
 </center>
@@ -35,9 +35,9 @@
 <h2>Homeworks</h2>
 <center>
 <table class="TableWithBorders"> <tbody>
-<tr><td><b>Description</b></td><td><b>Due date</b></td><td><b>Questions</b></td><td><b>Answers</b></td></tr>
+<tr><td><b>Description</b></td><td><b>Due date</b></td><td colspan="2"><b>Questions</b></td><td colspan="2"><b>Answers</b></td></tr>
 	{{- range .Params.Homeworks -}}
-<tr><td>{{ .Name }}</td><td>{{ .Date }}</td><td><a href="{{ .QuestionsURL }}">Open</a></td><td><a href="{{ .AnswersURL }}">Open</a></td></tr>
+<tr><td>{{ .Name }}</td><td>{{ .Date }}</td><td><a href="{{ .QuestionsURL }}"><img src="{{ $.Site.BaseURL }}images/page.png" style="height: 32px;display: block;"/></a></td><td><a href="{{ .QuestionsURL }}" target="_blank"><img src="{{ $.Site.BaseURL }}images/perfomance_analysis.png" style="height: 32px;display: block;"/></a></td></td><td><a href="{{ .AnswersURL }}"><img src="{{ $.Site.BaseURL }}images/page.png" style="height: 32px;display: block;"/></a></td><td><a href="{{ .AnswersURL }}" target="_blank"><img src="{{ $.Site.BaseURL }}images/perfomance_analysis.png" style="height: 32px;display: block;"/></a></td></tr>
 	{{- end -}}
 </tbody></table>
 </center>

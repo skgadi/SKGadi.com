@@ -60,7 +60,9 @@ nav>ul>li {
 	float: Left;
 	list-style-type: none;
 }
-
+.TableWithBorders {
+	border-collapse: collapse;
+}
 .TableWithBorders>tbody>tr>td {
 	border-style: solid;
 	border-width: 1px;
