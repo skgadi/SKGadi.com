@@ -58,12 +58,16 @@
 </center><h2>Exams</h2>
 <center>
 <table class="TableWithBorders"> <tbody>
-<tr><td><b>Description</b></td><td><b>Date</b></td><td><b>Questions</b></td><td><b>Answers</b></td></tr><tr><td>Exam1</td><td></td><td><a href="/Ex1/">Open</a></td><td><a href="/Ex1/">Open</a></td></tr><tr><td>Exam2</td><td></td><td><a href="/Ex2/">Open</a></td><td><a href="/Ex2/">Open</a></td></tr></tbody></table>
+<tr><td><b>Description</b></td><td><b>Date</b></td><td colspan="2"><b>Questions</b></td><td colspan="2"><b>Answers</b></td></tr><tr><td>Exam1</td><td></td><td><a href="/Ex1/"><img src="https://suresh.ml/images/page.png" style="height: 32px;display: block;"/></a></td><td><a href="/Ex1/" target="_blank"><img src="https://suresh.ml/images/perfomance_analysis.png" style="height: 32px;display: block;"/></a></td></td><td><a href="/Ex1/"><img src="https://suresh.ml/images/page.png" style="height: 32px;display: block;"/></a></td><td><a href="/Ex1/" target="_blank"><img src="https://suresh.ml/images/perfomance_analysis.png" style="height: 32px;display: block;"/></a></td></tr><tr><td>Exam2</td><td></td><td><a href="/Ex2/"><img src="https://suresh.ml/images/page.png" style="height: 32px;display: block;"/></a></td><td><a href="/Ex2/" target="_blank"><img src="https://suresh.ml/images/perfomance_analysis.png" style="height: 32px;display: block;"/></a></td></td><td><a href="/Ex2/"><img src="https://suresh.ml/images/page.png" style="height: 32px;display: block;"/></a></td><td><a href="/Ex2/" target="_blank"><img src="https://suresh.ml/images/perfomance_analysis.png" style="height: 32px;display: block;"/></a></td></tr></tbody></table>
 </center><br/>
 
 <p>Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here.</p>
 
 </div>
+<hr>
+<br/>
+<center><input id="SearchText" type="text" style="border-color: green; background-color : black; color: green; border-style: solid; border-width: 0px 0px 1px 0px; width: 650px;" /> <input id="SearchBtn" type="button" value="Search" style="cursor: pointer; border-color: green; border-style: solid; border-width: 1px; background-color: black; color: green;" onclick="SearchClick();"/></center>
+<br/>
 <hr>
 <center>
 <table>
@@ -193,5 +197,27 @@
 </table>
 </center>
 </div>
+<script type="text/javascript">
+function SearchClick(){
+	window.open ("https://www.google.com/search?q=" + document.getElementById("SearchText").value+"+site:https:\/\/suresh.ml\/", "_blank");
+}
+document.getElementById("SearchText")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("SearchBtn").click();
+    }
+});
+</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+

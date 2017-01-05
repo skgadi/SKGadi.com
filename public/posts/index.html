@@ -35,6 +35,10 @@
 <br/>
 </div>
 <hr>
+<br/>
+<center><input id="SearchText" type="text" style="border-color: green; background-color : black; color: green; border-style: solid; border-width: 0px 0px 1px 0px; width: 650px;" /> <input id="SearchBtn" type="button" value="Search" style="cursor: pointer; border-color: green; border-style: solid; border-width: 1px; background-color: black; color: green;" onclick="SearchClick();"/></center>
+<br/>
+<hr>
 <center>
 <table>
 <tr valign="top">
@@ -163,5 +167,27 @@
 </table>
 </center>
 </div>
+<script type="text/javascript">
+function SearchClick(){
+	window.open ("https://www.google.com/search?q=" + document.getElementById("SearchText").value+"+site:https:\/\/suresh.ml\/", "_blank");
+}
+document.getElementById("SearchText")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("SearchBtn").click();
+    }
+});
+</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
