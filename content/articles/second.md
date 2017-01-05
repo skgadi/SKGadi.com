@@ -1,6 +1,6 @@
 +++
 date = "2017-01-02T23:34:30-06:00"
-title = "second"
+title = "Second"
 
 +++
 
