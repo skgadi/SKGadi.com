@@ -38,7 +38,7 @@
 {{- end -}}
 
 {{- if .Site.Params.Phone -}}
-<td style="padding: 0px 5px;"><img src="{{ .Site.BaseURL }}images/phone.png" style="height: 15px;display: block;"/></td><td>{{ .Site.Params.Phone }}</td>
+<td style="padding: 0px 5px;"><img src="{{ .Site.BaseURL }}images/mobile.png" style="height: 15px;display: block;"/></td><td>{{ .Site.Params.Phone }}</td>
 {{- end -}}
 
 {{- if .Site.Params.Fax -}}
@@ -67,15 +67,18 @@
 <td style="padding: 0px 5px;"><a href="https://plus.google.com/{{ .Site.Params.GPlus }}"><img src="{{ .Site.BaseURL }}images/logos/google-plus.png" style="height: 15px;display: block;"/></a></td>
 {{- end -}}
 
-{{- if .Site.Params.Maps -}}
-<td style="padding: 0px 5px;"><a href="{{ .Site.Params.Maps }}"><img src="{{ .Site.BaseURL }}images/map.png" style="height: 15px;display: block;"/></a></td>
-{{- end -}}
 
 </tr>
 {{- if .Site.Params.Address -}}
-<tr><td colspan="1000" style="text-align: center;">
-{{- .Site.Params.Address -}}
-</td></tr>
+<tr>
+<td colspan="1000" style="text-align: center;">
+<table><tr>
+{{- if .Site.Params.Maps -}}
+<td><a href="{{ .Site.Params.Maps }}"><img src="{{ .Site.BaseURL }}images/map.png" style="height: 15px;display: block;"/></a></td>
+{{- end -}}
+<td>{{- .Site.Params.Address -}}</td>
+</tr></table>
+</tr>
 {{- end -}}
 
 </table>

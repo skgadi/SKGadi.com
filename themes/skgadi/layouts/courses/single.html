@@ -4,7 +4,7 @@
 <!--h4>{{ .Date.Format "2-Jan-2006" }}</h4-->
 <h2>Course details</h2>
 <center>
-<table class="TableWithBorders"> <tbody>
+<table class="TableWithBorders" style="width: 75%;"> <tbody>
 <tr>
 	<td>School</td><td><a href="GSKSchoolURL">{{ .Params.GSKSchool }}</a></td>
 	<td>Department</td><td><a href="GSKDepartmentURL">{{ .Params.GSKDepartment }}</a></td>
@@ -20,12 +20,14 @@
 </tr>
 </tbody></table>
 </center>
+
 {{- if .Params.CourseMaterial -}}
 <h2>Course material</h2>
 <center>
-<table class="TableWithBorders"> <tbody>
+<table class="TableWithBorders" style="width: 75%;"> <tbody>
+<tr style="text-align: center;"><td><h3>Description</h3></td><td style="width: 125px;"><h3>Link</h3></td></tr>
 	{{- range .Params.CourseMaterial -}}
-<tr><td>{{ .Name }}</td><td><a href="{{ .URL }}"><img src="{{ $.Site.BaseURL }}images/page.png" style="height: 32px;display: block;"/></a></td><td><a href="{{ .URL }}" target="_blank"><img src="{{ $.Site.BaseURL }}images/perfomance_analysis.png" style="height: 32px;display: block;"/></a></td></tr>
+<tr><td>{{ .Name }}</td><td><center><table style="width: 100%;"><tr><td style="width: 50%;"><a href="{{ .URL }}"><img src="{{ $.Site.BaseURL }}images/page.png" style="margin: auto; height: 16px;display: block;"/></a></td><td><a href="{{ .URL }}" target="_blank"><img src="{{ $.Site.BaseURL }}images/new_window.png" style="margin: auto; height: 16px;display: block;"/></a></td></tr></table></center></td></tr>
 	{{- end -}}
 </tbody></table>
 </center>
@@ -34,10 +36,10 @@
 {{- if .Params.Homeworks -}}
 <h2>Homeworks</h2>
 <center>
-<table class="TableWithBorders"> <tbody>
-<tr><td><b>Description</b></td><td><b>Due date</b></td><td colspan="2"><b>Questions</b></td><td colspan="2"><b>Answers</b></td></tr>
+<table class="TableWithBorders" style="width: 75%;"> <tbody>
+<tr style="text-align: center;"><td><h3>Description</h3></td><td style="width: 125px;"><h3>Due date</h3></td><td style="width: 125px;"><h3>Questions</h3></td><td style="width: 125px;"><h3>Answers</h3></td></tr>
 	{{- range .Params.Homeworks -}}
-<tr><td>{{ .Name }}</td><td>{{ .Date }}</td><td><a href="{{ .QuestionsURL }}"><img src="{{ $.Site.BaseURL }}images/page.png" style="height: 32px;display: block;"/></a></td><td><a href="{{ .QuestionsURL }}" target="_blank"><img src="{{ $.Site.BaseURL }}images/perfomance_analysis.png" style="height: 32px;display: block;"/></a></td></td><td><a href="{{ .AnswersURL }}"><img src="{{ $.Site.BaseURL }}images/page.png" style="height: 32px;display: block;"/></a></td><td><a href="{{ .AnswersURL }}" target="_blank"><img src="{{ $.Site.BaseURL }}images/perfomance_analysis.png" style="height: 32px;display: block;"/></a></td></tr>
+<tr><td>{{ .Name }}</td><td style="text-align: center;">{{ .Date }}</td><td><center><table style="width: 100%;"><tr><td style="width: 50%;"><a href="{{ .QuestionsURL }}"><img src="{{ $.Site.BaseURL }}images/page.png" style="margin: auto; height: 16px;display: block;"/></a></td><td><a href="{{ .QuestionsURL }}" target="_blank"><img src="{{ $.Site.BaseURL }}images/new_window.png" style="margin: auto; height: 16px;display: block;"/></a></td></tr></table></center></td><td><center><table style="width: 100%;"><tr><td style="width: 50%;"><a href="{{ .AnswersURL }}"><img src="{{ $.Site.BaseURL }}images/page.png" style="margin: auto; height: 16px;display: block;"/></a></td><td><a href="{{ .AnswersURL }}" target="_blank"><img src="{{ $.Site.BaseURL }}images/new_window.png" style="margin: auto; height: 16px;display: block;"/></a></td></tr></table></center></tr>
 	{{- end -}}
 </tbody></table>
 </center>
@@ -46,14 +48,15 @@
 {{- if .Params.Exams -}}
 <h2>Exams</h2>
 <center>
-<table class="TableWithBorders"> <tbody>
-<tr><td><b>Description</b></td><td><b>Date</b></td><td colspan="2"><b>Questions</b></td><td colspan="2"><b>Answers</b></td></tr>
+<table class="TableWithBorders" style="width: 75%;"> <tbody>
+<tr style="text-align: center;"><td><h3>Description</h3></td><td style="width: 125px;"><h3>Date</h3></td><td style="width: 125px;"><h3>Questions</h3></td><td style="width: 125px;"><h3>Answers</h3></td></tr>
 	{{- range .Params.Exams -}}
-<tr><td>{{ .Name }}</td><td>{{ .Date }}</td><td><a href="{{ .QuestionsURL }}"><img src="{{ $.Site.BaseURL }}images/page.png" style="height: 32px;display: block;"/></a></td><td><a href="{{ .QuestionsURL }}" target="_blank"><img src="{{ $.Site.BaseURL }}images/perfomance_analysis.png" style="height: 32px;display: block;"/></a></td></td><td><a href="{{ .AnswersURL }}"><img src="{{ $.Site.BaseURL }}images/page.png" style="height: 32px;display: block;"/></a></td><td><a href="{{ .AnswersURL }}" target="_blank"><img src="{{ $.Site.BaseURL }}images/perfomance_analysis.png" style="height: 32px;display: block;"/></a></td></tr>
+<tr><td>{{ .Name }}</td><td style="text-align: center;">{{ .Date }}</td><td><center><table style="width: 100%;"><tr><td style="width: 50%;"><a href="{{ .QuestionsURL }}"><img src="{{ $.Site.BaseURL }}images/page.png" style="margin: auto; height: 16px;display: block;"/></a></td><td><a href="{{ .QuestionsURL }}" target="_blank"><img src="{{ $.Site.BaseURL }}images/new_window.png" style="margin: auto; height: 16px;display: block;"/></a></td></tr></table></center></td><td><center><table style="width: 100%;"><tr><td style="width: 50%;"><a href="{{ .AnswersURL }}"><img src="{{ $.Site.BaseURL }}images/page.png" style="margin: auto; height: 16px;display: block;"/></a></td><td><a href="{{ .AnswersURL }}" target="_blank"><img src="{{ $.Site.BaseURL }}images/new_window.png" style="margin: auto; height: 16px;display: block;"/></a></td></tr></table></center></tr>
 	{{- end -}}
 </tbody></table>
 </center>
 {{- end -}}
+
 <br/>
 <!--h2>{{ .Params.Exams }}</h2-->
 {{ .Content }}
