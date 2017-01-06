@@ -1,63 +1,101 @@
 {{ partial "header.html" . }}
 <h1>{{ .Title }}</h1>
 <hr/>
+
 <!--h4>{{ .Date.Format "2-Jan-2006" }}</h4-->
 <h2>Course details</h2>
-<center>
-<table class="TableWithBorders" style="width: 75%;"> <tbody>
+
+<div>
+<table class="TableWithBorders" style="width: 75%; margin: auto;"> <tbody>
 <tr>
-	<td>School</td><td><a href="GSKSchoolURL">{{ .Params.GSKSchool }}</a></td>
-	<td>Department</td><td><a href="GSKDepartmentURL">{{ .Params.GSKDepartment }}</a></td>
+	<td style="text-align: left;" >School</td>
+	<td style="text-align: right;"><a href="GSKSchoolURL">{{ .Params.GSKSchool }}</a></td>
 </tr><tr>
-	<td>Start date</td><td>{{ .Params.GSKStartDate }}</td>
-	<td>End date</td><td>{{ .Params.GSKEndDate }}</td>
+	<td style="text-align: left;" >Department</td>
+	<td style="text-align: right;"><a href="GSKDepartmentURL">{{ .Params.GSKDepartment }}</a></td>
 </tr><tr>
-	<td>Total course time</td><td>{{ .Params.GSKTotalPeriod }}</td>
-	<td>Time per week</td><td>{{ .Params.GSKPeriodPerWeek }}</td>
+	<td style="text-align: left;" >City</td>
+	<td style="text-align: right;"><a href="GSKDepartmentURL">{{ .Params.GSKCity }}</a></td>
 </tr><tr>
-	<td>Strength</td><td>{{ .Params.GSKStrength }}</td>
-	<td>Time per week</td><td>{{ .Params.GSKPeriodPerWeek }}</td>
+	<td style="text-align: left;" >Level</td>
+	<td style="text-align: right;"><a href="GSKDepartmentURL">{{ .Params.GSKLevel }}</a></td>
+</tr><tr>
+	<td style="text-align: left;" >Group</td>
+	<td style="text-align: right;"><a href="GSKDepartmentURL">{{ .Params.GSKGroup }}</a></td>
+</tr><tr>
+	<td style="text-align: left;" rowspan="3">Period</td>
+	<td style="text-align: right;">{{  dateFormat "1/Jan/2006" .Params.GSKStartDate }} &mdash; {{  dateFormat "1/Jan/2006" .Params.GSKEndDate }}</td>
+</tr><tr>
+	<td style="text-align: right;" >{{ .Params.GSKTotalPeriod }} Hrs.</td>
+</tr><tr>
+	<td style="text-align: right;" >{{ .Params.GSKPeriodPerWeek }} Hrs./Wk.</td>
 </tr>
 </tbody></table>
-</center>
+</div>
 
 {{- if .Params.CourseMaterial -}}
 <h2>Course material</h2>
-<center>
-<table class="TableWithBorders" style="width: 75%;"> <tbody>
+<div>
+<table class="TableWithBorders" style="width: 75%; margin: auto;"> <tbody>
 <tr style="text-align: center;"><td><h3>Description</h3></td><td style="width: 125px;"><h3>Link</h3></td></tr>
 	{{- range .Params.CourseMaterial -}}
-<tr><td>{{ .Name }}</td><td><center><table style="width: 100%;"><tr><td style="width: 50%;"><a href="{{ .URL }}"><img src="{{ $.Site.BaseURL }}images/page.png" style="margin: auto; height: 16px;display: block;"/></a></td><td><a href="{{ .URL }}" target="_blank"><img src="{{ $.Site.BaseURL }}images/new_window.png" style="margin: auto; height: 16px;display: block;"/></a></td></tr></table></center></td></tr>
+<tr><td>{{ .Name }}</td><td><div><table style="width: 100%; margin: auto;"><tr><td style="width: 50%;"><a href="{{ .URL }}"><img alt="open" src="{{ $.Site.BaseURL }}images/page.png" style="margin: auto; height: 16px;display: block;"/></a></td><td><a href="{{ .URL }}" target="_blank"><img alt="open in a new window" src="{{ $.Site.BaseURL }}images/new_window.png" style="margin: auto; height: 16px;display: block;"/></a></td></tr></table></div></td></tr>
 	{{- end -}}
 </tbody></table>
-</center>
+</div>
 {{- end -}}
 
 {{- if .Params.Homeworks -}}
 <h2>Homeworks</h2>
-<center>
-<table class="TableWithBorders" style="width: 75%;"> <tbody>
+<div>
+<table class="TableWithBorders" style="width: 75%; margin: auto;"> <tbody>
 <tr style="text-align: center;"><td><h3>Description</h3></td><td style="width: 125px;"><h3>Due date</h3></td><td style="width: 125px;"><h3>Questions</h3></td><td style="width: 125px;"><h3>Answers</h3></td></tr>
 	{{- range .Params.Homeworks -}}
-<tr><td>{{ .Name }}</td><td style="text-align: center;">{{ .Date }}</td><td><center><table style="width: 100%;"><tr><td style="width: 50%;"><a href="{{ .QuestionsURL }}"><img src="{{ $.Site.BaseURL }}images/page.png" style="margin: auto; height: 16px;display: block;"/></a></td><td><a href="{{ .QuestionsURL }}" target="_blank"><img src="{{ $.Site.BaseURL }}images/new_window.png" style="margin: auto; height: 16px;display: block;"/></a></td></tr></table></center></td><td><center><table style="width: 100%;"><tr><td style="width: 50%;"><a href="{{ .AnswersURL }}"><img src="{{ $.Site.BaseURL }}images/page.png" style="margin: auto; height: 16px;display: block;"/></a></td><td><a href="{{ .AnswersURL }}" target="_blank"><img src="{{ $.Site.BaseURL }}images/new_window.png" style="margin: auto; height: 16px;display: block;"/></a></td></tr></table></center></tr>
+<tr><td>{{ .Name }}</td><td style="text-align: center;">{{ .Date }}</td><td><div><table style="width: 100%; margin: auto;"><tr><td style="width: 50%;"><a href="{{ .QuestionsURL }}"><img alt="open" src="{{ $.Site.BaseURL }}images/page.png" style="margin: auto; height: 16px;display: block;"/></a></td><td><a href="{{ .QuestionsURL }}" target="_blank"><img alt="open in a new window" src="{{ $.Site.BaseURL }}images/new_window.png" style="margin: auto; height: 16px;display: block;"/></a></td></tr></table></div></td><td><div><table style="width: 100%; margin: auto;"><tr><td style="width: 50%;"><a href="{{ .AnswersURL }}"><img alt="open" src="{{ $.Site.BaseURL }}images/page.png" style="margin: auto; height: 16px;display: block;"/></a></td><td><a href="{{ .AnswersURL }}" target="_blank"><img alt="open in new window" src="{{ $.Site.BaseURL }}images/new_window.png" style="margin: auto; height: 16px;display: block;"/></a></td></tr></table></div></tr>
 	{{- end -}}
 </tbody></table>
-</center>
+</div>
 {{- end -}}
 
 {{- if .Params.Exams -}}
 <h2>Exams</h2>
-<center>
-<table class="TableWithBorders" style="width: 75%;"> <tbody>
+<div>
+<table class="TableWithBorders" style="width: 75%; margin: auto;"> <tbody>
 <tr style="text-align: center;"><td><h3>Description</h3></td><td style="width: 125px;"><h3>Date</h3></td><td style="width: 125px;"><h3>Questions</h3></td><td style="width: 125px;"><h3>Answers</h3></td></tr>
 	{{- range .Params.Exams -}}
-<tr><td>{{ .Name }}</td><td style="text-align: center;">{{ .Date }}</td><td><center><table style="width: 100%;"><tr><td style="width: 50%;"><a href="{{ .QuestionsURL }}"><img src="{{ $.Site.BaseURL }}images/page.png" style="margin: auto; height: 16px;display: block;"/></a></td><td><a href="{{ .QuestionsURL }}" target="_blank"><img src="{{ $.Site.BaseURL }}images/new_window.png" style="margin: auto; height: 16px;display: block;"/></a></td></tr></table></center></td><td><center><table style="width: 100%;"><tr><td style="width: 50%;"><a href="{{ .AnswersURL }}"><img src="{{ $.Site.BaseURL }}images/page.png" style="margin: auto; height: 16px;display: block;"/></a></td><td><a href="{{ .AnswersURL }}" target="_blank"><img src="{{ $.Site.BaseURL }}images/new_window.png" style="margin: auto; height: 16px;display: block;"/></a></td></tr></table></center></tr>
+<tr><td>{{ .Name }}</td><td style="text-align: center;">{{ .Date }}</td><td><div><table style="width: 100%; margin: auto;"><tr><td style="width: 50%;"><a href="{{ .QuestionsURL }}"><img alt="open" src="{{ $.Site.BaseURL }}images/page.png" style="margin: auto; height: 16px;display: block;"/></a></td><td><a href="{{ .QuestionsURL }}" target="_blank"><img alt="open in a new window" src="{{ $.Site.BaseURL }}images/new_window.png" style="margin: auto; height: 16px;display: block;"/></a></td></tr></table></div></td><td><div><table style="width: 100%; margin: auto;"><tr><td style="width: 50%;"><a href="{{ .AnswersURL }}"><img alt="open" src="{{ $.Site.BaseURL }}images/page.png" style="margin: auto; height: 16px;display: block;"/></a></td><td><a href="{{ .AnswersURL }}" target="_blank"><img alt="open in new window" src="{{ $.Site.BaseURL }}images/new_window.png" style="margin: auto; height: 16px;display: block;"/></a></td></tr></table></div></tr>
 	{{- end -}}
 </tbody></table>
-</center>
+</div>
 {{- end -}}
 
 <br/>
+
+{{- if .Params.GSKAttendanceURL -}}
+<h2>Attendance</h2>
+<iframe src="https://docs.google.com/spreadsheets/d/{{ .Params.GSKAttendanceURL }}/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="width: 100%; height: 500px;"></iframe>
+{{- end -}}
+
+{{- if .Params.GSKGradeURL -}}
+<h2>Grades</h2>
+<iframe src="https://docs.google.com/spreadsheets/d/{{ .Params.GSKGradeURL }}/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="width: 100%; height: 500px;"></iframe>
+{{- end -}}
+
 <!--h2>{{ .Params.Exams }}</h2-->
 {{ .Content }}
 {{ partial "footer.html" . -}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

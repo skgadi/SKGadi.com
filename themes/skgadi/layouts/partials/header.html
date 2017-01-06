@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>{{ .Title }} - {{ .Site.Params.CommonTitle }}</title>
 	{{ .Hugo.Generator }}
@@ -10,11 +10,11 @@
 </head>
 <body>
 <div class="shadowBox" style="width: 1000px; margin: 50px auto; ">
-<div> <center>
-<table start="margin: auto;" cellpadding="0" cellspacing="0">
+<div>
+<table style="margin: auto;">
 <tr>
 <td style="padding-right: 5px;">
-	<img src="{{ .Site.BaseURL }}images/logos/skgadi.png"/ style="height:55px; display: block;">
+	<img alt= "Site logo" src="{{ .Site.BaseURL }}images/logos/skgadi.png" style="height:55px; display: block;">
 </td><td>
 	<div style="display: inline-block" >
 		<a href="/" style="font-size: 200%">{{- .Site.Params.CommonTitle }}</a><br/>
@@ -23,7 +23,6 @@
 </td>
 </tr>
 </table>
-</center>
 </div>
 <hr>
 

@@ -1,12 +1,15 @@
 </div>
 <hr>
 <br/>
-<center><input id="SearchText" type="text" style="border-color: green; background-color : black; color: green; border-style: solid; border-width: 0px 0px 1px 0px; width: 650px;" /> <input id="SearchBtn" type="button" value="Search" style="cursor: pointer; border-color: green; border-style: solid; border-width: 1px; background-color: black; color: green;" onclick="SearchClick();"/></center>
+
+<table style="margin: auto;" ><tr><td>
+<input id="SearchText" type="text" style="border-color: green; background-color : black; color: green; border-style: solid; border-width: 0px 0px 1px 0px; width: 650px;" /></td><td><input id="SearchBtn" type="button" value="Search" style="cursor: pointer; border-color: green; border-style: solid; border-width: 1px; background-color: black; color: green;" onclick="SearchClick();"/>
+</td></tr></table>
 <br/>
 <hr>
-<center>
-<table>
-<tr valign="top">
+<div style="margin: auto;">
+<table style="margin: auto;">
+<tr style="vertical-align: top;">
 {{ $currentPage := . }}
 {{ range .Site.Menus.main }}
 	{{ if .HasChildren }}
@@ -19,91 +22,93 @@
 </li>
 		{{ end }}
 </ul>
+</td>
 	{{else}}
 <td style="padding: 0px 10px;">
 		<a href="{{ .URL }}"> {{- .Name -}}</a>
 </td>
 	{{end}}
-</td>
 {{end}}
 </tr>
 </table>
-</center>
+</div>
 <hr>
-<center>
-<table style="font-size: 75%;">
+<div>
+<table style="font-size: 75%; margin: auto;">
 <tr>
 {{- if .Site.Params.email -}}
-<td style="padding: 0px 5px;"><img src="{{ .Site.BaseURL }}images/email.png" style="height: 15px;display: block;"/></td><td>{{ .Site.Params.email }}</td>
+<td style="padding: 0px 5px;"><img alt="email" src="{{ .Site.BaseURL }}images/email.png" style="height: 15px;display: block;"/></td><td>{{ .Site.Params.email }}</td>
 {{- end -}}
 
 {{- if .Site.Params.Phone -}}
-<td style="padding: 0px 5px;"><img src="{{ .Site.BaseURL }}images/mobile.png" style="height: 15px;display: block;"/></td><td>{{ .Site.Params.Phone }}</td>
+<td style="padding: 0px 5px;"><img alt="mobile" src="{{ .Site.BaseURL }}images/mobile.png" style="height: 15px;display: block;"/></td><td>{{ .Site.Params.Phone }}</td>
 {{- end -}}
 
 {{- if .Site.Params.Fax -}}
-<td style="padding: 0px 5px;"><img src="{{ .Site.BaseURL }}images/fax.png" style="height: 15px;display: block;"/></td><td>{{ .Site.Params.Fax }}</td>
+<td style="padding: 0px 5px;"><img alt="fax" src="{{ .Site.BaseURL }}images/fax.png" style="height: 15px;display: block;"/></td><td>{{ .Site.Params.Fax }}</td>
 {{- end -}}
 
 
 {{- if .Site.Params.ORCID -}}
-<td style="padding: 0px 5px;"><a href="https://orcid.org/{{ .Site.Params.ORCID }}"><img src="{{ .Site.BaseURL }}images/logos/orcid-logo.png" style="height: 15px;display: block;"/></a></td>
+<td style="padding: 0px 5px;"><a href="https://orcid.org/{{ .Site.Params.ORCID }}"><img alt="ORCID" src="{{ .Site.BaseURL }}images/logos/orcid-logo.png" style="height: 15px;display: block;"/></a></td>
 {{- end -}}
 
 {{- if .Site.Params.GScholar -}}
-<td style="padding: 0px 5px;"><a href="https://scholar.google.co.in/citations?user={{ .Site.Params.ORCID }}"><img src="{{ .Site.BaseURL }}images/logos/google-scholar.png" style="height: 15px;display: block;"/></a></td>
+<td style="padding: 0px 5px;"><a href="https://scholar.google.co.in/citations?user={{ .Site.Params.ORCID }}"><img alt="google scholar" src="{{ .Site.BaseURL }}images/logos/google-scholar.png" style="height: 15px;display: block;"/></a></td>
 {{- end -}}
 
 {{- if .Site.Params.LinkedIn -}}
-<td style="padding: 0px 5px;"><a href="https://mx.linkedin.com/in/{{ .Site.Params.LinkedIn }}"><img src="{{ .Site.BaseURL }}images/logos/linkedin.png" style="height: 15px;display: block;"/></a></td>
+<td style="padding: 0px 5px;"><a href="https://mx.linkedin.com/in/{{ .Site.Params.LinkedIn }}"><img alt="linkedin" src="{{ .Site.BaseURL }}images/logos/linkedin.png" style="height: 15px;display: block;"/></a></td>
 {{- end -}}
 
 {{- if .Site.Params.Twitter -}}
-<td style="padding: 0px 5px;"><a href="https://twitter.com/{{ .Site.Params.Twitter }}"><img src="{{ .Site.BaseURL }}images/logos/twitter.png" style="height: 15px;display: block;"/></a></td>
+<td style="padding: 0px 5px;"><a href="https://twitter.com/{{ .Site.Params.Twitter }}"><img alt="twitter" src="{{ .Site.BaseURL }}images/logos/twitter.png" style="height: 15px;display: block;"/></a></td>
 {{- end -}}
 
 
 {{- if .Site.Params.GPlus -}}
-<td style="padding: 0px 5px;"><a href="https://plus.google.com/{{ .Site.Params.GPlus }}"><img src="{{ .Site.BaseURL }}images/logos/google-plus.png" style="height: 15px;display: block;"/></a></td>
+<td style="padding: 0px 5px;"><a href="https://plus.google.com/{{ .Site.Params.GPlus }}"><img alt="google plus" src="{{ .Site.BaseURL }}images/logos/google-plus.png" style="height: 15px;display: block;"/></a></td>
+{{- end -}}
+
+{{- if .Site.Params.Maps -}}
+<td><a href="{{ .Site.Params.Maps }}"><img alt="maps point" src="{{ .Site.BaseURL }}images/map.png" style="height: 15px;display: block;"/></a></td>
 {{- end -}}
 
 
 </tr>
 {{- if .Site.Params.Address -}}
 <tr>
-<td colspan="1000" style="text-align: center;">
+<td colspan="12" style="text-align: center;">
 <table><tr>
-{{- if .Site.Params.Maps -}}
-<td><a href="{{ .Site.Params.Maps }}"><img src="{{ .Site.BaseURL }}images/map.png" style="height: 15px;display: block;"/></a></td>
-{{- end -}}
+<td><img alt="address" src="{{ .Site.BaseURL }}images/address.png" style="height: 15px;display: block;"/></td>
 <td>{{- .Site.Params.Address -}}</td>
 </tr></table>
 </tr>
 {{- end -}}
 
 </table>
-</center>
+</div>
 <hr>
 
-<center>
-<table style="font-size: 75%;">
+<div>
+<table style="font-size: 75%;margin: auto;">
 	<tr>
 		<td>
 			Thanks to&nbsp;
 		</td><td>
-			<img src="{{ .Site.BaseURL }}images/logos/github.png" style="height: 15px;"/>
+			<img alt="github" src="{{ .Site.BaseURL }}images/logos/github.png" style="height: 15px;"/>
 		</td><td>
 			<a href="https://github.com/">GitHub</a> and&nbsp;
 		</td><td>
-			<img src="{{ .Site.BaseURL }}images/logos/netlify.png" style="height: 15px;"/>
+			<img alt="netlify" src="{{ .Site.BaseURL }}images/logos/netlify.png" style="height: 15px;"/>
 		</td><td>
 			<a href="https://www.netlify.com/">netlify</a> for providing hosting.
 		</td>
 	</tr><tr>
-	<td colspan="50" style="text-align: center;">Copyright &copy;&nbsp;{{- .Site.Params.Copyright }}</td>
+	<td colspan="5" style="text-align: center;">Copyright &copy;&nbsp;{{- .Site.Params.Copyright }}</td>
 	</tr>
 </table>
-</center>
+</div>
 </div>
 <script type="text/javascript">
 function SearchClick(){
