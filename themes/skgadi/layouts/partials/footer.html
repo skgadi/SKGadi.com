@@ -6,32 +6,6 @@
 <input id="SearchText" type="text" style="border-color: green; background-color : black; color: green; border-style: solid; border-width: 0px 0px 1px 0px; width: 500px;" /></td><td>&nbsp;</td><td><input id="SearchBtn" type="button" value="Search" style="cursor: pointer; border-color: green; border-style: solid; border-width: 1px; background-color: black; color: green;" onclick="SearchClick();"/>
 </td></tr></table>
 <br/>
-<hr/>
-<div style="margin: auto;">
-<table style="margin: auto;">
-<tr style="vertical-align: top;">
-{{ $currentPage := . }}
-{{ range .Site.Menus.main }}
-	{{ if .HasChildren }}
-<td style="padding: 0px 10px;">
-		<a href="{{ .URL }}"> {{- .Name -}}</a>
-<ul style="margin: 0px;">
-		{{ range .Children }}
-<li>
-			<a href="{{ .URL }}"> {{- .Name -}}</a>
-</li>
-		{{ end }}
-</ul>
-</td>
-	{{else}}
-<td style="padding: 0px 10px;">
-		<a href="{{ .URL }}"> {{- .Name -}}</a>
-</td>
-	{{end}}
-{{end}}
-</tr>
-</table>
-</div>
 <hr>
 <div>
 <table style="font-size: 75%; margin: auto;">

@@ -35,94 +35,15 @@ baseurl = "https://suresh.ml/"
     name = "Education"
     url = "/education/"
 	weight = 1
-	[[menu.main]]
-		identifier = "SSC"
-		name = "SSC"
-		parent = "Education"
-		url = "/ssc/"
-		weight = 0
-	[[menu.main]]
-		identifier = "DEEE"
-		name = "DEEE"
-		parent = "Education"
-		url = "/deee/"
-		weight = -1
-	[[menu.main]]
-		identifier = "AMIE"
-		name = "AMIE"
-		parent = "Education"
-		url = "/amie/"
-		weight = -2
-	[[menu.main]]
-		identifier = "MTech"
-		name = "MTech"
-		parent = "Education"
-		url = "/mtech/"
-		weight = -3
-	[[menu.main]]
-		identifier = "PhD"
-		name = "PhD"
-		parent = "Education"
-		url = "//"
-		weight = -4
-		
+
 [[menu.main]]
     identifier = "WorkExperience"
-    name = "Work Experience"
+    name = "Work experience"
     url = "/work-experience/"
 	weight = 2
-	[[menu.main]]
-		identifier = "lnt"
-		name = "L&T Ltd."
-		parent =  "WorkExperience"
-		url = "/lnt/"
-		weight = 0
-	[[menu.main]]
-		identifier = "slb"
-		name = "Schlumberger"
-		parent =  "WorkExperience"
-		url = "/slb/"
-		weight = -1
-	[[menu.main]]
-		identifier = "htsl"
-		name = "Honeywell"
-		parent =  "WorkExperience"
-		url = "/htsl/"
-		weight = -2
-	[[menu.main]]
-		identifier = "upa"
-		name = "UPA"
-		parent =  "WorkExperience"
-		url = "/upa/"
-		weight = -3
-	[[menu.main]]
-		identifier = "uadec"
-		name = "UAdeC"
-		parent =  "WorkExperience"
-		url = "/uadec/"
-		weight = -4
 
 [[menu.main]]
     identifier = "Research"
     name = "Research"
     url = "/research/"
 	weight = 3
-
-[[menu.main]]
-    identifier = "Projects"
-    name = "Projects"
-    url = "/projects/"
-	weight = 4
-
-[[menu.main]]
-    identifier = "Courses"
-    name = "Courses"
-    url = "/courses/"
-	weight = 5
-
-	
-[[menu.main]]
-    identifier = "Search"
-    name = "Search"
-    url = "/search/"
-	weight = 6

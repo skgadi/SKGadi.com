@@ -70,3 +70,7 @@ nav>ul>li {
 	border-width: 1px;
 	border-color: green;
 }
+
+.HunderedTable>table{
+	width: 100%;
+}

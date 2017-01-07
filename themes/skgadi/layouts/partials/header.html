@@ -25,7 +25,9 @@
 	<meta property="article:tag" content="Duplicate Content" />
 	<meta property="article:tag" content="URL" />
 	<meta property="article:section" content="Content SEO" /-->
+	{{- if eq .Section "posts" -}}
 	<meta property="article:published_time" content="{{  dateFormat "2006-01-02T15:04:05-07:00" .Date }}" />
+	{{- end -}}
 	<!--meta property="article:modified_time" content="2016-12-23T14:06:40+01:00" />
 	<meta property="og:updated_time" content="2016-12-23T14:06:40+01:00" />
 	<meta property="fb:admins" content="503714060" /-->
@@ -55,6 +57,32 @@
 		<div style="text-align: right; font-size: 75%;" >{{- .Site.Params.SubTitle }}&nbsp;</div>
 	</div>
 </td>
+</tr>
+</table>
+</div>
+<hr/>
+<div style="margin: auto;">
+<table style="margin: auto;">
+<tr style="vertical-align: top;">
+{{ $currentPage := . }}
+{{ range .Site.Menus.main }}
+	{{ if .HasChildren }}
+<td style="padding: 0px 10px;">
+		<a href="{{ .URL }}"> {{- .Name -}}</a>
+<ul style="margin: 0px;">
+		{{ range .Children }}
+<li>
+			<a href="{{ .URL }}"> {{- .Name -}}</a>
+</li>
+		{{ end }}
+</ul>
+</td>
+	{{else}}
+<td style="padding: 0px 10px;">
+		<a href="{{ .URL }}"> {{- .Name -}}</a>
+</td>
+	{{end}}
+{{end}}
 </tr>
 </table>
 </div>

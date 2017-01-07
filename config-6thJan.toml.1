@@ -1,0 +1,128 @@
+theme = "skgadi"
+languageCode = "en-us"
+title = "Suresh Kumar Gadi"
+
+baseurl = "https://suresh.ml/"
+[params]
+	CommonTitle = "Suresh Kumar Gadi"
+	SubTitle = "Profesor investigador, FIME, UAdeC"
+	Copyright = "2017 Suresh Kumar Gadi"
+	email = "gadisureshkumar-at-gmail-dot-com"
+	ORCID = "0000-0001-7974-7825"
+	GScholar = "efqOY90AAAAJ"
+	GPlus = "+SureshKumarGadi"
+	LinkedIn = "skgadi"
+	Twitter = "SureshKumarGadi"
+	Maps = "https://goo.gl/maps/8NrtjMajSUz"
+	Phone = "+52(1)4491820153"
+	Fax = "+52(1)8717570153"
+	Address = "Carretera Torreón - Matamoros Km. 7.5, Ciudad Universitaria, Torreón, Coahuila, México, C.P. 27276"
+	
+[params.meta.Keywords]
+	name = ["skgadi", "suresh kumar gadi", "control digital"]
+[params.meta.Description]
+	name = "Dr. Suresh Kumar Gadi is a research professor at the Universidad Autónoma de Coahuila"
+
+
+[[menu.main]]
+    identifier = "Home"
+    name = "Home"
+    url = "/"
+	weight = 0
+
+[[menu.main]]
+    identifier = "Education"
+    name = "Education"
+    url = "/education/"
+	weight = 1
+	[[menu.main]]
+		identifier = "SSC"
+		name = "SSC"
+		parent = "Education"
+		url = "/ssc/"
+		weight = 0
+	[[menu.main]]
+		identifier = "DEEE"
+		name = "DEEE"
+		parent = "Education"
+		url = "/deee/"
+		weight = -1
+	[[menu.main]]
+		identifier = "AMIE"
+		name = "AMIE"
+		parent = "Education"
+		url = "/amie/"
+		weight = -2
+	[[menu.main]]
+		identifier = "MTech"
+		name = "MTech"
+		parent = "Education"
+		url = "/mtech/"
+		weight = -3
+	[[menu.main]]
+		identifier = "PhD"
+		name = "PhD"
+		parent = "Education"
+		url = "//"
+		weight = -4
+		
+[[menu.main]]
+    identifier = "WorkExperience"
+    name = "Work Experience"
+    url = "/work-experience/"
+	weight = 2
+	[[menu.main]]
+		identifier = "lnt"
+		name = "L&T Ltd."
+		parent =  "WorkExperience"
+		url = "/lnt/"
+		weight = 0
+	[[menu.main]]
+		identifier = "slb"
+		name = "Schlumberger"
+		parent =  "WorkExperience"
+		url = "/slb/"
+		weight = -1
+	[[menu.main]]
+		identifier = "htsl"
+		name = "Honeywell"
+		parent =  "WorkExperience"
+		url = "/htsl/"
+		weight = -2
+	[[menu.main]]
+		identifier = "upa"
+		name = "UPA"
+		parent =  "WorkExperience"
+		url = "/upa/"
+		weight = -3
+	[[menu.main]]
+		identifier = "uadec"
+		name = "UAdeC"
+		parent =  "WorkExperience"
+		url = "/uadec/"
+		weight = -4
+
+[[menu.main]]
+    identifier = "Research"
+    name = "Research"
+    url = "/research/"
+	weight = 3
+
+[[menu.main]]
+    identifier = "Projects"
+    name = "Projects"
+    url = "/projects/"
+	weight = 4
+
+[[menu.main]]
+    identifier = "Courses"
+    name = "Courses"
+    url = "/courses/"
+	weight = 5
+
+	
+[[menu.main]]
+    identifier = "Search"
+    name = "Search"
+    url = "/search/"
+	weight = 6
