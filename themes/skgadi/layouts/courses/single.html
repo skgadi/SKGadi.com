@@ -4,7 +4,6 @@
 
 <!--h4>{{ .Date.Format "2-Jan-2006" }}</h4-->
 <h2>Course details</h2>
-
 <div>
 <table class="TableWithBorders" style="width: 75%; margin: auto;"> <tbody>
 <tr>
@@ -15,13 +14,13 @@
 	<td style="text-align: right;"><a href="GSKDepartmentURL">{{ .Params.GSKDepartment }}</a></td>
 </tr><tr>
 	<td style="text-align: left;" >City</td>
-	<td style="text-align: right;"><a href="GSKDepartmentURL">{{ .Params.GSKCity }}</a></td>
+	<td style="text-align: right;">{{ .Params.GSKCity }}</td>
 </tr><tr>
 	<td style="text-align: left;" >Level</td>
-	<td style="text-align: right;"><a href="GSKDepartmentURL">{{ .Params.GSKLevel }}</a></td>
+	<td style="text-align: right;">{{ .Params.GSKLevel }}</td>
 </tr><tr>
 	<td style="text-align: left;" >Group</td>
-	<td style="text-align: right;"><a href="GSKDepartmentURL">{{ .Params.GSKGroup }}</a></td>
+	<td style="text-align: right;">{{ .Params.GSKGroup }}</td>
 </tr><tr>
 	<td style="text-align: left;" rowspan="3">Period</td>
 	<td style="text-align: right;">{{  dateFormat "1/Jan/2006" .Params.GSKStartDate }} &mdash; {{  dateFormat "1/Jan/2006" .Params.GSKEndDate }}</td>
@@ -37,7 +36,7 @@
 <h2>Course material</h2>
 <div>
 <table class="TableWithBorders" style="width: 75%; margin: auto;"> <tbody>
-<tr style="text-align: center;"><td><h3>Description</h3></td><td style="width: 125px;"><h3>Link</h3></td></tr>
+<tr style="text-align: center;"><td><h3>Description</h3></td><td style="width: 110px;"><h3>Link</h3></td></tr>
 	{{- range .Params.CourseMaterial -}}
 <tr><td>{{ .Name }}</td><td><div><table style="width: 100%; margin: auto;"><tr><td style="width: 50%;"><a href="{{ .URL }}"><img alt="open" src="{{ $.Site.BaseURL }}images/page.png" style="margin: auto; height: 16px;display: block;"/></a></td><td><a href="{{ .URL }}" target="_blank"><img alt="open in a new window" src="{{ $.Site.BaseURL }}images/new_window.png" style="margin: auto; height: 16px;display: block;"/></a></td></tr></table></div></td></tr>
 	{{- end -}}
@@ -49,7 +48,7 @@
 <h2>Homeworks</h2>
 <div>
 <table class="TableWithBorders" style="width: 75%; margin: auto;"> <tbody>
-<tr style="text-align: center;"><td><h3>Description</h3></td><td style="width: 125px;"><h3>Due date</h3></td><td style="width: 125px;"><h3>Questions</h3></td><td style="width: 125px;"><h3>Answers</h3></td></tr>
+<tr style="text-align: center;"><td><h3>Description</h3></td><td style="width: 110px;"><h3>Due date</h3></td><td style="width: 110px;"><h3>Questions</h3></td><td style="width: 110px;"><h3>Answers</h3></td></tr>
 	{{- range .Params.Homeworks -}}
 <tr><td>{{ .Name }}</td><td style="text-align: center;">{{ .Date }}</td><td><div><table style="width: 100%; margin: auto;"><tr><td style="width: 50%;"><a href="{{ .QuestionsURL }}"><img alt="open" src="{{ $.Site.BaseURL }}images/page.png" style="margin: auto; height: 16px;display: block;"/></a></td><td><a href="{{ .QuestionsURL }}" target="_blank"><img alt="open in a new window" src="{{ $.Site.BaseURL }}images/new_window.png" style="margin: auto; height: 16px;display: block;"/></a></td></tr></table></div></td><td><div><table style="width: 100%; margin: auto;"><tr><td style="width: 50%;"><a href="{{ .AnswersURL }}"><img alt="open" src="{{ $.Site.BaseURL }}images/page.png" style="margin: auto; height: 16px;display: block;"/></a></td><td><a href="{{ .AnswersURL }}" target="_blank"><img alt="open in new window" src="{{ $.Site.BaseURL }}images/new_window.png" style="margin: auto; height: 16px;display: block;"/></a></td></tr></table></div></tr>
 	{{- end -}}
@@ -61,7 +60,7 @@
 <h2>Exams</h2>
 <div>
 <table class="TableWithBorders" style="width: 75%; margin: auto;"> <tbody>
-<tr style="text-align: center;"><td><h3>Description</h3></td><td style="width: 125px;"><h3>Date</h3></td><td style="width: 125px;"><h3>Questions</h3></td><td style="width: 125px;"><h3>Answers</h3></td></tr>
+<tr style="text-align: center;"><td><h3>Description</h3></td><td style="width: 110px;"><h3>Date</h3></td><td style="width: 110px;"><h3>Questions</h3></td><td style="width: 110px;"><h3>Answers</h3></td></tr>
 	{{- range .Params.Exams -}}
 <tr><td>{{ .Name }}</td><td style="text-align: center;">{{ .Date }}</td><td><div><table style="width: 100%; margin: auto;"><tr><td style="width: 50%;"><a href="{{ .QuestionsURL }}"><img alt="open" src="{{ $.Site.BaseURL }}images/page.png" style="margin: auto; height: 16px;display: block;"/></a></td><td><a href="{{ .QuestionsURL }}" target="_blank"><img alt="open in a new window" src="{{ $.Site.BaseURL }}images/new_window.png" style="margin: auto; height: 16px;display: block;"/></a></td></tr></table></div></td><td><div><table style="width: 100%; margin: auto;"><tr><td style="width: 50%;"><a href="{{ .AnswersURL }}"><img alt="open" src="{{ $.Site.BaseURL }}images/page.png" style="margin: auto; height: 16px;display: block;"/></a></td><td><a href="{{ .AnswersURL }}" target="_blank"><img alt="open in new window" src="{{ $.Site.BaseURL }}images/new_window.png" style="margin: auto; height: 16px;display: block;"/></a></td></tr></table></div></tr>
 	{{- end -}}

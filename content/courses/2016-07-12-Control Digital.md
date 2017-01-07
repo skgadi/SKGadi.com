@@ -2,10 +2,9 @@
 #SEO Data
 Keywords = ["skgadi", "suresh kumar gadi", "control digital"]
 description = "Digital control course"
-
-
-date = "2017-01-03T23:12:36-06:00"
+date = "2016-01-03T23:12:36-06:00"
 title = "Control Digital"
+
 GSKStartDate = "2017-12-03"
 GSKEndDate = "2017-01-03"
 GSKSchool = "Universidad Autónoma de Coahuila"
