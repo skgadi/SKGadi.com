@@ -72,29 +72,127 @@ gravida dui. Phasellus tristique libero at ex.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Research</title>
+      <link>https://suresh.ml/research/</link>
+      <pubDate>Tue, 01 Jun 1999 00:00:00 +0530</pubDate>
+      
+      <guid>https://suresh.ml/research/</guid>
+      <description>&lt;h1 class=&#34;header&#34;&gt;Publications&lt;/h1&gt;
+
+&lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;div class=&#34;searchbar&#34;&gt;
+        &lt;div style=&#34;float:left;&#34;&gt;
+            &lt;button type=&#34;button&#34; class=&#34;btn btn-default&#34; onclick=&#34;reset()&#34;&gt;Reset&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div style=&#34;float:left;&#34;&gt;
+            &lt;select id=&#34;authorselectfirst&#34; class=&#34;btn bibtex_search bibtex_author&#34; style=&#34;border: 1px solid lightgrey;&#34; extra=&#34;first&#34; search=&#34;author&#34;&gt;
+              &lt;option value=&#34;&#34;&gt;Search First Author&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+        &lt;div style=&#34;float:left;&#34;&gt;
+            &lt;select id=&#34;authorselect&#34; class=&#34;btn bibtex_search bibtex_author&#34; style=&#34;border: 1px solid lightgrey;&#34; search=&#34;author&#34;&gt;
+              &lt;option value=&#34;&#34;&gt;Search Author&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+        &lt;div style=&#34;float:left;&#34;&gt;
+            &lt;select id=&#34;topicselect&#34; class=&#34;btn bibtex_search&#34; style=&#34;border: 1px solid lightgrey;&#34;&gt;
+              &lt;option value=&#34;&#34;&gt;Search Topic&lt;/option&gt;
+              &lt;!-- Add topic values here --&gt;
+              &lt;option value=&#34;Example topic&#34;&gt;Example Topic&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+        &lt;div style=&#34;float:left;&#34;&gt;
+            &lt;input type=&#34;text&#34; class=&#34;bibtex_search form-control&#34; id=&#34;searchbar&#34; placeholder=&#34;Search publications&#34;&gt;
+            &lt;span class=&#34;help-block&#34;&gt;Example: journal 2015 (finds the intersection of the two terms)&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+
+
+
+&lt;div class=&#34;bibtex_structure&#34;&gt;
+  &lt;div class=&#34;group year&#34; extra=&#34;ASC number&#34;&gt;
+      &lt;!--a href=&#34;#top&#34; style=&#34;display: inline&#34;&gt;&lt;em&gt;(Top of the page)&lt;/em&gt;&lt;/a--&gt;
+      &lt;div style=&#34;padding-bottom:10px;&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;sort journal&#34; extra=&#34;DESC string&#34;&gt;
+        &lt;div class=&#34;templates&#34;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;bibtex_display&#34;&gt;
+  
+        &lt;div class=&#34;if bibtex_template&#34; style=&#34;display: none;&#34;&gt;
+            &lt;ul&gt;&lt;li&gt;
+                &lt;a href=&#34;#PutHTMLHere&#34; rel=&#34;modal:open&#34;&gt;&lt;span class=&#34;SKGListItem bibtexVar&#34; id=&#34;bib+BIBTEXKEY+&#34; extra=&#34;BIBTEXKEY&#34; onclick=&#34;DisplayItem(&#39;BIBD+BIBTEXKEY+&#39;)&#34;&gt;
+                    &lt;span class=&#34;if title&#34;&gt;&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;.&lt;/span&gt;
+                    &lt;span class=&#34;if author&#34;&gt;&lt;em&gt;&lt;span class=&#34;author&#34;&gt;&lt;/span&gt;&lt;/em&gt;.&lt;/span&gt;
+                    &lt;span class=&#34;if edition&#34;&gt;Edition: &lt;span class=&#34;edition&#34;&gt;&lt;/span&gt;.&lt;/span&gt;
+                    &lt;span class=&#34;if year&#34;&gt;&lt;span class=&#34;year&#34;&gt;&lt;/span&gt;.&lt;/span&gt;
+                &lt;/span&gt;&lt;/a&gt;
+                &lt;div style=&#34;display: none;&#34; class=&#34;bibtexVar&#34; id=&#34;BIBD+BIBTEXKEY+&#34; extra=&#34;BIBTEXKEY&#34;&gt;
+            
+                    &lt;div class=&#34;if title&#34; &gt;&lt;h1 style=&#34; font-weight: normal; text-align: center; margin: 0px;&#34;&gt;&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;&lt;/h1&gt;&lt;/div&gt;
+                    &lt;br/&gt;
+                    &lt;div class=&#34;if author&#34;&gt;&lt;h4 style=&#34; font-weight: normal; text-align: center;  margin: 0px;&#34;&gt;&lt;span class=&#34;author&#34;&gt;&lt;/span&gt;&lt;/h4&gt;&lt;/div&gt;
+                    &lt;div class=&#34;if organization&#34;&gt;&lt;h4 style=&#34; font-weight: normal; text-align: center; margin: 0px;&#34;&gt;&lt;em&gt;&lt;span class=&#34;organization&#34;&gt;&lt;/span&gt;&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;
+                    &lt;div class=&#34;if booktitle&#34;&gt;&lt;h4 style=&#34; font-weight: normal; text-align: center; margin: 0px;&#34;&gt;&lt;em&gt;&lt;span class=&#34;booktitle&#34;&gt;&lt;/span&gt;&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;
+                    &lt;br/&gt;
+                    &lt;div class=&#34;if abstract&#34;&gt;&lt;span style=&#34; font-weight: bold; text-align: center; margin: 0px;&#34;&gt;Abstract:&amp;ndash; &lt;/span&gt;&lt;span class=&#34;abstract&#34; style=&#34; font-weight: normal; text-align: justify;&#34;&gt;&lt;/span&gt;&lt;/div&gt;
+                    &lt;br/&gt;
+                    &lt;b&gt;More information:&lt;/b&gt;
+                    &lt;table class=&#34;ContentTable&#34;&gt;
+                        &lt;TR class=&#34;if address&#34;&gt;&lt;TD&gt;Address&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;address&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if annote&#34;&gt;&lt;TD&gt;Annote&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;annote&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if chapter&#34;&gt;&lt;TD&gt;Chapter&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;chapter&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if crossref&#34;&gt;&lt;TD&gt;Crossref&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;crossref&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if doi&#34;&gt;&lt;TD&gt;DOI&lt;/TD&gt;&lt;TD&gt;&lt;span style=&#34;cursor: pointer;&#34; class=&#34;doi&#34; onclick=&#34;OpenDOI(this);&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if edition&#34;&gt;&lt;TD&gt;Edition&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;edition&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if editor&#34;&gt;&lt;TD&gt;Editor&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;editor&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if howpublished&#34;&gt;&lt;TD&gt;How published&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;howpublished&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if institution&#34;&gt;&lt;TD&gt;Institution&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;institution&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if isbn&#34;&gt;&lt;TD&gt;ISBN&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;isbn&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if journal&#34;&gt;&lt;TD&gt;Journal&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;journal&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if key&#34;&gt;&lt;TD&gt;Key&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;key&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if month&#34;&gt;&lt;TD&gt;Month&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;month&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if note&#34;&gt;&lt;TD&gt;Note&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;note&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if number&#34;&gt;&lt;TD&gt;Number&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;number&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if pages&#34;&gt;&lt;TD&gt;Pages&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;pages&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if publisher&#34;&gt;&lt;TD&gt;Publisher&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;publisher&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if school&#34;&gt;&lt;TD&gt;School&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;school&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if series&#34;&gt;&lt;TD&gt;Series&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;series&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if type&#34;&gt;&lt;TD&gt;Type&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;type&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if url&#34;&gt;&lt;TD&gt;URL&lt;/TD&gt;&lt;TD&gt;&lt;span style=&#34;cursor: pointer;&#34; class=&#34;url&#34; onclick=&#34;OpenURL(this);&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if volume&#34;&gt;&lt;TD&gt;Volume&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;volume&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                        &lt;TR class=&#34;if year&#34;&gt;&lt;TD&gt;Year&lt;/TD&gt;&lt;TD&gt;&lt;span class=&#34;year&#34;&gt;&lt;/span&gt;&lt;/TD&gt;&lt;/TR&gt;
+                    &lt;/table&gt;
+                    &lt;br/&gt;
+                    &lt;div style=&#34;position: relative;&#34;&gt;
+                    &lt;pre class = &#34;BibTeXRawCodeBlock&#34; onclick=&#34;SelectTheText(this)&#34; ondblclick=&#34;CopyTheText(this);&#34;&gt;&lt;span class=&#34;bibtexraw noread&#34;&gt;&lt;/span&gt;&lt;/pre&gt;
+                    &lt;a style=&#34;display: float;position: absolute; bottom: 0px; right: 5px; font-size: 40px; cursor: pointer;&#34; onclick=&#34;CopyThePrevText(this)&#34;&gt;&amp;#x2398;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;p&gt;Search this material in your cloud storage:&lt;/p&gt;
+                    &lt;img  style=&#34;cursor: pointer; height: 50px;&#34; class=&#34;bibtexVar&#34; onclick=&#34;OpenFile(&#39;+BIBTEXKEY+&#39;,1)&#34; extra=&#34;BIBTEXKEY&#34; src=&#34;images/logo-mega.png&#34;&gt;&lt;/img&gt;
+                    &lt;img  style=&#34;cursor: pointer; height: 50px;&#34; class=&#34;bibtexVar&#34; onclick=&#34;OpenFile(&#39;+BIBTEXKEY+&#39;,2)&#34; extra=&#34;BIBTEXKEY&#34; src=&#34;images/logo-drive.png&#34;&gt;&lt;/img&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;&lt;/ul&gt;
+        &lt;/div&gt;
+  
+
+&lt;p&gt;&lt;/div&gt;
+&lt;div class=&#34;modal&#34; id=&#34;PutHTMLHere&#34; style= &#34;width: 100%;&#34; &gt;Select an entry to view the complete details here.&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Secondary school certificate (SSC)</title>
       <link>https://suresh.ml/education/</link>
       <pubDate>Tue, 01 Jun 1999 00:00:00 +0530</pubDate>
       
       <guid>https://suresh.ml/education/</guid>
-      <description>&lt;p&gt;Suresh Kumar Gadi obtained secondary school certificate in the march month of the year 1999 from the board of secondary education Andhra Pradesh (AP). He carried out his education in the city Visakhapatnam. He scored an average of 75.4%.&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;Secondary school certificate&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;June 1999&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Ramakrishna residential public school&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;Visakhapatnam&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
+      <description></description>
     </item>
     
   </channel>

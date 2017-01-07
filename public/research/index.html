@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Research - Suresh Kumar Gadi</title>
+	<meta name="generator" content="Hugo 0.18" />
+	<meta charset=utf-8>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+	<meta name="news_keywords"  content="research, publications, articles, conference" />
+	<meta name="keywords" content="research, publications, articles, conference" />
+	<meta property="og:title" content="Research - Suresh Kumar Gadi" />
+	<meta property="og:description" content="Suresh Kumar Gadi has contributions in 1 journal article and 5 conference proceedings." />
+	<meta property="og:url" content="https://suresh.ml/research/" />
+	<link rel="original-source" href="https://suresh.ml/research/" />
+	<meta name="robots" content="noodp"/>
+	<link rel="canonical" href="https://suresh.ml/research/" />
+	<link rel="publisher" href="https://plus.google.com/&#43;SureshKumarGadi/posts"/>
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:site_name" content="Suresh Kumar Gadi" />
+	
+	<meta property="og:image" content="https://suresh.ml/images/my-logo.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:description" content="Suresh Kumar Gadi has contributions in 1 journal article and 5 conference proceedings." />	
+	<meta name="twitter:title" content="Research - Suresh Kumar Gadi" />
+	
+	<meta name="twitter:image" content="https://suresh.ml/images/my-logo.png" />
+	<meta name="twitter:creator" content="@SureshKumarGadi" />
+	
+	
+	
+	<link rel="stylesheet" href="https://suresh.ml/css/main.css">
+	<link rel="icon" type="image/png" href="https://suresh.ml/images/favicon.png">
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://suresh.ml/js/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
+	<bibtex src="https://suresh.ml/bibtex/publications.bib"></bibtex>
+	
+	<link rel="stylesheet" href="https://suresh.ml/css/jquery.modal.css" type="text/css" media="screen"  />
+	<script src="https://suresh.ml/js/jquery.modal.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="https://suresh.ml/js/notify.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	
+	        <script>
+		$(function() {
+		  $("#Fontselector").on("change",function() {
+		    var font = $("#Fontselector option:selected").text();
+		    console.log(font);
+		
+		    $('.title.fonters').each(function() {
+		    	$(this).css("font-family",font);
+		    });
+		  }); 
+		});   
+		function reset() {
+			$("select").each(function () {
+			  localStorage.setItem($(this).attr("id"),"");
+			  $(this).val("");
+			}); 
+			$("#searchbar").val("");
+			$("#searchbar").trigger('change');
+		}
+		function DisplayItem(id) {
+			$('#PutHTMLHere').empty();
+			$('#PutHTMLHere').html($('#' + id).html());
+			}
+			
+			var clip = function (el) {
+	var range = document.createRange();
+	range.selectNodeContents(el);
+	var sel = window.getSelection();
+	sel.removeAllRanges();
+	sel.addRange(range);
+};
+
+function copyToClipboard(elem) {
+	
+	var targetId = "_hiddenCopyText_";
+	var isInput = elem.tagName === "INPUT" || elem.tagName === "TEXTAREA";
+	var origSelectionStart,
+	origSelectionEnd;
+	if (isInput) {
+		
+		target = elem;
+		origSelectionStart = elem.selectionStart;
+		origSelectionEnd = elem.selectionEnd;
+	} else {
+		
+		target = document.getElementById(targetId);
+		if (!target) {
+			var target = document.createElement("textarea");
+			target.style.position = "absolute";
+			target.style.left = "-9999px";
+			target.style.top = "0";
+			target.id = targetId;
+			document.body.appendChild(target);
+		}
+		target.textContent = elem.textContent;
+	}
+	
+	var currentFocus = document.activeElement;
+	target.focus();
+	target.setSelectionRange(0, target.value.length);
+
+	
+	var succeed;
+	try {
+		succeed = document.execCommand("copy");
+	} catch (e) {
+		succeed = false;
+	}
+	
+	if (currentFocus && typeof currentFocus.focus === "function") {
+		currentFocus.focus();
+	}
+
+	if (isInput) {
+		
+		elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+	} else {
+		
+		target.textContent = "";
+	}
+	return succeed;
+}
+
+function reset() {
+	$("select").each(function () {
+		localStorage.setItem($(this).attr("id"), "");
+		$(this).val("");
+	});
+	$("#searchbar").val("");
+	$("#searchbar").trigger('change');
+}
+
+function ApplyLayout() {
+	
+	$('.MainHTMLDiv').layout({
+		center__paneSelector : ".outer-center",
+		west__paneSelector : ".outer-west",
+		east__paneSelector : ".outer-east",
+		west__size : 200,
+		east__size : '50%',
+		spacing_open : 5 
+	,
+		spacing_closed : 10 
+		
+		
+	,
+		north__maxSize : 200,
+		south__maxSize : 200,
+		north__size : 24,
+		south__size : 22,
+		north__resizable : false,
+		south__resizable : false
+	});
+
+	$('#NavBarHere').load('nav.html');
+	$('#FooterHere').load('footer.html');
+}
+
+function DisplayItem(id) {
+	$('#PutHTMLHere').empty();
+	$('#PutHTMLHere').html($('#' + id).html());
+}
+
+function OpenDOI(DOI) {
+	window.open('http://dx.doi.org/' + $(DOI).text(), '_blank');
+}
+
+function OpenURL(URL) {
+	window.open($(URL).text(), '_blank');
+}
+
+function OpenFile(BIBKey, Loc) {
+	if (Loc == 1)
+		window.open("https://mega.nz/#fm/search/" + BIBKey, '_blank');
+	else if (Loc == 2)
+		window.open("https://drive.google.com/drive/search?q=" + BIBKey, '_blank');
+}
+
+function SelectTheText(Code) {
+	clip($(Code)[0]);
+}
+
+function CopyTheText(Code) {
+	copyToClipboard(Code);
+	$.notify("This BibTeX code is coppied to your clipboard", "success");
+}
+
+function CopyThePrevText(Code) {
+	code = $(Code).prev().get(0);
+	console.log(code);
+	copyToClipboard(code);
+	$.notify("This BibTeX code is coppied to your clipboard", "success");
+}
+
+function download(filename, text) {
+	var element = document.createElement('a');
+	element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+	element.setAttribute('download', filename);
+
+	element.style.display = 'none';
+	document.body.appendChild(element);
+
+	element.click();
+
+	document.body.removeChild(element);
+}
+
+function OpenDriveFile(FineNo, IsNew) {
+	if (FineNo == 1)
+		var FileSelected = "SKGadiReferenceManagerTopics";
+	else if (FineNo == 2)
+		var FileSelected = "SKGadiReferenceManagerArticles";
+	else if (FineNo == 3)
+		var FileSelected = "SKGadiReferenceManagerBooks";
+	else if (FineNo == 4)
+		var FileSelected = "SKGadiReferenceManagerMyPublications";
+	var request = gapi.client.drive.files.list({
+			'q' : 'name=\'' + FileSelected + '\'',
+			'pageSize' : 10,
+			'fields' : "nextPageToken, files(id, name)"
+		});
+
+	request.execute(function (resp) {
+		var files = resp.files;
+		if (files && files.length > 0) {
+			if (IsNew)
+				window.open("https://docs.google.com/spreadsheets/d/" + files[0].id + "/edit", "_blank");
+			else
+				window.open("https://docs.google.com/spreadsheets/d/" + files[0].id + "/edit", "_self");
+		} else {
+			$.notify("No database file is found. You have to authorize to proceed. Press the authorize button.", "error");
+		}
+	});
+}
+
+function wait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end < start + ms) {
+     end = new Date().getTime();
+  }
+}
+
+    </script>
+    <style>
+	    bibtex { display: none; }
+	    .searchbar { margin-left:0px;}
+	    #bibtex_errors { margin-top:10px; color: red;}
+	    h1.header {margin-left:8px;}
+	    h1.YEAR { font-size: 17px; font-weight: bold; display: inline; margin-left:8px;}
+	.SKGListItem {
+		text-align: justify;
+		display: block;
+		background-color: #0a0a0a;
+		border-left: 1px solid lightgreen;
+		border-right: 1px solid lightgreen;
+		padding: 0px 5px;
+		text-decoration:none;
+		cursor: pointer;
+		-webkit-transition-duration: 0.4s;  
+		transition-duration: 0.4s;
+	}
+	.SKGListItem:hover {
+		border-left: 1px solid green;
+		border-right: 1px solid green;
+		background-color: #1a1a1a;
+	}
+
+    </style></head>
+<body>
+<div class="shadowBox" style="width: 750px; margin: 50px auto; ">
+<div>
+<table style="margin: auto;">
+<tr>
+<td style="padding-right: 5px;">
+	<img alt= "Site logo" src="https://suresh.ml/images/logos/skgadi.png" style="height:55px; display: block;">
+</td><td>
+	<div style="display: inline-block" >
+		<a href="/" style="font-size: 200%">Suresh Kumar Gadi</a><br/>
+		<div style="text-align: right; font-size: 75%;" >Profesor investigador, FIME, UAdeC&nbsp;</div>
+	</div>
+</td>
+</tr>
+</table>
+</div>
+<hr/>
+<div style="margin: auto;">
+<table style="margin: auto;">
+<tr style="vertical-align: top;">
+
+
+	
+<td style="padding: 0px 10px;">
+		<a href="/">Home</a>
+</td>
+	
+
+	
+<td style="padding: 0px 10px;">
+		<a href="/education/">Education</a>
+</td>
+	
+
+	
+<td style="padding: 0px 10px;">
+		<a href="/work-experience/">Work experience</a>
+</td>
+	
+
+	
+<td style="padding: 0px 10px;">
+		<a href="/research/">Research</a>
+</td>
+	
+
+</tr>
+</table>
+</div>
+<hr>
+
+<div style="width: 90%; margin:auto;">
+<h1>Research</h1><hr/>
+<h1 class="header">Publications</h1>
+
+<div class="container-fluid">
+    <div class="searchbar">
+        <div style="float:left;">
+            <button type="button" class="btn btn-default" onclick="reset()">Reset</button>
+        </div>
+        <div style="float:left;">
+            <select id="authorselectfirst" class="btn bibtex_search bibtex_author" style="border: 1px solid lightgrey;" extra="first" search="author">
+              <option value="">Search First Author</option>
+            </select>
+        </div>
+        <div style="float:left;">
+            <select id="authorselect" class="btn bibtex_search bibtex_author" style="border: 1px solid lightgrey;" search="author">
+              <option value="">Search Author</option>
+            </select>
+        </div>
+        <div style="float:left;">
+            <select id="topicselect" class="btn bibtex_search" style="border: 1px solid lightgrey;">
+              <option value="">Search Topic</option>
+              <!-- Add topic values here -->
+              <option value="Example topic">Example Topic</option>
+            </select>
+        </div>
+        <div style="float:left;">
+            <input type="text" class="bibtex_search form-control" id="searchbar" placeholder="Search publications">
+            <span class="help-block">Example: journal 2015 (finds the intersection of the two terms)</span>
+        </div>
+    </div>
+</div>
+<br/><br/><br/>
+
+
+
+
+<div class="bibtex_structure">
+  <div class="group year" extra="ASC number">
+      <!--a href="#top" style="display: inline"><em>(Top of the page)</em></a-->
+      <div style="padding-bottom:10px;"></div>
+      <div class="sort journal" extra="DESC string">
+        <div class="templates"></div>
+      </div>
+  </div>
+</div>
+
+<div id="bibtex_display">
+  
+        <div class="if bibtex_template" style="display: none;">
+            <ul><li>
+                <a href="#PutHTMLHere" rel="modal:open"><span class="SKGListItem bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY" onclick="DisplayItem('BIBD+BIBTEXKEY+')">
+                    <span class="if title"><span class="title"></span>.</span>
+                    <span class="if author"><em><span class="author"></span></em>.</span>
+                    <span class="if edition">Edition: <span class="edition"></span>.</span>
+                    <span class="if year"><span class="year"></span>.</span>
+                </span></a>
+                <div style="display: none;" class="bibtexVar" id="BIBD+BIBTEXKEY+" extra="BIBTEXKEY">
+            
+                    <div class="if title" ><h1 style=" font-weight: normal; text-align: center; margin: 0px;"><span class="title"></span></h1></div>
+                    <br/>
+                    <div class="if author"><h4 style=" font-weight: normal; text-align: center;  margin: 0px;"><span class="author"></span></h4></div>
+                    <div class="if organization"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="organization"></span></em></h4></div>
+                    <div class="if booktitle"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="booktitle"></span></em></h4></div>
+                    <br/>
+                    <div class="if abstract"><span style=" font-weight: bold; text-align: center; margin: 0px;">Abstract:&ndash; </span><span class="abstract" style=" font-weight: normal; text-align: justify;"></span></div>
+                    <br/>
+                    <b>More information:</b>
+                    <table class="ContentTable">
+                        <TR class="if address"><TD>Address</TD><TD><span class="address"></span></TD></TR>
+                        <TR class="if annote"><TD>Annote</TD><TD><span class="annote"></span></TD></TR>
+                        <TR class="if chapter"><TD>Chapter</TD><TD><span class="chapter"></span></TD></TR>
+                        <TR class="if crossref"><TD>Crossref</TD><TD><span class="crossref"></span></TD></TR>
+                        <TR class="if doi"><TD>DOI</TD><TD><span style="cursor: pointer;" class="doi" onclick="OpenDOI(this);"></span></TD></TR>
+                        <TR class="if edition"><TD>Edition</TD><TD><span class="edition"></span></TD></TR>
+                        <TR class="if editor"><TD>Editor</TD><TD><span class="editor"></span></TD></TR>
+                        <TR class="if howpublished"><TD>How published</TD><TD><span class="howpublished"></span></TD></TR>
+                        <TR class="if institution"><TD>Institution</TD><TD><span class="institution"></span></TD></TR>
+                        <TR class="if isbn"><TD>ISBN</TD><TD><span class="isbn"></span></TD></TR>
+                        <TR class="if journal"><TD>Journal</TD><TD><span class="journal"></span></TD></TR>
+                        <TR class="if key"><TD>Key</TD><TD><span class="key"></span></TD></TR>
+                        <TR class="if month"><TD>Month</TD><TD><span class="month"></span></TD></TR>
+                        <TR class="if note"><TD>Note</TD><TD><span class="note"></span></TD></TR>
+                        <TR class="if number"><TD>Number</TD><TD><span class="number"></span></TD></TR>
+                        <TR class="if pages"><TD>Pages</TD><TD><span class="pages"></span></TD></TR>
+                        <TR class="if publisher"><TD>Publisher</TD><TD><span class="publisher"></span></TD></TR>
+                        <TR class="if school"><TD>School</TD><TD><span class="school"></span></TD></TR>
+                        <TR class="if series"><TD>Series</TD><TD><span class="series"></span></TD></TR>
+                        <TR class="if type"><TD>Type</TD><TD><span class="type"></span></TD></TR>
+                        <TR class="if url"><TD>URL</TD><TD><span style="cursor: pointer;" class="url" onclick="OpenURL(this);"></span></TD></TR>
+                        <TR class="if volume"><TD>Volume</TD><TD><span class="volume"></span></TD></TR>
+                        <TR class="if year"><TD>Year</TD><TD><span class="year"></span></TD></TR>
+                    </table>
+                    <br/>
+                    <div style="position: relative;">
+                    <pre class = "BibTeXRawCodeBlock" onclick="SelectTheText(this)" ondblclick="CopyTheText(this);"><span class="bibtexraw noread"></span></pre>
+                    <a style="display: float;position: absolute; bottom: 0px; right: 5px; font-size: 40px; cursor: pointer;" onclick="CopyThePrevText(this)">&#x2398;</a>
+                    </div>
+                    <p>Search this material in your cloud storage:</p>
+                    <img  style="cursor: pointer; height: 50px;" class="bibtexVar" onclick="OpenFile('+BIBTEXKEY+',1)" extra="BIBTEXKEY" src="images/logo-mega.png"></img>
+                    <img  style="cursor: pointer; height: 50px;" class="bibtexVar" onclick="OpenFile('+BIBTEXKEY+',2)" extra="BIBTEXKEY" src="images/logo-drive.png"></img>
+                </div>
+            </li></ul>
+        </div>
+  
+
+<p></div>
+<div class="modal" id="PutHTMLHere" style= "width: 100%;" >Select an entry to view the complete details here.</div></p>
+
+</div>
+<hr/>
+<br/>
+
+<table style="margin: auto;" ><tr><td>
+<input id="SearchText" type="text" style="border-color: green; background-color : black; color: green; border-style: solid; border-width: 0px 0px 1px 0px; width: 500px;" /></td><td>&nbsp;</td><td><input id="SearchBtn" type="button" value="Search" style="cursor: pointer; border-color: green; border-style: solid; border-width: 1px; background-color: black; color: green;" onclick="SearchClick();"/>
+</td></tr></table>
+<br/>
+<hr>
+<div>
+<table style="font-size: 75%; margin: auto;">
+<tr><td style="padding: 0px 5px;"><img alt="email" src="https://suresh.ml/images/email.png" style="height: 15px;display: block;"/></td><td>gadisureshkumar-at-gmail-dot-com</td><td style="padding: 0px 5px;"><img alt="mobile" src="https://suresh.ml/images/mobile.png" style="height: 15px;display: block;"/></td><td>&#43;52(1)4491820153</td><td style="padding: 0px 5px;"><img alt="fax" src="https://suresh.ml/images/fax.png" style="height: 15px;display: block;"/></td><td>&#43;52(1)8717570153</td><td style="padding: 0px 5px;"><a href="https://orcid.org/0000-0001-7974-7825"><img alt="ORCID" src="https://suresh.ml/images/logos/orcid-logo.png" style="height: 15px;display: block;"/></a></td><td style="padding: 0px 5px;"><a href="https://scholar.google.co.in/citations?user=0000-0001-7974-7825"><img alt="google scholar" src="https://suresh.ml/images/logos/google-scholar.png" style="height: 15px;display: block;"/></a></td><td style="padding: 0px 5px;"><a href="https://mx.linkedin.com/in/skgadi"><img alt="linkedin" src="https://suresh.ml/images/logos/linkedin.png" style="height: 15px;display: block;"/></a></td><td style="padding: 0px 5px;"><a href="https://twitter.com/SureshKumarGadi"><img alt="twitter" src="https://suresh.ml/images/logos/twitter.png" style="height: 15px;display: block;"/></a></td><td style="padding: 0px 5px;"><a href="https://plus.google.com/&#43;SureshKumarGadi"><img alt="google plus" src="https://suresh.ml/images/logos/google-plus.png" style="height: 15px;display: block;"/></a></td><td><a href="https://goo.gl/maps/8NrtjMajSUz"><img alt="maps point" src="https://suresh.ml/images/map.png" style="height: 15px;display: block;"/></a></td></tr><tr>
+<td colspan="12" style="text-align: center;">
+<table><tr>
+<td><img alt="address" src="https://suresh.ml/images/address.png" style="height: 15px;display: block;"/></td>
+<td>Carretera Torreón - Matamoros Km. 7.5, Ciudad Universitaria, Torreón, Coahuila, México, C.P. 27276</td>
+</tr></table>
+</tr></table>
+</div>
+<hr>
+
+<div>
+<table style="font-size: 75%;margin: auto;">
+	<tr>
+		<td>
+			Thanks to&nbsp;
+		</td><td>
+			<img alt="github" src="https://suresh.ml/images/logos/github.png" style="height: 15px;"/>
+		</td><td>
+			<a href="https://github.com/">GitHub</a> and&nbsp;
+		</td><td>
+			<img alt="netlify" src="https://suresh.ml/images/logos/netlify.png" style="height: 15px;"/>
+		</td><td>
+			<a href="https://www.netlify.com/">netlify</a> for providing hosting.
+		</td>
+	</tr><tr>
+	<td colspan="5" style="text-align: center;">Copyright &copy;&nbsp;2017 Suresh Kumar Gadi</td>
+	</tr>
+</table>
+</div>
+</div>
+<script type="text/javascript">
+function SearchClick(){
+	window.open ("https://www.google.com/search?q=" + document.getElementById("SearchText").value+"+site:https:\/\/suresh.ml\/", "_blank");
+}
+document.getElementById("SearchText")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("SearchBtn").click();
+    }
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
