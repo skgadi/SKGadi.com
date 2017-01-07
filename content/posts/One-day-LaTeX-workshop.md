@@ -1,13 +1,17 @@
 +++
+#SEO Data
+Keywords = ["skgadi", "suresh kumar gadi", "control digital"]
+description = "One day workshop on LaTeX conducted by Dr. Suresh Kumar Gadi at the FCA, UAdeC."
+
 date = "2016-06-16T00:00:00-06:00"
-title = "One day LaTeX workshop"
+title = "One day workshop on LaTeX"
 
 +++
 
 This workshop presents an introduction to the programming language LaTeX  for the first time users.
 
 ## Slides
-<iframe height="480" src="https://drive.google.com/file/d/0B6A_I6W9HjBDb29KdUJsZXFYblU/preview" width="100%"></iframe>
+<iframe style= "height: 480px; width: 100%;" src="https://drive.google.com/file/d/0B6A_I6W9HjBDb29KdUJsZXFYblU/preview"></iframe>
 
 ## Other files
 
