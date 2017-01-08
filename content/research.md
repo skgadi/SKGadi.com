@@ -8,7 +8,7 @@ title = "Research"
 +++
 <h1 class="header">Publications</h1>
 
-
+<div>
 <div class="container-fluid">
 	<div class="searchbar">
 		<input style="width: 100%;"type="text" class="Authrozed bibtex_search form-control SKGSearchItem" id="searchbar" placeholder="Search - Example: journal 2015 (finds the intersection of the two terms)"/>
@@ -49,7 +49,6 @@ title = "Research"
 </div>
 
 <div id="bibtex_display">
-  
 		<div class="if bibtex_template" style="display: none;">
 			<ul><li>
 				<a class="SKGListItem" href="#PutHTMLHere" rel="modal:open"><span class="SKGListItem bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY" onclick="DisplayItem('BIBD+BIBTEXKEY+')">
@@ -102,6 +101,6 @@ title = "Research"
 				</div>
 			</li></ul>
 		</div>
-  
 </div>
 <div class="modal" id="PutHTMLHere" style= "width: 100%; display: none;" >Select an entry to view the complete details here.</div>
+</div>
