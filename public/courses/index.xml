@@ -7,25 +7,105 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2017 Suresh Kumar Gadi</copyright>
-    <lastBuildDate>Mon, 04 Jul 2016 23:12:36 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 08 Aug 2016 23:12:36 -0600</lastBuildDate>
     <atom:link href="https://suresh.ml/courses/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Control Digital</title>
+      <title>Circuit analysis 2</title>
       <link>https://suresh.ml/courses/2016-07-12-circuit-analysis-2/</link>
-      <pubDate>Mon, 04 Jul 2016 23:12:36 -0600</pubDate>
+      <pubDate>Mon, 08 Aug 2016 23:12:36 -0600</pubDate>
       
       <guid>https://suresh.ml/courses/2016-07-12-circuit-analysis-2/</guid>
-      <description>&lt;p&gt;Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Control Digital</title>
-      <link>https://suresh.ml/courses/2016-07-12-control-digital/</link>
-      <pubDate>Mon, 04 Jul 2016 23:12:36 -0600</pubDate>
+      <title>Digital control</title>
+      <link>https://suresh.ml/courses/2016-07-12-digital-control/</link>
+      <pubDate>Mon, 08 Aug 2016 23:12:36 -0600</pubDate>
       
-      <guid>https://suresh.ml/courses/2016-07-12-control-digital/</guid>
+      <guid>https://suresh.ml/courses/2016-07-12-digital-control/</guid>
+      <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Automatic control</title>
+      <link>https://suresh.ml/courses/2016-01-06-automatic-control/</link>
+      <pubDate>Mon, 11 Jan 2016 23:12:36 -0600</pubDate>
+      
+      <guid>https://suresh.ml/courses/2016-01-06-automatic-control/</guid>
+      <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Electric machines 2</title>
+      <link>https://suresh.ml/courses/2016-01-06-electric-machines-2/</link>
+      <pubDate>Mon, 11 Jan 2016 23:12:36 -0600</pubDate>
+      
+      <guid>https://suresh.ml/courses/2016-01-06-electric-machines-2/</guid>
+      <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Control theory</title>
+      <link>https://suresh.ml/courses/2015-07-12-control-theory/</link>
+      <pubDate>Tue, 01 Sep 2015 23:12:36 -0600</pubDate>
+      
+      <guid>https://suresh.ml/courses/2015-07-12-control-theory/</guid>
+      <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Digital control</title>
+      <link>https://suresh.ml/courses/2015-07-12-digital-control/</link>
+      <pubDate>Tue, 01 Sep 2015 23:12:36 -0600</pubDate>
+      
+      <guid>https://suresh.ml/courses/2015-07-12-digital-control/</guid>
+      <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Probability and statistics</title>
+      <link>https://suresh.ml/courses/2015-05-08-probability-and-statistics/</link>
+      <pubDate>Fri, 01 May 2015 23:12:36 -0600</pubDate>
+      
+      <guid>https://suresh.ml/courses/2015-05-08-probability-and-statistics/</guid>
+      <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Analog and digital control systems</title>
+      <link>https://suresh.ml/courses/2015-01-04-analog-and-digital-control-systems/</link>
+      <pubDate>Thu, 01 Jan 2015 23:12:36 -0600</pubDate>
+      
+      <guid>https://suresh.ml/courses/2015-01-04-analog-and-digital-control-systems/</guid>
+      <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Industrical robotics</title>
+      <link>https://suresh.ml/courses/2015-01-04-industrical-robotics/</link>
+      <pubDate>Thu, 01 Jan 2015 23:12:36 -0600</pubDate>
+      
+      <guid>https://suresh.ml/courses/2015-01-04-industrical-robotics/</guid>
+      <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Electronics</title>
+      <link>https://suresh.ml/courses/2014-09-12-electronics/</link>
+      <pubDate>Mon, 01 Sep 2014 23:12:36 -0600</pubDate>
+      
+      <guid>https://suresh.ml/courses/2014-09-12-electronics/</guid>
       <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 </description>
     </item>
