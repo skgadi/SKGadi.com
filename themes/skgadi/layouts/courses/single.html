@@ -1,5 +1,5 @@
 {{ partial "header.html" . }}
-<h1>{{ .Title }}</h1>
+<h1 style="margin-bottom:0px;">{{ .Title }}</h1>
 <hr/>
 
 <!--h4>{{ .Date.Format "2-Jan-2006" }}</h4-->
@@ -13,7 +13,7 @@
 	<td style="text-align: left;" >Department</td>
 	<td style="text-align: right;"><a href="GSKDepartmentURL">{{ .Params.GSKDepartment }}</a></td>
 </tr><tr>
-	<td style="text-align: left;" >City</td>
+	<td style="text-align: left;" >Place</td>
 	<td style="text-align: right;">{{ .Params.GSKCity }}</td>
 </tr><tr>
 	<td style="text-align: left;" >Level</td>

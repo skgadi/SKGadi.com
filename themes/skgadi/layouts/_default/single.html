@@ -1,5 +1,5 @@
 {{ partial "header.html" . }}
-<h1>{{ .Title }}</h1>
+<h1 style="margin-bottom:0px;">{{ .Title }}</h1>
 {{- if eq .Section "posts" -}}
 <h4>{{ .Date.Format "Mon, Jan 2, 2006" }}</h4>
 {{- end -}}

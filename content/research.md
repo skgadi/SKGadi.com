@@ -2,11 +2,20 @@
 #SEO Data
 Keywords = ["research", "publications", "articles", "conference"]
 description = "Suresh Kumar Gadi has contributions in 1 journal article and 5 conference proceedings."
-date = "1999-06-01T00:00:00+05:30"
+date = "2017-01-07T00:00:00-06:00"
 title = "Research"
 
 +++
-<h1 class="header">Publications</h1>
+## Research interests
+* Linear and nonlinear systems
+* Optimization
+* Parametric excitation
+
+## Email
+
+Please use the email "research-at-skgadi.com" for research related emails.
+
+## Publications
 
 <div>
 <div class="container-fluid">
@@ -104,3 +113,5 @@ title = "Research"
 </div>
 <div class="modal" id="PutHTMLHere" style= "width: 100%; display: none;" >Select an entry to view the complete details here.</div>
 </div>
+
+<div style="width:100%;text-align:center"><iframe src="https://orcid.org/static/html/widget.html?orcid=0000-0001-7974-7825&t=e50db5&locale=en" frameborder="0" height="310" width="210px" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe></div>

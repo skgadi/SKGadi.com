@@ -7,77 +7,220 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2017 Suresh Kumar Gadi</copyright>
-    <lastBuildDate>Mon, 02 Jan 2017 23:34:04 -0600</lastBuildDate>
+    <lastBuildDate>Sat, 07 Jan 2017 00:00:00 -0600</lastBuildDate>
     <atom:link href="https://suresh.ml/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Variable stiffness mechanism</title>
-      <link>https://suresh.ml/projects/variable-stiffness-mechanism/</link>
-      <pubDate>Mon, 02 Jan 2017 23:34:04 -0600</pubDate>
+      <title>Education</title>
+      <link>https://suresh.ml/work-experience/</link>
+      <pubDate>Sat, 07 Jan 2017 00:00:00 -0600</pubDate>
       
-      <guid>https://suresh.ml/projects/variable-stiffness-mechanism/</guid>
-      <description>&lt;p&gt;In vel ligula tortor. Aliquam erat volutpat.
-Pellentesque at felis eu quam tincidunt dignissim.
-Nulla facilisi.&lt;/p&gt;
-
-&lt;p&gt;Pellentesque tempus nisi et interdum convallis.
-In quam ante, vulputate at massa et, rutrum
-gravida dui. Phasellus tristique libero at ex.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>One day workshop on LaTeX</title>
-      <link>https://suresh.ml/posts/one-day-workshop-on-latex/</link>
-      <pubDate>Thu, 16 Jun 2016 00:00:00 -0600</pubDate>
-      
-      <guid>https://suresh.ml/posts/one-day-workshop-on-latex/</guid>
+      <guid>https://suresh.ml/work-experience/</guid>
       <description>
 
-&lt;p&gt;This workshop presents an introduction to the programming language LaTeX  for the first time users.&lt;/p&gt;
+&lt;h2 id=&#34;universidad-autónoma-de-coahuila&#34;&gt;Universidad Autónoma de Coahuila&lt;/h2&gt;
 
-&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
+&lt;div&gt;
+&lt;table class=&#34;TableWithBorders&#34; style=&#34;width: 95%; margin: auto;&#34;&gt; &lt;tbody&gt;
+&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Position&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;Research professor&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Employer&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;http://www.uadec.mx/&#34;&gt;Universidad Autónoma de Coahuila&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; rowspan=2&gt;Period&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;September 2015 – Till date&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;1 year and 3 months&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Place&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;Torreón&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
 
-&lt;iframe style= &#34;height: 480px; width: 100%;&#34; src=&#34;https://drive.google.com/file/d/0B6A_I6W9HjBDb29KdUJsZXFYblU/preview&#34;&gt;&lt;/iframe&gt;
+&lt;h2 id=&#34;universidad-politécnica-de-aguascalientes&#34;&gt;Universidad Politécnica de Aguascalientes&lt;/h2&gt;
 
-&lt;h2 id=&#34;other-files&#34;&gt;Other files&lt;/h2&gt;
+&lt;div&gt;
+&lt;table class=&#34;TableWithBorders&#34; style=&#34;width: 95%; margin: auto;&#34;&gt; &lt;tbody&gt;
+&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Position&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;Research professor&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Employer&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;http://upa.edu.mx/&#34;&gt;Universidad Politécnica de Aguascalientes&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; rowspan=2&gt;Period&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;September 2014 – August 2015&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;1 year&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Place&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;Aguascalientes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
 
-&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
+&lt;h2 id=&#34;honeywell&#34;&gt;Honeywell&lt;/h2&gt;
 
-&lt;p&gt;A PC with the following software installed. Or having a good Internet connection to work with ShareLaTeX&lt;/p&gt;
+&lt;div&gt;
+&lt;table class=&#34;TableWithBorders&#34; style=&#34;width: 95%; margin: auto;&#34;&gt; &lt;tbody&gt;
+&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Position&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;Test engineer (Project trainee)&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Employer&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://honeywell.com/country/in/About/Pages/HTS.aspx&#34;&gt;Honeywell Technology Solutions Lab&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; rowspan=2&gt;Period&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;September 2008 – July 2009&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;10 months&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Place&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;Bangalore&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
 
-&lt;ol&gt;
-&lt;li&gt;Latest version of TeXLive.&lt;/li&gt;
-&lt;li&gt;A LaTeX IDE (Ex. TeXstudio)&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h3 id=&#34;accomplishments&#34;&gt;Accomplishments&lt;/h3&gt;
 
-&lt;h2 id=&#34;venue&#34;&gt;Venue&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Designed a factory floor tester (FFT) for an HVAC (heating, ventilation, and air conditioning) controller. The device under test (DUT) (i.e. HVAC controller) is placed inside an FFT. The FFT needs to verify all the specifications of the HVAC controller, like digital &amp;amp; analog inputs and outputs, Light emitting diodes (LED), resistance measurement etc. This is the final test done by the manufacturer before packing.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;Facultad de Contaduría y Administración, Blvd. Revolución 151 Ote., Torreón, CP 2700&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Designed the software part of the FFT for a Remote monitoring unit (RMU)&lt;/p&gt;&lt;/li&gt;
 
-&lt;h2 id=&#34;time&#34;&gt;Time&lt;/h2&gt;
+&lt;li&gt;&lt;p&gt;Tested many electronic devices for sending a feedback to the designing section and also performed tests to prepare the products to the standards of CE (Conformité Européenne) and FCC (Federal Communications Commission). These tests include testing the specifications, the temperature range, the humidity range, the mechanical shock range, the radiation immunity range etc.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;9AM to 2PM on 16th June 2016&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Control Digital</title>
-      <link>https://suresh.ml/courses/2016-07-12-Control%20Digital/</link>
-      <pubDate>Sun, 03 Jan 2016 23:12:36 -0600</pubDate>
-      
-      <guid>https://suresh.ml/courses/2016-07-12-Control%20Digital/</guid>
-      <description>&lt;p&gt;Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here.&lt;/p&gt;
+&lt;h2 id=&#34;schlumberger&#34;&gt;Schlumberger&lt;/h2&gt;
+
+&lt;div&gt;
+&lt;table class=&#34;TableWithBorders&#34; style=&#34;width: 95%; margin: auto;&#34;&gt; &lt;tbody&gt;
+&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Position&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;Field specialist&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Employer&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;http://www.slb.com/&#34;&gt;Schlumberger Limited&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; rowspan=2&gt;Period&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;December 2005 – July 2007&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;1 year 7 months&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Place&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;Kakinada&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Memories&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/file/d/0B6A_I6W9HjBDZnhURWNNYkJPbGs/view&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;accomplishments-1&#34;&gt;Accomplishments&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Obtained Schlumberger&amp;rsquo;s Xpert certification in SWT. SWT is a testing process of an oil well usually performed on an oil rig, which starts at flow head and runs all the way to burners. Since SWT crew is responsible for bringing the oil to the surface for the first time, the safety of the personnel, the oil-well and the equipment is of very high priority.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Xpert certification includes a training on the selection of equipment for a given SWT project. Since offshore rigs are having limited space on deck, planning the right amount of the spares for immediate on-site maintenance is required to reduce the down time of the oil rig. Click here to see the original certificate&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Have experience in operating and maintaining the SWT equipment like flow-head, sand filter, choke manifold, heat exchanger, separator, surge tank, burner etc. Also, got trained in operating and maintaining pressure gauges, temperature gauges, and pressure recording devices of different models.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Performed in-house inspection for the SWT equipment.
+Worked with the SWT teams at many offshore and onshore including some HTHP (high temperature and high pressure) wells.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;appreciation&#34;&gt;Appreciation&lt;/h3&gt;
+
+&lt;p&gt;Dennis MCrystal, instructor at Schlumberger’s ELC (European learning center), Paris in the year 2006 commented:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Suresh has been a consistent performer during the course. He is very good at putting theory into practice and gets the job done in a professional and safe manner (proactive as safety officer). He is very motivated and dedicated and this shows in his results. His reporting skills are very strong which proves good attention to the finer details. He could be more assertive and openly confident in his abilities. With experience and confidence, he could be a key figure in the SWT (Surface Well Test) crew.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;larsen-toubro-limited-ecc-division&#34;&gt;Larsen &amp;amp; Toubro Limited – ECC Division&lt;/h2&gt;
+
+&lt;div&gt;
+&lt;table class=&#34;TableWithBorders&#34; style=&#34;width: 95%; margin: auto;&#34;&gt; &lt;tbody&gt;
+&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Position&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;Engineer (Electrical)&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Employer&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;http://www.lntecc.com/&#34;&gt;Larsen &amp; Toubro Limited – ECC Division&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; rowspan=2&gt;Period&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;July 2002 – November 2005&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;3 years and 5 months&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Place&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;New Delhi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;accomplishments-2&#34;&gt;Accomplishments&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Construction of the 66 KV double circuit transmission lines at Bawana, Delhi&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Supervised the complete site work and undertook the planning part of the site.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Responsible for generating reports to the higher management like job cost report (JCR) and material reconciliation report etc.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Handled the sub-contractor and client billing. Followed up client billing until the accountant receives the check from the client.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Responsible for generating the reports tallying the work done (or the material supplied), the remaining work (or the remaining material to be supplied), the amendment required, the work billed for the subcontract (the amount paid to the suppliers) and the invoiced work to the client (or the invoiced material to the client).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Developed a software in FoxPro to reconcile the site data where the material consumed by a subcontractor was easily tracked. This software generates reports in a user-friendly way (MS Excel and HTML), which was of great use since the software used by the company was lacking the certain functionality to track the material based on the work done.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Developed another software to generate a stringing chart based on a statistical analysis performed on the data received from the R&amp;amp;D department.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Railway electrification project from Ludhiana to Amritsar in Punjab&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Along with a senior staff supervised foundation and erection of masts, stringing of catenary and contact conductor, erection of ATD (auto tension device) and other accessories.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Construction of the 132 KV double circuit transmission lines at Jodhpur, Rajasthan&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Along with a senior staff supervised foundation, erection, and stringing of the transmission line tower. The site work also includes handling client visits at the site.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Responsible for maintaining the material consumption reports and tallying with the store records.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Research</title>
       <link>https://suresh.ml/research/</link>
-      <pubDate>Tue, 01 Jun 1999 00:00:00 +0530</pubDate>
+      <pubDate>Sat, 07 Jan 2017 00:00:00 -0600</pubDate>
       
       <guid>https://suresh.ml/research/</guid>
-      <description>&lt;h1 class=&#34;header&#34;&gt;Publications&lt;/h1&gt;
+      <description>
+
+&lt;h2 id=&#34;research-interests&#34;&gt;Research interests&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Linear and nonlinear systems&lt;/li&gt;
+&lt;li&gt;Optimization&lt;/li&gt;
+&lt;li&gt;Parametric excitation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;email&#34;&gt;Email&lt;/h2&gt;
+
+&lt;p&gt;Please use the email &amp;ldquo;research-at-skgadi.com&amp;rdquo; for research related emails.&lt;/p&gt;
+
+&lt;h2 id=&#34;publications&#34;&gt;Publications&lt;/h2&gt;
 
 &lt;div&gt;
 &lt;div class=&#34;container-fluid&#34;&gt;
@@ -175,16 +318,277 @@ gravida dui. Phasellus tristique libero at ex.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;modal&#34; id=&#34;PutHTMLHere&#34; style= &#34;width: 100%; display: none;&#34; &gt;Select an entry to view the complete details here.&lt;/div&gt;
 &lt;/div&gt;
+
+&lt;div style=&#34;width:100%;text-align:center&#34;&gt;&lt;iframe src=&#34;https://orcid.org/static/html/widget.html?orcid=0000-0001-7974-7825&amp;t=e50db5&amp;locale=en&#34; frameborder=&#34;0&#34; height=&#34;310&#34; width=&#34;210px&#34; vspace=&#34;0&#34; hspace=&#34;0&#34; marginheight=&#34;5&#34; marginwidth=&#34;5&#34; scrolling=&#34;no&#34; allowtransparency=&#34;true&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
 </description>
     </item>
     
     <item>
-      <title>Secondary school certificate (SSC)</title>
+      <title>Variable stiffness mechanism</title>
+      <link>https://suresh.ml/projects/variable-stiffness-mechanism/</link>
+      <pubDate>Mon, 02 Jan 2017 23:34:04 -0600</pubDate>
+      
+      <guid>https://suresh.ml/projects/variable-stiffness-mechanism/</guid>
+      <description>
+
+&lt;h2 id=&#34;status&#34;&gt;Status&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Waiting for the funds&lt;/li&gt;
+&lt;li&gt;Project is submitted to PRODEP.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Control Digital</title>
+      <link>https://suresh.ml/courses/2016-07-12-circuit-analysis-2/</link>
+      <pubDate>Mon, 04 Jul 2016 23:12:36 -0600</pubDate>
+      
+      <guid>https://suresh.ml/courses/2016-07-12-circuit-analysis-2/</guid>
+      <description>&lt;p&gt;Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here. Content is here.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Control Digital</title>
+      <link>https://suresh.ml/courses/2016-07-12-control-digital/</link>
+      <pubDate>Mon, 04 Jul 2016 23:12:36 -0600</pubDate>
+      
+      <guid>https://suresh.ml/courses/2016-07-12-control-digital/</guid>
+      <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>One day workshop on LaTeX</title>
+      <link>https://suresh.ml/posts/one-day-workshop-on-latex/</link>
+      <pubDate>Thu, 16 Jun 2016 00:00:00 -0600</pubDate>
+      
+      <guid>https://suresh.ml/posts/one-day-workshop-on-latex/</guid>
+      <description>
+
+&lt;p&gt;This workshop presents an introduction to the programming language LaTeX  for the first time users.&lt;/p&gt;
+
+&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
+
+&lt;iframe style= &#34;height: 480px; width: 100%;&#34; src=&#34;https://drive.google.com/file/d/0B6A_I6W9HjBDb29KdUJsZXFYblU/preview&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;other-files&#34;&gt;Other files&lt;/h2&gt;
+
+&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
+
+&lt;p&gt;A PC with the following software installed. Or having a good Internet connection to work with ShareLaTeX&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Latest version of TeXLive.&lt;/li&gt;
+&lt;li&gt;A LaTeX IDE (Ex. TeXstudio)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;venue&#34;&gt;Venue&lt;/h2&gt;
+
+&lt;p&gt;Facultad de Contaduría y Administración, Blvd. Revolución 151 Ote., Torreón, CP 2700&lt;/p&gt;
+
+&lt;h2 id=&#34;time&#34;&gt;Time&lt;/h2&gt;
+
+&lt;p&gt;9AM to 2PM on 16th June 2016&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Education</title>
       <link>https://suresh.ml/education/</link>
-      <pubDate>Tue, 01 Jun 1999 00:00:00 +0530</pubDate>
+      <pubDate>Tue, 20 May 2014 00:00:00 -0600</pubDate>
       
       <guid>https://suresh.ml/education/</guid>
-      <description></description>
+      <description>
+
+&lt;h2 id=&#34;doctorate-in-science-in-the-specialization-of-automatic-control&#34;&gt;Doctorate in science in the specialization of automatic control&lt;/h2&gt;
+
+&lt;div&gt;
+&lt;table class=&#34;TableWithBorders&#34; style=&#34;width: 95%; margin: auto;&#34;&gt; &lt;tbody&gt;
+&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Degree&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;Doctorate in Science in the specialization of Automatic Control&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;University&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;http://www.cinvestav.mx/&#34;&gt;Cinvestav-IPN&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Period&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;September 2009 - May 2014&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Place&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;Mexico City&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Thesis&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDWTd0SVZETTZuaFU&#34; &gt; Modelado y control de un dispositivo de aumento de fuerza&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Provisional certificate&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDTjJ0VzV3ZkR5T1U&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Marksheet&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDMHJLYWxNSXdBXzQ&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Presentation&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=fBwp6RlxkrM&#34; &gt;&lt;img src=&#34;../images/video.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;master-of-technology-in-sensor-system-technology&#34;&gt;Master of technology in Sensor System Technology&lt;/h2&gt;
+
+&lt;div&gt;
+&lt;table class=&#34;TableWithBorders&#34; style=&#34;width: 95%; margin: auto;&#34;&gt; &lt;tbody&gt;
+&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Degree&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;M. Tech. (Master of technology) in Sensor System Technology&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;University&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;http://www.vit.ac.in/&#34;&gt;VIT (Vellore institute of technology) University&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Period&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;July 2007 - May 2009&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Place&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;Vellore&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Thesis&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDN0ZfQ3BtZGVhNVE&#34;&gt;Designing a factory floor tester for a heating ventilation and air conditioning (HVAC) controller and a remote monitoring unit (RMU)&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Merit award&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDV0d6aFplU1A2MEE&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; rowspan=&#34;4&#34; &gt;Mini projects&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;System identification by capturing real-time data&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDS2gtSGJYQUs3a0E&#34;&gt;Tilt measurement using a micro-electromechanical system (MEMS) accelerometer with LabVIEW.&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDbVVoT2g1bXluWUE&#34;&gt;Implementation of a transducer electronic data sheet (TEDS).&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;Microcomputer-based strain measurement&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Degree certificate&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDQkJYM3ZDWm9zMjQ&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34;rowspan=&#34;5&#34; &gt;marksheets&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDRTVrNV9Fd0k4NmM&#34;&gt;Overall&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDRTBadXZEVjJMYW8&#34;&gt;Semester IV&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDOERfZ2JPTmU1U28&amp;&#34;&gt;Semester III&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDWkc2WGljWUhDVlk&amp;&#34;&gt;Semester II&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDSl9UdG5wX2FMemc&#34;&gt;Semester I&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Provisional certificate&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDYUVrLVlsRjgzczg&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Course completion certificate&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDWDVmOGtLTXVIUFU&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Transfer certificate&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDMGJodWpfOWNfSms&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;associate-member-of-the-institution-of-engineers-india-amie&#34;&gt;Associate member of the institution of engineers (India) – AMIE&lt;/h2&gt;
+
+&lt;div&gt;
+&lt;table class=&#34;TableWithBorders&#34; style=&#34;width: 95%; margin: auto;&#34;&gt; &lt;tbody&gt;
+&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Degree&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;Associate member of the institution of engineers (India) – AMIE&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;University&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://ieindia.org/&#34;&gt;The Institution of Engineers (India)&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Period&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;June 2003 – June 2006&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Project&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDUXpzckhwdHhzcEk&#34;&gt;Erection of 66 KV double circuit (D/C) transmission line (TL) and it&#39;s accessories&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;GATE&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDaEx3UmpHTU5nbDQ&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; rowspan=&#34;2&#34; &gt;Memberships&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDc1FfX05Ua0NjZWs&#34;&gt;Associate&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDdlJDSGNYQkk3LU0&#34;&gt;Graduate&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Degree certificate&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDVXZ6di1wUUR0WFk&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; rowspan=&#34;2&#34;&gt;Marksheets&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDN2t3UHJQVWcxRTA&#34;&gt;Section B&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDZlpSTkVzVjUzcGc&#34;&gt;Section A&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;diploma-in-electrical-and-electronics-engineering-deee&#34;&gt;Diploma in electrical and electronics engineering (DEEE)&lt;/h2&gt;
+
+&lt;div&gt;
+&lt;table class=&#34;TableWithBorders&#34; style=&#34;width: 95%; margin: auto;&#34;&gt; &lt;tbody&gt;
+&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Degree&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;Diploma in electrical and electronics engineering (DEEE)&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;College&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;Government polytechnic college&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Period&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;May 1999 – April 2002&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Place&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;Visakhapatnam&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Degree certificate&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDbGV0a3pycmlrLWc&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; rowspan=&#34;3&#34;&gt;Marksheets&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDRFhZcFJuWFVwTU0&#34;&gt;Third year&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDRlVyc1ZvMklaWTA&#34;&gt;Second year&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDbGlpN19kelhfYmM&#34;&gt;First year&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Study certificate&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDMUpOUXpTdlJGVUU&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Transfer certificate&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDR28wVGVfYzlJWlk&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;secondary-school-certificate-ssc&#34;&gt;Secondary school certificate (SSC)&lt;/h2&gt;
+
+&lt;p&gt;&lt;div&gt;
+&lt;table class=&#34;TableWithBorders&#34; style=&#34;width: 95%; margin: auto;&#34;&gt; &lt;tbody&gt;
+&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Degree&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;Secondary school certificate (SSC)&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;School&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;Ramakrishna residential public school&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Obtained&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;June 1999&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Place&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;Visakhapatnam&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+    &lt;td style=&#34;text-align: left;&#34; &gt;Marksheet&lt;/td&gt;
+    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDMzB0Y05yUnByQms&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

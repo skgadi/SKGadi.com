@@ -1,13 +1,13 @@
 +++
+#SEO Data
+Keywords = ["variable stiffness mechanism", "projects", "control digital"]
+description = "variable stiffness mechanism"
 date = "2017-01-02T23:34:04-06:00"
 title = "Variable stiffness mechanism"
 
 +++
 
-In vel ligula tortor. Aliquam erat volutpat.
-Pellentesque at felis eu quam tincidunt dignissim.
-Nulla facilisi.
+## Status
 
-Pellentesque tempus nisi et interdum convallis.
-In quam ante, vulputate at massa et, rutrum
-gravida dui. Phasellus tristique libero at ex.
+* Waiting for the funds
+* Project is submitted to PRODEP.
