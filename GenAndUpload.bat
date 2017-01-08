@@ -1,2 +1,0 @@
-GeneratePages
-UploadToGitHub

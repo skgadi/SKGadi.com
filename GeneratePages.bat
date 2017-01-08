@@ -1,1 +1,2 @@
 hugo --cleanDestinationDir
+pause
