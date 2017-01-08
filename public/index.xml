@@ -319,6 +319,8 @@ Worked with the SWT teams at many offshore and onshore including some HTHP (high
 &lt;div class=&#34;modal&#34; id=&#34;PutHTMLHere&#34; style= &#34;width: 100%; display: none;&#34; &gt;Select an entry to view the complete details here.&lt;/div&gt;
 &lt;/div&gt;
 
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
+
 &lt;div style=&#34;width:100%;text-align:center&#34;&gt;&lt;iframe src=&#34;https://orcid.org/static/html/widget.html?orcid=0000-0001-7974-7825&amp;t=e50db5&amp;locale=en&#34; frameborder=&#34;0&#34; height=&#34;310&#34; width=&#34;210px&#34; vspace=&#34;0&#34; hspace=&#34;0&#34; marginheight=&#34;5&#34; marginwidth=&#34;5&#34; scrolling=&#34;no&#34; allowtransparency=&#34;true&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
 </description>
     </item>

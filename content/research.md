@@ -114,4 +114,6 @@ Please use the email "research-at-skgadi.com" for research related emails.
 <div class="modal" id="PutHTMLHere" style= "width: 100%; display: none;" >Select an entry to view the complete details here.</div>
 </div>
 
+<br/><br/>
+
 <div style="width:100%;text-align:center"><iframe src="https://orcid.org/static/html/widget.html?orcid=0000-0001-7974-7825&t=e50db5&locale=en" frameborder="0" height="310" width="210px" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe></div>
