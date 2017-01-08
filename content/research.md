@@ -8,38 +8,35 @@ title = "Research"
 +++
 <h1 class="header">Publications</h1>
 
+
 <div class="container-fluid">
 	<div class="searchbar">
-		<div style="float:left;">
-			<button type="button" class="btn btn-default" onclick="reset()">Reset</button>
-		</div>
-		<div style="float:left;">
-			<select id="authorselectfirst" class="btn bibtex_search bibtex_author" style="border: 1px solid lightgrey;" extra="first" search="author">
-			  <option value="">Search First Author</option>
-			</select>
-		</div>
-		<div style="float:left;">
-			<select id="authorselect" class="btn bibtex_search bibtex_author" style="border: 1px solid lightgrey;" search="author">
-			  <option value="">Search Author</option>
-			</select>
-		</div>
-		<div style="float:left;">
-			<select id="topicselect" class="btn bibtex_search" style="border: 1px solid lightgrey;">
-			  <option value="">Search Topic</option>
-			  <!-- Add topic values here -->
-			  <option value="Example topic">Example Topic</option>
-			</select>
-		</div>
-		<div style="float:left;">
-			<input type="text" class="bibtex_search form-control" id="searchbar" placeholder="Search publications">
-			<span class="help-block">Example: journal 2015 (finds the intersection of the two terms)</span>
-		</div>
+		<input style="width: 100%;"type="text" class="Authrozed bibtex_search form-control SKGSearchItem" id="searchbar" placeholder="Search - Example: journal 2015 (finds the intersection of the two terms)"/>
+		<br/><br/>
+	<table style="margin: auto;"><tr>
+	<td>
+		<select id="authorselectfirst" class="btn bibtex_search bibtex_author ResearchSearchItem" extra="first" search="author">
+			<option value="">Search First Author</option>
+		</select>
+	</td><td>
+		<select id="authorselect" class="btn bibtex_search bibtex_author ResearchSearchItem" search="author">
+			<option value="">Search Author</option>
+		</select>
+	</td><td>
+		<select id="topicselect" class="btn bibtex_search ResearchSearchItem" >
+			<option value="">Search Topic</option>
+			<!-- Add topic values here -->
+			<option value="force|torque|acceleration">Mechanical</option>
+			<option value="electric|electrical|electronic|electronic|capacitor|solar|power|energy|voltage|current">Electrical & electronics</option>
+			<option value="control|PID|stability|analysis">Control</option>
+		</select>
+	</td><td>
+		<button type="button" class="btn btn-default ResearchSearchItem" onclick="reset()">Reset</button>
+	</td>
+	</tr></table>
 	</div>
 </div>
-<br/><br/><br/>
-
-
-
+<br/>
 
 <div class="bibtex_structure">
   <div class="group year" extra="ASC number">
@@ -55,7 +52,7 @@ title = "Research"
   
 		<div class="if bibtex_template" style="display: none;">
 			<ul><li>
-				<a href="#PutHTMLHere" rel="modal:open"><span class="SKGListItem bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY" onclick="DisplayItem('BIBD+BIBTEXKEY+')">
+				<a class="SKGListItem" href="#PutHTMLHere" rel="modal:open"><span class="SKGListItem bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY" onclick="DisplayItem('BIBD+BIBTEXKEY+')">
 					<span class="if title"><span class="title"></span>.</span>
 					<span class="if author"><em><span class="author"></span></em>.</span>
 					<span class="if edition">Edition: <span class="edition"></span>.</span>
@@ -100,14 +97,11 @@ title = "Research"
 					<br/>
 					<div style="position: relative;">
 					<pre class = "BibTeXRawCodeBlock" onclick="SelectTheText(this)" ondblclick="CopyTheText(this);"><span class="bibtexraw noread"></span></pre>
-					<a style="display: float;position: absolute; bottom: 0px; right: 5px; font-size: 40px; cursor: pointer;" onclick="CopyThePrevText(this)">&#x2398;</a>
+					<a class="Icon" style="display: float;position: absolute; bottom: 0px; right: 5px; font-size: 40px; cursor: pointer;" onclick="CopyThePrevText(this)">&#x2398;</a>
 					</div>
-					<p>Search this material in your cloud storage:</p>
-					<img  style="cursor: pointer; height: 50px;" class="bibtexVar" onclick="OpenFile('+BIBTEXKEY+',1)" extra="BIBTEXKEY" src="images/logo-mega.png"></img>
-					<img  style="cursor: pointer; height: 50px;" class="bibtexVar" onclick="OpenFile('+BIBTEXKEY+',2)" extra="BIBTEXKEY" src="images/logo-drive.png"></img>
 				</div>
 			</li></ul>
 		</div>
   
 </div>
-<div class="modal" id="PutHTMLHere" style= "width: 100%;" >Select an entry to view the complete details here.</div>
+<div class="modal" id="PutHTMLHere" style= "width: 100%; display: none;" >Select an entry to view the complete details here.</div>

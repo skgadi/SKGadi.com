@@ -81,36 +81,32 @@ gravida dui. Phasellus tristique libero at ex.&lt;/p&gt;
 
 &lt;div class=&#34;container-fluid&#34;&gt;
     &lt;div class=&#34;searchbar&#34;&gt;
-        &lt;div style=&#34;float:left;&#34;&gt;
-            &lt;button type=&#34;button&#34; class=&#34;btn btn-default&#34; onclick=&#34;reset()&#34;&gt;Reset&lt;/button&gt;
-        &lt;/div&gt;
-        &lt;div style=&#34;float:left;&#34;&gt;
-            &lt;select id=&#34;authorselectfirst&#34; class=&#34;btn bibtex_search bibtex_author&#34; style=&#34;border: 1px solid lightgrey;&#34; extra=&#34;first&#34; search=&#34;author&#34;&gt;
-              &lt;option value=&#34;&#34;&gt;Search First Author&lt;/option&gt;
-            &lt;/select&gt;
-        &lt;/div&gt;
-        &lt;div style=&#34;float:left;&#34;&gt;
-            &lt;select id=&#34;authorselect&#34; class=&#34;btn bibtex_search bibtex_author&#34; style=&#34;border: 1px solid lightgrey;&#34; search=&#34;author&#34;&gt;
-              &lt;option value=&#34;&#34;&gt;Search Author&lt;/option&gt;
-            &lt;/select&gt;
-        &lt;/div&gt;
-        &lt;div style=&#34;float:left;&#34;&gt;
-            &lt;select id=&#34;topicselect&#34; class=&#34;btn bibtex_search&#34; style=&#34;border: 1px solid lightgrey;&#34;&gt;
-              &lt;option value=&#34;&#34;&gt;Search Topic&lt;/option&gt;
-              &lt;!-- Add topic values here --&gt;
-              &lt;option value=&#34;Example topic&#34;&gt;Example Topic&lt;/option&gt;
-            &lt;/select&gt;
-        &lt;/div&gt;
-        &lt;div style=&#34;float:left;&#34;&gt;
-            &lt;input type=&#34;text&#34; class=&#34;bibtex_search form-control&#34; id=&#34;searchbar&#34; placeholder=&#34;Search publications&#34;&gt;
-            &lt;span class=&#34;help-block&#34;&gt;Example: journal 2015 (finds the intersection of the two terms)&lt;/span&gt;
-        &lt;/div&gt;
+        &lt;input style=&#34;width: 100%;&#34;type=&#34;text&#34; class=&#34;Authrozed bibtex_search form-control SKGSearchItem&#34; id=&#34;searchbar&#34; placeholder=&#34;Search - Example: journal 2015 (finds the intersection of the two terms)&#34;/&gt;
+        &lt;br/&gt;&lt;br/&gt;
+    &lt;table style=&#34;margin: auto;&#34;&gt;&lt;tr&gt;
+    &lt;td&gt;
+        &lt;select id=&#34;authorselectfirst&#34; class=&#34;btn bibtex_search bibtex_author ResearchSearchItem&#34; extra=&#34;first&#34; search=&#34;author&#34;&gt;
+            &lt;option value=&#34;&#34;&gt;Search First Author&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/td&gt;&lt;td&gt;
+        &lt;select id=&#34;authorselect&#34; class=&#34;btn bibtex_search bibtex_author ResearchSearchItem&#34; search=&#34;author&#34;&gt;
+            &lt;option value=&#34;&#34;&gt;Search Author&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/td&gt;&lt;td&gt;
+        &lt;select id=&#34;topicselect&#34; class=&#34;btn bibtex_search ResearchSearchItem&#34; &gt;
+            &lt;option value=&#34;&#34;&gt;Search Topic&lt;/option&gt;
+            &lt;!-- Add topic values here --&gt;
+            &lt;option value=&#34;force|torque|acceleration&#34;&gt;Mechanical&lt;/option&gt;
+            &lt;option value=&#34;electric|electrical|electronic|electronic|capacitor|solar|power|energy|voltage|current&#34;&gt;Electrical &amp; electronics&lt;/option&gt;
+            &lt;option value=&#34;control|PID|stability|analysis&#34;&gt;Control&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/td&gt;&lt;td&gt;
+        &lt;button type=&#34;button&#34; class=&#34;btn btn-default ResearchSearchItem&#34; onclick=&#34;reset()&#34;&gt;Reset&lt;/button&gt;
+    &lt;/td&gt;
+    &lt;/tr&gt;&lt;/table&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
-
-
-
+&lt;br/&gt;
 
 &lt;div class=&#34;bibtex_structure&#34;&gt;
   &lt;div class=&#34;group year&#34; extra=&#34;ASC number&#34;&gt;
@@ -126,7 +122,7 @@ gravida dui. Phasellus tristique libero at ex.&lt;/p&gt;
   
         &lt;div class=&#34;if bibtex_template&#34; style=&#34;display: none;&#34;&gt;
             &lt;ul&gt;&lt;li&gt;
-                &lt;a href=&#34;#PutHTMLHere&#34; rel=&#34;modal:open&#34;&gt;&lt;span class=&#34;SKGListItem bibtexVar&#34; id=&#34;bib+BIBTEXKEY+&#34; extra=&#34;BIBTEXKEY&#34; onclick=&#34;DisplayItem(&#39;BIBD+BIBTEXKEY+&#39;)&#34;&gt;
+                &lt;a class=&#34;SKGListItem&#34; href=&#34;#PutHTMLHere&#34; rel=&#34;modal:open&#34;&gt;&lt;span class=&#34;SKGListItem bibtexVar&#34; id=&#34;bib+BIBTEXKEY+&#34; extra=&#34;BIBTEXKEY&#34; onclick=&#34;DisplayItem(&#39;BIBD+BIBTEXKEY+&#39;)&#34;&gt;
                     &lt;span class=&#34;if title&#34;&gt;&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;.&lt;/span&gt;
                     &lt;span class=&#34;if author&#34;&gt;&lt;em&gt;&lt;span class=&#34;author&#34;&gt;&lt;/span&gt;&lt;/em&gt;.&lt;/span&gt;
                     &lt;span class=&#34;if edition&#34;&gt;Edition: &lt;span class=&#34;edition&#34;&gt;&lt;/span&gt;.&lt;/span&gt;
@@ -171,18 +167,15 @@ gravida dui. Phasellus tristique libero at ex.&lt;/p&gt;
                     &lt;br/&gt;
                     &lt;div style=&#34;position: relative;&#34;&gt;
                     &lt;pre class = &#34;BibTeXRawCodeBlock&#34; onclick=&#34;SelectTheText(this)&#34; ondblclick=&#34;CopyTheText(this);&#34;&gt;&lt;span class=&#34;bibtexraw noread&#34;&gt;&lt;/span&gt;&lt;/pre&gt;
-                    &lt;a style=&#34;display: float;position: absolute; bottom: 0px; right: 5px; font-size: 40px; cursor: pointer;&#34; onclick=&#34;CopyThePrevText(this)&#34;&gt;&amp;#x2398;&lt;/a&gt;
+                    &lt;a class=&#34;Icon&#34; style=&#34;display: float;position: absolute; bottom: 0px; right: 5px; font-size: 40px; cursor: pointer;&#34; onclick=&#34;CopyThePrevText(this)&#34;&gt;&amp;#x2398;&lt;/a&gt;
                     &lt;/div&gt;
-                    &lt;p&gt;Search this material in your cloud storage:&lt;/p&gt;
-                    &lt;img  style=&#34;cursor: pointer; height: 50px;&#34; class=&#34;bibtexVar&#34; onclick=&#34;OpenFile(&#39;+BIBTEXKEY+&#39;,1)&#34; extra=&#34;BIBTEXKEY&#34; src=&#34;images/logo-mega.png&#34;&gt;&lt;/img&gt;
-                    &lt;img  style=&#34;cursor: pointer; height: 50px;&#34; class=&#34;bibtexVar&#34; onclick=&#34;OpenFile(&#39;+BIBTEXKEY+&#39;,2)&#34; extra=&#34;BIBTEXKEY&#34; src=&#34;images/logo-drive.png&#34;&gt;&lt;/img&gt;
                 &lt;/div&gt;
             &lt;/li&gt;&lt;/ul&gt;
         &lt;/div&gt;
   
 
 &lt;p&gt;&lt;/div&gt;
-&lt;div class=&#34;modal&#34; id=&#34;PutHTMLHere&#34; style= &#34;width: 100%;&#34; &gt;Select an entry to view the complete details here.&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;modal&#34; id=&#34;PutHTMLHere&#34; style= &#34;width: 100%; display: none;&#34; &gt;Select an entry to view the complete details here.&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     

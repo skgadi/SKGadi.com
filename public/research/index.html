@@ -32,8 +32,24 @@
 	
 	<link rel="stylesheet" href="https://suresh.ml/css/main.css">
 	<link rel="icon" type="image/png" href="https://suresh.ml/images/favicon.png">
-	
-	
+	<style>
+		::-webkit-input-placeholder {  
+			color:    green;
+			opacity:  0.5;
+		}
+		:-moz-placeholder {  
+		   color:    green;
+		   opacity:  0.5;
+		}
+		::-moz-placeholder {  
+		   color:    green;
+		   opacity:  0.5;
+		}
+		:-ms-input-placeholder {  
+		   color:    green;
+		   opacity:  0.5;
+		}
+	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://suresh.ml/js/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
 	<bibtex src="https://suresh.ml/bibtex/publications.bib"></bibtex>
@@ -254,23 +270,62 @@ function wait(ms){
 	    #bibtex_errors { margin-top:10px; color: red;}
 	    h1.header {margin-left:8px;}
 	    h1.YEAR { font-size: 17px; font-weight: bold; display: inline; margin-left:8px;}
-	.SKGListItem {
-		text-align: justify;
-		display: block;
-		background-color: #0a0a0a;
-		border-left: 1px solid lightgreen;
-		border-right: 1px solid lightgreen;
-		padding: 0px 5px;
-		text-decoration:none;
-		cursor: pointer;
-		-webkit-transition-duration: 0.4s;  
-		transition-duration: 0.4s;
-	}
-	.SKGListItem:hover {
-		border-left: 1px solid green;
-		border-right: 1px solid green;
-		background-color: #1a1a1a;
-	}
+		.SKGListItem {
+			text-align: justify;
+			display: block;
+			
+			 
+			padding: 0px 5px;
+			text-decoration: none;
+			cursor: pointer;
+			-webkit-transition-duration: 0.4s;  
+			transition-duration: 0.4s;
+		}
+		.SKGListItem:hover {
+			 
+			background-color: #111;
+		}
+		a.SKGListItem:hover{
+			text-decoration: none;
+			font-weight: normal;
+			border: 0px solid green;
+			background-color: #111;
+		}
+		.BibTeXRawCodeBlock {
+			white-space: pre-wrap;        
+			white-space: -moz-pre-wrap;   
+			white-space: -pre-wrap;       
+			white-space: -o-pre-wrap;     
+			word-wrap: break-word;        
+		}
+		.BibTeXRawCodeBlock {
+			border: 2px solid green;
+			padding: 5px;
+			word-wrap: break-word;
+			background: #000;
+			margin: 0px;
+		}
+		.BibTeXRawCodeBlock:hover {
+			background: #0a0a0a;
+		}
+		table.ContentTable  {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		table.ContentTable, table.ContentTable th, table.ContentTable td {
+			padding: 5px;
+			border: 2px solid green;
+		}
+		
+		table.ContentTable tr:nth-child(even) {background: #111}
+		table.ContentTable tr:nth-child(odd) {background: #000}
+		table.ContentTable tr:hover {background: #222}
+		
+		a.Icon {
+			text-decoration: none;
+		}
+
 
     </style></head>
 <body>
@@ -330,36 +385,32 @@ function wait(ms){
 
 <div class="container-fluid">
     <div class="searchbar">
-        <div style="float:left;">
-            <button type="button" class="btn btn-default" onclick="reset()">Reset</button>
-        </div>
-        <div style="float:left;">
-            <select id="authorselectfirst" class="btn bibtex_search bibtex_author" style="border: 1px solid lightgrey;" extra="first" search="author">
-              <option value="">Search First Author</option>
-            </select>
-        </div>
-        <div style="float:left;">
-            <select id="authorselect" class="btn bibtex_search bibtex_author" style="border: 1px solid lightgrey;" search="author">
-              <option value="">Search Author</option>
-            </select>
-        </div>
-        <div style="float:left;">
-            <select id="topicselect" class="btn bibtex_search" style="border: 1px solid lightgrey;">
-              <option value="">Search Topic</option>
-              <!-- Add topic values here -->
-              <option value="Example topic">Example Topic</option>
-            </select>
-        </div>
-        <div style="float:left;">
-            <input type="text" class="bibtex_search form-control" id="searchbar" placeholder="Search publications">
-            <span class="help-block">Example: journal 2015 (finds the intersection of the two terms)</span>
-        </div>
+        <input style="width: 100%;"type="text" class="Authrozed bibtex_search form-control SKGSearchItem" id="searchbar" placeholder="Search - Example: journal 2015 (finds the intersection of the two terms)"/>
+        <br/><br/>
+    <table style="margin: auto;"><tr>
+    <td>
+        <select id="authorselectfirst" class="btn bibtex_search bibtex_author ResearchSearchItem" extra="first" search="author">
+            <option value="">Search First Author</option>
+        </select>
+    </td><td>
+        <select id="authorselect" class="btn bibtex_search bibtex_author ResearchSearchItem" search="author">
+            <option value="">Search Author</option>
+        </select>
+    </td><td>
+        <select id="topicselect" class="btn bibtex_search ResearchSearchItem" >
+            <option value="">Search Topic</option>
+            <!-- Add topic values here -->
+            <option value="force|torque|acceleration">Mechanical</option>
+            <option value="electric|electrical|electronic|electronic|capacitor|solar|power|energy|voltage|current">Electrical & electronics</option>
+            <option value="control|PID|stability|analysis">Control</option>
+        </select>
+    </td><td>
+        <button type="button" class="btn btn-default ResearchSearchItem" onclick="reset()">Reset</button>
+    </td>
+    </tr></table>
     </div>
 </div>
-<br/><br/><br/>
-
-
-
+<br/>
 
 <div class="bibtex_structure">
   <div class="group year" extra="ASC number">
@@ -375,7 +426,7 @@ function wait(ms){
   
         <div class="if bibtex_template" style="display: none;">
             <ul><li>
-                <a href="#PutHTMLHere" rel="modal:open"><span class="SKGListItem bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY" onclick="DisplayItem('BIBD+BIBTEXKEY+')">
+                <a class="SKGListItem" href="#PutHTMLHere" rel="modal:open"><span class="SKGListItem bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY" onclick="DisplayItem('BIBD+BIBTEXKEY+')">
                     <span class="if title"><span class="title"></span>.</span>
                     <span class="if author"><em><span class="author"></span></em>.</span>
                     <span class="if edition">Edition: <span class="edition"></span>.</span>
@@ -420,25 +471,22 @@ function wait(ms){
                     <br/>
                     <div style="position: relative;">
                     <pre class = "BibTeXRawCodeBlock" onclick="SelectTheText(this)" ondblclick="CopyTheText(this);"><span class="bibtexraw noread"></span></pre>
-                    <a style="display: float;position: absolute; bottom: 0px; right: 5px; font-size: 40px; cursor: pointer;" onclick="CopyThePrevText(this)">&#x2398;</a>
+                    <a class="Icon" style="display: float;position: absolute; bottom: 0px; right: 5px; font-size: 40px; cursor: pointer;" onclick="CopyThePrevText(this)">&#x2398;</a>
                     </div>
-                    <p>Search this material in your cloud storage:</p>
-                    <img  style="cursor: pointer; height: 50px;" class="bibtexVar" onclick="OpenFile('+BIBTEXKEY+',1)" extra="BIBTEXKEY" src="images/logo-mega.png"></img>
-                    <img  style="cursor: pointer; height: 50px;" class="bibtexVar" onclick="OpenFile('+BIBTEXKEY+',2)" extra="BIBTEXKEY" src="images/logo-drive.png"></img>
                 </div>
             </li></ul>
         </div>
   
 
 <p></div>
-<div class="modal" id="PutHTMLHere" style= "width: 100%;" >Select an entry to view the complete details here.</div></p>
+<div class="modal" id="PutHTMLHere" style= "width: 100%; display: none;" >Select an entry to view the complete details here.</div></p>
 
 </div>
 <hr/>
 <br/>
 
 <table style="margin: auto;" ><tr><td>
-<input id="SearchText" type="text" style="border-color: green; background-color : black; color: green; border-style: solid; border-width: 0px 0px 1px 0px; width: 500px;" /></td><td>&nbsp;</td><td><input id="SearchBtn" type="button" value="Search" style="cursor: pointer; border-color: green; border-style: solid; border-width: 1px; background-color: black; color: green;" onclick="SearchClick();"/>
+<input id="SearchText" type="text" placeholder="Do you want to search something? Click here and start typing." style="border-color: green; background-color : black; color: green; border-style: solid; border-width: 0px 0px 1px 0px; width: 500px;" /></td><td>&nbsp;</td><td><input id="SearchBtn" type="button" value="Search" style="cursor: pointer; border-color: green; border-style: solid; border-width: 1px; background-color: black; color: green;" onclick="SearchClick();"/>
 </td></tr></table>
 <br/>
 <hr>

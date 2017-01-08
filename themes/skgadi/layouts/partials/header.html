@@ -43,8 +43,24 @@
 	
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">
 	<link rel="icon" type="image/png" href="{{ .Site.BaseURL }}images/favicon.png">
-	
-	
+	<style>
+		::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+			color:    green;
+			opacity:  0.5;
+		}
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		   color:    green;
+		   opacity:  0.5;
+		}
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+		   color:    green;
+		   opacity:  0.5;
+		}
+		:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		   color:    green;
+		   opacity:  0.5;
+		}
+	</style>
 	<!-- BibTeX for research article -->
 	{{- if eq .LinkTitle "Research" -}}
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -267,23 +283,63 @@ function wait(ms){
 	    #bibtex_errors { margin-top:10px; color: red;}
 	    h1.header {margin-left:8px;}
 	    h1.YEAR { font-size: 17px; font-weight: bold; display: inline; margin-left:8px;}
-	.SKGListItem {
-		text-align: justify;
-		display: block;
-		background-color: #0a0a0a;
-		border-left: 1px solid lightgreen;
-		border-right: 1px solid lightgreen;
-		padding: 0px 5px;
-		text-decoration:none;
-		cursor: pointer;
-		-webkit-transition-duration: 0.4s; /* Safari */
-		transition-duration: 0.4s;
-	}
-	.SKGListItem:hover {
-		border-left: 1px solid green;
-		border-right: 1px solid green;
-		background-color: #1a1a1a;
-	}
+		.SKGListItem {
+			text-align: justify;
+			display: block;
+			
+			/*border-left: 1px solid lightgreen;
+			border-right: 1px solid lightgreen;*/
+			padding: 0px 5px;
+			text-decoration: none;
+			cursor: pointer;
+			-webkit-transition-duration: 0.4s; /* Safari */
+			transition-duration: 0.4s;
+		}
+		.SKGListItem:hover {
+			/*border: 1px solid green;*/
+			background-color: #111;
+		}
+		a.SKGListItem:hover{
+			text-decoration: none;
+			font-weight: normal;
+			border: 0px solid green;
+			background-color: #111;
+		}
+		.BibTeXRawCodeBlock {
+			white-space: pre-wrap;       /* Since CSS 2.1 */
+			white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+			white-space: -pre-wrap;      /* Opera 4-6 */
+			white-space: -o-pre-wrap;    /* Opera 7 */
+			word-wrap: break-word;       /* Internet Explorer 5.5+ */
+		}
+		.BibTeXRawCodeBlock {
+			border: 2px solid green;
+			padding: 5px;
+			word-wrap: break-word;
+			background: #000;
+			margin: 0px;
+		}
+		.BibTeXRawCodeBlock:hover {
+			background: #0a0a0a;
+		}
+		table.ContentTable  {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		table.ContentTable, table.ContentTable th, table.ContentTable td {
+			padding: 5px;
+			border: 2px solid green;
+		}
+		
+		table.ContentTable tr:nth-child(even) {background: #111}
+		table.ContentTable tr:nth-child(odd) {background: #000}
+		table.ContentTable tr:hover {background: #222}
+		
+		a.Icon {
+			text-decoration: none;
+		}
+
 
     </style>
     

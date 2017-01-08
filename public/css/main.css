@@ -7,7 +7,7 @@ html, body {
 	color: green;
 }
 
-html, body, input {
+html, body, input, select {
 	font-family: Courier New;
 }
 
@@ -73,4 +73,18 @@ nav>ul>li {
 
 .HunderedTable>table{
 	width: 100%;
+}
+
+input {
+	border-color: green;
+	background-color : black;
+	color: green;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+}
+.ResearchSearchItem{
+	border: 1px solid green;
+	background-color: black;
+	color: green;
+	cursor: pointer;
 }
