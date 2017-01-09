@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Suresh Kumar Gadi</title>
-    <link>https://skgadi.com/index.xml</link>
+    <link>http://skgadi.com/index.xml</link>
     <description>Recent content on Suresh Kumar Gadi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2017 Suresh Kumar Gadi</copyright>
     <lastBuildDate>Sat, 07 Jan 2017 00:00:00 -0600</lastBuildDate>
-    <atom:link href="https://skgadi.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://skgadi.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Education</title>
-      <link>https://skgadi.com/work-experience/</link>
+      <link>http://skgadi.com/work-experience/</link>
       <pubDate>Sat, 07 Jan 2017 00:00:00 -0600</pubDate>
       
-      <guid>https://skgadi.com/work-experience/</guid>
+      <guid>http://skgadi.com/work-experience/</guid>
       <description>
 
 &lt;h2 id=&#34;universidad-autónoma-de-coahuila&#34;&gt;Universidad Autónoma de Coahuila&lt;/h2&gt;
@@ -202,10 +202,10 @@ Worked with the SWT teams at many offshore and onshore including some HTHP (high
     
     <item>
       <title>Research</title>
-      <link>https://skgadi.com/research/</link>
+      <link>http://skgadi.com/research/</link>
       <pubDate>Sat, 07 Jan 2017 00:00:00 -0600</pubDate>
       
-      <guid>https://skgadi.com/research/</guid>
+      <guid>http://skgadi.com/research/</guid>
       <description>
 
 &lt;h2 id=&#34;research-interests&#34;&gt;Research interests&lt;/h2&gt;
@@ -327,10 +327,10 @@ Worked with the SWT teams at many offshore and onshore including some HTHP (high
     
     <item>
       <title>Variable stiffness mechanism</title>
-      <link>https://skgadi.com/projects/variable-stiffness-mechanism/</link>
+      <link>http://skgadi.com/projects/variable-stiffness-mechanism/</link>
       <pubDate>Mon, 02 Jan 2017 23:34:04 -0600</pubDate>
       
-      <guid>https://skgadi.com/projects/variable-stiffness-mechanism/</guid>
+      <guid>http://skgadi.com/projects/variable-stiffness-mechanism/</guid>
       <description>
 
 &lt;h2 id=&#34;status&#34;&gt;Status&lt;/h2&gt;
@@ -344,30 +344,30 @@ Worked with the SWT teams at many offshore and onshore including some HTHP (high
     
     <item>
       <title>Circuit analysis 2</title>
-      <link>https://skgadi.com/courses/2016-07-12-circuit-analysis-2/</link>
+      <link>http://skgadi.com/courses/2016-07-12-circuit-analysis-2/</link>
       <pubDate>Mon, 08 Aug 2016 23:12:36 -0600</pubDate>
       
-      <guid>https://skgadi.com/courses/2016-07-12-circuit-analysis-2/</guid>
+      <guid>http://skgadi.com/courses/2016-07-12-circuit-analysis-2/</guid>
       <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Digital control</title>
-      <link>https://skgadi.com/courses/2016-07-12-digital-control/</link>
+      <link>http://skgadi.com/courses/2016-07-12-digital-control/</link>
       <pubDate>Mon, 08 Aug 2016 23:12:36 -0600</pubDate>
       
-      <guid>https://skgadi.com/courses/2016-07-12-digital-control/</guid>
+      <guid>http://skgadi.com/courses/2016-07-12-digital-control/</guid>
       <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>One day workshop on LaTeX</title>
-      <link>https://skgadi.com/posts/one-day-workshop-on-latex/</link>
+      <link>http://skgadi.com/posts/one-day-workshop-on-latex/</link>
       <pubDate>Thu, 16 Jun 2016 00:00:00 -0600</pubDate>
       
-      <guid>https://skgadi.com/posts/one-day-workshop-on-latex/</guid>
+      <guid>http://skgadi.com/posts/one-day-workshop-on-latex/</guid>
       <description>
 
 &lt;p&gt;This workshop presents an introduction to the programming language LaTeX  for the first time users.&lt;/p&gt;
@@ -399,90 +399,90 @@ Worked with the SWT teams at many offshore and onshore including some HTHP (high
     
     <item>
       <title>Automatic control</title>
-      <link>https://skgadi.com/courses/2016-01-06-automatic-control/</link>
+      <link>http://skgadi.com/courses/2016-01-06-automatic-control/</link>
       <pubDate>Mon, 11 Jan 2016 23:12:36 -0600</pubDate>
       
-      <guid>https://skgadi.com/courses/2016-01-06-automatic-control/</guid>
+      <guid>http://skgadi.com/courses/2016-01-06-automatic-control/</guid>
       <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Electric machines 2</title>
-      <link>https://skgadi.com/courses/2016-01-06-electric-machines-2/</link>
+      <link>http://skgadi.com/courses/2016-01-06-electric-machines-2/</link>
       <pubDate>Mon, 11 Jan 2016 23:12:36 -0600</pubDate>
       
-      <guid>https://skgadi.com/courses/2016-01-06-electric-machines-2/</guid>
+      <guid>http://skgadi.com/courses/2016-01-06-electric-machines-2/</guid>
       <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Control theory</title>
-      <link>https://skgadi.com/courses/2015-07-12-control-theory/</link>
+      <link>http://skgadi.com/courses/2015-07-12-control-theory/</link>
       <pubDate>Tue, 01 Sep 2015 23:12:36 -0600</pubDate>
       
-      <guid>https://skgadi.com/courses/2015-07-12-control-theory/</guid>
+      <guid>http://skgadi.com/courses/2015-07-12-control-theory/</guid>
       <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Digital control</title>
-      <link>https://skgadi.com/courses/2015-07-12-digital-control/</link>
+      <link>http://skgadi.com/courses/2015-07-12-digital-control/</link>
       <pubDate>Tue, 01 Sep 2015 23:12:36 -0600</pubDate>
       
-      <guid>https://skgadi.com/courses/2015-07-12-digital-control/</guid>
+      <guid>http://skgadi.com/courses/2015-07-12-digital-control/</guid>
       <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Probability and statistics</title>
-      <link>https://skgadi.com/courses/2015-05-08-probability-and-statistics/</link>
+      <link>http://skgadi.com/courses/2015-05-08-probability-and-statistics/</link>
       <pubDate>Fri, 01 May 2015 23:12:36 -0600</pubDate>
       
-      <guid>https://skgadi.com/courses/2015-05-08-probability-and-statistics/</guid>
+      <guid>http://skgadi.com/courses/2015-05-08-probability-and-statistics/</guid>
       <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Analog and digital control systems</title>
-      <link>https://skgadi.com/courses/2015-01-04-analog-and-digital-control-systems/</link>
+      <link>http://skgadi.com/courses/2015-01-04-analog-and-digital-control-systems/</link>
       <pubDate>Thu, 01 Jan 2015 23:12:36 -0600</pubDate>
       
-      <guid>https://skgadi.com/courses/2015-01-04-analog-and-digital-control-systems/</guid>
+      <guid>http://skgadi.com/courses/2015-01-04-analog-and-digital-control-systems/</guid>
       <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Industrical robotics</title>
-      <link>https://skgadi.com/courses/2015-01-04-industrical-robotics/</link>
+      <link>http://skgadi.com/courses/2015-01-04-industrical-robotics/</link>
       <pubDate>Thu, 01 Jan 2015 23:12:36 -0600</pubDate>
       
-      <guid>https://skgadi.com/courses/2015-01-04-industrical-robotics/</guid>
+      <guid>http://skgadi.com/courses/2015-01-04-industrical-robotics/</guid>
       <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Electronics</title>
-      <link>https://skgadi.com/courses/2014-09-12-electronics/</link>
+      <link>http://skgadi.com/courses/2014-09-12-electronics/</link>
       <pubDate>Mon, 01 Sep 2014 23:12:36 -0600</pubDate>
       
-      <guid>https://skgadi.com/courses/2014-09-12-electronics/</guid>
+      <guid>http://skgadi.com/courses/2014-09-12-electronics/</guid>
       <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Education</title>
-      <link>https://skgadi.com/education/</link>
+      <link>http://skgadi.com/education/</link>
       <pubDate>Tue, 20 May 2014 00:00:00 -0600</pubDate>
       
-      <guid>https://skgadi.com/education/</guid>
+      <guid>http://skgadi.com/education/</guid>
       <description>
 
 &lt;h2 id=&#34;doctorate-in-science-in-the-specialization-of-automatic-control&#34;&gt;Doctorate in science in the specialization of automatic control&lt;/h2&gt;
