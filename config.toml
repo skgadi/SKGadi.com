@@ -17,6 +17,7 @@ baseurl = "https://skgadi.com/"
 	Phone = "+52(1)4491820153"
 	Fax = "+52(1)8717570153"
 	Address = "Carretera Torreón - Matamoros Km. 7.5, Ciudad Universitaria, Torreón, Coahuila, México, C.P. 27276"
+	GoogleAnalyticsID = "UA-89998286-1"
 	
 [params.meta.Keywords]
 	name = ["skgadi", "suresh kumar gadi", "control digital"]
