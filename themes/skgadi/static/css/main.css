@@ -3,7 +3,7 @@ html, body {
 	width: 100%;
 	margin: 0px;
 	/*padding: 0px;*/
-	background: #555;
+	background: #eee;
 	color: green;
 }
 
@@ -45,7 +45,7 @@ table, tbody, tr, td, th {
 	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-	background: #000;
+	background: white;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	border-width: 5px;
@@ -78,14 +78,14 @@ nav>ul>li {
 
 input {
 	border-color: green;
-	background-color : black;
+	background-color : white;
 	color: green;
 	border-style: solid;
 	border-width: 0px 0px 1px 0px;
 }
 .ResearchSearchItem{
 	border: 1px solid green;
-	background-color: black;
+	background-color: white;
 	color: green;
 	cursor: pointer;
 }

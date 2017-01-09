@@ -245,7 +245,7 @@ Worked with the SWT teams at many offshore and onshore including some HTHP (high
             &lt;option value=&#34;control|PID|stability|analysis&#34;&gt;Control&lt;/option&gt;
         &lt;/select&gt;
     &lt;/td&gt;&lt;td&gt;
-        &lt;button type=&#34;button&#34; class=&#34;btn btn-default&#34; onclick=&#34;reset()&#34; style=&#34;background-color: black; color: green; border-color: green&#34; &gt;Reset&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;btn btn-default&#34; onclick=&#34;reset()&#34; style=&#34;background-color: white; cursor: pointer; color: green; border-color: green&#34; &gt;Reset&lt;/button&gt;
     &lt;/td&gt;
     &lt;/tr&gt;&lt;/table&gt;
     &lt;/div&gt;

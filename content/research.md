@@ -40,7 +40,7 @@ Please use the email "research-at-skgadi.com" for research related emails.
 			<option value="control|PID|stability|analysis">Control</option>
 		</select>
 	</td><td>
-		<button type="button" class="btn btn-default" onclick="reset()" style="background-color: black; color: green; border-color: green" >Reset</button>
+		<button type="button" class="btn btn-default" onclick="reset()" style="background-color: white; cursor: pointer; color: green; border-color: green" >Reset</button>
 	</td>
 	</tr></table>
 	</div>
