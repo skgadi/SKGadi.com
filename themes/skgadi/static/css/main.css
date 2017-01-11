@@ -7,8 +7,8 @@ html, body {
 	color: green;
 }
 
-html, body, input, select {
-	font-family: Courier New;
+html, body, input, select, button {
+	font-family: CMU;
 }
 
 .BoldOnHover, a, h1, h2, h3, h4{
@@ -21,7 +21,7 @@ a{
 }
 
 .BoldOnHover:hover, a:hover, h1:hover, h2:hover, h3:hover, h4:hover{
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
 
 a:hover {
@@ -33,6 +33,7 @@ hr {
 	margin: 0px;
 	padding: 0px;
 	border-color: green;
+	border-style: solid;
 }
 
 table, tbody, tr, td, th {
