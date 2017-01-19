@@ -7,8 +7,98 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2017 Suresh Kumar Gadi</copyright>
-    <lastBuildDate>Sat, 07 Jan 2017 00:00:00 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 09 Jan 2017 23:12:36 -0600</lastBuildDate>
     <atom:link href="https://skgadi.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Industrial electronics</title>
+      <link>https://skgadi.com/courses/2017-01-06-industrial-electronics/</link>
+      <pubDate>Mon, 09 Jan 2017 23:12:36 -0600</pubDate>
+      
+      <guid>https://skgadi.com/courses/2017-01-06-industrial-electronics/</guid>
+      <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;!--
+
+[[CourseMaterial]]
+    Name = &#34;Syllabus&#34;
+    URL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Circuitos%20el%C3%A9ctricos%20II.doc&#34;
+
+[[Homeworks]]
+    Name = &#34;Homework 1&#34;
+    Date = &#34;2016-09-01&#34;
+    QuestionsURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework001/questions.pdf&#34;
+    AnswersURL = &#34;http://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework001/answers.pdf&#34;
+[[Homeworks]]
+    Name = &#34;Homework 2&#34;
+    Date = &#34;2016-09-15&#34;
+    QuestionsURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework002/questions.pdf&#34;
+    AnswersURL = &#34;http://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework002/answers.pdf&#34;
+[[Homeworks]]
+    Name = &#34;Homework 3&#34;
+    Date = &#34;2016-10-04&#34;
+    QuestionsURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework003/questions.pdf&#34;
+    AnswersURL = &#34;http://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework003/answers.pdf&#34;
+
+[[Exams]]
+    Name = &#34;Exam 1&#34;
+    Date = &#34;2016-10-07&#34;
+    QuestionsURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Exam001/questions.pdf&#34;
+    AnswersURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Exam001/questions.pdf&#34;
+[[Exams]]
+    Name = &#34;Exam 2&#34;
+    Date = &#34;2016-11-11&#34;
+    QuestionsURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Exam002/questions.pdf&#34;
+    AnswersURL = &#34;http://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Exam002/answers.pdf&#34;
+
+    --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Semiconductor physics</title>
+      <link>https://skgadi.com/courses/2017-01-06-semiconductor-physics/</link>
+      <pubDate>Mon, 09 Jan 2017 23:12:36 -0600</pubDate>
+      
+      <guid>https://skgadi.com/courses/2017-01-06-semiconductor-physics/</guid>
+      <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;!--
+
+[[CourseMaterial]]
+    Name = &#34;Syllabus&#34;
+    URL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Circuitos%20el%C3%A9ctricos%20II.doc&#34;
+
+[[Homeworks]]
+    Name = &#34;Homework 1&#34;
+    Date = &#34;2016-09-01&#34;
+    QuestionsURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework001/questions.pdf&#34;
+    AnswersURL = &#34;http://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework001/answers.pdf&#34;
+[[Homeworks]]
+    Name = &#34;Homework 2&#34;
+    Date = &#34;2016-09-15&#34;
+    QuestionsURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework002/questions.pdf&#34;
+    AnswersURL = &#34;http://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework002/answers.pdf&#34;
+[[Homeworks]]
+    Name = &#34;Homework 3&#34;
+    Date = &#34;2016-10-04&#34;
+    QuestionsURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework003/questions.pdf&#34;
+    AnswersURL = &#34;http://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework003/answers.pdf&#34;
+
+[[Exams]]
+    Name = &#34;Exam 1&#34;
+    Date = &#34;2016-10-07&#34;
+    QuestionsURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Exam001/questions.pdf&#34;
+    AnswersURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Exam001/questions.pdf&#34;
+[[Exams]]
+    Name = &#34;Exam 2&#34;
+    Date = &#34;2016-11-11&#34;
+    QuestionsURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Exam002/questions.pdf&#34;
+    AnswersURL = &#34;http://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Exam002/answers.pdf&#34;
+
+    --&gt;
+</description>
+    </item>
     
     <item>
       <title>Education</title>
@@ -464,212 +554,6 @@ Worked with the SWT teams at many offshore and onshore including some HTHP (high
       
       <guid>https://skgadi.com/courses/2015-01-04-industrical-robotics/</guid>
       <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Electronics</title>
-      <link>https://skgadi.com/courses/2014-09-12-electronics/</link>
-      <pubDate>Mon, 01 Sep 2014 23:12:36 -0600</pubDate>
-      
-      <guid>https://skgadi.com/courses/2014-09-12-electronics/</guid>
-      <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Education</title>
-      <link>https://skgadi.com/education/</link>
-      <pubDate>Tue, 20 May 2014 00:00:00 -0600</pubDate>
-      
-      <guid>https://skgadi.com/education/</guid>
-      <description>
-
-&lt;h2 id=&#34;doctorate-in-science-in-the-specialization-of-automatic-control&#34;&gt;Doctorate in science in the specialization of automatic control&lt;/h2&gt;
-
-&lt;div&gt;
-&lt;table class=&#34;TableWithBorders&#34; style=&#34;width: 95%; margin: auto;&#34;&gt; &lt;tbody&gt;
-&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Degree&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;Doctorate in Science in the specialization of Automatic Control&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;University&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;http://www.cinvestav.mx/&#34;&gt;Cinvestav-IPN&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Period&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;September 2009 - May 2014&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Place&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;Mexico City&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Thesis&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDWTd0SVZETTZuaFU&#34; &gt; Modelado y control de un dispositivo de aumento de fuerza&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Provisional certificate&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDTjJ0VzV3ZkR5T1U&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Marksheet&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDMHJLYWxNSXdBXzQ&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Presentation&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=fBwp6RlxkrM&#34; &gt;&lt;img src=&#34;../images/video.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;master-of-technology-in-sensor-system-technology&#34;&gt;Master of technology in Sensor System Technology&lt;/h2&gt;
-
-&lt;div&gt;
-&lt;table class=&#34;TableWithBorders&#34; style=&#34;width: 95%; margin: auto;&#34;&gt; &lt;tbody&gt;
-&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Degree&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;M. Tech. (Master of technology) in Sensor System Technology&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;University&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;http://www.vit.ac.in/&#34;&gt;VIT (Vellore institute of technology) University&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Period&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;July 2007 - May 2009&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Place&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;Vellore&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Thesis&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDN0ZfQ3BtZGVhNVE&#34;&gt;Designing a factory floor tester for a heating ventilation and air conditioning (HVAC) controller and a remote monitoring unit (RMU)&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Merit award&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDV0d6aFplU1A2MEE&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; rowspan=&#34;4&#34; &gt;Mini projects&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;System identification by capturing real-time data&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDS2gtSGJYQUs3a0E&#34;&gt;Tilt measurement using a micro-electromechanical system (MEMS) accelerometer with LabVIEW.&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDbVVoT2g1bXluWUE&#34;&gt;Implementation of a transducer electronic data sheet (TEDS).&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;Microcomputer-based strain measurement&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Degree certificate&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDQkJYM3ZDWm9zMjQ&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34;rowspan=&#34;5&#34; &gt;marksheets&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDRTVrNV9Fd0k4NmM&#34;&gt;Overall&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDRTBadXZEVjJMYW8&#34;&gt;Semester IV&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDOERfZ2JPTmU1U28&amp;&#34;&gt;Semester III&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDWkc2WGljWUhDVlk&amp;&#34;&gt;Semester II&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDSl9UdG5wX2FMemc&#34;&gt;Semester I&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Provisional certificate&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDYUVrLVlsRjgzczg&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Course completion certificate&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDWDVmOGtLTXVIUFU&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Transfer certificate&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDMGJodWpfOWNfSms&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;associate-member-of-the-institution-of-engineers-india-amie&#34;&gt;Associate member of the institution of engineers (India) – AMIE&lt;/h2&gt;
-
-&lt;div&gt;
-&lt;table class=&#34;TableWithBorders&#34; style=&#34;width: 95%; margin: auto;&#34;&gt; &lt;tbody&gt;
-&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Degree&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;Associate member of the institution of engineers (India) – AMIE&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;University&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://ieindia.org/&#34;&gt;The Institution of Engineers (India)&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Period&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;June 2003 – June 2006&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Project&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDUXpzckhwdHhzcEk&#34;&gt;Erection of 66 KV double circuit (D/C) transmission line (TL) and it&#39;s accessories&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;GATE&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDaEx3UmpHTU5nbDQ&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; rowspan=&#34;2&#34; &gt;Memberships&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDc1FfX05Ua0NjZWs&#34;&gt;Associate&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDdlJDSGNYQkk3LU0&#34;&gt;Graduate&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Degree certificate&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDVXZ6di1wUUR0WFk&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; rowspan=&#34;2&#34;&gt;Marksheets&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDN2t3UHJQVWcxRTA&#34;&gt;Section B&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDZlpSTkVzVjUzcGc&#34;&gt;Section A&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;diploma-in-electrical-and-electronics-engineering-deee&#34;&gt;Diploma in electrical and electronics engineering (DEEE)&lt;/h2&gt;
-
-&lt;div&gt;
-&lt;table class=&#34;TableWithBorders&#34; style=&#34;width: 95%; margin: auto;&#34;&gt; &lt;tbody&gt;
-&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Degree&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;Diploma in electrical and electronics engineering (DEEE)&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;College&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;Government polytechnic college&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Period&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;May 1999 – April 2002&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Place&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;Visakhapatnam&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Degree certificate&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDbGV0a3pycmlrLWc&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; rowspan=&#34;3&#34;&gt;Marksheets&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDRFhZcFJuWFVwTU0&#34;&gt;Third year&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDRlVyc1ZvMklaWTA&#34;&gt;Second year&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDbGlpN19kelhfYmM&#34;&gt;First year&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Study certificate&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDMUpOUXpTdlJGVUU&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Transfer certificate&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDR28wVGVfYzlJWlk&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;secondary-school-certificate-ssc&#34;&gt;Secondary school certificate (SSC)&lt;/h2&gt;
-
-&lt;p&gt;&lt;div&gt;
-&lt;table class=&#34;TableWithBorders&#34; style=&#34;width: 95%; margin: auto;&#34;&gt; &lt;tbody&gt;
-&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Degree&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;Secondary school certificate (SSC)&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;School&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;Ramakrishna residential public school&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Obtained&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;June 1999&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Place&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;Visakhapatnam&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-    &lt;td style=&#34;text-align: left;&#34; &gt;Marksheet&lt;/td&gt;
-    &lt;td style=&#34;text-align: justify;&#34;&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B6A_I6W9HjBDMzB0Y05yUnByQms&#34; &gt;&lt;img src=&#34;../images/page.png&#34; alt = &#34;Open&#34; style=&#34;height: 16px; display: block; float: justify;&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
 </description>
     </item>
     
