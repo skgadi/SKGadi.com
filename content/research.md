@@ -14,7 +14,7 @@ title = "Research"
 
 ## Conacyt CVU
 
-[Click here](../docs/conacty-cvu.pdf) to download the Conacyt's CVU.
+[Click here](../docs/conacyt-cvu.pdf) to download the Conacyt's CVU.
 
 
 ## Email
