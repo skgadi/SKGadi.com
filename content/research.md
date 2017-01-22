@@ -7,9 +7,15 @@ title = "Research"
 
 +++
 ## Research interests
+
 * Linear and nonlinear systems
 * Optimization
 * Parametric excitation
+
+## Conacyt CVU
+
+[Click here](../docs/conacty-cvu.pdf) to download the Conacyt's CVU.
+
 
 ## Email
 
