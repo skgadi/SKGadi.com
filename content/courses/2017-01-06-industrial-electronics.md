@@ -19,6 +19,9 @@ GSKCity = "Torreón"
 GSKLevel = "Bachelor"
 GSKAttendanceURL = "1_x9WKIP63RwhuUH7NTy98TeVu3pQy6GE4zEKHxnLtaU"
 GSKGradeURL = "1mrA-fsgcB4CI50_TpKa7IHJT413pgdAIyMSAKx71CDE"
+[[CourseMaterial]]
+    Name = "Syllabus"
+    URL = "https://drive.google.com/file/d/0BzllW1KDpzoLd2Rjend1ZjZqTGM/view"
 
 	
 +++
