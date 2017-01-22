@@ -14,7 +14,7 @@ title = "Research"
 
 ## Conacyt CVU
 
-[Click here](../docs/conacyt-cvu.pdf) to download the Conacyt's CVU in the PDF format or [click here](http://207.249.124.55/pls/portal/Ps_Cvu_Compacto.main?p_applid=334317&p_opc=11111111111111111111111111111&p_num=86) for HTML.
+[Click here](../docs/conacyt-cvu.pdf) to download the Conacyt's CVU in the PDF format or [click here](http://207.249.124.55/pls/portal/Ps_Cvu_Compacto.main?p_applid=334317&p_opc=11111111111111111111111111111&p_num=86) to download in the HTML format.
 
 
 ## Email
