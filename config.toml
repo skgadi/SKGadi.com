@@ -44,7 +44,25 @@ baseurl = "https://skgadi.com/"
 	weight = 2
 
 [[menu.main]]
+    identifier = "Posts"
+    name = "Posts"
+    url = "/posts/"
+	weight = 3
+
+[[menu.main]]
+    identifier = "Courses"
+    name = "Courses"
+    url = "/courses/"
+	weight = 4
+
+[[menu.main]]
+    identifier = "Projects"
+    name = "Projects"
+    url = "/projects/"
+	weight = 5
+
+[[menu.main]]
     identifier = "Research"
     name = "Research"
     url = "/research/"
-	weight = 3
+	weight = 6

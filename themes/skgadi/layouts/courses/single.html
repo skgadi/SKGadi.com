@@ -22,6 +22,11 @@
 	<td style="text-align: left;" >Group</td>
 	<td style="text-align: right;">{{ .Params.GSKGroup }}</td>
 </tr><tr>
+{{ if .Params.GSKStrength }}
+	<td style="text-align: left;" >Class strength</td>
+	<td style="text-align: right;">{{ .Params.GSKStrength }}</td>
+</tr><tr>
+{{ end }}
 	<td style="text-align: left;" rowspan="3">Period</td>
 	<td style="text-align: right;">{{  dateFormat "2/Jan/2006" .Params.GSKStartDate }} &mdash; {{  dateFormat "2/Jan/2006" .Params.GSKEndDate }}</td>
 </tr><tr>
