@@ -3,7 +3,7 @@
 Keywords = ["work experience", "lnt", "schlumberger", "honeywell", "htsl", "upa", "uadec", "professor", "engineer", "field specialist", "electrical", "oil and gas"]
 description = "Suresh Kumar Gadi is having seven years industrial work experience and two years teaching work experience."
 date = "2017-01-07T00:00:00-06:00"
-title = "Education"
+title = "Work experience"
 
 +++
 
