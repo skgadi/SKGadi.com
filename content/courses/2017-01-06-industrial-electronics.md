@@ -12,7 +12,7 @@ GSKSchoolURL = "http://uadec.mx/"
 GSKDepartment = "Facultad de Ingeniería Mecánica y Eléctrica"
 GSKDepartmentURL = "http://uadec.mx/"
 GSKGroup = "9B"
-GSKStrength = "20"
+GSKStrength = "4"
 GSKTotalPeriod = "80"
 GSKPeriodPerWeek = "5"
 GSKCity = "Torreón"
@@ -22,6 +22,11 @@ GSKGradeURL = "1mrA-fsgcB4CI50_TpKa7IHJT413pgdAIyMSAKx71CDE"
 [[CourseMaterial]]
     Name = "Syllabus"
     URL = "https://drive.google.com/file/d/0BzllW1KDpzoLd2Rjend1ZjZqTGM/view"
+
+[[Homeworks]]
+    Name = "Homework 1"
+	Date = "2017-01-23"
+    QuestionsURL = "https://github.com/skgadi/Courses/raw/master/2017-01-06/UAdeC-FIME-9B/Homework001/questions.pdf"
 
 	
 +++
