@@ -308,7 +308,7 @@ Worked with the SWT teams at many offshore and onshore including some HTHP (high
 
 &lt;h2 id=&#34;conacyt-cvu&#34;&gt;Conacyt CVU&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;../docs/conacyt-cvu.pdf&#34;&gt;Click here&lt;/a&gt; to download the Conacyt&amp;rsquo;s CVU in the PDF format or &lt;a href=&#34;http://207.249.124.55/pls/portal/Ps_Cvu_Compacto.main?p_applid=334317&amp;amp;p_opc=11111111111111111111111111111&amp;amp;p_num=86&#34;&gt;click here&lt;/a&gt; to download in the HTML format.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../docs/conacyt-cvu.pdf&#34;&gt;Click here&lt;/a&gt; to download the Conacyt&amp;rsquo;s CVU in the PDF format or &lt;a href=&#34;http://207.249.124.55/pls/portal/Ps_Cvu_Compacto.main?p_applid=334317&amp;amp;p_opc=11111111111111111111111111111&amp;amp;p_num=86&#34;&gt;click here&lt;/a&gt; to view in the HTML format.&lt;/p&gt;
 
 &lt;h2 id=&#34;email&#34;&gt;Email&lt;/h2&gt;
 
@@ -339,7 +339,7 @@ Worked with the SWT teams at many offshore and onshore including some HTHP (high
             &lt;option value=&#34;control|PID|stability|analysis&#34;&gt;Control&lt;/option&gt;
         &lt;/select&gt;
     &lt;/td&gt;&lt;td&gt;
-        &lt;button type=&#34;button&#34; class=&#34;btn btn-default&#34; onclick=&#34;reset()&#34; style=&#34;background-color: white; cursor: pointer; color: green; border-color: green&#34; &gt;Reset&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;btn btn-default&#34; onclick=&#34;reset()&#34; style=&#34;background-color: white; cursor: pointer; color: black; border-color: black&#34; &gt;Reset&lt;/button&gt;
     &lt;/td&gt;
     &lt;/tr&gt;&lt;/table&gt;
     &lt;/div&gt;
