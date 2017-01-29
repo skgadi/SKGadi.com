@@ -46,7 +46,7 @@ Please use the email "research-at-skgadi.com" for research related emails.
 			<option value="control|PID|stability|analysis">Control</option>
 		</select>
 	</td><td>
-		<button type="button" class="btn btn-default" onclick="reset()" style="background-color: white; cursor: pointer; color: black; border-color: black" >Reset</button>
+		<button type="button" class="btn btn-default" onclick="reset()" style="border-style: solid; border-width: 1px; background-color: white; cursor: pointer; color: black; border-color: black" >Reset</button>
 	</td>
 	</tr></table>
 	</div>
@@ -67,10 +67,13 @@ Please use the email "research-at-skgadi.com" for research related emails.
 		<div class="if bibtex_template" style="display: none;">
 			<ul><li>
 				<a class="SKGListItem" href="#PutHTMLHere" rel="modal:open"><span class="SKGListItem bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY" onclick="DisplayItem('BIBD+BIBTEXKEY+')">
-					<span class="if title"><span class="title"></span>.</span>
-					<span class="if author"><em><span class="author"></span></em>.</span>
-					<span class="if edition">Edition: <span class="edition"></span>.</span>
-					<span class="if year"><span class="year"></span>.</span>
+					<span class="if author"><span class="author"></span>.</span>
+					<span class="if title">"<span class="title"></span>."</span>
+					<span class="if journal">"<span class="journal"></span>."</span>
+					<span class="if organization">In <span class="organization"></span></span>
+					<span class="if year">on <span class="year"></span></span>
+					<span class="if month"><span class="month"></span></span>
+					<span class="if pages">(pp. <span class="pages"></span>).</span>
 				</span></a>
 				<div style="display: none;" class="bibtexVar" id="BIBD+BIBTEXKEY+" extra="BIBTEXKEY">
 			
@@ -78,6 +81,8 @@ Please use the email "research-at-skgadi.com" for research related emails.
 					<br/>
 					<div class="if author"><h4 style=" font-weight: normal; text-align: center;  margin: 0px;"><span class="author"></span></h4></div>
 					<div class="if organization"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="organization"></span></em></h4></div>
+					<div class="if journal"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="journal"></span></em></h4></div>
+					<div class="if school"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="school"></span></em></h4></div>
 					<div class="if booktitle"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="booktitle"></span></em></h4></div>
 					<br/>
 					<div class="if abstract"><span style=" font-weight: bold; text-align: center; margin: 0px;">Abstract:&ndash; </span><span class="abstract" style=" font-weight: normal; text-align: justify;"></span></div>

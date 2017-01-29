@@ -149,7 +149,7 @@
             &lt;option value=&#34;control|PID|stability|analysis&#34;&gt;Control&lt;/option&gt;
         &lt;/select&gt;
     &lt;/td&gt;&lt;td&gt;
-        &lt;button type=&#34;button&#34; class=&#34;btn btn-default&#34; onclick=&#34;reset()&#34; style=&#34;background-color: white; cursor: pointer; color: black; border-color: black&#34; &gt;Reset&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;btn btn-default&#34; onclick=&#34;reset()&#34; style=&#34;border-style: solid; border-width: 1px; background-color: white; cursor: pointer; color: black; border-color: black&#34; &gt;Reset&lt;/button&gt;
     &lt;/td&gt;
     &lt;/tr&gt;&lt;/table&gt;
     &lt;/div&gt;
@@ -170,10 +170,13 @@
         &lt;div class=&#34;if bibtex_template&#34; style=&#34;display: none;&#34;&gt;
             &lt;ul&gt;&lt;li&gt;
                 &lt;a class=&#34;SKGListItem&#34; href=&#34;#PutHTMLHere&#34; rel=&#34;modal:open&#34;&gt;&lt;span class=&#34;SKGListItem bibtexVar&#34; id=&#34;bib+BIBTEXKEY+&#34; extra=&#34;BIBTEXKEY&#34; onclick=&#34;DisplayItem(&#39;BIBD+BIBTEXKEY+&#39;)&#34;&gt;
-                    &lt;span class=&#34;if title&#34;&gt;&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;.&lt;/span&gt;
-                    &lt;span class=&#34;if author&#34;&gt;&lt;em&gt;&lt;span class=&#34;author&#34;&gt;&lt;/span&gt;&lt;/em&gt;.&lt;/span&gt;
-                    &lt;span class=&#34;if edition&#34;&gt;Edition: &lt;span class=&#34;edition&#34;&gt;&lt;/span&gt;.&lt;/span&gt;
-                    &lt;span class=&#34;if year&#34;&gt;&lt;span class=&#34;year&#34;&gt;&lt;/span&gt;.&lt;/span&gt;
+                    &lt;span class=&#34;if author&#34;&gt;&lt;span class=&#34;author&#34;&gt;&lt;/span&gt;.&lt;/span&gt;
+                    &lt;span class=&#34;if title&#34;&gt;&#34;&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;.&#34;&lt;/span&gt;
+                    &lt;span class=&#34;if journal&#34;&gt;&#34;&lt;span class=&#34;journal&#34;&gt;&lt;/span&gt;.&#34;&lt;/span&gt;
+                    &lt;span class=&#34;if organization&#34;&gt;In &lt;span class=&#34;organization&#34;&gt;&lt;/span&gt;&lt;/span&gt;
+                    &lt;span class=&#34;if year&#34;&gt;on &lt;span class=&#34;year&#34;&gt;&lt;/span&gt;&lt;/span&gt;
+                    &lt;span class=&#34;if month&#34;&gt;&lt;span class=&#34;month&#34;&gt;&lt;/span&gt;&lt;/span&gt;
+                    &lt;span class=&#34;if pages&#34;&gt;(pp. &lt;span class=&#34;pages&#34;&gt;&lt;/span&gt;).&lt;/span&gt;
                 &lt;/span&gt;&lt;/a&gt;
                 &lt;div style=&#34;display: none;&#34; class=&#34;bibtexVar&#34; id=&#34;BIBD+BIBTEXKEY+&#34; extra=&#34;BIBTEXKEY&#34;&gt;
             
@@ -181,6 +184,8 @@
                     &lt;br/&gt;
                     &lt;div class=&#34;if author&#34;&gt;&lt;h4 style=&#34; font-weight: normal; text-align: center;  margin: 0px;&#34;&gt;&lt;span class=&#34;author&#34;&gt;&lt;/span&gt;&lt;/h4&gt;&lt;/div&gt;
                     &lt;div class=&#34;if organization&#34;&gt;&lt;h4 style=&#34; font-weight: normal; text-align: center; margin: 0px;&#34;&gt;&lt;em&gt;&lt;span class=&#34;organization&#34;&gt;&lt;/span&gt;&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;
+                    &lt;div class=&#34;if journal&#34;&gt;&lt;h4 style=&#34; font-weight: normal; text-align: center; margin: 0px;&#34;&gt;&lt;em&gt;&lt;span class=&#34;journal&#34;&gt;&lt;/span&gt;&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;
+                    &lt;div class=&#34;if school&#34;&gt;&lt;h4 style=&#34; font-weight: normal; text-align: center; margin: 0px;&#34;&gt;&lt;em&gt;&lt;span class=&#34;school&#34;&gt;&lt;/span&gt;&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;
                     &lt;div class=&#34;if booktitle&#34;&gt;&lt;h4 style=&#34; font-weight: normal; text-align: center; margin: 0px;&#34;&gt;&lt;em&gt;&lt;span class=&#34;booktitle&#34;&gt;&lt;/span&gt;&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;
                     &lt;br/&gt;
                     &lt;div class=&#34;if abstract&#34;&gt;&lt;span style=&#34; font-weight: bold; text-align: center; margin: 0px;&#34;&gt;Abstract:&amp;ndash; &lt;/span&gt;&lt;span class=&#34;abstract&#34; style=&#34; font-weight: normal; text-align: justify;&#34;&gt;&lt;/span&gt;&lt;/div&gt;
