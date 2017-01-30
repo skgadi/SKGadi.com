@@ -25,7 +25,7 @@ GSKGradeURL = "1mrA-fsgcB4CI50_TpKa7IHJT413pgdAIyMSAKx71CDE"
 
 [[Homeworks]]
     Name = "Homework 1"
-	Date = "2017-01-23"
+	Date = "2017-02-03"
     QuestionsURL = "https://github.com/skgadi/Courses/raw/master/2017-01-06/UAdeC-FIME-9B/Homework001/questions.pdf"
 
 	
