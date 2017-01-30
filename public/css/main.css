@@ -7,7 +7,7 @@ html, body {
 	color: black;
 }
 
-html, body, input, select, button {
+html, body, input, select, button, textarea {
 	font-family: Font001;
 }
 

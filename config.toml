@@ -66,3 +66,9 @@ baseurl = "https://skgadi.com/"
     name = "Research"
     url = "/research/"
 	weight = 6
+
+[[menu.main]]
+    identifier = "Contact"
+    name = "Contact"
+    url = "/contact/"
+	weight = 7
