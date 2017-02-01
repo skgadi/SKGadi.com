@@ -4,7 +4,7 @@ Keywords = ["research", "publications", "articles", "conference"]
 description = "Suresh Kumar Gadi has contributions in 1 journal article and 5 conference proceedings."
 date = "2017-01-07T00:00:00-06:00"
 title = "Research"
-
+Lastmod = "2017-01-07T00:00:00-06:00"
 +++
 ## Research interests
 

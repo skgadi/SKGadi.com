@@ -2,12 +2,7 @@
 <html lang="en">
 <head>
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<script>
-	  (adsbygoogle = window.adsbygoogle || []).push({
-		google_ad_client: "ca-pub-6706887345814046",
-		enable_page_level_ads: true
-	  });
-	</script>
+
 	<title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
 	{{ .Hugo.Generator }}
 	<meta charset=utf-8>
@@ -16,6 +11,9 @@
 	<!--SEO Tags start -->
 	<meta name="news_keywords"  content="{{ if eq $isHomePage false }}{{ delimit .Keywords ", " }}{{ else }}{{ delimit .Site.Params.Meta.keywords.name ", " }}{{ end }}" />
 	<meta name="keywords" content="{{ if eq $isHomePage false }}{{ delimit .Keywords ", " }}{{ else }}{{ delimit .Site.Params.Meta.keywords.name ", " }}{{ end }}" />
+	<meta  name="description" content="{{ if eq $isHomePage false }}{{ .Description }}{{ else }}{{.Site.Params.Meta.description.name}}{{ end }}" />
+	{{ if .Lastmod  }}<meta name="revised" content="{{  dateFormat "02/Jan/2006 at 15:04:05 (TZ: -07:00)" .Lastmod }}" /> {{ end }}
+	<meta name="author" content="{{ .Site.Params.Author }}" />
 	<meta property="og:title" content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}" />
 	<meta property="og:description" content="{{ if eq $isHomePage false }}{{ .Description }}{{ else }}{{.Site.Params.Meta.description.name}}{{ end }}" />
 	<meta property="og:url" content="{{ .Permalink }}" />
