@@ -8,11 +8,11 @@ title = "Contact"
 +++
 # Send an email
 <form name="contact" netlify netlify-honeypot="bot-field">
-	<input name="name" placeholder= "Your name" style= "width: 100%;" tabindex="1"><br/><br/>
-	<input name="email" placeholder= "Your email" style= "width: 100%;" tabindex="2"><br/><br/>
-	<input name="phone" placeholder= "Your phone number" style= "width: 100%;" tabindex="3"><br/><br/>
-	<textarea name="message" placeholder="Your message" style= "width: 100%; height: 145px; border: 1px solid black;" tabindex="4"></textarea><br/>
-	<button style="border-style: solid; border-width: 1px; background-color: white; cursor: pointer; color: black; border-color: black; width: 100%" tabindex="5">Send</button>
+	<input class= "w3-input w3-border w3-border-theme" name="name" placeholder= "Your name" tabindex="1">
+	<input class= "w3-input w3-border w3-border-theme" name="email" placeholder= "Your email" tabindex="2">
+	<input class= "w3-input w3-border w3-border-theme" name="phone" placeholder= "Your phone number" tabindex="3">
+	<textarea name="message" placeholder="Your message" style= "width: 100%; height: 200px; border: 1px solid black;" tabindex="4"></textarea><br/>
+	<button class="w3-button w3-block w3-white w3-border w3-border-theme w3-round-large" tabindex="5">Send</button>
 </form>
 # Map
 <div style="width: 100%;">

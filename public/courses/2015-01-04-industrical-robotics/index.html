@@ -34,9 +34,18 @@
 	
 	
 	
-	<link rel="stylesheet" href="https://skgadi.com/css/fonts-uc.css">
-	<link rel="stylesheet" href="https://skgadi.com/css/main.css">
+	
+	
 	<link rel="icon" type="image/png" href="https://skgadi.com/images/favicon.png">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body {font-family: "Roboto", sans-serif}
+		.w3-sidenav a {padding:16px;font-weight:bold}
+	</style>
+
 	<style>
 		::-webkit-input-placeholder {  
 			color:    black;
@@ -57,88 +66,77 @@
 	</style>
 	</head>
 <body>
-<div class="shadowBox" style="width: 750px; margin: 50px auto; ">
-<div>
-<table style="margin: auto;">
-<tr>
-<td style="padding-right: 5px;">
-	<img alt= "Site logo" src="https://skgadi.com/images/logos/skgadi.png" style="height:56px; display: block;">
-</td><td>
-	<div style="display: inline-block" >
-		<a href="/" style="font-size: 200%">Suresh Kumar Gadi</a><br/>
-		<div style="text-align: right; font-size: 75%;" >Profesor investigador, FIME, UAdeC&nbsp;</div>
-	</div>
-</td>
-</tr>
-</table>
+
+
+
+
+
+
+<nav class="w3-sidenav w3-collapse w3-white w3-animate0-left w3-card-2" style="z-index:3;width:250px;" id="mySidenav">
+  <a href="/" class="w3-border-bottom w3-border-bottom w3-large"><img src="https://skgadi.com/images/site-name.png" style="width:80%;"></a>
+  <a href="javascript:void(0)" onclick="w3_close()"  class="w3-border-bottom w3-text-teal w3-hide-large w3-closenav w3-large">Close <i class="fa fa-remove"></i></a>
+
+
+	
+		<a class="w3-border-bottom " href="/contact/">Contact</a>
+	
+
+	
+		<a class="w3-border-bottom " href="/education/">Education</a>
+	
+
+	
+		<a class="w3-border-bottom " href="/work-experience/">Work experience</a>
+	
+
+	
+		<a class="w3-border-bottom " href="/posts/">Posts</a>
+	
+
+	
+		<a class="w3-border-bottom " href="/courses/">Courses</a>
+	
+
+	
+		<a class="w3-border-bottom " href="/work-experience/">Work experience</a>
+	
+
+	
+		<a class="w3-border-bottom " href="/education/">Education</a>
+	
+
+	
+		<a class="w3-border-bottom " href="/contact/">Contact</a>
+	
+
+</nav>
+
+
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+<div id="myTop" class="w3-top w3-container w3-padding-16 w3-theme w3-large">
+  <i class="fa fa-bars w3-opennav w3-hide-large w3-xlarge w3-margin-left w3-margin-right" onclick="w3_open()"></i>
+  <span id="myIntro" class="w3-hide">Industrical robotics</span>
 </div>
-<hr/>
-<div style="margin: auto;">
-<table style="margin: auto;">
-<tr style="vertical-align: top;">
+
+<header class="w3-container w3-theme w3-padding-64" style="padding-left:32px">
+  <h1 class="w3-xxxlarge w3-padding-16">Industrical robotics</h1></header>
+
+<div class="w3-container w3-padding-32" style="padding-left:32px">
 
 
-	
-<td style="padding: 0px 10px;">
-		<a href="/">Home</a>
-</td>
-	
 
-	
-<td style="padding: 0px 10px;">
-		<a href="/education/">Education</a>
-</td>
-	
+<div class="w3-row-padding">
 
-	
-<td style="padding: 0px 10px;">
-		<a href="/work-experience/">Work experience</a>
-</td>
-	
-
-	
-<td style="padding: 0px 10px;">
-		<a href="/posts/">Posts</a>
-</td>
-	
-
-	
-<td style="padding: 0px 10px;">
-		<a href="/courses/">Courses</a>
-</td>
-	
-
-	
-<td style="padding: 0px 10px;">
-		<a href="/projects/">Projects</a>
-</td>
-	
-
-	
-<td style="padding: 0px 10px;">
-		<a href="/research/">Research</a>
-</td>
-	
-
-	
-<td style="padding: 0px 10px;">
-		<a href="/contact/">Contact</a>
-</td>
-	
-
-</tr>
-</table>
-</div>
-<hr>
-
-<div style="width: 90%; margin:auto;">
-<h1 style="margin-bottom:0px;">Industrical robotics</h1>
-<hr/>
-
-
-<h2>Course details</h2>
-<div>
-<table class="TableWithBorders" style="width: 75%; margin: auto;"> <tbody>
+<div class="w3-col m6 l6 s12  w3-margin-bottom">
+	<div class="w3-hover-shadow w3-border">
+	<header class="w3-container w3-theme"> 
+	<h2 class="w3-center">Course details</h2>
+	</header>
+<table class="w3-table w3-striped w3-hoverable">
 <tr>
 	<td style="text-align: left;" >School</td>
 	<td style="text-align: right;"><a href="GSKSchoolURL">Universidad Politécnica de Aguascalientes</a></td>
@@ -160,59 +158,74 @@
 	<td style="text-align: right;">2</td>
 </tr><tr>
 
-	<td style="text-align: left;" rowspan="3">Period</td>
+	<td style="text-align: left;">Period</td>
 	<td style="text-align: right;">1/Jan/2015 &mdash; 30/Apr/2015</td>
 </tr><tr>
+	<td style="text-align: left;">Period</td>
 	<td style="text-align: right;" >4 Hrs.</td>
 </tr><tr>
+	<td style="text-align: left;">Period</td>
 	<td style="text-align: right;" >48 Hrs./Wk.</td>
-</tr>
-</tbody></table>
-</div><br/>
+</tr></table>
+	</div>
+</div></div>
 <p><br/></p>
 
-</div>
-<hr/>
-<br/>
 
-<table style="margin: auto;" ><tr><td>
-<input id="SearchText" type="text" placeholder="Search ..." style="border-color: black; background-color : white; color: black; border-style: solid; border-width: 0px 0px 1px 0px; width: 500px;" /></td><td>&nbsp;</td><td><input id="SearchBtn" type="button" value="Search" style="cursor: pointer; border-color: black; border-style: solid; border-width: 1px; background-color: white; color: black;" onclick="SearchClick();"/>
-</td></tr></table>
-<br/>
-<hr>
-<div>
-<table style="font-size: 75%; margin: auto;">
-<tr><td style="padding: 0px 5px;"><img alt="email" src="https://skgadi.com/images/email.png" style="height: 15px;display: block;"/></td><td>gadisureshkumar-at-gmail-dot-com</td><td style="padding: 0px 5px;"><img alt="mobile" src="https://skgadi.com/images/mobile.png" style="height: 15px;display: block;"/></td><td>&#43;52(1)4491820153</td><td style="padding: 0px 5px;"><img alt="fax" src="https://skgadi.com/images/fax.png" style="height: 15px;display: block;"/></td><td>&#43;52(1)8717570153</td><td style="padding: 0px 5px;"><a href="https://orcid.org/0000-0001-7974-7825"><img alt="ORCID" src="https://skgadi.com/images/logos/orcid-logo.png" style="height: 15px;display: block;"/></a></td><td style="padding: 0px 5px;"><a href="https://scholar.google.co.in/citations?user=0000-0001-7974-7825"><img alt="google scholar" src="https://skgadi.com/images/logos/google-scholar.png" style="height: 15px;display: block;"/></a></td><td style="padding: 0px 5px;"><a href="https://mx.linkedin.com/in/skgadi"><img alt="linkedin" src="https://skgadi.com/images/logos/linkedin.png" style="height: 15px;display: block;"/></a></td><td style="padding: 0px 5px;"><a href="https://twitter.com/SureshKumarGadi"><img alt="twitter" src="https://skgadi.com/images/logos/twitter.png" style="height: 15px;display: block;"/></a></td><td style="padding: 0px 5px;"><a href="https://plus.google.com/&#43;SureshKumarGadi"><img alt="google plus" src="https://skgadi.com/images/logos/google-plus.png" style="height: 15px;display: block;"/></a></td><td><a href="https://goo.gl/maps/8NrtjMajSUz"><img alt="maps point" src="https://skgadi.com/images/map.png" style="height: 15px;display: block;"/></a></td></tr><tr>
-<td colspan="12" style="text-align: center;">
-<table style="margin: auto;"><tr>
-<td><img alt="address" src="https://skgadi.com/images/address.png" style="height: 15px;display: block;"/></td>
-<td>Carretera Torreón - Matamoros Km. 7.5, Ciudad Universitaria, Torreón, Coahuila, México, C.P. 27276</td>
-</tr></table>
-</tr></table>
 </div>
-<hr>
 
-<div>
-<table style="font-size: 75%;margin: auto;">
-	<tr>
-		<td>
-			Thanks to&nbsp;
-		</td><td>
-			<img alt="github" src="https://skgadi.com/images/logos/github.png" style="height: 15px;"/>
-		</td><td>
-			<a href="https://github.com/">GitHub</a> and&nbsp;
-		</td><td>
-			<img alt="netlify" src="https://skgadi.com/images/logos/netlify.png" style="height: 15px;"/>
-		</td><td>
-			<a href="https://www.netlify.com/">netlify</a> for hosting.
-		</td>
-	</tr><tr>
-	<td colspan="5" style="text-align: center;">Copyright &copy;&nbsp;2017 Suresh Kumar Gadi</td>
-	</tr>
-</table>
+<footer class="w3-container w3-theme w3-padding-32" style="padding-left:32px">
+
+<div class="w3-container">
+<input class="w3-input" id="SearchText" type="text" placeholder="Search: Enter (&crarr;) for search.">
+
+<p class="w3-small">Address:&nbsp;Carretera Torreón - Matamoros Km. 7.5, Ciudad Universitaria, Torreón, Coahuila, México, C.P. 27276<br />E-mail:gadisureshkumar-at-gmail-dot-com<br />Phone:&#43;52(1)4491820153<br />Fax:&#43;52(1)8717570153</p>
 </div>
+<div class="w3-container"><a class="w3-left w3-padding-tiny" href="https://orcid.org/0000-0001-7974-7825"><img alt="ORCID" src="https://skgadi.com/images/logos/orcid-logo.png" style="height: 15px;display: block;"/></a><a class="w3-left w3-padding-tiny" href="https://scholar.google.co.in/citations?user=0000-0001-7974-7825"><img alt="google scholar" src="https://skgadi.com/images/logos/google-scholar.png" style="height: 15px;display: block;"/></a><a class="w3-left w3-padding-tiny" href="https://mx.linkedin.com/in/skgadi"><img alt="linkedin" src="https://skgadi.com/images/logos/linkedin.png" style="height: 15px;display: block;"/></a><a class="w3-left w3-padding-tiny" href="https://twitter.com/SureshKumarGadi"><img alt="twitter" src="https://skgadi.com/images/logos/twitter.png" style="height: 15px;display: block;"/></a><a class="w3-left w3-padding-tiny" href="https://plus.google.com/&#43;SureshKumarGadi"><img alt="google plus" src="https://skgadi.com/images/logos/google-plus.png" style="height: 15px;display: block;"/></a><a class="w3-left w3-padding-tiny" href="https://goo.gl/maps/8NrtjMajSUz"><img alt="maps point" src="https://skgadi.com/images/map.png" style="height: 15px;display: block;"/></a></div>
+<div class="w3-container">
+<p class="w3-small">Thanks to <a href="https://github.com/">GitHub</a> and <a href="https://www.netlify.com/">netlify</a> for hosting.<br/>
+  Copyright &copy;&nbsp;2017 Suresh Kumar Gadi</p>
 </div>
-<script type="text/javascript">
+</footer>
+     
+</div>
+
+<script>
+
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+        document.getElementById("myIntro").classList.add("w3-show-inline-block");
+    } else {
+        document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+        document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+    }
+}
+
+
+function myAccordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme";
+    } else { 
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-theme", "");
+    }
+}
+
 function SearchClick(){
 	window.open ("https://www.google.com/search?q=" + document.getElementById("SearchText").value+"+site:https:\/\/skgadi.com\/", "_blank");
 }
@@ -220,7 +233,7 @@ document.getElementById("SearchText")
     .addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode == 13) {
-        document.getElementById("SearchBtn").click();
+        SearchClick();
     }
 });
 </script><script>

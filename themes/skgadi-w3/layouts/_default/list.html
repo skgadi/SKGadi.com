@@ -1,0 +1,5 @@
+{{ partial "header.html" . }}
+{{- range .Data.Pages }}
+	<a class="w3-button w3-white w3-border w3-border-theme w3-round-large w3-block w3-left-align" href="{{ .Permalink }}">{{ .Title }}</a>
+{{- end }}
+{{ partial "footer.html" . -}}
