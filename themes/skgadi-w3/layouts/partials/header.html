@@ -379,7 +379,7 @@ function wait(ms){
   <a href="/" class="w3-border-bottom w3-border-bottom w3-large"><img src="{{ .Site.BaseURL }}images/site-name.png" style="width:80%;"></a>
   <a href="javascript:void(0)" onclick="w3_close()"  class="w3-border-bottom w3-text-teal w3-hide-large w3-closenav w3-large">Close <i class="fa fa-remove"></i></a>
 {{ $currentPage := . }}
-{{ range (.Site.Menus.main).Reverse }}
+{{ range (.Site.Menus.main) }}
 	{{ if .HasChildren }}
 		<a class="w3-border-bottom w3-light-grey" href="{{ .URL }}"> {{- .Name -}}</a>
 <ul>
