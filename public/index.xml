@@ -192,7 +192,7 @@
 &lt;div class=&#34;w3-col m12 l12 s12  w3-margin-bottom&#34;&gt;
 &lt;div class=&#34;w3-container w3-hover-shadow w3-padding-0 w3-border w3-border-theme&#34;&gt;
 &lt;header class=&#34;w3-container w3-theme&#34;&gt;&lt;h5 class=&#34;w3-center&#34;&gt;Publications&lt;/h5&gt;&lt;/header&gt;
-&lt;div class=&#34;w3-container w3-margin&#34;&gt;
+&lt;div class=&#34;w3-container w3-margin-0 w3-margin-top&#34;&gt;
 &lt;div class=&#34;container-fluid&#34;&gt;
 &lt;div class=&#34;w3-row&#34;&gt;
 &lt;div class=&#34;w3-col m12 l12 s12  w3-margin-bottom&#34;&gt;

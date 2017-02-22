@@ -38,7 +38,7 @@ Lastmod = "2017-01-07T00:00:00-06:00"
 <div class="w3-col m12 l12 s12  w3-margin-bottom">
 <div class="w3-container w3-hover-shadow w3-padding-0 w3-border w3-border-theme">
 <header class="w3-container w3-theme"><h5 class="w3-center">Publications</h5></header>
-<div class="w3-container w3-margin">
+<div class="w3-container w3-margin-0 w3-margin-top">
 <div class="container-fluid">
 <div class="w3-row">
 <div class="w3-col m12 l12 s12  w3-margin-bottom">
