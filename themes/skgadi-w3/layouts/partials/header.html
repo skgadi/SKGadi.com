@@ -286,32 +286,6 @@ function wait(ms){
     </script>
     <style>
 	    bibtex { display: none; }
-	    .searchbar { margin-left:0px;}
-	    #bibtex_errors { margin-top:10px; color: red;}
-	    h1.header {margin-left:8px;}
-	    h1.YEAR { font-size: 17px; font-weight: bold; display: inline; margin-left:8px;}
-		.SKGListItem {
-			text-align: justify;
-			display: block;
-			
-			/*border-left: 1px solid lightblack;
-			border-right: 1px solid lightblack;*/
-			padding: 0px 5px;
-			text-decoration: none;
-			cursor: pointer;
-			-webkit-transition-duration: 0.4s; /* Safari */
-			transition-duration: 0.4s;
-		}
-		.SKGListItem:hover {
-			/*border: 1px solid black;*/
-			/*background-color: #efe;*/
-		}
-		a.SKGListItem:hover{
-			text-decoration: none;
-			font-weight: normal;
-			border: 0px solid black;
-			background-color: #eee;
-		}
 		.BibTeXRawCodeBlock {
 			white-space: pre-wrap;       /* Since CSS 2.1 */
 			white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
@@ -406,12 +380,12 @@ function wait(ms){
   <span id="myIntro" class="w3-hide">{{ .Title }}</span>
 </div>
 
-<header class="w3-container w3-theme w3-padding-64" style="padding-left:32px">
-  <h1 class="w3-xxxlarge w3-padding-16">{{ .Title }}</h1>
+<header class="w3-container w3-theme w3-padding-64">
+  <h1 class="w3-xxxlarge">{{ .Title }}</h1>
   {{- if eq .Title .Site.Title -}}<h3>{{- .Site.Params.SubTitle }}</h3>{{- end -}}
   {{- if eq .Section "posts" -}}<h3>{{ .Date.Format "Mon, Jan 2, 2006" }}</h3>{{- end -}}
 
 </header>
 
-<div class="w3-container w3-padding-32" style="padding-left:32px">
+<div class="w3-container w3-padding-0 w3-padding-top">
 

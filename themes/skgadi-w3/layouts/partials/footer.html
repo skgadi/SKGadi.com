@@ -1,14 +1,14 @@
 
 </div>
 
-<footer class="w3-container w3-theme w3-padding-32" style="padding-left:32px">
+<footer class="w3-container w3-theme w3-padding">
 
-<div class="w3-container">
+<div class="w3-container w3-padding-0">
 <input class="w3-input" id="SearchText" type="text" placeholder="Search: Enter (&crarr;) for search.">
 
 <p class="w3-small">{{- if .Site.Params.Address -}}Address:&nbsp;{{- .Site.Params.Address -}}{{- end -}}{{- if .Site.Params.email -}}<br />E-mail: {{- .Site.Params.email -}}{{- end -}}{{- if .Site.Params.Phone -}}<br />Phone: {{- .Site.Params.Phone -}}{{- end -}}{{- if .Site.Params.Fax -}}<br />Fax: {{- .Site.Params.Fax -}}{{- end -}}</p>
 </div>
-<div class="w3-container">
+<div class="w3-container w3-padding-0">
 {{- if .Site.Params.ORCID -}}
 <a class="w3-left w3-padding-tiny" href="https://orcid.org/{{ .Site.Params.ORCID }}"><img alt="ORCID" src="{{ .Site.BaseURL }}images/logos/orcid-logo.png" style="height: 15px;display: block;"/></a>
 {{- end -}}
@@ -34,7 +34,7 @@
 <a class="w3-left w3-padding-tiny" href="{{ .Site.Params.Maps }}"><img alt="maps point" src="{{ .Site.BaseURL }}images/map.png" style="height: 15px;display: block;"/></a>
 {{- end -}}
 </div>
-<div class="w3-container">
+<div class="w3-container w3-padding-0">
 <p class="w3-small">Thanks to <a href="https://github.com/">GitHub</a> and <a href="https://www.netlify.com/">netlify</a> for hosting.<br/>
   Copyright &copy;&nbsp;{{- .Site.Params.Copyright }}</p>
 </div>
