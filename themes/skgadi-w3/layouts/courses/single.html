@@ -3,127 +3,118 @@
 <div class="w3-row-padding">
 
 <div class="w3-col m6 l6 s12  w3-margin-bottom">
-	<div class="w3-hover-shadow w3-border">
-	<header class="w3-container w3-theme"> 
-	<h2 class="w3-center">Course details</h2>
-	</header>
-<table class="w3-table w3-striped w3-hoverable">
-<tr>
-	<td style="text-align: left;" >School</td>
-	<td style="text-align: right;"><a href="GSKSchoolURL">{{ .Params.GSKSchool }}</a></td>
-</tr><tr>
-	<td style="text-align: left;" >Department</td>
-	<td style="text-align: right;"><a href="GSKDepartmentURL">{{ .Params.GSKDepartment }}</a></td>
-</tr><tr>
-	<td style="text-align: left;" >Place</td>
-	<td style="text-align: right;">{{ .Params.GSKCity }}</td>
-</tr><tr>
-	<td style="text-align: left;" >Level</td>
-	<td style="text-align: right;">{{ .Params.GSKLevel }}</td>
-</tr><tr>
-	<td style="text-align: left;" >Group</td>
-	<td style="text-align: right;">{{ .Params.GSKGroup }}</td>
-</tr><tr>
-{{ if .Params.GSKStrength }}
-	<td style="text-align: left;" >Class strength</td>
-	<td style="text-align: right;">{{ .Params.GSKStrength }}</td>
-</tr><tr>
-{{ end }}
-	<td style="text-align: left;">Period</td>
-	<td style="text-align: right;">{{  dateFormat "2/Jan/2006" .Params.GSKStartDate }} &mdash; {{  dateFormat "2/Jan/2006" .Params.GSKEndDate }}</td>
-</tr><tr>
-	<td style="text-align: left;">Period</td>
-	<td style="text-align: right;" >{{ .Params.GSKTotalPeriod }} Hrs.</td>
-</tr><tr>
-	<td style="text-align: left;">Period</td>
-	<td style="text-align: right;" >{{ .Params.GSKPeriodPerWeek }} Hrs./Wk.</td>
-</tr></table>
+	<div class="w3-hover-shadow w3-border w3-border-theme">
+	<header class="w3-container w3-theme"><h5 class="w3-center">Course details</h5></header>
+	<table class="w3-table w3-striped w3-hoverable">
+		<tr>
+			<td style="text-align: left;" >School</td>
+			<td style="text-align: right;"><a href="GSKSchoolURL">{{ .Params.GSKSchool }}</a></td>
+		</tr><tr>
+			<td style="text-align: left;" >Department</td>
+			<td style="text-align: right;"><a href="GSKDepartmentURL">{{ .Params.GSKDepartment }}</a></td>
+		</tr><tr>
+			<td style="text-align: left;" >Place</td>
+			<td style="text-align: right;">{{ .Params.GSKCity }}</td>
+		</tr><tr>
+			<td style="text-align: left;" >Level</td>
+			<td style="text-align: right;">{{ .Params.GSKLevel }}</td>
+		</tr><tr>
+			<td style="text-align: left;" >Group</td>
+			<td style="text-align: right;">{{ .Params.GSKGroup }}</td>
+		</tr><tr>
+		{{ if .Params.GSKStrength }}
+			<td style="text-align: left;" >Class strength</td>
+			<td style="text-align: right;">{{ .Params.GSKStrength }}</td>
+		</tr><tr>
+		{{ end }}
+			<td style="text-align: left;">Period</td>
+			<td style="text-align: right;">{{  dateFormat "2/Jan/2006" .Params.GSKStartDate }} &mdash; {{  dateFormat "2/Jan/2006" .Params.GSKEndDate }}</td>
+		</tr><tr>
+			<td style="text-align: left;">Period</td>
+			<td style="text-align: right;" >{{ .Params.GSKTotalPeriod }} Hrs.</td>
+		</tr><tr>
+			<td style="text-align: left;">Period</td>
+			<td style="text-align: right;" >{{ .Params.GSKPeriodPerWeek }} Hrs./Wk.</td>
+		</tr>
+	</table>
 	</div>
 </div>
 
 {{- if .Params.CourseMaterial -}}
 <div class="w3-col m6 l6 s12 w3-margin-bottom">
-	<div class="w3-hover-shadow w3-border">
-	<header class="w3-container w3-theme"> 
-	<h2 class="w3-center">Course Material</h2>
-	</header>
+	<div class="w3-hover-shadow w3-border w3-border-theme">
+	<header class="w3-container w3-theme"><h5 class="w3-center">Course Material</h5></header>
 		{{- range .Params.CourseMaterial -}}
-		<div class="w3-row w3-margin">
-			<div class="w3-col m12 l4 s12  w3-margin-bottom">
+		<div class="w3-container w3-center w3-margin">
+			{{ if .URL }}<a href="{{ .URL }}" class="w3-button w3-white w3-border w3-border-theme w3-block w3-ripple">{{ end }}
 				{{ .Name }}
-			</div>
-			<div class="w3-col m12 l8 s12  w3-margin-bottom">
-				<div class="w3-bar">
-					{{ if .URL }}<a class="w3-bar-item w3-button w3-white w3-border w3-border-theme w3-round-large" href="{{ .URL }}" target="_blank">Open</a>{{ end }}
-				</div>
-			</div>
+			{{ if .URL }}</a>{{ end }}
 		</div>
 		{{- end -}}
-	
 	</div>
 </div>
 {{- end -}}
-
 {{- if .Params.Homeworks -}}
 <div class="w3-col m6 l6 s12 w3-margin-bottom">
-	<div class="w3-hover-shadow w3-border">
-	<header class="w3-container w3-theme"> 
-	<h2 class="w3-center">Homeworks</h2>
-	</header>
+	<div class="w3-hover-shadow w3-border w3-border-theme">
+	<header class="w3-container w3-theme"><h5 class="w3-center">Homeworks</h5></header>
 		{{- range .Params.Homeworks -}}
-		<div class="w3-row w3-margin">
-			<div class="w3-col m12 l4 s12  w3-margin-bottom">
-				{{ .Name }}
-			</div>
-			<div class="w3-col m12 l8 s12  w3-margin-bottom">
-				<div class="w3-bar">
-					{{ if .QuestionsURL }}<a class="w3-bar-item w3-button w3-white w3-border w3-border-theme w3-round-large" href="{{ .QuestionsURL }}" target="_blank">Questions</a>{{ end }}
-					{{ if .AnswersURL }}<a class="w3-bar-item w3-button w3-white w3-border w3-border-green w3-round-large" href="{{ .AnswersURL }}" target="_blank">Answers</a>{{ end }}
-				</div>
+		<div class="w3-container w3-center w3-margin">
+			<div class="w3-bar">
+				{{ if .QuestionsURL }}<a href="{{ .QuestionsURL }}" class="w3-bar-item w3-button w3-white w3-border w3-border-theme w3-ripple">{{ end }}
+					{{ .Name }}
+				{{ if .QuestionsURL }}</a>{{ end }}
+				{{ if .AnswersURL }}<a href="{{ .AnswersURL }}" class="w3-bar-item w3-button w3-white w3-border w3-border-theme w3-ripple">
+					Solution
+				</a>{{ end }}
 			</div>
 		</div>
 		{{- end -}}
-	
 	</div>
 </div>
 {{- end -}}
 {{- if .Params.Exams -}}
 <div class="w3-col m6 l6 s12 w3-margin-bottom">
-	<div class="w3-hover-shadow w3-border">
-	<header class="w3-container w3-theme"> 
-	<h2 class="w3-center">Exams</h2>
-	</header>
+	<div class="w3-hover-shadow w3-border w3-border-theme">
+	<header class="w3-container w3-theme"><h5 class="w3-center">Exams</h5></header>
 		{{- range .Params.Exams -}}
-		<div class="w3-row w3-margin">
-			<div class="w3-col m12 l4 s12  w3-margin-bottom">
-				{{ .Name }}
-			</div>
-			<div class="w3-col m12 l8 s12  w3-margin-bottom">
-				<div class="w3-bar">
-					{{ if .QuestionsURL }}<a class="w3-bar-item w3-button w3-white w3-border w3-border-theme w3-round-large" href="{{ .QuestionsURL }}" target="_blank">Questions</a>{{ end }}
-					{{ if .AnswersURL }}<a class="w3-bar-item w3-button w3-white w3-border w3-border-green w3-round-large" href="{{ .AnswersURL }}" target="_blank">Answers</a>{{ end }}
-				</div>
+		<div class="w3-container w3-center w3-margin">
+			<div class="w3-bar">
+				{{ if .QuestionsURL }}<a href="{{ .QuestionsURL }}" class="w3-bar-item w3-button w3-white w3-border w3-border-theme w3-ripple">{{ end }}
+					{{ .Name }}
+				{{ if .QuestionsURL }}</a>{{ end }}
+				{{ if .AnswersURL }}<a href="{{ .AnswersURL }}" class="w3-bar-item w3-button w3-white w3-border w3-border-theme w3-ripple">
+					Solution
+				</a>{{ end }}
 			</div>
 		</div>
 		{{- end -}}
-	
 	</div>
 </div>
 {{- end -}}
 
-</div>	
-
 {{- if .Params.GSKAttendanceURL -}}
-<h2>Attendance</h2>
-<iframe src="https://docs.google.com/spreadsheets/d/{{ .Params.GSKAttendanceURL }}/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="width: 100%; height: 500px;"></iframe>
+<div class="w3-col m12 l12 s12 w3-margin-bottom">
+	<div class="w3-hover-shadow w3-border w3-border-theme">
+	<header class="w3-container w3-theme"><h5 class="w3-center">Attendance</h5></header>
+	<div class="w3-container w3-padding-0">
+		<iframe src="https://docs.google.com/spreadsheets/d/{{ .Params.GSKAttendanceURL }}/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="width: 100%; height: 500px;"></iframe>
+	</div>
+	</div>
+</div>
 {{- end -}}
-
 {{- if .Params.GSKGradeURL -}}
-<h2>Grades</h2>
-<iframe src="https://docs.google.com/spreadsheets/d/{{ .Params.GSKGradeURL }}/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="width: 100%; height: 500px;"></iframe>
+<div class="w3-col m12 l12 s12 w3-margin-bottom">
+	<div class="w3-hover-shadow w3-border w3-border-theme">
+	<header class="w3-container w3-theme"><h5 class="w3-center">Grades</h5></header>
+	<div class="w3-container w3-padding-0">
+		<iframe src="https://docs.google.com/spreadsheets/d/{{ .Params.GSKGradeURL }}/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="width: 100%; height: 500px;"></iframe>
+	</div>
+	</div>
+</div>
 {{- end -}}
 
-<!--h2>{{ .Params.Exams }}</h2-->
+</div>
 {{ .Content }}
 {{ partial "footer.html" . -}}
 

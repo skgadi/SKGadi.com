@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Educations on Suresh Kumar Gadi</title>
+    <link>https://skgadi.com/education/index.xml</link>
+    <description>Recent content in Educations on Suresh Kumar Gadi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2017 Suresh Kumar Gadi</copyright>
+    <lastBuildDate>Tue, 20 May 2014 23:12:36 -0600</lastBuildDate>
+    <atom:link href="https://skgadi.com/education/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ph.D. in automatic control</title>
+      <link>https://skgadi.com/education/phd/</link>
+      <pubDate>Tue, 20 May 2014 23:12:36 -0600</pubDate>
+      
+      <guid>https://skgadi.com/education/phd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Master of technology in Sensor System Technology</title>
+      <link>https://skgadi.com/education/mtech/</link>
+      <pubDate>Sun, 31 May 2009 23:12:36 +0530</pubDate>
+      
+      <guid>https://skgadi.com/education/mtech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Associate member of the institution of engineers (India)</title>
+      <link>https://skgadi.com/education/amie/</link>
+      <pubDate>Fri, 30 Jun 2006 23:12:36 +0530</pubDate>
+      
+      <guid>https://skgadi.com/education/amie/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Diploma in electrical and electronics engineering (DEEE)</title>
+      <link>https://skgadi.com/education/deee/</link>
+      <pubDate>Tue, 30 Apr 2002 23:12:36 +0530</pubDate>
+      
+      <guid>https://skgadi.com/education/deee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Secondary school certificate (SSC)</title>
+      <link>https://skgadi.com/education/ssc/</link>
+      <pubDate>Wed, 30 Jun 1999 23:12:36 +0530</pubDate>
+      
+      <guid>https://skgadi.com/education/ssc/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,37 +1,43 @@
 {{ partial "header.html" . }}
 <div class="w3-row-padding">
 	<div class="w3-col m6 l4 s12  w3-margin-bottom">
-		<ul class="w3-ul w3-border w3-hover-shadow">
-			<li class="w3-center w3-theme w3-xlarge w3-padding-16">Courses</li>
-			{{- range first 10 .Data.Pages -}}
-			{{- if eq .Type "courses"}}
-			<div class="w3-padding"><a class="w3-button w3-white w3-border w3-border-theme w3-round-large w3-block w3-left-align" href="{{ .Permalink }}">{{ .Title }}</a></div>
+		<div class="w3-hover-shadow w3-border w3-border-theme">
+			<header class="w3-container w3-theme"><h5 class="w3-center">Resent courses</h5></header>			
+			{{- range first 5 (where .Data.Pages "Section" "courses") -}}
+			<div class="w3-container w3-center w3-section">
+				<a href="{{ .Permalink }}" class="w3-button w3-white w3-block w3-left-align w3-border w3-border-theme w3-ripple">
+					{{ .Title }}
+				</a>
+			</div>
 			{{- end -}}
-			{{- end }}
-			<li class="w3-center w3-xlarge w3-padding-16"><a href="{{ .Site.BaseURL }}courses" class="w3-btn w3-theme">See more</a></li>
-		</ul>
+			<div class="w3-container w3-center w3-margin"><a href="{{ .Site.BaseURL }}courses" class="w3-btn w3-theme w3-ripple">See more</a></div>
+		</div>
 	</div>
 	<div class="w3-col m6 l4 s12  w3-margin-bottom">
-		<ul class="w3-ul w3-border w3-hover-shadow">
-			<li class="w3-center w3-theme w3-xlarge w3-padding-16">Projects</li>
-			{{- range first 10 .Data.Pages -}}
-			{{- if eq .Type "projects"}}
-			<div class="w3-padding"><a class="w3-button w3-white w3-border w3-border-theme w3-round-large w3-block w3-left-align" href="{{ .Permalink }}">{{ .Title }}</a></div>
+		<div class="w3-hover-shadow w3-border w3-border-theme">
+			<header class="w3-container w3-theme"><h5 class="w3-center">Resent projects</h5></header>			
+			{{- range first 5 (where .Data.Pages "Section" "projects") -}}
+			<div class="w3-container w3-center w3-section">
+				<a href="{{ .Permalink }}" class="w3-button w3-white w3-block w3-left-align w3-border w3-border-theme w3-ripple">
+					{{ .Title }}
+				</a>
+			</div>
 			{{- end -}}
-			{{- end }}
-			<li class="w3-center w3-xlarge w3-padding-16"><a href="{{ .Site.BaseURL }}projects" class="w3-btn w3-theme">See more</a></li>
-		</ul>
+			<div class="w3-container w3-center w3-margin"><a href="{{ .Site.BaseURL }}projects" class="w3-btn w3-theme w3-ripple">See more</a></div>
+		</div>
 	</div>
 	<div class="w3-col m6 l4 s12  w3-margin-bottom">
-		<ul class="w3-ul w3-border w3-hover-shadow">
-			<li class="w3-center w3-theme w3-xlarge w3-padding-16">Posts</li>
-			{{- range first 10 .Data.Pages -}}
-			{{- if eq .Type "posts"}}
-			<div class="w3-padding"><a class="w3-button w3-white w3-border w3-border-theme w3-round-large w3-block w3-left-align" href="{{ .Permalink }}">{{ .Title }}</a></div>
+		<div class="w3-hover-shadow w3-border w3-border-theme">
+			<header class="w3-container w3-theme"><h5 class="w3-center">Resent posts</h5></header>			
+			{{- range first 5 (where .Data.Pages "Section" "posts") -}}
+			<div class="w3-container w3-center w3-section">
+				<a href="{{ .Permalink }}" class="w3-button w3-white w3-block w3-left-align w3-border w3-border-theme w3-ripple">
+					{{ .Title }}
+				</a>
+			</div>
 			{{- end -}}
-			{{- end }}
-			<li class="w3-center w3-xlarge w3-padding-16"><a href="{{ .Site.BaseURL }}posts" class="w3-btn w3-theme">See more</a></li>
-		</ul>
+			<div class="w3-container w3-center w3-margin"><a href="{{ .Site.BaseURL }}posts" class="w3-btn w3-theme w3-ripple">See more</a></div>
+		</div>
 	</div>
 </div>
 {{ partial "footer.html" . -}}

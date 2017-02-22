@@ -1,0 +1,24 @@
+{{ partial "header.html" . }}
+<div class="w3-row-padding">
+{{- range .Data.Pages }}
+<div class="w3-col m6 l6 s12  w3-margin-bottom">
+	<div class="w3-container w3-hover-shadow w3-padding-0 w3-border w3-border-theme">
+		<header class="w3-container w3-theme"><h5 class="w3-center">{{ .Title }}</h5></header>
+		<table class="w3-table w3-striped w3-hoverable w3-border-bottom w3-border-theme">
+		<tr>
+			<td style="text-align: left;" >School</td>
+			<td style="text-align: right;">{{ if .Params.GSKSchoolURL }}<a href="{{ .Params.GSKSchoolURL }}">{{ end }}{{ .Params.GSKSchool }}{{ if .Params.GSKSchoolURL }}</a>{{ end }}</td>
+		</tr><tr>
+			<td style="text-align: left;" >Place</td>
+			<td style="text-align: right;">{{ .Params.GSKCity }}</td>
+		</tr><tr>
+			<td style="text-align: left;">Period</td>
+			<td style="text-align: right;">{{  dateFormat "2/Jan/2006" .Params.GSKStartDate }} &mdash; {{  dateFormat "2/Jan/2006" .Params.GSKEndDate }}</td>
+		</tr>	
+		</table>
+		<div class="w3-container w3-center w3-margin w3-ripple"><a href="{{ .Permalink }}" class="w3-btn w3-theme w3-ripple">See more</a></div>
+	</div>
+</div>
+{{- end -}}
+</div>
+{{ partial "footer.html" . -}}
