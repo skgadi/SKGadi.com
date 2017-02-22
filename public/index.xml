@@ -233,7 +233,7 @@
 &lt;/div&gt;
 &lt;div id=&#34;bibtex_display&#34;&gt;
         &lt;div class=&#34;if bibtex_template&#34; style=&#34;display: none;&#34;&gt;
-            &lt;ul class=&#34;w3-ul w3-hoverable&#34;&gt;&lt;li&gt;
+            &lt;ul class=&#34;w3-ul w3-hoverable w3-margin-bottom w3-padding-0 w3-border w3-border-theme&#34;&gt;&lt;li&gt;
                 &lt;span class=&#34;bibtexVar&#34; id=&#34;bib+BIBTEXKEY+&#34; extra=&#34;BIBTEXKEY&#34; onclick=&#34;DisplayItem(&#39;BIBD+BIBTEXKEY+&#39;)&#34; style=&#34;cursor: pointer;&#34;&gt;
                     &lt;span class=&#34;if author&#34;&gt;&lt;span class=&#34;author&#34;&gt;&lt;/span&gt;.&lt;/span&gt;
                     &lt;span class=&#34;if title&#34;&gt;&#34;&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;.&#34;&lt;/span&gt;
