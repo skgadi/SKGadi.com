@@ -6,24 +6,39 @@ date = "2017-01-07T00:00:00-06:00"
 title = "Research"
 Lastmod = "2017-01-07T00:00:00-06:00"
 +++
-## Research interests
-
-* Linear and nonlinear systems
-* Optimization
-* Parametric excitation
-
-## Conacyt CVU
-
-[Click here](../docs/conacyt-cvu.pdf) to download the Conacyt's CVU.
-
-
-## Email
-
-Please use the email "research-at-skgadi.com" for research related emails.
-
-## Publications
-
-<div>
+<div class="w3-row-padding">
+<div class="w3-col m6 l6 s12  w3-margin-bottom">
+	<div class="w3-container w3-hover-shadow w3-padding-0 w3-border w3-border-theme">
+		<header class="w3-container w3-theme"><h5 class="w3-center">ORCID</h5></header>
+		<div class="w3-container w3-center w3-margin w3-ripple"><iframe src="https://orcid.org/static/html/widget.html?orcid=0000-0001-7974-7825&t=e50db5&locale=en" frameborder="0" height="225" width="210px" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe></div>
+	</div>
+</div>
+<div class="w3-col m6 l6 s12  w3-margin-bottom">
+	<div class="w3-container w3-hover-shadow w3-padding-0 w3-border w3-border-theme">
+		<header class="w3-container w3-theme"><h5 class="w3-center">Conacyt CVU</h5></header>
+		<div class="w3-container w3-center w3-margin w3-ripple"><a href="../docs/conacyt-cvu.pdf" target="_blank" class="w3-btn w3-theme w3-ripple">Download</a></div>
+	</div>
+</div>
+<div class="w3-col m6 l6 s12  w3-margin-bottom">
+	<div class="w3-container w3-hover-shadow w3-padding-0 w3-border w3-border-theme">
+		<header class="w3-container w3-theme"><h5 class="w3-center">Email</h5></header>
+		<div class="w3-container w3-center w3-margin w3-ripple">research-at-skgadi-dot-com</div>
+	</div>
+</div>
+<div class="w3-col m6 l6 s12  w3-margin-bottom">
+	<div class="w3-container w3-hover-shadow w3-padding-0 w3-border w3-border-theme">
+		<header class="w3-container w3-theme"><h5 class="w3-center">Research interests</h5></header>
+		<ul class="w3-ul w3-hoverable">
+			<li>Linear and nonlinear systems</li>
+			<li>Optimization</li>
+			<li>Parametric excitation</li>
+		</ul>
+	</div>
+</div>
+<div class="w3-col m12 l12 s12  w3-margin-bottom">
+<div class="w3-container w3-hover-shadow w3-padding-0 w3-border w3-border-theme">
+<header class="w3-container w3-theme"><h5 class="w3-center">Publications</h5></header>
+<div class="w3-container w3-margin">
 <div class="container-fluid">
 <div class="w3-row">
 <div class="w3-col m12 l12 s12  w3-margin-bottom">
@@ -49,7 +64,7 @@ Please use the email "research-at-skgadi.com" for research related emails.
 </select>
 </div>
 <div class="w3-col m4 l3 s6  w3-margin-bottom">
-<button type="button" class="w3-button w3-btn-block w3-white w3-border w3-border-red w3-round-large" onclick="reset()" >Reset</button>
+<button type="button" class="w3-button w3-btn-block w3-white w3-border w3-border-red w3-ripple" onclick="reset()" >Reset</button>
 </div>
 </div>
 </div>
@@ -62,11 +77,10 @@ Please use the email "research-at-skgadi.com" for research related emails.
       </div>
   </div>
 </div>
-
 <div id="bibtex_display">
 		<div class="if bibtex_template" style="display: none;">
-			<ul><li>
-				<a class="SKGListItem" ><span class="SKGListItem bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY" onclick="DisplayItem('BIBD+BIBTEXKEY+')">
+			<ul class="w3-ul w3-hoverable"><li>
+				<span class="bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY" onclick="DisplayItem('BIBD+BIBTEXKEY+')" style="cursor: pointer;">
 					<span class="if author"><span class="author"></span>.</span>
 					<span class="if title">"<span class="title"></span>."</span>
 					<span class="if journal">In <i><span class="journal"></span></i>.</span>
@@ -74,7 +88,7 @@ Please use the email "research-at-skgadi.com" for research related emails.
 					<span class="if year">on <span class="year"></span></span>
 					<span class="if month"><span class="month"></span></span>
 					<span class="if pages">(pp. <span class="pages"></span>).</span>
-				</span></a>
+				</span>
 				<div style="display: none;" class="bibtexVar" id="BIBD+BIBTEXKEY+" extra="BIBTEXKEY">
 					<header class="w3-container w3-theme"> 
 					<span onclick="document.getElementById('ArticleModal').style.display='none'" class="w3-closebtn">&times;</span>
@@ -132,4 +146,4 @@ Please use the email "research-at-skgadi.com" for research related emails.
 </div>
 <div class="w3-modal" id="ArticleModal"><div id="ArticleModalContent" class="w3-modal-content w3-animate-zoom">Select an entry to view the complete details here.</div></div>
 </div>
-<iframe src="https://orcid.org/static/html/widget.html?orcid=0000-0001-7974-7825&t=e50db5&locale=en" frameborder="0" height="225" width="210px" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe>
+</div></div></div>
