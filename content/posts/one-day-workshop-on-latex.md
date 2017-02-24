@@ -9,7 +9,7 @@ title = "One day workshop on LaTeX"
 +++
 
 This workshop presents an introduction to the programming language LaTeX  for the first time users.
-
+<!--more-->
 ## Slides
 <iframe style= "height: 480px; width: 100%;" src="https://drive.google.com/file/d/0B6A_I6W9HjBDb29KdUJsZXFYblU/preview"></iframe>
 
