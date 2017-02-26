@@ -69,7 +69,13 @@ baseurl = "https://skgadi.com/"
 	weight = 6
 
 [[menu.main]]
+    identifier = "WebTools"
+    name = "Web Tools"
+    url = "https://tools.SKGadi.com"
+	weight = 7
+
+[[menu.main]]
     identifier = "Contact"
     name = "Contact"
     url = "/contact/"
-	weight = 7
+	weight = 8
