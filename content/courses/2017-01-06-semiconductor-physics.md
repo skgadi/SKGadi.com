@@ -22,6 +22,9 @@ GSKGradeURL = "1UpiDRrdFLgkR_meufBsTD-vHmW0G8Gyo2eYe39qIuyw"
 [[CourseMaterial]]
     Name = "Syllabus"
     URL = "https://drive.google.com/file/d/0BzllW1KDpzoLUmw4MThObGIwRWM/view"
+[[CourseMaterial]]
+    Name = "Video: Working of transistors"
+    URL = "https://www.youtube.com/watch?v=7ukDKVHnac4"
 
 [[Homeworks]]
     Name = "Homework 1"
