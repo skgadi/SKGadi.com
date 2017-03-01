@@ -2,7 +2,7 @@
 <div class="w3-row-padding">
 	<div class="w3-col m6 l4 s12  w3-margin-bottom">
 		<div class="w3-hover-shadow w3-border w3-border-theme">
-			<header class="w3-container w3-theme"><h5 class="w3-center">Resent courses</h5></header>			
+			<header class="w3-container w3-theme"><h5 class="w3-center">Recent courses</h5></header>			
 			{{- range first 5 (where .Data.Pages "Section" "courses") -}}
 			<div class="w3-container w3-center w3-section">
 				<a href="{{ .Permalink }}" class="w3-button w3-white w3-block w3-left-align w3-border w3-border-theme w3-ripple">
@@ -15,7 +15,7 @@
 	</div>
 	<div class="w3-col m6 l4 s12  w3-margin-bottom">
 		<div class="w3-hover-shadow w3-border w3-border-theme">
-			<header class="w3-container w3-theme"><h5 class="w3-center">Resent projects</h5></header>			
+			<header class="w3-container w3-theme"><h5 class="w3-center">Recent projects</h5></header>			
 			{{- range first 5 (where .Data.Pages "Section" "projects") -}}
 			<div class="w3-container w3-center w3-section">
 				<a href="{{ .Permalink }}" class="w3-button w3-white w3-block w3-left-align w3-border w3-border-theme w3-ripple">
@@ -28,7 +28,7 @@
 	</div>
 	<div class="w3-col m6 l4 s12  w3-margin-bottom">
 		<div class="w3-hover-shadow w3-border w3-border-theme">
-			<header class="w3-container w3-theme"><h5 class="w3-center">Resent posts</h5></header>			
+			<header class="w3-container w3-theme"><h5 class="w3-center">Recent posts</h5></header>			
 			{{- range first 5 (where .Data.Pages "Section" "posts") -}}
 			<div class="w3-container w3-center w3-section">
 				<a href="{{ .Permalink }}" class="w3-button w3-white w3-block w3-left-align w3-border w3-border-theme w3-ripple">
