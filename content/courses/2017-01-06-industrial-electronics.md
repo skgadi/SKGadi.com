@@ -30,6 +30,18 @@ GSKGradeURL = "1mrA-fsgcB4CI50_TpKa7IHJT413pgdAIyMSAKx71CDE"
     Name = "Homework 1"
 	Date = "2017-02-03"
     QuestionsURL = "https://github.com/skgadi/Courses/raw/master/2017-01-06/UAdeC-FIME-9B/Homework001/questions.pdf"
+[[Homeworks]]
+    Name = "Homework 2"
+	Date = "2017-02-09"
+    QuestionsURL = "https://github.com/skgadi/Courses/raw/master/2017-01-06/UAdeC-FIME-9B/Homework002/questions.pdf"
+[[Homeworks]]
+    Name = "Homework 3"
+	Date = "2017-02-23"
+    QuestionsURL = "https://github.com/skgadi/Courses/raw/master/2017-01-06/UAdeC-FIME-9B/Homework003/questions.pdf"
+[[Homeworks]]
+    Name = "Homework 4"
+	Date = "2017-03-16"
+    QuestionsURL = "https://github.com/skgadi/Courses/raw/master/2017-01-06/UAdeC-FIME-9B/Homework004/questions.pdf"
 
 	
 +++
