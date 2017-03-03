@@ -1,35 +1,25 @@
-
 </div>
-
 <footer class="w3-container w3-theme w3-padding">
-
 <div class="w3-container w3-padding-0">
 <input class="w3-input" id="SearchText" type="text" placeholder="Search: Enter (&crarr;) for search.">
-
 <p class="w3-small">{{- if .Site.Params.Address -}}Address:&nbsp;{{- .Site.Params.Address -}}{{- end -}}{{- if .Site.Params.email -}}<br />E-mail: {{- .Site.Params.email -}}{{- end -}}{{- if .Site.Params.Phone -}}<br />Phone: {{- .Site.Params.Phone -}}{{- end -}}{{- if .Site.Params.Fax -}}<br />Fax: {{- .Site.Params.Fax -}}{{- end -}}</p>
 </div>
 <div class="w3-container w3-padding-0">
 {{- if .Site.Params.ORCID -}}
 <a class="w3-left w3-padding-tiny" href="https://orcid.org/{{ .Site.Params.ORCID }}"><img alt="ORCID" src="{{ .Site.BaseURL }}images/logos/orcid-logo.png" style="height: 15px;display: block;"/></a>
 {{- end -}}
-
 {{- if .Site.Params.GScholar -}}
 <a class="w3-left w3-padding-tiny" href="https://scholar.google.co.in/citations?user={{ .Site.Params.ORCID }}"><img alt="google scholar" src="{{ .Site.BaseURL }}images/logos/google-scholar.png" style="height: 15px;display: block;"/></a>
 {{- end -}}
-
 {{- if .Site.Params.LinkedIn -}}
 <a class="w3-left w3-padding-tiny" href="https://mx.linkedin.com/in/{{ .Site.Params.LinkedIn }}"><img alt="linkedin" src="{{ .Site.BaseURL }}images/logos/linkedin.png" style="height: 15px;display: block;"/></a>
 {{- end -}}
-
 {{- if .Site.Params.Twitter -}}
 <a class="w3-left w3-padding-tiny" href="https://twitter.com/{{ .Site.Params.Twitter }}"><img alt="twitter" src="{{ .Site.BaseURL }}images/logos/twitter.png" style="height: 15px;display: block;"/></a>
 {{- end -}}
-
-
 {{- if .Site.Params.GPlus -}}
 <a class="w3-left w3-padding-tiny" href="https://plus.google.com/{{ .Site.Params.GPlus }}"><img alt="google plus" src="{{ .Site.BaseURL }}images/logos/google-plus.png" style="height: 15px;display: block;"/></a>
 {{- end -}}
-
 {{- if .Site.Params.Maps -}}
 <a class="w3-left w3-padding-tiny" href="{{ .Site.Params.Maps }}"><img alt="maps point" src="{{ .Site.BaseURL }}images/map.png" style="height: 15px;display: block;"/></a>
 {{- end -}}
@@ -39,53 +29,24 @@
   Copyright &copy;&nbsp;{{- .Site.Params.Copyright }}</p>
 </div>
 </footer>
-     
 </div>
 
+
+<!-- BibTeX for research article -->
+{{- if eq .LinkTitle "Research" -}}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
+<bibtex src="{{ .Site.BaseURL }}bibtex/publications.bib"></bibtex>
+<script src="{{ .Site.BaseURL }}js/notify.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="{{ .Site.BaseURL }}js/script.js" type="text/javascript" charset="utf-8"></script>
+{{- end -}}
+<script src="{{ .Site.BaseURL }}js/script0.js" type="text/javascript" charset="utf-8"></script>
 <script>
-// Open and close the sidenav on medium and small screens
-function w3_open() {
-    document.getElementById("mySidenav").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
-function w3_close() {
-    document.getElementById("mySidenav").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-
-// Change style of top container on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
-        document.getElementById("myIntro").classList.add("w3-show-inline-block");
-    } else {
-        document.getElementById("myIntro").classList.remove("w3-show-inline-block");
-        document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
-    }
-}
-
-// Accordions
-function myAccordion(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-        x.previousElementSibling.className += " w3-theme";
-    } else { 
-        x.className = x.className.replace("w3-show", "");
-        x.previousElementSibling.className = 
-        x.previousElementSibling.className.replace(" w3-theme", "");
-    }
-}
-
-function SearchClick(){
-	window.open ("https://www.google.com/search?q=" + document.getElementById("SearchText").value+"+site:{{ .Site.BaseURL }}", "_blank");
-}
 document.getElementById("SearchText")
     .addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode == 13) {
-        SearchClick();
+        SearchClick("{{ .Site.BaseURL }}");
     }
 });
 </script>

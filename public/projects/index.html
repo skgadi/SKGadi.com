@@ -33,38 +33,15 @@
 	
 	
 	
-	
-	
-	
 	<link rel="icon" type="image/png" href="https://skgadi.com/images/favicon.png">
 	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style>
-		body {font-family: "Roboto", sans-serif}
-		.w3-sidenav a {padding:16px;font-weight:bold}
-	</style>
+	
+	<link rel="stylesheet" href="https://skgadi.com/css/style.css">
 
-	<style>
-		::-webkit-input-placeholder {  
-			color:    black;
-			opacity:  0.5;
-		}
-		:-moz-placeholder {  
-		   color:    black;
-		   opacity:  0.5;
-		}
-		::-moz-placeholder {  
-		   color:    black;
-		   opacity:  0.5;
-		}
-		:-ms-input-placeholder {  
-		   color:    black;
-		   opacity:  0.5;
-		}
-	</style>
-	</head>
+</head>
 <body>
 <nav class="w3-sidenav w3-collapse w3-white w3-animate0-left w3-card-2" style="z-index:3;width:250px;" id="mySidenav">
   <a href="/" class="w3-border-bottom w3-border-bottom w3-large"><img src="https://skgadi.com/images/site-name.png" style="width:100%;"></a>
@@ -95,14 +72,10 @@
 		</div>
 	</div>
 </div>
-
 </div>
-
 <footer class="w3-container w3-theme w3-padding">
-
 <div class="w3-container w3-padding-0">
 <input class="w3-input" id="SearchText" type="text" placeholder="Search: Enter (&crarr;) for search.">
-
 <p class="w3-small">Address:&nbsp;Carretera Torreón - Matamoros Km. 7.5, Ciudad Universitaria, Torreón, Coahuila, México, C.P. 27276<br />Fax:&#43;52 (1) 871 757 0153</p>
 </div>
 <div class="w3-container w3-padding-0"><a class="w3-left w3-padding-tiny" href="https://orcid.org/0000-0001-7974-7825"><img alt="ORCID" src="https://skgadi.com/images/logos/orcid-logo.png" style="height: 15px;display: block;"/></a><a class="w3-left w3-padding-tiny" href="https://scholar.google.co.in/citations?user=0000-0001-7974-7825"><img alt="google scholar" src="https://skgadi.com/images/logos/google-scholar.png" style="height: 15px;display: block;"/></a><a class="w3-left w3-padding-tiny" href="https://mx.linkedin.com/in/skgadi"><img alt="linkedin" src="https://skgadi.com/images/logos/linkedin.png" style="height: 15px;display: block;"/></a><a class="w3-left w3-padding-tiny" href="https://twitter.com/SureshKumarGadi"><img alt="twitter" src="https://skgadi.com/images/logos/twitter.png" style="height: 15px;display: block;"/></a><a class="w3-left w3-padding-tiny" href="https://plus.google.com/&#43;SureshKumarGadi"><img alt="google plus" src="https://skgadi.com/images/logos/google-plus.png" style="height: 15px;display: block;"/></a><a class="w3-left w3-padding-tiny" href="https://goo.gl/maps/8NrtjMajSUz"><img alt="maps point" src="https://skgadi.com/images/map.png" style="height: 15px;display: block;"/></a></div>
@@ -111,53 +84,16 @@
   Copyright &copy;&nbsp;2017 Suresh Kumar Gadi</p>
 </div>
 </footer>
-     
 </div>
 
+
+<script src="https://skgadi.com/js/script0.js" type="text/javascript" charset="utf-8"></script>
 <script>
-
-function w3_open() {
-    document.getElementById("mySidenav").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
-function w3_close() {
-    document.getElementById("mySidenav").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-
-
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
-        document.getElementById("myIntro").classList.add("w3-show-inline-block");
-    } else {
-        document.getElementById("myIntro").classList.remove("w3-show-inline-block");
-        document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
-    }
-}
-
-
-function myAccordion(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-        x.previousElementSibling.className += " w3-theme";
-    } else { 
-        x.className = x.className.replace("w3-show", "");
-        x.previousElementSibling.className = 
-        x.previousElementSibling.className.replace(" w3-theme", "");
-    }
-}
-
-function SearchClick(){
-	window.open ("https://www.google.com/search?q=" + document.getElementById("SearchText").value+"+site:https:\/\/skgadi.com\/", "_blank");
-}
 document.getElementById("SearchText")
     .addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode == 13) {
-        SearchClick();
+        SearchClick("https:\/\/skgadi.com\/");
     }
 });
 </script><script>

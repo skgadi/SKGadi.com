@@ -1,0 +1,52 @@
+body {font-family: "Roboto", sans-serif}
+.w3-sidenav a {padding:16px;font-weight:bold}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color:    black;
+	opacity:  0.5;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    black;
+   opacity:  0.5;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    black;
+   opacity:  0.5;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    black;
+   opacity:  0.5;
+}
+
+bibtex { display: none; }
+.BibTeXRawCodeBlock {
+	white-space: pre-wrap;       /* Since CSS 2.1 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+.BibTeXRawCodeBlock {
+	border: 2px solid black;
+	padding: 5px;
+	word-wrap: break-word;
+	background: white;
+	margin: 0px;
+}
+.BibTeXRawCodeBlock:hover {
+	background: #efe;
+}
+table.ContentTable  {
+	border-collapse: collapse;
+	width: 100%;
+}
+table.ContentTable, table.ContentTable th, table.ContentTable td {
+	padding: 5px;
+	border: 2px solid black;
+}
+table.ContentTable tr:nth-child(even) {background: #white}
+table.ContentTable tr:nth-child(odd) {background: #efe}
+table.ContentTable tr:hover {background: #dfd}
+
+a.Icon {
+	text-decoration: none;
+}
