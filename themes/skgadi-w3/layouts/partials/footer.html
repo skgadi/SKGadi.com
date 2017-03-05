@@ -32,15 +32,6 @@
 </div>
 
 
-<!-- BibTeX for research article -->
-{{- if eq .LinkTitle "Research" -}}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="{{ .Site.BaseURL }}js/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
-<bibtex src="{{ .Site.BaseURL }}bibtex/publications.bib"></bibtex>
-<script src="{{ .Site.BaseURL }}js/notify.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="{{ .Site.BaseURL }}js/script.js" type="text/javascript" charset="utf-8"></script>
-{{- end -}}
-<script src="{{ .Site.BaseURL }}js/script0.js" type="text/javascript" charset="utf-8"></script>
 <script>
 document.getElementById("SearchText")
     .addEventListener("keyup", function(event) {

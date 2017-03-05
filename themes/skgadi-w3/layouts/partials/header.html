@@ -51,7 +51,19 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
-
+	{{- if .Params.JSPlugIn -}}
+	{{- range .Params.JSPlugIn -}}
+	<script src="{{ if eq .Local "true"  }}{{ $.Site.BaseURL }}js/{{- .URL -}}{{ else }}{{- .URL -}}{{ end }}" type="text/javascript" charset="utf-8"></script>
+	{{- end -}}
+	{{- end -}}
+	{{- if .Params.BiBPlugIn -}}
+	{{- range .Params.BiBPlugIn -}}
+	<bibtex src="{{ if eq .Local "true"  }}{{ $.Site.BaseURL }}bibtex/{{- .URL -}}{{ else }}{{- .URL -}}{{ end }}"charset="utf-8"></bibtex>
+	{{- end -}}
+	{{- end -}}
+	
+	
+	<script src="{{ .Site.BaseURL }}js/script0.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 <nav class="w3-sidenav w3-collapse w3-white w3-animate0-left w3-card-2" style="z-index:3;width:250px;" id="mySidenav">
