@@ -27,10 +27,6 @@ function OpenFile(BIBKey, Loc) {
 		window.open("https://drive.google.com/drive/search?q=" + BIBKey, '_blank');
 }
 
-function SelectTheText(Code) {
-	SelectText(Code);
-}
-
 function CopyTheText(Code) {
 	copyTextofDOMToClipboard(Code);
 	$.notify("This BibTeX code is coppied to your clipboard", "success");

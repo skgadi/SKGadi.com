@@ -349,7 +349,7 @@
 						&lt;/table&gt;
 						&lt;br/&gt;
 						&lt;div style=&#34;position: relative;&#34;&gt;
-						&lt;pre class = &#34;BibTeXRawCodeBlock&#34; onclick=&#34;SelectTheText(this)&#34; ondblclick=&#34;CopyTheText(this);&#34;&gt;&lt;span class=&#34;bibtexraw noread&#34;&gt;&lt;/span&gt;&lt;/pre&gt;
+						&lt;pre class = &#34;BibTeXRawCodeBlock&#34; ondblclick=&#34;CopyTheText(this);&#34;&gt;&lt;span class=&#34;bibtexraw noread&#34;&gt;&lt;/span&gt;&lt;/pre&gt;
 						&lt;a class=&#34;Icon&#34; style=&#34;display: float;position: absolute; bottom: 0px; right: 5px; font-size: 40px; cursor: pointer;&#34; onclick=&#34;CopyThePrevText(this)&#34;&gt;&lt;i class=&#34;fa fa-copy&#34;&gt;&lt;/i&gt;&lt;/a&gt;
 						&lt;/div&gt;
 					&lt;/div&gt;

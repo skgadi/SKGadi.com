@@ -45,6 +45,13 @@
 	<!--SEO Tags End   -->
 	
 	<link rel="icon" type="image/png" href="{{ .Site.BaseURL }}images/favicon.png">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+
+	
 	{{- if .Params.JSPlugIn -}}
 	{{- range .Params.JSPlugIn -}}
 	<script src="{{ if eq .Local "true"  }}{{ $.Site.BaseURL }}js/{{- .URL -}}{{ else }}{{- .URL -}}{{ end }}" type="text/javascript" charset="utf-8"></script>
@@ -59,11 +66,11 @@
 <body>
 <nav class="w3-sidenav w3-collapse w3-white w3-animate0-left w3-card-2" style="z-index:3;width:250px;" id="mySidenav">
   <a href="/" class="w3-border-bottom w3-border-bottom w3-large"><img src="{{ .Site.BaseURL }}images/site-name.png" style="width:100%;"></a>
-  <a href="javascript:void(0)" onclick="w3_close()"  class="w3-border-bottom w3-text-teal w3-hide-large w3-closenav w3-large">Close <i class="fa fa-remove"></i></a>
+  <a href="javascript:void(0)" onclick="w3_close()"  class="w3-border-bottom w3-text-theme w3-hide-large w3-closenav w3-large">Close <i class="fa fa-remove"></i></a>
 {{- $currentPage := . -}}
 {{- range (.Site.Menus.main) -}}
 	{{ if .HasChildren -}}
-		<a class="w3-border-bottom w3-light-grey" href="{{ .URL }}"> {{- .Name -}}</a>
+		<a class="w3-border-bottom w3-theme-d1" href="{{ .URL }}"> {{- .Name -}}</a>
 <ul>
 		{{- range .Children -}}
 <li>
@@ -72,19 +79,36 @@
 		{{- end -}}
 </ul>
 	{{- else -}}
-		<a class="w3-border-bottom {{ if eq $.RelPermalink .URL }} w3-light-grey w3-medium {{ end }}" href="{{ .URL }}">{{- .Name -}}</a>
+		<a class="w3-border-bottom {{ if eq $.RelPermalink .URL }} w3-theme-d1 w3-medium {{ else }} {{ end }}" href="{{ .URL }}">{{- .Name -}}</a>
 	{{- end -}}
 {{- end -}}
 </nav>
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
 <div class="w3-main" style="margin-left:250px;">
-<div id="myTop" class="w3-top w3-container w3-padding-16 w3-theme w3-large">
+<div id="myTop" class="w3-top w3-container w3-padding-16 w3-theme-d1 w3-large">
   <i class="fa fa-bars w3-opennav w3-hide-large w3-xlarge w3-margin-left w3-margin-right" onclick="w3_open()"></i>
   <span id="myIntro" class="w3-hide">{{ .Title }}</span>
 </div>
-<header class="w3-container w3-theme w3-padding-64">
-  <h1 class="w3-xxxlarge">{{ .Title }}</h1>
-  {{- if eq .Title .Site.Title -}}<h3>{{- .Site.Params.SubTitle }}</h3>{{- end -}}
-  {{- if eq .Section "posts" -}}<h3>{{ .Date.Format "Mon, Jan 2, 2006" }}</h3>{{- end -}}
+<header class="w3-container w3-theme-d1 w3-padding-64">
+	<h1 class="w3-xxxlarge w3-padding-0 w3-margin-0">{{ .Title }}</h1>
+	{{- if eq .Section "posts" -}}<p><i>{{ .Date.Format "Mon, Jan 2, 2006" }}</i></p>{{- end -}}
+	{{- if eq .Title .Site.Title -}}
+		<p class="w3-margin-0"><i>{{- .Site.Params.SubTitle }}</i></p>
+	{{- else -}}
+		<div class="w3-show-inline-block">
+		<div class="w3-bar">
+		<a href='/' class="w3-button w3-hover-theme w3-bar-item w3-padding-tiny">Home</a>
+		{{ $.Scratch.Add "path" .Site.BaseURL }}
+		{{ range $index, $element := split .Permalink "/" }}
+			{{ $.Scratch.Add "path" $element }}
+			{{ if ne $element "" }}
+				<a class="w3-bar-item w3-padding-tiny"><i class="fa fa-angle-double-right"></i></a>
+				<a href='{{ $.Scratch.Get "path" }}' class="w3-button w3-hover-theme w3-bar-item w3-padding-tiny">{{ humanize (replace . "-" " ") }}</a>
+			{{ $.Scratch.Add "path" "/" }}
+		  {{ end }}
+		{{ end }}
+		</div>
+		</div>
+	{{- end -}}
 </header>
 <div class="w3-container w3-padding-0 w3-padding-top">
