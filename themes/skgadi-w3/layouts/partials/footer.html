@@ -32,6 +32,27 @@
 </div>
 
 
+<!-- Google recomendation to put css at the end -->
+<noscript id="deferred-styles">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+</noscript>
+
+{{- if .Params.JSPlugInEnd -}}
+{{- range .Params.JSPlugInEnd -}}
+<script src="{{ if eq .Local "true"  }}{{ $.Site.BaseURL }}js/{{- .URL -}}{{ else }}{{- .URL -}}{{ end }}" type="text/javascript" charset="utf-8"></script>
+{{- end -}}
+{{- end -}}
+
+{{- if .Params.BiBPlugInEnd -}}
+{{- range .Params.BiBPlugInEnd -}}
+<bibtex src="{{ if eq .Local "true"  }}{{ $.Site.BaseURL }}bibtex/{{- .URL -}}{{ else }}{{- .URL -}}{{ end }}"charset="utf-8"></bibtex>
+{{- end -}}
+{{- end -}}
+<script src="{{ .Site.BaseURL }}js/script000.js" type="text/javascript" charset="utf-8"></script>
 <script>
 document.getElementById("SearchText")
     .addEventListener("keyup", function(event) {

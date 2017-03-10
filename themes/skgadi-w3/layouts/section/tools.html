@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+<div class="w3-row-padding">
+	{{- range .Data.Pages }}
+<div class="w3-col m6 l6 s12  w3-margin-bottom">
+	<div class="w3-container w3-hover-shadow w3-padding-0 w3-border w3-border-theme">
+		<header class="w3-container w3-theme"><h5 class="w3-center">{{ .Title }}</h5></header>
+			<div class="w3-container w3-section">
+				{{ .Description }}
+				<hr/>
+				<div class="w3-container w3-center w3-margin"><a href="{{ .RelPermalink  }}" class="w3-btn w3-theme w3-ripple">Open</a></div>
+			</div>
+		</div>
+	</div>
+	{{- end }}
+</div>
+{{ partial "footer.html" . -}}

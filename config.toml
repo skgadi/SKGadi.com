@@ -57,21 +57,21 @@ baseurl = "https://skgadi.com/"
 	weight = 4
 
 [[menu.main]]
+    identifier = "Tools"
+    name = "Tools"
+    url = "/tools/"
+	weight = 5
+
+[[menu.main]]
     identifier = "Projects"
     name = "Projects"
     url = "/projects/"
-	weight = 5
+	weight = 6
 
 [[menu.main]]
     identifier = "Research"
     name = "Research"
     url = "/research/"
-	weight = 6
-
-[[menu.main]]
-    identifier = "WebTools"
-    name = "Web Tools"
-    url = "https://tools.SKGadi.com"
 	weight = 7
 
 [[menu.main]]
