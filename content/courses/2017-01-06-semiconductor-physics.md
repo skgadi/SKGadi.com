@@ -42,6 +42,11 @@ GSKGradeURL = "1UpiDRrdFLgkR_meufBsTD-vHmW0G8Gyo2eYe39qIuyw"
     Name = "Homework 4"
 	Date = "2017-03-06"
     QuestionsURL = "https://github.com/skgadi/Courses/raw/master/2017-01-06/UAdeC-FIME-4A/Homework004/questions.pdf"
+
+[[Exams]]
+    Name = "Exam 1"
+	Date = "2017-03-14"
+    QuestionsURL = "https://docs.google.com/forms/d/e/1FAIpQLScplXdRjCd9w9_n1sjM6z0ddGzMw1kmZIfjqExdflIoAZovMQ/viewform?usp=sf_link"
 	
 +++
 
