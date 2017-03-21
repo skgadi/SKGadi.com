@@ -5,7 +5,7 @@ title = "Suresh Kumar Gadi"
 baseurl = "https://skgadi.com/"
 [params]
 	CommonTitle = "Suresh Kumar Gadi"
-	SubTitle = "Profesor investigador, FIME, UAdeC"
+	SubTitle = "Research professor, FIME, UAdeC"
 	Copyright = "2017 Suresh Kumar Gadi"
 #	email = "gadisureshkumar-at-gmail-dot-com"
 	ORCID = "0000-0001-7974-7825"
@@ -25,57 +25,72 @@ baseurl = "https://skgadi.com/"
 [params.meta.Description]
 	name = "Dr. Suresh Kumar Gadi is a research professor at the Universidad Autónoma de Coahuila"
 
-
-[[menu.main]]
-    identifier = "Home"
-    name = "Home"
-    url = "/"
-	weight = 0
-
-[[menu.main]]
-    identifier = "Education"
-    name = "Education"
-    url = "/education/"
-	weight = 1
-
-[[menu.main]]
-    identifier = "WorkExperience"
-    name = "Work experience"
-    url = "/work-experience/"
-	weight = 2
-
-[[menu.main]]
-    identifier = "Posts"
-    name = "Posts"
-    url = "/posts/"
-	weight = 3
-
-[[menu.main]]
-    identifier = "Courses"
-    name = "Courses"
-    url = "/courses/"
-	weight = 4
-
-[[menu.main]]
-    identifier = "Tools"
-    name = "Tools"
-    url = "/tools/"
-	weight = 5
-
-[[menu.main]]
-    identifier = "Projects"
-    name = "Projects"
-    url = "/projects/"
-	weight = 6
+[taxonomies]
+	tag = "tags"
+	category = "categories"
+	
+#[[menu.main]]
+#    identifier = "Home"
+#    name = "Home"
+#    url = "/"
+#	weight = 0
 
 [[menu.main]]
     identifier = "Research"
     name = "Research"
     url = "/research/"
+	weight = 1
+
+[[menu.main]]
+    identifier = "Projects"
+    name = "Projects"
+    url = "/projects/"
+	weight = 2
+
+[[menu.main]]
+    identifier = "Courses"
+    name = "Courses"
+    url = "/courses/"
+	weight = 3
+
+[[menu.main]]
+    identifier = "Tools"
+    name = "Tools"
+    url = "/tools/"
+	weight = 4
+
+[[menu.main]]
+    identifier = "Posts"
+    name = "Posts"
+    url = "/posts/"
+	weight = 5
+
+[[menu.main]]
+    identifier = "Tags"
+    name = "Tags"
+    url = "/tags/"
+	weight = 6
+
+[[menu.main]]
+    identifier = "Categories"
+    name = "Categories"
+    url = "/categories/"
 	weight = 7
+
+[[menu.main]]
+    identifier = "Education"
+    name = "Education"
+    url = "/education/"
+	weight = 8
+
+[[menu.main]]
+    identifier = "WorkExperience"
+    name = "Work experience"
+    url = "/work-experience/"
+	weight = 9
 
 [[menu.main]]
     identifier = "Contact"
     name = "Contact"
     url = "/contact/"
-	weight = 8
+	weight = 10

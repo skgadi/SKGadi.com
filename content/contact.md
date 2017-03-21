@@ -10,7 +10,7 @@ title = "Contact"
 <div class="w3-col m12 l6 s12  w3-margin-bottom">
 	<div class="w3-container w3-hover-shadow w3-padding-0 w3-border w3-border-theme">
 		<header class="w3-container w3-theme"><h5 class="w3-center">Send an email</h5></header>
-		<div class="w3-container w3-center w3-margin w3-ripple">
+		<div class="w3-container w3-center w3-padding-0 w3-ripple">
 			<form name="contact" netlify netlify-honeypot="bot-field">
 				<input class= "w3-input w3-border w3-border-theme" name="name" placeholder= "Your name" tabindex="1">
 				<input class= "w3-input w3-border w3-border-theme" name="email" placeholder= "Your email" tabindex="2">
@@ -24,7 +24,7 @@ title = "Contact"
 <div class="w3-col m12 l6 s12  w3-margin-bottom">
 	<div class="w3-container w3-hover-shadow w3-padding-0 w3-border w3-border-theme">
 		<header class="w3-container w3-theme"><h5 class="w3-center">Map</h5></header>
-		<div class="w3-container w3-center w3-margin w3-ripple w3-padding-0 w3-margin-0"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3027.4749267833777!2d-103.33085525628194!3d25.528557890710097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x25576067121ec28f!2sFIME!5e0!3m2!1sen!2smx!4v1485811391184" width="100%" height="595" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+		<div class="w3-container w3-center w3-margin w3-ripple w3-padding-0 w3-margin-0"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3027.4749267833777!2d-103.33085525628194!3d25.528557890710097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x25576067121ec28f!2sFIME!5e0!3m2!1sen!2smx!4v1485811391184" width="100%" height="600" frameborder="0" style="border:0; display: block;" allowfullscreen></iframe></div>
 	</div>
 </div>
 </div>
@@ -32,7 +32,7 @@ title = "Contact"
 <script>
 	tinymce.init({
 	selector:\`textarea\`,
-	height: 300,
+	height: 330,
 	menubar: false,
 	plugins: [
 		\`advlist autolink lists link image charmap print preview anchor\`,

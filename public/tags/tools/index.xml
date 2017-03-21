@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on Suresh Kumar Gadi</title>
+    <link>https://skgadi.com/tags/tools/index.xml</link>
+    <description>Recent content in Tools on Suresh Kumar Gadi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2017 Suresh Kumar Gadi</copyright>
+    <atom:link href="https://skgadi.com/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Multifactorial experiment simulator</title>
+      <link>https://skgadi.com/tools/multifactorial-experiment-simulator/</link>
+      <pubDate>Sat, 25 Feb 2017 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/tools/multifactorial-experiment-simulator/</guid>
+      <description>&lt;p&gt;This tool allows user to simulate multifactorial experiments. The optimization result can be verified here: This tool provides an error of the estimated values for the factors.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;div class=&#34;w3-row&#34;&gt;
+	&lt;header class=&#34;w3-theme w3-padding&#34;&gt;Select number of factors&lt;/header&gt;
+	&lt;div class=&#34;w3-col m12 l12 s12&#34;&gt;
+		&lt;input id=&#34;NumOfFactors&#34; class=&#34;w3-input w3-border w3-border-theme&#34; placeholder=&#34;Enter an integer&#34; type=&#34;text&#34;&gt;
+	&lt;/div&gt;
+	&lt;div class=&#34;w3-col m12 l12 s12&#34;&gt;
+		&lt;button id=&#34;Next000&#34; class=&#34;w3-btn w3-theme-d5 w3-ripple w3-block&#34;&gt;Next&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;FactorDeclaration&#34; class=&#34;w3-containter w3-margin-top w3-border w3-border-theme&#34;&gt;
+	&lt;div class=&#34;w3-row&#34;&gt;
+		&lt;header class=&#34;w3-theme w3-padding&#34;&gt;Select the upper and lower limits&lt;/header&gt;
+		&lt;div class=&#34;w3-col m4 l4 s4 w3-padding w3-border w3-border-theme w3-center&#34;&gt;Factor&lt;/div&gt;
+		&lt;div class=&#34;w3-col m4 l4 s4 w3-padding w3-border w3-border-theme w3-center&#34;&gt;Lower limit&lt;/div&gt;
+		&lt;div class=&#34;w3-col m4 l4 s4 w3-padding w3-border w3-border-theme w3-center&#34;&gt;Upper limit&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div id=&#34;FactorLimits&#34; class=&#34;w3-row&#34;&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;PerformExperiment&#34; class=&#34;w3-containter w3-margin-top w3-border w3-border-theme&#34;&gt;
+	&lt;header class=&#34;w3-theme w3-padding&#34;&gt;Perform individual experiment/measure distance from optimum value (validate optimum value)&lt;/header&gt;
+	&lt;div class=&#34;w3-row&#34;&gt;
+		&lt;div class=&#34;w3-col m6 l6 s6 w3-padding w3-border w3-border-theme w3-center&#34;&gt;Factor&lt;/div&gt;
+		&lt;div class=&#34;w3-col m6 l6 s6 w3-padding w3-border w3-border-theme w3-center&#34;&gt;Value&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div id=&#34;FactorValues&#34; class=&#34;w3-row&#34;&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;PerformBulkExperiment&#34; class=&#34;w3-containter w3-margin-top w3-border w3-border-theme&#34;&gt;
+	&lt;header class=&#34;w3-theme w3-padding&#34;&gt;Perform bulk experiments&lt;/header&gt;
+	&lt;div class=&#34;w3-row&#34;&gt;
+		&lt;div class=&#34;w3-col m12 l12 s12&#34;&gt;
+			&lt;textarea id=&#34;BulkText&#34; style=&#34;width:100%; height: 100px; display: block;&#34; class=&#34;w3-code jsHigh notranslate w3-margin-0&#34; contenteditable=&#34;true&#34;&gt;To perform bulk experiments, paste your excel data here.&lt;/textarea&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;w3-col m6 l6 s12&#34;&gt;
+			&lt;button id=&#39;BtnBulkCalculationsToClip&#39; class=&#39;w3-btn w3-theme-d5 w3-border w3-border-theme w3-block w3-ripple&#39;&gt;Save results to clipboard&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;w3-col m6 l6 s12&#34;&gt;
+			&lt;button id=&#39;BtnBulkCalculationsToFile&#39; class=&#39;w3-btn w3-theme-d5 w3-border w3-border-theme w3-block w3-ripple&#39;&gt;Save results to a file&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
