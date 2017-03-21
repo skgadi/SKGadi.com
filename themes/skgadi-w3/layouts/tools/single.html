@@ -1,0 +1,12 @@
+{{- partial "header.html" . -}}
+<div class="w3-row-padding">
+	<div class="w3-col m12 l12 s12  w3-margin-bottom">
+		<div class="w3-container w3-hover-shadow w3-padding-0 w3-border w3-border-theme">
+			<!--header class="w3-container w3-theme"><h5 >{{ .Title }}</h5></header-->
+			<div class="w3-container w3-section">
+				{{- .Content -}}
+			</div>
+		</div>
+	</div>
+</div>
+{{- partial "footer.html" . -}}
