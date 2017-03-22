@@ -23,7 +23,7 @@ baseurl = "https://skgadi.com/"
 [params.meta.Keywords]
 	name = ["skgadi", "suresh kumar gadi", "control digital"]
 [params.meta.Description]
-	name = "Dr. Suresh Kumar Gadi is a research professor at the Universidad Autónoma de Coahuila"
+	name = "Dr. Suresh Kumar Gadi is a research professor at the Universidad Autónoma de Coahuila, Torreón"
 
 [taxonomies]
 	tag = "tags"
