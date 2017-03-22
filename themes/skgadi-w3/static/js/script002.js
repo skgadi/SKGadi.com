@@ -37,7 +37,7 @@ function Next000() {
 			$("#FactorLimits").append("<div class='w3-col m4 l4 s4'><input id='FactorLLimit" + i + "' class='w3-input w3-border w3-border-theme w3-right-align' type='text' value='0'></div>");
 			$("#FactorLimits").append("<div class='w3-col m4 l4 s4'><input id='FactorULimit" + i + "' class='w3-input w3-border w3-border-theme w3-right-align' type='text' value='100'></div>");
 		}
-		$("#FactorLimits").append("<button id='Next001' class='w3-btn w3-theme-d5 w3-block w3-ripple'>Confirm limits</button>");
+		$("#FactorLimits").append("<button id='Next001' class='w3-button w3-theme w3-block w3-ripple'>Confirm limits</button>");
 		$("#FactorDeclaration").css("display", "block");
 		$("#Next001").click(function () {
 			Next001()
@@ -94,8 +94,8 @@ function Next001() {
 			$("#FactorValues").append("<div class='w3-col m6 l6 s6'><input class='w3-input w3-border w3-border-theme' type='text' value='" + $("#FactorLabel" + i).val() + "' disabled></div>");
 			$("#FactorValues").append("<div class='w3-col m6 l6 s6'><input id='FValue" + i + "' class='w3-input w3-border w3-border-theme w3-right-align' type='text'></div>");
 		}
-		$("#FactorValues").append("<div class='w3-col m6 l6 s12'><button id='Next002' class='w3-btn w3-theme-d5 w3-border w3-border-theme w3-block w3-ripple'>Calculate response</button></div>");
-		$("#FactorValues").append("<div class='w3-col m6 l6 s12'><button id='Next003' class='w3-btn w3-theme-d5 w3-border w3-border-theme w3-block w3-ripple'>Is optimum</button></div>");
+		$("#FactorValues").append("<div class='w3-col m6 l6 s12'><button id='Next002' class='w3-button w3-theme w3-border w3-border-theme w3-block w3-ripple'>Calculate response</button></div>");
+		$("#FactorValues").append("<div class='w3-col m6 l6 s12'><button id='Next003' class='w3-button w3-theme w3-border w3-border-theme w3-block w3-ripple'>Is optimum</button></div>");
 		$("#FactorValues").append("<div class='w3-col m12 l12 s12'><input id='ResponseValue' class='w3-input w3-border w3-border-theme w3-center w3-xlarge' type='text' value='Press Calculate reponse button' disabled></div>");
 		$("#PerformExperiment").css("display", "block");
 		$("#PerformBulkExperiment").css("display", "block");
