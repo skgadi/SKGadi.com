@@ -299,7 +299,9 @@
 					&lt;span class=&#34;if author&#34;&gt;&lt;span class=&#34;author&#34;&gt;&lt;/span&gt;.&lt;/span&gt;
 					&lt;span class=&#34;if title&#34;&gt;&#34;&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;.&#34;&lt;/span&gt;
 					&lt;span class=&#34;if journal&#34;&gt;In &lt;i&gt;&lt;span class=&#34;journal&#34;&gt;&lt;/span&gt;&lt;/i&gt;.&lt;/span&gt;
-					&lt;span class=&#34;if organization&#34;&gt;In &lt;i&gt;&lt;span class=&#34;organization&#34;&gt;&lt;/span&gt;&lt;/i&gt;.&lt;/span&gt;
+					&lt;span class=&#34;if booktitle&#34;&gt;In &lt;i&gt;&lt;span class=&#34;booktitle&#34;&gt;&lt;/span&gt;&lt;/i&gt;.&lt;/span&gt;
+					&lt;span class=&#34;if organization&#34;&gt;Of &lt;i&gt;&lt;span class=&#34;organization&#34;&gt;&lt;/span&gt;&lt;/i&gt;.&lt;/span&gt;
+					&lt;span class=&#34;if publisher&#34;&gt;Published by &lt;i&gt;&lt;span class=&#34;publisher&#34;&gt;&lt;/span&gt;&lt;/i&gt;.&lt;/span&gt;
 					&lt;span class=&#34;if year&#34;&gt;on &lt;span class=&#34;year&#34;&gt;&lt;/span&gt;&lt;/span&gt;
 					&lt;span class=&#34;if month&#34;&gt;&lt;span class=&#34;month&#34;&gt;&lt;/span&gt;&lt;/span&gt;
 					&lt;span class=&#34;if pages&#34;&gt;(pp. &lt;span class=&#34;pages&#34;&gt;&lt;/span&gt;).&lt;/span&gt;
@@ -317,6 +319,7 @@
 						&lt;div class=&#34;if journal&#34;&gt;&lt;h4 style=&#34; font-weight: normal; text-align: center; margin: 0px;&#34;&gt;&lt;em&gt;&lt;span class=&#34;journal&#34;&gt;&lt;/span&gt;&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;
 						&lt;div class=&#34;if school&#34;&gt;&lt;h4 style=&#34; font-weight: normal; text-align: center; margin: 0px;&#34;&gt;&lt;em&gt;&lt;span class=&#34;school&#34;&gt;&lt;/span&gt;&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;
 						&lt;div class=&#34;if booktitle&#34;&gt;&lt;h4 style=&#34; font-weight: normal; text-align: center; margin: 0px;&#34;&gt;&lt;em&gt;&lt;span class=&#34;booktitle&#34;&gt;&lt;/span&gt;&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;
+						&lt;div class=&#34;if publisher&#34;&gt;&lt;h4 style=&#34; font-weight: normal; text-align: center; margin: 0px;&#34;&gt;&lt;em&gt;&lt;span class=&#34;publisher&#34;&gt;&lt;/span&gt;&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;
 						&lt;br/&gt;
 						&lt;div class=&#34;if abstract&#34; style=&#34;text-align: justify&#34;&gt;&lt;span&gt;&lt;b&gt;&lt;i&gt;Abstract:&amp;ndash; &lt;/i&gt;&lt;/b&gt;&lt;/span&gt;&lt;span class=&#34;abstract&#34; &gt;&lt;/span&gt;&lt;/div&gt;
 						&lt;br/&gt;
