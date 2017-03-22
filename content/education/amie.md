@@ -38,8 +38,8 @@ GSKCity = "Kolkata"
     Name = "Marksheets"
 	Text = "Section A"
     URL = "https://drive.google.com/open?id=0B6A_I6W9HjBDZlpSTkVzVjUzcGc"
-[[ExtraDetails]]
-    Name = ""
-	Text = ""
-    URL = ""
+#[[ExtraDetails]]
+#    Name = ""
+#	Text = ""
+#    URL = ""
 +++

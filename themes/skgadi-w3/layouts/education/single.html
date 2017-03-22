@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 <div class="w3-row-padding">
-<div class="w3-col m6 l6 s12  w3-margin-bottom">
+<div class="w3-col m12 l12 s12  w3-margin-bottom">
 	<div class="w3-container w3-hover-shadow w3-padding-0 w3-border w3-border-theme">
 		<header class="w3-container w3-theme"><h5 class="w3-center">{{ .Title }}</h5></header>
 		<table class="w3-table w3-striped w3-hoverable">
@@ -14,14 +14,7 @@
 			<td style="text-align: left;">Period</td>
 			<td style="text-align: right;">{{  dateFormat "2/Jan/2006" .Params.GSKStartDate }} &mdash; {{  dateFormat "2/Jan/2006" .Params.GSKEndDate }}</td>
 		</tr>	
-		</table>
-	</div>
-</div>
 {{- if .Params.ExtraDetails -}}
-<div class="w3-col m6 l6 s12 w3-margin-bottom">
-	<div class="w3-hover-shadow w3-border w3-border-theme">
-	<header class="w3-container w3-theme"><h5 class="w3-center">Related information</h5></header>
-	<table class="w3-table w3-striped w3-hoverable">
 		{{- range .Params.ExtraDetails -}}
 	<tr>
 		<td style="text-align: left;">{{ .Name }}</td>
