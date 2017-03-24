@@ -19,5 +19,3 @@ GSKCity = "Torreón"
 GSKLevel = "Bachelor"
 GSKAttendanceURL = "1UNJc-N4HPRmB2RuEf6_aem8TEP-e9CBx0lV98l-PmNg"
 +++
-
-<br/>

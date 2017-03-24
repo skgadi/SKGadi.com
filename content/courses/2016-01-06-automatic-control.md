@@ -18,5 +18,3 @@ GSKPeriodPerWeek = "3"
 GSKCity = "Torreón"
 GSKLevel = "Bachelor"
 +++
-
-<br/>

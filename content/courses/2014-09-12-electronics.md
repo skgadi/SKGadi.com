@@ -18,5 +18,3 @@ GSKPeriodPerWeek = "5"
 GSKCity = "Aguascalientes"
 GSKLevel = "Bachelor"
 +++
-
-<br/>

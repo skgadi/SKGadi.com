@@ -52,5 +52,3 @@ GSKGradeURL = "1BKdlmbUIgPoFOPmCJ8y-Vj9RaIEkO-VATaMv6kRRV6M"
 	AnswersURL = "http://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Exam002/answers.pdf"
 	
 +++
-
-<br />

@@ -18,5 +18,3 @@ GSKPeriodPerWeek = "5 + 5 + 5 = 15"
 GSKCity = "Aguascalientes"
 GSKLevel = "Bachelor"
 +++
-
-<br/>

@@ -16,43 +16,7 @@
       <pubDate>Mon, 09 Jan 2017 23:12:36 -0600</pubDate>
       
       <guid>https://skgadi.com/courses/2017-01-06-industrial-electronics/</guid>
-      <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;!--
-
-[[CourseMaterial]]
-    Name = &#34;Syllabus&#34;
-    URL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Circuitos%20el%C3%A9ctricos%20II.doc&#34;
-
-[[Homeworks]]
-    Name = &#34;Homework 1&#34;
-    Date = &#34;2016-09-01&#34;
-    QuestionsURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework001/questions.pdf&#34;
-    AnswersURL = &#34;http://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework001/answers.pdf&#34;
-[[Homeworks]]
-    Name = &#34;Homework 2&#34;
-    Date = &#34;2016-09-15&#34;
-    QuestionsURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework002/questions.pdf&#34;
-    AnswersURL = &#34;http://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework002/answers.pdf&#34;
-[[Homeworks]]
-    Name = &#34;Homework 3&#34;
-    Date = &#34;2016-10-04&#34;
-    QuestionsURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework003/questions.pdf&#34;
-    AnswersURL = &#34;http://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework003/answers.pdf&#34;
-
-[[Exams]]
-    Name = &#34;Exam 1&#34;
-    Date = &#34;2016-10-07&#34;
-    QuestionsURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Exam001/questions.pdf&#34;
-    AnswersURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Exam001/questions.pdf&#34;
-[[Exams]]
-    Name = &#34;Exam 2&#34;
-    Date = &#34;2016-11-11&#34;
-    QuestionsURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Exam002/questions.pdf&#34;
-    AnswersURL = &#34;http://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Exam002/answers.pdf&#34;
-
-    --&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -70,43 +34,7 @@
       <pubDate>Mon, 09 Jan 2017 23:12:36 -0600</pubDate>
       
       <guid>https://skgadi.com/courses/2017-01-06-semiconductor-physics/</guid>
-      <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;!--
-
-[[CourseMaterial]]
-    Name = &#34;Syllabus&#34;
-    URL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Circuitos%20el%C3%A9ctricos%20II.doc&#34;
-
-[[Homeworks]]
-    Name = &#34;Homework 1&#34;
-    Date = &#34;2016-09-01&#34;
-    QuestionsURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework001/questions.pdf&#34;
-    AnswersURL = &#34;http://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework001/answers.pdf&#34;
-[[Homeworks]]
-    Name = &#34;Homework 2&#34;
-    Date = &#34;2016-09-15&#34;
-    QuestionsURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework002/questions.pdf&#34;
-    AnswersURL = &#34;http://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework002/answers.pdf&#34;
-[[Homeworks]]
-    Name = &#34;Homework 3&#34;
-    Date = &#34;2016-10-04&#34;
-    QuestionsURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework003/questions.pdf&#34;
-    AnswersURL = &#34;http://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Homework003/answers.pdf&#34;
-
-[[Exams]]
-    Name = &#34;Exam 1&#34;
-    Date = &#34;2016-10-07&#34;
-    QuestionsURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Exam001/questions.pdf&#34;
-    AnswersURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Exam001/questions.pdf&#34;
-[[Exams]]
-    Name = &#34;Exam 2&#34;
-    Date = &#34;2016-11-11&#34;
-    QuestionsURL = &#34;https://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Exam002/questions.pdf&#34;
-    AnswersURL = &#34;http://github.com/skgadi/Courses/raw/master/2016-07-12/FIME-5A/Exam002/answers.pdf&#34;
-
-    --&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -115,8 +43,7 @@
       <pubDate>Mon, 08 Aug 2016 23:12:36 -0600</pubDate>
       
       <guid>https://skgadi.com/courses/2016-07-12-circuit-analysis-2/</guid>
-      <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -125,8 +52,7 @@
       <pubDate>Mon, 08 Aug 2016 23:12:36 -0600</pubDate>
       
       <guid>https://skgadi.com/courses/2016-07-12-digital-control/</guid>
-      <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -135,8 +61,7 @@
       <pubDate>Mon, 11 Jan 2016 23:12:36 -0600</pubDate>
       
       <guid>https://skgadi.com/courses/2016-01-06-automatic-control/</guid>
-      <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -145,8 +70,7 @@
       <pubDate>Mon, 11 Jan 2016 23:12:36 -0600</pubDate>
       
       <guid>https://skgadi.com/courses/2016-01-06-electric-machines-2/</guid>
-      <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -155,8 +79,7 @@
       <pubDate>Tue, 01 Sep 2015 23:12:36 -0600</pubDate>
       
       <guid>https://skgadi.com/courses/2015-07-12-control-theory/</guid>
-      <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -165,8 +88,7 @@
       <pubDate>Tue, 01 Sep 2015 23:12:36 -0600</pubDate>
       
       <guid>https://skgadi.com/courses/2015-07-12-digital-control/</guid>
-      <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -175,8 +97,7 @@
       <pubDate>Fri, 01 May 2015 23:12:36 -0600</pubDate>
       
       <guid>https://skgadi.com/courses/2015-05-08-probability-and-statistics/</guid>
-      <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -185,8 +106,7 @@
       <pubDate>Thu, 01 Jan 2015 23:12:36 -0600</pubDate>
       
       <guid>https://skgadi.com/courses/2015-01-04-analog-and-digital-control-systems/</guid>
-      <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -195,8 +115,7 @@
       <pubDate>Thu, 01 Jan 2015 23:12:36 -0600</pubDate>
       
       <guid>https://skgadi.com/courses/2015-01-04-industrical-robotics/</guid>
-      <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -205,8 +124,7 @@
       <pubDate>Mon, 01 Sep 2014 23:12:36 -0600</pubDate>
       
       <guid>https://skgadi.com/courses/2014-09-12-electronics/</guid>
-      <description>&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
   </channel>

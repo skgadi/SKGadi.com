@@ -18,5 +18,3 @@ GSKPeriodPerWeek = "48"
 GSKCity = "Aguascalientes"
 GSKLevel = "Masters"
 +++
-
-<br/>
