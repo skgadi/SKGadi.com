@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://skgadi.com/tools/calculator-for-electrical-engineering/</loc>
+    <lastmod>2017-03-24T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skgadi.com/tools/python-compiler/</loc>
     <lastmod>2017-03-23T00:00:00-06:00</lastmod>
   </url>
@@ -147,6 +152,12 @@
   </url>
   
   <url>
+    <loc>https://skgadi.com/tags/calculator/</loc>
+    <lastmod>2017-03-24T00:00:00-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://skgadi.com/categories/</loc>
     <priority>0</priority>
   </url>
@@ -176,6 +187,12 @@
   </url>
   
   <url>
+    <loc>https://skgadi.com/tags/electrical-engineering/</loc>
+    <lastmod>2017-03-24T00:00:00-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://skgadi.com/tags/latex/</loc>
     <lastmod>2016-06-16T00:00:00-06:00</lastmod>
     <priority>0</priority>
@@ -183,7 +200,7 @@
   
   <url>
     <loc>https://skgadi.com/tags/mathematics/</loc>
-    <lastmod>2017-02-25T00:00:00-06:00</lastmod>
+    <lastmod>2017-03-24T00:00:00-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -207,13 +224,13 @@
   
   <url>
     <loc>https://skgadi.com/tags/python/</loc>
-    <lastmod>2017-03-23T00:00:00-06:00</lastmod>
+    <lastmod>2017-03-24T00:00:00-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://skgadi.com/</loc>
-    <lastmod>2017-03-23T00:00:00-06:00</lastmod>
+    <lastmod>2017-03-24T00:00:00-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -224,7 +241,7 @@
   
   <url>
     <loc>https://skgadi.com/tools/</loc>
-    <lastmod>2017-03-23T00:00:00-06:00</lastmod>
+    <lastmod>2017-03-24T00:00:00-06:00</lastmod>
     <priority>0</priority>
   </url>
   

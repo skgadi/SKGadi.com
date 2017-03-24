@@ -9,6 +9,7 @@ baseurl = "https://skgadi.com/"
 	Copyright = "2017 Suresh Kumar Gadi"
 #	email = "gadisureshkumar-at-gmail-dot-com"
 	ORCID = "0000-0001-7974-7825"
+	Scopus = "55608566000"
 	GScholar = "efqOY90AAAAJ"
 	GPlus = "+SureshKumarGadi"
 	LinkedIn = "skgadi"
@@ -28,7 +29,26 @@ baseurl = "https://skgadi.com/"
 [taxonomies]
 	tag = "tags"
 	category = "categories"
-	
+
+[[params.thanks]]
+	identifier = "github"
+	name = "GitHub"
+	url = "https://github.com/"
+	reason = "providing cloud based version control repository"
+	weight = 0
+[[params.thanks]]
+	identifier = "netlify"
+	name = "netlify"
+	url = "https://www.netlify.com/"
+	reason = "providing hosting"
+	weight = 1
+[[params.thanks]]
+	identifier = "w3css"
+	name = "W3.CSS"
+	url = "https://www.w3schools.com/w3css/default.asp"
+	reason = "providing CSS"
+	weight = 2
+
 #[[menu.main]]
 #    identifier = "Home"
 #    name = "Home"

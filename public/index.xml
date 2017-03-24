@@ -7,8 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2017 Suresh Kumar Gadi</copyright>
-    <lastBuildDate>Thu, 23 Mar 2017 00:00:00 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 24 Mar 2017 00:00:00 -0600</lastBuildDate>
     <atom:link href="https://skgadi.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Calculator for electrical engineering</title>
+      <link>https://skgadi.com/tools/calculator-for-electrical-engineering/</link>
+      <pubDate>Fri, 24 Mar 2017 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/tools/calculator-for-electrical-engineering/</guid>
+      <description>&lt;iframe style=&#34;display: block;&#34; src=&#34;https://trinket.io/embed/python/cbca471c31&#34; width=&#34;100%&#34; height=&#34;600&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>Python compiler</title>
@@ -16,8 +26,7 @@
       <pubDate>Thu, 23 Mar 2017 00:00:00 -0600</pubDate>
       
       <guid>https://skgadi.com/tools/python-compiler/</guid>
-      <description>&lt;iframe style=&#34;display: block;&#34; src=&#34;https://trinket.io/embed/python3/e5674707c0&#34; width=&#34;100%&#34; height=&#34;600&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-</description>
+      <description>&lt;iframe style=&#34;display: block;&#34; src=&#34;https://trinket.io/embed/python3/e5674707c0&#34; width=&#34;100%&#34; height=&#34;600&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
     </item>
     
     <item>
@@ -169,7 +178,7 @@
 &lt;div class=&#34;w3-col m6 l6 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white&#34;&gt;
 	&lt;div class=&#34;w3-container w3-padding-0 w3-border w3-border-theme&#34;&gt;
 		&lt;header class=&#34;w3-container w3-theme&#34;&gt;&lt;h5 class=&#34;w3-center&#34;&gt;ORCID&lt;/h5&gt;&lt;/header&gt;
-		&lt;div class=&#34;w3-container w3-center w3-margin-0 w3-padding-0&#34;&gt;&lt;iframe src=&#34;https://orcid.org/static/html/widget.html?orcid=0000-0001-7974-7825&amp;t=e50db5&amp;locale=en&#34; frameborder=&#34;0&#34; height=&#34;225&#34; width=&#34;210px&#34; vspace=&#34;0&#34; hspace=&#34;0&#34; marginheight=&#34;5&#34; marginwidth=&#34;5&#34; scrolling=&#34;no&#34; allowtransparency=&#34;true&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
+		&lt;div class=&#34;w3-container w3-center w3-margin-0 w3-padding-0&#34;&gt;&lt;iframe src=&#34;https://orcid.org/static/html/widget.html?orcid=0000-0001-7974-7825&amp;t=e50db5&amp;locale=en&#34; frameborder=&#34;0&#34; height=&#34;225&#34; width=&#34;210&#34; vspace=&#34;0&#34; hspace=&#34;0&#34; marginheight=&#34;5&#34; marginwidth=&#34;5&#34; scrolling=&#34;no&#34; allowtransparency=&#34;true&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;w3-col m6 l6 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white&#34;&gt;
@@ -395,15 +404,6 @@
       <pubDate>Mon, 11 Jan 2016 23:12:36 -0600</pubDate>
       
       <guid>https://skgadi.com/courses/2016-01-06-electric-machines-2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Control theory</title>
-      <link>https://skgadi.com/courses/2015-07-12-control-theory/</link>
-      <pubDate>Tue, 01 Sep 2015 23:12:36 -0600</pubDate>
-      
-      <guid>https://skgadi.com/courses/2015-07-12-control-theory/</guid>
       <description></description>
     </item>
     
