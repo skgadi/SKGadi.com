@@ -1,8 +1,8 @@
 {{ partial "header.html" . }}
 
-<div class="w3-row-padding">
+<div class="w3-row">
 
-<div class="w3-col m6 l6 s12  w3-margin-bottom">
+<div class="w3-col m6 l6 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-hover-shadow w3-border w3-border-theme">
 	<header class="w3-container w3-theme"><h5 class="w3-center">Course details</h5></header>
 	<table class="w3-table w3-striped w3-hoverable">
@@ -41,7 +41,7 @@
 </div>
 
 {{- if .Params.CourseMaterial -}}
-<div class="w3-col m6 l6 s12 w3-margin-bottom">
+<div class="w3-col m6 l6 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-hover-shadow w3-border w3-border-theme">
 	<header class="w3-container w3-theme"><h5 class="w3-center">Course Material</h5></header>
 		{{- range .Params.CourseMaterial -}}
@@ -55,7 +55,7 @@
 </div>
 {{- end -}}
 {{- if .Params.Homeworks -}}
-<div class="w3-col m6 l6 s12 w3-margin-bottom">
+<div class="w3-col m6 l6 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-hover-shadow w3-border w3-border-theme">
 	<header class="w3-container w3-theme"><h5 class="w3-center">Homeworks</h5></header>
 		{{- range .Params.Homeworks -}}
@@ -72,7 +72,7 @@
 </div>
 {{- end -}}
 {{- if .Params.Exams -}}
-<div class="w3-col m6 l6 s12 w3-margin-bottom">
+<div class="w3-col m6 l6 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-hover-shadow w3-border w3-border-theme">
 	<header class="w3-container w3-theme"><h5 class="w3-center">Exams</h5></header>
 		{{- range .Params.Exams -}}
@@ -90,7 +90,7 @@
 {{- end -}}
 
 {{- if .Params.GSKAttendanceURL -}}
-<div class="w3-col m12 l12 s12 w3-margin-bottom">
+<div class="w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-hover-shadow w3-border w3-border-theme">
 	<header class="w3-container w3-theme"><h5 class="w3-center">Attendance</h5></header>
 	<div class="w3-container w3-padding-0">
@@ -100,7 +100,7 @@
 </div>
 {{- end -}}
 {{- if .Params.GSKGradeURL -}}
-<div class="w3-col m12 l12 s12 w3-margin-bottom">
+<div class="w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-hover-shadow w3-border w3-border-theme">
 	<header class="w3-container w3-theme"><h5 class="w3-center">Grades</h5></header>
 	<div class="w3-container w3-padding-0">
