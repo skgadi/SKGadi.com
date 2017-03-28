@@ -45,7 +45,11 @@ GSKGradeURL = "1UpiDRrdFLgkR_meufBsTD-vHmW0G8Gyo2eYe39qIuyw"
 
 [[Exams]]
     Name = "Exam 1"
-	Date = "2017-03-14"
+	Date = "2017-03-14T23:12:36-06:00"
     QuestionsURL = "https://docs.google.com/forms/d/e/1FAIpQLScplXdRjCd9w9_n1sjM6z0ddGzMw1kmZIfjqExdflIoAZovMQ/viewform?usp=sf_link"
+[[Exams]]
+    Name = "Exam 2"
+	Date = "2017-03-28T23:12:36-06:00"
+    QuestionsURL = "https://github.com/skgadi/Courses/raw/master/2017-01-06/UAdeC-FIME-4A/Exam002/questions.pdf"
 	
 +++

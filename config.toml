@@ -6,7 +6,7 @@ baseurl = "https://skgadi.com/"
 [params]
 	CommonTitle = "Suresh Kumar Gadi"
 	SubTitle = "Research professor, FIME, UAdeC"
-	Copyright = "2017 Suresh Kumar Gadi"
+#	Copyright = "2017 Suresh Kumar Gadi"
 #	email = "gadisureshkumar-at-gmail-dot-com"
 	ORCID = "0000-0001-7974-7825"
 	Scopus = "55608566000"

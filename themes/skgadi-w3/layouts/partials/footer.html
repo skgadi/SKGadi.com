@@ -1,7 +1,7 @@
 </div>
 <footer class="w3-container w3-theme w3-padding-32">
 <div class="w3-container w3-padding-0">
-<input class="w3-input" id="SearchText" type="text" placeholder="Search: Typer your query and press Enter (&crarr;) key to search.">
+<input class="w3-input" id="SearchText" type="text" placeholder="Search: Type your query and press Enter ( &crarr; )">
 <p class="w3-small">{{- if .Site.Params.Address -}}Address:&nbsp;{{- .Site.Params.Address -}}{{- end -}}{{- if .Site.Params.email -}}<br />E-mail: {{- .Site.Params.email -}}{{- end -}}{{- if .Site.Params.Phone -}}<br />Phone: {{- .Site.Params.Phone -}}{{- end -}}{{- if .Site.Params.Fax -}}<br />Fax: {{- .Site.Params.Fax -}}{{- end -}}</p>
 </div>
 <div class="w3-container w3-padding-0">
@@ -42,7 +42,7 @@
 	{{- end -}}
 	</div>
 </div>
-<p class="">Copyright &copy;&nbsp;{{- .Site.Params.Copyright }}</p>
+<p class="">Copyright &copy;&nbsp;{{- .Now.Year -}}&nbsp;{{- .Site.Params.Author }}  </p>
 </footer>
 </div>
 
