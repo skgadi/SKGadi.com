@@ -21,6 +21,7 @@ baseurl = "https://skgadi.com/"
 	GoogleAnalyticsID = "UA-89998286-1"
 	Author = "Suresh Kumar Gadi"
 	SharingIcona = "true" #Type "true" show the sharing icons.
+	SiteImageURL = "https://images.cooltext.com/4913938.png"
 	
 [params.meta.Keywords]
 	name = ["skgadi", "suresh kumar gadi", "control digital"]
