@@ -1,0 +1,73 @@
++++
+#SEO Data
+Keywords = ["library", "BibTeX", "online tool"]
+description = "This private library allows users to make a catalog of their e-books."
+
+tags = [ "library" ]
+#categories = [""]
+
+date = "2017-03-31T00:00:00-06:00"
+title = "Private library"
+
+type = "simple-content"
+layout = "zero-padding"
+
+
+
+[[JSPlugInEnd]]
+	URL = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+	Local = "false"
+[[JSPlugInEnd]]
+	URL = "https://apis.google.com/js/client.js?onload=AuthIsLoaded"
+	Local = "false"
+[[JSPlugInEnd]]
+	URL = "bibtex_js_modified.js"
+	Local = "true"
+[[JSPlugInEnd]]
+	URL = "notify.min.js"
+	Local = "true"
+[[JSPlugInEnd]]
+	URL = "gen-funcs.js"
+	Local = "true"
+[[JSPlugInEnd]]
+	URL = "script003.js"
+	Local = "true"
+
+
+[[thanks]]
+	identifier = "bibtex-js"
+	name = "BibTeX-js"
+	url = "https://github.com/pcooksey/bibtex-js"
+	reason = "sharing the code, which allows to convert a BibTeX into HTML"
+	weight = 0
++++
+<div class="w3-row">
+<div class="HideWhenLoaded w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
+	<div class="w3-container w3-padding-0 w3-border w3-border-theme">
+		<header class="w3-container w3-theme"><h5 class="w3-center">Please wait</h5></header>
+		<div class="w3-container w3-margin-0 w3-padding-0">
+			<p class="w3-padding" >Please wait while app is loading ...</p>
+		</div>
+	</div>
+</div>
+<div id="authorize-div" style="display: none;" class="w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
+	<div class="w3-container w3-padding-0 w3-border w3-border-theme">
+		<header class="w3-container w3-theme"><h5 class="w3-center">Authorization required</h5></header>
+		<div class="w3-container w3-margin-0 w3-padding-0">
+			<p class="w3-padding" >This app will create few files in your google drive. It needs your authorization to proceed.</p>
+			<button onclick="handleAuthClick(event)"  class="w3-button w3-block w3-theme">Authorize</button>
+		</div>
+	</div>
+</div>
+<div id="Authrozed" style="display: none;" class="w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
+	<div class="w3-container w3-padding-0 w3-border w3-border-theme">
+		<div class="w3-container w3-margin-0 w3-padding-0">
+			<p class="w3-padding" >This app will create few files in your google drive. It needs your authorization to proceed.</p>
+			<button onclick="handleAuthClick(event)"  class="w3-btn w3-tiny w3-theme-d2">Authorize</button>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<div id="authorselectfirst" class="Authrozed bibtex_search bibtex_author SKGSearchItem" style="font-family: 'Univers57Condensed'; background: #FFFFF0; cursor: pointer;" extra="first" search="author"></div>
