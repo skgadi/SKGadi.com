@@ -57,7 +57,7 @@ layout = "zero-padding"
 		</div>
 	</div>
 </div>
-<div id="authorize-div" style="display: none;" class="w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
+<div style="display: none;" class="AuthorizationRequire w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-container w3-padding-0 w3-border w3-border-theme">
 		<header class="w3-container w3-theme"><h5 class="w3-center">Authorization required</h5></header>
 		<div class="w3-container w3-margin-0 w3-padding-0">
@@ -66,17 +66,26 @@ layout = "zero-padding"
 		</div>
 	</div>
 </div>
-<div style="display: none;" class="Authrozed w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
+
+<div style="display: none;" class="Authrozed w3-col m4 l4 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-container w3-padding-0 w3-border w3-border-theme">
 		<header class="w3-container w3-theme"><h5 class="w3-center">Options</h5></header>
 		<div class="w3-container w3-margin-0 w3-padding-0">
-			<button onclick=""  class="w3-button w3-block w3-white w3-border w3-border-theme">Add entry</button>
-			<button onclick=""  class="w3-button w3-block w3-white w3-border w3-border-theme">Open database file</button>
-			<button onclick=""  class="w3-button w3-block w3-white w3-border w3-border-theme">Download BibTeX</button>
+			<button onclick="DisplayAddItem()" class="w3-button w3-block w3-white w3-border w3-border-theme w3-left-align">Add entry</button>
+			<button onclick="" class="w3-button w3-block w3-white w3-border w3-border-theme w3-left-align">Open database file</button>
+			<button onclick="" class="w3-button w3-block w3-white w3-border w3-border-theme w3-left-align">Download BibTeX</button>
 		</div>
 	</div>
 </div>
-
+<div style="display: none;" class="Authrozed w3-col m8 l8 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
+	<div class="w3-container w3-padding-0 w3-border w3-border-theme">
+		<header class="w3-container w3-theme"><h5 class="w3-center">Intructions</h5></header>
+		<div class="w3-padding">
+			<i class="fa fa-wrench" aria-hidden="true"></i>
+			Instructions are comming soon ...
+		</div>
+	</div>
+</div>
 <div style="display: none;" class="Authrozed w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 <div class="w3-container w3-padding-0 w3-border w3-border-theme">
 <!--header class="w3-container w3-theme"><h5 class="w3-center">Publications</h5></header-->
@@ -151,7 +160,7 @@ layout = "zero-padding"
 						<div class="if abstract" style="text-align: justify"><span><b><i>Abstract:&ndash; </i></b></span><span class="abstract" ></span></div>
 						<br/>
 						<b>More information:</b>
-						<table class="ContentTable">
+						<table class="w3-table-all w3-hoverable">
 							<TR class="if address"><TD>Address</TD><TD><span class="address"></span></TD></TR>
 							<TR class="if annote"><TD>Annote</TD><TD><span class="annote"></span></TD></TR>
 							<TR class="if chapter"><TD>Chapter</TD><TD><span class="chapter"></span></TD></TR>
@@ -178,8 +187,21 @@ layout = "zero-padding"
 							<TR class="if year"><TD>Year</TD><TD><span class="year"></span></TD></TR>
 						</table>
 						<br/>
+						<b>Search in your repository:</b>
+						<div class="w3-row">
+							<div class="w3-col m4 l4 s12 w3-margin-0 w3-padding-0">
+								<button class="w3-btn w3-btn-block w3-white w3-ripple w3-border w3-border-theme" onclick="reset()" >Google drive</button>
+							</div>
+							<div class="w3-col m4 l4 s12  w3-margin-0 w3-padding-0">
+								<button class="w3-btn w3-btn-block w3-white w3-ripple w3-border w3-border-theme" onclick="reset()" >MEGASync</button>
+							</div>
+							<div class="w3-col m4 l4 s12  w3-margin-0 w3-padding-0">
+								<button class="w3-btn w3-btn-block w3-white w3-ripple w3-border w3-border-theme" onclick="reset()" >Dropbox</button>
+							</div>
+						</div>
+						<br/>
 						<div style="position: relative;">
-						<pre class = "BibTeXRawCodeBlock" ondblclick="CopyTheText(this);"><span class="bibtexraw noread"></span></pre>
+						<pre class = "BibTeXRawCodeBlock w3-border w3-margin-0 w3-padding-0 w3-hover-theme" ondblclick="CopyTheText(this);"><span class="bibtexraw noread"></span></pre>
 						<a class="Icon" style="display: float;position: absolute; bottom: 0px; right: 5px; font-size: 40px; cursor: pointer;" onclick="CopyThePrevText(this)"><i class="fa fa-copy"></i></a>
 						</div>
 					</div>
@@ -191,6 +213,7 @@ layout = "zero-padding"
 		</div>
 </div>
 <div class="w3-modal w3-padding-16" id="ArticleModal"><div id="ArticleModalContent" class="w3-modal-content w3-animate-zoom">Select an entry to view the complete details here.</div></div>
+<div class="w3-modal w3-padding-16" id="AddItemModal"><div id="AddItemModalContent" class="w3-modal-content w3-animate-zoom">Select an entry to view the complete details here.</div></div>
 </div>
 </div>
 </div>
