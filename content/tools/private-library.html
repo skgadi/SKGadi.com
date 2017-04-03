@@ -20,14 +20,21 @@ layout = "zero-padding"
 [[JSPlugInEnd]]
 	URL = "https://apis.google.com/js/client.js?onload=AuthIsLoaded"
 	Local = "false"
+#[[JSPlugInEnd]]
+#	URL = "bibtex_js_modified.js"
+#	Local = "true"
 [[JSPlugInEnd]]
-	URL = "bibtex_js_modified.js"
-	Local = "true"
+	URL = "https://cdn.rawgit.com/pcooksey/bibtex-js/b81606e85986fa8ad0eb66954493bc1c0b3d7ab1/src/bibtex_js.js"
+	Local = "false"
+
 [[JSPlugInEnd]]
 	URL = "notify.min.js"
 	Local = "true"
 [[JSPlugInEnd]]
 	URL = "gen-funcs.js"
+	Local = "true"
+[[JSPlugInEnd]]
+	URL = "script001.js"
 	Local = "true"
 [[JSPlugInEnd]]
 	URL = "script003.js"
@@ -44,9 +51,9 @@ layout = "zero-padding"
 <div class="w3-row">
 <div class="HideWhenLoaded w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-container w3-padding-0 w3-border w3-border-theme">
-		<header class="w3-container w3-theme"><h5 class="w3-center">Please wait</h5></header>
-		<div class="w3-container w3-margin-0 w3-padding-0">
-			<p class="w3-padding" >Please wait while app is loading ...</p>
+		<!--header class="w3-container w3-theme"><h5 class="w3-center">App is loading</h5></header-->
+		<div class="w3-container w3-margin-0 w3-padding-0 w3-center">
+			<p class="w3-padding" >App is loading<br/><br/><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i><br/><br/>Please wait. If it is taking longer than 1 minute, please refresh the page.</p>
 		</div>
 	</div>
 </div>
@@ -59,15 +66,132 @@ layout = "zero-padding"
 		</div>
 	</div>
 </div>
-<div id="Authrozed" style="display: none;" class="w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
+<div style="display: none;" class="Authrozed w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-container w3-padding-0 w3-border w3-border-theme">
+		<header class="w3-container w3-theme"><h5 class="w3-center">Options</h5></header>
 		<div class="w3-container w3-margin-0 w3-padding-0">
-			<p class="w3-padding" >This app will create few files in your google drive. It needs your authorization to proceed.</p>
-			<button onclick="handleAuthClick(event)"  class="w3-btn w3-tiny w3-theme-d2">Authorize</button>
+			<button onclick=""  class="w3-button w3-block w3-white w3-border w3-border-theme">Add entry</button>
+			<button onclick=""  class="w3-button w3-block w3-white w3-border w3-border-theme">Open database file</button>
+			<button onclick=""  class="w3-button w3-block w3-white w3-border w3-border-theme">Download BibTeX</button>
 		</div>
 	</div>
 </div>
+
+<div style="display: none;" class="Authrozed w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
+<div class="w3-container w3-padding-0 w3-border w3-border-theme">
+<!--header class="w3-container w3-theme"><h5 class="w3-center">Publications</h5></header-->
+<div class="w3-container w3-margin-0 w3-padding-0">
+<div class="container-fluid">
+<div class="w3-row">
+<div class="w3-col m12 l12 s12  w3-margin-0 w3-padding-0">
+<input style="width: 100%;" type="text" class="bibtex_search w3-input w3-border w3-border-theme" id="searchbar" placeholder="Search - Example: journal 2015 (finds the intersection of the two terms)"/>
 </div>
-
-
-<div id="authorselectfirst" class="Authrozed bibtex_search bibtex_author SKGSearchItem" style="font-family: 'Univers57Condensed'; background: #FFFFF0; cursor: pointer;" extra="first" search="author"></div>
+<div class="w3-col m4 l3 s6  w3-margin-0">
+<select id="authorselectfirst" class="bibtex_search bibtex_author w3-select w3-border w3-border-theme" extra="first" search="author">
+	<option value="">Search First Author</option>
+</select>
+</div>
+<div class="w3-col m4 l3 s6  w3-margin-0">
+<select id="authorselect" class="bibtex_search bibtex_author w3-select w3-border w3-border-theme" search="author">
+	<option value="">Search Author</option>
+</select>
+</div>
+<div class="w3-col m4 l3 s6  w3-margin-0">
+<select id="topicselect" class="bibtex_search w3-select w3-border w3-border-theme" >
+	<option value="">Search Topic</option>
+	<!-- Add topic values here -->
+	<option value="force|torque|acceleration">Mechanical</option>
+	<option value="electric|electrical|electronic|electronic|capacitor|solar|power|energy|voltage|current">Electrical & electronics</option>
+	<option value="control|PID|stability|analysis">Control</option>
+</select>
+</div>
+<div class="w3-col m4 l3 s6  w3-margin-0">
+<button type="button" class="w3-button w3-btn-block w3-white w3-border w3-border-red w3-ripple" onclick="reset()" >Reset</button>
+</div>
+</div>
+</div>
+<div class="bibtex_structure">
+  <div class="group year w3-border-top w3-border-theme w3-center" extra="ASC number">
+  	  <!--a href="#top" style="display: inline"><em>(Top of the page)</em></a-->
+  	  <!--div style="padding-bottom:10px;"></div-->
+  	  <div class="sort journal" extra="DESC string">
+      	<div class="templates"></div>
+      </div>
+  </div>
+</div>
+<div id="bibtex_display">
+		<div class="if bibtex_template" style="display: none;">
+			<ul class="w3-ul w3-hoverable w3-padding-0 w3-border-top w3-border-theme" style="text-align: justify"><li class="w3-padding-small">
+				<span class="bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY" onclick="DisplayItem('BIBD+BIBTEXKEY+')" style="cursor: pointer;">
+					<span class="if author"><span class="author"></span>.</span>
+					<span class="if title">"<span class="title"></span>."</span>
+					<span class="if journal">In <i><span class="journal"></span></i>.</span>
+					<span class="if booktitle">In <i><span class="booktitle"></span></i>.</span>
+					<span class="if organization">Of <i><span class="organization"></span></i>.</span>
+					<span class="if publisher">Published by <i><span class="publisher"></span></i>.</span>
+					<span class="if year">on <span class="year"></span></span>
+					<span class="if month"><span class="month"></span></span>
+					<span class="if pages">(pp. <span class="pages"></span>).</span>
+				</span>
+				<div style="display: none;" class="bibtexVar" id="BIBD+BIBTEXKEY+" extra="BIBTEXKEY">
+					<header class="w3-container w3-theme"> 
+					<span onclick="document.getElementById('ArticleModal').style.display='none'" class="w3-closebtn"><i class="fa fa-close"></i></span>
+					<h5><span class="title"></span></h5>
+					</header>
+					<div class="w3-container">
+						<div class="if title" ><h1 style=" font-weight: normal; text-align: center; margin: 0px;"><span class="title"></span></h1></div>
+						<br/>
+						<div class="if author"><h4 style=" font-weight: normal; text-align: center;  margin: 0px;"><span class="author"></span></h4></div>
+						<div class="if organization"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="organization"></span></em></h4></div>
+						<div class="if journal"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="journal"></span></em></h4></div>
+						<div class="if school"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="school"></span></em></h4></div>
+						<div class="if booktitle"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="booktitle"></span></em></h4></div>
+						<div class="if publisher"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="publisher"></span></em></h4></div>
+						<br/>
+						<div class="if abstract" style="text-align: justify"><span><b><i>Abstract:&ndash; </i></b></span><span class="abstract" ></span></div>
+						<br/>
+						<b>More information:</b>
+						<table class="ContentTable">
+							<TR class="if address"><TD>Address</TD><TD><span class="address"></span></TD></TR>
+							<TR class="if annote"><TD>Annote</TD><TD><span class="annote"></span></TD></TR>
+							<TR class="if chapter"><TD>Chapter</TD><TD><span class="chapter"></span></TD></TR>
+							<TR class="if crossref"><TD>Crossref</TD><TD><span class="crossref"></span></TD></TR>
+							<TR class="if doi"><TD>DOI</TD><TD><span style="cursor: pointer;" class="doi" onclick="OpenDOI(this);"></span></TD></TR>
+							<TR class="if edition"><TD>Edition</TD><TD><span class="edition"></span></TD></TR>
+							<TR class="if editor"><TD>Editor</TD><TD><span class="editor"></span></TD></TR>
+							<TR class="if howpublished"><TD>How published</TD><TD><span class="howpublished"></span></TD></TR>
+							<TR class="if institution"><TD>Institution</TD><TD><span class="institution"></span></TD></TR>
+							<TR class="if issn"><TD>ISSN</TD><TD><span class="issn"></span></TD></TR>
+							<TR class="if isbn"><TD>ISBN</TD><TD><span class="isbn"></span></TD></TR>
+							<TR class="if journal"><TD>Journal</TD><TD><span class="journal"></span></TD></TR>
+							<TR class="if key"><TD>Key</TD><TD><span class="key"></span></TD></TR>
+							<TR class="if month"><TD>Month</TD><TD><span class="month"></span></TD></TR>
+							<TR class="if note"><TD>Note</TD><TD><span class="note"></span></TD></TR>
+							<TR class="if number"><TD>Number</TD><TD><span class="number"></span></TD></TR>
+							<TR class="if pages"><TD>Pages</TD><TD><span class="pages"></span></TD></TR>
+							<TR class="if publisher"><TD>Publisher</TD><TD><span class="publisher"></span></TD></TR>
+							<TR class="if school"><TD>School</TD><TD><span class="school"></span></TD></TR>
+							<TR class="if series"><TD>Series</TD><TD><span class="series"></span></TD></TR>
+							<TR class="if type"><TD>Type</TD><TD><span class="type"></span></TD></TR>
+							<TR class="if url"><TD>URL</TD><TD><span style="cursor: pointer;" class="url" onclick="OpenURL(this);"></span></TD></TR>
+							<TR class="if volume"><TD>Volume</TD><TD><span class="volume"></span></TD></TR>
+							<TR class="if year"><TD>Year</TD><TD><span class="year"></span></TD></TR>
+						</table>
+						<br/>
+						<div style="position: relative;">
+						<pre class = "BibTeXRawCodeBlock" ondblclick="CopyTheText(this);"><span class="bibtexraw noread"></span></pre>
+						<a class="Icon" style="display: float;position: absolute; bottom: 0px; right: 5px; font-size: 40px; cursor: pointer;" onclick="CopyThePrevText(this)"><i class="fa fa-copy"></i></a>
+						</div>
+					</div>
+					<footer class="w3-container w3-theme">
+					<span onclick="document.getElementById('ArticleModal').style.display='none'" class="w3-closebtn">Close this window <i class="fa fa-close"></i></span>
+					</footer>
+				</div>
+			</li></ul>
+		</div>
+</div>
+<div class="w3-modal w3-padding-16" id="ArticleModal"><div id="ArticleModalContent" class="w3-modal-content w3-animate-zoom">Select an entry to view the complete details here.</div></div>
+</div>
+</div>
+</div>
+</div>

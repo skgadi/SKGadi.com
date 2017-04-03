@@ -38,3 +38,11 @@ function myAccordion(id) {
 function SearchClick(SiteURL) {
 	window.open("https://www.google.com/search?q=" + document.getElementById("SearchText").value + "+site:" + SiteURL, "_blank");
 }
+
+function wait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end < start + ms) {
+     end = new Date().getTime();
+  }
+}

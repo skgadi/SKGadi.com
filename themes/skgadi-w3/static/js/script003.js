@@ -1,5 +1,7 @@
-dbFileName = "SKGadiReferenceManager";
+var dbFileName = "SKGadiDotComPrivateLibrary";
 var TopicsFileName = "SKGadiReferenceManagerTopics";
+
+var IsReadyToProceedToNext = false;
 
 var CLIENT_ID = '712680049905-tiu050phvviin484ngr26nij54e3lr2d.apps.googleusercontent.com';
 var SCOPES = ["https://www.googleapis.com/auth/spreadsheets",
@@ -14,31 +16,27 @@ var SCOPES = ["https://www.googleapis.com/auth/spreadsheets",
 var bibstring = "";
 function checkAuth() {
 	gapi.auth.authorize({
-		'client_id' : CLIENT_ID,
-		'scope' : SCOPES.join(' '),
-		'immediate' : true
+		'client_id': CLIENT_ID,
+		'scope': SCOPES.join(' '),
+		'immediate': true
 	}, handleAuthResult);
 }
 function handleAuthResult(authResult) {
 	var authorizeDiv = document.getElementById('authorize-div');
 	if (authResult && !authResult.error) {
 		authorizeDiv.style.display = 'none';
-		$("#Authrozed").css('display', 'block');
-		loadSheetsApi();
+		Step000();
 	} else {
 		authorizeDiv.style.display = 'block';
-		$("#Authrozed").css('display', 'none');
+		$(".Authrozed").css('display', 'none');
 	}
-	$(".HideWhenLoaded").css("display", "none");
-	$(".ShowWhenLoaded").css("display", "block");
-	//ApplyLayout();
 }
 
 function handleAuthClick(event) {
 	gapi.auth.authorize({
-		client_id : CLIENT_ID,
-		scope : SCOPES,
-		immediate : false
+		client_id: CLIENT_ID,
+		scope: SCOPES,
+		immediate: false
 	},
 		handleAuthResult);
 	return false;
@@ -53,11 +51,10 @@ function loadSheetsApi() {
 
 function listFiles() {
 	var request = gapi.client.drive.files.list({
-			'q' : 'name=\'' + dbFileName + '\'',
-			'pageSize' : 10,
-			'fields' : "nextPageToken, files(id, name)"
+			'q': 'name=\'' + dbFileName + '\'',
+			'pageSize': 10,
+			'fields': "nextPageToken, files(id, name)"
 		});
-
 	request.execute(function (resp) {
 		var files = resp.files;
 		if (files && files.length > 0) {
@@ -67,16 +64,115 @@ function listFiles() {
 		} else {
 			//appendPre('No files found.');
 			$.notify("No database file is found. Please wait while we create one for you.", "error");
-			SpreadsheetCreate()
+			//SpreadsheetCreate();
 		}
 	});
+	//request.execute();
+}
+
+function Step000() {
+	var discoveryUrl = 'https://sheets.googleapis.com/$discovery/rest?version=v4';
+	gapi.client.load(discoveryUrl).then(function () {
+		gapi.client.load('drive', 'v3', Step001);
+	});
+}
+
+function Step001() {
+	// Look for dbFileName
+	var request = gapi.client.drive.files.list({
+			'q': 'name=\'' + dbFileName + '\'',
+			'pageSize': 10,
+			'fields': "nextPageToken, files(id, name)"
+		});
+	request.execute(function (resp) {
+		var files = resp.files;
+		if (files && files.length > 0)
+			Step002(files[0].id);
+		else
+			GenerateDatabase();
+	});
+}
+function Step002(id) {
+	gapi.client.sheets.spreadsheets.values.get({
+		spreadsheetId: id,
+		range: 'topics!A:B',
+	}).then(function (response) {
+		var range = response.result;
+		$('#topicselect').html("");
+		if (range.values.length > 0) {
+			$('#topicselect').append("<option value=''>All topics</option>");
+			for (i = 0; i < ((range.values.length) - 1); i++) {
+				var row = range.values[i + 1];
+				$('#topicselect').append("<option value='" + row[1] + "'>" + row[0] + "</option>");
+				console.log(row[1]);
+			}
+			Step003(id);
+		} else {
+			$('#topicselect').append("<option value=''>Topics: NA</option>");
+		}
+	});
+
+}
+
+function Step003(id) {
+	gapi.client.sheets.spreadsheets.values.get({
+		spreadsheetId: id,
+		range: 'db!A:A',
+	}).then(function (response) {
+		var range = response.result;
+		if (range.values.length > 0) {
+			for (i = 0; i < ((range.values.length) - 1); i++) {
+				bibstring += '\n' + range.values[i + 1][0] + '\n';
+			}
+			(new BibtexDisplay()).displayBibtex(bibstring, $("#bibtex_display"));
+			loadExtras();
+		} else {
+		}
+		reset();
+		console.log(bibstring);
+		$(".Authrozed").css('display', 'block');
+		$(".HideWhenLoaded").css("display", "none");
+		$(".ShowWhenLoaded").css("display", "block");
+
+	});
+}
+
+function isFileExist(filename) {
+	var result = 'asf';
+	var request = gapi.client.drive.files.list({
+			'q': 'name=\'' + dbFileName + '\'',
+			'pageSize': 10,
+			'fields': "nextPageToken, files(id, name)"
+		});
+	IsReadyToProceedToNext = false;
+	request.execute(function (resp) {
+		var files = resp.files;
+		if (files && files.length > 0)
+			result = true;
+		else
+			result = false;
+		IsReadyToProceedToNext = true;
+	});
+	console.log(result);
+	console.log(IsReadyToProceedToNext);
+	waitTillReadyToProceed();
+	console.log(IsReadyToProceedToNext);
+	return result;
+}
+
+function waitTillReadyToProceed() {
+	if (IsReadyToProceedToNext == false) {
+		window.setTimeout(waitTillReadyToProceed, 100); /* this checks the flag every 100 milliseconds*/
+	} else {
+		/* do something*/
+	}
 }
 
 function VerifyTopicsDb() {
 	var request = gapi.client.drive.files.list({
-			'q' : 'name=\'' + TopicsFileName + '\'',
-			'pageSize' : 10,
-			'fields' : "nextPageToken, files(id, name)"
+			'q': 'name=\'' + TopicsFileName + '\'',
+			'pageSize': 10,
+			'fields': "nextPageToken, files(id, name)"
 		});
 	request.execute(function (resp) {
 		var files = resp.files;
@@ -91,8 +187,8 @@ function VerifyTopicsDb() {
 
 function GetBibTexString(id) {
 	gapi.client.sheets.spreadsheets.values.get({
-		spreadsheetId : id,
-		range : 'db!A1:A',
+		spreadsheetId: id,
+		range: 'db!A1:A',
 	}).then(function (response) {
 		var range = response.result;
 		if (range.values.length > 0) {
@@ -114,8 +210,8 @@ function GetBibTexString(id) {
 function GetTopicsFromDB(id) {
 	//Setting the topics
 	gapi.client.sheets.spreadsheets.values.get({
-		spreadsheetId : id,
-		range : 'topics!A1:B',
+		spreadsheetId: id,
+		range: 'topics!A1:B',
 	}).then(function (response) {
 		var range = response.result;
 		$('#topicselect').html("");
@@ -133,28 +229,84 @@ function GetTopicsFromDB(id) {
 		}
 	});
 }
-function SpreadsheetCreate() {
+function GenerateDatabase() {
 	/*var URI = "https://www.googleapis.com/drive/v3/files?corpus=user&q=name%3D%22temp%22&key="+CLIENT_ID;
 	$.post(URI, function (data) {
 
 	alert(JSON.stringify(data, null, 4));
 	});*/
+	//$.notify("A databse will be generated.", "info");
 	gapi.client.sheets.spreadsheets.create({
-		"properties" : {
-			"title" : dbFileName
+		"properties": {
+			"title": dbFileName
 		},
-		sheets : [{
-				"properties" : {
-					"sheetId" : 0,
-					"title" : "db"
+		sheets: [{
+				"properties": {
+					"sheetId": 0,
+					"title": "db"
 				},
-				"data" : [{
-						"startRow" : 0,
-						"startColumn" : 0,
-						"rowData" : [{
-								"values" : [{
-										"userEnteredValue" : {
-											"stringValue" : "bibtex"
+				"data": [{
+						"startRow": 0,
+						"startColumn": 0,
+						"rowData": [{
+								"values": [{
+										"userEnteredValue": {
+											"stringValue": "bibtex"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}, {
+				"properties": {
+					"sheetId": 1,
+					"title": "topics"
+				},
+				"data": [{
+						"startRow": 0,
+						"startColumn": 0,
+						"rowData": [{
+								"values": [{
+										"userEnteredValue": {
+											"stringValue": "head"
+										}
+									}
+								]
+							}
+						]
+					}, {
+						"startRow": 0,
+						"startColumn": 1,
+						"rowData": [{
+								"values": [{
+										"userEnteredValue": {
+											"stringValue": "values"
+										}
+									}
+								]
+							}
+						]
+					}, {
+						"startRow": 1,
+						"startColumn": 0,
+						"rowData": [{
+								"values": [{
+										"userEnteredValue": {
+											"stringValue": "Mathematics"
+										}
+									}
+								]
+							}
+						]
+					}, {
+						"startRow": 1,
+						"startColumn": 1,
+						"rowData": [{
+								"values": [{
+										"userEnteredValue": {
+											"stringValue": "stability|mathematics|Statistics"
 										}
 									}
 								]
@@ -165,65 +317,66 @@ function SpreadsheetCreate() {
 			}
 		]
 	}).then(function (response) {
-		wait(5000);
-		listFiles();
-		$.notify("a set of database files are created in your google drive.", "success");
+		//$.notify("A databse is generated in your google drive.", "success");
+		//$.notify("Your page will refresh now.", "info");
+		location.reload();
 	});
 }
 
 function CreateTopicsDatabase() {
+
 	gapi.client.sheets.spreadsheets.create({
-		"properties" : {
-			"title" : TopicsFileName
+		"properties": {
+			"title": TopicsFileName
 		},
-		sheets : [{
-				"properties" : {
-					"sheetId" : 0,
-					"title" : "topics"
+		sheets: [{
+				"properties": {
+					"sheetId": 0,
+					"title": "topics"
 				},
-				"data" : [{
-						"startRow" : 0,
-						"startColumn" : 0,
-						"rowData" : [{
-								"values" : [{
-										"userEnteredValue" : {
-											"stringValue" : "head"
+				"data": [{
+						"startRow": 0,
+						"startColumn": 0,
+						"rowData": [{
+								"values": [{
+										"userEnteredValue": {
+											"stringValue": "head"
 										}
 									}
 								]
 							}
 						]
 					}, {
-						"startRow" : 0,
-						"startColumn" : 1,
-						"rowData" : [{
-								"values" : [{
-										"userEnteredValue" : {
-											"stringValue" : "values"
+						"startRow": 0,
+						"startColumn": 1,
+						"rowData": [{
+								"values": [{
+										"userEnteredValue": {
+											"stringValue": "values"
 										}
 									}
 								]
 							}
 						]
 					}, {
-						"startRow" : 1,
-						"startColumn" : 0,
-						"rowData" : [{
-								"values" : [{
-										"userEnteredValue" : {
-											"stringValue" : "Mathematics"
+						"startRow": 1,
+						"startColumn": 0,
+						"rowData": [{
+								"values": [{
+										"userEnteredValue": {
+											"stringValue": "Mathematics"
 										}
 									}
 								]
 							}
 						]
 					}, {
-						"startRow" : 1,
-						"startColumn" : 1,
-						"rowData" : [{
-								"values" : [{
-										"userEnteredValue" : {
-											"stringValue" : "stability|mathematics|Statistics"
+						"startRow": 1,
+						"startColumn": 1,
+						"rowData": [{
+								"values": [{
+										"userEnteredValue": {
+											"stringValue": "stability|mathematics|Statistics"
 										}
 									}
 								]
@@ -234,13 +387,14 @@ function CreateTopicsDatabase() {
 			}
 		]
 	}).then(function (response) {
-		wait(5000);
-		VerifyTopicsDb();
-		$.notify("The topics database is created in your google drive.", "success");
+		$.notify("A databse is generated in your google drive.", "success");
+		$.notify("Your page will refresh now.", "info");
+		wait(2000);
+		location.reload();
 	}); ;
 }
 
+$(window).on('load', function () {
 
-$(window).on('load', function() {
 	checkAuth();
 });
