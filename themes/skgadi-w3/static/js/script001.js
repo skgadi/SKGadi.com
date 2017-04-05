@@ -1,15 +1,16 @@
 function reset() {
 	$("select").each(function () {
-	  localStorage.setItem($(this).attr("id"),"");
-	  $(this).val("");
-	}); 
+		localStorage.setItem($(this).attr("id"), "");
+		$(this).val("");
+	});
 	$("#searchbar").val("");
 	$("#searchbar").trigger('change');
 }
+
 function DisplayItem(id) {
 	$('#ArticleModalContent').empty();
 	$('#ArticleModalContent').html($('#' + id).html());
-	document.getElementById('ArticleModal').style.display='block'
+	document.getElementById('ArticleModal').style.display = 'block';
 }
 
 function OpenDOI(DOI) {
@@ -39,8 +40,8 @@ function CopyThePrevText(Code) {
 	$.notify("This BibTeX code is coppied to your clipboard", "success");
 }
 
-function DisplayAddItem () {
-	document.getElementById('AddItemModal').style.display='block'
+function DisplayAddItem() {
+	document.getElementById('AddItemModal').style.display = 'block'
 }
 
 var CLIENT_ID = '712680049905-tiu050phvviin484ngr26nij54e3lr2d.apps.googleusercontent.com';
@@ -54,6 +55,7 @@ var SCOPES = ["https://www.googleapis.com/auth/spreadsheets",
 	//"https://www.googleapis.com/auth/drive.readonly"
 ];
 var bibstring = "";
+
 function checkAuth() {
 	gapi.auth.authorize({
 		'client_id': CLIENT_ID,
@@ -133,31 +135,34 @@ function Step003(id) {
 		var range = response.result;
 		if (range.values.length > 0) {
 			for (i = 0; i < ((range.values.length) - 1); i++) {
-				bibstring += '\n' + range.values[i + 1][0] + '\n';
+				//bibstring += '\n' + range.values[i + 1][0] + '\n';
+				bibstring += range.values[i + 1][0];
 			}
-			(new BibtexDisplay()).displayBibtex(bibstring, $("#bibtex_display"));
-			loadExtras();
-		} else {
-		}
+			RunBibtexJs();
+		} else {}
 		reset();
 		//console.log(bibstring);
-		SetAutorizedView ();
+		SetAutorizedView();
 	});
 }
 
-function SetAutorizedView () {
-		$(".Authrozed").css('display', 'block');
-		$(".AuthorizationRequire").css('display', 'none');
-		$(".HideWhenLoaded").css("display", "none");
-		$(".ShowWhenLoaded").css("display", "block");
-}
-function SetAutorizationRequiredView () {
-		$(".Authrozed").css('display', 'none');
-		$(".AuthorizationRequire").css('display', 'block');
-		$(".HideWhenLoaded").css("display", "none");
-		$(".ShowWhenLoaded").css("display", "block");
+function RunBibtexJs() {
+	(new BibtexDisplay()).displayBibtex(bibstring, $("#bibtex_display"));
+	loadExtras();
 }
 
+function SetAutorizedView() {
+	$(".Authrozed").css('display', 'block');
+	$(".AuthorizationRequire").css('display', 'none');
+	$(".HideWhenLoaded").css("display", "none");
+	$(".ShowWhenLoaded").css("display", "block");
+}
+function SetAutorizationRequiredView() {
+	$(".Authrozed").css('display', 'none');
+	$(".AuthorizationRequire").css('display', 'block');
+	$(".HideWhenLoaded").css("display", "none");
+	$(".ShowWhenLoaded").css("display", "block");
+}
 
 function GenerateDatabase() {
 	/*var URI = "https://www.googleapis.com/drive/v3/files?corpus=user&q=name%3D%22temp%22&key="+CLIENT_ID;
@@ -252,3 +257,64 @@ function GenerateDatabase() {
 		location.reload();
 	});
 }
+
+function AddNewBibTeXToDatabase() {
+	if ($("#BibTeXCodeToAddDatabase").val() == '')
+		$.notify("BibTeX can not be empty", "alert");
+	else {
+		if (confirm('Are you sure you want append this item to your database?')) {
+			var request = gapi.client.drive.files.list({
+					'q': 'name=\'' + dbFileName + '\'',
+					'pageSize': 10,
+					'fields': "nextPageToken, files(id, name)"
+				});
+			request.execute(function (resp) {
+				var files = resp.files;
+				if (files && files.length > 0) {
+					gapi.client.sheets.spreadsheets.values.append({
+						"spreadsheetId": files[0].id,
+						"range": "db!A1",
+						"valueInputOption": "USER_ENTERED",
+						"insertDataOption": "INSERT_ROWS",
+						"values": [[$("#BibTeXCodeToAddDatabase").val()]]
+					}).then(function (response) {
+						$.notify("The BibTeX is successfully added to your library.", "success");
+						$("#BibTeXCodeToAddDatabase").val('');
+						document.getElementById('AddItemModal').style.display = 'none';
+						location.reload();
+					});
+				} else {
+					$.notify("No database file is found. Refresh the page and try again.", "error");
+				}
+			});
+		}
+	}
+}
+
+function OpenDatabaseFile(InNewWind = true) {
+	var request = gapi.client.drive.files.list({
+			'q': 'name=\'' + dbFileName + '\'',
+			'pageSize': 10,
+			'fields': "nextPageToken, files(id, name)"
+		});
+	request.execute(function (resp) {
+		var files = resp.files;
+		if (files && files.length > 0) {
+			if (InNewWind)
+				window.open("https://docs.google.com/spreadsheets/d/" + files[0].id + "/edit", "_blank");
+			else
+				window.open("https://docs.google.com/spreadsheets/d/" + files[0].id + "/edit", "_self");
+		} else {
+			$.notify("No database file is found. You have to authorize to proceed. Press the authorize button.", "error");
+		}
+	});
+}
+
+function DownloadBdatabase() {
+	download('database.bib', bibstring);
+}
+
+$(window).on('load', function () {
+	if (typeof CheckAuthRequired !== 'undefined')
+		checkAuth();
+});

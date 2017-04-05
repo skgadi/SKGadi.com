@@ -1,13 +1,13 @@
 +++
 #SEO Data
 Keywords = ["library", "BibTeX", "online tool"]
-description = "This private library allows users to make a catalog of their e-books."
+description = "This private articles tool allows users to make a catalog of their electrnic articles. Entries should be made in BibTeX format."
 
-tags = [ "library" ]
+tags = [ "library", "BibTeX" ]
 #categories = [""]
 
-date = "2017-03-31T00:00:00-06:00"
-title = "Private library"
+date = "2017-04-04T00:00:00-06:00"
+title = "Private articles"
 
 type = "simple-content"
 layout = "zero-padding"
@@ -71,9 +71,9 @@ layout = "zero-padding"
 	<div class="w3-container w3-padding-0 w3-border w3-border-theme">
 		<header class="w3-container w3-theme"><h5 class="w3-center">Options</h5></header>
 		<div class="w3-container w3-margin-0 w3-padding-0">
-			<button onclick="DisplayAddItem()" class="w3-button w3-block w3-white w3-border w3-border-theme w3-left-align">Add entry</button>
-			<button onclick="" class="w3-button w3-block w3-white w3-border w3-border-theme w3-left-align">Open database file</button>
-			<button onclick="" class="w3-button w3-block w3-white w3-border w3-border-theme w3-left-align">Download BibTeX</button>
+			<button onclick="DisplayAddItem()" class="w3-button w3-block w3-white w3-border w3-border-theme w3-left-align"><i class="fa fa-plus" aria-hidden="true"></i> Add entry</button>
+			<button onclick="OpenDatabaseFile();" class="w3-button w3-block w3-white w3-border w3-border-theme w3-left-align"><i class="fa fa-database" aria-hidden="true"></i> Open database file</button>
+			<button onclick="DownloadBdatabase();" class="w3-button w3-block w3-white w3-border w3-border-theme w3-left-align"><i class="fa fa-download" aria-hidden="true"></i> Download BibTeX</button>
 		</div>
 	</div>
 </div>
@@ -159,7 +159,7 @@ layout = "zero-padding"
 						<br/>
 						<div class="if abstract" style="text-align: justify"><span><b><i>Abstract:&ndash; </i></b></span><span class="abstract" ></span></div>
 						<br/>
-						<b>More information:</b>
+						<h2>More information:</h2>
 						<table class="w3-table-all w3-hoverable">
 							<TR class="if address"><TD>Address</TD><TD><span class="address"></span></TD></TR>
 							<TR class="if annote"><TD>Annote</TD><TD><span class="annote"></span></TD></TR>
@@ -186,22 +186,21 @@ layout = "zero-padding"
 							<TR class="if volume"><TD>Volume</TD><TD><span class="volume"></span></TD></TR>
 							<TR class="if year"><TD>Year</TD><TD><span class="year"></span></TD></TR>
 						</table>
-						<br/>
-						<b>Search in your repository:</b>
+						<h2>Search in your repository:</h2>
 						<div class="w3-row">
 							<div class="w3-col m4 l4 s12 w3-margin-0 w3-padding-0">
-								<button class="w3-btn w3-btn-block w3-white w3-ripple w3-border w3-border-theme" onclick="reset()" >Google drive</button>
+								<a class="w3-button w3-white w3-block w3-border w3-border-theme w3-ripple bibtexVar" href="https://drive.google.com/drive/search?q=title:+BIBTEXKEY+" extra="BIBTEXKEY" target="_blank" >Google drive</a>
 							</div>
 							<div class="w3-col m4 l4 s12  w3-margin-0 w3-padding-0">
-								<button class="w3-btn w3-btn-block w3-white w3-ripple w3-border w3-border-theme" onclick="reset()" >MEGASync</button>
+								<a class="w3-button w3-white w3-block w3-border w3-border-theme w3-ripple bibtexVar" href="https://mega.nz/fm/search/+BIBTEXKEY+" extra="BIBTEXKEY" target="_blank" >Mega</a>
 							</div>
 							<div class="w3-col m4 l4 s12  w3-margin-0 w3-padding-0">
-								<button class="w3-btn w3-btn-block w3-white w3-ripple w3-border w3-border-theme" onclick="reset()" >Dropbox</button>
+								<a class="w3-button w3-white w3-block w3-border w3-border-theme w3-ripple bibtexVar" href="https://www.dropbox.com/search/personal?path=%2F&query=+BIBTEXKEY+" extra="BIBTEXKEY" target="_blank" >Dropbox</a>
 							</div>
 						</div>
-						<br/>
+						<h2>Raw BibTeX:</h2>
 						<div style="position: relative;">
-						<pre class = "BibTeXRawCodeBlock w3-border w3-margin-0 w3-padding-0 w3-hover-theme" ondblclick="CopyTheText(this);"><span class="bibtexraw noread"></span></pre>
+						<pre class = "BibTeXRawCodeBlock w3-border w3-margin-0 w3-padding-0 w3-margin-bottom" ondblclick="CopyTheText(this);"><span class="bibtexraw noread"></span></pre>
 						<a class="Icon" style="display: float;position: absolute; bottom: 0px; right: 5px; font-size: 40px; cursor: pointer;" onclick="CopyThePrevText(this)"><i class="fa fa-copy"></i></a>
 						</div>
 					</div>
@@ -213,8 +212,22 @@ layout = "zero-padding"
 		</div>
 </div>
 <div class="w3-modal w3-padding-16" id="ArticleModal"><div id="ArticleModalContent" class="w3-modal-content w3-animate-zoom">Select an entry to view the complete details here.</div></div>
-<div class="w3-modal w3-padding-16" id="AddItemModal"><div id="AddItemModalContent" class="w3-modal-content w3-animate-zoom">Select an entry to view the complete details here.</div></div>
+<div class="w3-modal w3-padding-16" id="AddItemModal"><div id="AddItemModalContent" class="w3-modal-content w3-animate-zoom">
+	<header class="w3-container w3-theme"> 
+		<span onclick="document.getElementById('AddItemModal').style.display='none'" class="w3-closebtn"><i class="fa fa-close"></i></span>
+		<h5>Add an entry to the database</span></h5>
+	</header>
+	<div class="w3-margin-0 w3-padding-0 w3-code"><textarea id="BibTeXCodeToAddDatabase" class="w3-input"onkeyup="textAreaAdjust(this)" style="overflow:hidden"></textarea></div>
+	<button onclick="AddNewBibTeXToDatabase()" class="w3-button w3-block w3-white w3-border w3-border-theme">Add to the database</button>
+	<footer class="w3-container w3-theme">
+		<span onclick="document.getElementById('AddItemModal').style.display='none'" class="w3-closebtn">Close this window <i class="fa fa-close"></i></span>
+	</footer>
+</div></div>
 </div>
 </div>
 </div>
 </div>
+<script>
+	var CheckAuthRequired = true;
+	var dbFileName = "PrivateArticles_On_SKGadi_Dot_Com";
+</script>

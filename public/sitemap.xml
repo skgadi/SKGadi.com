@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://skgadi.com/tools/private-articles/</loc>
+    <lastmod>2017-04-04T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/tools/private-books/</loc>
+    <lastmod>2017-03-31T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skgadi.com/tools/calculator-for-electrical-engineering/</loc>
     <lastmod>2017-03-24T00:00:00-06:00</lastmod>
   </url>
@@ -152,6 +162,12 @@
   </url>
   
   <url>
+    <loc>https://skgadi.com/tags/bibtex/</loc>
+    <lastmod>2017-04-04T00:00:00-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://skgadi.com/tags/calculator/</loc>
     <lastmod>2017-03-24T00:00:00-06:00</lastmod>
     <priority>0</priority>
@@ -199,6 +215,12 @@
   </url>
   
   <url>
+    <loc>https://skgadi.com/tags/library/</loc>
+    <lastmod>2017-04-04T00:00:00-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://skgadi.com/tags/mathematics/</loc>
     <lastmod>2017-03-24T00:00:00-06:00</lastmod>
     <priority>0</priority>
@@ -230,7 +252,7 @@
   
   <url>
     <loc>https://skgadi.com/</loc>
-    <lastmod>2017-03-24T00:00:00-06:00</lastmod>
+    <lastmod>2017-04-04T00:00:00-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -241,7 +263,7 @@
   
   <url>
     <loc>https://skgadi.com/tools/</loc>
-    <lastmod>2017-03-24T00:00:00-06:00</lastmod>
+    <lastmod>2017-04-04T00:00:00-06:00</lastmod>
     <priority>0</priority>
   </url>
   

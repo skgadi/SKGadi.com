@@ -26,27 +26,5 @@ bibtex { display: none; }
 	word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 .BibTeXRawCodeBlock {
-	border: 2px solid black;
-	padding: 5px;
 	word-wrap: break-word;
-	background: white;
-	margin: 0px;
-}
-.BibTeXRawCodeBlock:hover {
-	background: #efe;
-}
-table.ContentTable  {
-	border-collapse: collapse;
-	width: 100%;
-}
-table.ContentTable, table.ContentTable th, table.ContentTable td {
-	padding: 5px;
-	border: 2px solid black;
-}
-table.ContentTable tr:nth-child(even) {background: #white}
-table.ContentTable tr:nth-child(odd) {background: #efe}
-table.ContentTable tr:hover {background: #dfd}
-
-a.Icon {
-	text-decoration: none;
 }

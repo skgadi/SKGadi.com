@@ -51,7 +51,11 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
 
-	
+	{{- if .Params.CSSPlugIn -}}
+	{{- range .Params.CSSPlugIn -}}
+	<link rel="stylesheet" href="{{ if eq .Local "true"  }}{{ $.Site.BaseURL }}css/{{- .URL -}}{{ else }}{{- .URL -}}{{ end }}"></script>
+	{{- end -}}
+	{{- end -}}	
 	{{- if .Params.JSPlugIn -}}
 	{{- range .Params.JSPlugIn -}}
 	<script src="{{ if eq .Local "true"  }}{{ $.Site.BaseURL }}js/{{- .URL -}}{{ else }}{{- .URL -}}{{ end }}" type="text/javascript" charset="utf-8"></script>
