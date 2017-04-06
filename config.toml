@@ -61,58 +61,68 @@ baseurl = "https://skgadi.com/"
     identifier = "Research"
     name = "Research"
     url = "/research/"
+	pre = "<i class='fa fa-flask' aria-hidden='true'></i>"
 	weight = 1
 
 [[menu.main]]
     identifier = "Projects"
     name = "Projects"
     url = "/projects/"
+	pre = "<i class='fa fa-cogs' aria-hidden='true'></i>"
 	weight = 2
 
 [[menu.main]]
     identifier = "Courses"
     name = "Courses"
     url = "/courses/"
+	pre = "<i class='fa fa-book' aria-hidden='true'></i>"
 	weight = 3
 
 [[menu.main]]
     identifier = "Tools"
     name = "Tools"
     url = "/tools/"
+	pre = "<i class='fa fa-wrench' aria-hidden='true'></i>"
 	weight = 4
 
 [[menu.main]]
     identifier = "Posts"
     name = "Posts"
     url = "/posts/"
+	pre = "<i class='fa fa-files-o' aria-hidden='true'></i>"
 	weight = 5
 
 [[menu.main]]
     identifier = "Tags"
     name = "Tags"
     url = "/tags/"
+	pre = "<i class='fa fa-tags' aria-hidden='true'></i>"
 	weight = 6
 
 [[menu.main]]
     identifier = "Categories"
     name = "Categories"
     url = "/categories/"
+	pre = "<i class='fa fa-cubes' aria-hidden='true'></i>"
 	weight = 7
 
 [[menu.main]]
     identifier = "Education"
     name = "Education"
     url = "/education/"
+	pre = "<i class='fa fa-university' aria-hidden='true'></i>"
 	weight = 8
 
 [[menu.main]]
     identifier = "WorkExperience"
     name = "Work experience"
     url = "/work-experience/"
+	pre = "<i class='fa fa-building-o' aria-hidden='true'></i>"
 	weight = 9
 
 [[menu.main]]
     identifier = "Contact"
     name = "Contact"
     url = "/contact/"
+	pre = "<i class='fa fa-vcard-o' aria-hidden='true'></i>"
 	weight = 10

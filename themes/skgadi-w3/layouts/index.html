@@ -2,7 +2,7 @@
 <div class="w3-row">
 	<div class="w3-col m6 l4 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 		<div class="w3-border w3-border-theme">
-			<header class="w3-container w3-theme"><h5 class="w3-center">Recent courses</h5></header>			
+			<header class="w3-container w3-theme"><h5><i class='fa fa-book' aria-hidden='true'></i> Recent courses</h5></header>			
 			{{- range first 5 (where .Data.Pages "Section" "courses") -}}
 			<div class="w3-container w3-center w3-margin-0 w3-padding-0">
 				<a href="{{ .Permalink }}" class="w3-button w3-white w3-block w3-left-align w3-border w3-border-theme w3-ripple">
@@ -15,7 +15,7 @@
 	</div>
 	<div class="w3-col m6 l4 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 		<div class="w3-border w3-border-theme">
-			<header class="w3-container w3-theme"><h5 class="w3-center">Recent tools</h5></header>			
+			<header class="w3-container w3-theme"><h5><i class='fa fa-wrench' aria-hidden='true'></i> Recent tools</h5></header>
 			{{- range first 5 (where .Data.Pages "Section" "tools") -}}
 			<div class="w3-container w3-center w3-margin-0 w3-padding-0">
 				<a href="{{ .Permalink }}" class="w3-button w3-white w3-block w3-left-align w3-border w3-border-theme w3-ripple">
@@ -41,7 +41,7 @@
 	</div-->
 	<div class="w3-col m6 l4 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 		<div class="w3-border w3-border-theme">
-			<header class="w3-container w3-theme"><h5 class="w3-center">Recent posts</h5></header>			
+			<header class="w3-container w3-theme"><h5><i class='fa fa-files-o' aria-hidden='true'></i> Recent posts</h5></header>
 			{{- range first 5 (where .Data.Pages "Section" "posts") -}}
 			<div class="w3-container w3-center w3-margin-0 w3-padding-0">
 				<a href="{{ .Permalink }}" class="w3-button w3-white w3-block w3-left-align w3-border w3-border-theme w3-ripple">
