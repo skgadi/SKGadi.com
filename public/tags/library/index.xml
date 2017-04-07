@@ -25,7 +25,7 @@
 &lt;/div&gt;
 &lt;div style=&#34;display: none;&#34; class=&#34;AuthorizationRequire w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white&#34;&gt;
 	&lt;div class=&#34;w3-container w3-padding-0 w3-border w3-border-theme&#34;&gt;
-		&lt;header class=&#34;w3-container w3-theme&#34;&gt;&lt;h5 class=&#34;w3-center&#34;&gt;Authorization required&lt;/h5&gt;&lt;/header&gt;
+		&lt;header class=&#34;w3-container w3-theme&#34;&gt;&lt;h5&gt;&lt;b&gt;&lt;i class=&#34;fa fa-sign-in&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&amp;nbsp;Authorization required&lt;/b&gt;&lt;/h5&gt;&lt;/header&gt;
 		&lt;div class=&#34;w3-container w3-margin-0 w3-padding-0&#34;&gt;
 			&lt;p class=&#34;w3-padding&#34; &gt;This app will create few files in your google drive. It needs your authorization to proceed.&lt;/p&gt;
 			&lt;button onclick=&#34;handleAuthClick(event)&#34;  class=&#34;w3-button w3-block w3-theme&#34;&gt;Authorize&lt;/button&gt;
@@ -35,7 +35,7 @@
 
 &lt;div style=&#34;display: none;&#34; class=&#34;Authrozed w3-col m4 l4 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white&#34;&gt;
 	&lt;div class=&#34;w3-container w3-padding-0 w3-border w3-border-theme&#34;&gt;
-		&lt;header class=&#34;w3-container w3-theme&#34;&gt;&lt;h5 class=&#34;w3-center&#34;&gt;Options&lt;/h5&gt;&lt;/header&gt;
+		&lt;header class=&#34;w3-container w3-theme&#34;&gt;&lt;h5&gt;&lt;b&gt;&lt;i class=&#34;fa fa-sliders&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&amp;nbsp;Options&lt;/b&gt;&lt;/h5&gt;&lt;/header&gt;
 		&lt;div class=&#34;w3-container w3-margin-0 w3-padding-0&#34;&gt;
 			&lt;button onclick=&#34;DisplayAddItem()&#34; class=&#34;w3-button w3-block w3-white w3-border w3-border-theme w3-left-align&#34;&gt;&lt;i class=&#34;fa fa-plus&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt; Add entry&lt;/button&gt;
 			&lt;button onclick=&#34;OpenDatabaseFile();&#34; class=&#34;w3-button w3-block w3-white w3-border w3-border-theme w3-left-align&#34;&gt;&lt;i class=&#34;fa fa-database&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt; Open database file&lt;/button&gt;
@@ -45,7 +45,7 @@
 &lt;/div&gt;
 &lt;div style=&#34;display: none;&#34; class=&#34;Authrozed w3-col m8 l8 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white&#34;&gt;
 	&lt;div class=&#34;w3-container w3-padding-0 w3-border w3-border-theme&#34;&gt;
-		&lt;header class=&#34;w3-container w3-theme&#34;&gt;&lt;h5 class=&#34;w3-center&#34;&gt;Intructions&lt;/h5&gt;&lt;/header&gt;
+		&lt;header class=&#34;w3-container w3-theme&#34;&gt;&lt;h5&gt;&lt;b&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&amp;nbsp;Instructions&lt;/b&gt;&lt;/h5&gt;&lt;/header&gt;
 		&lt;div class=&#34;w3-padding&#34;&gt;
 			&lt;i class=&#34;fa fa-wrench&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
 			Instructions are comming soon ...
@@ -216,7 +216,7 @@
 &lt;/div&gt;
 &lt;div style=&#34;display: none;&#34; class=&#34;AuthorizationRequire w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white&#34;&gt;
 	&lt;div class=&#34;w3-container w3-padding-0 w3-border w3-border-theme&#34;&gt;
-		&lt;header class=&#34;w3-container w3-theme&#34;&gt;&lt;h5 class=&#34;w3-center&#34;&gt;Authorization required&lt;/h5&gt;&lt;/header&gt;
+		&lt;header class=&#34;w3-container w3-theme&#34;&gt;&lt;h5&gt;&lt;b&gt;&lt;i class=&#34;fa fa-sign-in&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&amp;nbsp;Authorization required&lt;/b&gt;&lt;/h5&gt;&lt;/header&gt;
 		&lt;div class=&#34;w3-container w3-margin-0 w3-padding-0&#34;&gt;
 			&lt;p class=&#34;w3-padding&#34; &gt;This app will create few files in your google drive. It needs your authorization to proceed.&lt;/p&gt;
 			&lt;button onclick=&#34;handleAuthClick(event)&#34;  class=&#34;w3-button w3-block w3-theme&#34;&gt;Authorize&lt;/button&gt;
@@ -226,7 +226,7 @@
 
 &lt;div style=&#34;display: none;&#34; class=&#34;Authrozed w3-col m4 l4 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white&#34;&gt;
 	&lt;div class=&#34;w3-container w3-padding-0 w3-border w3-border-theme&#34;&gt;
-		&lt;header class=&#34;w3-container w3-theme&#34;&gt;&lt;h5 class=&#34;w3-center&#34;&gt;Options&lt;/h5&gt;&lt;/header&gt;
+		&lt;header class=&#34;w3-container w3-theme&#34;&gt;&lt;h5&gt;&lt;b&gt;&lt;i class=&#34;fa fa-sliders&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&amp;nbsp;Options&lt;/b&gt;&lt;/h5&gt;&lt;/header&gt;
 		&lt;div class=&#34;w3-container w3-margin-0 w3-padding-0&#34;&gt;
 			&lt;button onclick=&#34;DisplayAddItem()&#34; class=&#34;w3-button w3-block w3-white w3-border w3-border-theme w3-left-align&#34;&gt;&lt;i class=&#34;fa fa-plus&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt; Add entry&lt;/button&gt;
 			&lt;button onclick=&#34;OpenDatabaseFile();&#34; class=&#34;w3-button w3-block w3-white w3-border w3-border-theme w3-left-align&#34;&gt;&lt;i class=&#34;fa fa-database&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt; Open database file&lt;/button&gt;
@@ -236,7 +236,7 @@
 &lt;/div&gt;
 &lt;div style=&#34;display: none;&#34; class=&#34;Authrozed w3-col m8 l8 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white&#34;&gt;
 	&lt;div class=&#34;w3-container w3-padding-0 w3-border w3-border-theme&#34;&gt;
-		&lt;header class=&#34;w3-container w3-theme&#34;&gt;&lt;h5 class=&#34;w3-center&#34;&gt;Intructions&lt;/h5&gt;&lt;/header&gt;
+		&lt;header class=&#34;w3-container w3-theme&#34;&gt;&lt;h5&gt;&lt;b&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&amp;nbsp;Instructions&lt;/b&gt;&lt;/h5&gt;&lt;/header&gt;
 		&lt;div class=&#34;w3-padding&#34;&gt;
 			&lt;i class=&#34;fa fa-wrench&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
 			Instructions are comming soon ...

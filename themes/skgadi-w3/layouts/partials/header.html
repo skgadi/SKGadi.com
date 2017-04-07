@@ -69,7 +69,7 @@
 </head>
 <body>
 <nav class="w3-sidenav w3-collapse w3-white w3-animate0-left w3-card-2" style="z-index:3;width:250px;" id="mySidenav">
-  <a href="/" class="w3-border-bottom w3-border-bottom w3-large"><img src="{{ if .Site.Params.SiteImageURL }}{{ .Site.Params.SiteImageURL }}{{ else }}{{ .Site.BaseURL }}images/site-name.png{{ end }}" alt="site-logo" style="width:100%;"></a>
+  <a href="/" class="w3-border-bottom w3-border-bottom w3-large">{{ if .Site.Params.SiteNameInText }}<h1 class="w3-margin-0 w3-text-theme"><b>{{.Site.Params.SiteNameInText}}</b></h1>{{ else }}<img src="{{ if .Site.Params.SiteImageURL }}{{ .Site.Params.SiteImageURL }}{{ else }}{{ .Site.BaseURL }}images/site-name.png{{ end }}" alt="site-logo" style="width:100%;">{{end}}</a>
   <a href="javascript:void(0)" onclick="w3_close()"  class="w3-border-bottom w3-text-theme w3-hide-large w3-closenav w3-large">Close <i class="fa fa-remove"></i></a>
 {{- $currentPage := . -}}
 {{- range (.Site.Menus.main) -}}
@@ -83,7 +83,7 @@
 		{{- end -}}
 </ul>
 	{{- else -}}
-		<a class="w3-border-bottom {{ if eq $.RelPermalink .URL }} w3-theme-d1 w3-medium {{ else }} {{ end }}" href="{{ .URL }}">{{ .Pre }}&nbsp;{{- .Name -}}</a>
+		<a class="w3-border-bottom {{ if eq $.RelPermalink .URL }} w3-theme-d1 w3-medium {{ else }} {{ end }}" href="{{ .URL }}">{{ if .Pre }}<i class='fa {{ .Pre }} fa-fw' aria-hidden='true'></i>{{ end }}&nbsp;{{- .Name -}}</a>
 	{{- end -}}
 {{- end -}}
 </nav>
@@ -102,15 +102,15 @@
 		<div class="w3-show-inline-block">
 		<div class="w3-bar">
 		<a href='/' class="w3-button w3-hover-theme w3-bar-item w3-padding-tiny">Home</a>
-		{{ $.Scratch.Add "path" .Site.BaseURL }}
-		{{ range $index, $element := split .RelPermalink  "/" }}
-			{{ $.Scratch.Add "path" $element }}
-			{{ if ne $element "" }}
+		{{- $.Scratch.Add "path" .Site.BaseURL -}}
+		{{- range $index, $element := split .RelPermalink  "/" -}}
+			{{- $.Scratch.Add "path" $element -}}
+			{{- if ne $element "" -}}
 				<a class="w3-bar-item w3-padding-tiny"><i class="fa fa-angle-double-right"></i></a>
 				<a href='{{ $.Scratch.Get "path" }}' class="w3-button w3-hover-theme w3-bar-item w3-padding-tiny">{{ humanize (replace . "-" " ") }}</a>
-			{{ $.Scratch.Add "path" "/" }}
-		  {{ end }}
-		{{ end }}
+			{{- $.Scratch.Add "path" "/" -}}
+		  {{- end -}}
+		{{- end -}}
 		</div>
 		</div>
 		{{ if .Params.tags }}

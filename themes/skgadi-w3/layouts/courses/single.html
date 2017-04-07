@@ -4,7 +4,7 @@
 
 <div class="w3-col m6 l6 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-border w3-border-theme">
-	<header class="w3-container w3-theme"><h5 class="w3-center">Course details</h5></header>
+	<header class="w3-container w3-theme"><h5><b><i class="fa fa-list" aria-hidden="true"></i>&nbsp;Course details</b></h5></header>
 	<table class="w3-table w3-striped w3-hoverable">
 		<tr>
 			<td style="text-align: left;" >School</td>
@@ -43,7 +43,7 @@
 {{- if .Params.CourseMaterial -}}
 <div class="w3-col m6 l6 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-border w3-border-theme">
-	<header class="w3-container w3-theme"><h5 class="w3-center">Course Material</h5></header>
+	<header class="w3-container w3-theme"><h5><b><i class="fa fa-list-ul" aria-hidden="true"></i>&nbsp;Course Material</b></h5></header>
 		{{- range .Params.CourseMaterial -}}
 		<div class="w3-container w3-center w3-margin-0 w3-padding-0">
 			{{ if .URL }}<a href="{{ .URL }}" class="w3-button w3-white w3-border w3-border-theme w3-block w3-ripple w3-left-align">{{ end }}
@@ -57,7 +57,7 @@
 {{- if .Params.Homeworks -}}
 <div class="w3-col m6 l6 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-border w3-border-theme">
-	<header class="w3-container w3-theme"><h5 class="w3-center">Homeworks</h5></header>
+	<header class="w3-container w3-theme"><h5><b><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;Homeworks</b></h5></header>
 		{{- range .Params.Homeworks -}}
 		<div class="w3-container w3-center w3-margin-0 w3-padding-0">
 			{{ if .QuestionsURL }}<a href="{{ .QuestionsURL }}" class="w3-button w3-white w3-border w3-border-theme w3-ripple w3-block w3-left-align">{{ end }}
@@ -74,7 +74,7 @@
 {{- if .Params.Exams -}}
 <div class="w3-col m6 l6 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-border w3-border-theme">
-	<header class="w3-container w3-theme"><h5 class="w3-center">Exams</h5></header>
+	<header class="w3-container w3-theme"><h5><b><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;Exams</b></h5></header>
 		{{- range .Params.Exams -}}
 		<div class="w3-container w3-center w3-margin-0 w3-padding-0">
 			{{ if .QuestionsURL }}<a href="{{ .QuestionsURL }}" class="w3-button w3-white w3-border w3-border-theme w3-ripple w3-block w3-left-align">{{ end }}
@@ -92,7 +92,7 @@
 {{- if .Params.GSKAttendanceURL -}}
 <div class="w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-border w3-border-theme">
-	<header class="w3-container w3-theme"><h5 class="w3-center">Attendance</h5></header>
+	<header class="w3-container w3-theme"><h5><b><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;Attendance</b></h5></header>
 	<div class="w3-container w3-padding-0">
 		<iframe src="https://docs.google.com/spreadsheets/d/{{ .Params.GSKAttendanceURL }}/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="width: 100%; height: 500px; display: block;"></iframe>
 	</div>
@@ -102,7 +102,7 @@
 {{- if .Params.GSKGradeURL -}}
 <div class="w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-border w3-border-theme">
-	<header class="w3-container w3-theme"><h5 class="w3-center">Grades</h5></header>
+	<header class="w3-container w3-theme"><h5><b><i class="fa fa-sort-numeric-asc" aria-hidden="true"></i>&nbsp;Grades</b></h5></header>
 	<div class="w3-container w3-padding-0">
 		<iframe src="https://docs.google.com/spreadsheets/d/{{ .Params.GSKGradeURL }}/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="width: 100%; height: 500px; display: block;"></iframe>
 	</div>
