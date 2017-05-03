@@ -6,11 +6,11 @@
 		<header class="w3-container w3-theme"><h5><b><i class="fa fa-book" aria-hidden="true"></i>&nbsp;{{ .Title }}</b></h5></header>
 		<table class="w3-table w3-striped w3-hoverable w3-border-bottom w3-border-theme">
 			<tr>
-				<td style="text-align: left;" >School</td>
-				<td style="text-align: right;"><a href="GSKSchoolURL">{{ .Params.GSKSchool }}</a></td>
-			</tr><tr>
-				<td style="text-align: left;" >Department</td>
-				<td style="text-align: right;"><a href="GSKDepartmentURL">{{ .Params.GSKDepartment }}</a></td>
+			<td style="text-align: left;" >School</td>
+			<td style="text-align: right;">{{ if .Params.GSKSchoolURL }}<a href="{{ .Params.GSKSchoolURL }}">{{ end }}{{ .Params.GSKSchool }}{{ if .Params.GSKSchoolURL }}</a>{{ end }}</td>
+		</tr><tr>
+			<td style="text-align: left;" >Department</td>
+			<td style="text-align: right;">{{ if .Params.GSKDepartmentURL }}<a href="{{ .Params.GSKDepartmentURL }}">{{ end }}{{ .Params.GSKDepartment }}{{ if .Params.GSKDepartmentURL }}</a>{{ end }}</td>
 			</tr><tr>
 				<td style="text-align: left;" >Place</td>
 				<td style="text-align: right;">{{ .Params.GSKCity }}</td>
