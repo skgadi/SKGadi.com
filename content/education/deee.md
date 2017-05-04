@@ -3,7 +3,8 @@
 Keywords = ["Electrical Engineer", "DEEE", "Diploma"]
 description = "Suresh Kumar Gadi obteined diploma in electrical and electronic engineering in the year 2002 from the Government Polytechnic Visakhapatnam."
 date = "2002-04-30T23:12:36+05:30"
-title = "Diploma in electrical and electronics engineering (DEEE)"
+title = "Diploma in Electrical and Electronics Engineering"
+GSKGrade = "77.81%"
 
 GSKStartDate = "1999-03-01"
 GSKEndDate = "2002-04-30"

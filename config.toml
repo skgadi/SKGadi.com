@@ -131,3 +131,10 @@ baseurl = "https://skgadi.com/"
     url = "/contact/"
 	pre = "fa-vcard-o"
 	weight = 10
+
+[[menu.main]]
+    identifier = "Resume"
+    name = "Resume"
+    url = "/resume/"
+	pre = "fa-list-alt"
+	weight = 11

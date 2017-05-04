@@ -3,13 +3,14 @@
 Keywords = ["masters", "mtech", "sensor systems technology"]
 description = "Suresh Kumar Gadi obtained masters from VIT University in the area of sensors systems technology in the year 2009."
 date = "2009-05-31T23:12:36+05:30"
-title = "Master of technology in Sensor System Technology"
+title = "MTech in Sensor System Technology"
 
 GSKStartDate = "2007-07-01"
 GSKEndDate = "2009-05-31"
-GSKSchool = "VIT (Vellore institute of technology) University"
+GSKSchool = "VIT University"
 GSKSchoolURL = "http://www.vit.ac.in/"
 GSKCity = "Vellore"
+GSKGrade = "8.89/10"
 [[ExtraDetails]]
     Name = "Thesis"
 	Text = "Designing a factory floor tester for a heating ventilation and air conditioning (HVAC) controller and a remote monitoring unit (RMU)"

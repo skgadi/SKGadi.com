@@ -2,7 +2,7 @@ function PrintElem(elem) {
 	var mywindow = window.open('', 'PRINT', 'height=' + screen.height + ',width=' + screen.width + ',resizable=yes,scrollbars=yes,toolbar=yes,menubar=yes,location=yes');
 
 	mywindow.document.write('<html><head><title>' + document.title + '</title>');
-	mywindow.document.write('<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/lib/w3.css" media="all"><link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">');
+	mywindow.document.write('<link rel="stylesheet" type="text/css" href="/css/resume.css" media="all">');
 	mywindow.document.write('</head><body >');
 	mywindow.document.write(document.getElementById(elem).innerHTML);
 	mywindow.document.write('</body></html>');
@@ -11,9 +11,11 @@ function PrintElem(elem) {
 	mywindow.focus(); // necessary for IE >= 10*/
 
 	$(mywindow).ready(function () {
-		mywindow.focus();
-		mywindow.print();
-		mywindow.close();
+		setTimeout(function(){
+			mywindow.focus();
+			mywindow.print();
+			mywindow.close();
+		}, 1000);
 	});
 	return true;
 }

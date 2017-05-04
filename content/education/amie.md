@@ -3,13 +3,15 @@
 Keywords = ["Electrical Engineer", "AMIE"]
 description = "Suresh Kumar Gadi is associate member of the institution of engineers (India) - AMIE."
 date = "2006-06-30T23:12:36+05:30"
-title = "Associate member of the institution of engineers (India)"
+title = "Bachelor's degree in Electrical Engineering"
 
 GSKStartDate = "2003-06-01"
 GSKEndDate = "2006-06-30"
 GSKSchool = "The Institution of Engineers (India)"
 GSKSchoolURL = "https://ieindia.org/"
 GSKCity = "Kolkata"
+GSKGrade = "53.8%"
+
 [[ExtraDetails]]
     Name = "Project"
 	Text = "Erection of 66 KV double circuit (D/C) transmission line (TL) and its accessories"

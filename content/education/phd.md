@@ -3,13 +3,14 @@
 Keywords = ["Automatic control", "phd"]
 description = "Suresh Kumar Gadi obtained PhD from CINVESTAV-IPN in the year 2014."
 date = "2014-05-20T23:12:36-06:00"
-title = "Ph.D. in automatic control"
+title = "PhD in automatic control"
 
 GSKStartDate = "2009-09-01"
 GSKEndDate = "2014-05-20"
 GSKSchool = "Cinvestav-IPN"
 GSKSchoolURL = "http://www.cinvestav.mx/"
 GSKCity = "Mexico city"
+GSKGrade = "8.5/10"
 [[ExtraDetails]]
     Name = "Thesis"
 	Text = "Modelado y control de un dispositivo de aumento de fuerza"

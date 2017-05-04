@@ -3,7 +3,7 @@
 Keywords = ["research", "upa", "professor"]
 description = "Suresh Kumar Gadi was research professor at UPA for 1 year."
 date = "2015-08-30T23:12:36+05:30"
-title = "Research professor"
+title = "Professor"
 
 GSKStartDate = "2014-09-01"
 GSKEndDate = "2015-08-31"

@@ -1,57 +1,105 @@
 {{- partial "header.html" . -}}
 <div class="w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
-<div class="w3-section">
-<button class="w3-btn w3-theme" onclick="PrintElem('PrintContent')">Print</button>
-<!--button class="w3-btn w3-theme" onclick="printDiv('PrintContent')">Print</button-->
-</div>
+<button class="w3-btn w3-theme w3-right" onclick="PrintElem('PrintContent')"><i class="fa fa-print"></i> Print</button>
 <div class="w3-border w3-border-theme w3-padding-small">
 <div id="PrintContent">
-<h1 class="w3-padding-0 w3-margin-0">{{.Site.Params.ResumeName}}</h1>
-<p class="w3-padding-0 w3-margin-0"><i>{{.Site.Params.SubTitle}}</i></p>
-<hr class="w3-padding-0 w3-margin-0"/>
-<div class="w3-panel w3-light-gray w3-border w3-border-black">
-	<h3 class="w3-padding-0 w3-margin-0 ">Education</h3>
-</div>
-<table class="w3-table w3-bordered w3-border">
+<h1 class="Resume">{{.Site.Params.ResumeName}}</h1>
+<p class=""><i>{{.Site.Params.SubTitle}}</i></p>
+<hr/>
+<h3 class="Resume">Summary</h3>
+<p class="Resume">{{.Description}}</p>
+<h3 class="Resume">Education</h3>
+<table class="Resume">
 	<tr>
 		<th>Title</th>
 		<th>School</th>
 		<th>Place</th>
+		<th>Grade</th>
 		<th>Period</th>
 	</tr>
 		{{ range where .Site.RegularPages "Section" "education" }}
 	<tr>
-		<td><a href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
-		<td>{{ if .Params.GSKSchoolURL }}<a href="{{ .Params.GSKSchoolURL }}"  style="text-decoration: none">{{ end }}{{ .Params.GSKSchool }}{{ if .Params.GSKSchoolURL }}</a>{{ end }}</td>
+		<td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
+		<td>{{ if .Params.GSKSchoolURL }}<a class="Resume" href="{{ .Params.GSKSchoolURL }}"  style="text-decoration: none">{{ end }}{{ .Params.GSKSchool }}{{ if .Params.GSKSchoolURL }}</a>{{ end }}</td>
 		<td>{{ .Params.GSKCity }}</td>
+		<td>{{ .Params.GSKGrade }}</td>
 		<td>{{  dateFormat "Jan 2006" .Params.GSKStartDate }} &mdash; {{ if .Params.GSKEndDate }} {{ dateFormat "Jan 2006" .Params.GSKEndDate }} {{ else }} Till date {{ end }}</td>
 	</tr>
 	{{ end }}
 
 </table>
 
-<div class="w3-panel w3-light-gray w3-border w3-border-black">
-	<h3 class="w3-padding-0 w3-margin-0 ">Work experience</h3>
-</div>
-<table class="w3-table w3-bordered w3-border">
+<h3 class="Resume">Work experience</h3>
+<table  class="Resume">
 	<tr>
-		<th>Title</th>
-		<th>School</th>
+		<th>Designation</th>
+		<th>Employer</th>
 		<th>Place</th>
 		<th>Period</th>
 	</tr>
 		{{ range where .Site.RegularPages "Section" "work-experience" }}
 	<tr>
-		<td><a href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
-		<td>{{ if .Params.GSKEmployerURL }}<a href="{{ .Params.GSKEmployerURL }}" style="text-decoration: none">{{ end }}{{ .Params.GSKEmployer }}{{ if .Params.GSKEmployerURL }}</a>{{ end }}</td>
+		<td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
+		<td>{{ if .Params.GSKEmployerURL }}<a class="Resume" href="{{ .Params.GSKEmployerURL }}" style="text-decoration: none">{{ end }}{{ .Params.GSKEmployer }}{{ if .Params.GSKEmployerURL }}</a>{{ end }}</td>
 		<td>{{ .Params.GSKCity }}</td>
 		<td>{{  dateFormat "Jan 2006" .Params.GSKStartDate }} &mdash; {{ if .Params.GSKEndDate }} {{ dateFormat "Jan 2006" .Params.GSKEndDate }} {{ else }} Till date {{ end }}</td>
 	</tr>
 	{{ end }}
-
 </table>
 
-
+<h3 class="Resume">Courses</h3>
+<table  class="Resume">
+	<tr>
+		<th>Course Name</th>
+		<th>School</th>
+		<th>Place</th>
+		<th>Period</th>
+		<th>Level</th>
+	</tr>
+		{{ range where .Site.RegularPages "Section" "courses" }}
+	<tr>
+		<td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
+		<td>{{ if .Params.GSKSchoolURL }}<a class="Resume" href="{{ .Params.GSKSchoolURL }}"  style="text-decoration: none">{{ end }}{{ .Params.GSKSchool }}{{ if .Params.GSKSchoolURL }}</a>{{ end }}</td>
+		<td>{{ .Params.GSKCity }}</td>
+		<td>{{  dateFormat "Jan 2006" .Params.GSKStartDate }} &mdash; {{ if .Params.GSKEndDate }} {{ dateFormat "Jan 2006" .Params.GSKEndDate }} {{ else }} Till date {{ end }}</td>
+		<td>{{ .Params.GSKLevel }}</td>
+	</tr>
+	{{ end }}
+</table>
+<h3 class="Resume">Publications</h3>
+<div class="bibtex_structure">
+  <!--div class="group year" extra="ASC number"-->
+  	  <!--a href="#top" style="display: inline"><em>(Top of the page)</em></a-->
+  	  <!--div style="padding-bottom:10px;"></div-->
+  	  <!--div class="sort year" extra="ASC number">
+      	<div class="templates"></div>
+      </div-->
+  <!--/div-->
+	<div class="group type Resume" extra="ASC string">
+		<div class="group year Resume" extra="ASC number">
+			<div class="sort title Resume" extra="ASC string">
+				<div class="templates"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="bibtex_display">
+	<div class="if bibtex_template" style="display: none;">
+			<ul><li><span class="bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
+				<span class="if author"><span class="author"></span>.</span>
+				<span class="if title">"<span class="title"></span>."</span>
+				<span class="if journal">In <i><span class="journal"></span></i>.</span>
+				<span class="if booktitle">In <i><span class="booktitle"></span></i>.</span>
+				<span class="if organization">Of <i><span class="organization"></span></i>.</span>
+				<span class="if publisher">Published by <i><span class="publisher"></span></i>.</span>
+				<span class="if year">on <span class="year"></span></span>
+				<span class="if month"><span class="month"></span></span>
+				<span class="if pages">(pp. <span class="pages"></span>).</span>
+				<span class="if isbn">(ISBN: <span class="isbn"></span>).</span>
+				<span class="if issn">(ISSN: <span class="issn"></span>).</span>
+			</span></li></ul>
+	</div>
+</div>
 </div>
 </div>
 </div>
