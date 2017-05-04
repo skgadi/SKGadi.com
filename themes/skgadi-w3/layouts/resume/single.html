@@ -102,19 +102,23 @@
 <table  class="Resume">
 	<tr>
 		<th>Title</th>
-		<th>Funding</th>
 		<th>Role</th>
 		<th>Team size</th>
-		<th>Key skills</th>
+		<th>Skills used</th>
+		<th>Funding</th>
 		<th>Period</th>
 	</tr>
 		{{ range where .Site.RegularPages "Section" "projects" }}
 	<tr>
 		<td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
-		<td>{{if .Params.GSKFundings}}{{.Params.GSKFundings}}{{else}}None{{end}}</td>
 		<td>{{.Params.GSKRole}}</td>
 		<td>{{.Params.GSKTeamSize}}</td>
 		<td>{{.Params.GSKKeySkills}}</td>
+		<td>{{if .Params.GSKFundName}}
+				{{if .Params.GSKFundURL}}<a class="Resume" href="{{.Params.GSKFundURL}}">{{end}}
+				{{.Params.GSKFundName}}
+				{{if .Params.GSKFundURL}}</a>{{end}}
+			{{else}}-{{end}}</td>
 		<td>{{  dateFormat "Jan 2006" .Params.GSKStartDate }} &mdash; {{ if .Params.GSKEndDate }} {{ dateFormat "Jan 2006" .Params.GSKEndDate }} {{ else }} Till date {{ end }}</td>
 	</tr>
 	{{ end }}
