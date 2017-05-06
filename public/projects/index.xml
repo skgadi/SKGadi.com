@@ -2,28 +2,177 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Suresh Kumar Gadi</title>
-    <link>https://skgadi.com/projects/index.xml</link>
+    <link>https://skgadi.com/projects/</link>
     <description>Recent content in Projects on Suresh Kumar Gadi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Jan 2017 23:34:04 -0600</lastBuildDate>
-    <atom:link href="https://skgadi.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Jan 2017 00:00:00 -0600</lastBuildDate>
+    
+	<atom:link href="https://skgadi.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Variable stiffness mechanism</title>
       <link>https://skgadi.com/projects/variable-stiffness-mechanism/</link>
-      <pubDate>Mon, 02 Jan 2017 23:34:04 -0600</pubDate>
+      <pubDate>Mon, 02 Jan 2017 00:00:00 -0600</pubDate>
       
       <guid>https://skgadi.com/projects/variable-stiffness-mechanism/</guid>
-      <description>
-
-&lt;h1 id=&#34;status&#34;&gt;Status&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Waiting for the funds&lt;/li&gt;
-&lt;li&gt;Project is submitted to PRODEP&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> Status  Waiting for the funds Project is submitted to PRODEP  </description>
+    </item>
+    
+    <item>
+      <title>Android app: GPS information</title>
+      <link>https://skgadi.com/projects/gps-information/</link>
+      <pubDate>Sun, 01 May 2016 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/projects/gps-information/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Android app: Moving circles</title>
+      <link>https://skgadi.com/projects/moving-circles/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/projects/moving-circles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Android app: Capacitor Bank Calculations</title>
+      <link>https://skgadi.com/projects/capacitor-bank-calculations/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/projects/capacitor-bank-calculations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling and control of a Force Augmenting Device (FAD)</title>
+      <link>https://skgadi.com/projects/modeling-and-control-of-fad/</link>
+      <pubDate>Tue, 01 Sep 2009 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/projects/modeling-and-control-of-fad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>System identification by applying frequency domain techniques on a real-time system</title>
+      <link>https://skgadi.com/projects/system-identifaction-via-frequency-analysis/</link>
+      <pubDate>Sun, 01 Feb 2009 00:00:00 +0530</pubDate>
+      
+      <guid>https://skgadi.com/projects/system-identifaction-via-frequency-analysis/</guid>
+      <description>In this project, a system is excited at various frequencies and its response is captured to calculate an approximate transfer function for the system in real-time.</description>
+    </item>
+    
+    <item>
+      <title>Designing Factory Floor Tester (FFT)</title>
+      <link>https://skgadi.com/projects/design-of-fft/</link>
+      <pubDate>Mon, 22 Sep 2008 00:00:00 +0530</pubDate>
+      
+      <guid>https://skgadi.com/projects/design-of-fft/</guid>
+      <description>This project Designing a factory floor tester for a heating ventilation and air conditioning (HVAC) controller and a remote monitoring unit (RMU) is carried out by Honeywell to test its products on the production line.</description>
+    </item>
+    
+    <item>
+      <title>Applying Artificial Intelligence algorithm, A*, to solve Puzzle-8</title>
+      <link>https://skgadi.com/projects/a-star-for-puzzle-8/</link>
+      <pubDate>Fri, 01 Aug 2008 00:00:00 +0530</pubDate>
+      
+      <guid>https://skgadi.com/projects/a-star-for-puzzle-8/</guid>
+      <description>This is a MATLAB program to introduce the A* algorithm by solving the puzzle-8.</description>
+    </item>
+    
+    <item>
+      <title>Character recognition using Artificial Neural Networks (ANN)</title>
+      <link>https://skgadi.com/projects/character-recognition/</link>
+      <pubDate>Tue, 01 Apr 2008 00:00:00 +0530</pubDate>
+      
+      <guid>https://skgadi.com/projects/character-recognition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Implementation of a transducer electronic data sheet (TEDS)</title>
+      <link>https://skgadi.com/projects/implementation-of-transducer-electronic-data-sheet/</link>
+      <pubDate>Tue, 01 Apr 2008 00:00:00 +0530</pubDate>
+      
+      <guid>https://skgadi.com/projects/implementation-of-transducer-electronic-data-sheet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tilt measurement using a micro-electromechanical system (MEMS) accelerometer with LabVIEW</title>
+      <link>https://skgadi.com/projects/tilt-measurement/</link>
+      <pubDate>Fri, 01 Feb 2008 00:00:00 +0530</pubDate>
+      
+      <guid>https://skgadi.com/projects/tilt-measurement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graphical tool for signal processing</title>
+      <link>https://skgadi.com/projects/graphical-tool-for-signal-processing/</link>
+      <pubDate>Tue, 06 Nov 2007 00:00:00 +0530</pubDate>
+      
+      <guid>https://skgadi.com/projects/graphical-tool-for-signal-processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fourier Series Tool</title>
+      <link>https://skgadi.com/projects/fourier-series-tool/</link>
+      <pubDate>Thu, 01 Nov 2007 00:00:00 +0530</pubDate>
+      
+      <guid>https://skgadi.com/projects/fourier-series-tool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Surface well testing (SWT)</title>
+      <link>https://skgadi.com/projects/surface-well-testing/</link>
+      <pubDate>Thu, 01 Dec 2005 00:00:00 +0530</pubDate>
+      
+      <guid>https://skgadi.com/projects/surface-well-testing/</guid>
+      <description>The project, Construction of the 66 KV double circuit transmission lines at Bawana, Delhi, is contracted to L&amp;amp;T by Tata Power Delhi Distribution, formarly known as North Delhi Power Ltd. (NDPL), to strengthen North Delhi power distribution system.
+The Institution of Engineers (India) considered this project as a Bachelor&amp;rsquo;s thesis.</description>
+    </item>
+    
+    <item>
+      <title>Construction of the 66 KV double circuit transmission lines at Bawana, Delhi</title>
+      <link>https://skgadi.com/projects/66-kv-double-circuit-transmission-lines/</link>
+      <pubDate>Sun, 16 Nov 2003 00:00:00 +0530</pubDate>
+      
+      <guid>https://skgadi.com/projects/66-kv-double-circuit-transmission-lines/</guid>
+      <description>The project, Construction of the 66 KV double circuit transmission lines at Bawana, Delhi, is contracted to L&amp;amp;T by Tata Power Delhi Distribution, formarly known as North Delhi Power Ltd. (NDPL), to strengthen North Delhi power distribution system.
+The Institution of Engineers (India) considered this project as a Bachelor&amp;rsquo;s thesis.</description>
+    </item>
+    
+    <item>
+      <title>Railway electrification project from Ludhiana to Amritsar in Punjab</title>
+      <link>https://skgadi.com/projects/railway-electrification-punjab/</link>
+      <pubDate>Fri, 01 Aug 2003 00:00:00 +0530</pubDate>
+      
+      <guid>https://skgadi.com/projects/railway-electrification-punjab/</guid>
+      <description>The project, Railway electrification project from Ludhiana to Amritsar in Punjab, is contracted to L&amp;amp;T by the Indian Railways to modernize the railways in this zone.</description>
+    </item>
+    
+    <item>
+      <title>Construction of the 132 KV double circuit transmission lines at Jodhpur, Rajasthan</title>
+      <link>https://skgadi.com/projects/132-kv-double-circuit-transmission-lines/</link>
+      <pubDate>Mon, 01 Jul 2002 00:00:00 +0530</pubDate>
+      
+      <guid>https://skgadi.com/projects/132-kv-double-circuit-transmission-lines/</guid>
+      <description>The project, Construction of the 132 KV double circuit transmission lines at Jodhpur, Rajasthan, is contracted to L&amp;amp;T by Rajasthan Vidyut Prasaran Nigam Limited (RVPNL) to strengthen rajasthan electricity department.</description>
+    </item>
+    
+    <item>
+      <title>Microprocessor based water level controller</title>
+      <link>https://skgadi.com/projects/microprocessor-based-water-level-controller/</link>
+      <pubDate>Sat, 01 Sep 2001 00:00:00 +0530</pubDate>
+      
+      <guid>https://skgadi.com/projects/microprocessor-based-water-level-controller/</guid>
+      <description>This work is part of the thesis for obtaining the grade of Diploma in Electrical and Electronics Engineering.</description>
     </item>
     
   </channel>

@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Electrical Engineering on Suresh Kumar Gadi</title>
-    <link>https://skgadi.com/tags/electrical-engineering/index.xml</link>
+    <link>https://skgadi.com/tags/electrical-engineering/</link>
     <description>Recent content in Electrical Engineering on Suresh Kumar Gadi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://skgadi.com/tags/electrical-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Mar 2017 00:00:00 -0600</lastBuildDate>
+    
+	<atom:link href="https://skgadi.com/tags/electrical-engineering/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Calculator for electrical engineering</title>
@@ -14,8 +17,7 @@
       <pubDate>Fri, 24 Mar 2017 00:00:00 -0600</pubDate>
       
       <guid>https://skgadi.com/tools/calculator-for-electrical-engineering/</guid>
-      <description>&lt;iframe style=&#34;display: block;&#34; src=&#34;https://trinket.io/embed/python/cbca471c31&#34; width=&#34;100%&#34; height=&#34;600&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-</description>
+      <description></description>
     </item>
     
   </channel>

@@ -19,9 +19,10 @@ baseurl = "https://skgadi.com/"
 	FirstName = "Suresh Kumar"
 	LastName = "Gadi"
 	DateOfBirth = "1984-04-10T00:19:30+05:30"
-	ResumePhone = "(+52 1) 4491820153"
+	ResumePhone = "449 182 0153"
 	ResumeEmail = "gadisureshkumar-at-gmail-dot-com"
-	Fax = "+52 (1) 871 757 0153"
+	Fax = "(+52 1) 871 757 0153"
+	#ResumeFax = "(+52 1) 871 757 0153"
 	Address = "Carretera Torreón - Matamoros Km. 7.5, Ciudad Universitaria, Torreón, Coahuila, México, C.P. 27276"
 	GoogleAnalyticsID = "UA-89998286-1"
 	Author = "Suresh Kumar Gadi"
@@ -58,11 +59,64 @@ baseurl = "https://skgadi.com/"
 	reason = "providing CSS"
 	weight = 2
 
-#[[menu.main]]
-#    identifier = "Home"
-#    name = "Home"
-#    url = "/"
-#	weight = 0
+[[params.LanguageInfo]]
+	Language = "Telugu"
+	Ability = "Listening"
+	Level = "90%"
+[[params.LanguageInfo]]
+	Language = "Telugu"
+	Ability = "Talking"
+	Level = "90%"
+[[params.LanguageInfo]]
+	Language = "Hindi"
+	Ability = "Reading"
+	Level = "70%"
+[[params.LanguageInfo]]
+	Language = "Hindi"
+	Ability = "Writing"
+	Level = "70%"
+[[params.LanguageInfo]]
+	Language = "Hindi"
+	Ability = "Listening"
+	Level = "80%"
+[[params.LanguageInfo]]
+	Language = "Hindi"
+	Ability = "Talking"
+	Level = "70%"
+[[params.LanguageInfo]]
+	Language = "English"
+	Ability = "Reading"
+	Level = "70%"
+[[params.LanguageInfo]]
+	Language = "English"
+	Ability = "Writing"
+	Level = "70%"
+[[params.LanguageInfo]]
+	Language = "English"
+	Ability = "Listening"
+	Level = "80%"
+[[params.LanguageInfo]]
+	Language = "English"
+	Ability = "Talking"
+	Level = "70%"
+[[params.LanguageInfo]]
+	Language = "Spanish"
+	Ability = "Reading"
+	Level = "40%"
+[[params.LanguageInfo]]
+	Language = "Spanish"
+	Ability = "Writing"
+	Level = "40%"
+[[params.LanguageInfo]]
+	Language = "Spanish"
+	Ability = "Listening"
+	Level = "60%"
+[[params.LanguageInfo]]
+	Language = "Spanish"
+	Ability = "Talking"
+	Level = "60%"
+	
+	
 
 [[menu.main]]
     identifier = "Research"

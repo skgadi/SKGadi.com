@@ -2,12 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Courses on Suresh Kumar Gadi</title>
-    <link>https://skgadi.com/courses/index.xml</link>
+    <link>https://skgadi.com/courses/</link>
     <description>Recent content in Courses on Suresh Kumar Gadi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 09 Jan 2017 23:12:36 -0600</lastBuildDate>
-    <atom:link href="https://skgadi.com/courses/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://skgadi.com/courses/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Industrial electronics</title>

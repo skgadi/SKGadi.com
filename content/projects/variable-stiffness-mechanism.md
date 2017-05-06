@@ -10,9 +10,13 @@ GSKStartDate	=	"2017-01-02T00:00:00-06:00"
 #GSKEndDate		=	"2017-01-02T00:00:00-06:00"
 GSKRole = "In-charge"
 GSKTeamSize = "3 professors + 1 student"
-GSKKeySkills = "Control theory, Electrical and electronics design, Mechanical design, Embedded systems, Matlab, Simulink, real-time"
+GSKKeySkills = ["Control theory", "Electrical and electronics design", "Mechanical design", "Embedded systems", "MATLAB", "Simulink", "real-time"]
 +++
 
 # Status
 * Waiting for the funds
 * Project is submitted to PRODEP
+
+
+
+

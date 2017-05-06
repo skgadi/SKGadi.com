@@ -9,7 +9,7 @@ GSKEndDate = "2008-08-21T00:00:00+05:30"
 date = "2008-08-01T00:00:00+05:30"
 GSKRole = "Programmer"
 GSKTeamSize = "1"
-GSKKeySkills = "Artificial intelligence algorithm, MATLAB"
+GSKKeySkills = ["Artificial intelligence algorithm", "MATLAB"]
 description = "This is a MATLAB program to introduce the A* algorithm by solving the puzzle-8."
 
 [[ExtraDetails]]

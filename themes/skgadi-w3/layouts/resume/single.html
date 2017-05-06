@@ -12,7 +12,7 @@
 
 <h3 class="Resume">Personal details</h3>
 <table class="Resume">
-	<tr><td>
+	<tr><td style="width: 90px;">
 		First Name
 	</td><td>
 		{{.Site.Params.FirstName}}
@@ -32,10 +32,45 @@
 		Mobile
 	</td><td>
 		{{.Site.Params.ResumePhone}}
+	</td></tr><tr>
+	{{if .Site.Params.ResumeFax}}
+	<td>
+		Fax
+	</td><td>
+		{{.Site.Params.ResumeFax}}
+	</td>
+	{{end}}
+	</tr><tr><td>
+		Languages
+	</td><td>
+		<b>Reading:</b> 
+		{{range .Site.Params.LanguageInfo}}
+			{{if eq .Ability "Reading"}}
+				{{.Language}} ({{.Level}});
+			{{end}}
+		{{end}}
+		<b>Writing:</b> 
+		{{range .Site.Params.LanguageInfo}}
+			{{if eq .Ability "Writing"}}
+				{{.Language}} ({{.Level}});
+			{{end}}
+		{{end}}
+		<b>Listening:</b> 
+		{{range .Site.Params.LanguageInfo}}
+			{{if eq .Ability "Listening"}}
+				{{.Language}} ({{.Level}});
+			{{end}}
+		{{end}}
+		<b>Talking:</b> 
+		{{range .Site.Params.LanguageInfo}}
+			{{if eq .Ability "Talking"}}
+				{{.Language}} ({{.Level}});
+			{{end}}
+		{{end}}
 	</td></tr><tr><td>
 		Date of birth
 	</td><td>
-		{{ (dateFormat "2" .Site.Params.DateOfBirth) }}{{ if in (slice "1" "21" "31") (dateFormat "2" .Site.Params.DateOfBirth)}}st{{ else if in (slice "2" "22") (dateFormat "2" .Site.Params.DateOfBirth)}}nd{{ else if in (slice "3" "23") (dateFormat "2" .Site.Params.DateOfBirth)}}rd{{ else }}th{{ end }} of {{ (dateFormat "January 2006" .Site.Params.DateOfBirth) }}
+		{{ (dateFormat "2" .Site.Params.DateOfBirth) }}<sup>{{ if in (slice "1" "21" "31") (dateFormat "2" .Site.Params.DateOfBirth)}}st{{ else if in (slice "2" "22") (dateFormat "2" .Site.Params.DateOfBirth)}}nd{{ else if in (slice "3" "23") (dateFormat "2" .Site.Params.DateOfBirth)}}rd{{ else }}th{{ end }}</sup> of {{ (dateFormat "January 2006" .Site.Params.DateOfBirth) }}
 	</td></tr>
 </table>
 
@@ -113,13 +148,13 @@
 		<td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
 		<td>{{.Params.GSKRole}}</td>
 		<td>{{.Params.GSKTeamSize}}</td>
-		<td>{{.Params.GSKKeySkills}}</td>
+		<td>{{ delimit .Params.GSKKeySkills ", " }}</td>
 		<td>{{if .Params.GSKFundName}}
 				{{if .Params.GSKFundURL}}<a class="Resume" href="{{.Params.GSKFundURL}}">{{end}}
 				{{.Params.GSKFundName}}
 				{{if .Params.GSKFundURL}}</a>{{end}}
 			{{else}}-{{end}}</td>
-		<td>{{  dateFormat "Jan 2006" .Params.GSKStartDate }} &mdash; {{ if .Params.GSKEndDate }} {{ dateFormat "Jan 2006" .Params.GSKEndDate }} {{ else }} Till date {{ end }}</td>
+		<td style="width: 90px;">{{-  dateFormat "Jan 2006" .Params.GSKStartDate -}}&ndash;{{- if .Params.GSKEndDate -}}{{- dateFormat "Jan 2006" .Params.GSKEndDate -}}{{- else -}}Till&nbsp;date{{- end -}}</td>
 	</tr>
 	{{ end }}
 </table>

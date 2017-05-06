@@ -9,7 +9,7 @@ GSKEndDate = "2008-04-14T00:00:00+05:30"
 date = "2008-04-01T00:00:00+05:30"
 GSKRole = "Programmer"
 GSKTeamSize = "1"
-GSKKeySkills = "ANN, MATLAB, VC++"
+GSKKeySkills = ["ANN", "MATLAB", "VC++"]
 description = "This program recognizes the character entered by human."
 
 [[ExtraDetails]]

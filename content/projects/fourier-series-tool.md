@@ -9,7 +9,7 @@ GSKStartDate	=	"2007-11-05T00:00:00+05:30"
 GSKEndDate		=	"2008-01-01T00:00:00+05:30"
 GSKRole = "Programmer"
 GSKTeamSize = "1"
-GSKKeySkills = "MATLAB, Signal processing"
+GSKKeySkills = ["MATLAB", "Signal processing"]
 description = "This program draws the periodic wave for the coefficients entered by user."
 
 [[ExtraDetails]]

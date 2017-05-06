@@ -9,7 +9,7 @@ GSKStartDate	=	"2007-11-06T00:00:00+05:30"
 GSKEndDate		=	"2008-01-01T00:00:00+05:30"
 GSKRole = "Programmer"
 GSKTeamSize = "1"
-GSKKeySkills = "MATLAB, Signal processing"
+GSKKeySkills = ["MATLAB", "Signal processing"]
 description = "This program lets user to upload any graph and perform signal processing."
 
 [[ExtraDetails]]

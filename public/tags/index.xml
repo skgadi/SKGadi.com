@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Suresh Kumar Gadi</title>
+    <link>https://skgadi.com/tags/</link>
+    <description>Recent content in Tags on Suresh Kumar Gadi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Apr 2017 00:00:00 -0600</lastBuildDate>
+    
+	<atom:link href="https://skgadi.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bibtex</title>
+      <link>https://skgadi.com/tags/bibtex/</link>
+      <pubDate>Tue, 04 Apr 2017 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/tags/bibtex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Calculator</title>
+      <link>https://skgadi.com/tags/calculator/</link>
+      <pubDate>Fri, 24 Mar 2017 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/tags/calculator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compiler</title>
+      <link>https://skgadi.com/tags/compiler/</link>
+      <pubDate>Thu, 23 Mar 2017 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/tags/compiler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Design Of Experiments</title>
+      <link>https://skgadi.com/tags/design-of-experiments/</link>
+      <pubDate>Sat, 25 Feb 2017 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/tags/design-of-experiments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Electrical Engineering</title>
+      <link>https://skgadi.com/tags/electrical-engineering/</link>
+      <pubDate>Fri, 24 Mar 2017 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/tags/electrical-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Latex</title>
+      <link>https://skgadi.com/tags/latex/</link>
+      <pubDate>Thu, 16 Jun 2016 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Library</title>
+      <link>https://skgadi.com/tags/library/</link>
+      <pubDate>Tue, 04 Apr 2017 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/tags/library/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mathematics</title>
+      <link>https://skgadi.com/tags/mathematics/</link>
+      <pubDate>Fri, 24 Mar 2017 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/tags/mathematics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://skgadi.com/tags/programming/</link>
+      <pubDate>Thu, 23 Mar 2017 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://skgadi.com/tags/python/</link>
+      <pubDate>Fri, 24 Mar 2017 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
