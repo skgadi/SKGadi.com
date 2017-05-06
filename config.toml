@@ -62,59 +62,59 @@ baseurl = "https://skgadi.com/"
 [[params.LanguageInfo]]
 	Language = "Telugu"
 	Ability = "Listening"
-	Level = "90%"
+	Level = "100%"
 [[params.LanguageInfo]]
 	Language = "Telugu"
 	Ability = "Talking"
+	Level = "100%"
+[[params.LanguageInfo]]
+	Language = "Hindi"
+	Ability = "Reading"
 	Level = "90%"
 [[params.LanguageInfo]]
 	Language = "Hindi"
-	Ability = "Reading"
-	Level = "70%"
-[[params.LanguageInfo]]
-	Language = "Hindi"
 	Ability = "Writing"
-	Level = "70%"
+	Level = "90%"
 [[params.LanguageInfo]]
 	Language = "Hindi"
 	Ability = "Listening"
-	Level = "80%"
+	Level = "90%"
 [[params.LanguageInfo]]
 	Language = "Hindi"
 	Ability = "Talking"
-	Level = "70%"
+	Level = "90%"
 [[params.LanguageInfo]]
 	Language = "English"
 	Ability = "Reading"
-	Level = "70%"
+	Level = "90%"
 [[params.LanguageInfo]]
 	Language = "English"
 	Ability = "Writing"
-	Level = "70%"
+	Level = "90%"
 [[params.LanguageInfo]]
 	Language = "English"
 	Ability = "Listening"
-	Level = "80%"
+	Level = "90%"
 [[params.LanguageInfo]]
 	Language = "English"
 	Ability = "Talking"
-	Level = "70%"
+	Level = "90%"
 [[params.LanguageInfo]]
 	Language = "Spanish"
 	Ability = "Reading"
-	Level = "40%"
-[[params.LanguageInfo]]
-	Language = "Spanish"
-	Ability = "Writing"
-	Level = "40%"
-[[params.LanguageInfo]]
-	Language = "Spanish"
-	Ability = "Listening"
 	Level = "60%"
 [[params.LanguageInfo]]
 	Language = "Spanish"
-	Ability = "Talking"
+	Ability = "Writing"
 	Level = "60%"
+[[params.LanguageInfo]]
+	Language = "Spanish"
+	Ability = "Listening"
+	Level = "70%"
+[[params.LanguageInfo]]
+	Language = "Spanish"
+	Ability = "Talking"
+	Level = "70%"
 	
 	
 
