@@ -3,8 +3,8 @@
 <button class="w3-btn w3-theme w3-right" onclick="PrintElem('PrintContent')"><i class="fa fa-print"></i> Print</button>
 <div class="w3-border w3-border-theme w3-padding-small">
 <div id="PrintContent">
-<h1 class="Resume">{{.Site.Params.FirstName}} {{.Site.Params.LastName}}</h1>
-<p class=""><i>{{.Site.Params.SubTitle}}</i></p>
+<h1 class="Resume">{{.Params.FirstName}} {{.Params.LastName}}</h1>
+<p class=""><i>{{.Params.SubTitle}}</i></p>
 <hr/>
 
 <h3 class="Resume">Summary</h3>
@@ -15,54 +15,65 @@
 	<tr><td style="width: 90px;">
 		First Name
 	</td><td>
-		{{.Site.Params.FirstName}}
+		{{.Params.FirstName}}
 	</td></tr><tr><td>
 		Last Name
 	</td><td>
-		{{.Site.Params.LastName}}
+		{{.Params.LastName}}
 	</td></tr><tr><td>
 		Address
 	</td><td>
-		{{.Site.Params.Address}}
-	</td></tr><tr><td>
+		{{.Params.Address}}
+	</td></tr>
+	{{if .Params.Email}}
+	<tr><td>
 		Email
 	</td><td>
-		{{.Site.Params.ResumeEmail}}
-	</td></tr><tr><td>
+		{{.Params.Email}}
+	</td></tr>
+	{{end}}
+	{{if .Params.WebPage}}
+	<tr><td>
+		Web-page
+	</td><td>
+		{{.Params.WebPage}}
+	</td></tr>
+	{{end}}
+	<tr><td>
 		Mobile
 	</td><td>
-		{{.Site.Params.ResumePhone}}
-	</td></tr><tr>
-	{{if .Site.Params.ResumeFax}}
-	<td>
+		{{.Params.Phone}}
+	</td></tr>
+	{{if .Params.Fax}}
+	<tr><td>
 		Fax
 	</td><td>
-		{{.Site.Params.ResumeFax}}
-	</td>
+		{{.Params.Fax}}
+	</td></tr>
 	{{end}}
-	</tr><tr><td>
+	<tr><td>
 		Languages
 	</td><td>
 		<b>Reading:</b> 
-		{{range .Site.Params.LanguageInfo}}
+		{{range .Params.LanguageInfo}}
 			{{if eq .Ability "Reading"}}
 				{{.Language}} ({{.Level}});
 			{{end}}
-		{{end}}
+		{{end}}<br/>
 		<b>Writing:</b> 
-		{{range .Site.Params.LanguageInfo}}
+		{{range .Params.LanguageInfo}}
 			{{if eq .Ability "Writing"}}
 				{{.Language}} ({{.Level}});
 			{{end}}
-		{{end}}
+		{{end}}<br/>
 		<b>Listening:</b> 
-		{{range .Site.Params.LanguageInfo}}
+		{{range .Params.LanguageInfo}}
 			{{if eq .Ability "Listening"}}
 				{{.Language}} ({{.Level}});
 			{{end}}
-		{{end}}
+		{{end}}<br/>
 		<b>Talking:</b> 
-		{{range .Site.Params.LanguageInfo}}
+		{{range .Params.LanguageInfo}}
 			{{if eq .Ability "Talking"}}
 				{{.Language}} ({{.Level}});
 			{{end}}
@@ -70,7 +81,7 @@
 	</td></tr><tr><td>
 		Date of birth
 	</td><td>
-		{{ (dateFormat "2" .Site.Params.DateOfBirth) }}<sup>{{ if in (slice "1" "21" "31") (dateFormat "2" .Site.Params.DateOfBirth)}}st{{ else if in (slice "2" "22") (dateFormat "2" .Site.Params.DateOfBirth)}}nd{{ else if in (slice "3" "23") (dateFormat "2" .Site.Params.DateOfBirth)}}rd{{ else }}th{{ end }}</sup> of {{ (dateFormat "January 2006" .Site.Params.DateOfBirth) }}
+		{{ (dateFormat "2" .Params.DateOfBirth) }}<sup>{{ if in (slice "1" "21" "31") (dateFormat "2" .Params.DateOfBirth)}}st{{ else if in (slice "2" "22") (dateFormat "2" .Params.DateOfBirth)}}nd{{ else if in (slice "3" "23") (dateFormat "2" .Params.DateOfBirth)}}rd{{ else }}th{{ end }}</sup> of {{ (dateFormat "January 2006" .Params.DateOfBirth) }}
 	</td></tr>
 </table>
 
@@ -158,14 +169,6 @@
 	</tr>
 	{{ end }}
 </table>
-
-
-
-
-
-
-
-
 <h3 class="Resume">Publications</h3>
 <div class="bibtex_structure">
   <!--div class="group year" extra="ASC number"-->
