@@ -1,8 +1,19 @@
-var Period = [];
-var maxPoint = [];
-var NumOfFactors;
-var MaximumValueLimit;
+//console.log(z);
 var x = [];
+var alpha = 0.2;
+var beta = 0.2;
+var a;
+var F_L = 100;
+var F_U = 600;
+var K_D = 5;
+var K_R = 0.1;
+var F_I = F_U - F_L;
+var F_1 = F_L + alpha*F_I*Math.random();
+var F_2 = (1-2*alpha)*F_I*Math.random();
+var x_M = [];
+var x_I = [];
+var n;
+
 $(document).ready(function () {
 	$("#Next000").click(function () {
 		Next000();
@@ -24,15 +35,17 @@ $(document).ready(function () {
 });
 function Next000() {
 	NumOfFactors = parseInt($('#NumOfFactors').val());
-	$('#NumOfFactors').val(NumOfFactors);
-	if (NumOfFactors > 0) {
+	n = parseInt($('#NumOfFactors').val());
+	a = 1/n*0.95;
+	$('#NumOfFactors').val(n);
+	if (n > 0) {
 		$("#NumOfFactors").prop('disabled', true);
 		$("#Next000").text("Reset");
 		$("#Next000").attr('onclick', '').unbind('click');
 		$("#Next000").click(function () {
 			ResetAll()
 		});
-		for (var i = 0; i < NumOfFactors; i++) {
+		for (var i = 0; i < n; i++) {
 			$("#FactorLimits").append("<div class='w3-col m4 l4 s4'><input id='FactorLabel" + i + "' class='w3-input w3-border w3-border-theme' type='text' value='Factor " + i + "'></div>");
 			$("#FactorLimits").append("<div class='w3-col m4 l4 s4'><input id='FactorLLimit" + i + "' class='w3-input w3-border w3-border-theme w3-right-align' type='text' value='0'></div>");
 			$("#FactorLimits").append("<div class='w3-col m4 l4 s4'><input id='FactorULimit" + i + "' class='w3-input w3-border w3-border-theme w3-right-align' type='text' value='100'></div>");
@@ -61,21 +74,19 @@ function ResetAll() {
 }
 function Next001() {
 	var ElementsCount = $("#FactorLimits").children().length;
-	var LLimit;
-	var ULimit;
+	var x_L;
+	var x_U;
 	var AllGood = true;
-	var maxRange = 0.7;
-	Period = [];
-	maxPoint = [];
-	for (var i = 0; i < NumOfFactors; i++) {
-		LLimit = parseFloat($("#FactorLLimit" + i).val());
-		ULimit = parseFloat($("#FactorULimit" + i).val());
-		$("#FactorLLimit" + i).val(LLimit);
-		$("#FactorULimit" + i).val(ULimit);
-		Period[i] = ULimit - LLimit;
-		if (Period[i] > 0 && $("#FactorLabel" + i).val())
-			maxPoint[i] = LLimit + Period[i] * (maxRange) * Math.random() + Period[i] * (1 - maxRange) / 2;
-		else {
+	x_M = [];
+	for (var i = 0; i < n; i++) {
+		x_L = parseFloat($("#FactorLLimit" + i).val());
+		x_U = parseFloat($("#FactorULimit" + i).val());
+		$("#FactorLLimit" + i).val(x_L);
+		$("#FactorULimit" + i).val(x_U);
+		x_I[i] = x_U - x_L;
+		if (x_I[i] > 0 && $("#FactorLabel" + i).val()) {
+			x_M[i] = x_L + beta*x_I[i] + (1-2*beta)*x_I[i]*Math.random();
+		} else {
 			AllGood = false;
 			$("#FactorLLimit" + i).focus();
 			$("#FactorLLimit" + i).select();
@@ -90,7 +101,7 @@ function Next001() {
 			ResetLimitsDeclaration()
 		});
 		$("#Next001").text("Modify factors/limits");
-		for (var i = 0; i < NumOfFactors; i++) {
+		for (var i = 0; i < n; i++) {
 			$("#FactorValues").append("<div class='w3-col m6 l6 s6'><input class='w3-input w3-border w3-border-theme' type='text' value='" + $("#FactorLabel" + i).val() + "' disabled></div>");
 			$("#FactorValues").append("<div class='w3-col m6 l6 s6'><input id='FValue" + i + "' class='w3-input w3-border w3-border-theme w3-right-align' type='text'></div>");
 		}
@@ -105,7 +116,8 @@ function Next001() {
 		$("#Next003").click(function () {
 			Next003()
 		});
-		MaximumValueLimit = 100 + 600 * Math.random();
+		F_1 = F_L + alpha*F_I*Math.random();
+		F_2 = (1-2*alpha)*F_I*Math.random();
 		setFocusToText();
 	}
 
@@ -127,7 +139,7 @@ function ResetLimitsDeclarationAuthorized() {
 	$("#PerformBulkExperiment").css("display", "none");
 }
 function DisableTheLimitsDeclaration(Disable) {
-	for (var i = 0; i < NumOfFactors; i++) {
+	for (var i = 0; i < n; i++) {
 		$("#FactorLabel" + i).prop('disabled', Disable);
 		$("#FactorLLimit" + i).prop('disabled', Disable);
 		$("#FactorULimit" + i).prop('disabled', Disable);
@@ -144,40 +156,47 @@ function Next002() {
 	}
 }
 function GetTheYValue() {
-	var Y = 0;
-	var sigmoidVal;
-	for (var i = 0; i < NumOfFactors; i++) {
-		sigmoidVal = 1 / (1 + Math.exp(3 / Period[i] * (-x[i] + maxPoint[i])));
-		Y = Y + MaximumValueLimit / NumOfFactors * (4 * sigmoidVal * (1 - sigmoidVal) + 0.01 * 2 * (Math.random() - 0.5));
+	var Sigma_z = 0
+	var F = 0;
+	var z = [];
+	for (var i = 0; i < n; i++) {
+		z[i] = K_D*(x[i] - x_M[i])/x_I[i];
+		Sigma_z = Sigma_z + z[i];
 	}
-	return Y
+	F = F_1;
+	for (var i = 0; i < n; i++) {
+		F = F + F_2*Math.exp(-(Math.pow(z[i] + a*Math.sin(Sigma_z), 2))) / n;
+	}
+	F = F + F_2/n * K_R * 2 * (Math.random() - 0.5);
+	//console.log(z);
+	return F
 }
 function Next003() {
 	var error = 0;
-	var LLimit;
-	var ULimit;
+	var x_L;
+	var x_U;
 	var AllGood = AreInputValuesValidForX();
 	if (AllGood) {
-		for (var i = 0; i < NumOfFactors; i++) {
-			LLimit = parseFloat($("#FactorLLimit" + i).val());
-			ULimit = parseFloat($("#FactorULimit" + i).val());
-			error = error + Math.abs((x[i] - maxPoint[i]) / (ULimit - LLimit));
+		for (var i = 0; i < n; i++) {
+			x_L = parseFloat($("#FactorLLimit" + i).val());
+			x_U = parseFloat($("#FactorULimit" + i).val());
+			error = error + Math.abs(x[i] - x_M[i]) / x_I[i];
 		}
-		error = error / NumOfFactors;
+		error = error / n;
 		$("#ResponseValue").val("Your input is " + error * 100 + "% away from the optimum value.");
 	}
 }
 function AreInputValuesValidForX() {
 	var AllGood = true;
 	x = [];
-	var LLimit;
-	var ULimit;
-	for (var i = 0; i < NumOfFactors; i++) {
+	var x_L;
+	var x_U;
+	for (var i = 0; i < n; i++) {
 		x[i] = parseFloat($("#FValue" + i).val());
 		$("#FValue" + i).val(x[i]);
-		LLimit = parseFloat($("#FactorLLimit" + i).val());
-		ULimit = parseFloat($("#FactorULimit" + i).val());
-		if (x[i] < LLimit || x[i] > ULimit) {
+		x_L = parseFloat($("#FactorLLimit" + i).val());
+		x_U = parseFloat($("#FactorULimit" + i).val());
+		if (x[i] < x_L || x[i] > x_U) {
 			AllGood = false;
 			$("#FValue" + i).focus();
 			$("#FValue" + i).select();
@@ -192,16 +211,18 @@ function PerformBulkCalc() {
 	var InputVars;
 	var YOutPut = "";
 	var FoundLimitError;
+	var x_L;
+	var x_U;
 	Lines = $("#BulkText").val().split('\n');
 	for (var i = 0; i < Lines.length; i++) {
 		InputVars = Lines[i].split('\t');
-		if (InputVars.length == NumOfFactors) {
+		if (InputVars.length == n) {
 			FoundLimitError = false;
 			for (var j = 0; j < InputVars.length; j++) {
 				x[j] = parseFloat(InputVars[j]);
-				LLimit = parseFloat($("#FactorLLimit" + j).val());
-				ULimit = parseFloat($("#FactorULimit" + j).val());
-				if (x[j] < LLimit || x[j] > ULimit) {
+				x_L = parseFloat($("#FactorLLimit" + j).val());
+				x_U = parseFloat($("#FactorULimit" + j).val());
+				if (x[j] < x_L || x[j] > x_U) {
 					if (!FoundLimitError) {
 						YOutPut += 'NaN\t Error(s):';
 						FoundLimitError = true;
