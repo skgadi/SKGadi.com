@@ -42,14 +42,19 @@ GSKGradeURL = "1UpiDRrdFLgkR_meufBsTD-vHmW0G8Gyo2eYe39qIuyw"
     Name = "Homework 4"
 	Date = "2017-03-06"
     QuestionsURL = "https://github.com/skgadi/Courses/raw/master/2017-01-06/UAdeC-FIME-4A/Homework004/questions.pdf"
+[[Homeworks]]
+    Name = "Homework 5"
+	Date = "2017-03-28T23:12:36-06:00"
+    QuestionsURL = "https://github.com/skgadi/Courses/raw/master/2017-01-06/UAdeC-FIME-4A/Exam002/questions.pdf"
+[[Homeworks]]
+    Name = "Project"
+	Date = "2017-05-23T00:00:00-06:00"
+    QuestionsURL = "https://www.youtube.com/playlist?list=PLqBTgI2lXqQJ9EKfeBjtaQjo04MjAGxGS"
 
 [[Exams]]
     Name = "Exam 1"
 	Date = "2017-03-14T23:12:36-06:00"
     QuestionsURL = "https://docs.google.com/forms/d/e/1FAIpQLScplXdRjCd9w9_n1sjM6z0ddGzMw1kmZIfjqExdflIoAZovMQ/viewform?usp=sf_link"
-[[Exams]]
-    Name = "Exam 2"
-	Date = "2017-03-28T23:12:36-06:00"
-    QuestionsURL = "https://github.com/skgadi/Courses/raw/master/2017-01-06/UAdeC-FIME-4A/Exam002/questions.pdf"
 	
 +++
+<iframe style="width: 100%; height: 315px; display: block;" src="https://www.youtube.com/embed/videoseries?list=PLqBTgI2lXqQJ9EKfeBjtaQjo04MjAGxGS" frameborder="0" allowfullscreen></iframe>
