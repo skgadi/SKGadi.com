@@ -6,25 +6,28 @@
 </div>
 <div class="w3-container w3-padding-0">
 {{- if .Site.Params.Scopus -}}
-<a class="w3-left w3-padding-tiny" href="https://www.scopus.com/authid/detail.uri?authorId={{ .Site.Params.Scopus }}"><i class="fa fa-circle" aria-hidden="true"></i></a>
+<a class="w3-left w3-padding-tiny" href="https://www.scopus.com/authid/detail.uri?authorId={{ .Site.Params.Scopus }}" target="_blank"><i class="fa fa-circle" aria-hidden="true"></i></a>
 {{- end -}}
 {{- if .Site.Params.ORCID -}}
-<a class="w3-left w3-padding-tiny" href="https://orcid.org/{{ .Site.Params.ORCID }}"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a>
+<a class="w3-left w3-padding-tiny" href="https://orcid.org/{{ .Site.Params.ORCID }}" target="_blank"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a>
 {{- end -}}
 {{- if .Site.Params.GScholar -}}
-<a class="w3-left w3-padding-tiny" href="https://scholar.google.co.in/citations?user={{ .Site.Params.GScholar }}"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
+<a class="w3-left w3-padding-tiny" href="https://scholar.google.co.in/citations?user={{ .Site.Params.GScholar }}" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
 {{- end -}}
 {{- if .Site.Params.LinkedIn -}}
-<a class="w3-left w3-padding-tiny" href="https://mx.linkedin.com/in/{{ .Site.Params.LinkedIn }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+<a class="w3-left w3-padding-tiny" href="https://mx.linkedin.com/in/{{ .Site.Params.LinkedIn }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 {{- end -}}
 {{- if .Site.Params.Twitter -}}
-<a class="w3-left w3-padding-tiny" href="https://twitter.com/{{ .Site.Params.Twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+<a class="w3-left w3-padding-tiny" href="https://twitter.com/{{ .Site.Params.Twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 {{- end -}}
 {{- if .Site.Params.GPlus -}}
-<a class="w3-left w3-padding-tiny" href="https://plus.google.com/{{ .Site.Params.GPlus }}"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+<a class="w3-left w3-padding-tiny" href="https://plus.google.com/{{ .Site.Params.GPlus }}" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
 {{- end -}}
 {{- if .Site.Params.Maps -}}
-<a class="w3-left w3-padding-tiny" href="{{ .Site.Params.Maps }}"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+<a class="w3-left w3-padding-tiny" href="{{ .Site.Params.Maps }}" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+{{- end -}}
+{{- if .Site.Params.PayPal -}}
+<a class="w3-left w3-padding-tiny" href="{{ .Site.Params.PayPal }}" target="_blank"><i class="fa fa-paypal" aria-hidden="true"></i></a>
 {{- end -}}
 </div>
 <div class="w3-container w3-padding-0 w3-small w3-section">
@@ -32,12 +35,12 @@
 	<div class="w3-padding-left">
 	{{- if .Params.thanks -}}
 		{{- range .Params.thanks -}}
-			<p class="w3-padding-0 w3-margin-0">{{- if .url -}}<a href="{{ .url }}">{{- end -}}{{ .name }}{{- if .url -}}</a>{{- end -}}&nbsp;for&nbsp;<i>{{- .reason -}}</i>.</p>
+			<p class="w3-padding-0 w3-margin-0">{{- if .url -}}<a href="{{ .url }}" target="_blank">{{- end -}}{{ .name }}{{- if .url -}}</a>{{- end -}}&nbsp;for&nbsp;<i>{{- .reason -}}</i>.</p>
 		{{- end -}}
 	{{- end -}}
 	{{- if .Site.Params.thanks -}}
 		{{- range .Site.Params.thanks -}}
-			<p class="w3-padding-0 w3-margin-0">{{- if .url -}}<a href="{{ .url }}">{{- end -}}{{ .name }}{{- if .url -}}</a>{{- end -}}&nbsp;for&nbsp;<i>{{- .reason -}}</i>.</p>
+			<p class="w3-padding-0 w3-margin-0">{{- if .url -}}<a href="{{ .url }}" target="_blank">{{- end -}}{{ .name }}{{- if .url -}}</a>{{- end -}}&nbsp;for&nbsp;<i>{{- .reason -}}</i>.</p>
 		{{- end -}}
 	{{- end -}}
 	</div>

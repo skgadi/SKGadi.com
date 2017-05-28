@@ -58,25 +58,25 @@
 		
 		</header>
 <div class="w3-container w3-padding-0"><div class="w3-row">
-<div class="w3-col m6 l6 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
+<!--div class="w3-col m6 l6 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-container w3-padding-0 w3-border w3-border-theme">
 		<header class="w3-container w3-theme"><h5><b><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;ORCID</b></h5></header>
 		<div class="w3-container w3-center w3-margin-0 w3-padding-0"><iframe src="https://orcid.org/static/html/widget.html?orcid=0000-0001-7974-7825&t=e50db5&locale=en" frameborder="0" height="225" width="210" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe></div>
 	</div>
-</div>
-<div class="w3-col m6 l6 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
+</div-->
+<div class="w3-col m6 l4 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-container w3-padding-0 w3-border w3-border-theme">
 		<header class="w3-container w3-theme"><h5><b><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;Conacyt CVU</b></h5></header>
 		<div class="w3-container w3-center w3-margin-0 w3-padding-0"><a href="../docs/conacyt-cvu.pdf" target="_blank" class="w3-button w3-white w3-ripple w3-block"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Download</a></div>
 	</div>
 </div>
-<div class="w3-col m6 l6 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
+<div class="w3-col m6 l4 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-container w3-padding-0 w3-border w3-border-theme">
 		<header class="w3-container w3-theme"><h5><b><i class='fa fa-envelope' aria-hidden='true'></i>&nbsp;Email for research purpose</b></h5></header>
 		<div class="w3-container w3-center w3-section w3-padding-0">research-at-skgadi-dot-com</div>
 	</div>
 </div>
-<div class="w3-col m6 l6 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
+<div class="w3-col m6 l4 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-container w3-padding-0 w3-border w3-border-theme">
 		<header class="w3-container w3-theme"><h5><b><i class='fa fa-lightbulb-o' aria-hidden='true'></i>&nbsp;Research interests</b></h5></header>
 		<ul class="w3-ul w3-hoverable">
@@ -120,28 +120,40 @@
 </div>
 </div>
 <div class="bibtex_structure">
-  <div class="group year w3-border-top w3-border-theme w3-center" extra="ASC number">
+  <!--div class="group year w3-border-top w3-border-theme w3-center" extra="ASC number">
   	  <!--a href="#top" style="display: inline"><em>(Top of the page)</em></a-->
   	  <!--div style="padding-bottom:10px;"></div-->
-  	  <div class="sort journal" extra="DESC string">
+  	  <!--div class="sort journal" extra="DESC string">
       	<div class="templates"></div>
       </div>
-  </div>
+  </div-->
+ 	<div class="group gsktype BibliographyGroup" extra="ASC string">
+		<div class="sort year BibliographyGroup" extra="ASC number">
+			<ol class="templates" reversed></ol>
+		</div>
+	</div> 
 </div>
 <div id="bibtex_display">
 		<div class="if bibtex_template" style="display: none;">
-			<ul class="w3-ul w3-hoverable w3-padding-0 w3-border-top w3-border-theme" style="text-align: justify"><li class="w3-padding-small">
-				<span class="bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY" onclick="DisplayItem('BIBD+BIBTEXKEY+')" style="cursor: pointer;">
+			<!--ul class="BibliographyItem"--><li class="BibliographyItem">
+				<div>
 					<span class="if author"><span class="author"></span>.</span>
-					<span class="if title">"<span class="title"></span>."</span>
-					<span class="if journal">In <i><span class="journal"></span></i>.</span>
-					<span class="if booktitle">In <i><span class="booktitle"></span></i>.</span>
-					<span class="if organization">Of <i><span class="organization"></span></i>.</span>
-					<span class="if publisher">Published by <i><span class="publisher"></span></i>.</span>
-					<span class="if year">on <span class="year"></span></span>
-					<span class="if month"><span class="month"></span></span>
-					<span class="if pages">(pp. <span class="pages"></span>).</span>
-				</span>
+					<span class="if title">"<span class="title"></span>".</span>
+					<span class="if journal">In: <i><span class="journal"></span></i>.</span>
+					<span class="if booktitle">In: <i><span class="booktitle"></span></i>.</span>
+					<span class="if gskthesislevel"><span class="gskthesislevel"></span> thesis.</span>
+					<span class="if school"><span class="school"></span>,</span>
+					<span class="if organization">Organized by: <i><span class="organization"></span></i>,</span>
+					<span class="if publisher">Published by: <i><span class="publisher"></span></i>,</span>
+					<span class="if month"><span class="month"></span>,</span>
+					<span class="if year"><span class="year"></span>.</span>
+					<span class="if pages">pp. <span class="pages"></span>.</span>
+					<span class="if isbn">ISBN: <span class="isbn"></span>.</span>
+					<span class="if issn">ISSN: <span class="issn"></span>.</span>
+					<span class="if doi">DOI: <span class="doi"></span>.</span>
+					<span class="if url">URL: <span class="url"></span>.</span>
+					<span class="bibtexVar w3-text-theme" id="bib+BIBTEXKEY+" extra="BIBTEXKEY" onclick="DisplayItem('BIBD+BIBTEXKEY+')" style="cursor: pointer;">[<i class="fa fa-eye" aria-hidden="true"></i> see more]</span>
+				</div>
 				<div style="display: none;" class="bibtexVar" id="BIBD+BIBTEXKEY+" extra="BIBTEXKEY">
 					<header class="w3-container w3-theme"> 
 					<span onclick="document.getElementById('ArticleModal').style.display='none'" class="w3-closebtn"><i class="fa fa-close"></i></span>
@@ -208,7 +220,7 @@
 					<span onclick="document.getElementById('ArticleModal').style.display='none'" class="w3-closebtn">Close this window <i class="fa fa-close"></i></span>
 					</footer>
 				</div>
-			</li></ul>
+			</li><!--/ul-->
 		</div>
 </div>
 <div class="w3-modal w3-padding-16" id="ArticleModal"><div id="ArticleModalContent" class="w3-modal-content w3-animate-zoom">Select an entry to view the complete details here.</div></div>
@@ -219,10 +231,10 @@
 <input class="w3-input" id="SearchText" type="text" placeholder="Search: Type your query and press Enter ( &crarr; )">
 <p class="w3-small">Address:&nbsp;Carretera Torreón - Matamoros Km. 7.5, Ciudad Universitaria, Torreón, Coahuila, México, C.P. 27276<br />Fax:(&#43;52 1) 871 757 0153</p>
 </div>
-<div class="w3-container w3-padding-0"><a class="w3-left w3-padding-tiny" href="https://www.scopus.com/authid/detail.uri?authorId=55608566000"><i class="fa fa-circle" aria-hidden="true"></i></a><a class="w3-left w3-padding-tiny" href="https://orcid.org/0000-0001-7974-7825"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a><a class="w3-left w3-padding-tiny" href="https://scholar.google.co.in/citations?user=efqOY90AAAAJ"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a><a class="w3-left w3-padding-tiny" href="https://mx.linkedin.com/in/skgadi"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a class="w3-left w3-padding-tiny" href="https://twitter.com/SureshKumarGadi"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="w3-left w3-padding-tiny" href="https://plus.google.com/&#43;SureshKumarGadi"><i class="fa fa-google-plus" aria-hidden="true"></i></a><a class="w3-left w3-padding-tiny" href="https://goo.gl/maps/8NrtjMajSUz"><i class="fa fa-map-marker" aria-hidden="true"></i></a></div>
+<div class="w3-container w3-padding-0"><a class="w3-left w3-padding-tiny" href="https://www.scopus.com/authid/detail.uri?authorId=55608566000" target="_blank"><i class="fa fa-circle" aria-hidden="true"></i></a><a class="w3-left w3-padding-tiny" href="https://orcid.org/0000-0001-7974-7825" target="_blank"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a><a class="w3-left w3-padding-tiny" href="https://scholar.google.co.in/citations?user=efqOY90AAAAJ" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a><a class="w3-left w3-padding-tiny" href="https://mx.linkedin.com/in/skgadi" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a class="w3-left w3-padding-tiny" href="https://twitter.com/SureshKumarGadi" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="w3-left w3-padding-tiny" href="https://plus.google.com/&#43;SureshKumarGadi" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a><a class="w3-left w3-padding-tiny" href="https://goo.gl/maps/8NrtjMajSUz" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i></a><a class="w3-left w3-padding-tiny" href="https://paypal.me/skgadi" target="_blank"><i class="fa fa-paypal" aria-hidden="true"></i></a></div>
 <div class="w3-container w3-padding-0 w3-small w3-section">
 <p class="w3-padding-0 w3-margin-0">Thanks to:</p>
-	<div class="w3-padding-left"><p class="w3-padding-0 w3-margin-0"><a href="https://github.com/pcooksey/bibtex-js">BibTeX-js</a>&nbsp;for&nbsp;<i>sharing the code, which allows to convert a BibTeX into HTML</i>.</p><p class="w3-padding-0 w3-margin-0"><a href="https://github.com/">GitHub</a>&nbsp;for&nbsp;<i>providing cloud based version control repository</i>.</p><p class="w3-padding-0 w3-margin-0"><a href="https://www.netlify.com/">netlify</a>&nbsp;for&nbsp;<i>providing hosting</i>.</p><p class="w3-padding-0 w3-margin-0"><a href="https://www.w3schools.com/w3css/default.asp">W3.CSS</a>&nbsp;for&nbsp;<i>providing CSS</i>.</p></div>
+	<div class="w3-padding-left"><p class="w3-padding-0 w3-margin-0"><a href="https://github.com/pcooksey/bibtex-js" target="_blank">BibTeX-js</a>&nbsp;for&nbsp;<i>sharing the code, which allows to convert a BibTeX into HTML</i>.</p><p class="w3-padding-0 w3-margin-0"><a href="https://github.com/" target="_blank">GitHub</a>&nbsp;for&nbsp;<i>providing cloud based version control repository</i>.</p><p class="w3-padding-0 w3-margin-0"><a href="https://www.netlify.com/" target="_blank">netlify</a>&nbsp;for&nbsp;<i>providing hosting</i>.</p><p class="w3-padding-0 w3-margin-0"><a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3.CSS</a>&nbsp;for&nbsp;<i>providing CSS</i>.</p></div>
 </div>
 <p class="">Copyright &copy;&nbsp;2017&nbsp;Suresh Kumar Gadi  </p>
 </footer>

@@ -178,17 +178,16 @@
       	<div class="templates"></div>
       </div-->
   <!--/div-->
-	<div class="group gsktype Resume" extra="ASC string">
-		<div class="group year Resume" extra="ASC number">
-			<div class="sort title Resume" extra="ASC string">
-				<div class="templates"></div>
-			</div>
+ 	<div class="group gsktype Resume" extra="ASC string">
+		<div class="sort year Resume" extra="ASC number">
+			<ol class="templates" reversed></ol>
 		</div>
-	</div>
+	</div> 
 </div>
 <div id="bibtex_display">
 	<div class="if bibtex_template" style="display: none;">
-			<ul><li><span class="bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
+			<!--ul class="BibliographyItem"--><li class="Resume">
+				<div>
 				<span class="if author"><span class="author"></span>.</span>
 				<span class="if title">"<span class="title"></span>".</span>
 				<span class="if journal">In: <i><span class="journal"></span></i>.</span>
@@ -204,7 +203,8 @@
 				<span class="if issn">ISSN: <span class="issn"></span>.</span>
 				<span class="if doi">DOI: <span class="doi"></span>.</span>
 				<span class="if url">URL: <span class="url"></span>.</span>
-			</span></li></ul>
+			</div>
+		</li>	
 	</div>
 </div>
 </div>

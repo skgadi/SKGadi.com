@@ -28,3 +28,31 @@ bibtex { display: none; }
 .BibTeXRawCodeBlock {
 	word-wrap: break-word;
 }
+
+
+div.BibliographyGroup>H1 {
+	font-size: 15px;
+    /*padding: 0px;
+    margin: 0px;*/
+	/*text-decoration: underline;*/
+	padding-left: 5px;
+	font-weight: bold;
+	font-style: italic;
+}
+div.BibliographyGroup>H2 {
+	font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+	padding-left: 15px;
+	font-weight: bold;
+	/*font-style: italic;*/
+}
+
+ul.BibliographyItem {
+	margin: 2px 0px;
+}
+
+li.BibliographyItem {
+	text-align: justify;
+	padding-right: 15px;
+}
