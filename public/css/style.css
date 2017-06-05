@@ -1,4 +1,15 @@
-body {font-family: "Roboto", sans-serif}
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+h1, h2, h3, h4, h5, h6, .w3-slim, .w3-wide, body {
+	/*font-family: "Roboto", sans-serif;*/
+	font-family:  'Comfortaa'; /*Comfortaa*/
+}
+
+
+body, input, textarea, select, button {
+	text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
 .w3-sidenav a {padding:16px;font-weight:bold}
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
 	color:    black;

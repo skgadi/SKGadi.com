@@ -1,22 +1,26 @@
 .Resume, p, ul, li {
-	font: 15px "Arial Narrow", Sans-serif;
+	/*font: 15px "Arial Narrow", Sans-serif;*/
+	font-size: 15px;
 }
 
 H1.Resume {
-	font: 42px "Times New Roman", Serif;
+	/*font: 42px "Times New Roman", Serif;*/
+	font-size: 42px;
     padding: 0px;
     margin: 0px;
 }
 
 H3.Resume {
-	font: 24px "Times New Roman", Serif;
+	/*font: 24px "Times New Roman", Serif;*/
+	font-size: 25px;
     padding: 5px 2px;
     margin: 10px 0px;
 	background-color: #ddd;
 }
 
 div.Resume>H1 {
-	font: 15px "Arial Narrow", Sans-serif;
+	/*font: 15px "Arial Narrow", Sans-serif;*/
+	font-size: 15px;
     /*padding: 0px;
     margin: 0px;*/
 	/*text-decoration: underline;*/
@@ -26,7 +30,8 @@ div.Resume>H1 {
 }
 
 div.Resume>H2 {
-	font: 15px "Arial Narrow", Sans-serif;
+	/*font: 15px "Arial Narrow", Sans-serif;*/
+	font-size: 15px;
     padding: 0px;
     margin: 0px;
 	padding-left: 15px;
@@ -53,7 +58,8 @@ a.Resume{
 }
 
 p {
-	font: 15px "Arial Narrow", Sans-serif;
+	/*font: 15px "Arial Narrow", Sans-serif;*/
+	font-size: 15px;
     padding: 0px;
     margin: 0px;
 }
