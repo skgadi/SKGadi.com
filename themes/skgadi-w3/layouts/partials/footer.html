@@ -1,6 +1,9 @@
 </div>
 <footer class="w3-container w3-theme w3-padding-16">
-<div class="w3-right w3-padding-16">
+<div class="w3-container w3-padding-0 w3-section">
+<input class="w3-input" id="SearchText" type="text" placeholder="Search: Type your query and press Enter ( &crarr; )">
+</div>
+<div class="w3-container w3-padding-0">
 {{- range (.Site.Menus.small) -}}
 	{{ if .HasChildren -}}
 		<a class="w3-theme-d1" href="{{ .URL }}"> {{- .Name -}}</a>
@@ -31,10 +34,6 @@
 {{- end -}}
 </div>
 <div class="w3-container w3-padding-0">
-<input class="w3-input" id="SearchText" type="text" placeholder="Search: Type your query and press Enter ( &crarr; )">
-<p class="w3-small">{{- if .Site.Params.Address -}}Address:&nbsp;{{- .Site.Params.Address -}}{{- end -}}{{- if .Site.Params.email -}}<br />E-mail: {{- .Site.Params.email -}}{{- end -}}{{- if .Site.Params.Phone -}}<br />Phone: {{- .Site.Params.Phone -}}{{- end -}}{{- if .Site.Params.Fax -}}<br />Fax: {{- .Site.Params.Fax -}}{{- end -}}</p>
-</div>
-<div class="w3-container w3-padding-0">
 {{- if .Site.Params.Scopus -}}
 <a class="w3-left w3-padding-tiny" href="https://www.scopus.com/authid/detail.uri?authorId={{ .Site.Params.Scopus }}" target="_blank"><i class="fa fa-circle" aria-hidden="true"></i></a>
 {{- end -}}
@@ -60,7 +59,7 @@
 <a class="w3-left w3-padding-tiny" href="{{ .Site.Params.PayPal }}" target="_blank"><i class="fa fa-paypal" aria-hidden="true"></i></a>
 {{- end -}}
 </div>
-<div class="w3-container w3-padding-0 w3-small w3-section">
+<div class="w3-container w3-padding-0 w3-section">
 <p class="w3-padding-0 w3-margin-0">Thanks to:</p>
 	<div class="w3-padding-left">
 	{{- if .Params.thanks -}}
@@ -75,6 +74,7 @@
 	{{- end -}}
 	</div>
 </div>
+<p class="">{{- if .Site.Params.Address -}}Address:&nbsp;{{- .Site.Params.Address -}}{{- end -}}{{- if .Site.Params.email -}}<br />E-mail:&nbsp;{{- .Site.Params.email -}}{{- end -}}{{- if .Site.Params.Phone -}}<br />Phone:&nbsp;{{- .Site.Params.Phone -}}{{- end -}}{{- if .Site.Params.Fax -}}<br />Fax:&nbsp;{{- .Site.Params.Fax -}}{{- end -}}</p>
 <p class="">Copyright <i class="fa fa-copyright" aria-hidden="true"></i>&nbsp;{{- .Now.Year -}}&nbsp;{{- .Site.Params.Author }}  </p>
 </footer>
 </div>
