@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Trocchi');
 
 h1, h2, h3, h4, h5, h6, .w3-slim, .w3-wide, body {
 	/*font-family: "Roboto", sans-serif;*/
-	font-family:  'Comfortaa'; /*Comfortaa, Adamina*/
+	font-family:  'Trocchi'; /*Comfortaa, Adamina, Cutive, Trocchi, Corben*/
 }
 
 
@@ -67,4 +67,8 @@ li.BibliographyItem {
 	text-align: justify;
 	padding-right: 15px;
 	padding-bottom: 10px;
+}
+
+div {
+	text-align: justify;
 }
