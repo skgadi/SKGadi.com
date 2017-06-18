@@ -64,12 +64,6 @@ baseurl = "https://skgadi.com/"
 	pre = "fa-flask"
 	weight = 1
 
-[[menu.main]]
-    identifier = "Projects"
-    name = "Projects"
-    url = "/projects/"
-	pre = "fa-cogs"
-	weight = 2
 
 [[menu.main]]
     identifier = "Courses"
@@ -86,41 +80,6 @@ baseurl = "https://skgadi.com/"
 	weight = 4
 
 [[menu.main]]
-    identifier = "Posts"
-    name = "Posts"
-    url = "/posts/"
-	pre = "fa-files-o"
-	weight = 5
-
-[[menu.main]]
-    identifier = "Tags"
-    name = "Tags"
-    url = "/tags/"
-	pre = "fa-tags"
-	weight = 6
-
-[[menu.main]]
-    identifier = "Categories"
-    name = "Categories"
-    url = "/categories/"
-	pre = "fa-cubes"
-	weight = 7
-
-[[menu.main]]
-    identifier = "Education"
-    name = "Education"
-    url = "/education/"
-	pre = "fa-university"
-	weight = 8
-
-[[menu.main]]
-    identifier = "WorkExperience"
-    name = "Work experience"
-    url = "/work-experience/"
-	pre = "fa-building-o"
-	weight = 9
-
-[[menu.main]]
     identifier = "Contact"
     name = "Contact"
     url = "/contact/"
@@ -133,3 +92,53 @@ baseurl = "https://skgadi.com/"
     url = "/resume/"
 	pre = "fa-list-alt"
 	weight = 11
+
+[[menu.small]]
+    identifier = "Education"
+    name = "Education"
+    url = "/education/"
+	pre = "fa-university"
+	weight = 1
+
+[[menu.small]]
+    identifier = "WorkExperience"
+    name = "Work experience"
+    url = "/work-experience/"
+	pre = "fa-building-o"
+	weight = 2
+
+[[menu.small]]
+    identifier = "Projects"
+    name = "Projects"
+    url = "/projects/"
+	pre = "fa-cogs"
+	weight = 3
+
+[[menu.small]]
+    identifier = "Posts"
+    name = "Posts"
+    url = "/posts/"
+	pre = "fa-files-o"
+	weight = 4
+
+[[menu.small]]
+    identifier = "Achievements"
+    name = "achievements"
+    url = "/achievements/"
+	pre = "fa-trophy"
+	weight = 5
+
+[[menu.small]]
+    identifier = "Tags"
+    name = "Tags"
+    url = "/tags/"
+	pre = "fa-tags"
+	weight = 6
+
+[[menu.small]]
+    identifier = "Categories"
+    name = "Categories"
+    url = "/categories/"
+	pre = "fa-cubes"
+	weight = 7
+

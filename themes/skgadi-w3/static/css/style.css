@@ -2,12 +2,12 @@
 
 h1, h2, h3, h4, h5, h6, .w3-slim, .w3-wide, body {
 	/*font-family: "Roboto", sans-serif;*/
-	font-family:  'Comfortaa'; /*Comfortaa*/
+	font-family:  'Comfortaa'; /*Comfortaa, Adamina*/
 }
 
 
 body, input, textarea, select, button {
-	text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	/*text-shadow: 0 1px 1px rgba(0,0,0,0.3);*/
 }
 
 .w3-sidenav a {padding:16px;font-weight:bold}
@@ -66,4 +66,5 @@ ul.BibliographyItem {
 li.BibliographyItem {
 	text-align: justify;
 	padding-right: 15px;
+	padding-bottom: 10px;
 }

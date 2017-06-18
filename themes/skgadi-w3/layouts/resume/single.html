@@ -169,6 +169,10 @@
 	</tr>
 	{{ end }}
 </table>
+<h3 class="Resume">Achievements</h3>
+{{ range where .Site.RegularPages "Section" "achievements" }}
+	<p><b>{{.Title}}:</b> {{.Description}} </p>
+{{ end }}
 <h3 class="Resume">Publications</h3>
 <div class="bibtex_structure">
   <!--div class="group year" extra="ASC number"-->

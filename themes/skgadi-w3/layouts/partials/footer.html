@@ -1,5 +1,35 @@
 </div>
-<footer class="w3-container w3-theme w3-padding-32">
+<footer class="w3-container w3-theme w3-padding-16">
+<div class="w3-right w3-padding-16">
+{{- range (.Site.Menus.small) -}}
+	{{ if .HasChildren -}}
+		<a class="w3-theme-d1" href="{{ .URL }}"> {{- .Name -}}</a>
+<ul>
+		{{- range .Children -}}
+<li>
+			<a href="{{ .URL }}"> {{- .Name -}}</a>
+</li>
+		{{- end -}}
+</ul>
+	{{- else -}}
+		&nbsp;<a class="{{ if eq $.RelPermalink .URL }} w3-theme-d1 w3-medium {{ else }} {{ end }}" href="{{ .URL }}">{{ if .Pre }}<i class='fa {{ .Pre }} fa-fw' aria-hidden='true'></i>{{ end }}<!--&nbsp;{{- .Name -}}--></a>
+	{{- end -}}
+{{- end -}}
+{{- range (.Site.Menus.main) -}}
+	{{ if .HasChildren -}}
+		<a class="w3-theme-d1" href="{{ .URL }}"> {{- .Name -}}</a>
+<ul>
+		{{- range .Children -}}
+<li>
+			<a href="{{ .URL }}"> {{- .Name -}}</a>
+</li>
+		{{- end -}}
+</ul>
+	{{- else -}}
+		&nbsp;<a class="{{ if eq $.RelPermalink .URL }} w3-theme-d1 w3-medium {{ else }} {{ end }}" href="{{ .URL }}">{{ if .Pre }}<i class='fa {{ .Pre }} fa-fw' aria-hidden='true'></i>{{ end }}<!--&nbsp;{{- .Name -}}--></a>
+	{{- end -}}
+{{- end -}}
+</div>
 <div class="w3-container w3-padding-0">
 <input class="w3-input" id="SearchText" type="text" placeholder="Search: Type your query and press Enter ( &crarr; )">
 <p class="w3-small">{{- if .Site.Params.Address -}}Address:&nbsp;{{- .Site.Params.Address -}}{{- end -}}{{- if .Site.Params.email -}}<br />E-mail: {{- .Site.Params.email -}}{{- end -}}{{- if .Site.Params.Phone -}}<br />Phone: {{- .Site.Params.Phone -}}{{- end -}}{{- if .Site.Params.Fax -}}<br />Fax: {{- .Site.Params.Fax -}}{{- end -}}</p>
@@ -45,7 +75,7 @@
 	{{- end -}}
 	</div>
 </div>
-<p class="">Copyright &copy;&nbsp;{{- .Now.Year -}}&nbsp;{{- .Site.Params.Author }}  </p>
+<p class="">Copyright <i class="fa fa-copyright" aria-hidden="true"></i>&nbsp;{{- .Now.Year -}}&nbsp;{{- .Site.Params.Author }}  </p>
 </footer>
 </div>
 

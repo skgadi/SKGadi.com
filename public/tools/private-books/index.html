@@ -42,7 +42,7 @@
 <body>
 <nav class="w3-sidenav w3-collapse w3-white w3-animate0-left w3-card-2" style="z-index:3;width:250px;" id="mySidenav">
   <a href="/" class="w3-border-bottom w3-border-bottom w3-large"><h3 class="w3-margin-0 w3-text-theme"><b>SKGadi.com</b></h3></a>
-  <a href="javascript:void(0)" onclick="w3_close()"  class="w3-border-bottom w3-text-theme w3-hide-large w3-closenav w3-large">Close <i class="fa fa-remove"></i></a><a class="w3-border-bottom  " href="/research/"><i class='fa fa-flask fa-fw' aria-hidden='true'></i>&nbsp;Research</a><a class="w3-border-bottom  " href="/projects/"><i class='fa fa-cogs fa-fw' aria-hidden='true'></i>&nbsp;Projects</a><a class="w3-border-bottom  " href="/courses/"><i class='fa fa-book fa-fw' aria-hidden='true'></i>&nbsp;Courses</a><a class="w3-border-bottom  " href="/tools/"><i class='fa fa-wrench fa-fw' aria-hidden='true'></i>&nbsp;Tools</a><a class="w3-border-bottom  " href="/posts/"><i class='fa fa-files-o fa-fw' aria-hidden='true'></i>&nbsp;Posts</a><a class="w3-border-bottom  " href="/tags/"><i class='fa fa-tags fa-fw' aria-hidden='true'></i>&nbsp;Tags</a><a class="w3-border-bottom  " href="/categories/"><i class='fa fa-cubes fa-fw' aria-hidden='true'></i>&nbsp;Categories</a><a class="w3-border-bottom  " href="/education/"><i class='fa fa-university fa-fw' aria-hidden='true'></i>&nbsp;Education</a><a class="w3-border-bottom  " href="/work-experience/"><i class='fa fa-building-o fa-fw' aria-hidden='true'></i>&nbsp;Work experience</a><a class="w3-border-bottom  " href="/contact/"><i class='fa fa-vcard-o fa-fw' aria-hidden='true'></i>&nbsp;Contact</a><a class="w3-border-bottom  " href="/resume/"><i class='fa fa-list-alt fa-fw' aria-hidden='true'></i>&nbsp;Resume</a></nav>
+  <a href="javascript:void(0)" onclick="w3_close()"  class="w3-border-bottom w3-text-theme w3-hide-large w3-closenav w3-large">Close <i class="fa fa-remove"></i></a><a class="w3-border-bottom  " href="/research/"><i class='fa fa-flask fa-fw' aria-hidden='true'></i>&nbsp;Research</a><a class="w3-border-bottom  " href="/courses/"><i class='fa fa-book fa-fw' aria-hidden='true'></i>&nbsp;Courses</a><a class="w3-border-bottom  " href="/tools/"><i class='fa fa-wrench fa-fw' aria-hidden='true'></i>&nbsp;Tools</a><a class="w3-border-bottom  " href="/contact/"><i class='fa fa-vcard-o fa-fw' aria-hidden='true'></i>&nbsp;Contact</a><a class="w3-border-bottom  " href="/resume/"><i class='fa fa-list-alt fa-fw' aria-hidden='true'></i>&nbsp;Resume</a></nav>
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
 <div class="w3-main" style="margin-left:250px;">
 <div id="myTop" class="w3-top w3-container w3-padding-16 w3-theme w3-large">
@@ -148,94 +148,94 @@
 	</div>
 </div>
 <div id="bibtex_display">
-		<div class="if bibtex_template" style="display: none;">
-			<li class="BibliographyItem">
-				<div>
-					<span class="if author"><span class="author"></span>.</span>
-					<span class="if title">"<span class="title"></span>".</span>
-					<span class="if journal">In: <i><span class="journal"></span></i>.</span>
-					<span class="if booktitle">In: <i><span class="booktitle"></span></i>.</span>
-					<span class="if gskthesislevel"><span class="gskthesislevel"></span> thesis.</span>
-					<span class="if school"><span class="school"></span>,</span>
-					<span class="if organization">Organized by: <i><span class="organization"></span></i>,</span>
-					<span class="if publisher">Published by: <i><span class="publisher"></span></i>,</span>
-					<span class="if month"><span class="month"></span>,</span>
-					<span class="if year"><span class="year"></span>.</span>
-					<span class="if pages">pp. <span class="pages"></span>.</span>
-					<span class="if isbn">ISBN: <span class="isbn"></span>.</span>
-					<span class="if issn">ISSN: <span class="issn"></span>.</span>
-					<span class="if doi">DOI: <span class="doi"></span>.</span>
-					<span class="if url">URL: <span class="url"></span>.</span>
-					<span class="bibtexVar w3-text-theme" id="bib+BIBTEXKEY+" extra="BIBTEXKEY" onclick="DisplayItem('BIBD+BIBTEXKEY+')" style="cursor: pointer;">[<i class="fa fa-eye" aria-hidden="true"></i> see more]</span>
-				</div>
-				<div style="display: none;" class="bibtexVar" id="BIBD+BIBTEXKEY+" extra="BIBTEXKEY">
-					<header class="w3-container w3-theme"> 
-					<span onclick="document.getElementById('ArticleModal').style.display='none'" class="w3-closebtn"><i class="fa fa-close"></i></span>
-					<h5><span class="title"></span></h5>
-					</header>
-					<div class="w3-container">
-						<div class="if title" ><h1 style=" font-weight: normal; text-align: center; margin: 0px;"><span class="title"></span></h1></div>
-						<br/>
-						<div class="if author"><h4 style=" font-weight: normal; text-align: center;  margin: 0px;"><span class="author"></span></h4></div>
-						<div class="if organization"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="organization"></span></em></h4></div>
-						<div class="if journal"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="journal"></span></em></h4></div>
-						<div class="if school"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="school"></span></em></h4></div>
-						<div class="if booktitle"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="booktitle"></span></em></h4></div>
-						<div class="if publisher"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="publisher"></span></em></h4></div>
-						<br/>
-						<div class="if abstract" style="text-align: justify"><span><b><i>Abstract:&ndash; </i></b></span><span class="abstract" ></span></div>
-						<br/>
-						<h2>More information:</h2>
-						<table class="w3-table-all w3-hoverable">
-							<TR class="if address"><TD>Address</TD><TD><span class="address"></span></TD></TR>
-							<TR class="if annote"><TD>Annote</TD><TD><span class="annote"></span></TD></TR>
-							<TR class="if chapter"><TD>Chapter</TD><TD><span class="chapter"></span></TD></TR>
-							<TR class="if crossref"><TD>Crossref</TD><TD><span class="crossref"></span></TD></TR>
-							<TR class="if doi"><TD>DOI</TD><TD><span style="cursor: pointer;" class="doi" onclick="OpenDOI(this);"></span></TD></TR>
-							<TR class="if edition"><TD>Edition</TD><TD><span class="edition"></span></TD></TR>
-							<TR class="if editor"><TD>Editor</TD><TD><span class="editor"></span></TD></TR>
-							<TR class="if howpublished"><TD>How published</TD><TD><span class="howpublished"></span></TD></TR>
-							<TR class="if institution"><TD>Institution</TD><TD><span class="institution"></span></TD></TR>
-							<TR class="if issn"><TD>ISSN</TD><TD><span class="issn"></span></TD></TR>
-							<TR class="if isbn"><TD>ISBN</TD><TD><span class="isbn"></span></TD></TR>
-							<TR class="if journal"><TD>Journal</TD><TD><span class="journal"></span></TD></TR>
-							<TR class="if key"><TD>Key</TD><TD><span class="key"></span></TD></TR>
-							<TR class="if month"><TD>Month</TD><TD><span class="month"></span></TD></TR>
-							<TR class="if note"><TD>Note</TD><TD><span class="note"></span></TD></TR>
-							<TR class="if number"><TD>Number</TD><TD><span class="number"></span></TD></TR>
-							<TR class="if pages"><TD>Pages</TD><TD><span class="pages"></span></TD></TR>
-							<TR class="if publisher"><TD>Publisher</TD><TD><span class="publisher"></span></TD></TR>
-							<TR class="if school"><TD>School</TD><TD><span class="school"></span></TD></TR>
-							<TR class="if series"><TD>Series</TD><TD><span class="series"></span></TD></TR>
-							<TR class="if type"><TD>Type</TD><TD><span class="type"></span></TD></TR>
-							<TR class="if url"><TD>URL</TD><TD><span style="cursor: pointer;" class="url" onclick="OpenURL(this);"></span></TD></TR>
-							<TR class="if volume"><TD>Volume</TD><TD><span class="volume"></span></TD></TR>
-							<TR class="if year"><TD>Year</TD><TD><span class="year"></span></TD></TR>
-						</table>
-						<h2>Search in your repository:</h2>
-						<div class="w3-row">
-							<div class="w3-col m4 l4 s12 w3-margin-0 w3-padding-0">
-								<a class="w3-button w3-white w3-block w3-border w3-border-theme w3-ripple bibtexVar" href="https://drive.google.com/drive/search?q=title:+BIBTEXKEY+" extra="BIBTEXKEY" target="_blank" >Google drive</a>
-							</div>
-							<div class="w3-col m4 l4 s12  w3-margin-0 w3-padding-0">
-								<a class="w3-button w3-white w3-block w3-border w3-border-theme w3-ripple bibtexVar" href="https://mega.nz/fm/search/+BIBTEXKEY+" extra="BIBTEXKEY" target="_blank" >Mega</a>
-							</div>
-							<div class="w3-col m4 l4 s12  w3-margin-0 w3-padding-0">
-								<a class="w3-button w3-white w3-block w3-border w3-border-theme w3-ripple bibtexVar" href="https://www.dropbox.com/search/personal?path=%2F&query=+BIBTEXKEY+" extra="BIBTEXKEY" target="_blank" >Dropbox</a>
-							</div>
+	<div class="if bibtex_template" style="display: none;">
+		<li class="BibliographyItem">
+			<div>
+				<span class="if author"><span class="author"></span>.</span>
+				<span class="if title">"<span class="title"></span>".</span>
+				<span class="if journal">In: <i><span class="journal"></span></i>.</span>
+				<span class="if booktitle">In: <i><span class="booktitle"></span></i>.</span>
+				<span class="if gskthesislevel"><span class="gskthesislevel"></span> thesis.</span>
+				<span class="if school"><span class="school"></span>,</span>
+				<span class="if organization">Organized by: <i><span class="organization"></span></i>,</span>
+				<span class="if publisher">Published by: <i><span class="publisher"></span></i>,</span>
+				<span class="if month"><span class="month"></span>,</span>
+				<span class="if year"><span class="year"></span>.</span>
+				<span class="if pages">pp. <span class="pages"></span>.</span>
+				<span class="if isbn">ISBN: <span class="isbn"></span>.</span>
+				<span class="if issn">ISSN: <span class="issn"></span>.</span>
+				<span class="if doi">DOI: <span style="cursor: pointer;" class="doi" onclick="OpenDOI(this);"></span>.</span>
+				<span class="if url">URL: <span style="cursor: pointer;" class="url" onclick="OpenURL(this);"></span>.</span>
+				<span class="bibtexVar w3-text-theme" id="bib+BIBTEXKEY+" extra="BIBTEXKEY" onclick="DisplayItem('BIBD+BIBTEXKEY+')" style="cursor: pointer;">[<i class="fa fa-eye" aria-hidden="true"></i>]</span>
+			</div>
+			<div style="display: none;" class="bibtexVar" id="BIBD+BIBTEXKEY+" extra="BIBTEXKEY">
+				<header class="w3-container w3-theme"> 
+				<span onclick="document.getElementById('ArticleModal').style.display='none'" class="w3-closebtn"><i class="fa fa-close"></i></span>
+				<h5><span class="title"></span></h5>
+				</header>
+				<div class="w3-container">
+					<div class="if title" ><h1 style=" font-weight: normal; text-align: center; margin: 0px;"><span class="title"></span></h1></div>
+					<br/>
+					<div class="if author"><h4 style=" font-weight: normal; text-align: center;  margin: 0px;"><span class="author"></span></h4></div>
+					<div class="if organization"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="organization"></span></em></h4></div>
+					<div class="if journal"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="journal"></span></em></h4></div>
+					<div class="if school"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="school"></span></em></h4></div>
+					<div class="if booktitle"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="booktitle"></span></em></h4></div>
+					<div class="if publisher"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="publisher"></span></em></h4></div>
+					<br/>
+					<div class="if abstract" style="text-align: justify"><span><b><i>Abstract:&ndash; </i></b></span><span class="abstract" ></span></div>
+					<br/>
+					<h2>More information:</h2>
+					<table class="w3-table-all w3-hoverable">
+						<TR class="if address"><TD>Address</TD><TD><span class="address"></span></TD></TR>
+						<TR class="if annote"><TD>Annote</TD><TD><span class="annote"></span></TD></TR>
+						<TR class="if chapter"><TD>Chapter</TD><TD><span class="chapter"></span></TD></TR>
+						<TR class="if crossref"><TD>Crossref</TD><TD><span class="crossref"></span></TD></TR>
+						<TR class="if doi"><TD>DOI</TD><TD><span style="cursor: pointer;" class="doi" onclick="OpenDOI(this);"></span></TD></TR>
+						<TR class="if edition"><TD>Edition</TD><TD><span class="edition"></span></TD></TR>
+						<TR class="if editor"><TD>Editor</TD><TD><span class="editor"></span></TD></TR>
+						<TR class="if howpublished"><TD>How published</TD><TD><span class="howpublished"></span></TD></TR>
+						<TR class="if institution"><TD>Institution</TD><TD><span class="institution"></span></TD></TR>
+						<TR class="if issn"><TD>ISSN</TD><TD><span class="issn"></span></TD></TR>
+						<TR class="if isbn"><TD>ISBN</TD><TD><span class="isbn"></span></TD></TR>
+						<TR class="if journal"><TD>Journal</TD><TD><span class="journal"></span></TD></TR>
+						<TR class="if key"><TD>Key</TD><TD><span class="key"></span></TD></TR>
+						<TR class="if month"><TD>Month</TD><TD><span class="month"></span></TD></TR>
+						<TR class="if note"><TD>Note</TD><TD><span class="note"></span></TD></TR>
+						<TR class="if number"><TD>Number</TD><TD><span class="number"></span></TD></TR>
+						<TR class="if pages"><TD>Pages</TD><TD><span class="pages"></span></TD></TR>
+						<TR class="if publisher"><TD>Publisher</TD><TD><span class="publisher"></span></TD></TR>
+						<TR class="if school"><TD>School</TD><TD><span class="school"></span></TD></TR>
+						<TR class="if series"><TD>Series</TD><TD><span class="series"></span></TD></TR>
+						<TR class="if type"><TD>Type</TD><TD><span class="type"></span></TD></TR>
+						<TR class="if url"><TD>URL</TD><TD><span style="cursor: pointer;" class="url" onclick="OpenURL(this);"></span></TD></TR>
+						<TR class="if volume"><TD>Volume</TD><TD><span class="volume"></span></TD></TR>
+						<TR class="if year"><TD>Year</TD><TD><span class="year"></span></TD></TR>
+					</table>
+					<h2>Search in your repository:</h2>
+					<div class="w3-row">
+						<div class="w3-col m4 l4 s12 w3-margin-0 w3-padding-0">
+							<a class="w3-button w3-white w3-block w3-border w3-border-theme w3-ripple bibtexVar" href="https://drive.google.com/drive/search?q=title:+BIBTEXKEY+" extra="BIBTEXKEY" target="_blank" >Google drive</a>
 						</div>
-						<h2>Raw BibTeX:</h2>
-						<div style="position: relative;">
-						<pre class = "BibTeXRawCodeBlock w3-border w3-margin-0 w3-padding-0 w3-margin-bottom" ondblclick="CopyTheText(this);"><span class="bibtexraw noread"></span></pre>
-						<a class="Icon" style="display: float;position: absolute; bottom: 0px; right: 5px; font-size: 40px; cursor: pointer;" onclick="CopyThePrevText(this)"><i class="fa fa-copy"></i></a>
+						<div class="w3-col m4 l4 s12  w3-margin-0 w3-padding-0">
+							<a class="w3-button w3-white w3-block w3-border w3-border-theme w3-ripple bibtexVar" href="https://mega.nz/fm/search/+BIBTEXKEY+" extra="BIBTEXKEY" target="_blank" >Mega</a>
+						</div>
+						<div class="w3-col m4 l4 s12  w3-margin-0 w3-padding-0">
+							<a class="w3-button w3-white w3-block w3-border w3-border-theme w3-ripple bibtexVar" href="https://www.dropbox.com/search/personal?path=%2F&query=+BIBTEXKEY+" extra="BIBTEXKEY" target="_blank" >Dropbox</a>
 						</div>
 					</div>
-					<footer class="w3-container w3-theme">
-					<span onclick="document.getElementById('ArticleModal').style.display='none'" class="w3-closebtn">Close this window <i class="fa fa-close"></i></span>
-					</footer>
+					<h2>Raw BibTeX:</h2>
+					<div style="position: relative;">
+					<pre class = "BibTeXRawCodeBlock w3-border w3-margin-0 w3-padding-0 w3-margin-bottom" ondblclick="CopyTheText(this);"><span class="bibtexraw noread"></span></pre>
+					<a class="Icon" style="display: float;position: absolute; bottom: 0px; right: 5px; font-size: 40px; cursor: pointer;" onclick="CopyThePrevText(this)"><i class="fa fa-copy"></i></a>
+					</div>
 				</div>
-			</li>
-		</div>
+				<footer class="w3-container w3-theme">
+				<span onclick="document.getElementById('ArticleModal').style.display='none'" class="w3-closebtn">Close this window <i class="fa fa-close"></i></span>
+				</footer>
+			</div>
+		</li>
+	</div>
 </div>
 <div class="w3-modal w3-padding-16" id="ArticleModal"><div id="ArticleModalContent" class="w3-modal-content w3-animate-zoom">Select an entry to view the complete details here.</div></div>
 <div class="w3-modal w3-padding-16" id="AddItemModal"><div id="AddItemModalContent" class="w3-modal-content w3-animate-zoom">
@@ -257,7 +257,8 @@
 	var CheckAuthRequired = true;
 	var dbFileName = "PrivateBooks_On_SKGadi_Dot_Com";
 </script></div>
-<footer class="w3-container w3-theme w3-padding-32">
+<footer class="w3-container w3-theme w3-padding-16">
+<div class="w3-right w3-padding-16">&nbsp;<a class=" " href="/education/"><i class='fa fa-university fa-fw' aria-hidden='true'></i></a>&nbsp;<a class=" " href="/work-experience/"><i class='fa fa-building-o fa-fw' aria-hidden='true'></i></a>&nbsp;<a class=" " href="/projects/"><i class='fa fa-cogs fa-fw' aria-hidden='true'></i></a>&nbsp;<a class=" " href="/posts/"><i class='fa fa-files-o fa-fw' aria-hidden='true'></i></a>&nbsp;<a class=" " href="/achievements/"><i class='fa fa-trophy fa-fw' aria-hidden='true'></i></a>&nbsp;<a class=" " href="/tags/"><i class='fa fa-tags fa-fw' aria-hidden='true'></i></a>&nbsp;<a class=" " href="/categories/"><i class='fa fa-cubes fa-fw' aria-hidden='true'></i></a>&nbsp;<a class=" " href="/research/"><i class='fa fa-flask fa-fw' aria-hidden='true'></i></a>&nbsp;<a class=" " href="/courses/"><i class='fa fa-book fa-fw' aria-hidden='true'></i></a>&nbsp;<a class=" " href="/tools/"><i class='fa fa-wrench fa-fw' aria-hidden='true'></i></a>&nbsp;<a class=" " href="/contact/"><i class='fa fa-vcard-o fa-fw' aria-hidden='true'></i></a>&nbsp;<a class=" " href="/resume/"><i class='fa fa-list-alt fa-fw' aria-hidden='true'></i></a></div>
 <div class="w3-container w3-padding-0">
 <input class="w3-input" id="SearchText" type="text" placeholder="Search: Type your query and press Enter ( &crarr; )">
 <p class="w3-small">Address:&nbsp;Carretera Torreón - Matamoros Km. 7.5, Ciudad Universitaria, Torreón, Coahuila, México, C.P. 27276<br />Fax:(&#43;52 1) 871 757 0153</p>
@@ -267,7 +268,7 @@
 <p class="w3-padding-0 w3-margin-0">Thanks to:</p>
 	<div class="w3-padding-left"><p class="w3-padding-0 w3-margin-0"><a href="https://github.com/pcooksey/bibtex-js" target="_blank">BibTeX-js</a>&nbsp;for&nbsp;<i>sharing the code, which allows to convert a BibTeX into HTML</i>.</p><p class="w3-padding-0 w3-margin-0"><a href="https://github.com/" target="_blank">GitHub</a>&nbsp;for&nbsp;<i>providing cloud based version control repository</i>.</p><p class="w3-padding-0 w3-margin-0"><a href="https://www.netlify.com/" target="_blank">netlify</a>&nbsp;for&nbsp;<i>providing hosting</i>.</p><p class="w3-padding-0 w3-margin-0"><a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3.CSS</a>&nbsp;for&nbsp;<i>providing CSS</i>.</p></div>
 </div>
-<p class="">Copyright &copy;&nbsp;2017&nbsp;Suresh Kumar Gadi  </p>
+<p class="">Copyright <i class="fa fa-copyright" aria-hidden="true"></i>&nbsp;2017&nbsp;Suresh Kumar Gadi  </p>
 </footer>
 </div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript" charset="utf-8"></script><script src="https://apis.google.com/js/client.js?onload=AuthIsLoaded" type="text/javascript" charset="utf-8"></script><script src="https://cdn.rawgit.com/pcooksey/bibtex-js/b81606e85986fa8ad0eb66954493bc1c0b3d7ab1/src/bibtex_js.js" type="text/javascript" charset="utf-8"></script><script src="https://skgadi.com/js/notify.min.js" type="text/javascript" charset="utf-8"></script><script src="https://skgadi.com/js/gen-funcs.js" type="text/javascript" charset="utf-8"></script><script src="https://skgadi.com/js/script001.js" type="text/javascript" charset="utf-8"></script><script src="https://skgadi.com/js/script000.js" type="text/javascript" charset="utf-8"></script>
 <script>

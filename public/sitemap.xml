@@ -167,6 +167,11 @@
   </url>
   
   <url>
+    <loc>https://skgadi.com/achievements/merit-award/</loc>
+    <lastmod>2009-04-06T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skgadi.com/projects/system-identifaction-via-frequency-analysis/</loc>
     <lastmod>2009-02-01T00:00:00+05:30</lastmod>
   </url>
@@ -222,6 +227,11 @@
   </url>
   
   <url>
+    <loc>https://skgadi.com/achievements/gate/</loc>
+    <lastmod>2006-02-12T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skgadi.com/projects/surface-well-testing/</loc>
     <lastmod>2005-12-01T00:00:00+05:30</lastmod>
   </url>
@@ -264,6 +274,12 @@
   <url>
     <loc>https://skgadi.com/education/ssc/</loc>
     <lastmod>1999-06-30T23:12:36+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/achievements/</loc>
+    <lastmod>2009-04-06T00:00:00+05:30</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>

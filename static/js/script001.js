@@ -14,7 +14,10 @@ function DisplayItem(id) {
 }
 
 function OpenDOI(DOI) {
-	window.open('http://dx.doi.org/' + $(DOI).text(), '_blank');
+	if (isUrlValid($(DOI).text()))
+		window.open($(DOI).text(), '_blank');
+	else
+		window.open('http://dx.doi.org/' + $(DOI).text(), '_blank');
 }
 
 function OpenURL(URL) {
