@@ -4,7 +4,7 @@ Keywords = ["skgadi", "suresh kumar gadi", "control digital"]
 description = "One day workshop on LaTeX conducted by Dr. Suresh Kumar Gadi at the FCA, UAdeC."
 
 tags = [ "LaTeX" ]
-categories = ["Workshop"]
+categories = ["Academic","Workshop"]
 
 date = "2016-06-16T00:00:00-06:00"
 title = "One day workshop on LaTeX"
