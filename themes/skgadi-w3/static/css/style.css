@@ -69,7 +69,7 @@ li.BibliographyItem {
 	padding-bottom: 10px;
 }
 
-li.BibliographyItem>div {
+li.BibliographyItem>div, table {
 	word-break: break-all;
 }
 
