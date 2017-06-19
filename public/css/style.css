@@ -69,6 +69,10 @@ li.BibliographyItem {
 	padding-bottom: 10px;
 }
 
+li.BibliographyItem>div {
+	word-break: break-all;
+}
+
 div {
 	text-align: justify;
 }
