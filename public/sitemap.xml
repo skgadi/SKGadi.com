@@ -2,6 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://skgadi.com/courses/2017-07-12-mathematics/</loc>
+    <lastmod>2017-08-28T23:12:36-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/courses/2017-07-12-automatic-control/</loc>
+    <lastmod>2017-08-14T23:12:36-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/courses/2017-07-12-power-systems/</loc>
+    <lastmod>2017-08-14T23:12:36-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/tools/stringing-chart/</loc>
+    <lastmod>2017-08-14T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skgadi.com/posts/father-day-2017/</loc>
     <lastmod>2017-06-18T00:00:00-06:00</lastmod>
   </url>
@@ -319,7 +339,7 @@
   
   <url>
     <loc>https://skgadi.com/courses/</loc>
-    <lastmod>2017-01-09T23:12:36-06:00</lastmod>
+    <lastmod>2017-08-28T23:12:36-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -361,7 +381,7 @@
   
   <url>
     <loc>https://skgadi.com/tags/mathematics/</loc>
-    <lastmod>2017-03-24T00:00:00-06:00</lastmod>
+    <lastmod>2017-08-14T00:00:00-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -403,7 +423,7 @@
   
   <url>
     <loc>https://skgadi.com/</loc>
-    <lastmod>2017-06-18T00:00:00-06:00</lastmod>
+    <lastmod>2017-08-28T23:12:36-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -421,7 +441,7 @@
   
   <url>
     <loc>https://skgadi.com/tools/</loc>
-    <lastmod>2017-04-04T00:00:00-06:00</lastmod>
+    <lastmod>2017-08-14T00:00:00-06:00</lastmod>
     <priority>0</priority>
   </url>
   
