@@ -41,4 +41,8 @@ GSKGradeURL = "1eMltwzxnJ6vFXZcypjwNQZig74VGReF71_rsxIYpcYg"
     Name = "Homework 1"
 	Date = "2017-08-31"
     QuestionsURL = "https://github.com/skgadi/Courses/raw/master/2017-07-12/UAdeC-MESE-Propaedeutic/HW001/HW.txt"
+[[Homeworks]]
+    Name = "Homework 2"
+	Date = "2017-09-02"
+    QuestionsURL = "https://github.com/skgadi/Courses/raw/master/2017-07-12/UAdeC-MESE-Propaedeutic/HW002/HW.txt"
 +++
