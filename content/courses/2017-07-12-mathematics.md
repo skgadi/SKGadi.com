@@ -39,10 +39,14 @@ GSKGradeURL = "1eMltwzxnJ6vFXZcypjwNQZig74VGReF71_rsxIYpcYg"
     URL = "http://www.sakshieducation.com/Inter/EAMCETStory.aspx?nid=10587&cid=22&sid=155&chid=0&tid=0"
 [[Homeworks]]
     Name = "Homework 1"
-	Date = "2017-08-31"
+	Date = "2017-09-02"
     QuestionsURL = "https://github.com/skgadi/Courses/raw/master/2017-07-12/UAdeC-MESE-Propaedeutic/HW001/HW.txt"
 [[Homeworks]]
     Name = "Homework 2"
-	Date = "2017-09-02"
+	Date = "2017-09-05"
     QuestionsURL = "https://github.com/skgadi/Courses/raw/master/2017-07-12/UAdeC-MESE-Propaedeutic/HW002/HW.txt"
+[[Homeworks]]
+    Name = "Homework 3"
+	Date = "2017-09-07"
+    QuestionsURL = "https://github.com/skgadi/Courses/raw/master/2017-07-12/UAdeC-MESE-Propaedeutic/HW003/HW.txt"
 +++
