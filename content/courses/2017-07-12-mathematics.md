@@ -23,6 +23,9 @@ GSKGradeURL = "1eMltwzxnJ6vFXZcypjwNQZig74VGReF71_rsxIYpcYg"
     Name = "Syllabus"
     URL = "https://drive.google.com/file/d/0BzllW1KDpzoLQVJEalBSdHl3LXc/view"
 [[CourseMaterial]]
+    Name = "A good e-book covering the calculus part"
+    URL = "http://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx"
+[[CourseMaterial]]
     Name = "Example problems"
     URL = "http://www.ncert.nic.in/exemplar/exemplar.html"
 [[CourseMaterial]]
@@ -53,4 +56,8 @@ GSKGradeURL = "1eMltwzxnJ6vFXZcypjwNQZig74VGReF71_rsxIYpcYg"
     Name = "Homework 4"
 	Date = "2017-09-09"
     QuestionsURL = "https://github.com/skgadi/Courses/raw/master/2017-07-12/UAdeC-MESE-Propaedeutic/HW004/HW.txt"
+[[Homeworks]]
+    Name = "Homework 5"
+	Date = "2017-09-14"
+    QuestionsURL = "https://github.com/skgadi/Courses/raw/master/2017-07-12/UAdeC-MESE-Propaedeutic/HW005/HW.txt"
 +++
