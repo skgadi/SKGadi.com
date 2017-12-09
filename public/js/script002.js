@@ -1,4 +1,7 @@
 //console.log(z);
+//var math = require('mathjs');
+var P;
+var Q;
 var x = [];
 var alpha = 0.2;
 var beta = 0.2;
@@ -8,8 +11,8 @@ var F_U = 600;
 var K_D = 5;
 var K_R = 0.1;
 var F_I = F_U - F_L;
-var F_1 = F_L + alpha*F_I*Math.random();
-var F_2 = (1-2*alpha)*F_I*Math.random();
+var F_1 = 0;
+var F_2 = 0;
 var x_M = [];
 var x_I = [];
 var n;
@@ -94,6 +97,23 @@ function Next001() {
 			break;
 		}
 	}
+	//--- Start Ver005 of Algorithm
+	if (AllGood) {
+		P = new Array(n);
+		Q =new Array(n);
+		for (var i=0; i<n; i++) {
+			P[i] = new Array(n);
+			Q[i] = new Array(n);
+			for (var j=0; j<n; j++) {
+				//P[i][j] = Math.random();
+				Q[i][j] = Math.random();
+			}
+		}
+		//P = math.add (math.multiply(P, math.transpose(P)), math.dotDivide(math.eye(n),   5*n));
+		Q = math.add (math.multiply(Q, math.transpose(Q)), math.dotDivide(math.eye(n), 0.5*n));
+		P = math.multiply(0.5, math.eye(n));
+	}
+	//--- End Ver005 of Algorithm
 	if (AllGood) {
 		DisableTheLimitsDeclaration(true);
 		$("#Next001").attr('onclick', '').unbind('click');
@@ -117,7 +137,7 @@ function Next001() {
 			Next003()
 		});
 		F_1 = F_L + alpha*F_I*Math.random();
-		F_2 = (1-2*alpha)*F_I*Math.random();
+		F_2 = (1-2*alpha)*F_I*(Math.random()+1)/2;
 		setFocusToText();
 	}
 
@@ -156,7 +176,8 @@ function Next002() {
 	}
 }
 function GetTheYValue() {
-	var Sigma_z = 0
+	//--- Start OldVersion
+	/*var Sigma_z = 0
 	var F = 0;
 	var z = [];
 	for (var i = 0; i < n; i++) {
@@ -167,8 +188,35 @@ function GetTheYValue() {
 	for (var i = 0; i < n; i++) {
 		F = F + F_2*Math.exp(-(Math.pow(z[i] + a*Math.sin(Sigma_z), 2))) / n;
 	}
-	F = F + F_2/n * K_R * 2 * (Math.random() - 0.5);
+	F = F + F_2/n * K_R * 2 * (Math.random() - 0.5);*/
 	//console.log(z);
+	//--- End OldVersion
+	
+	//--- Start NewVersion
+	var F;
+	var r;
+	var s;
+	var z = [];
+	
+	var ProductTerm = 1;
+	var SumTerm = 0;
+
+	for (var i = 0; i < n; i++) {
+		z[i] = K_D*(x[i] - x_M[i])/x_I[i];
+	}	
+	r = math.multiply(P, z);
+	s = math.multiply(Q, z);
+	//console.log(z);
+	for (var i=0; i<n; i++) {
+		/*console.log(ProductTerm);
+		console.log(SumTerm);*/
+		ProductTerm	= ProductTerm	* Math.exp(-Math.pow(r.valueOf()[i], 2));
+		SumTerm		= SumTerm		+ Math.exp(-Math.pow(s.valueOf()[i], 2));
+	}
+	/*console.log(ProductTerm);
+	console.log(SumTerm);*/
+	F = F_1 + F_2/n * (ProductTerm * SumTerm + K_R * 2 * (Math.random() - 0.5));
+	//--- End NewVersion
 	return F
 }
 function Next003() {
