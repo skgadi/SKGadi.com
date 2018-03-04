@@ -119,6 +119,7 @@ layout = "zero-padding"
 		<li class="BibliographyItem">
 			<div>
 				<span class="if author"><span class="author"></span>.</span>
+				<span class="if chapter">Chapter: "<span class="chapter"></span>" in </span>
 				<span class="if title">"<span class="title"></span>".</span>
 				<span class="if journal">In: <i><span class="journal"></span></i>.</span>
 				<span class="if booktitle">In: <i><span class="booktitle"></span></i>.</span>
@@ -133,7 +134,7 @@ layout = "zero-padding"
 				<span class="if issn">ISSN: <span class="issn"></span>.</span>
 				<span class="if doi">DOI: <span style="cursor: pointer;" class="doi" onclick="OpenDOI(this);"></span>.</span>
 				<span class="if url">URL: <span style="cursor: pointer;" class="url" onclick="OpenURL(this);"></span>.</span>
-				<span class="bibtexVar w3-text-theme" id="bib+BIBTEXKEY+" extra="BIBTEXKEY" onclick="DisplayItem('BIBD+BIBTEXKEY+')" style="cursor: pointer;">[<i class="fa fa-eye" aria-hidden="true"></i>]</span>
+				<span class="bibtexVar w3-text-theme" id="bib+BIBTEXKEY+" extra="BIBTEXKEY" onclick="DisplayItem('BIBD+BIBTEXKEY+')" style="cursor: pointer;"><i class="fa fa-eye" aria-hidden="true"></i></span>
 			</div>
 			<div style="display: none;" class="bibtexVar" id="BIBD+BIBTEXKEY+" extra="BIBTEXKEY">
 				<header class="w3-container w3-theme"> 
@@ -141,14 +142,16 @@ layout = "zero-padding"
 				<h5><span class="title"></span></h5>
 				</header>
 				<div class="w3-container">
-					<div class="if title" ><h1 style=" font-weight: normal; text-align: center; margin: 0px;"><span class="title"></span></h1></div>
+					<div class="if title" ><h1 style=" font-weight: normal; margin: 0px;"><span class="title"></span></h1></div>
+					<div class="if chapter"><i>Chapter</i><h4 style=" font-weight: normal; margin: 0px;"><span class="chapter"></span><br/></h4></div>
 					<br/>
-					<div class="if author"><h4 style=" font-weight: normal; text-align: center;  margin: 0px;"><span class="author"></span></h4></div>
-					<div class="if organization"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="organization"></span></em></h4></div>
-					<div class="if journal"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="journal"></span></em></h4></div>
-					<div class="if school"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="school"></span></em></h4></div>
-					<div class="if booktitle"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="booktitle"></span></em></h4></div>
-					<div class="if publisher"><h4 style=" font-weight: normal; text-align: center; margin: 0px;"><em><span class="publisher"></span></em></h4></div>
+					<div class="if author"><i>Author(s)</i><h4 style=" font-weight: normal; margin: 0px;"><span class="author"></span></h4></div>
+					<div class="if editor"><i>Editor(s)</i><h4 style=" font-weight: normal; margin: 0px;"><span class="editor"></span></h4></div>
+					<div class="if organization"><i>Organization</i><h4 style=" font-weight: normal; margin: 0px;"><em><span class="organization"></span></em></h4></div>
+					<div class="if journal"><i>Journal</i><h4 style=" font-weight: normal; margin: 0px;"><em><span class="journal"></span></em></h4></div>
+					<div class="if school"><i>School</i><h4 style=" font-weight: normal; margin: 0px;"><em><span class="school"></span></em></h4></div>
+					<div class="if booktitle"><i>Book title</i><h4 style=" font-weight: normal; margin: 0px;"><em><span class="booktitle"></span></em></h4></div>
+					<div class="if publisher"><i>Publisher</i><h4 style=" font-weight: normal; margin: 0px;"><em><span class="publisher"></span></em></h4></div>
 					<br/>
 					<div class="if abstract" style="text-align: justify"><span><b><i>Abstract:&ndash; </i></b></span><span class="abstract" ></span></div>
 					<br/>
@@ -178,6 +181,7 @@ layout = "zero-padding"
 						<TR class="if url"><TD>URL</TD><TD><span style="cursor: pointer;" class="url" onclick="OpenURL(this);"></span></TD></TR>
 						<TR class="if volume"><TD>Volume</TD><TD><span class="volume"></span></TD></TR>
 						<TR class="if year"><TD>Year</TD><TD><span class="year"></span></TD></TR>
+						<TR class="if address"><TD>Address</TD><TD><span class="address"></span></TD></TR>
 					</table>
 					<!--h2>Search in your repository:</h2>
 					<div class="w3-row">
