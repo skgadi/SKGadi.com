@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mechanics on Suresh Kumar Gadi</title>
+    <link>https://skgadi.com/tags/mechanics/</link>
+    <description>Recent content in Mechanics on Suresh Kumar Gadi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Mar 2018 00:00:00 -0600</lastBuildDate>
+    
+	<atom:link href="https://skgadi.com/tags/mechanics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Universal Testing Machine data analyser</title>
+      <link>https://skgadi.com/tools/material-charactrization/</link>
+      <pubDate>Tue, 06 Mar 2018 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/tools/material-charactrization/</guid>
+      <description>&amp;nbsp;InstructionsThis app is under development ... &amp;nbsp;Data from Universal Testing Machine	CalculateReset&amp;nbsp;Stress strain graph	</description>
+    </item>
+    
+  </channel>
+</rss>
