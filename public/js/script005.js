@@ -28,30 +28,36 @@ function PerformCalculations() {
 			y: Strain[i]
 		};
 	});
-	$("#StressStrainGraph").css("display", "block");
+	SetBlocksViewAs("block");
 	Chart0 = new Chart(document.getElementById("Chart0").getContext('2d'), {
 		type: 'scatter',
 		data: {
 			datasets: [{
 				label: 'Data obtained from the UTM',
-				"borderColor":"rgb(75, 192, 192)",
+				"borderColor":"rgb(0, 148, 135)",
 				showLine: true,
 				fill: false,
 				data: data
 			}]
 		},
 		options: {
+			animation: false,
+			elements: {
+				point: {
+					radius: 0
+				}
+			},
 			scales: {
 				yAxes: [{
 					scaleLabel: {
 						display: true,
-						labelString: 'Strain'
+						labelString: 'Load'
 					}
 				}],
 				xAxes: [{
 					scaleLabel: {
 						display: true,
-						labelString: 'Stress'
+						labelString: 'Elongation'
 					}
 				}]
 			}     
@@ -64,5 +70,12 @@ function Reset() {
 }
 function ResetView() {
 	$("#InText").val("Copy the two columns (Stress - Strain) from an excel sheet and paste it here.");
-	$("#StressStrainGraph").css("display", "none");
+	SetBlocksViewAs("none");
 }
+
+function SetBlocksViewAs(BlockCss) {
+	$("#Chart0Div").css("display", BlockCss);
+	$("#Chart1Div").css("display", BlockCss);	
+}
+
+//function MakeChart
