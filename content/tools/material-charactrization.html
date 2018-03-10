@@ -26,6 +26,12 @@ Local = "false"
 URL = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"
 Local = "false"
 [[JSPlugInEnd]]
+URL = "https://unpkg.com/simple-statistics@5.2.0/dist/simple-statistics.js"
+Local = "false"
+[[JSPlugInEnd]]
+URL = "regression.min.js"
+Local = "true"
+[[JSPlugInEnd]]
 URL = "notify.min.js"
 Local = "true"
 [[JSPlugInEnd]]
@@ -43,6 +49,18 @@ Local = "true"
 	url = "http://www.chartjs.org/"
 	reason = "providing framework for the chars"
 	weight = 0
+[[thanks]]
+	identifier = "simple-statistics"
+	name = "Simple Statistics"
+	url = "https://simplestatistics.org"
+	reason = "providing basic statistics algorithms"
+	weight = 0
+[[thanks]]
+	identifier = "simple-statistics"
+	name = "Gavin Whyte"
+	url = "https://github.com/gavinwhyte/regression-js"
+	reason = "providing linear regression algorithm for line passing through origin"
+	weight = 0
 
 +++
 <div class="w3-margin-bottom w3-border w3-border-theme">
@@ -54,29 +72,60 @@ Local = "true"
 	</div>
 </div>
 <!--more-->
-<div class="w3-row w3-border w3-border-theme">
-	<header class="w3-container w3-theme"><h5><b><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;Data from Universal Testing Machine</b></h5></header>	
-	<div class="w3-col m12 l12 s12">
-		<textarea id="InText" style="width:100%; height: 200px; display: block;" class="w3-code jsHigh notranslate w3-margin-0" contenteditable="true"></textarea>
-	</div>
-	<div class="w3-col m6 l6 s12">
-		<button id="GenerateBtn" onclick="PerformCalculations()" class="w3-button w3-white w3-ripple w3-block w3-border w3-border-theme">Calculate</button>
-	</div>
-	<div class="w3-col m6 l6 s12">
-		<button id="GenerateBtn" onclick="Reset()" class="w3-button w3-white w3-ripple w3-block w3-border w3-border-red">Reset</button>
+<div class="HideWhenLoaded w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
+	<div class="w3-container w3-padding-0 w3-border w3-border-theme">
+		<!--header class="w3-container w3-theme"><h5 class="w3-center">App is loading</h5></header-->
+		<div class="w3-container w3-margin-0 w3-padding-0 w3-center">
+			<p class="w3-padding" >App is loading<br/><br/><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i><br/><br/>Please wait. If it is taking longer than 1 minute, please refresh the page.</p>
+		</div>
 	</div>
 </div>
 
-<div id="Chart0Div" class="w3-margin-top w3-row w3-border w3-border-theme">
+<div style="display: none;" class="ProgressBar w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
+	<div class="w3-container w3-padding-0 w3-border w3-border-theme">
+		<div class="w3-container w3-margin-0 w3-padding-0 w3-center">
+			<p class="w3-padding" >App is processing the information...<br/><br/><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i><br/><br/>Please wait. It may take a while depending on your processing speed and the input data size.</p>
+		</div>
+	</div>
+</div>
+
+<div id="UserInputDiv" style="display: none;" class="UserInput w3-row w3-border w3-border-theme">
+	<header class="w3-container w3-theme"><h5><b><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;User input</b></h5></header>
+	<div class="w3-col m12 l12 s12 w3-padding">
+		<label>Setting: Tolerance to find the slope</label>
+		<input id="RSquaredTestForSize" class="UserInputItem0 w3-input w3-border w3-border-theme" type="number" value= "100">
+		<label>Initial area</label>
+		<input id="A_0" class="UserInputItem0 w3-input w3-border w3-border-theme" type="number" value= "30.7483">
+		<label>Initial length</label>
+		<input id="L_0" class="UserInputItem0 w3-input w3-border w3-border-theme" type="number" value= "25.4">
+		<label>Data from Universal testing machine</label>
+		<textarea id="InText" style="width:100%; height: 200px; display: block;" class="UserInputItem0 w3-code jsHigh notranslate w3-margin-0" contenteditable="true"></textarea>
+	</div>
+	<div class="w3-col m6 l6 s12">
+		<button id="GenerateBtn" onclick="PerformCalculations()" class="UserInputItem0 w3-button w3-white w3-ripple w3-block w3-border w3-border-theme">Calculate</button>
+	</div>
+	<div class="w3-col m6 l6 s12">
+		<button id="GenerateBtn" onclick="Reset()" class="UserInputItem1 w3-button w3-white w3-ripple w3-block w3-border w3-border-red">Reset</button>
+	</div>
+</div>
+
+<div style="display: none;" id="Chart0Div" class="Report w3-margin-top w3-row w3-border w3-border-theme">
 	<header class="w3-container w3-theme"><h5><b><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Stress strain graph</b></h5></header>	
 	<div class="w3-col m12 l12 s12">
-		<canvas id="Chart0" width="100%" height="50"></canvas>
+		<canvas id="Chart_0" width="100%" height="50"></canvas>
 	</div>
 </div>
 
-<div id="Chart1Div" class="w3-margin-top w3-row w3-border w3-border-theme">
+<div style="display: none;" id="Chart1Div" class="Report w3-margin-top w3-row w3-border w3-border-theme">
 	<header class="w3-container w3-theme"><h5><b><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Engineering curve</b></h5></header>	
 	<div class="w3-col m12 l12 s12">
-		<canvas id="Chart1" width="100%" height="50"></canvas>
+		<canvas id="Chart_1" width="100%" height="50"></canvas>
+	</div>
+</div>
+
+<div style="display: none;" id="Chart2Div" class="Report w3-margin-top w3-row w3-border w3-border-theme">
+	<header class="w3-container w3-theme"><h5><b><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Engineering curve</b></h5></header>	
+	<div class="w3-col m12 l12 s12">
+		<canvas id="Chart_2" width="100%" height="50"></canvas>
 	</div>
 </div>
