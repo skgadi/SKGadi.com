@@ -6,18 +6,19 @@
     <description>Recent content in Projects on Suresh Kumar Gadi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Jan 2017 00:00:00 -0600</lastBuildDate>
+    <lastBuildDate>Thu, 01 Feb 2018 00:00:00 -0600</lastBuildDate>
     
 	<atom:link href="https://skgadi.com/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Variable stiffness mechanism</title>
-      <link>https://skgadi.com/projects/variable-stiffness-mechanism/</link>
-      <pubDate>Mon, 02 Jan 2017 00:00:00 -0600</pubDate>
+      <title>Control toolbox</title>
+      <link>https://skgadi.com/projects/control-toolbox/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 -0600</pubDate>
       
-      <guid>https://skgadi.com/projects/variable-stiffness-mechanism/</guid>
-      <description> Status  Waiting for the funds Project is submitted to PRODEP  </description>
+      <guid>https://skgadi.com/projects/control-toolbox/</guid>
+      <description> Status A beta version of continuous time design is published. 
+Team  Suresh Kumar Gadi Antonio Concha  </description>
     </item>
     
     <item>

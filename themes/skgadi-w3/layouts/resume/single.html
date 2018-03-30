@@ -1,6 +1,6 @@
 {{- partial "header.html" . -}}
 <div class="w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
-<button class="w3-btn w3-theme w3-right" onclick="PrintElem('PrintContent')"><i class="fa fa-print"></i> Print</button>
+<button class="w3-btn w3-theme w3-right" onclick="Print()"><i class="fa fa-print"></i> Print</button>
 <div class="w3-border w3-border-theme w3-padding-small">
 <div id="PrintContent">
 <h1 class="Resume">{{.Params.FirstName}} {{.Params.LastName}}</h1>
@@ -16,41 +16,17 @@
 		First Name
 	</td><td>
 		{{.Params.FirstName}}
-	</td></tr><tr><td>
+	</td></tr>
+	<tr><td>
 		Last Name
 	</td><td>
 		{{.Params.LastName}}
-	</td></tr><tr><td>
-		Address
-	</td><td>
-		{{.Params.Address}}
 	</td></tr>
-	{{if .Params.Email}}
 	<tr><td>
-		Email
+		Date of birth
 	</td><td>
-		{{.Params.Email}}
+		{{ (dateFormat "2" .Params.DateOfBirth) }}<sup>{{ if in (slice "1" "21" "31") (dateFormat "2" .Params.DateOfBirth)}}st{{ else if in (slice "2" "22") (dateFormat "2" .Params.DateOfBirth)}}nd{{ else if in (slice "3" "23") (dateFormat "2" .Params.DateOfBirth)}}rd{{ else }}th{{ end }}</sup> of {{ (dateFormat "January 2006" .Params.DateOfBirth) }}
 	</td></tr>
-	{{end}}
-	{{if .Params.WebPage}}
-	<tr><td>
-		Web-page
-	</td><td>
-		{{.Params.WebPage}}
-	</td></tr>
-	{{end}}
-	<tr><td>
-		Mobile
-	</td><td>
-		{{.Params.Phone}}
-	</td></tr>
-	{{if .Params.Fax}}
-	<tr><td>
-		Fax
-	</td><td>
-		{{.Params.Fax}}
-	</td></tr>
-	{{end}}
 	<tr><td>
 		Languages
 	</td><td>
@@ -78,11 +54,53 @@
 				{{.Language}} ({{.Level}});
 			{{end}}
 		{{end}}
-	</td></tr><tr><td>
-		Date of birth
-	</td><td>
-		{{ (dateFormat "2" .Params.DateOfBirth) }}<sup>{{ if in (slice "1" "21" "31") (dateFormat "2" .Params.DateOfBirth)}}st{{ else if in (slice "2" "22") (dateFormat "2" .Params.DateOfBirth)}}nd{{ else if in (slice "3" "23") (dateFormat "2" .Params.DateOfBirth)}}rd{{ else }}th{{ end }}</sup> of {{ (dateFormat "January 2006" .Params.DateOfBirth) }}
 	</td></tr>
+	<tr><td>
+		Mobile
+	</td><td>
+		{{.Params.Phone}}
+	</td></tr>
+	<tr><td>
+		Email
+	</td><td>
+		{{.Params.Email}}
+	</td></tr>
+	<tr><td>
+		Address
+	</td><td>
+		{{.Params.Address}}
+	</td></tr>
+	{{if .Params.Email}}
+	{{end}}
+	{{if .Params.WebPage}}
+	<tr><td>
+		Web-page
+	</td><td>
+		{{.Params.WebPage}}
+	</td></tr>
+	{{end}}
+	{{if .Params.Fax}}
+	<tr><td>
+		Fax
+	</td><td>
+		{{.Params.Fax}}
+	</td></tr>
+	{{end}}
+	{{if .Params.WebLinks}}
+	<tr><td>
+		Online Presence
+	</td><td>
+		{{range .Params.WebLinks}}
+			<b>
+				{{if .Icon}}<i class="{{.Icon}}"></i>{{end}} {{.Name}}:
+			</b>
+			<a href="{{.URL}}" class="Resume">
+				{{.URL}}
+			</a>
+			<br/>
+		{{end}}
+	</td></tr>
+	{{end}}
 </table>
 
 <h3 class="Resume">Education</h3>
@@ -124,7 +142,7 @@
 	{{ end }}
 </table>
 
-<h3 class="Resume">Courses</h3>
+<h3 class="Resume">Teaching</h3>
 <table  class="Resume">
 	<tr>
 		<th>Course Name</th>
@@ -175,41 +193,32 @@
 {{ end }}
 <h3 class="Resume">Publications</h3>
 <div class="bibtex_structure">
-  <!--div class="group year" extra="ASC number"-->
-  	  <!--a href="#top" style="display: inline"><em>(Top of the page)</em></a-->
-  	  <!--div style="padding-bottom:10px;"></div-->
-  	  <!--div class="sort year" extra="ASC number">
-      	<div class="templates"></div>
-      </div-->
-  <!--/div-->
- 	<div class="group gsktype Resume" extra="ASC string">
+	<div class="group gsktype Resume" extra="ASC string">
 		<div class="sort year Resume" extra="ASC number">
-			<ol class="templates" reversed></ol>
+			<ol class="templates" reversed style="margin: 0px;"></ol>
 		</div>
 	</div> 
 </div>
 <div id="bibtex_display">
-	<div class="if bibtex_template" style="display: none;">
-			<!--ul class="BibliographyItem"--><li class="Resume">
-				<div>
-				<span class="if author"><span class="author"></span>.</span>
-				<span class="if title">"<span class="title"></span>".</span>
-				<span class="if journal">In: <i><span class="journal"></span></i>.</span>
-				<span class="if booktitle">In: <i><span class="booktitle"></span></i>.</span>
-				<span class="if gskthesislevel"><span class="gskthesislevel"></span> thesis.</span>
-				<span class="if school"><span class="school"></span>,</span>
-				<span class="if organization">Organized by: <i><span class="organization"></span></i>,</span>
-				<span class="if publisher">Published by: <i><span class="publisher"></span></i>,</span>
-				<span class="if month"><span class="month"></span>,</span>
-				<span class="if year"><span class="year"></span>.</span>
-				<span class="if pages">pp. <span class="pages"></span>.</span>
-				<span class="if isbn">ISBN: <span class="isbn"></span>.</span>
-				<span class="if issn">ISSN: <span class="issn"></span>.</span>
-				<span class="if doi">DOI: <span class="doi"></span>.</span>
-				<span class="if url">URL: <span class="url"></span>.</span>
-			</div>
-		</li>	
+	<li class="if bibtex_template" style="display: none; ">
+		<div>
+			<span class="if author"><span class="author"></span>.</span>
+			<span class="if title">"<span class="title"></span>".</span>
+			<span class="if journal">In: <i><span class="journal"></span></i>.</span>
+			<span class="if booktitle">In: <i><span class="booktitle"></span></i>.</span>
+			<span class="if gskthesislevel"><span class="gskthesislevel"></span> thesis.</span>
+			<span class="if school"><span class="school"></span>,</span>
+			<span class="if organization">Organized by: <i><span class="organization"></span></i>,</span>
+			<span class="if publisher">Published by: <i><span class="publisher"></span></i>,</span>
+			<span class="if month"><span class="month"></span>,</span>
+			<span class="if year"><span class="year"></span>.</span>
+			<span class="if pages">pp. <span class="pages"></span>.</span>
+			<span class="if isbn">ISBN: <span class="isbn"></span>.</span>
+			<span class="if issn">ISSN: <span class="issn"></span>.</span>
+			<span class="if doi">DOI: <span class="doi Resume"></span>.</span>
+			<span class="if url">URL: <span class="url Resume"></span>.</span>
 	</div>
+	</li>
 </div>
 </div>
 </div>
