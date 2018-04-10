@@ -199,7 +199,11 @@ function MakeCharts() {
 			}     
 		}
     });
-	Chart_2 = new Chart(document.getElementById("Chart_2").getContext('2d'), {
+	Chart_2 = PrepareChart002(document.getElementById("Chart_2"))
+}
+
+function PrepareChart002 (Canvas) {
+	return new Chart(Canvas.getContext('2d'), {
 		type: 'scatter',
 		data: {
 			datasets: [{
@@ -414,3 +418,45 @@ function FindIntersectionPoint (LineData, CurveData) {
 	else IntersectionPoint[0] = TempIntersectionPointX2;
 	IntersectionPoint[1] = ProportinalLineParameters(IntersectionPoint[0]-PercentDot2Value);
 }
+
+function LoadSampleData(sample) {
+	//$.notify("Please wait while the data is being loaded ...", "info");
+	$.ajax({
+            url : "../../misc/sample-utm-data00"+sample+".txt",
+            dataType: "text",
+            success : function (data) {
+                $("#InText").val(data);
+				$.notify("Data successfully loaded", "success");
+            }
+        });
+	$('#GenerateBtn').focus();
+}
+
+function GenerateReport(Language) {
+	$('#CompleteReport').html('\
+	<h1>Complete report</h1>\
+	<p>When `a != 0`, there are two solutions to `ax^2 + bx + c = 0` and \
+	they are</p>\
+	<p style="text-align:center">\
+  `x = (-b +- sqrt(b^2-4ac))/(2a) .`\
+</p>\
+<div style="width: 750px; height:500px"><canvas id="ReportCanvas001"></canvas></div>\
+	');
+	//ReportCanvas001 = PrepareChart002("ReportCanvas001");
+	mywindow = PrintElem('CompleteReport', [
+		'/css/report.css'
+		], [
+		'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML'
+		]);
+	$(mywindow).bind('load', function(){
+		setTimeout(function(){
+			mywindow.focus();
+			PrepareChart002(mywindow.document.getElementById("ReportCanvas001"));
+			//mywindow.document.getElementById("ReportCanvas001")..width = 400;
+			mywindow.print();
+			//mywindow.close();			
+		}, 1000);
+
+	})
+}
+

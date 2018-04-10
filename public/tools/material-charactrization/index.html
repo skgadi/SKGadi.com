@@ -38,7 +38,7 @@
 	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://skgadi.com/css/style.css"></head>
+	<link rel="stylesheet" href="https://skgadi.com/css/style.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML" type="text/javascript" charset="utf-8"></script></head>
 <body>
 <nav class="w3-sidenav w3-collapse w3-white w3-animate0-left w3-card-2" style="z-index:3;width:250px;" id="mySidenav">
   <a href="/" class="w3-border-bottom w3-border-bottom w3-large"><h3 class="w3-margin-0 w3-text-theme"><b>SKGadi.com</b></h3></a>
@@ -104,6 +104,18 @@
 		<input id="L_0" class="UserInputItem0 w3-input w3-border w3-border-theme" type="number" value= "25.4">
 		<label>Data from Universal testing machine</label>
 		<textarea id="InText" style="width:100%; height: 200px; display: block;" class="UserInputItem0 w3-code jsHigh notranslate w3-margin-0" contenteditable="true"></textarea>
+		<div class="w3-col m3 l3 s12">
+			<button id="SampleData0" onclick="LoadSampleData(0)" class="UserInputItem0 w3-button w3-white w3-ripple w3-block w3-border w3-border-theme">Sample data 0</button>
+		</div>
+		<div class="w3-col m3 l3 s12">
+			<button id="SampleData1" onclick="LoadSampleData(1)" class="UserInputItem0 w3-button w3-white w3-ripple w3-block w3-border w3-border-theme">Sample data 1</button>
+		</div>
+		<div class="w3-col m3 l3 s12">
+			<button id="SampleData2" onclick="LoadSampleData(2)" class="UserInputItem0 w3-button w3-white w3-ripple w3-block w3-border w3-border-theme">Sample data 2</button>
+		</div>
+		<div class="w3-col m3 l3 s12">
+			<button id="SampleData3" onclick="LoadSampleData(3)" class="UserInputItem0 w3-button w3-white w3-ripple w3-block w3-border w3-border-theme">Sample data 3</button>
+		</div>
 	</div>
 	<div class="w3-col m6 l6 s12">
 		<button id="GenerateBtn" onclick="PerformCalculations()" class="UserInputItem0 w3-button w3-white w3-ripple w3-block w3-border w3-border-theme">Calculate</button>
@@ -132,7 +144,31 @@
 	<div class="w3-col m12 l12 s12">
 		<canvas id="Chart_2" width="100%" height="50"></canvas>
 	</div>
-</div></div></div>
+</div>
+
+<div style="display: none;" class="Report w3-margin-top w3-row w3-border w3-border-theme">
+	<header class="w3-container w3-theme"><h5><b><i class="fa fa-files-o fa-fw" aria-hidden="true"></i>&nbsp;Generate report</b></h5></header>	
+	<div class="w3-col m6 l6 s12">
+		<button id="GenerateReportEnglish" onclick="GenerateReport(0)" class="w3-button w3-white w3-ripple w3-block w3-border w3-border-theme">Generate report in English</button>
+	</div>
+	<div class="w3-col m6 l6 s12">
+		<button id="GenerateReportSpanish" onclick="GenerateReport(1)" class="w3-button w3-white w3-ripple w3-block w3-border w3-border-theme">Generar reporte en Español</button>
+	</div>
+</div>
+
+<!--div style="display: none;" class="Report w3-margin-top w3-row w3-border w3-border-theme">
+	<header class="w3-container w3-theme"><h5><b><i class="fa fa-files-o fa-fw" aria-hidden="true"></i>&nbsp;Complete report</b></h5></header>
+	<div id="CompleteReport" class="w3-col m12 l12 s12">
+		<p>When `a != 0`, there are two solutions to `ax^2 + bx + c = 0` and
+they are</p>
+<p style="text-align:center">
+  `x = (-b +- sqrt(b^2-4ac))/(2a) .`
+</p>
+
+	</div>
+</div-->
+
+<div id="CompleteReport" style="display: none;"></div--></div></div>
 <footer class="w3-container w3-theme w3-padding-16">
 <div class="w3-container w3-padding-0 w3-section">
 <input class="w3-input" id="SearchText" type="text" placeholder="Search: Type your query and press Enter ( &crarr; )">
@@ -141,7 +177,7 @@
 <div class="w3-container w3-padding-0"><a class="w3-left w3-padding-tiny" href="https://www.scopus.com/authid/detail.uri?authorId=55608566000" target="_blank"><i class="fa fa-circle" aria-hidden="true"></i></a><a class="w3-left w3-padding-tiny" href="https://orcid.org/0000-0001-7974-7825" target="_blank"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a><a class="w3-left w3-padding-tiny" href="https://scholar.google.co.in/citations?user=efqOY90AAAAJ" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a><a class="w3-left w3-padding-tiny" href="https://mx.linkedin.com/in/skgadi" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a class="w3-left w3-padding-tiny" href="https://twitter.com/SureshKumarGadi" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="w3-left w3-padding-tiny" href="https://plus.google.com/&#43;SureshKumarGadi" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a><a class="w3-left w3-padding-tiny" href="https://goo.gl/maps/8NrtjMajSUz" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i></a><a class="w3-left w3-padding-tiny" href="https://paypal.me/skgadi" target="_blank"><i class="fa fa-paypal" aria-hidden="true"></i></a></div>
 <div class="w3-container w3-padding-0 w3-section">
 <p class="w3-padding-0 w3-margin-0">Thanks to:</p>
-	<div class="w3-padding-left"><p class="w3-padding-0 w3-margin-0"><a href="http://www.chartjs.org/" target="_blank">Chart.js</a>&nbsp;for&nbsp;<i>providing framework for the chars</i>.</p><p class="w3-padding-0 w3-margin-0"><a href="https://simplestatistics.org" target="_blank">Simple Statistics</a>&nbsp;for&nbsp;<i>providing basic statistics algorithms</i>.</p><p class="w3-padding-0 w3-margin-0"><a href="https://github.com/gavinwhyte/regression-js" target="_blank">Gavin Whyte</a>&nbsp;for&nbsp;<i>providing linear regression algorithm for line passing through origin</i>.</p><p class="w3-padding-0 w3-margin-0"><a href="https://github.com/" target="_blank">GitHub</a>&nbsp;for&nbsp;<i>providing cloud based version control repository</i>.</p><p class="w3-padding-0 w3-margin-0"><a href="https://www.netlify.com/" target="_blank">netlify</a>&nbsp;for&nbsp;<i>providing hosting</i>.</p><p class="w3-padding-0 w3-margin-0"><a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3.CSS</a>&nbsp;for&nbsp;<i>providing CSS</i>.</p></div>
+	<div class="w3-padding-left"><p class="w3-padding-0 w3-margin-0"><a href="http://www.chartjs.org/" target="_blank">Chart.js</a>&nbsp;for&nbsp;<i>providing framework for the chars</i>.</p><p class="w3-padding-0 w3-margin-0"><a href="https://simplestatistics.org" target="_blank">Simple Statistics</a>&nbsp;for&nbsp;<i>providing basic statistics algorithms</i>.</p><p class="w3-padding-0 w3-margin-0"><a href="https://github.com/gavinwhyte/regression-js" target="_blank">Gavin Whyte</a>&nbsp;for&nbsp;<i>providing linear regression algorithm for line passing through origin</i>.</p><p class="w3-padding-0 w3-margin-0"><a href="https://www.mathjax.org/" target="_blank">MathJax</a>&nbsp;for&nbsp;<i>providing framework for the displaying equations</i>.</p><p class="w3-padding-0 w3-margin-0"><a href="https://github.com/" target="_blank">GitHub</a>&nbsp;for&nbsp;<i>providing cloud based version control repository</i>.</p><p class="w3-padding-0 w3-margin-0"><a href="https://www.netlify.com/" target="_blank">netlify</a>&nbsp;for&nbsp;<i>providing hosting</i>.</p><p class="w3-padding-0 w3-margin-0"><a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3.CSS</a>&nbsp;for&nbsp;<i>providing CSS</i>.</p></div>
 </div>
 <p class="">Address:&nbsp;Carretera Torreón - Matamoros Km. 7.5, Ciudad Universitaria, Torreón, Coahuila, México, C.P. 27276<br />Fax:&nbsp;(&#43;52 1) 871 757 0153</p>
 <p class="">Copyright <i class="fa fa-copyright" aria-hidden="true"></i>&nbsp;2018&nbsp;Suresh Kumar Gadi  </p>
