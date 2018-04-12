@@ -31,29 +31,36 @@ var Data_0, Data_1, Data_2, Data_3, Data_4, Data_5;
 var IntersectionPoint;
 var IntersectionPointIndex;
 var ProportinalLineParameters;
+var isChartsReady=false;
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(ChartsReady);
+
+function ChartsReady() {
+	isChartsReady = true;
+}
 
 $( document ).ready(function() {
 	ResetView();
 	$("#InText").focusin(function () {
 		$("#InText").select();
 	});
-	//Chart.defaults.global.defaultColor = 'rgba(0,0,0,0.1)';
-	Chart.defaults.global.defaultFontColor = '#000';
-	//Chart.defaults.scale.gridLines.color = "#000";
 });
 
 function PerformCalculations() {
+	if (isChartsReady) {
 	SetViewAsCalculating();
 	setTimeout(function(){
 		if (PrepareDataForCharts()) {
-			MakeCharts();
+			//MakeCharts();
 			SetViewAsCalculated();
-			$.notify("Processed the information successfully", "success");
+			GenerateCharts(document, 0);
+			$.notify("Processed the information successfully.\nPlease wait for the graphs to load.\nIt may take few seconds for you to access the browser.", "success");
 		} else {
 			$.notify("Error in the input text, unable to process.", "error");
 			ResetView();
 		}
 	}, 0);
+	} else $.notify("Charts libraries are loading, please wait. If it is taking longer than expected, please verify your network connection.", "error");
 }
 
 function Reset() {
@@ -69,7 +76,7 @@ function ResetView() {
 	$(".HideWhenLoaded").css('display', 'none');
 	$(".UserInputItem0").prop('disabled', false);
 	$(".UserInputItem1").prop('disabled', true);
-	$("html, body").delay(2000).animate({scrollTop: $('#UserInputDiv').offset().top - 60}, "slow");
+	//$("html, body").delay(2000).animate({scrollTop: $('#UserInputDiv').offset().top - 60}, "slow");
 	$('#InText').focus().select();
 	//$("html, body").animate({ scrollTop: 0 }, "slow");
 }
@@ -86,172 +93,88 @@ function SetViewAsCalculated() {
 	$(".Report").css('display', 'block');
 	$(".UserInputItem0").prop('disabled', true);
 	$(".UserInputItem1").prop('disabled', false);
-	$("html, body").delay(2000).animate({scrollTop: $('#Chart0Div').offset().top - 60}, "slow");
+	//$("html, body").delay(2000).animate({scrollTop: $('#Chart0Div').offset().top - 60}, "slow");
 }
 
-function MakeCharts() {
-	Data_0 = CombineToChartData (x_0, y_0);
-	Data_1 = CombineToChartData (x_1, y_1);
-	Data_2 = CombineToChartData (x_2, y_2);
-	Data_3 = CombineToChartData (x_3, y_3);
-	Data_4 = CombineToChartData (x_4, y_4);
-	Data_5 = CombineToChartData (x_5, y_5);
-	Data_6 = CombineToChartData (x_6, y_6);
-	Point_0 = CombineToChartData ([IntersectionPoint[0]], [IntersectionPoint[1]]);
-	Chart_0 = new Chart(document.getElementById("Chart_0").getContext('2d'), {
-		type: 'scatter',
-		data: {
-			datasets: [{
-				label: 'Data obtained from the UTM',
-				"borderColor":"rgb(0, 148, 135)",
-				showLine: true,
-				fill: false,
-				data: Data_0
-			}]
-		},
-		options: {
-			animation: false,
-			elements: {
-				point: {
-					radius: 0
-				}
-			},
-			scales: {
-				yAxes: [{
-					scaleLabel: {
-						display: true,
-						labelString: 'Stress'
-					}
-				}],
-				xAxes: [{
-					scaleLabel: {
-						display: true,
-						labelString: 'Strain'
-					}
-				}]
-			}     
-		}
-    });
-	Chart_1 = new Chart(document.getElementById("Chart_1").getContext('2d'), {
-		type: 'scatter',
-		data: {
-			datasets: [{
-				label: 'Engineering curve',
-				"borderColor":"rgb(0, 148, 135)",
-				showLine: true,
-				fill: false,
-				data: Data_1
-			},{
-				label: 'Real curve',
-				"borderColor":"rgb(255, 101, 80)",
-				showLine: true,
-				fill: false,
-				data: Data_2
-			},{
-				label: 'Proportional line',
-				"borderColor":"rgb(200, 200, 200)",
-				showLine: true,
-				fill: false,
-				//borderDash: [4, 2],
-				borderWidth: 1,
-				data: Data_3
-			},{
-				label: '0.2% offset of the proportional line',
-				"borderColor":"rgb(0, 132, 255)",
-				showLine: true,
-				fill: false,
-				//borderDash: [4, 2],
-				borderWidth: 1,
-				data: Data_4
-			},{
-				label: 'IntersectionPoint',
-				"borderColor":"rgb(0, 132, 255)",
-				showLine: true,
-				fill: false,
-				pointBackgroundColor: "rgb(255, 101, 80)",
-				//borderDash: [4, 2],
-				borderWidth: 2,
-				radius: 5,
-				data: Point_0
-			}]
-		},
-		options: {
-			scaleFontColor: "#000000",
-			animation: false,
-			elements: {
-				point: {
-					radius: 0
-				}
-			},
-			scales: {
-				yAxes: [{
-					scaleLabel: {
-						display: true,
-						labelString: 'Normalized Stress'
-					}
-				}],
-				xAxes: [{
-					scaleLabel: {
-						display: true,
-						labelString: 'Normalized Strain'
-					}
-				}]
-			}     
-		}
-    });
-	Chart_2 = PrepareChart002(document.getElementById("Chart_2"))
+function GenerateCharts(ForDocument, chartWidth) {
+	var chart;
+	var data;
+	chart = new google.visualization.LineChart(ForDocument.getElementById('ChartDiv_0'));
+	data = GenerateDataForGraphs([[x_0, y_0]], ["Stress"]);
+	chart.draw(data, GetProperties("Strain", "Stress", 500, chartWidth));
+	chart = new google.visualization.LineChart(ForDocument.getElementById('ChartDiv_1'));
+	data = GenerateDataForGraphs([[x_1, y_1], [x_2, y_2], [x_3, y_3], [x_4, y_4]], ["Stress 1", "Stress 2", "Stress 3", "Stress 4"]);
+	chart.draw(data, GetProperties("Strain", "Stress", 500, chartWidth));
+	chart = new google.visualization.LineChart(ForDocument.getElementById('ChartDiv_2'));
+	data = GenerateDataForGraphs([[x_5, y_5], [x_6, y_6]], ["Stress 1", "Stress 2"]);
+	chart.draw(data, GetProperties("Strain", "Stress", 500, chartWidth));
 }
-
-function PrepareChart002 (Canvas) {
-	return new Chart(Canvas.getContext('2d'), {
-		type: 'scatter',
-		data: {
-			datasets: [{
-				label: 'Selected region of the real curve',
-				"borderColor":"rgb(0, 148, 135)",
-				showLine: true,
-				fill: false,
-				data: Data_5
-			},{
-				label: 'Line approximation of the selected region of the real curve',
-				"borderColor":"rgb(255, 101, 80)",
-				showLine: true,
-				fill: false,
-				data: Data_6
-			}]
-		},
-		options: {
-			animation: false,
-			elements: {
-				point: {
-					radius: 0
-				}
-			},
-			scales: {
-				yAxes: [{
-					scaleLabel: {
-						display: true,
-						labelString: 'ln(Normalized Stress)'
-					}
-				}],
-				xAxes: [{
-					scaleLabel: {
-						display: true,
-						labelString: 'ln(Normalized Strain)'
-					}
-				}]
-			}     
-		}
-    });
-}
-
-function CombineToChartData (x, y) {
-		return x.map((x, i) => {
+function GetProperties (xLabel, yLabel, height, width) {
+	if (width==0) {
 		return {
-			x: x,
-			y: y[i]
+			height: height,
+			curveType: 'function',
+			fontName: "Times",
+			hAxis: {
+			  title: xLabel
+			},
+			vAxis: {
+			  title: yLabel
+			},
+			legend: { position: 'top' },
+			vAxis: {format: 'decimal'}
+		};		
+	} else return {
+			height: height,
+			width: width,
+			curveType: 'function',
+			fontName: "Times",
+			hAxis: {
+			  title: xLabel
+			},
+			vAxis: {
+			  title: yLabel
+			},
+			legend: { position: 'top' },
+			vAxis: {format: 'decimal'}
 		};
-	});
+}
+function GenerateDataForGraphs (Lines, Names) {
+	var data = new google.visualization.DataTable();
+	data.addColumn('number', "xAxis");
+	if (Names.length == Lines.length) {
+		for (var i=0; i< Names.length; i++)
+			data.addColumn('number', Names[i]);
+		for (var i=0; i< Names.length; i++) {
+			var s = new Array(Names.length + 1);
+			for (var j=0; j< Lines[i][0].length; j++) {
+				s[0] = Lines[i][0][j];
+				s[i+1] = Lines[i][1][j];
+				data.addRow(s);
+			}
+		}
+	}
+	console.log(Lines[0][0].length);
+	return data;
+}
+function AddLineData (ExistingData, NewLine, Name){
+	var result;
+	if (ExistingData.length == 0) {
+		result = [];
+		result[0] = new Array(1);
+		result[0][0] = Name;
+		for ( var i = 0; i < NewLine.length; i++ ) {
+			result[i+1] = new Array(1);
+			result[i+1][0] = NewLine[i];	
+		}
+	} else {
+		result = ExistingData;
+		result[0][ExistingData[0].length] = Name;
+		for ( var i = 0; i < NewLine.length; i++ ) {
+			result[i+1][ExistingData[0].length-1] = NewLine[i];	
+		}
+	}
+	return result;
 }
 
 function PrepareDataForCharts () {
@@ -420,7 +343,6 @@ function FindIntersectionPoint (LineData, CurveData) {
 }
 
 function LoadSampleData(sample) {
-	//$.notify("Please wait while the data is being loaded ...", "info");
 	$.ajax({
             url : "../../misc/sample-utm-data00"+sample+".txt",
             dataType: "text",
@@ -433,6 +355,8 @@ function LoadSampleData(sample) {
 }
 
 function GenerateReport(Language) {
+	//mywindow = PrintElem('curve_chart', [],[]);
+	
 	$('#CompleteReport').html('\
 	<h1>Complete report</h1>\
 	<p>When `a != 0`, there are two solutions to `ax^2 + bx + c = 0` and \
@@ -440,7 +364,10 @@ function GenerateReport(Language) {
 	<p style="text-align:center">\
   `x = (-b +- sqrt(b^2-4ac))/(2a) .`\
 </p>\
-<div style="width: 750px; height:500px"><canvas id="ReportCanvas001"></canvas></div>\
+<div id="ChartDiv_0"></div>\
+<div id="ChartDiv_1"></div>\
+<div id="ChartDiv_2"></div>\
+<div id="IMGDIV" style="width: 750px; height:500px"><img id="IMG000" style="width: 100%;"/><canvas id="ReportCanvas001"></canvas></div>\
 	');
 	//ReportCanvas001 = PrepareChart002("ReportCanvas001");
 	mywindow = PrintElem('CompleteReport', [
@@ -450,13 +377,10 @@ function GenerateReport(Language) {
 		]);
 	$(mywindow).bind('load', function(){
 		setTimeout(function(){
-			mywindow.focus();
-			PrepareChart002(mywindow.document.getElementById("ReportCanvas001"));
-			//mywindow.document.getElementById("ReportCanvas001")..width = 400;
-			mywindow.print();
+			GenerateCharts(mywindow.document, 750);
+			//mywindow.print();
 			//mywindow.close();			
 		}, 1000);
 
 	})
 }
-

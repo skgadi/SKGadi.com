@@ -31,7 +31,13 @@ Local = "false"
 URL = "https://unpkg.com/simple-statistics@5.2.0/dist/simple-statistics.js"
 Local = "false"
 [[JSPlugInEnd]]
+URL = "https://www.gstatic.com/charts/loader.js"
+Local = "false"
+[[JSPlugInEnd]]
 URL = "regression.min.js"
+Local = "true"
+[[JSPlugInEnd]]
+URL = "canvastool.pngencoder.min.js"
 Local = "true"
 [[JSPlugInEnd]]
 URL = "notify.min.js"
@@ -45,12 +51,6 @@ Local = "true"
 
 
 
-[[thanks]]
-	identifier = "chartjs"
-	name = "Chart.js"
-	url = "http://www.chartjs.org/"
-	reason = "providing framework for the chars"
-	weight = 0
 [[thanks]]
 	identifier = "simple-statistics"
 	name = "Simple Statistics"
@@ -131,23 +131,17 @@ Local = "true"
 
 <div style="display: none;" id="Chart0Div" class="Report w3-margin-top w3-row w3-border w3-border-theme">
 	<header class="w3-container w3-theme"><h5><b><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Stress strain graph</b></h5></header>	
-	<div class="w3-col m12 l12 s12">
-		<canvas id="Chart_0" width="100%" height="50"></canvas>
-	</div>
+	<div id="ChartDiv_0" class="w3-col m12 l12 s12"></div>
 </div>
 
 <div style="display: none;" id="Chart1Div" class="Report w3-margin-top w3-row w3-border w3-border-theme">
 	<header class="w3-container w3-theme"><h5><b><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Engineering curve</b></h5></header>	
-	<div class="w3-col m12 l12 s12">
-		<canvas id="Chart_1" width="100%" height="50"></canvas>
-	</div>
+	<div id="ChartDiv_1" class="w3-col m12 l12 s12"></div>
 </div>
 
 <div style="display: none;" id="Chart2Div" class="Report w3-margin-top w3-row w3-border w3-border-theme">
-	<header class="w3-container w3-theme"><h5><b><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Engineering curve</b></h5></header>	
-	<div class="w3-col m12 l12 s12">
-		<canvas id="Chart_2" width="100%" height="50"></canvas>
-	</div>
+	<header class="w3-container w3-theme"><h5><b><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Engineering curve</b></h5></header>
+	<div id="ChartDiv_2" class="w3-col m12 l12 s12"></div>
 </div>
 
 <div style="display: none;" class="Report w3-margin-top w3-row w3-border w3-border-theme">
@@ -172,4 +166,4 @@ they are</p>
 	</div>
 </div-->
 
-<div id="CompleteReport" style="display: none;"></div-->
+<div id="CompleteReport" style="display: none;"></div>
