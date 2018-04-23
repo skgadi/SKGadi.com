@@ -75,9 +75,44 @@
 	</div>
 </div>
 <p class="">{{- if .Site.Params.Address -}}Address:&nbsp;{{- .Site.Params.Address -}}{{- end -}}{{- if .Site.Params.email -}}<br />E-mail:&nbsp;{{- .Site.Params.email -}}{{- end -}}{{- if .Site.Params.Phone -}}<br />Phone:&nbsp;{{- .Site.Params.Phone -}}{{- end -}}{{- if .Site.Params.Fax -}}<br />Fax:&nbsp;{{- .Site.Params.Fax -}}{{- end -}}</p>
-<p class="">Copyright <i class="fa fa-copyright" aria-hidden="true"></i>&nbsp;{{- .Now.Year -}}&nbsp;{{- .Site.Params.Author }}  </p>
+<p class="">Copyright <i class="fa fa-copyright" aria-hidden="true"></i>&nbsp;{{- now.Format "2006" -}}&nbsp;{{- .Site.Params.Author }}  </p>
 </footer>
 </div>
+
+{{- if .Params.LoadPackages.JQuery1 -}}
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+{{- end -}}
+{{- if .Params.LoadPackages.JQuery2 -}}
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+{{- end -}}
+{{- if .Params.LoadPackages.JQuery3 -}}
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+{{- end -}}
+{{- if .Params.LoadPackages.BibTeXJS -}}
+	<script type="text/javascript" src="https://cdn.rawgit.com/pcooksey/bibtex-js/b81606e85986fa8ad0eb66954493bc1c0b3d7ab1/src/bibtex_js.js"></script>
+{{- end -}}
+{{- if .Params.LoadPackages.ApisGoogleAuth -}}
+	<script src="https://apis.google.com/js/client.js?onload=AuthIsLoaded" async defer></script>
+{{- end -}}
+{{- if .Params.LoadPackages.Notify -}}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
+{{- end -}}
+{{- if .Params.LoadPackages.SimpleStatistics -}}
+	<script src="https://unpkg.com/simple-statistics@5.2.0/dist/simple-statistics.js"></script>
+{{- end -}}
+{{- if .Params.LoadPackages.RegressionJS -}}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/regression/1.4.0/regression.min.js"></script>
+{{- end -}}
+{{- if .Params.LoadPackages.GStaticCharts -}}
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+{{- end -}}
+{{- if .Params.LoadPackages.MathJS -}}
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.1.2/math.min.js"></script>
+{{- end -}}
+
+
+
+
 
 {{- if .Params.JSPlugInEnd -}}
 {{- range .Params.JSPlugInEnd -}}

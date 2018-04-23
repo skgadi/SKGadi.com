@@ -12,24 +12,6 @@ title = "Private books"
 type = "simple-content"
 layout = "zero-padding"
 
-
-
-[[JSPlugInEnd]]
-	URL = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
-	Local = "false"
-[[JSPlugInEnd]]
-	URL = "https://apis.google.com/js/client.js?onload=AuthIsLoaded"
-	Local = "false"
-#[[JSPlugInEnd]]
-#	URL = "bibtex_js_modified.js"
-#	Local = "true"
-[[JSPlugInEnd]]
-	URL = "https://cdn.rawgit.com/pcooksey/bibtex-js/b81606e85986fa8ad0eb66954493bc1c0b3d7ab1/src/bibtex_js.js"
-	Local = "false"
-
-[[JSPlugInEnd]]
-	URL = "notify.min.js"
-	Local = "true"
 [[JSPlugInEnd]]
 	URL = "gen-funcs.js"
 	Local = "true"
@@ -37,6 +19,11 @@ layout = "zero-padding"
 	URL = "script001.js"
 	Local = "true"
 
+[LoadPackages]
+	JQuery2 = 1
+	BibTeXJS = 1
+	ApisGoogleAuth = 1
+	Notify = 1
 
 [[thanks]]
 	identifier = "bibtex-js"

@@ -93,7 +93,7 @@ function SetViewAsCalculated() {
 	$(".Report").css('display', 'block');
 	$(".UserInputItem0").prop('disabled', true);
 	$(".UserInputItem1").prop('disabled', false);
-	//$("html, body").delay(2000).animate({scrollTop: $('#Chart0Div').offset().top - 60}, "slow");
+	//$("html, body").delay(2000).animate({scrollTop: $('#GenReportDiv').offset().top - 60}, "slow");
 }
 
 function GenerateCharts(ForDocument, chartWidth) {
@@ -154,7 +154,7 @@ function GenerateDataForGraphs (Lines, Names) {
 			}
 		}
 	}
-	console.log(Lines[0][0].length);
+	//console.log(Lines[0][0].length);
 	return data;
 }
 function AddLineData (ExistingData, NewLine, Name){

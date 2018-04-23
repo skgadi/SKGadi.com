@@ -15,43 +15,35 @@ type = "simple-content"
 layout = "outer-padding-no-border"
 
 
-[[CSSPlugIn]]
-URL = "handsontable.full.min.css"
-Local = "true"
-[[CSSPlugIn]]
-URL = "pikaday.css"
-Local = "true"
+
+[LoadPackages]
+	Handsontable = 1
+	Notify = 1
+	JQuery3 = 1
 
 
-[[JSPlugIn]]
-URL = "pikaday/pikaday.js"
-Local = "true"
-[[JSPlugIn]]
-URL = "moment/moment.js"
-Local = "true"
-[[JSPlugIn]]
-URL = "numbro/numbro.js"
-Local = "true"
-#[[JSPlugIn]]
-#URL = "numbro/languages.js"
-#Local = "true"
-[[JSPlugIn]]
-URL = "handsontable.full.min.js"
-Local = "true"
 
-
-[[JSPlugInEnd]]
-URL = "https://code.jquery.com/jquery-3.2.1.min.js"
-Local = "false"
-[[JSPlugInEnd]]
-URL = "notify.min.js"
-Local = "true"
 [[JSPlugInEnd]]
 URL = "gen-funcs.js"
 Local = "true"
 [[JSPlugInEnd]]
 URL = "script004.js"
 Local = "true"
+
+
+[[thanks]]
+	identifier = "handsontable"
+	name = "Handsontable"
+	url = "https://handsontable.com"
+	reason = "providing javaScript spreadsheet"
+	weight = 0
+[[thanks]]
+	identifier = "numbrojs"
+	name = "NumbroJS"
+	url = "http://numbrojs.com"
+	reason = "providing javaScript converting, formatting, and manipulating numbers"
+	weight = 0
+
 
 +++
 <div class="w3-margin-bottom w3-border w3-border-theme">
