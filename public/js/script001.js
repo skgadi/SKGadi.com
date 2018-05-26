@@ -17,7 +17,7 @@ function OpenDOI(DOI) {
 	if (isUrlValid($(DOI).text()))
 		window.open($(DOI).text(), '_blank');
 	else
-		window.open('http://dx.doi.org/' + $(DOI).text(), '_blank');
+		window.open('https://doi.org/' + $(DOI).text(), '_blank');
 }
 
 function OpenURL(URL) {
