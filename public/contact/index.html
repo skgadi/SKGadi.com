@@ -67,6 +67,7 @@
 				<input class= "w3-input w3-border w3-border-theme" name="email" placeholder= "Your email" tabindex="2">
 				<input class= "w3-input w3-border w3-border-theme" name="phone" placeholder= "Your phone number" tabindex="3">
 				<textarea name="message" placeholder="Your message" style= "width: 100%; border: 1px solid black;" tabindex="4"></textarea>
+				<div data-netlify-recaptcha></div>
 				<button class="w3-button w3-block w3-white w3-border w3-border-theme w3-ripple" tabindex="5">Send</button>
 			</form>
 		</div>
@@ -83,7 +84,7 @@
 <script>
 	tinymce.init({
 	selector:'textarea',
-	height: 332,
+	height: 340,
 	menubar: false,
 	plugins: [
 		'advlist autolink lists link image charmap print preview anchor',
