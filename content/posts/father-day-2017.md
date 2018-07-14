@@ -9,20 +9,6 @@ categories = ["Family", "Voice recording"]
 date = "2017-06-18T00:00:00-06:00"
 title = "Father's day on 2017"
 
-[[thanks]]
-	identifier = "trinket"
-	name = "Trinket"
-	url = "https://trinket.io/"
-	reason = "providing cloud based python compiler"
-	weight = 0
-
-[[thanks]]
-	identifier = "algorithm"
-	name = "Denny Hermawanto"
-	url = "https://arxiv.org/ftp/arxiv/papers/1308/1308.4675.pdf"
-	reason = "providing explication to the algorithm."
-	weight = 1
-
 
 +++
 Tishya's voice recorded on the father's day of 2017.

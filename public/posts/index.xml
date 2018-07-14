@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Basic waveforms used in the control systems and its implimentation technique</title>
+      <link>https://skgadi.com/posts/basic-waveforms/</link>
+      <pubDate>Sun, 18 Jun 2017 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/posts/basic-waveforms/</guid>
+      <description>The control theory uses the following waveforms.
+StepSquareRectangularSineTriangularSawtoothProgrammers working in the control theory applications may require to generate these waveforms. There are several techniques to produce these waveforms. This post presents an easy way of creating these waveforms. Also, an interactive way of testing these waveforms is available.
+Note that the functions presented here are easy to implement but not always efficient.</description>
+    </item>
+    
+    <item>
       <title>Father&#39;s day on 2017</title>
       <link>https://skgadi.com/posts/father-day-2017/</link>
       <pubDate>Sun, 18 Jun 2017 00:00:00 -0600</pubDate>
