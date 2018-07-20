@@ -52,22 +52,22 @@ Triangular
 Sawtooth
 </li>
 </ul>
-<p>Programmers working in the control theory applications may require to generate these waveforms. There are several techniques to produce these waveforms. This post presents an easy way of creating these waveforms. Also, an interactive way of testing these waveforms is available.</p>
+<p>There are several techniques to produce these inputs. This post presents an easy way of creating and testing them.</p>
 <p>Note that the functions presented here are easy to implement but not always efficient.</p>
 <h3>Generalized step function $S_0(t)$</h3>
-<p>A step wave has only two states and it changes from one state to another at a single instance of time.</p>
+<p>A step wave has only two states and changes from one state to another at a single instance of time. It is given by</p>
 <div>
 $${S_0(t)}=AH\left( t-{{t}_{0}} \right)+O,$$
 
-	\[H(t)=\left\{ \begin{matrix}
+	\[H(t-t_0)=\left\{ \begin{matrix}
    0 & \begin{matrix}
-   \text{if} & t \lt 0  \\
+   \text{if} & t \lt t_0  \\
 \end{matrix}  \\
    1 & \begin{matrix}
-   \text{if} & t\ge 0  \\
+   \text{if} & t\ge t_0  \\
 \end{matrix}  \\
 \end{matrix} \right.\]
-where $A$ is the signal amplitude, ${{t}_{0}}$ is time at which the signal changes its state and $O$ is the offset.
+where $A$ is the signal amplitude, ${{t}_{0}}$ is the time at which $S_0(t)$ changes its state, and $O$ is an offset.
 </div>
 
 <h4>Testing</h4>
@@ -101,7 +101,7 @@ where $A$ is the signal amplitude, ${{t}_{0}}$ is time at which the signal chang
 <div id="StepChart" style="width: 100%;"></div>
 
 <h3>Generalized square wave function $S_1(t)$</h3>
-<p>A step wave function also has only two states and it changes from one state to another at a regular interval of time..</p>
+<p>A square wave function also has only two states and it changes from one state to another at a regular interval of time..</p>
 <div style="display:none">
   $
     \newcommand{\sech}{\mathop{\rm sech}\nolimits}
@@ -150,7 +150,7 @@ where $A$ is the signal amplitude, ${{t}_{0}}$ is time at which the signal chang
 <div id="SquareChart" style="width: 100%;"></div>
 
 <h3>Generalized rectangular wave function $R(t)$</h3>
-<p>A rectangular wave function is similar to square wave where the period of each state is not the same. The percentage duration of the higher state with respect to lower state is called duty cycle.</p>
+<p>A rectangular wave function is similar to a square wave where the period of each state is not the same. The percentage duration of the higher state with respect to lower state is called duty cycle. This function is given by</p>
 <div>
 	\[R(t)=A\sgn\left[ \sin \left( \omega\left[ t+\frac{1}{2{{f}}}\left( 0.5-D \right) \right] \right)-\sin \left( \pi \left( 0.5-D \right) \right) \right]+ O\] 
 	\[\sgn (t)=\left\{ \begin{matrix}

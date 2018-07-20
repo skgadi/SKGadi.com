@@ -94,8 +94,9 @@ Team  Suresh Kumar Gadi Antonio Concha  </description>
       
       <guid>https://skgadi.com/posts/basic-waveforms/</guid>
       <description>The control theory uses the following waveforms.
-StepSquareRectangularSineTriangularSawtoothProgrammers working in the control theory applications may require to generate these waveforms. There are several techniques to produce these waveforms. This post presents an easy way of creating these waveforms. Also, an interactive way of testing these waveforms is available.
-Note that the functions presented here are easy to implement but not always efficient.</description>
+StepSquareRectangularSineTriangularSawtoothThere are several techniques to produce these inputs. This post presents an easy way of creating and testing them.
+Note that the functions presented here are easy to implement but not always efficient.
+Generalized step function $S_0(t)$A step wave has only two states and changes from one state to another at a single instance of time.</description>
     </item>
     
     <item>

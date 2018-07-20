@@ -2,11 +2,22 @@ var ChartHeight = 350;
 var x, y;
 var options = {
 	height: ChartHeight,
-
-	//curveType: 'function',
+	axes: {
+		x: {
+			0: {
+				side: 'bottom'
+			}
+		}
+	},
 	legend: {
 		position: 'none'
-	}
+	},
+	hAxis: {
+		title: 'Time, t'
+	},
+	vAxis: {
+		title: 'yAxis'
+	},
 };
 
 window.onload = function () {
@@ -56,7 +67,7 @@ function GetXAxis(Start, End, Samples) {
 
 function GenerateDataForGraphs(Lines, Names) {
 	var GData = new google.visualization.DataTable();
-	GData.addColumn('number', "xAxis");
+	GData.addColumn('number', "Time (s)");
 	if (Names.length == Lines.length) {
 		for (var i = 0; i < Names.length; i++)
 			GData.addColumn('number', Names[i]);
@@ -85,6 +96,7 @@ function SetStepChart() {
 		}
 		var data = GenerateDataForGraphs([[x, y]], ["Step"]);
 		var chart = new google.visualization.LineChart(document.getElementById('StepChart'));
+		options['vAxis']['title'] = 'Step, S0(t)';
 		chart.draw(data, options);
 	}
 }
@@ -96,6 +108,7 @@ function SetSquareChart() {
 			y[i] = ValOf('Square_A') * Math.sign(Math.sin(2 * Math.PI * ValOf('Square_f') * x[i])) + ValOf('Square_O');
 		var data = GenerateDataForGraphs([[x, y]], ["Square"]);
 		var chart = new google.visualization.LineChart(document.getElementById('SquareChart'));
+		options['vAxis']['title'] = 'Square, S1(t)';
 		chart.draw(data, options);
 	} else
 		$.notify("inappropriate value for frequency.", "error");
@@ -109,6 +122,7 @@ function SetRectChart() {
 					 - Math.sin(Math.PI * (0.5 - ValOf('Rect_D')))) + ValOf('Rect_O');
 		var data = GenerateDataForGraphs([[x, y]], ["Rectangular"]);
 		var chart = new google.visualization.LineChart(document.getElementById('RectChart'));
+		options['vAxis']['title'] = 'Rectangular, R(t)';
 		chart.draw(data, options);
 	} else
 		$.notify("inappropriate value for frequency or duty cycle.", "error");
@@ -121,6 +135,7 @@ function SetSineChart() {
 			y[i] = ValOf('Sine_A') * Math.sin(2 * Math.PI * ValOf('Sine_f') * x[i]) + ValOf('Sine_O');
 		var data = GenerateDataForGraphs([[x, y]], ["Sine"]);
 		var chart = new google.visualization.LineChart(document.getElementById('SineChart'));
+		options['vAxis']['title'] = 'Sine, S2(t)';
 		chart.draw(data, options);
 	} else
 		$.notify("inappropriate value for frequency.", "error");
@@ -133,6 +148,7 @@ function SetSawtoothChart() {
 			y[i] = 2 * ValOf('Sawtooth_A') * (ValOf('Sawtooth_f') * (x[i] % (1.0 / ValOf('Sawtooth_f'))) - 0.5) + ValOf('Sawtooth_O');
 		var data = GenerateDataForGraphs([[x, y]], ["Sawtooth"]);
 		var chart = new google.visualization.LineChart(document.getElementById('SawtoothChart'));
+		options['vAxis']['title'] = 'Sawtooth, S3(t)';
 		chart.draw(data, options);
 	} else
 		$.notify("inappropriate value for frequency.", "error");
@@ -145,6 +161,7 @@ function SetTriangularChart() {
 			y[i] = 2 * ValOf('Triangular_A') / Math.PI * Math.asin(Math.sin(2 * Math.PI * ValOf('Triangular_f') * x[i])) + ValOf('Triangular_O');
 		var data = GenerateDataForGraphs([[x, y]], ["Triangular"]);
 		var chart = new google.visualization.LineChart(document.getElementById('TriangularChart'));
+		options['vAxis']['title'] = 'Triangular, T(t)';
 		chart.draw(data, options);
 	} else
 		$.notify("inappropriate value for frequency.", "error");
