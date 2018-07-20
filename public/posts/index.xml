@@ -12,18 +12,6 @@
     
     
     <item>
-      <title>Basic waveforms used in the control systems and its implimentation technique</title>
-      <link>https://skgadi.com/posts/basic-waveforms/</link>
-      <pubDate>Sun, 18 Jun 2017 00:00:00 -0600</pubDate>
-      
-      <guid>https://skgadi.com/posts/basic-waveforms/</guid>
-      <description>The control theory uses the following waveforms.
-StepSquareRectangularSineTriangularSawtoothThere are several techniques to produce these inputs. This post presents an easy way of creating and testing them.
-Note that the functions presented here are easy to implement but not always efficient.
-Generalized step function $S_0(t)$A step wave has only two states and changes from one state to another at a single instance of time.</description>
-    </item>
-    
-    <item>
       <title>Father&#39;s day on 2017</title>
       <link>https://skgadi.com/posts/father-day-2017/</link>
       <pubDate>Sun, 18 Jun 2017 00:00:00 -0600</pubDate>
@@ -32,6 +20,18 @@ Generalized step function $S_0(t)$A step wave has only two states and changes f
       <description>Tishya&amp;rsquo;s voice recorded on the father&amp;rsquo;s day of 2017.
 Tishya wishing happy father&amp;rsquo;s day 
 Tishya conveying her love</description>
+    </item>
+    
+    <item>
+      <title>Implementation of basic waveforms used in control systems</title>
+      <link>https://skgadi.com/posts/basic-waveforms/</link>
+      <pubDate>Sun, 18 Jun 2017 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/posts/basic-waveforms/</guid>
+      <description>The control theory uses the following waveforms.
+StepSquareRectangularSineTriangularSawtoothThere are several techniques to produce these inputs. This post presents an easy way of creating and testing them.
+Note that the functions presented here are easy to implement but not always efficient.
+Generalized step function $S_0(t)$A step wave has only two states and changes from one state to another at a single instance of time.</description>
     </item>
     
     <item>
