@@ -358,26 +358,44 @@ function GenerateReport(Language) {
 	//mywindow = PrintElem('curve_chart', [],[]);
 	
 	$('#CompleteReport').html('\
-	<h1>Complete report</h1>\
-	<p>When `a != 0`, there are two solutions to `ax^2 + bx + c = 0` and \
-	they are</p>\
-	<p style="text-align:center">\
-  `x = (-b +- sqrt(b^2-4ac))/(2a) .`\
-</p>\
-<div id="ChartDiv_0"></div>\
-<div id="ChartDiv_1"></div>\
-<div id="ChartDiv_2"></div>\
-<div id="IMGDIV" style="width: 750px; height:500px"><img id="IMG000" style="width: 100%;"/><canvas id="ReportCanvas001"></canvas></div>\
+		<h1>Complete report</h1>\
+		<p>When `a != 0`, there are two solutions to `ax^2 + bx + c = 0` and \
+		they are</p>\
+		<p style="text-align:center">\
+		`x = (-b +- sqrt(b^2-4ac))/(2a) .`\
+		</p>\
+		<p>A specimen of an initial area $A_0 = \\SI{'+A_0+'}{\\meter\\square}$ and initial length $L_0 = \\SI{'+L_0+'}{\\centi\\meter}$ is put under a stress with the help of Universal Testing Machine (UTM). Figure 1 shows the relation between stress (`P`) and strain (`\sigma`), which are the data obtained from the UTM. The UTM measures the distance travelled from the initial position and the applied load. However, the stress obtained <\p>\
+		<div style="text-align:center; width: 100%;">\
+		<div id="ChartDiv_0" style="display: inline-block;"></div>\
+		<p>Figure 1: `P` vs `\sigma` obtained from the UTM.</p></div>\
+		<div style="margin: 200;"></div>\
+		<div id="ChartDiv_1"></div>\
+		<div style="margin: 200;"></div>\
+		<div id="ChartDiv_2"></div>\
+		<div id="IMGDIV" style="width: 750px; height:500px"><img id="IMG000" style="width: 100%;"/><canvas id="ReportCanvas001"></canvas></div>\
 	');
 	//ReportCanvas001 = PrepareChart002("ReportCanvas001");
 	mywindow = PrintElem('CompleteReport', [
-		'/css/report.css'
-		], [
-		'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML'
-		]);
+		'/css/report-print.css'
+		], []);
 	$(mywindow).bind('load', function(){
 		setTimeout(function(){
 			GenerateCharts(mywindow.document, 750);
+			var head = mywindow.document.getElementsByTagName("head")[0], script;
+			script = mywindow.document.createElement("script");
+			script.type = "text/x-mathjax-config";
+			script[(mywindow.opera ? "innerHTML" : "text")] =
+			"MathJax.Hub.Config({\n" +
+			"  tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']] },\n" +
+			"  jax: ['input/TeX','output/HTML-CSS'],"+
+			"  TeX: {extensions: ['[siunitx]/siunitx.js']}" +
+			"});" +
+			"MathJax.Ajax.config.path['siunitx']  = '../../js/';";
+			head.appendChild(script);
+			script = mywindow.document.createElement("script");
+			script.type = "text/javascript";
+			script.src  = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML";
+			head.appendChild(script);
 			//mywindow.print();
 			//mywindow.close();			
 		}, 1000);
