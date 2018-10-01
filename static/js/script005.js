@@ -13,6 +13,7 @@ var y_5;
 var x_6; // line approx of Ln Curve
 var y_6;
 
+
 var n;
 var A_0;
 var L_0;
@@ -35,16 +36,38 @@ var isChartsReady=false;
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(ChartsReady);
 
+var P_Max;
+var X; //Specific offset
+
 function ChartsReady() {
 	isChartsReady = true;
 }
 
 $( document ).ready(function() {
-	ResetView();
-	$("#InText").focusin(function () {
-		$("#InText").select();
-	});
+	ConfigureMathJax();
 });
+
+function ConfigureMathJax() {
+	MathJax.Hub.Config({
+		extensions: ["tex2jax.js"],
+		jax: ["input/TeX", "output/HTML-CSS"],
+		tex2jax: {
+			inlineMath: [['$', '$'], ["\\(", "\\)"]],
+			displayMath: [['$$', '$$'], ["\\[", "\\]"]],
+			processEscapes: true
+		},
+		"HTML-CSS": {
+			fonts: ["TeX"]
+		}
+	});
+	MathJax.Hub.Configured();
+	MathJax.Hub.Register.StartupHook("End",function () {
+			ResetView();
+			$("#InText").focusin(function () {
+				$("#InText").select();
+			});
+	});
+}
 
 function PerformCalculations() {
 	if (isChartsReady) {
@@ -53,7 +76,7 @@ function PerformCalculations() {
 		if (PrepareDataForCharts()) {
 			//MakeCharts();
 			SetViewAsCalculated();
-			GenerateCharts(document, 0);
+			//GenerateCharts(document, 0);
 			$.notify("Processed the information successfully.\nPlease wait for the graphs to load.\nIt may take few seconds for you to access the browser.", "success");
 		} else {
 			$.notify("Error in the input text, unable to process.", "error");
@@ -69,13 +92,14 @@ function Reset() {
 }
 
 function ResetView() {
-	$("#InText").val("Copy the two columns (Load and Elongation) from an excel sheet and paste it here.");
+	$("#InText").val("");
 	$(".ProgressBar").css('display', 'none');
 	$(".UserInput").css('display', 'block');
 	$(".Report").css('display', 'none');
 	$(".HideWhenLoaded").css('display', 'none');
 	$(".UserInputItem0").prop('disabled', false);
 	$(".UserInputItem1").prop('disabled', true);
+	$(".UserInputItem2").css('display', 'none');
 	//$("html, body").delay(2000).animate({scrollTop: $('#UserInputDiv').offset().top - 60}, "slow");
 	$('#InText').focus().select();
 	//$("html, body").animate({ scrollTop: 0 }, "slow");
@@ -93,6 +117,8 @@ function SetViewAsCalculated() {
 	$(".Report").css('display', 'block');
 	$(".UserInputItem0").prop('disabled', true);
 	$(".UserInputItem1").prop('disabled', false);
+	$(".UserInputItem2").css('display', 'block');
+	$('#UTM_Brand').focus().select();
 	//$("html, body").delay(2000).animate({scrollTop: $('#GenReportDiv').offset().top - 60}, "slow");
 }
 
@@ -100,43 +126,45 @@ function GenerateCharts(ForDocument, chartWidth) {
 	var chart;
 	var data;
 	chart = new google.visualization.LineChart(ForDocument.getElementById('ChartDiv_0'));
-	data = GenerateDataForGraphs([[x_0, y_0]], ["Stress"]);
-	chart.draw(data, GetProperties("Strain", "Stress", 500, chartWidth));
+	data = GenerateDataForGraphs([[x_0, y_0]], ["P"]);
+	chart.draw(data, GetProperties("Elongation (milli-meter)", "Force (Newtons)", 500, chartWidth));
 	chart = new google.visualization.LineChart(ForDocument.getElementById('ChartDiv_1'));
-	data = GenerateDataForGraphs([[x_1, y_1], [x_2, y_2], [x_3, y_3], [x_4, y_4]], ["Stress 1", "Stress 2", "Stress 3", "Stress 4"]);
-	chart.draw(data, GetProperties("Strain", "Stress", 500, chartWidth));
+	data = GenerateDataForGraphs([[x_1, y_1], [x_2, y_2], [x_3, y_3], [x_4, y_4]], ["Engineering curve", "Real curve", "Stress 3", "Stress 4"]);
+	chart.draw(data, GetProperties("Strain", "Stress (Mega Pascal)", 500, chartWidth));
 	chart = new google.visualization.LineChart(ForDocument.getElementById('ChartDiv_2'));
 	data = GenerateDataForGraphs([[x_5, y_5], [x_6, y_6]], ["Stress 1", "Stress 2"]);
 	chart.draw(data, GetProperties("Strain", "Stress", 500, chartWidth));
 }
-function GetProperties (xLabel, yLabel, height, width) {
-	if (width==0) {
+function GetProperties (xLabel, yLabel, CHeight, CWidth) {
+	if (CWidth==0) {
 		return {
-			height: height,
+			height: CHeight,
+			curveType: 'function',
 			curveType: 'function',
 			fontName: "Times",
 			hAxis: {
-			  title: xLabel
+			  title: xLabel,
+			  format: 'decimal'
 			},
 			vAxis: {
 			  title: yLabel
 			},
-			legend: { position: 'top' },
-			vAxis: {format: 'decimal'}
+			legend: { position: 'right' }
 		};		
 	} else return {
-			height: height,
-			width: width,
+			height: CHeight,
+			width: CWidth,
+			'chartArea':{left: 125,top: 30, right: 150, bottom: 50},
 			curveType: 'function',
 			fontName: "Times",
 			hAxis: {
-			  title: xLabel
+			  title: xLabel,
+			  format: 'decimal'
 			},
 			vAxis: {
 			  title: yLabel
 			},
-			legend: { position: 'top' },
-			vAxis: {format: 'decimal'}
+			legend: { position: 'right' }
 		};
 }
 function GenerateDataForGraphs (Lines, Names) {
@@ -178,11 +206,13 @@ function AddLineData (ExistingData, NewLine, Name){
 }
 
 function PrepareDataForCharts () {
-	A_0 = parseFloat($( "#A_0").val(), 10);
-	L_0 = parseFloat($( "#L_0").val(), 10);
-	RSquaredTestForSize = parseFloat($( "#RSquaredTestForSize").val(), 10);
+	A_0 = parseFloat($( "#A_0").val());
+	L_0 = parseFloat($( "#L_0").val());
+	X = parseFloat($( "#X").val());
+	RSquaredTestForSize = parseFloat($( "#RSquaredTestForSize").val());
 	if (isNaN(A_0)) $( "#A_0").val(A_0 = 30.7483);
 	if (isNaN(L_0)) $( "#L_0").val(L_0 = 25.4);
+	if (isNaN(X)) $( "#X").val(X = 0.2);
 	if (isNaN(RSquaredTestForSize)) $( "#RSquaredTestForSize").val(RSquaredTestForSize = 100);
 	
 	Lines = $("#InText").val().split('\n');
@@ -191,6 +221,7 @@ function PrepareDataForCharts () {
 	var TempX_0;
 	var TempY_0;
 	var TempIndex=0;
+	P_Max = 0;
 	for (var i = 0; i < Lines.length; i++) {
 		InputVars = Lines[i].split('\t');
 		TempX_0 = parseFloat(InputVars[0]);
@@ -200,6 +231,7 @@ function PrepareDataForCharts () {
 			y_0[TempIndex] = TempY_0;
 			TempIndex++;
 		}
+		P_Max = (TempY_0>P_Max)?TempY_0:P_Max;
 	}
 	n=x_0.length;
 	if ((n<=RSquaredTestForSize) && (RSquaredTestForSize>1)) return false;
@@ -275,7 +307,7 @@ function PrepareDataForCharts () {
 	}*/
 	x_4 = [];
 	y_4 = [];
-	PercentDot2Value = 0.002;//*ss.max(x_2);
+	PercentDot2Value = X/100.0;//offset;
 	for (var i=0; i<x_3.length; i++) {
 		x_4[i] = x_3[i] + PercentDot2Value;
 		y_4[i] = y_3[i];//TempResult(x_3[i]);
@@ -358,44 +390,58 @@ function GenerateReport(Language) {
 	//mywindow = PrintElem('curve_chart', [],[]);
 	
 	$('#CompleteReport').html('\
-		<h1>Complete report</h1>\
-		<p>When `a != 0`, there are two solutions to `ax^2 + bx + c = 0` and \
-		they are</p>\
-		<p style="text-align:center">\
-		`x = (-b +- sqrt(b^2-4ac))/(2a) .`\
-		</p>\
-		<p>A specimen of an initial area $A_0 = \\SI{'+A_0+'}{\\meter\\square}$ and initial length $L_0 = \\SI{'+L_0+'}{\\centi\\meter}$ is put under a stress with the help of Universal Testing Machine (UTM). Figure 1 shows the relation between stress (`P`) and strain (`\sigma`), which are the data obtained from the UTM. The UTM measures the distance travelled from the initial position and the applied load. However, the stress obtained <\p>\
+		<div class="ShowWhenLoading"><p>Generating report ...</p><p>If it takes more than 1 minute, close this window and try again.</p></div>\
+		<div class="HideWhenLoading" style="display: none">\
+		<h1>Stress strain analysis report</h1>\
+		<p>This report analyze the data obtained from a Universal Testing Machine (UTM) to extract the following information.</p>\
+		<ul><li>Engineering curve</li><li>Real curve</li><li></li><li></li></ul>\
+		<p>In the next section a figure is plotted with the information obtained from the UTM. The later section provides engineering and real curves along with the proportionality line and the specific offset.</p>\
+		<h2>1. Data obtained from the Universal Testing Machine (UTM)</h2>\
+		<p>A specimen of an initial area $A_0 = '+A_0+'~\\mbox{mm}^2$ and initial length $L_0 = '+L_0+'~\\mbox{mm}$ is put under a '+$("#TestType").val().toLowerCase()+' stress with the help of a <b>'+$("#UTM_Brand").val()+'\'s '+$("#UTM_Model").val()+'</b> Universal Testing Machine (UTM) with the serial number <b>'+$("#UTM_SerialNo").val()+'</b>. Figure 1 shows the relation between the load, $P$, applied on the specimen and its change in longitude, $\\delta$, which are the data obtained from the UTM. The maximum load applied on the specimen is $P_{M}='+P_Max+'~\\mbox{N}$.<\p>\
 		<div style="text-align:center; width: 100%;">\
 		<div id="ChartDiv_0" style="display: inline-block;"></div>\
-		<p>Figure 1: `P` vs `\sigma` obtained from the UTM.</p></div>\
-		<div style="margin: 200;"></div>\
+		<p class="Figure">Figure 1: `P` vs `\\delta` obtained from the UTM.</p></div>\
+		<h2>2. Engineering and real curve</h2>\
+		<p>The engineering curve is shown by the first curve of Figure 2, which plots $$\\sigma:=\\frac{P}{A_0}\\mbox{ and }\\epsilon:=\\frac{\\delta}{L_0}.$$ The real curve is also .</p>\
+		<div style="text-align:center; width: 100%;">\
 		<div id="ChartDiv_1"></div>\
+		<p class="Figure">Figure 2: Engineering, and real curves along with the slope .</p>\
+		</div>\
 		<div style="margin: 200;"></div>\
 		<div id="ChartDiv_2"></div>\
 		<div id="IMGDIV" style="width: 750px; height:500px"><img id="IMG000" style="width: 100%;"/><canvas id="ReportCanvas001"></canvas></div>\
+		</div>\
 	');
 	//ReportCanvas001 = PrepareChart002("ReportCanvas001");
 	mywindow = PrintElem('CompleteReport', [
 		'/css/report-print.css'
-		], []);
+		], [
+		'https://code.jquery.com/jquery-3.3.1.slim.min.js'
+		]);
 	$(mywindow).bind('load', function(){
 		setTimeout(function(){
 			GenerateCharts(mywindow.document, 750);
 			var head = mywindow.document.getElementsByTagName("head")[0], script;
 			script = mywindow.document.createElement("script");
 			script.type = "text/x-mathjax-config";
-			script[(mywindow.opera ? "innerHTML" : "text")] =
-			"MathJax.Hub.Config({\n" +
-			"  tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']] },\n" +
-			"  jax: ['input/TeX','output/HTML-CSS'],"+
-			"  TeX: {extensions: ['[siunitx]/siunitx.js']}" +
-			"});" +
-			"MathJax.Ajax.config.path['siunitx']  = '../../js/';";
+			script[(mywindow.opera ? "innerHTML" : "text")] = "\
+			MathJax.Hub.Config({\n\
+			  tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']] },\n\
+			  jax: ['input/TeX','output/HTML-CSS'],\
+			});\
+			MathJax.Hub.Register.StartupHook('End',function () {\
+				$('.ShowWhenLoading').css('display', 'none');\
+				$('.HideWhenLoading').css('display', 'block');\
+			});\
+			";
 			head.appendChild(script);
 			script = mywindow.document.createElement("script");
 			script.type = "text/javascript";
 			script.src  = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML";
 			head.appendChild(script);
+			mywindow.moveTo(0, 0);
+			mywindow.resizeTo(screen.width, screen.height);
+
 			//mywindow.print();
 			//mywindow.close();			
 		}, 1000);
