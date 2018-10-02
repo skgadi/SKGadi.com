@@ -1,8 +1,10 @@
-var x_0; // Data from UTM
+var x_in; // Data from UTM
+var y_in;
+var x_0; // Data from UTM after preprocessing
 var y_0;
 var x_1; // Engineering stress strain curve
 var y_1;
-var x_2; // Real stress strain curve
+var x_2; // Real/True stress strain curve
 var y_2;
 var x_3; // LinearRange curve
 var y_3;
@@ -36,6 +38,7 @@ var isChartsReady=false;
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(ChartsReady);
 
+var MaxRealCurve;
 var P_Max;
 var X; //Specific offset
 
@@ -127,10 +130,10 @@ function GenerateCharts(ForDocument, chartWidth) {
 	var data;
 	chart = new google.visualization.LineChart(ForDocument.getElementById('ChartDiv_0'));
 	data = GenerateDataForGraphs([[x_0, y_0]], ["P"]);
-	chart.draw(data, GetProperties("Elongation (milli-meter)", "Force (Newtons)", 500, chartWidth));
+	chart.draw(data, GetProperties("Elongation in millimeter", "Force in newtons", 500, chartWidth));
 	chart = new google.visualization.LineChart(ForDocument.getElementById('ChartDiv_1'));
-	data = GenerateDataForGraphs([[x_1, y_1], [x_2, y_2], [x_3, y_3], [x_4, y_4]], ["Engineering curve", "Real curve", "Stress 3", "Stress 4"]);
-	chart.draw(data, GetProperties("Strain", "Stress (Mega Pascal)", 500, chartWidth));
+	data = GenerateDataForGraphs([[x_1, y_1], [x_2, y_2], [x_3, y_3], [x_4, y_4]], ["Engineering curve", "Real/True curve", "Stress 3", "Stress 4"]);
+	chart.draw(data, GetProperties("Strain in meter/meter", "Stress in megapascal", 500, chartWidth));
 	chart = new google.visualization.LineChart(ForDocument.getElementById('ChartDiv_2'));
 	data = GenerateDataForGraphs([[x_5, y_5], [x_6, y_6]], ["Stress 1", "Stress 2"]);
 	chart.draw(data, GetProperties("Strain", "Stress", 500, chartWidth));
@@ -205,6 +208,56 @@ function AddLineData (ExistingData, NewLine, Name){
 	return result;
 }
 
+function PreprocessingData () {
+	Lines = $("#InText").val().split('\n');
+	x_in = [];
+	y_in = [];
+	var TempX_0;
+	var TempY_0;
+	var TempIndex=0;
+	P_Max = 0;
+	for (var i = 0; i < Lines.length; i++) {
+		InputVars = Lines[i].split('\t');
+		TempX_0 = parseFloat(InputVars[0]);
+		TempY_0 = parseFloat(InputVars[1]);
+		if (!isNaN(TempX_0) && !isNaN(TempY_0)) {
+			x_in[TempIndex] = TempX_0;
+			y_in[TempIndex] = TempY_0;
+			TempIndex++;
+		}
+		P_Max = (TempY_0>P_Max)?TempY_0:P_Max;
+	}
+	x_0 = [];
+	y_0 = [];
+	TempIndex=0;
+	var TempSum;
+	var TempCount;
+	var Offset_x = 0;
+	var Offset_y = 0;
+	for (var i = 0; i < x_in.length;) {
+		TempSum = 0;
+		TempCount = 0;
+		for (var j = 0; j <x_in.length; j++) {
+			if ( x_in[i+j] == x_in[i] ) {
+				TempSum += y_in[i+j];
+				TempCount++;
+			}else
+				break;
+		}
+		/*console.log("Temp Count="+ TempCount);
+		console.log("i="+ i);*/
+		if (TempIndex == 0){
+			Offset_x = x_in[i]
+			Offset_y = TempSum/TempCount;
+		}
+		x_0[TempIndex] = x_in[i] - Offset_x;
+		y_0[TempIndex] = TempSum/TempCount - Offset_y;
+		TempIndex++;
+		i = i+ TempCount;
+	}
+	n=x_0.length;
+}
+
 function PrepareDataForCharts () {
 	A_0 = parseFloat($( "#A_0").val());
 	L_0 = parseFloat($( "#L_0").val());
@@ -215,25 +268,10 @@ function PrepareDataForCharts () {
 	if (isNaN(X)) $( "#X").val(X = 0.2);
 	if (isNaN(RSquaredTestForSize)) $( "#RSquaredTestForSize").val(RSquaredTestForSize = 100);
 	
-	Lines = $("#InText").val().split('\n');
-	x_0 = [];
-	y_0 = [];
-	var TempX_0;
-	var TempY_0;
-	var TempIndex=0;
-	P_Max = 0;
-	for (var i = 0; i < Lines.length; i++) {
-		InputVars = Lines[i].split('\t');
-		TempX_0 = parseFloat(InputVars[0]);
-		TempY_0 = parseFloat(InputVars[1]);
-		if (!isNaN(TempX_0) && !isNaN(TempY_0)) {
-			x_0[TempIndex] = TempX_0;
-			y_0[TempIndex] = TempY_0;
-			TempIndex++;
-		}
-		P_Max = (TempY_0>P_Max)?TempY_0:P_Max;
-	}
-	n=x_0.length;
+	PreprocessingData();
+	//Tobetested settings
+	RSquaredTestForSize = Math.round(n/3);
+	
 	if ((n<=RSquaredTestForSize) && (RSquaredTestForSize>1)) return false;
 	x_1 = new Array(n);
 	y_1 = new Array(n);
@@ -271,7 +309,7 @@ function PrepareDataForCharts () {
 		if (SetBreak==true)
 			break FindingLinearRegion;
 	}
-	//Find the exact point of linear
+	//Find the exact point of linear relationship
 	RSquaredHistorySize = RSquaredHistory.length;
 	if (RSquaredHistorySize > RSquaredTestForSize) {
 		for (var i=0; i<RSquaredTestForSize; i++) {
@@ -285,9 +323,10 @@ function PrepareDataForCharts () {
 		TempData[i][0] = x_2[i];
 		TempData[i][1] = y_2[i];
 	}
-	var MaxRealCurve = ss.max(y_2);
-	TempVars = ss.linearRegression(TempData);
-	ProportinalLineParameters = ss.linearRegressionLine(TempVars);
+	//console.log(TempData);
+	MaxRealCurve = ss.max(y_2);
+	TempVars = regression('linearThroughOrigin', TempData);
+	ProportinalLineParameters = ss.linearRegressionLine({m: TempVars.equation, b:0});
 	x_3 = [];
 	y_3 = [];
 	x_3[0] = 0;
@@ -394,19 +433,20 @@ function GenerateReport(Language) {
 		<div class="HideWhenLoading" style="display: none">\
 		<h1>Stress strain analysis report</h1>\
 		<p>This report analyze the data obtained from a Universal Testing Machine (UTM) to extract the following information.</p>\
-		<ul><li>Engineering curve</li><li>Real curve</li><li></li><li></li></ul>\
+		<ul><li>Engineering curve</li><li>Real/true curve</li><li></li><li></li></ul>\
 		<p>In the next section a figure is plotted with the information obtained from the UTM. The later section provides engineering and real curves along with the proportionality line and the specific offset.</p>\
 		<h2>1. Data obtained from the Universal Testing Machine (UTM)</h2>\
 		<p>A specimen of an initial area $A_0 = '+A_0+'~\\mbox{mm}^2$ and initial length $L_0 = '+L_0+'~\\mbox{mm}$ is put under a '+$("#TestType").val().toLowerCase()+' stress with the help of a <b>'+$("#UTM_Brand").val()+'\'s '+$("#UTM_Model").val()+'</b> Universal Testing Machine (UTM) with the serial number <b>'+$("#UTM_SerialNo").val()+'</b>. Figure 1 shows the relation between the load, $P$, applied on the specimen and its change in longitude, $\\delta$, which are the data obtained from the UTM. The maximum load applied on the specimen is $P_{M}='+P_Max+'~\\mbox{N}$.<\p>\
 		<div style="text-align:center; width: 100%;">\
 		<div id="ChartDiv_0" style="display: inline-block;"></div>\
 		<p class="Figure">Figure 1: `P` vs `\\delta` obtained from the UTM.</p></div>\
-		<h2>2. Engineering and real curve</h2>\
-		<p>The engineering curve is shown by the first curve of Figure 2, which plots $$\\sigma:=\\frac{P}{A_0}\\mbox{ and }\\epsilon:=\\frac{\\delta}{L_0}.$$ The real curve is also .</p>\
+		<h2>2. Engineering and true curve</h2>\
+		<p>The engineering stress-strain curve is shown by the first curve of Figure 2, which plots $$\\sigma_E :=\\frac{P}{A_0}\\mbox{ and }\\epsilon_E:=\\frac{\\delta}{L_0}.$$ This figure also shows the real or true stress-strain curve which is obtained by $$\\epsilon_T := \\ln{\\left( 1 + \\epsilon_E \\right)} \\mbox{ and } \\sigma_T := \\sigma_E \\left( 1 + \\epsilon_E \\right).$$</p>\
 		<div style="text-align:center; width: 100%;">\
-		<div id="ChartDiv_1"></div>\
+		<div id="ChartDiv_1" style="display: inline-block;"></div>\
 		<p class="Figure">Figure 2: Engineering, and real curves along with the slope .</p>\
 		</div>\
+		<p>The Young\'s modulus, $E = '+Math.round(ProportinalLineParameters(1)*1000)/1000+'~\\mbox{MPa}$, the ultimate stress, $\\sigma_U = '+Math.round(MaxRealCurve*1000)/1000+'~\\mbox{MPa}$, the fracture strain, $\\sigma_F = '+Math.round(y_2[n-1]*1000)/1000+'~\\mbox{MPa}$, the yield point, ($'+Math.round(x_2[LinearUpto]*1000)/1000+', '+Math.round(y_2[LinearUpto]*1000)/1000+'$), the offset yeild point, ($'+Math.round(IntersectionPoint[0]*1000)/1000+', '+Math.round(IntersectionPoint[1]*1000)/1000+'$), the modulus of resiliance, $U_r = '+Math.round(x_2[LinearUpto]*y_2[LinearUpto]/2*1000)/1000+'~\\mbox{MPa}$ are obtained from the Figure 2.</p>\
 		<div style="margin: 200;"></div>\
 		<div id="ChartDiv_2"></div>\
 		<div id="IMGDIV" style="width: 750px; height:500px"><img id="IMG000" style="width: 100%;"/><canvas id="ReportCanvas001"></canvas></div>\

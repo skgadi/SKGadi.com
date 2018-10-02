@@ -7,3 +7,8 @@ p {
 .Figure {
 	text-align: center;
 }
+/*
+@media print {
+    h1, h2 {page-break-before: always;}
+}
+*/

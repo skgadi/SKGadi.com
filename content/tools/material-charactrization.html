@@ -26,11 +26,11 @@ layout = "outer-padding-no-border"
 	URL = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=configured"
 	Local = "false"
 [[JSPlugInEnd]]
-URL = "gen-funcs.js"
-Local = "true"
+	URL = "gen-funcs.js"
+	Local = "true"
 [[JSPlugInEnd]]
-URL = "script005.js"
-Local = "true"
+	URL = "script005.js"
+	Local = "true"
 
 
 
@@ -84,8 +84,9 @@ Local = "true"
 <div id="UserInputDiv" style="display: none;" class="UserInput w3-row w3-border w3-border-theme">
 	<header class="w3-container w3-theme"><h5><b><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;User input</b></h5></header>
 	<div class="w3-col m12 l12 s12 w3-padding">
+		<div style="display: none">
 		<label>Setting: Tolerance to find the slope</label>
-		<input id="RSquaredTestForSize" class="UserInputItem0 w3-input w3-border w3-border-theme" type="number" value= "100">
+		<input id="RSquaredTestForSize" class="UserInputItem0 w3-input w3-border w3-border-theme" type="number" value= "100"> </div>
 		<label>Initial area, $A_0$, measured in $\mbox{mm}^2$</label>
 		<input id="A_0" class="UserInputItem0 w3-input w3-border w3-border-theme" type="number" value= "30.7483">
 		<label>Initial length, $L_0$, measured in $\mbox{mm}$</label>
