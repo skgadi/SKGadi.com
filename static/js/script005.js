@@ -353,15 +353,15 @@ function PrepareDataForCharts () {
 	}
 	for (var i=1; i<n; i++) {
 		if (
-			(y_2[i-1] <= ProportinalLineParameters(x_2[i]-PercentDot2Value))
+			(y_2[i-1] >= ProportinalLineParameters(x_2[i-1]-PercentDot2Value))
 			&&
-			(y_2[i] >= ProportinalLineParameters(x_2[i]-PercentDot2Value))
-		) { 
+			(y_2[i] <= ProportinalLineParameters(x_2[i]-PercentDot2Value))
+		) {
+			console.log("Found a intersection point");
 			FindIntersectionPoint(
 				[[x_2[i-1], ProportinalLineParameters(x_2[i-1]-PercentDot2Value)],
 				[x_2[i], ProportinalLineParameters(x_2[i]-PercentDot2Value)]],
-				[[x_2[i-2], y_2[i-2]],
-				[x_2[i-1], y_2[i-1]],
+				[[x_2[i-1], y_2[i-1]],
 				[x_2[i], y_2[i]]]
 			);
 			IntersectionPointIndex = i;
@@ -398,18 +398,15 @@ function PrepareDataForCharts () {
 function FindIntersectionPoint (LineData, CurveData) {
 	IntersectionPoint = [];
 	var LineDataRegression = regression('polynomial', LineData, 1);
-	var CurveDataRegression = regression('polynomial', CurveData, 2);
+	var CurveDataRegression = regression('polynomial', CurveData, 1);
+	//console.log(LineDataRegression);
+	//console.log(CurveDataRegression);
 	Temp_A = LineDataRegression.equation[1];
 	Temp_B = LineDataRegression.equation[0];
-	Temp_C = CurveDataRegression.equation[2];
-	Temp_D = CurveDataRegression.equation[1];
-	Temp_E = CurveDataRegression.equation[0];
-	TempDescriminate = Math.sqrt (Math.pow(Temp_D-Temp_A, 2) - 4*Temp_C*(Temp_E-Temp_B));
-	TempIntersectionPointX1 = ( (Temp_A - Temp_D) - TempDescriminate)/(2*Temp_C);
-	TempIntersectionPointX2 = ( (Temp_A - Temp_D) + TempDescriminate)/(2*Temp_C);
-	if (Math.abs(LineData[0][0]-TempIntersectionPointX1) < (Math.abs(LineData[0][0]-TempIntersectionPointX2)))
-		IntersectionPoint[0] = TempIntersectionPointX1;
-	else IntersectionPoint[0] = TempIntersectionPointX2;
+	Temp_C = CurveDataRegression.equation[1];
+	Temp_D = CurveDataRegression.equation[0];
+	//Temp_E = CurveDataRegression.equation[0];
+	IntersectionPoint[0] = (Temp_D - Temp_B)/(Temp_A - Temp_C);
 	IntersectionPoint[1] = ProportinalLineParameters(IntersectionPoint[0]-PercentDot2Value);
 }
 
