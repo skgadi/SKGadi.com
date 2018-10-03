@@ -49,9 +49,9 @@ function ChartsReady() {
 	isChartsReady = true;
 }
 
-$( document ).ready(function() {
+window.onload = function () {
 	ConfigureMathJax();
-});
+}
 
 function ConfigureMathJax() {
 	MathJax.Hub.Config({
