@@ -22,6 +22,7 @@ var L_0;
 var Chart_0;
 var Chart_1;
 var Chart_2;
+var Chart_3;
 var TempData;
 var TempVars;
 var TempResult;
@@ -35,6 +36,8 @@ var IntersectionPoint;
 var IntersectionPointIndex;
 var ProportinalLineParameters;
 var isChartsReady=false;
+var TrueCurveApproxEquation;
+var TrueCurveApproxEquationVars;
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(ChartsReady);
 
@@ -132,11 +135,14 @@ function GenerateCharts(ForDocument, chartWidth) {
 	data = GenerateDataForGraphs([[x_0, y_0]], ["P"]);
 	chart.draw(data, GetProperties("Elongation in millimeter", "Force in newtons", 500, chartWidth));
 	chart = new google.visualization.LineChart(ForDocument.getElementById('ChartDiv_1'));
-	data = GenerateDataForGraphs([[x_1, y_1], [x_2, y_2], [x_3, y_3], [x_4, y_4]], ["Engineering curve", "Real/True curve", "Stress 3", "Stress 4"]);
+	data = GenerateDataForGraphs([[x_1, y_1], [x_3, y_3], [x_4, y_4]], ["Engineering curve", "Proportionality line", "Specific offset line"]);
+	chart.draw(data, GetProperties("Strain in meter/meter", "Stress in megapascal", 500, chartWidth));
+	chart = new google.visualization.LineChart(ForDocument.getElementById('ChartDiv_3'));
+	data = GenerateDataForGraphs([[x_1, y_1], [x_2, y_2]], ["Engineering curve", "Real/True curve"]);
 	chart.draw(data, GetProperties("Strain in meter/meter", "Stress in megapascal", 500, chartWidth));
 	chart = new google.visualization.LineChart(ForDocument.getElementById('ChartDiv_2'));
-	data = GenerateDataForGraphs([[x_5, y_5], [x_6, y_6]], ["Stress 1", "Stress 2"]);
-	chart.draw(data, GetProperties("Strain", "Stress", 500, chartWidth));
+	data = GenerateDataForGraphs([[x_5, y_5], [x_6, y_6]], ["Real/True curve", "Linear approximation"]);
+	chart.draw(data, GetProperties("log(True strain)", "log(True stress)", 500, chartWidth));
 }
 function GetProperties (xLabel, yLabel, CHeight, CWidth) {
 	if (CWidth==0) {
@@ -157,7 +163,7 @@ function GetProperties (xLabel, yLabel, CHeight, CWidth) {
 	} else return {
 			height: CHeight,
 			width: CWidth,
-			'chartArea':{left: 125,top: 30, right: 150, bottom: 50},
+			'chartArea':{left: 125,top: 30, right: 175, bottom: 50},
 			curveType: 'function',
 			fontName: "Times",
 			hAxis: {
@@ -289,8 +295,8 @@ function PrepareDataForCharts () {
 		TempData = new Array(i);
 		for (var j=0; j<i; j++) {
 			TempData[j] = new Array(2);
-			TempData[j][0] = x_2[j];
-			TempData[j][1] = y_2[j];
+			TempData[j][0] = x_1[j];
+			TempData[j][1] = y_1[j];
 		}
 		/*TempVars = ss.linearRegression(TempData);
 		TempResult = ss.linearRegressionLine(TempVars);*/
@@ -320,8 +326,8 @@ function PrepareDataForCharts () {
 	TempData = new Array(LinearUpto+1);
 	for (var i=0; i<=LinearUpto; i++) {
 		TempData[i] = new Array(2);
-		TempData[i][0] = x_2[i];
-		TempData[i][1] = y_2[i];
+		TempData[i][0] = x_1[i];
+		TempData[i][1] = y_1[i];
 	}
 	//console.log(TempData);
 	MaxRealCurve = ss.max(y_2);
@@ -332,8 +338,8 @@ function PrepareDataForCharts () {
 	x_3[0] = 0;
 	y_3[0] = 0;
 	for (var i=0; i<n; i++) {
-		if (ProportinalLineParameters(x_2[i]) > 1.1*MaxRealCurve) {
-			x_3[1] = x_2[i];
+		if (ProportinalLineParameters(x_1[i]) > 1.1*MaxRealCurve) {
+			x_3[1] = x_1[i];
 			y_3[1] = ProportinalLineParameters(x_3[1]);
 			break;
 		}
@@ -353,16 +359,16 @@ function PrepareDataForCharts () {
 	}
 	for (var i=1; i<n; i++) {
 		if (
-			(y_2[i-1] >= ProportinalLineParameters(x_2[i-1]-PercentDot2Value))
+			(y_1[i-1] >= ProportinalLineParameters(x_1[i-1]-PercentDot2Value))
 			&&
-			(y_2[i] <= ProportinalLineParameters(x_2[i]-PercentDot2Value))
+			(y_1[i] <= ProportinalLineParameters(x_1[i]-PercentDot2Value))
 		) {
-			console.log("Found a intersection point");
+			//console.log("Found a intersection point");
 			FindIntersectionPoint(
-				[[x_2[i-1], ProportinalLineParameters(x_2[i-1]-PercentDot2Value)],
-				[x_2[i], ProportinalLineParameters(x_2[i]-PercentDot2Value)]],
-				[[x_2[i-1], y_2[i-1]],
-				[x_2[i], y_2[i]]]
+				[[x_1[i-1], ProportinalLineParameters(x_1[i-1]-PercentDot2Value)],
+				[x_1[i], ProportinalLineParameters(x_1[i]-PercentDot2Value)]],
+				[[x_1[i-1], y_1[i-1]],
+				[x_1[i], y_1[i]]]
 			);
 			IntersectionPointIndex = i;
 			break;
@@ -384,14 +390,14 @@ function PrepareDataForCharts () {
 		TempData[i][0] = x_5[i];
 		TempData[i][1] = y_5[i];
 	}
-	TempVars = ss.linearRegression(TempData);
-	TempResult = ss.linearRegressionLine(TempVars);
+	TrueCurveApproxEquationVars = ss.linearRegression(TempData);
+	TrueCurveApproxEquation = ss.linearRegressionLine(TrueCurveApproxEquationVars);
 	x_6 = new Array(2);
 	y_6 = new Array(2);
-	x_6[0] = x_5[0];
-	y_6[0] = TempResult(x_6[0]);
-	x_6[1] = (1+0.1*Math.sign(x_5[x_5.length-1]))*x_5[x_5.length-1];
-	y_6[1] = TempResult(x_6[1]);
+	x_6[0] = (1-0.05*Math.sign(x_5[x_5.length-1]))*x_5[0];
+	y_6[0] = TrueCurveApproxEquation(x_6[0]);
+	x_6[1] = (1+0.05*Math.sign(x_5[x_5.length-1]))*x_5[x_5.length-1];
+	y_6[1] = TrueCurveApproxEquation(x_6[1]);
 	return true;
 }
 
@@ -443,10 +449,18 @@ function GenerateReport(Language) {
 		<div id="ChartDiv_1" style="display: inline-block;"></div>\
 		<p class="Figure">Figure 2: Engineering, and real curves along with the slope .</p>\
 		</div>\
-		<p>The Young\'s modulus, $E = '+Math.round(ProportinalLineParameters(1)*1000)/1000+'~\\mbox{MPa}$, the ultimate stress, $\\sigma_U = '+Math.round(MaxRealCurve*1000)/1000+'~\\mbox{MPa}$, the fracture strain, $\\sigma_F = '+Math.round(y_2[n-1]*1000)/1000+'~\\mbox{MPa}$, the yield point, ($'+Math.round(x_2[LinearUpto]*1000)/1000+', '+Math.round(y_2[LinearUpto]*1000)/1000+'$), the offset yeild point, ($'+Math.round(IntersectionPoint[0]*1000)/1000+', '+Math.round(IntersectionPoint[1]*1000)/1000+'$), the modulus of resiliance, $U_r = '+Math.round(x_2[LinearUpto]*y_2[LinearUpto]/2*1000)/1000+'~\\mbox{MPa}$ are obtained from the Figure 2.</p>\
-		<div style="margin: 200;"></div>\
-		<div id="ChartDiv_2"></div>\
-		<div id="IMGDIV" style="width: 750px; height:500px"><img id="IMG000" style="width: 100%;"/><canvas id="ReportCanvas001"></canvas></div>\
+		<p>The Young\'s modulus, $E = '+Math.round(ProportinalLineParameters(1)*1000)/1000+'~\\mbox{MPa}$, the ultimate stress, $\\sigma_U = '+Math.round(MaxRealCurve*1000)/1000+'~\\mbox{MPa}$, the fracture strain, $\\sigma_F = '+Math.round(y_2[n-1]*1000)/1000+'~\\mbox{MPa}$, the yield point, ($'+Math.round(x_1[LinearUpto]*1000)/1000+', '+Math.round(y_1[LinearUpto]*1000)/1000+'$), the offset yeild point, ($'+Math.round(IntersectionPoint[0]*1000)/1000+', '+Math.round(IntersectionPoint[1]*1000)/1000+'$), the modulus of resiliance, $U_r = '+Math.round(x_1[LinearUpto]*y_1[LinearUpto]/2*1000)/1000+'~\\mbox{MPa}$, and the rupture point ($'+Math.round(x_1[n-1]*1000)/1000+', '+Math.round(y_1[n-1]*1000)/1000+'$) are obtained from the Figure 2.</p>\
+		<div style="text-align:center; width: 100%;">\
+		<div id="ChartDiv_3" style="display: inline-block;"></div>\
+		<p class="Figure">Figure 3: Engineering and true stress strain curves.</p>\
+		</div>\
+		<h2>3. Calculating strain hardening parameter</h2>\
+		<p>Figure 4 plots the true stress strain curve until its ultimate stress on a log-log axis. The curve is appximated by a straight line $\\ln(\\sigma_T)='+Math.round(TrueCurveApproxEquationVars.m*1000)/1000+'\\ln(\\epsilon_T) + '+Math.round(TrueCurveApproxEquationVars.b*1000)/1000+'$. Hence the strain hardening parameter is $'+Math.round(TrueCurveApproxEquationVars.m*1000)/1000+'$.</p>\
+		<div style="text-align:center; width: 100%;">\
+		<div id="ChartDiv_2" style="display: inline-block;"></div>\
+		<p class="Figure">Figure 4: Log-Log graph of the true stress strain curve.</p>\
+		</div>\
+		\
 		</div>\
 	');
 	//ReportCanvas001 = PrepareChart002("ReportCanvas001");
