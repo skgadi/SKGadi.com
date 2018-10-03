@@ -58,26 +58,24 @@ layout = "outer-padding-no-border"
 	<div class="w3-row">
 		<header class="w3-container w3-theme"><h5><b><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;Instructions</b></h5></header>
 		<div class="w3-col m12 l12 s12 w3-padding">
-			<p>The room temperature should be between $10^\circ$C to $37^\circ$C </p>
-			<p>This app is under development ...</p>
+			<p>During the test, the room temperature should be between $10^\circ$C to $37^\circ$C </p>
+			<p>Copy paste the data received from the UTM. The first column is elongation and the second column is the load applied on the specimen.</p>
+			<p>This app will pre-process the data and generates information.</p>
 		</div>
 	</div>
 </div>
 <!--more-->
-<div class="HideWhenLoaded w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
-	<div class="w3-container w3-padding-0 w3-border w3-border-theme">
-		<!--header class="w3-container w3-theme"><h5 class="w3-center">App is loading</h5></header-->
-		<div class="w3-container w3-margin-0 w3-padding-0 w3-center">
-			<p class="w3-padding" >App is loading<br/><br/><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i><br/><br/>Please wait. If it is taking longer than 1 minute, please refresh the page.</p>
-		</div>
+
+<div class="HideWhenLoaded w3-container w3-padding-0 w3-border w3-border-theme">
+	<!--header class="w3-container w3-theme"><h5 class="w3-center">App is loading</h5></header-->
+	<div class="w3-container w3-margin-0 w3-padding-0 w3-center">
+		<p class="w3-padding" >App is loading<br/><br/><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i><br/><br/>Please wait. If it is taking longer than 1 minute, please refresh the page.</p>
 	</div>
 </div>
 
-<div style="display: none;" class="ProgressBar w3-col m12 l12 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
-	<div class="w3-container w3-padding-0 w3-border w3-border-theme">
-		<div class="w3-container w3-margin-0 w3-padding-0 w3-center">
-			<p class="w3-padding" >App is processing the information...<br/><br/><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i><br/><br/>Please wait. It may take a while depending on your processing speed and the input data size.</p>
-		</div>
+<div style="display: none;" class="ProgressBar w3-container w3-padding-0 w3-border w3-border-theme">
+	<div class="w3-container w3-margin-0 w3-padding-0 w3-center">
+		<p class="w3-padding" >App is processing the information...<br/><br/><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i><br/><br/>Please wait. It may take a while depending on your processing speed and the input data size.</p>
 	</div>
 </div>
 
@@ -118,16 +116,17 @@ layout = "outer-padding-no-border"
 	</div>
 	<div class="w3-col m12 l12 s12 w3-padding">
 		<label class="UserInputItem2" >Additioanl Information: UTM Brand</label>
-		<input id="UTM_Brand" class="UserInputItem2 w3-input w3-border w3-border-theme" value= "Unknown">
+		<input id="UTM_Brand" class="UserInputItem2 w3-input w3-border w3-border-theme" value= "Manufacturer">
 		<label class="UserInputItem2" >Additioanl Information: UTM Model</label>
-		<input id="UTM_Model" class="UserInputItem2 w3-input w3-border w3-border-theme" value= "Unknown">
+		<input id="UTM_Model" class="UserInputItem2 w3-input w3-border w3-border-theme" value= "Model">
 		<label class="UserInputItem2" >Additioanl Information: UTM Serial number</label>
-		<input id="UTM_SerialNo" class="UserInputItem2 w3-input w3-border w3-border-theme" value= "Unknown">
-		<label class="UserInputItem2" >Additioanl Information: Type of Test</label>
-		<select id="TestType" class="UserInputItem2 w3-select w3-border w3-border-theme">
-			<option>Tension</option>
-			<option>Compression</option>
-		</select>
+		<input id="UTM_SerialNo" class="UserInputItem2 w3-input w3-border w3-border-theme" value= "SN#123456">
+		<div style="display: none;">
+			<label class="UserInputItem2" >Additioanl Information: Type of Test</label>
+			<select id="TestType" class="UserInputItem2 w3-select w3-border w3-border-theme">
+				<option>Tension</option>
+			</select>
+		</div>
 	</div>
 
 </div>

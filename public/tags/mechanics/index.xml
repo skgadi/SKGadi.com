@@ -17,9 +17,10 @@
       <pubDate>Tue, 06 Mar 2018 00:00:00 -0600</pubDate>
       
       <guid>https://skgadi.com/tools/material-charactrization/</guid>
-      <description>&amp;nbsp;InstructionsThis app is under development ... App is loadingApp is loadingPlease wait. If it is taking longer than 1 minute, please refresh the page.
-App is processing the information...Please wait. It may take a while depending on your processing speed and the input data size.
-&amp;nbsp;User inputSetting: Tolerance to find the slopeInitial areaInitial lengthData from Universal testing machineSample data 0Sample data 1Sample data 2Sample data 3CalculateReset&amp;nbsp;Generate report&amp;nbsp;GraphsStress strain graphEngineering curveAnother graph</description>
+      <description>&amp;nbsp;InstructionsDuring the test, the room temperature should be between $10^\circ$C to $37^\circ$C Copy paste the data received from the UTM. The first column is elongation and the second column is the load applied on the specimen.
+This app will pre-process the data and generates information.
+App is loadingApp is loadingPlease wait. If it is taking longer than 1 minute, please refresh the page.
+App is processing the information.</description>
     </item>
     
   </channel>

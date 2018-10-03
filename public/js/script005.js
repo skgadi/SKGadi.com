@@ -1,8 +1,10 @@
-var x_0; // Data from UTM
+var x_in; // Data from UTM
+var y_in;
+var x_0; // Data from UTM after preprocessing
 var y_0;
 var x_1; // Engineering stress strain curve
 var y_1;
-var x_2; // Real stress strain curve
+var x_2; // Real/True stress strain curve
 var y_2;
 var x_3; // LinearRange curve
 var y_3;
@@ -13,12 +15,14 @@ var y_5;
 var x_6; // line approx of Ln Curve
 var y_6;
 
+
 var n;
 var A_0;
 var L_0;
 var Chart_0;
 var Chart_1;
 var Chart_2;
+var Chart_3;
 var TempData;
 var TempVars;
 var TempResult;
@@ -32,19 +36,44 @@ var IntersectionPoint;
 var IntersectionPointIndex;
 var ProportinalLineParameters;
 var isChartsReady=false;
+var TrueCurveApproxEquation;
+var TrueCurveApproxEquationVars;
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(ChartsReady);
+
+var MaxRealCurve;
+var P_Max;
+var X; //Specific offset
 
 function ChartsReady() {
 	isChartsReady = true;
 }
 
 $( document ).ready(function() {
-	ResetView();
-	$("#InText").focusin(function () {
-		$("#InText").select();
-	});
+	ConfigureMathJax();
 });
+
+function ConfigureMathJax() {
+	MathJax.Hub.Config({
+		extensions: ["tex2jax.js"],
+		jax: ["input/TeX", "output/HTML-CSS"],
+		tex2jax: {
+			inlineMath: [['$', '$'], ["\\(", "\\)"]],
+			displayMath: [['$$', '$$'], ["\\[", "\\]"]],
+			processEscapes: true
+		},
+		"HTML-CSS": {
+			fonts: ["TeX"]
+		}
+	});
+	MathJax.Hub.Configured();
+	MathJax.Hub.Register.StartupHook("End",function () {
+			ResetView();
+			$("#InText").focusin(function () {
+				$("#InText").select();
+			});
+	});
+}
 
 function PerformCalculations() {
 	if (isChartsReady) {
@@ -53,7 +82,7 @@ function PerformCalculations() {
 		if (PrepareDataForCharts()) {
 			//MakeCharts();
 			SetViewAsCalculated();
-			GenerateCharts(document, 0);
+			//GenerateCharts(document, 0);
 			$.notify("Processed the information successfully.\nPlease wait for the graphs to load.\nIt may take few seconds for you to access the browser.", "success");
 		} else {
 			$.notify("Error in the input text, unable to process.", "error");
@@ -69,13 +98,14 @@ function Reset() {
 }
 
 function ResetView() {
-	$("#InText").val("Copy the two columns (Load and Elongation) from an excel sheet and paste it here.");
+	$("#InText").val("");
 	$(".ProgressBar").css('display', 'none');
 	$(".UserInput").css('display', 'block');
 	$(".Report").css('display', 'none');
 	$(".HideWhenLoaded").css('display', 'none');
 	$(".UserInputItem0").prop('disabled', false);
 	$(".UserInputItem1").prop('disabled', true);
+	$(".UserInputItem2").css('display', 'none');
 	//$("html, body").delay(2000).animate({scrollTop: $('#UserInputDiv').offset().top - 60}, "slow");
 	$('#InText').focus().select();
 	//$("html, body").animate({ scrollTop: 0 }, "slow");
@@ -93,6 +123,8 @@ function SetViewAsCalculated() {
 	$(".Report").css('display', 'block');
 	$(".UserInputItem0").prop('disabled', true);
 	$(".UserInputItem1").prop('disabled', false);
+	$(".UserInputItem2").css('display', 'block');
+	$('#UTM_Brand').focus().select();
 	//$("html, body").delay(2000).animate({scrollTop: $('#GenReportDiv').offset().top - 60}, "slow");
 }
 
@@ -100,43 +132,48 @@ function GenerateCharts(ForDocument, chartWidth) {
 	var chart;
 	var data;
 	chart = new google.visualization.LineChart(ForDocument.getElementById('ChartDiv_0'));
-	data = GenerateDataForGraphs([[x_0, y_0]], ["Stress"]);
-	chart.draw(data, GetProperties("Strain", "Stress", 500, chartWidth));
+	data = GenerateDataForGraphs([[x_0, y_0]], ["P"]);
+	chart.draw(data, GetProperties("Elongation in millimeter", "Force in newtons", 500, chartWidth));
 	chart = new google.visualization.LineChart(ForDocument.getElementById('ChartDiv_1'));
-	data = GenerateDataForGraphs([[x_1, y_1], [x_2, y_2], [x_3, y_3], [x_4, y_4]], ["Stress 1", "Stress 2", "Stress 3", "Stress 4"]);
-	chart.draw(data, GetProperties("Strain", "Stress", 500, chartWidth));
+	data = GenerateDataForGraphs([[x_1, y_1], [x_3, y_3], [x_4, y_4]], ["Engineering curve", "Proportionality line", "Specific offset line"]);
+	chart.draw(data, GetProperties("Strain in meter/meter", "Stress in megapascal", 500, chartWidth));
+	chart = new google.visualization.LineChart(ForDocument.getElementById('ChartDiv_3'));
+	data = GenerateDataForGraphs([[x_1, y_1], [x_2, y_2]], ["Engineering curve", "Real/True curve"]);
+	chart.draw(data, GetProperties("Strain in meter/meter", "Stress in megapascal", 500, chartWidth));
 	chart = new google.visualization.LineChart(ForDocument.getElementById('ChartDiv_2'));
-	data = GenerateDataForGraphs([[x_5, y_5], [x_6, y_6]], ["Stress 1", "Stress 2"]);
-	chart.draw(data, GetProperties("Strain", "Stress", 500, chartWidth));
+	data = GenerateDataForGraphs([[x_5, y_5], [x_6, y_6]], ["Real/True curve", "Linear approximation"]);
+	chart.draw(data, GetProperties("log(True strain)", "log(True stress)", 500, chartWidth));
 }
-function GetProperties (xLabel, yLabel, height, width) {
-	if (width==0) {
+function GetProperties (xLabel, yLabel, CHeight, CWidth) {
+	if (CWidth==0) {
 		return {
-			height: height,
+			height: CHeight,
+			curveType: 'function',
 			curveType: 'function',
 			fontName: "Times",
 			hAxis: {
-			  title: xLabel
+			  title: xLabel,
+			  format: 'decimal'
 			},
 			vAxis: {
 			  title: yLabel
 			},
-			legend: { position: 'top' },
-			vAxis: {format: 'decimal'}
+			legend: { position: 'right' }
 		};		
 	} else return {
-			height: height,
-			width: width,
+			height: CHeight,
+			width: CWidth,
+			'chartArea':{left: 125,top: 30, right: 175, bottom: 50},
 			curveType: 'function',
 			fontName: "Times",
 			hAxis: {
-			  title: xLabel
+			  title: xLabel,
+			  format: 'decimal'
 			},
 			vAxis: {
 			  title: yLabel
 			},
-			legend: { position: 'top' },
-			vAxis: {format: 'decimal'}
+			legend: { position: 'right' }
 		};
 }
 function GenerateDataForGraphs (Lines, Names) {
@@ -177,31 +214,70 @@ function AddLineData (ExistingData, NewLine, Name){
 	return result;
 }
 
-function PrepareDataForCharts () {
-	A_0 = parseFloat($( "#A_0").val(), 10);
-	L_0 = parseFloat($( "#L_0").val(), 10);
-	RSquaredTestForSize = parseFloat($( "#RSquaredTestForSize").val(), 10);
-	if (isNaN(A_0)) $( "#A_0").val(A_0 = 30.7483);
-	if (isNaN(L_0)) $( "#L_0").val(L_0 = 25.4);
-	if (isNaN(RSquaredTestForSize)) $( "#RSquaredTestForSize").val(RSquaredTestForSize = 100);
-	
+function PreprocessingData () {
 	Lines = $("#InText").val().split('\n');
-	x_0 = [];
-	y_0 = [];
+	x_in = [];
+	y_in = [];
 	var TempX_0;
 	var TempY_0;
 	var TempIndex=0;
+	P_Max = 0;
 	for (var i = 0; i < Lines.length; i++) {
 		InputVars = Lines[i].split('\t');
 		TempX_0 = parseFloat(InputVars[0]);
 		TempY_0 = parseFloat(InputVars[1]);
 		if (!isNaN(TempX_0) && !isNaN(TempY_0)) {
-			x_0[TempIndex] = TempX_0;
-			y_0[TempIndex] = TempY_0;
+			x_in[TempIndex] = TempX_0;
+			y_in[TempIndex] = TempY_0;
 			TempIndex++;
 		}
+		P_Max = (TempY_0>P_Max)?TempY_0:P_Max;
+	}
+	x_0 = [];
+	y_0 = [];
+	TempIndex=0;
+	var TempSum;
+	var TempCount;
+	var Offset_x = 0;
+	var Offset_y = 0;
+	for (var i = 0; i < x_in.length;) {
+		TempSum = 0;
+		TempCount = 0;
+		for (var j = 0; j <x_in.length; j++) {
+			if ( x_in[i+j] == x_in[i] ) {
+				TempSum += y_in[i+j];
+				TempCount++;
+			}else
+				break;
+		}
+		/*console.log("Temp Count="+ TempCount);
+		console.log("i="+ i);*/
+		if (TempIndex == 0){
+			Offset_x = x_in[i]
+			Offset_y = TempSum/TempCount;
+		}
+		x_0[TempIndex] = x_in[i] - Offset_x;
+		y_0[TempIndex] = TempSum/TempCount - Offset_y;
+		TempIndex++;
+		i = i+ TempCount;
 	}
 	n=x_0.length;
+}
+
+function PrepareDataForCharts () {
+	A_0 = parseFloat($( "#A_0").val());
+	L_0 = parseFloat($( "#L_0").val());
+	X = parseFloat($( "#X").val());
+	RSquaredTestForSize = parseFloat($( "#RSquaredTestForSize").val());
+	if (isNaN(A_0)) $( "#A_0").val(A_0 = 30.7483);
+	if (isNaN(L_0)) $( "#L_0").val(L_0 = 25.4);
+	if (isNaN(X)) $( "#X").val(X = 0.2);
+	if (isNaN(RSquaredTestForSize)) $( "#RSquaredTestForSize").val(RSquaredTestForSize = 100);
+	
+	PreprocessingData();
+	//Tobetested settings
+	RSquaredTestForSize = Math.round(n/3);
+	
 	if ((n<=RSquaredTestForSize) && (RSquaredTestForSize>1)) return false;
 	x_1 = new Array(n);
 	y_1 = new Array(n);
@@ -219,8 +295,8 @@ function PrepareDataForCharts () {
 		TempData = new Array(i);
 		for (var j=0; j<i; j++) {
 			TempData[j] = new Array(2);
-			TempData[j][0] = x_2[j];
-			TempData[j][1] = y_2[j];
+			TempData[j][0] = x_1[j];
+			TempData[j][1] = y_1[j];
 		}
 		/*TempVars = ss.linearRegression(TempData);
 		TempResult = ss.linearRegressionLine(TempVars);*/
@@ -239,7 +315,7 @@ function PrepareDataForCharts () {
 		if (SetBreak==true)
 			break FindingLinearRegion;
 	}
-	//Find the exact point of linear
+	//Find the exact point of linear relationship
 	RSquaredHistorySize = RSquaredHistory.length;
 	if (RSquaredHistorySize > RSquaredTestForSize) {
 		for (var i=0; i<RSquaredTestForSize; i++) {
@@ -250,19 +326,20 @@ function PrepareDataForCharts () {
 	TempData = new Array(LinearUpto+1);
 	for (var i=0; i<=LinearUpto; i++) {
 		TempData[i] = new Array(2);
-		TempData[i][0] = x_2[i];
-		TempData[i][1] = y_2[i];
+		TempData[i][0] = x_1[i];
+		TempData[i][1] = y_1[i];
 	}
-	var MaxRealCurve = ss.max(y_2);
-	TempVars = ss.linearRegression(TempData);
-	ProportinalLineParameters = ss.linearRegressionLine(TempVars);
+	//console.log(TempData);
+	MaxRealCurve = ss.max(y_2);
+	TempVars = regression('linearThroughOrigin', TempData);
+	ProportinalLineParameters = ss.linearRegressionLine({m: TempVars.equation, b:0});
 	x_3 = [];
 	y_3 = [];
 	x_3[0] = 0;
 	y_3[0] = 0;
 	for (var i=0; i<n; i++) {
-		if (ProportinalLineParameters(x_2[i]) > 1.1*MaxRealCurve) {
-			x_3[1] = x_2[i];
+		if (ProportinalLineParameters(x_1[i]) > 1.1*MaxRealCurve) {
+			x_3[1] = x_1[i];
 			y_3[1] = ProportinalLineParameters(x_3[1]);
 			break;
 		}
@@ -275,23 +352,23 @@ function PrepareDataForCharts () {
 	}*/
 	x_4 = [];
 	y_4 = [];
-	PercentDot2Value = 0.002;//*ss.max(x_2);
+	PercentDot2Value = X/100.0;//offset;
 	for (var i=0; i<x_3.length; i++) {
 		x_4[i] = x_3[i] + PercentDot2Value;
 		y_4[i] = y_3[i];//TempResult(x_3[i]);
 	}
 	for (var i=1; i<n; i++) {
 		if (
-			(y_2[i-1] <= ProportinalLineParameters(x_2[i]-PercentDot2Value))
+			(y_1[i-1] >= ProportinalLineParameters(x_1[i-1]-PercentDot2Value))
 			&&
-			(y_2[i] >= ProportinalLineParameters(x_2[i]-PercentDot2Value))
-		) { 
+			(y_1[i] <= ProportinalLineParameters(x_1[i]-PercentDot2Value))
+		) {
+			//console.log("Found a intersection point");
 			FindIntersectionPoint(
-				[[x_2[i-1], ProportinalLineParameters(x_2[i-1]-PercentDot2Value)],
-				[x_2[i], ProportinalLineParameters(x_2[i]-PercentDot2Value)]],
-				[[x_2[i-2], y_2[i-2]],
-				[x_2[i-1], y_2[i-1]],
-				[x_2[i], y_2[i]]]
+				[[x_1[i-1], ProportinalLineParameters(x_1[i-1]-PercentDot2Value)],
+				[x_1[i], ProportinalLineParameters(x_1[i]-PercentDot2Value)]],
+				[[x_1[i-1], y_1[i-1]],
+				[x_1[i], y_1[i]]]
 			);
 			IntersectionPointIndex = i;
 			break;
@@ -313,32 +390,29 @@ function PrepareDataForCharts () {
 		TempData[i][0] = x_5[i];
 		TempData[i][1] = y_5[i];
 	}
-	TempVars = ss.linearRegression(TempData);
-	TempResult = ss.linearRegressionLine(TempVars);
+	TrueCurveApproxEquationVars = ss.linearRegression(TempData);
+	TrueCurveApproxEquation = ss.linearRegressionLine(TrueCurveApproxEquationVars);
 	x_6 = new Array(2);
 	y_6 = new Array(2);
-	x_6[0] = x_5[0];
-	y_6[0] = TempResult(x_6[0]);
-	x_6[1] = (1+0.1*Math.sign(x_5[x_5.length-1]))*x_5[x_5.length-1];
-	y_6[1] = TempResult(x_6[1]);
+	x_6[0] = (1-0.05*Math.sign(x_5[x_5.length-1]))*x_5[0];
+	y_6[0] = TrueCurveApproxEquation(x_6[0]);
+	x_6[1] = (1+0.05*Math.sign(x_5[x_5.length-1]))*x_5[x_5.length-1];
+	y_6[1] = TrueCurveApproxEquation(x_6[1]);
 	return true;
 }
 
 function FindIntersectionPoint (LineData, CurveData) {
 	IntersectionPoint = [];
 	var LineDataRegression = regression('polynomial', LineData, 1);
-	var CurveDataRegression = regression('polynomial', CurveData, 2);
+	var CurveDataRegression = regression('polynomial', CurveData, 1);
+	//console.log(LineDataRegression);
+	//console.log(CurveDataRegression);
 	Temp_A = LineDataRegression.equation[1];
 	Temp_B = LineDataRegression.equation[0];
-	Temp_C = CurveDataRegression.equation[2];
-	Temp_D = CurveDataRegression.equation[1];
-	Temp_E = CurveDataRegression.equation[0];
-	TempDescriminate = Math.sqrt (Math.pow(Temp_D-Temp_A, 2) - 4*Temp_C*(Temp_E-Temp_B));
-	TempIntersectionPointX1 = ( (Temp_A - Temp_D) - TempDescriminate)/(2*Temp_C);
-	TempIntersectionPointX2 = ( (Temp_A - Temp_D) + TempDescriminate)/(2*Temp_C);
-	if (Math.abs(LineData[0][0]-TempIntersectionPointX1) < (Math.abs(LineData[0][0]-TempIntersectionPointX2)))
-		IntersectionPoint[0] = TempIntersectionPointX1;
-	else IntersectionPoint[0] = TempIntersectionPointX2;
+	Temp_C = CurveDataRegression.equation[1];
+	Temp_D = CurveDataRegression.equation[0];
+	//Temp_E = CurveDataRegression.equation[0];
+	IntersectionPoint[0] = (Temp_D - Temp_B)/(Temp_A - Temp_C);
 	IntersectionPoint[1] = ProportinalLineParameters(IntersectionPoint[0]-PercentDot2Value);
 }
 
@@ -358,26 +432,67 @@ function GenerateReport(Language) {
 	//mywindow = PrintElem('curve_chart', [],[]);
 	
 	$('#CompleteReport').html('\
-	<h1>Complete report</h1>\
-	<p>When `a != 0`, there are two solutions to `ax^2 + bx + c = 0` and \
-	they are</p>\
-	<p style="text-align:center">\
-  `x = (-b +- sqrt(b^2-4ac))/(2a) .`\
-</p>\
-<div id="ChartDiv_0"></div>\
-<div id="ChartDiv_1"></div>\
-<div id="ChartDiv_2"></div>\
-<div id="IMGDIV" style="width: 750px; height:500px"><img id="IMG000" style="width: 100%;"/><canvas id="ReportCanvas001"></canvas></div>\
+		<div class="ShowWhenLoading"><p>Generating report ...</p><p>If it takes more than 1 minute, close this window and try again.</p></div>\
+		<div class="HideWhenLoading" style="display: none">\
+		<h1>Stress strain analysis report</h1>\
+		<p>This report analyze the data obtained from a Universal Testing Machine (UTM) to extract the following information.</p>\
+		<ul><li>Engineering curve</li><li>Real/true curve</li><li></li><li></li></ul>\
+		<p>In the next section a figure is plotted with the information obtained from the UTM. The later section provides engineering and real curves along with the proportionality line and the specific offset.</p>\
+		<h2>1. Data obtained from the Universal Testing Machine (UTM)</h2>\
+		<p>A specimen of an initial area $A_0 = '+A_0+'~\\mbox{mm}^2$ and initial length $L_0 = '+L_0+'~\\mbox{mm}$ is put under a '+$("#TestType").val().toLowerCase()+' stress with the help of a <b>'+$("#UTM_Brand").val()+'\'s '+$("#UTM_Model").val()+'</b> Universal Testing Machine (UTM) with the serial number <b>'+$("#UTM_SerialNo").val()+'</b>. Figure 1 shows the relation between the load, $P$, applied on the specimen and its change in longitude, $\\delta$, which are the data obtained from the UTM. The maximum load applied on the specimen is $P_{M}='+P_Max+'~\\mbox{N}$.<\p>\
+		<div style="text-align:center; width: 100%;">\
+		<div id="ChartDiv_0" style="display: inline-block;"></div>\
+		<p class="Figure">Figure 1: `P` vs `\\delta` obtained from the UTM.</p></div>\
+		<h2>2. Engineering and true curve</h2>\
+		<p>The engineering stress-strain curve is shown by the first curve of Figure 2, which plots $$\\sigma_E :=\\frac{P}{A_0}\\mbox{ and }\\epsilon_E:=\\frac{\\delta}{L_0}.$$ This figure also shows the real or true stress-strain curve which is obtained by $$\\epsilon_T := \\ln{\\left( 1 + \\epsilon_E \\right)} \\mbox{ and } \\sigma_T := \\sigma_E \\left( 1 + \\epsilon_E \\right).$$</p>\
+		<div style="text-align:center; width: 100%;">\
+		<div id="ChartDiv_1" style="display: inline-block;"></div>\
+		<p class="Figure">Figure 2: Engineering, and real curves along with the slope .</p>\
+		</div>\
+		<p>The Young\'s modulus, $E = '+Math.round(ProportinalLineParameters(1)*1000)/1000+'~\\mbox{MPa}$, the ultimate stress, $\\sigma_U = '+Math.round(MaxRealCurve*1000)/1000+'~\\mbox{MPa}$, the fracture strain, $\\sigma_F = '+Math.round(y_2[n-1]*1000)/1000+'~\\mbox{MPa}$, the yield point, ($'+Math.round(x_1[LinearUpto]*1000)/1000+', '+Math.round(y_1[LinearUpto]*1000)/1000+'$), the offset yeild point, ($'+Math.round(IntersectionPoint[0]*1000)/1000+', '+Math.round(IntersectionPoint[1]*1000)/1000+'$), the modulus of resiliance, $U_r = '+Math.round(x_1[LinearUpto]*y_1[LinearUpto]/2*1000)/1000+'~\\mbox{MPa}$, and the rupture point ($'+Math.round(x_1[n-1]*1000)/1000+', '+Math.round(y_1[n-1]*1000)/1000+'$) are obtained from the Figure 2.</p>\
+		<div style="text-align:center; width: 100%;">\
+		<div id="ChartDiv_3" style="display: inline-block;"></div>\
+		<p class="Figure">Figure 3: Engineering and true stress strain curves.</p>\
+		</div>\
+		<h2>3. Calculating strain hardening parameter</h2>\
+		<p>Figure 4 plots the true stress strain curve until its ultimate stress on a log-log axis. The curve is appximated by a straight line $\\ln(\\sigma_T)='+Math.round(TrueCurveApproxEquationVars.m*1000)/1000+'\\ln(\\epsilon_T) + '+Math.round(TrueCurveApproxEquationVars.b*1000)/1000+'$. Hence the strain hardening parameter is $'+Math.round(TrueCurveApproxEquationVars.m*1000)/1000+'$.</p>\
+		<div style="text-align:center; width: 100%;">\
+		<div id="ChartDiv_2" style="display: inline-block;"></div>\
+		<p class="Figure">Figure 4: Log-Log graph of the true stress strain curve.</p>\
+		</div>\
+		\
+		</div>\
 	');
 	//ReportCanvas001 = PrepareChart002("ReportCanvas001");
 	mywindow = PrintElem('CompleteReport', [
-		'/css/report.css'
+		'/css/report-print.css'
 		], [
-		'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML'
+		'https://code.jquery.com/jquery-3.3.1.slim.min.js'
 		]);
 	$(mywindow).bind('load', function(){
 		setTimeout(function(){
 			GenerateCharts(mywindow.document, 750);
+			var head = mywindow.document.getElementsByTagName("head")[0], script;
+			script = mywindow.document.createElement("script");
+			script.type = "text/x-mathjax-config";
+			script[(mywindow.opera ? "innerHTML" : "text")] = "\
+			MathJax.Hub.Config({\n\
+			  tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']] },\n\
+			  jax: ['input/TeX','output/HTML-CSS'],\
+			});\
+			MathJax.Hub.Register.StartupHook('End',function () {\
+				$('.ShowWhenLoading').css('display', 'none');\
+				$('.HideWhenLoading').css('display', 'block');\
+			});\
+			";
+			head.appendChild(script);
+			script = mywindow.document.createElement("script");
+			script.type = "text/javascript";
+			script.src  = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML";
+			head.appendChild(script);
+			mywindow.moveTo(0, 0);
+			mywindow.resizeTo(screen.width, screen.height);
+
 			//mywindow.print();
 			//mywindow.close();			
 		}, 1000);
