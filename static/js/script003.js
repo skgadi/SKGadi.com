@@ -10,3 +10,11 @@ function Print() {
 	})
 	
 }
+
+$(document).bind('keydown', function(e) {
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 80) {
+		Print();
+		return false;
+	}            
+});

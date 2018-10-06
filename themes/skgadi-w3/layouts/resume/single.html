@@ -151,42 +151,39 @@
 		<th>Place</th>
 		<th>Period</th>
 	</tr>
-		{{ range where .Site.RegularPages "Section" "courses" }}
-	<tr>
-		<td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
-		<td>{{ .Params.GSKLevel }}</td>
-		<td>{{ if .Params.GSKSchoolURL }}<a class="Resume" href="{{ .Params.GSKSchoolURL }}"  style="text-decoration: none">{{ end }}{{ .Params.GSKSchool }}{{ if .Params.GSKSchoolURL }}</a>{{ end }}</td>
-		<td>{{ .Params.GSKCity }}</td>
-		<td>{{  dateFormat "Jan 2006" .Params.GSKStartDate }} &mdash; {{ if .Params.GSKEndDate }} {{ dateFormat "Jan 2006" .Params.GSKEndDate }} {{ else }} Till date {{ end }}</td>
-	</tr>
+	{{ $AllCourses := where .Site.RegularPages "Section" "courses" }}
+	{{ $GSKVARFinishedCourses := . }}
+	{{ $GSKVARFinishedCourses := (slice "") }}
+	{{ range $AllCourses }}
+		{{ $GSKVARTitle := .Title }}
+		{{ $GSKVARLevel := (slice "") }}
+		{{ $GSKVARSchool := (slice "") }}
+		{{ $GSKVARCity := (slice "") }}
+		{{ $GSKVARDate := (slice "") }}
+		{{ if not (in $GSKVARFinishedCourses .Title  )}}
+			{{ range $AllCourses }}
+				{{ if eq .Title $GSKVARTitle }}
+					{{ $GSKVARLevel = union $GSKVARLevel (slice .Params.GSKLevel) }}
+					{{ $GSKVARSchoolText :=  printf "<a class='Resume' style='text-decoration: none;' href = '%s'>%s</a>" .Params.GSKSchoolURL .Params.GSKSchool }}
+					{{ $GSKVARSchool = union $GSKVARSchool (slice $GSKVARSchoolText) }}
+					{{ $GSKVARCity = union $GSKVARCity (slice .Params.GSKCity) }}
+					{{ $GSKVARDateText := printf "<a class='Resume' href='%s' style='text-decoration: none;'>[%s, %s]</a>" .Permalink (dateFormat "Jan'06" .Params.GSKStartDate) (dateFormat "Jan'06" .Params.GSKEndDate) }}
+					{{ $GSKVARDate = union $GSKVARDate (slice $GSKVARDateText) }}
+				{{ end }}
+			{{ end }}
+		<tr>
+			<td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
+			<td>{{ delimit (after 1 $GSKVARLevel) "; " }}</td>
+			<td>{{ safeHTML (delimit (after 1 $GSKVARSchool) "; ") }}</td>
+			<td>{{ delimit (after 1 $GSKVARCity) "; " }}</td>
+			<td>{{ delimit (after 1 $GSKVARDate) "; " }}</td>
+		</tr>
+		{{ end }}
+		{{ $GSKVARFinishedCourses = union $GSKVARFinishedCourses (slice .Title)}}
+		
 	{{ end }}
 </table>
 
-<h3 class="Resume">Projects</h3>
-<table  class="Resume">
-	<tr>
-		<th>Title</th>
-		<th>Role</th>
-		<th>Team size</th>
-		<th>Skills used</th>
-		<th>Funding</th>
-		<th>Period</th>
-	</tr>
-		{{ range where .Site.RegularPages "Section" "projects" }}
-	<tr>
-		<td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
-		<td>{{.Params.GSKRole}}</td>
-		<td>{{.Params.GSKTeamSize}}</td>
-		<td>{{ delimit .Params.GSKKeySkills ", " }}</td>
-		<td>{{if .Params.GSKFundName}}
-				{{if .Params.GSKFundURL}}<a class="Resume" href="{{.Params.GSKFundURL}}">{{end}}
-				{{.Params.GSKFundName}}
-				{{if .Params.GSKFundURL}}</a>{{end}}
-			{{else}}-{{end}}</td>
-		<td style="width: 90px;">{{-  dateFormat "Jan 2006" .Params.GSKStartDate -}}&ndash;{{- if .Params.GSKEndDate -}}{{- dateFormat "Jan 2006" .Params.GSKEndDate -}}{{- else -}}Till&nbsp;date{{- end -}}</td>
-	</tr>
-	{{ end }}
-</table>
 <h3 class="Resume">Achievements</h3>
 {{ range where .Site.RegularPages "Section" "achievements" }}
 	<p><b>{{.Title}}:</b> {{.Description}} </p>
@@ -220,6 +217,32 @@
 	</div>
 	</li>
 </div>
+
+<h3 class="Resume">Projects</h3>
+<table  class="Resume">
+	<tr>
+		<th>Title</th>
+		<th>Role</th>
+		<th>Team size</th>
+		<th>Skills used</th>
+		<th>Funding</th>
+		<th>Period</th>
+	</tr>
+		{{ range where .Site.RegularPages "Section" "projects" }}
+	<tr>
+		<td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
+		<td>{{.Params.GSKRole}}</td>
+		<td>{{.Params.GSKTeamSize}}</td>
+		<td>{{ delimit .Params.GSKKeySkills ", " }}</td>
+		<td>{{if .Params.GSKFundName}}
+				{{if .Params.GSKFundURL}}<a class="Resume" href="{{.Params.GSKFundURL}}">{{end}}
+				{{.Params.GSKFundName}}
+				{{if .Params.GSKFundURL}}</a>{{end}}
+			{{else}}-{{end}}</td>
+		<td style="width: 90px;">{{-  dateFormat "Jan 2006" .Params.GSKStartDate -}}&ndash;{{- if .Params.GSKEndDate -}}{{- dateFormat "Jan 2006" .Params.GSKEndDate -}}{{- else -}}Till&nbsp;date{{- end -}}</td>
+	</tr>
+	{{ end }}
+</table>
 </div>
 </div>
 </div>

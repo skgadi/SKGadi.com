@@ -321,3 +321,23 @@ $(window).on('load', function () {
 	if (typeof CheckAuthRequired !== 'undefined')
 		checkAuth();
 });
+function GSKCloseModel() {
+	document.getElementById('ArticleModal').style.display='none';
+}
+
+$(document).bind('keydown', function(e) {
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 27) {
+		GSKCloseModel();
+		return false;
+	}            
+});
+
+$(document).click(function(event) {
+  //if you click on anything except the modal itself or the "open modal" link, close the modal
+  if (!$(event.target).closest("#ArticleModalContent").length) {
+	  if ($("#ArticleModal").css ("visibility") == "visble") {
+		GSKCloseModel();
+	  }
+  }
+});
