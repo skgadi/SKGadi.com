@@ -109,6 +109,9 @@
 {{- if .Params.LoadPackages.MathJS -}}
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.1.2/math.min.js"></script>
 {{- end -}}
+{{- if .Params.LoadPackages.MathJaxWhenConfigured -}}
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=configured"></script>
+{{- end -}}
 
 
 
