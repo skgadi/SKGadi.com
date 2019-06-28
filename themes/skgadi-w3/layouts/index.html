@@ -1,125 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
-	{{ .Hugo.Generator }}
-	<meta charset=utf-8>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<!--SEO Tags start -->
-	<meta name="news_keywords"  content="{{ if eq $isHomePage false }}{{ delimit .Keywords ", " }}{{ else }}{{ delimit .Site.Params.Meta.keywords.name ", " }}{{ end }}" />
-	<meta name="keywords" content="{{ if eq $isHomePage false }}{{ delimit .Keywords ", " }}{{ else }}{{ delimit .Site.Params.Meta.keywords.name ", " }}{{ end }}" />
-	<meta  name="description" content="{{ if eq $isHomePage false }}{{ .Description }}{{ else }}{{.Site.Params.Meta.description.name}}{{ end }}" />
-	{{ if .Lastmod  }}<meta name="revised" content="{{  dateFormat "02/Jan/2006 at 15:04:05 (TZ: -07:00)" .Lastmod }}" /> {{ end }}
-	<meta name="author" content="{{ .Site.Params.Author }}" />
-	<meta property="og:title" content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}" />
-	<meta property="og:description" content="{{ if eq $isHomePage false }}{{ .Description }}{{ else }}{{.Site.Params.Meta.description.name}}{{ end }}" />
-	<meta property="og:url" content="{{ .Permalink }}" />
-	<link rel="original-source" href="{{ .Permalink }}" />
-	<meta name="robots" content="noodp"/>
-	<link rel="canonical" href="{{ .Permalink }}" />
-	<link rel="publisher" href="https://plus.google.com/{{ .Site.Params.GPlus }}/posts"/>
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="{{ if eq $isHomePage false }}article{{ else }}website{{ end }}" />
-	<meta property="og:site_name" content="{{ .Site.Title }}" />
-	<!--meta property="article:publisher" content="https://www.facebook.com/yoast" />
-	<meta property="article:author" content="https://www.facebook.com/jdevalk" />
-	<meta property="article:tag" content="Crawl directives" />
-	<meta property="article:tag" content="Duplicate Content" />
-	<meta property="article:tag" content="URL" />
-	<meta property="article:section" content="Content SEO" /-->
-	{{- if eq .Section "posts" -}}
-	<meta property="article:published_time" content="{{  dateFormat "2006-01-02T15:04:05-07:00" .Date }}" />
-	{{- end -}}
-	<!--meta property="article:modified_time" content="2016-12-23T14:06:40+01:00" />
-	<meta property="og:updated_time" content="2016-12-23T14:06:40+01:00" />
-	<meta property="fb:admins" content="503714060" /-->
-	<meta property="og:image" content="{{ .Site.BaseURL }}images/my-logo.png" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:description" content="{{ if eq $isHomePage false }}{{ .Description }}{{ else }}{{.Site.Params.Meta.description.name}}{{ end }}" />	
-	<meta name="twitter:title" content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}" />
-	<!--meta name="twitter:site" content="@yoast" /-->
-	<meta name="twitter:image" content="{{ .Site.BaseURL }}images/my-logo.png" />
-	<meta name="twitter:creator" content="@{{ .Site.Params.Twitter }}" />
-	<!--meta property="DC.date.issued" content="2016-05-10T15:13:12+01:00" /-->
-	<!--SEO Tags End   -->
-	
-	<link rel="icon" type="image/png" href="{{ .Site.BaseURL }}images/favicon.png">
-	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
-	
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-	<style>
-	html, body {
-		height: 100%;
-		width: 100%;
-		background-image: linear-gradient(to right, #fc4a1a , #f7b733);
-		background-image: url('/images/sinxbyx.svg');
-		position: relative;
-		opacity: 1;
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-	}
-	a {
-		font-size: 1em;
-		color: green;
-	}
-	a:hover {
-		color: yellow;
-	}
-	.hit-the-floor {
-		font-family: 'Comfortaa', cursive;
-		color: #fff;
-		font-weight: bold;
-		text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
-	}
-
-	.hit-the-floor {
-		text-align: center;
-	}
-	.gskproduct {
-		color: #F8F8FF;
-		text-decoration: none;
-		font-size: 2.5em;
-	}
-	.gskproduct:hover {
-		color: green;
-	}
-	</style>
-</head>
-<body>
-<div class="w3-display-container" style="height: 100%;">
-<div class="w3-display-top w3-container w3-padding-0">
-<div style="font-size: 5em;" class="hit-the-floor">SKGadi</div>
-<div style="text-align: center;"><img width="50%" src="images/divider.svg"></div>
-<div style="text-align: center;" ><a class="gskproduct" href="https://uyamak.skgadi.com"><b>Uyamak</b></a></div>
+{{ partial "header.html" . }}
+<div class="w3-row">
+	<div class="w3-col m6 l4 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
+		<div class="w3-border w3-border-theme">
+			<header class="w3-container w3-theme"><h5><b><i class='fa fa-book' aria-hidden='true'></i>&nbsp;Recent courses</b></h5></header>			
+			{{- range first 5 (where .Data.Pages "Section" "courses") -}}
+			<div class="w3-container w3-center w3-margin-0 w3-padding-0">
+				<a href="{{ .Permalink }}" class="w3-button w3-white w3-block w3-left-align w3-border w3-border-theme w3-ripple">
+					{{ .Title }}
+				</a>
+			</div>
+			{{- end -}}
+			<div class="w3-container w3-center  w3-margin-0 w3-padding-0"><a href="{{ .Site.BaseURL }}courses" class="w3-button w3-theme w3-ripple w3-block"><i class="fa fa-th" aria-hidden="true"></i>&nbsp;See more</a></div>
+		</div>
+	</div>
+	<div class="w3-col m6 l4 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
+		<div class="w3-border w3-border-theme">
+			<header class="w3-container w3-theme"><h5><b><i class='fa fa-wrench' aria-hidden='true'></i>&nbsp;Recent tools</b></h5></header>
+			{{- range first 5 (where .Data.Pages "Section" "tools") -}}
+			<div class="w3-container w3-center w3-margin-0 w3-padding-0">
+				<a href="{{ .Permalink }}" class="w3-button w3-white w3-block w3-left-align w3-border w3-border-theme w3-ripple">
+					{{ .Title }}
+				</a>
+			</div>
+			{{- end -}}
+			<div class="w3-container w3-center  w3-margin-0 w3-padding-0"><a href="{{ .Site.BaseURL }}tools" class="w3-button w3-theme w3-ripple w3-block"><i class="fa fa-th" aria-hidden="true"></i>&nbsp;See more</a></div>
+		</div>
+	</div>
+	<div class="w3-col m6 l4 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
+		<div class="w3-border w3-border-theme">
+			<header class="w3-container w3-theme"><h5><b><i class='fa fa-files-o' aria-hidden='true'></i>&nbsp;Recent posts</b></h5></header>
+			{{- range first 5 (where .Data.Pages "Section" "posts") -}}
+			{{- if in .Params.categories "Academic" -}}
+			<div class="w3-container w3-center w3-margin-0 w3-padding-0">
+				<a href="{{ .Permalink }}" class="w3-button w3-white w3-block w3-left-align w3-border w3-border-theme w3-ripple">
+					{{ .Title }}
+				</a>
+			</div>
+			{{- end -}}
+			{{- end -}}
+			<div class="w3-container w3-center  w3-margin-0 w3-padding-0"><a href="{{ .Site.BaseURL }}posts" class="w3-button w3-theme w3-ripple w3-block"><i class="fa fa-th" aria-hidden="true"></i>&nbsp;See more</a></div>
+		</div>
+	</div>
 </div>
-<div class="w3-display-bottommiddle w3-container w3-padding-0">
-	<a title="Research" class="w3-padding-tiny" href="/research" target="_blank"><i class="fa fa-flask" aria-hidden="true"></i></a>
-	{{- if .Site.Params.Scopus -}}
-	<a title="Scopus" class="w3-padding-tiny" href="https://www.scopus.com/authid/detail.uri?authorId={{ .Site.Params.Scopus }}" target="_blank"><i class="fa fa-circle" aria-hidden="true"></i></a>
-	{{- end -}}
-	{{- if .Site.Params.ORCID -}}
-	<a title="ORCID" class="w3-padding-tiny" href="https://orcid.org/{{ .Site.Params.ORCID }}" target="_blank"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a>
-	{{- end -}}
-	{{- if .Site.Params.GScholar -}}
-	<a title="Google scholar" class="w3-padding-tiny" href="https://scholar.google.co.in/citations?user={{ .Site.Params.GScholar }}" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
-	{{- end -}}
-	{{- if .Site.Params.LinkedIn -}}
-	<a title="LinkedIn" class="w3-padding-tiny" href="https://mx.linkedin.com/in/{{ .Site.Params.LinkedIn }}" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-	{{- end -}}
-	{{- if .Site.Params.Maps -}}
-	<a title="Office location" class="w3-padding-tiny" href="{{ .Site.Params.Maps }}" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
-	{{- end -}}
-	{{- if .Site.Params.PayPal -}}
-	<a title="Donate on PayPal" class="w3-padding-tiny" href="{{ .Site.Params.PayPal }}" target="_blank"><i class="fab fa-paypal" aria-hidden="true"></i></a>
-	{{- end -}}
-</div>
-</div>
-</body>
-</html>
+{{ partial "footer.html" . -}}
