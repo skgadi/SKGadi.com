@@ -6,10 +6,37 @@
     <description>Recent content in Courses on Suresh Kumar Gadi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Jan 2019 23:12:36 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jul 2019 23:12:36 -0600</lastBuildDate>
     
 	<atom:link href="https://skgadi.com/courses/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Automatic control</title>
+      <link>https://skgadi.com/courses/2019-07-12-automatic-control/</link>
+      <pubDate>Mon, 01 Jul 2019 23:12:36 -0600</pubDate>
+      
+      <guid>https://skgadi.com/courses/2019-07-12-automatic-control/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Digital electronics</title>
+      <link>https://skgadi.com/courses/2019-07-12-digital-electronics/</link>
+      <pubDate>Mon, 01 Jul 2019 23:12:36 -0600</pubDate>
+      
+      <guid>https://skgadi.com/courses/2019-07-12-digital-electronics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simulation</title>
+      <link>https://skgadi.com/courses/2019-07-12-simulation/</link>
+      <pubDate>Mon, 01 Jul 2019 23:12:36 -0600</pubDate>
+      
+      <guid>https://skgadi.com/courses/2019-07-12-simulation/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Automatic control</title>
