@@ -29,7 +29,7 @@ GSKGradeURL = "1bLdMTO3v2Thb4zCPU4aAI2hbf73MUwoyPQ4b7KLoePs"
     Name = "Linear programming examples"
     URL = "http://ncert.nic.in/ncerts/l/lemh206.pdf"
 [[CourseMaterial]]
-    Name = "Simple minimize and maximize (6.6)"
+    Name = "Simple minimize and maximize (Section 6.6)"
     URL = "https://drive.google.com/file/d/0B8hXbvn1ab-BaXM0YjVhc285Z28/view"
 [[Homeworks]]
     Name = "Homework 1"
