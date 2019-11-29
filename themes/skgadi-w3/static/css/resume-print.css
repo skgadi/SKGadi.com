@@ -1,22 +1,22 @@
 .Resume, p, ul, li {
-	font: 12px "Arial Narrow", Sans-serif;
+	font: 12px "Computer Modern Serif", Sans-serif;
 }
 
 H1.Resume {
-	font: 36px "Times New Roman", Serif;
+	font: 36px "Computer Modern Serif", Serif;
     padding: 0px;
     margin: 0px;
 }
 
 H3.Resume {
-	font: 18px "Times New Roman", Serif;
+	font: 18px "Computer Modern Serif", Serif;
     padding: 5px 2px;
     margin: 10px 0px;
 	background-color: #ddd;
 }
 
 div.Resume>H1 {
-	font: 12px "Arial Narrow", Sans-serif;
+	font: 12px "Computer Modern Serif", Sans-serif;
     /*padding: 0px;
     margin: 0px;*/
 	/*text-decoration: underline;*/
@@ -26,7 +26,7 @@ div.Resume>H1 {
 }
 
 div.Resume>H2 {
-	font: 12px "Arial Narrow", Sans-serif;
+	font: 12px "Computer Modern Serif", Sans-serif;
     padding: 0px;
     margin: 0px;
 	padding-left: 15px;
@@ -53,7 +53,7 @@ a.Resume{
 }
 
 p {
-	font: 12px "Arial Narrow", Sans-serif;
+	font: 12px "Computer Modern Serif", Sans-serif;
     padding: 0px;
     margin: 0px;
 }
