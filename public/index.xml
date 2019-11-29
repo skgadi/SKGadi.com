@@ -48,6 +48,16 @@
     </item>
     
     <item>
+      <title>Uyamak - A online simulation platform for the mathematical model</title>
+      <link>https://skgadi.com/projects/uyamak/</link>
+      <pubDate>Wed, 10 Apr 2019 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/projects/uyamak/</guid>
+      <description> Status A beta version is published. UYAMAK
+Team  Suresh Kumar Gadi  </description>
+    </item>
+    
+    <item>
       <title>CIT manuals</title>
       <link>https://skgadi.com/posts/cit-manuals/</link>
       <pubDate>Mon, 01 Apr 2019 00:00:00 -0600</pubDate>
@@ -152,7 +162,7 @@ This app will pre-process the data and generates information.
     </item>
     
     <item>
-      <title>Control toolbox</title>
+      <title>Control and Identification Toolbox (CIT)</title>
       <link>https://skgadi.com/projects/control-toolbox/</link>
       <pubDate>Thu, 01 Feb 2018 00:00:00 -0600</pubDate>
       

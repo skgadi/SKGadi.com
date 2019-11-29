@@ -6,13 +6,23 @@
     <description>Recent content in Projects on Suresh Kumar Gadi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Feb 2018 00:00:00 -0600</lastBuildDate>
+    <lastBuildDate>Wed, 10 Apr 2019 00:00:00 -0600</lastBuildDate>
     
 	<atom:link href="https://skgadi.com/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Control toolbox</title>
+      <title>Uyamak - A online simulation platform for the mathematical model</title>
+      <link>https://skgadi.com/projects/uyamak/</link>
+      <pubDate>Wed, 10 Apr 2019 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/projects/uyamak/</guid>
+      <description> Status A beta version is published. UYAMAK
+Team  Suresh Kumar Gadi  </description>
+    </item>
+    
+    <item>
+      <title>Control and Identification Toolbox (CIT)</title>
       <link>https://skgadi.com/projects/control-toolbox/</link>
       <pubDate>Thu, 01 Feb 2018 00:00:00 -0600</pubDate>
       

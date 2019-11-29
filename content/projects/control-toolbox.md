@@ -2,12 +2,12 @@
 #SEO Data
 Keywords = ["control systems", "toolbox", "educational tool"]
 description = "The control toolbox project is allows a android device to perform real-time experiments with the help of a bridge circuit."
-title = "Control toolbox"
+title = "Control and Identification Toolbox (CIT)"
 #GSKFundName = "None"
 #GSKFundURL = ""
 date			=	"2018-02-01T00:00:00-06:00"
 GSKStartDate	=	"2018-02-01T00:00:00-06:00"
-#GSKEndDate		=	"2018-01-02T00:00:00-06:00"
+GSKEndDate		=	"2019-03-02T00:00:00-06:00"
 GSKRole = "Leader"
 GSKTeamSize = "2"
 GSKKeySkills = ["Android studio", "Java", "Control theory", "Embedded systems", "real-time"]
