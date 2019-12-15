@@ -24,7 +24,7 @@ baseurl = "https://skgadi.com/"
 	SharingIcona = "true" #Type "true" show the sharing icons.
 	SiteImageURL = "https://images.cooltext.com/4913938.png"
 	SiteNameInText = "SKGadi.com"
-	DefaultIconForMiniWindows = "fa-hand-o-right"
+	DefaultIconForMiniWindows = "far fa-hand-point-right"
 	
 [params.meta.Keywords]
 	name = ["skgadi", "suresh kumar gadi", "control digital"]

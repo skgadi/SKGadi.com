@@ -2,43 +2,58 @@
 <div class="w3-row">
 	<div class="w3-col m6 l4 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 		<div class="w3-border w3-border-theme">
-			<header class="w3-container w3-theme"><h5><b><i class='fa fa-book' aria-hidden='true'></i>&nbsp;Recent courses</b></h5></header>			
+			<header class="w3-container w3-theme">
+				<h5><b><i class='fas fa-book' aria-hidden='true'></i>&nbsp;&nbsp;&nbsp;&nbsp;Recent courses</b></h5>
+			</header>
 			{{- range first 5 (where .Data.Pages "Section" "courses") -}}
 			<div class="w3-container w3-center w3-margin-0 w3-padding-0">
-				<a href="{{ .Permalink }}" class="w3-button w3-white w3-block w3-left-align w3-border w3-border-theme w3-ripple">
+				<a href="{{ .Permalink }}"
+					class="w3-button w3-white w3-block w3-left-align w3-border w3-border-theme w3-ripple">
 					{{ .Title }}
 				</a>
 			</div>
 			{{- end -}}
-			<div class="w3-container w3-center  w3-margin-0 w3-padding-0"><a href="{{ .Site.BaseURL }}courses" class="w3-button w3-theme w3-ripple w3-block"><i class="fa fa-th" aria-hidden="true"></i>&nbsp;See more</a></div>
+			<div class="w3-container w3-center  w3-margin-0 w3-padding-0"><a href="{{ .Site.BaseURL }}courses"
+					class="w3-button w3-theme w3-ripple w3-block"><i class="fas fa-th"
+						aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;See more</a></div>
 		</div>
 	</div>
 	<div class="w3-col m6 l4 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 		<div class="w3-border w3-border-theme">
-			<header class="w3-container w3-theme"><h5><b><i class='fa fa-wrench' aria-hidden='true'></i>&nbsp;Recent tools</b></h5></header>
+			<header class="w3-container w3-theme">
+				<h5><b><i class='fas fa-wrench' aria-hidden='true'></i>&nbsp;&nbsp;&nbsp;&nbsp;Recent tools</b></h5>
+			</header>
 			{{- range first 5 (where .Data.Pages "Section" "tools") -}}
 			<div class="w3-container w3-center w3-margin-0 w3-padding-0">
-				<a href="{{ .Permalink }}" class="w3-button w3-white w3-block w3-left-align w3-border w3-border-theme w3-ripple">
+				<a href="{{ .Permalink }}"
+					class="w3-button w3-white w3-block w3-left-align w3-border w3-border-theme w3-ripple">
 					{{ .Title }}
 				</a>
 			</div>
 			{{- end -}}
-			<div class="w3-container w3-center  w3-margin-0 w3-padding-0"><a href="{{ .Site.BaseURL }}tools" class="w3-button w3-theme w3-ripple w3-block"><i class="fa fa-th" aria-hidden="true"></i>&nbsp;See more</a></div>
+			<div class="w3-container w3-center  w3-margin-0 w3-padding-0"><a href="{{ .Site.BaseURL }}tools"
+					class="w3-button w3-theme w3-ripple w3-block"><i class="fas fa-th"
+						aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;See more</a></div>
 		</div>
 	</div>
 	<div class="w3-col m6 l4 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 		<div class="w3-border w3-border-theme">
-			<header class="w3-container w3-theme"><h5><b><i class='fa fa-files-o' aria-hidden='true'></i>&nbsp;Recent posts</b></h5></header>
+			<header class="w3-container w3-theme">
+				<h5><b><i class='fas fa-file' aria-hidden='true'></i>&nbsp;&nbsp;&nbsp;&nbsp;Recent posts</b></h5>
+			</header>
 			{{- range first 5 (where .Data.Pages "Section" "posts") -}}
 			{{- if in .Params.categories "Academic" -}}
 			<div class="w3-container w3-center w3-margin-0 w3-padding-0">
-				<a href="{{ .Permalink }}" class="w3-button w3-white w3-block w3-left-align w3-border w3-border-theme w3-ripple">
+				<a href="{{ .Permalink }}"
+					class="w3-button w3-white w3-block w3-left-align w3-border w3-border-theme w3-ripple">
 					{{ .Title }}
 				</a>
 			</div>
 			{{- end -}}
 			{{- end -}}
-			<div class="w3-container w3-center  w3-margin-0 w3-padding-0"><a href="{{ .Site.BaseURL }}posts" class="w3-button w3-theme w3-ripple w3-block"><i class="fa fa-th" aria-hidden="true"></i>&nbsp;See more</a></div>
+			<div class="w3-container w3-center  w3-margin-0 w3-padding-0"><a href="{{ .Site.BaseURL }}posts"
+					class="w3-button w3-theme w3-ripple w3-block"><i class="fas fa-th"
+						aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;See more</a></div>
 		</div>
 	</div>
 </div>

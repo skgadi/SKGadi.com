@@ -4,7 +4,7 @@ function Print() {
 		setTimeout(function(){
 			mywindow.focus();
 			mywindow.print();
-			mywindow.close();
+			//mywindow.close();
 		}, 1000);
 
 	})
