@@ -1,4 +1,4 @@
-theme = "skgadi-w3"
+theme = "skgadi-w3-v4"
 languageCode = "en-us"
 title = "Suresh Kumar Gadi"
 
@@ -17,7 +17,7 @@ baseurl = "https://skgadi.com/"
 	Maps = "https://goo.gl/maps/8NrtjMajSUz"
 	PayPal = "https://paypal.me/skgadi"
 #	Phone = "+52 (1) 449 182 0153"
-	Fax = "(+52 1) 871 757 0153"
+	Fax = "+52 (1) 871 757 0153"
 	Address = "Carretera Torreón - Matamoros Km. 7.5, Ciudad Universitaria, Torreón, Coahuila, México, C.P. 27276"
 	GoogleAnalyticsID = "UA-89998286-1"
 	Author = "Suresh Kumar Gadi"
@@ -61,7 +61,7 @@ baseurl = "https://skgadi.com/"
     identifier = "Research"
     name = "Research"
     url = "/research/"
-	pre = "fa-flask"
+	pre = "fas fa-flask"
 	weight = 1
 
 
@@ -69,76 +69,76 @@ baseurl = "https://skgadi.com/"
     identifier = "Courses"
     name = "Courses"
     url = "/courses/"
-	pre = "fa-book"
+	pre = "fas fa-book"
 	weight = 3
 
 [[menu.main]]
     identifier = "Tools"
     name = "Tools"
     url = "/tools/"
-	pre = "fa-wrench"
+	pre = "fas fa-wrench"
 	weight = 4
 
 [[menu.main]]
     identifier = "Contact"
     name = "Contact"
     url = "/contact/"
-	pre = "fa-vcard-o"
+	pre = "fas fa-address-card"
 	weight = 10
 
 [[menu.main]]
     identifier = "Resume"
     name = "Resume"
     url = "/resume/"
-	pre = "fa-list-alt"
+	pre = "fas fa-list-alt"
 	weight = 11
 
 [[menu.small]]
     identifier = "Education"
     name = "Education"
     url = "/education/"
-	pre = "fa-university"
+	pre = "fas fa-university"
 	weight = 1
 
 [[menu.small]]
     identifier = "WorkExperience"
     name = "Work experience"
     url = "/work-experience/"
-	pre = "fa-building-o"
+	pre = "fas fa-building"
 	weight = 2
 
 [[menu.small]]
     identifier = "Projects"
     name = "Projects"
     url = "/projects/"
-	pre = "fa-cogs"
+	pre = "fas fa-cogs"
 	weight = 3
 
 [[menu.small]]
     identifier = "Posts"
     name = "Posts"
     url = "/posts/"
-	pre = "fa-files-o"
+	pre = "far fa-file"
 	weight = 4
 
 [[menu.small]]
     identifier = "Achievements"
     name = "achievements"
     url = "/achievements/"
-	pre = "fa-trophy"
+	pre = "fas fa-trophy"
 	weight = 5
 
 [[menu.small]]
     identifier = "Tags"
     name = "Tags"
     url = "/tags/"
-	pre = "fa-tags"
+	pre = "fas fa-tags"
 	weight = 6
 
 [[menu.small]]
     identifier = "Categories"
     name = "Categories"
     url = "/categories/"
-	pre = "fa-cubes"
+	pre = "fas fa-cubes"
 	weight = 7
 
