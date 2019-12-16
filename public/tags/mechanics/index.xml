@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mechanics on Suresh Kumar Gadi</title>
@@ -17,10 +17,17 @@
       <pubDate>Tue, 06 Mar 2018 00:00:00 -0600</pubDate>
       
       <guid>https://skgadi.com/tools/material-charactrization/</guid>
-      <description>&amp;nbsp;InstructionsDuring the test, the room temperature should be between $10^\circ$C to $37^\circ$C Copy paste the data received from the UTM. The first column is elongation and the second column is the load applied on the specimen.
-This app will pre-process the data and generates information.
-App is loadingApp is loadingPlease wait. If it is taking longer than 1 minute, please refresh the page.
-App is processing the information.</description>
+      <description>&lt;div class=&#34;w3-margin-bottom w3-border w3-border-theme&#34;&gt;
+	&lt;div class=&#34;w3-row&#34;&gt;
+		&lt;header class=&#34;w3-container w3-theme&#34;&gt;&lt;h5&gt;&lt;b&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&amp;nbsp;Instructions&lt;/b&gt;&lt;/h5&gt;&lt;/header&gt;
+		&lt;div class=&#34;w3-col m12 l12 s12 w3-padding&#34;&gt;
+			&lt;p&gt;During the test, the room temperature should be between $10^\circ$C to $37^\circ$C &lt;/p&gt;
+			&lt;p&gt;Copy paste the data received from the UTM. The first column is elongation and the second column is the load applied on the specimen.&lt;/p&gt;
+			&lt;p&gt;This app will pre-process the data and generates information.&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</description>
     </item>
     
   </channel>

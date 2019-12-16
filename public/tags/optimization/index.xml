@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Optimization on Suresh Kumar Gadi</title>
@@ -17,8 +17,7 @@
       <pubDate>Thu, 08 Jun 2017 00:00:00 -0600</pubDate>
       
       <guid>https://skgadi.com/posts/sacs-2017/</guid>
-      <description>&lt;p&gt;Suresh Kumar Gadi gave a plenary talk on &lt;strong&gt;real-time computing&lt;/strong&gt; and conducted a workshop on &lt;strong&gt;Solving mathematical equations with the help of genetic algorithms&lt;/strong&gt; at the 1st Symposium on Applied Computer Science (SACS-2017).
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Suresh Kumar Gadi gave a plenary talk on &lt;strong&gt;real-time computing&lt;/strong&gt; and conducted a workshop on &lt;strong&gt;Solving mathematical equations with the help of genetic algorithms&lt;/strong&gt; at the 1st Symposium on Applied Computer Science (SACS-2017).&lt;/p&gt;</description>
     </item>
     
   </channel>

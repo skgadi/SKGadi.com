@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Latex on Suresh Kumar Gadi</title>
+    <title>LaTeX on Suresh Kumar Gadi</title>
     <link>https://skgadi.com/tags/latex/</link>
-    <description>Recent content in Latex on Suresh Kumar Gadi</description>
+    <description>Recent content in LaTeX on Suresh Kumar Gadi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 16 Jun 2016 00:00:00 -0600</lastBuildDate>
@@ -17,8 +17,7 @@
       <pubDate>Thu, 16 Jun 2016 00:00:00 -0600</pubDate>
       
       <guid>https://skgadi.com/posts/one-day-workshop-on-latex/</guid>
-      <description>&lt;p&gt;This workshop presents an introduction to the programming language LaTeX  for the first time users.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;This workshop presents an introduction to the programming language LaTeX  for the first time users.&lt;/p&gt;</description>
     </item>
     
   </channel>

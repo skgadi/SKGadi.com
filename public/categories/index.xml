@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Suresh Kumar Gadi</title>
@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Workshop</title>
+      <link>https://skgadi.com/categories/workshop/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/categories/workshop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Family</title>
       <link>https://skgadi.com/categories/family/</link>
       <pubDate>Sun, 18 Jun 2017 00:00:00 -0600</pubDate>
@@ -30,20 +39,11 @@
     </item>
     
     <item>
-      <title>Voice Recording</title>
+      <title>Voice recording</title>
       <link>https://skgadi.com/categories/voice-recording/</link>
       <pubDate>Sun, 18 Jun 2017 00:00:00 -0600</pubDate>
       
       <guid>https://skgadi.com/categories/voice-recording/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Workshop</title>
-      <link>https://skgadi.com/categories/workshop/</link>
-      <pubDate>Mon, 01 Apr 2019 00:00:00 -0600</pubDate>
-      
-      <guid>https://skgadi.com/categories/workshop/</guid>
       <description></description>
     </item>
     

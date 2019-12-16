@@ -77,3 +77,8 @@ li.BibliographyItem>div, table {
 div {
 	text-align: justify;
 }
+
+.gsc-control-cse {
+	margin: 0;
+	border: 0;
+}

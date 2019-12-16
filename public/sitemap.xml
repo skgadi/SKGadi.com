@@ -1,9 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://skgadi.com/courses/2019-07-12-automatic-control/</loc>
+    <lastmod>2019-07-01T23:12:36-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/courses/</loc>
     <lastmod>2019-07-01T23:12:36-06:00</lastmod>
   </url>
   
@@ -23,12 +28,62 @@
   </url>
   
   <url>
+    <loc>https://skgadi.com/</loc>
+    <lastmod>2019-07-01T23:12:36-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/projects/</loc>
+    <lastmod>2019-04-10T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skgadi.com/projects/uyamak/</loc>
     <lastmod>2019-04-10T00:00:00-06:00</lastmod>
   </url>
   
   <url>
+    <loc>https://skgadi.com/categories/academic/</loc>
+    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/categories/</loc>
+    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/tags/cit/</loc>
+    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skgadi.com/posts/cit-manuals/</loc>
+    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/tags/manuals/</loc>
+    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/posts/</loc>
+    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/tags/real-time/</loc>
+    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/tags/</loc>
+    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/categories/workshop/</loc>
     <lastmod>2019-04-01T00:00:00-06:00</lastmod>
   </url>
   
@@ -78,6 +133,16 @@
   </url>
   
   <url>
+    <loc>https://skgadi.com/tags/mechanics/</loc>
+    <lastmod>2018-03-06T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/tools/</loc>
+    <lastmod>2018-03-06T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skgadi.com/tools/material-charactrization/</loc>
     <lastmod>2018-03-06T00:00:00-06:00</lastmod>
   </url>
@@ -113,8 +178,18 @@
   </url>
   
   <url>
+    <loc>https://skgadi.com/tags/mathematics/</loc>
+    <lastmod>2017-08-14T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skgadi.com/tools/stringing-chart/</loc>
     <lastmod>2017-08-14T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/categories/family/</loc>
+    <lastmod>2017-06-18T00:00:00-06:00</lastmod>
   </url>
   
   <url>
@@ -128,7 +203,32 @@
   </url>
   
   <url>
+    <loc>https://skgadi.com/tags/programming/</loc>
+    <lastmod>2017-06-18T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/tags/tishya/</loc>
+    <lastmod>2017-06-18T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/categories/voice-recording/</loc>
+    <lastmod>2017-06-18T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/tags/optimization/</loc>
+    <lastmod>2017-06-08T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skgadi.com/posts/sacs-2017/</loc>
+    <lastmod>2017-06-08T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/tags/python/</loc>
     <lastmod>2017-06-08T00:00:00-06:00</lastmod>
   </url>
   
@@ -138,8 +238,23 @@
   </url>
   
   <url>
+    <loc>https://skgadi.com/tags/bibtex/</loc>
+    <lastmod>2017-03-31T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/tags/library/</loc>
+    <lastmod>2017-03-31T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skgadi.com/tools/private-books/</loc>
     <lastmod>2017-03-31T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/tags/calculator/</loc>
+    <lastmod>2017-03-24T00:00:00-06:00</lastmod>
   </url>
   
   <url>
@@ -148,8 +263,23 @@
   </url>
   
   <url>
+    <loc>https://skgadi.com/tags/electrical-engineering/</loc>
+    <lastmod>2017-03-24T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/tags/compiler/</loc>
+    <lastmod>2017-03-23T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skgadi.com/tools/python-compiler/</loc>
     <lastmod>2017-03-23T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/tags/design-of-experiments/</loc>
+    <lastmod>2017-02-25T00:00:00-06:00</lastmod>
   </url>
   
   <url>
@@ -159,6 +289,11 @@
   
   <url>
     <loc>https://skgadi.com/work-experience/uadec/</loc>
+    <lastmod>2017-02-22T23:12:36-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/work-experience/</loc>
     <lastmod>2017-02-22T23:12:36-06:00</lastmod>
   </url>
   
@@ -195,6 +330,11 @@
   <url>
     <loc>https://skgadi.com/courses/2016-07-12-digital-control/</loc>
     <lastmod>2016-08-08T23:12:36-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/tags/latex/</loc>
+    <lastmod>2016-06-16T00:00:00-06:00</lastmod>
   </url>
   
   <url>
@@ -263,6 +403,11 @@
   </url>
   
   <url>
+    <loc>https://skgadi.com/education/</loc>
+    <lastmod>2014-05-20T23:12:36-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skgadi.com/education/phd/</loc>
     <lastmod>2014-05-20T23:12:36-06:00</lastmod>
   </url>
@@ -280,6 +425,11 @@
   <url>
     <loc>https://skgadi.com/education/mtech/</loc>
     <lastmod>2009-05-31T23:12:36+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/achievements/</loc>
+    <lastmod>2009-04-06T00:00:00+05:30</lastmod>
   </url>
   
   <url>
@@ -390,186 +540,6 @@
   <url>
     <loc>https://skgadi.com/education/ssc/</loc>
     <lastmod>1999-06-30T23:12:36+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/categories/academic/</loc>
-    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/achievements/</loc>
-    <lastmod>2009-04-06T00:00:00+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/tags/bibtex/</loc>
-    <lastmod>2017-03-31T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/tags/calculator/</loc>
-    <lastmod>2017-03-24T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/categories/</loc>
-    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/tags/cit/</loc>
-    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/tags/compiler/</loc>
-    <lastmod>2017-03-23T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/courses/</loc>
-    <lastmod>2019-07-01T23:12:36-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/tags/design-of-experiments/</loc>
-    <lastmod>2017-02-25T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/education/</loc>
-    <lastmod>2014-05-20T23:12:36-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/tags/electrical-engineering/</loc>
-    <lastmod>2017-03-24T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/categories/family/</loc>
-    <lastmod>2017-06-18T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/tags/latex/</loc>
-    <lastmod>2016-06-16T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/tags/library/</loc>
-    <lastmod>2017-03-31T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/tags/manuals/</loc>
-    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/tags/mathematics/</loc>
-    <lastmod>2017-08-14T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/tags/mechanics/</loc>
-    <lastmod>2018-03-06T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/tags/optimization/</loc>
-    <lastmod>2017-06-08T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/posts/</loc>
-    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/tags/programming/</loc>
-    <lastmod>2017-06-18T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/projects/</loc>
-    <lastmod>2019-04-10T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/tags/python/</loc>
-    <lastmod>2017-06-08T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/tags/real-time/</loc>
-    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/</loc>
-    <lastmod>2019-07-01T23:12:36-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/tags/</loc>
-    <lastmod>2017-03-31T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/tags/tishya/</loc>
-    <lastmod>2017-06-18T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/tools/</loc>
-    <lastmod>2018-03-06T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/categories/voice-recording/</loc>
-    <lastmod>2017-06-18T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/work-experience/</loc>
-    <lastmod>2017-02-22T23:12:36-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/categories/workshop/</loc>
-    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

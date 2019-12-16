@@ -5,7 +5,7 @@
 			<header class="w3-container w3-theme">
 				<h5><b><i class='fas fa-book' aria-hidden='true'></i>&nbsp;&nbsp;&nbsp;&nbsp;Recent courses</b></h5>
 			</header>
-			{{- range first 5 (where .Data.Pages "Section" "courses") -}}
+			{{- range first 5 (where .Site.Pages "Section" "courses") -}}
 			<div class="w3-container w3-center w3-margin-0 w3-padding-0">
 				<a href="{{ .Permalink }}"
 					class="w3-button w3-white w3-block w3-left-align w3-border w3-border-theme w3-ripple">
@@ -23,7 +23,7 @@
 			<header class="w3-container w3-theme">
 				<h5><b><i class='fas fa-wrench' aria-hidden='true'></i>&nbsp;&nbsp;&nbsp;&nbsp;Recent tools</b></h5>
 			</header>
-			{{- range first 5 (where .Data.Pages "Section" "tools") -}}
+			{{- range first 5 (where .Site.Pages "Section" "tools") -}}
 			<div class="w3-container w3-center w3-margin-0 w3-padding-0">
 				<a href="{{ .Permalink }}"
 					class="w3-button w3-white w3-block w3-left-align w3-border w3-border-theme w3-ripple">
@@ -41,7 +41,7 @@
 			<header class="w3-container w3-theme">
 				<h5><b><i class='fas fa-file' aria-hidden='true'></i>&nbsp;&nbsp;&nbsp;&nbsp;Recent posts</b></h5>
 			</header>
-			{{- range first 5 (where .Data.Pages "Section" "posts") -}}
+			{{- range first 5 (where .Site.Pages "Section" "posts") -}}
 			{{- if in .Params.categories "Academic" -}}
 			<div class="w3-container w3-center w3-margin-0 w3-padding-0">
 				<a href="{{ .Permalink }}"

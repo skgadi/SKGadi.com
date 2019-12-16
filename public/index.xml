@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Suresh Kumar Gadi</title>
@@ -53,8 +53,7 @@
       <pubDate>Wed, 10 Apr 2019 00:00:00 -0600</pubDate>
       
       <guid>https://skgadi.com/projects/uyamak/</guid>
-      <description> Status A beta version is published. UYAMAK
-Team  Suresh Kumar Gadi  </description>
+      <description>Status A beta version is published.UYAMAKTeam  Suresh Kumar Gadi  </description>
     </item>
     
     <item>
@@ -63,9 +62,8 @@ Team  Suresh Kumar Gadi  </description>
       <pubDate>Mon, 01 Apr 2019 00:00:00 -0600</pubDate>
       
       <guid>https://skgadi.com/posts/cit-manuals/</guid>
-      <description> The following documents are developed to help the teachers to conduct workshop with the help of CIT application.
-This app is available on google playstore:   The program is open source and you can download or fork it. Fork  Download  Follow @skgadi
-Practice 1  Practice 2  Practice 3  Practice 4  Practice 5  Practice 6  </description>
+      <description>The following documents are developed to help the teachers to conduct workshop with the help of CIT application.
+This app is available on google playstore:The program is open source and you can download or fork it.ForkDownloadFollow @skgadiPractice 1 Practice 2 Practice 3 Practice 4 Practice 5 Practice 6 </description>
     </item>
     
     <item>
@@ -155,10 +153,17 @@ Practice 1  Practice 2  Practice 3  Practice 4  Practice 5  Practice 6  </descri
       <pubDate>Tue, 06 Mar 2018 00:00:00 -0600</pubDate>
       
       <guid>https://skgadi.com/tools/material-charactrization/</guid>
-      <description>&amp;nbsp;InstructionsDuring the test, the room temperature should be between $10^\circ$C to $37^\circ$C Copy paste the data received from the UTM. The first column is elongation and the second column is the load applied on the specimen.
-This app will pre-process the data and generates information.
-App is loadingApp is loadingPlease wait. If it is taking longer than 1 minute, please refresh the page.
-App is processing the information.</description>
+      <description>&lt;div class=&#34;w3-margin-bottom w3-border w3-border-theme&#34;&gt;
+	&lt;div class=&#34;w3-row&#34;&gt;
+		&lt;header class=&#34;w3-container w3-theme&#34;&gt;&lt;h5&gt;&lt;b&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&amp;nbsp;Instructions&lt;/b&gt;&lt;/h5&gt;&lt;/header&gt;
+		&lt;div class=&#34;w3-col m12 l12 s12 w3-padding&#34;&gt;
+			&lt;p&gt;During the test, the room temperature should be between $10^\circ$C to $37^\circ$C &lt;/p&gt;
+			&lt;p&gt;Copy paste the data received from the UTM. The first column is elongation and the second column is the load applied on the specimen.&lt;/p&gt;
+			&lt;p&gt;This app will pre-process the data and generates information.&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
@@ -167,8 +172,7 @@ This app will pre-process the data and generates information.
       <pubDate>Thu, 01 Feb 2018 00:00:00 -0600</pubDate>
       
       <guid>https://skgadi.com/projects/control-toolbox/</guid>
-      <description> Status A beta version of continuous time design is published. 
-Team  Suresh Kumar Gadi Antonio Concha  </description>
+      <description>Status A beta version of continuous time design is published.Team  Suresh Kumar Gadi Antonio Concha  </description>
     </item>
     
     <item>
@@ -222,8 +226,15 @@ Team  Suresh Kumar Gadi Antonio Concha  </description>
       <pubDate>Mon, 14 Aug 2017 00:00:00 -0600</pubDate>
       
       <guid>https://skgadi.com/tools/stringing-chart/</guid>
-      <description>&amp;nbsp;InstructionsInstructions are comming soon ...
-&amp;nbsp;Reference dataGenerateNext</description>
+      <description>&lt;div class=&#34;w3-margin-bottom w3-border w3-border-theme&#34;&gt;
+	&lt;div class=&#34;w3-row&#34;&gt;
+		&lt;header class=&#34;w3-container w3-theme&#34;&gt;&lt;h5&gt;&lt;b&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&amp;nbsp;Instructions&lt;/b&gt;&lt;/h5&gt;&lt;/header&gt;
+		&lt;div class=&#34;w3-col m12 l12 s12 w3-padding&#34;&gt;
+			&lt;p&gt;Instructions are comming soon ...&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
@@ -232,9 +243,8 @@ Team  Suresh Kumar Gadi Antonio Concha  </description>
       <pubDate>Sun, 18 Jun 2017 00:00:00 -0600</pubDate>
       
       <guid>https://skgadi.com/posts/father-day-2017/</guid>
-      <description>Tishya&amp;rsquo;s voice recorded on the father&amp;rsquo;s day of 2017.
-Tishya wishing happy father&amp;rsquo;s day 
-Tishya conveying her love</description>
+      <description>Tishya&#39;s voice recorded on the father&#39;s day of 2017.
+Tishya wishing happy father&#39;s day Tishya conveying her love </description>
     </item>
     
     <item>
@@ -255,8 +265,7 @@ Generalized step function $S_0(t)$A step wave has only two states and changes f
       <pubDate>Thu, 08 Jun 2017 00:00:00 -0600</pubDate>
       
       <guid>https://skgadi.com/posts/sacs-2017/</guid>
-      <description>&lt;p&gt;Suresh Kumar Gadi gave a plenary talk on &lt;strong&gt;real-time computing&lt;/strong&gt; and conducted a workshop on &lt;strong&gt;Solving mathematical equations with the help of genetic algorithms&lt;/strong&gt; at the 1st Symposium on Applied Computer Science (SACS-2017).
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Suresh Kumar Gadi gave a plenary talk on &lt;strong&gt;real-time computing&lt;/strong&gt; and conducted a workshop on &lt;strong&gt;Solving mathematical equations with the help of genetic algorithms&lt;/strong&gt; at the 1st Symposium on Applied Computer Science (SACS-2017).&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -303,8 +312,15 @@ Authorize&amp;nbsp;Options Add entry Open database file Download BibTeX
       <pubDate>Sat, 25 Feb 2017 00:00:00 -0600</pubDate>
       
       <guid>https://skgadi.com/tools/multifactorial-experiment-simulator/</guid>
-      <description>&amp;nbsp;InstructionsThis tool allows user to simulate multifactorial experiments. The optimization result can be verified here: This tool provides an error of the estimated values for the factors.
-&amp;nbsp;Select number of factorsNext&amp;nbsp;Select the upper and lower limitsFactorLower limitUpper limit&amp;nbsp;Perform individual experiment/measure distance from optimum value (validate optimum value)FactorValue&amp;nbsp;Perform bulk experimentsTo perform bulk experiments, paste your excel data here.</description>
+      <description>&lt;div class=&#34;w3-margin-bottom w3-border w3-border-theme&#34;&gt;
+	&lt;div class=&#34;w3-row&#34;&gt;
+		&lt;header class=&#34;w3-container w3-theme&#34;&gt;&lt;h5&gt;&lt;b&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&amp;nbsp;Instructions&lt;/b&gt;&lt;/h5&gt;&lt;/header&gt;
+		&lt;div class=&#34;w3-col m12 l12 s12 w3-padding&#34;&gt;
+			&lt;p&gt;This tool allows user to simulate multifactorial experiments. The optimization result can be verified here: This tool provides an error of the estimated values for the factors.&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
@@ -340,7 +356,7 @@ Authorize&amp;nbsp;Options Add entry Open database file Download BibTeX
       <pubDate>Mon, 09 Jan 2017 23:12:36 -0600</pubDate>
       
       <guid>https://skgadi.com/courses/2017-01-06-semiconductor-physics/</guid>
-      <description> </description>
+      <description></description>
     </item>
     
     <item>
@@ -385,8 +401,7 @@ Authorize&amp;nbsp;Options Add entry Open database file Download BibTeX
       <pubDate>Thu, 16 Jun 2016 00:00:00 -0600</pubDate>
       
       <guid>https://skgadi.com/posts/one-day-workshop-on-latex/</guid>
-      <description>&lt;p&gt;This workshop presents an introduction to the programming language LaTeX  for the first time users.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;This workshop presents an introduction to the programming language LaTeX  for the first time users.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -539,7 +554,7 @@ Authorize&amp;nbsp;Options Add entry Open database file Download BibTeX
       <pubDate>Mon, 06 Apr 2009 00:00:00 +0530</pubDate>
       
       <guid>https://skgadi.com/achievements/merit-award/</guid>
-      <description>Received merit award from VIT university for the academic year 2008-2009 during his master&amp;rsquo;s education.</description>
+      <description>Received merit award from VIT university for the academic year 2008-2009 during his master&#39;s education.</description>
     </item>
     
     <item>
@@ -620,7 +635,7 @@ Authorize&amp;nbsp;Options Add entry Open database file Download BibTeX
       <pubDate>Mon, 30 Jul 2007 23:12:36 +0530</pubDate>
       
       <guid>https://skgadi.com/work-experience/slb/</guid>
-      <description>Accomplishments  Obtained Schlumberger&amp;rsquo;s Xpert certification in SWT. SWT is a testing process of an oil well usually performed on an oil rig, which starts at flow head and runs all the way to burners. Since SWT crew is responsible for bringing the oil to the surface for the first time, the safety of the personnel, the oil-well and the equipment is of very high priority. Xpert certification includes a training on the selection of equipment for a given SWT project.</description>
+      <description>Accomplishments  Obtained Schlumberger&#39;s Xpert certification in SWT. SWT is a testing process of an oil well usually performed on an oil rig, which starts at flow head and runs all the way to burners. Since SWT crew is responsible for bringing the oil to the surface for the first time, the safety of the personnel, the oil-well and the equipment is of very high priority. Xpert certification includes a training on the selection of equipment for a given SWT project.</description>
     </item>
     
     <item>
@@ -657,7 +672,7 @@ Authorize&amp;nbsp;Options Add entry Open database file Download BibTeX
       
       <guid>https://skgadi.com/projects/surface-well-testing/</guid>
       <description>The project, Construction of the 66 KV double circuit transmission lines at Bawana, Delhi, is contracted to L&amp;amp;T by Tata Power Delhi Distribution, formarly known as North Delhi Power Ltd. (NDPL), to strengthen North Delhi power distribution system.
-The Institution of Engineers (India) considered this project as a Bachelor&amp;rsquo;s thesis.</description>
+The Institution of Engineers (India) considered this project as a Bachelor&#39;s thesis.</description>
     </item>
     
     <item>
@@ -676,7 +691,7 @@ The Institution of Engineers (India) considered this project as a Bachelor&amp;r
       
       <guid>https://skgadi.com/projects/66-kv-double-circuit-transmission-lines/</guid>
       <description>The project, Construction of the 66 KV double circuit transmission lines at Bawana, Delhi, is contracted to L&amp;amp;T by Tata Power Delhi Distribution, formarly known as North Delhi Power Ltd. (NDPL), to strengthen North Delhi power distribution system.
-The Institution of Engineers (India) considered this project as a Bachelor&amp;rsquo;s thesis.</description>
+The Institution of Engineers (India) considered this project as a Bachelor&#39;s thesis.</description>
     </item>
     
     <item>
