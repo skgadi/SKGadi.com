@@ -93,3 +93,15 @@ div {
 .breadcrumbs {
 	padding: 0px 8px 0 0 !important;
 }
+
+.thickBorder {
+	border-width: 2px !important;
+}
+
+a {
+	text-decoration: none;
+}
+
+.pointer {
+	cursor: pointer;
+}
