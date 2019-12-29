@@ -8,7 +8,7 @@
     "GSKRole": "Leader",
     "GSKTeamSize": "2",
     "GSKKeySkills": ["Web technologies", "Android studio", "Java", "Mathematics"],
-    "incomplete": false,
+    "complete": true,
     "featured": true,
     "GSKFundName": "None",
     "GSKFundURL": "",
@@ -27,6 +27,21 @@
             "btn": "Web-app (V1)",
             "icon": "far fa-window-maximize",
             "url": "https://cit.skgadi.com/"
+        }
+    ],
+    "team": [
+        {
+            "type": "Researchers",
+            "team": [
+                {
+                    "name": "S. K. Gadi",
+                    "url": "https://orcid.org/0000-0001-7974-7825"
+                },
+                {
+                    "name": "A. Concha",
+                    "url": "https://orcid.org/0000-0001-9005-3584"
+                }
+            ]
         }
     ]
 }

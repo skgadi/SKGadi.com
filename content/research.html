@@ -1,39 +1,61 @@
-+++
-#SEO Data
-Keywords = ["research", "publications", "articles", "conference"]
-description = "Suresh Kumar Gadi has contributions in 2 journal article and 5 conference proceedings."
-date = "2017-01-07T00:00:00-06:00"
-title = "Research"
-Lastmod = "2018-10-05T00:00:00-06:00"
+{
+	"Keywords": ["research", "publications", "articles", "conference"],
+	"description": "Suresh Kumar Gadi has contributions in 2 journal article and 5 conference proceedings.",
+	"date": "2017-01-07T00:00:00-06:00",
+	"title": "Research",
+	"Lastmod": "2018-10-05T00:00:00-06:00",
+	"type": "research",
+	"LoadPackages": {
+		"JQuery2": 1,
+		"Notify": 1,
+		"BibTeXJS": 1
+	},
+	"JSPlugInEnd": [ {
+		"URL": "gen-funcs.js",
+		"Local": "true"
+	},
+	{
+		"URL": "script001.js",
+		"Local": "true"
+	}
+	],
+	"BiBPlugInEnd": [{
+		"URL": "publications.bib",
+		"Local": "true"
+	}],
+	"thanks": [{
+		"identifier": "bibtex-js",
+		"name": "BibTeX-js",
+		"url": "https://github.com/pcooksey/bibtex-js",
+		"reason": "sharing the code, which allows to convert a BibTeX into HTML",
+		"weight": 0
+	}],
+	"rinterests": [
+	{
+		"name": "Internet of things (IOT)",
+		"abstract": "This is an abstract. This is an abstract. This is an abstract. This is an abstract. This is an abstract. This is an abstract. "
+	},
+	{
+		"name": "Design of didactic systems",
+		"abstract": "This is an abstract. This is an abstract. This is an abstract. This is an abstract. This is an abstract. This is an abstract. "
+	},
+	{
+		"name": "Electrical engineering analysis",
+		"abstract": "This is an abstract. This is an abstract. This is an abstract. This is an abstract. This is an abstract. This is an abstract. "
+	}
+	],
+	"email": [
+	{
+		"id": "research @ SKGadi.com",
+		"desc": "for research purpos"
+	},
+	{
+		"id": "gadis @ uadec.edu.mx",
+		"desc": "for university purpos"
+	}
+	]
 
-type = "simple-content"
-layout = "zero-padding"
-
-[LoadPackages]
-JQuery2 = 1
-Notify = 1
-BibTeXJS = 1
-
-[[JSPlugInEnd]]
-URL = "gen-funcs.js"
-Local = "true"
-[[JSPlugInEnd]]
-URL = "script001.js"
-Local = "true"
-
-[[BiBPlugInEnd]]
-URL = "publications.bib"
-Local = "true"
-
-[[thanks]]
-identifier = "bibtex-js"
-name = "BibTeX-js"
-url = "https://github.com/pcooksey/bibtex-js"
-reason = "sharing the code, which allows to convert a BibTeX into HTML"
-weight = 0
-
-
-+++
+}
 <div class="w3-row">
 	<!--div class="w3-col m6 l6 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
 	<div class="w3-container w3-padding-0 w3-border w3-border-theme">

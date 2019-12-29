@@ -1,42 +1,92 @@
 @import url('https://fonts.googleapis.com/css?family=Trocchi');
 
-h1, h2, h3, h4, h5, h6, .w3-slim, .w3-wide, body {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.w3-slim,
+.w3-wide,
+body {
 	/*font-family: "Roboto", sans-serif;*/
 	/*font-family:  'Trocchi'; /*Comfortaa, Adamina, Cutive, Trocchi, Corben*/
-	font-family: "Univers 57 Condensed",sans-serif;
+	font-family: "Univers 57 Condensed", sans-serif;
 }
 
-
-body, input, textarea, select, button {
-	text-shadow: 0 1px 1px rgba(0,0,0,0.3);/**/
+html {
+	background-image:url('../images/background.jpg');
+    background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
-.w3-sidenav a {padding:16px;font-weight:bold}
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-	color:    black;
-	opacity:  0.5;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    black;
-   opacity:  0.5;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    black;
-   opacity:  0.5;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    black;
-   opacity:  0.5;
+body {
+	background-color: #f0f0f0;
+	max-width: 1024px;
+	margin: auto;
+	
 }
 
-bibtex { display: none; }
+#myTop {
+	max-width: 774px;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	/**/
+}
+
+.w3-sidenav a {
+	padding: 16px;
+	font-weight: bold
+}
+
+::-webkit-input-placeholder {
+	/* WebKit, Blink, Edge */
+	color: black;
+	opacity: 0.5;
+}
+
+:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: black;
+	opacity: 0.5;
+}
+
+::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: black;
+	opacity: 0.5;
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: black;
+	opacity: 0.5;
+}
+
+bibtex {
+	display: none;
+}
+
 .BibTeXRawCodeBlock {
-	white-space: pre-wrap;       /* Since CSS 2.1 */
-	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-	white-space: -pre-wrap;      /* Opera 4-6 */
-	white-space: -o-pre-wrap;    /* Opera 7 */
-	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	white-space: pre-wrap;
+	/* Since CSS 2.1 */
+	white-space: -moz-pre-wrap;
+	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;
+	/* Opera 4-6 */
+	white-space: -o-pre-wrap;
+	/* Opera 7 */
+	word-wrap: break-word;
+	/* Internet Explorer 5.5+ */
 }
+
 .BibTeXRawCodeBlock {
 	word-wrap: break-word;
 }
@@ -44,17 +94,18 @@ bibtex { display: none; }
 
 div.BibliographyGroup>H1 {
 	font-size: 15px;
-    /*padding: 0px;
+	/*padding: 0px;
     margin: 0px;*/
 	/*text-decoration: underline;*/
 	padding-left: 5px;
 	font-weight: bold;
 	font-style: italic;
 }
+
 div.BibliographyGroup>H2 {
 	font-size: 15px;
-    padding: 0px;
-    margin: 0px;
+	padding: 0px;
+	margin: 0px;
 	padding-left: 15px;
 	font-weight: bold;
 	/*font-style: italic;*/
@@ -70,7 +121,8 @@ li.BibliographyItem {
 	padding-bottom: 10px;
 }
 
-li.BibliographyItem>div, table {
+li.BibliographyItem>div,
+table {
 	word-break: break-all;
 }
 
@@ -78,7 +130,8 @@ div {
 	text-align: justify;
 }
 
-.zero-padding, .w3-padding-0 {
+.zero-padding,
+.w3-padding-0 {
 	padding: 0px !important;
 }
 
@@ -104,4 +157,8 @@ a {
 
 .pointer {
 	cursor: pointer;
+}
+
+.left-margin-4 {
+	margin-left: 4px;
 }

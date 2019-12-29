@@ -1,0 +1,1 @@
+pybtex-convert publications.bib ../data/publications.yaml

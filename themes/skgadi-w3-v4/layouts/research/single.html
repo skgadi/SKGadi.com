@@ -1,0 +1,46 @@
+{{- partial "header.html" . -}}
+<div class="w3-container">
+    <h2>Research interests</h2>
+    {{- range .Params.Rinterests -}}
+    <div class="w3-panel w3-theme-l4">
+        <h3>{{.name}}</h3>
+        <p>{{.abstract}}</p>
+    </div>
+    {{- end -}}
+    <h2>Email for research</h2>
+    {{- range .Params.email -}}
+    <div class="w3-panel w3-theme-l4">
+        <h3>{{.id}}</h3>
+        <p>{{.desc}}</p>
+    </div>
+    {{- end -}}
+    <h2>Publications</h2>
+    <h3>Articles published in the indexed journals</h3>
+    {{- range $idx, $val := $.Site.Data.classifications.gskpubs -}}
+    {{- range $idx1, $val1 := (sort $.Site.Data.publications.entries ".year" "desc") -}}
+
+    {{- if eq $val1.gsktype $val.gsktype -}}
+    <p>{{$val.gsktype}}</p>
+    {{- end -}}
+    <p>--{{$val.gsktype}}</p>
+    <p>{{.gsktype}}--</p>
+    {{- end -}}
+    {{- end -}}
+
+
+
+    {{- range $index, $value := $.Site.Data.publications.entries  -}}
+    <p>{{$index}}</p>
+    {{- end -}}
+    {{ $length := len (where $.Site.Data.publications ".type" "article-journal") }}
+    {{- range $index, $value :=  (sort (where $.Site.Data.publications ".type" "article-journal") ".issued" "date-parts" ) -}}
+    {{ $count := sub $length $index }}
+    <div>
+        <p>{{ $count }}. {{ .title }}</p>
+        <p>{{.issued}}</p>
+        <p>{{.abstract}}</p>
+    </div>
+    {{- end -}}
+</div>
+
+{{- partial "footer.html" . -}}

@@ -1,17 +1,29 @@
 {{ partial "header.html" . }}
 <div class="w3-container">
-	<h1>Current projects</h1>
-	{{- range $index, $value := first 5 (where (where .Site.RegularPages "Section" "projects") ".Params.featured" "==" true) -}}
+	<h2>Current projects</h2>
+	{{- range $index, $value := first 5 (where (where (where .Site.RegularPages "Section" "projects") ".Params.featured" "==" true) ".Params.complete" "==" false) -}}
 	<a class="" href="{{ .Permalink }}">
-		<div class="w3-panel w3-theme-l5 w3-card w3-round-large pointer w3-hover-shadow">
+		<div class="w3-panel w3-theme-l4 w3-card pointer w3-hover-shadow">
 			<h3>{{.Title}}</h3>
-			<p>{{.Summary}}</p>
+			<p>{{.Description}}</p>
+			<h4>Participents</h4>
+			<ul>
+				{{- range $index1, $value1 := .Params.team -}}
+				<li>{{.type}}
+					<ul>
+						{{- range $index2, $value2 := .team -}}
+						<li><a href="{{.url}}" target="_blank">{{.name}}</a></li>
+						{{- end -}}
+					</ul>
+				</li>
+				{{- end -}}
+			</ul>
 			<p class="w3-right">
-				{{- range .Params.fButtons -}}
+				{{- range $index1, $value1 := .Params.fButtons -}}
 				<a href="{{.url}}" target="_blank"
-					class="w3-button w3-border w3-border-theme w3-round-xxlarge thickBorder"
-					style="margin-right: 2px;"><span><i class="{{.icon}} fa-fw" aria-hidden="true"></i></span><span
-						class="w3-hide-small">&ensp;{{.btn}}</span></a>
+					class="w3-button w3-theme-l3 w3-hover-theme {{ if  $index1 }} left-margin-4{{ end }}"><span><i
+							class="{{.icon}} fa-fw" aria-hidden="true"></i></span><span
+						class="w3-hide-small left-margin-4">{{.btn}}</span></a>
 				{{- end -}}
 			</p>
 		</div>
@@ -19,18 +31,30 @@
 	{{- end -}}
 </div>
 <div class="w3-container">
-	<h1>Recently accomplished projects</h1>
-	{{- range $index, $value := first 5 (where (where .Site.RegularPages "Section" "projects") ".Params.featured" "==" true) -}}
+	<h2>Recently accomplished projects</h2>
+	{{- range $index, $value := first 5 (where (where (where .Site.RegularPages "Section" "projects") ".Params.featured" "==" true) ".Params.complete" "==" true) -}}
 	<a class="" href="{{ .Permalink }}">
-		<div class="w3-panel w3-theme-l5 w3-card w3-round-large pointer w3-hover-shadow">
+		<div class="w3-panel w3-theme-l4 w3-card pointer w3-hover-shadow">
 			<h3>{{.Title}}</h3>
-			<p>{{.Summary}}</p>
+			<p>{{.Description}}</p>
+			<h4>Participents</h4>
+			<ul>
+				{{- range $index1, $value1 := .Params.team -}}
+				<li>{{.type}}
+					<ul>
+						{{- range $index2, $value2 := .team -}}
+						<li><a href="{{.url}}" target="_blank">{{.name}}</a></li>
+						{{- end -}}
+					</ul>
+				</li>
+				{{- end -}}
+			</ul>
 			<p class="w3-right">
-				{{- range .Params.fButtons -}}
+				{{- range $index1, $value1 := .Params.fButtons -}}
 				<a href="{{.url}}" target="_blank"
-					class="w3-button w3-border w3-border-theme w3-round-xxlarge thickBorder"
-					style="margin-right: 2px;"><span><i class="{{.icon}} fa-fw" aria-hidden="true"></i></span><span
-						class="w3-hide-small">&ensp;{{.btn}}</span></a>
+					class="w3-button w3-theme-l3 w3-hover-theme {{ if  $index1 }} left-margin-4{{ end }}"><span><i
+							class="{{.icon}} fa-fw" aria-hidden="true"></i></span><span
+						class="w3-hide-small left-margin-4">{{.btn}}</span></a>
 				{{- end -}}
 			</p>
 		</div>
@@ -38,34 +62,30 @@
 	{{- end -}}
 </div>
 <div class="w3-container">
-	<h1>Recent courses</h1>
+	<h2>Recent courses</h2>
 	{{- range $index, $value := first 5 (where .Site.RegularPages "Section" "courses") -}}
-	{{ if  $index }}
-	<hr />{{ end }}
 	<a href="{{ .Permalink }}">
-	<div class="w3-panel w3-theme-l5 w3-card w3-round-large pointer w3-hover-shadow">
-		<h3>{{.Title}} <i class="w3-medium">[{{dateFormat "Jan'06" .Params.gskstartdate}},
-				{{dateFormat "Jan'06" .Params.gskenddate}}]</i></h3>
-		<p>He gave the <b>{{.Title}}</b> course to the <b>{{.Params.gsklevel}}'s</b> student of
-			the <b>{{.Params.gskgroup}}</b> group at the <b>{{.Params.gskdepartment}}</b>
-			in the <b>{{.Params.gskschool}}</b> from {{dateFormat "January 2006" .Params.gskstartdate}} to
-			{{dateFormat "January 2006" .Params.gskenddate}}.</p>
+		<div class="w3-panel w3-theme-l4 w3-card pointer w3-hover-shadow">
+			<h3>{{.Title}}</h3>
+			<p>He gave the <b>{{.Title}}</b> course to the <b>{{.Params.gsklevel}}'s</b> student of
+				the <b>{{.Params.gskgroup}}</b> group at the <b>{{.Params.gskdepartment}}</b>
+				in the <b>{{.Params.gskschool}}</b> from {{dateFormat "January 2006" .Params.gskstartdate}} to
+				{{dateFormat "January 2006" .Params.gskenddate}}.</p>
 			<p class="w3-right">
 				{{- if isset .Params "gskattendanceurl" -}}
 				<a href="https://docs.google.com/spreadsheets/d/{{.Params.gskattendanceurl}}" target="_blank"
-					class="w3-button w3-border w3-border-theme w3-round-xxlarge thickBorder"
-					style="margin-right: 2px;"><span><i class="far fa-check-square fa-fw" aria-hidden="true"></i></span><span
-						class="w3-hide-small">&ensp;Attendance</span></a>
+					class="w3-button w3-theme-l3 w3-hover-theme"><span><i class="far fa-check-square fa-fw"
+							aria-hidden="true"></i></span><span class="w3-hide-small left-margin-4">Attendance</span></a>
 				{{- end -}}
 				{{- if isset .Params "gskgradeurl" -}}
 				<a href="https://docs.google.com/spreadsheets/d/{{.Params.gskgradeurl}}" target="_blank"
-					class="w3-button w3-border w3-border-theme w3-round-xxlarge thickBorder"
-					style="margin-right: 2px;"><span><i class="fas fa-sort-numeric-up-alt fa-fw"
-							aria-hidden="true"></i></span><span class="w3-hide-small">&ensp;Grade</span></a>
+					class="w3-button w3-theme-l3 w3-hover-theme left-margin-4"><span><i
+							class="fas fa-sort-numeric-up-alt fa-fw" aria-hidden="true"></i></span><span
+						class="w3-hide-small left-margin-4">Grade</span></a>
 				{{- end -}}
 			</p>
-	</div>
-</a>
+		</div>
+	</a>
 	{{- end -}}
 </div>
 <!--div class="w3-row">

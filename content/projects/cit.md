@@ -8,7 +8,7 @@
     "GSKRole": "Leader",
     "GSKTeamSize": "2",
     "GSKKeySkills": ["Web technologies", "Android studio", "Java", "Control theory", "Embedded systems", "real-time"],
-    "incomplete": true,
+    "complete": false,
     "featured": true,
     "GSKFundName": "None",
     "GSKFundURL": "",

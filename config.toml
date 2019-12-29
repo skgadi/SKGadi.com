@@ -17,7 +17,7 @@ baseurl = "https://skgadi.com/"
 	Maps = "https://goo.gl/maps/8NrtjMajSUz"
 	PayPal = "https://paypal.me/skgadi"
 #	Phone = "+52 (1) 449 182 0153"
-	Fax = "+52 (1) 871 757 0153"
+#	Fax = "+52 (1) 871 757 0153"
 	Address = "Carretera Torreón - Matamoros Km. 7.5, Ciudad Universitaria, Torreón, Coahuila, México, C.P. 27276"
 	GoogleAnalyticsID = "UA-89998286-1"
 	Author = "Suresh Kumar Gadi"
@@ -57,14 +57,19 @@ baseurl = "https://skgadi.com/"
 
 	
 	
+[[menu.main]]
+    identifier = "Search"
+    name = "Search"
+    url = "https://search.skgadi.com/"
+	pre = "fas fa-search"
+	weight = 1
 
 [[menu.main]]
     identifier = "Research"
     name = "Research"
     url = "/research/"
 	pre = "fas fa-flask"
-	weight = 1
-
+	weight = 2
 
 [[menu.main]]
     identifier = "Courses"
@@ -93,6 +98,8 @@ baseurl = "https://skgadi.com/"
     url = "/resume/"
 	pre = "fas fa-list-alt"
 	weight = 11
+
+
 
 [[menu.small]]
     identifier = "Education"

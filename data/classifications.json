@@ -1,0 +1,32 @@
+{
+    "gskpubs" : [
+        {
+            "gsktype": 100,
+            "name": "Articles published in the indexed journals"
+        },
+        {
+            "gsktype": 200,
+            "name": "Book chapters"
+        },
+        {
+            "gsktype": 300,
+            "name": "Other articles"
+        },
+        {
+            "gsktype": 400,
+            "name": "International conference proceedings"
+        },
+        {
+            "gsktype": 500,
+            "name": "National conference proceedings"
+        },
+        {
+            "gsktype": 600,
+            "name": "Ph.D. Thesis"
+        },
+        {
+            "gsktype": 700,
+            "name": "Master's thesis"
+        }
+    ]
+}
