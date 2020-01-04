@@ -21,7 +21,7 @@
 			{{- end -}}
 		</ul>
 		{{- else -}}
-		<a class="w3-button w3-hover-theme zero-padding {{ if eq $.RelPermalink .URL }} w3-text-theme {{ else }} {{ end }}"
+		<a class="w3-button w3-hover-theme zero-padding {{ if eq $.RelPermalink .URL }} w3-text-yellow {{ else }} {{ end }}"
 			href="{{ .URL }}">{{ if .Pre }}<i class='{{ .Pre }} fa-fw' aria-hidden='true'></i>{{ end }}
 			<!--&nbsp;{{- .Name -}}--></a>&nbsp;
 		{{- end -}}
@@ -37,7 +37,7 @@
 			{{- end -}}
 		</ul>
 		{{- else -}}
-		<a class="w3-button w3-hover-theme zero-padding {{ if eq $.RelPermalink .URL }} w3-text-theme {{ else }} {{ end }}"
+		<a class="w3-button w3-hover-theme zero-padding {{ if eq $.RelPermalink .URL }} w3-text-yellow {{ else }} {{ end }}"
 			href="{{ .URL }}">{{ if .Pre }}<i class='fas {{ .Pre }} fa-fw' aria-hidden='true'></i>{{ end }}
 			<!--&nbsp;{{- .Name -}}--></a>&nbsp;
 		{{- end -}}
