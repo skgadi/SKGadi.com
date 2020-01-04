@@ -15,32 +15,190 @@
     </div>
     {{- end -}}
     <h2>Publications</h2>
-    <h3>Articles published in the indexed journals</h3>
-    {{- range $idx, $val := $.Site.Data.classifications.gskpubs -}}
-    {{- range $idx1, $val1 := (sort $.Site.Data.publications.entries ".year" "desc") -}}
+    <div class="w3-panel w3-padding w3-theme-l4">
+        <div id="pubs">
+            <div v-if="!!pubs.entries">
+                <!--div style="text-align: right;">
+                    <div class="w3-hover-text-theme pointer w3-padding" style="display: inline-block;"
+                        :class="(!!sFOptions) ? 'w3-theme-l3' : ''" @click="sFOptions = !sFOptions">
+                        <i class="fas fa-filter fa-fw"></i><span class="left-margin-4">Filter</span>
+                    </div>
+                </div>
+                <div class="w3-theme-l3" v-show="!!sFOptions">
+                    <table class="w3-table">
+                        <tr>
+                            <td><input disabled class="w3-input" value="Author"> </td>
+                            <td><input disabled class="w3-input" value="Contains"> </td>
+                            <td colspan="2"><input disabled class="w3-input" value="Gadi"> </td>
+                        </tr>
+                        <template v-for="(val, idx) in filters">
+                            <tr>
+                                <td><select class="w3-select" v-model="val.key">
+                                        <option v-for="(val1, idx1) in fields" :value="'key_'+idx1">{[{val1.disp}]}
+                                        </option>
+                                    </select></td>
+                                <td><select class="w3-select" v-model="val.opr">
+                                        <option v-for="(val1, idx1) in operators" :value="'oper_'+idx1">{[{val1.disp}]}
+                                        </option>
+                                    </select></td>
+                                <td><input class="w3-input" v-model="val.val" /></td>
+                                <td style="vertical-align: middle;"><i class="fas fa-times fa-fw w3-text-red pointer"
+                                        @click="filters.splice(idx, 1)"></i></td>
+                            </tr>
+                        </template>
+                    </table>
+                    <div class="w3-center w3-padding">
+                        <div class="w3-button w3-theme-l2 w3-hover-theme" @click="addAFilterOption"><i
+                                class="fas fa-plus fa-fw"></i><span class="left-margin-4">Add</span></div>
 
-    {{- if eq $val1.gsktype $val.gsktype -}}
-    <p>{{$val.gsktype}}</p>
-    {{- end -}}
-    <p>--{{$val.gsktype}}</p>
-    <p>{{.gsktype}}--</p>
-    {{- end -}}
-    {{- end -}}
+                    </div>
+                </div-->
+                <template v-for="(val, idx, ite) in pubTypes">
+                    <h3 v-if="getSortedItems(idx).length > 0" v-text="(ite + 1) + '. ' + val"></h3>
+                    <ol reversed>
+                        <template v-for="(val1, idx1, ite1) in getSortedItems(idx)">
+
+                            <li>
+                                <div>
+                                    <template v-for="(val2, idx2) in val1.author">
+                                        <span v-if="!!idx2" v-text="', '"></span>
+                                        <span v-if="!!idx2 && (idx2 === val1.author.length - 1)"
+                                            v-text="' and '"></span>
+                                        <span
+                                            v-text="(!!val2.first ? val2.first : '') + (!!val2.middle ? ' ' + val2.middle : '')   + (!!val2.last ? ' ' + val2.last : '')"></span>
+                                    </template>
+                                    <span v-text="'('+ (!!val1.month ? val1.month + ', ' : '')+val1.year+')'"></span>
+                                    <span v-if="val1.chapter" v-html="'<b>'+val1.chapter + '</b> in '"></span>
+                                    <span><b v-text="val1.title"></b></span>
+                                    <span v-if="val1.journal"> in <i>{[{val1.journal}]}</i>.</span>
+                                    <span v-if="val1.booktitle">{[{val1.booktitle}]}.</span>
+                                    <span v-if="val1.publisher">Published by: {[{val1.publisher}]}.</span>
+                                    <span v-if="val1.isbn">ISBN: {[{val1.isbn}]}.</span>
+                                    <span v-if="val1.issn">ISSN: {[{val1.issn}]}.</span>
+                                    <span v-if="val1.volume">Vol. {[{val1.volume}]}.</span>
+                                    <span v-if="val1.number">No. {[{val1.number}]}.</span>
+                                    <span v-if="val1.pages">pp: {[{val1.pages}]}.</span>
+                                    <span v-if="val1.school"> at {[{val1.school}]}.</span>
+                                    <span></span>
+                                </div>
+                                <div>
 
 
+                                    <span v-if="val1.url"><a :href="val1.url" target="_blank" :title="val1.url"><i
+                                                class="fas fa-anchor fa-fw"></i></a></span>
+                                    <span v-if="val1.doi"><a :href="'https://doi.org/'+val1.doi" target="_blank"
+                                            :title="'https://doi.org/'+val1.doi"><i
+                                                class="fas fa-link fa-fw"></i></a></span>
+                                    <span v-if="val1.pdf"><a :href="val1.pdf" target="_blank" :title="val1.pdf"><i
+                                                class="far fa-file-pdf fa-fw"></i></a></span>
+                                    <span v-if="val1.bibtex"><a
+                                            :onclick="'toggleDivDisplay(\'bibtex_' + idx + '_' + idx1 + '\')'"
+                                            title="BibTeX" class="pointer"><i class="fas fa-code fa-fw"></i></a>
 
-    {{- range $index, $value := $.Site.Data.publications.entries  -}}
-    <p>{{$index}}</p>
-    {{- end -}}
-    {{ $length := len (where $.Site.Data.publications ".type" "article-journal") }}
-    {{- range $index, $value :=  (sort (where $.Site.Data.publications ".type" "article-journal") ".issued" "date-parts" ) -}}
-    {{ $count := sub $length $index }}
-    <div>
-        <p>{{ $count }}. {{ .title }}</p>
-        <p>{{.issued}}</p>
-        <p>{{.abstract}}</p>
+                                        <span
+                                            :onclick="'downloadElement( \'' + val1.year + '_' + idx + '_' + idx1 + '_gadi\',\'bibtex_p_' + idx + '_' + idx1 + '\')'"
+                                            title="Download BibTeX" class="pointer"><i
+                                                class="fas fa-download fa-fw"></i></span>
+                                        <span
+                                            :onclick="'copyTextofDOMToClipboard(\'bibtex_p_' + idx + '_' + idx1 + '\')'"
+                                            title="Copy BibTeX" class="pointer"><i class="far fa-copy fa-fw"></i></span>
+
+                                    </span>
+                                    <span v-if="val1.abstract"><a
+                                            :onclick="'toggleDivDisplay(\'abstract_' + idx + '_' + idx1 + '\')'"
+                                            title="Abstract" class="pointer"><i
+                                                class="fas fa-paragraph fa-fw"></i></a></span>
+                                    <div class="w3-theme-l3 w3-padding" style="display: none;" v-if="val1.bibtex"
+                                        :id="'bibtex_' + idx + '_' + idx1">
+                                        <div class="w3-right">
+                                            <span
+                                                :onclick="'downloadElement( \'' + val1.year + '_' + idx + '_' + idx1 + '_gadi\',\'bibtex_p_' + idx + '_' + idx1 + '\')'"
+                                                title="Download BibTeX" class="pointer"><i
+                                                    class="fas fa-download fa-fw"></i></span>
+                                            <span
+                                                :onclick="'copyTextofDOMToClipboard(\'bibtex_p_' + idx + '_' + idx1 + '\')'"
+                                                title="Copy BibTeX" class="pointer"><i
+                                                    class="far fa-copy fa-fw"></i></span>
+                                            <span :onclick="'toggleDivDisplay(\'bibtex_' + idx + '_' + idx1 + '\')'"
+                                                target="_blank" title="Close" class="pointer"><i
+                                                    class="fas fa-times fa-fw w3-text-red"></i></span>
+                                        </div>
+                                        <h4>BibTeX:</h4>
+                                        <p :id="'bibtex_p_' + idx + '_' + idx1">{[{val1.bibtex}]}</p>
+                                    </div>
+                                    <div class="w3-theme-l3 w3-padding" style="display: none;" v-if="val1.abstract"
+                                        :id="'abstract_' + idx + '_' + idx1">
+                                        <div class="w3-right">
+                                            <span><a :onclick="'toggleDivDisplay(\'abstract_' + idx + '_' + idx1 + '\')'"
+                                                    target="_blank" title="Close" class="pointer"><i
+                                                        class="fas fa-times fa-fw w3-text-red"></i></a></span>
+                                        </div>
+                                        <h4>Abstract:</h4>
+                                        <p :id="'abstract_p_' + idx + '_' + idx1">{[{val1.abstract}]}</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </template>
+                    </ol>
+                </template>
+                <div>
+
+                </div>
+            </div>
+            <div v-else>
+                <ol class="grid">
+                    {{- range $idx1, $val1 := $.Site.Data.publications.entries  -}}
+                    <li class="grid-item">
+                        <p class="type" style="display: none;">
+                            {{- index $.Site.Data.classifications.pubWeights .gsktype -}}</p>
+                        <p class="year" style="display: none;">{{.year}}</p>
+                        <div class="w3-theme-l4" style="margin-left: 8px;">
+                            {{if .chapter}}<span><b><i>{{.chapter}}</i></b> in </span>{{end}}
+                            <span class="title"><b><i>{{.title}}.</i></b></span>
+                            <span>{{- range .author -}} {{.first}} {{.middle}} {{.last}}; {{ end -}}</span>
+                            {{if .journal}}<span>{{.journal}}, </span>{{end}}
+                            {{if .booktitle}}<span>{{.booktitle}}, </span>{{end}}
+                            {{if .volume}}<span>Vol.&nbsp;{{.volume}}, </span>{{end}}
+                            {{if .number}}<span>No.&nbsp;{{.number}}, </span>{{end}}
+                            {{if .pages}}<span>pp: {{.pages}}, </span>{{end}}
+                            {{if .issn}}<span>ISSN: {{.issn}}, </span>{{end}}
+                            {{if .isbn}}<span>ISBN: {{.isbn}}, </span>{{end}}
+                            {{if .month}}<span>{{.month}}-</span>{{end}}
+                            {{if .year}}<span>{{.year}}. </span>{{end}}
+                            {{if .doi}}<span><a href="https://doi.org/{{.doi}}" target="_blank"
+                                    class="dont-break-out"><i class="fas fa-newspaper fa-fw"></i></a></span>{{end}}
+                            {{if .url}}<span><a href="{{.url}}" target="_blank" class="dont-break-out"><i
+                                        class="fas fa-link fa-fw" aria-hidden="true"></i></a></span>{{end}}
+                            {{if .pdf}}<span><a href="{{.pdf}}" target="_blank" class="dont-break-out"><i
+                                        class="far fa-file-pdf fa-fw"></i></a></span>{{end}}
+                            {{if .abstract}}
+                            <span onclick="toggleDivDisplay('abs-{{$idx1}}')" class="dont-break-out pointer"><i
+                                    class="fas fa-quote-right fa-fw"></i></span>
+                            <div id="abs-{{$idx1}}" class="w3-theme-l3 w3-padding" style="display: none;">{{.abstract}}
+                            </div>
+                            {{end}}
+                            {{if .bibtex}}
+                            <span onclick="toggleDivDisplay('bibtex-{{$idx1}}')" class="dont-break-out pointer"><i
+                                    class="fas fa-copy fa-fw"></i></span>
+                            <div id="bibtex-{{$idx1}}" class="w3-theme-l3 w3-padding bibtex" style="display: none;">
+                                {{.bibtex}}
+                            </div>
+                            {{end}}
+                        </div>
+
+                    </li>
+                    {{- end -}}
+                </ol>
+            </div>
+        </div>
     </div>
-    {{- end -}}
 </div>
-
+<script>
+    function toggleDivDisplay(id) {
+        var ele = document.getElementById(id);
+        if (ele.style.display === "none") ele.style.display = "block";
+        else ele.style.display = "none";
+    }
+</script>
 {{- partial "footer.html" . -}}

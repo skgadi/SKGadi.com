@@ -1,1 +1,0 @@
-../citeproc-java-tool-2.0.0/bin/citeproc-java --output ../data/publications.json json --input publications.bib

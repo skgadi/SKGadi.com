@@ -1,32 +1,38 @@
 {
-    "gskpubs" : [
-        {
-            "gsktype": 100,
-            "name": "Articles published in the indexed journals"
-        },
-        {
-            "gsktype": 200,
-            "name": "Book chapters"
-        },
-        {
-            "gsktype": 300,
-            "name": "Other articles"
-        },
-        {
-            "gsktype": 400,
-            "name": "International conference proceedings"
-        },
-        {
-            "gsktype": 500,
-            "name": "National conference proceedings"
-        },
-        {
-            "gsktype": 600,
-            "name": "Ph.D. Thesis"
-        },
-        {
-            "gsktype": 700,
-            "name": "Master's thesis"
-        }
-    ]
+    "pubTypes1": {
+        "400": "International conference proceedings",
+        "100": "Articles published in the indexed journals",
+        "200": "Book chapters",
+        "300": "Other articles",
+        "500": "National conference proceedings",
+        "600": "Ph.D. Thesis",
+        "700": "Master's thesis"
+    },
+    "pubTypes": {
+        "iCProceedings": "International conference proceedings",
+        "artJCR": "Articles published in the indexed journals",
+        "bChapter": "Book chapters",
+        "artNJCR": "Other articles",
+        "nCProceedings": "National conference proceedings",
+        "pThesis": "Ph.D. Thesis",
+        "mThesis": "Master's thesis"
+    },
+    "pubColors": {
+        "artJCR": "-d5",
+        "bChapter": "-d4",
+        "artNJCR": "-d3",
+        "iCProceedings": "-d2",
+        "nCProceedings": "-d1",
+        "pThesis": "",
+        "mThesis": "-l1"
+    },
+    "pubWeights": {
+        "artJCR": 6,
+        "bChapter": 5,
+        "artNJCR": 4,
+        "iCProceedings": 3,
+        "nCProceedings": 2,
+        "pThesis": 1,
+        "mThesis": 0
+    }
 }
