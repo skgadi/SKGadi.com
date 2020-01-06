@@ -3,6 +3,10 @@ languageCode = "en-us"
 title = "Suresh Kumar Gadi"
 
 baseurl = "https://skgadi.com/"
+
+[markup.goldmark.renderer]
+unsafe= true
+
 [params]
 	CommonTitle = "Suresh Kumar Gadi"
 	SubTitle = "Professor, FIME, UAdeC"

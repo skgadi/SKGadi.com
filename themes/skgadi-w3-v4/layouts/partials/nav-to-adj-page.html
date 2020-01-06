@@ -1,0 +1,15 @@
+<div style="padding: 0 0 16px 0;">
+
+    <div class="w3-row-padding">
+        <div class="w3-col s6">
+            <a {{if .PrevInSection}}href="{{.PrevInSection.Permalink}}" {{end}}
+            class=" {{if .PrevInSection}} {{else}} w3-disabled {{end}} w3-card w3-button w3-theme-l3 w3-hover-theme w3-w3-ripple w3-block"><i
+            class="fas fa-angle-double-left"></i> Previous</a>
+        </div>
+        <div class="w3-col s6">
+            <a {{if .NextInSection}}href="{{.NextInSection.Permalink}}" {{end}}
+            class=" {{if .NextInSection}} {{else}} w3-disabled {{end}} w3-card w3-button w3-theme-l3 w3-hover-theme w3-w3-ripple w3-block">Next
+            <i class="fas fa-angle-double-right"></i></a>
+        </div>
+    </div>
+</div>

@@ -17,6 +17,10 @@ H3.Resume {
 	background-color: skyblue;
 }
 
+H4.Resume {
+	font: 14px "Univers 57 Condensed", Serif;
+}
+
 div.Resume>H1 {
 	font: 12px "Univers 57 Condensed", Sans-serif;
     /*padding: 0px;

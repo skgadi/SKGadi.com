@@ -1,27 +1,12 @@
 {{ partial "header.html" . }}
-<div class="w3-row">
-	{{- range .Data.Pages }}
-	<div class="w3-col m6 l6 s12 w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
-		<div class="w3-container w3-padding-0 w3-border w3-border-theme">
-			<header class="w3-container w3-theme" style="height: 45px; overflow: hidden;">
-				<h5><b><i class="{{range (.Site.Menus.main)}}
-				{{- if eq .URL $.URL -}}
-					{{ .Pre }}
-					{{- $.Scratch.Set "IconSetDone" "True" -}}
-				{{- end -}}
-			{{- end -}}
-			{{if eq ($.Scratch.Get "IconSetDone") "True"}}{{else}}{{ .Site.Params.DefaultIconForMiniWindows }}{{end}}
-			 " aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;{{ .Title }}</b></h5>
-			</header>
-			<div class="w3-container w3-section" style="height: 100px; overflow: hidden;">
-				{{ .Description }}
-			</div>
-			<div class="w3-container w3-center w3-margin-0 w3-padding-0"><a href="{{ .RelPermalink  }}"
-					class="w3-button w3-theme w3-ripple w3-block"><i class="fas fa-th-large"
-						aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Open</a></div>
-			<!--/div-->
+<div class="w3-container">
+	{{- range .Data.Pages -}}
+	<a class="" href="{{ .Permalink }}">
+		<div class="w3-panel w3-theme-l4 w3-card pointer w3-hover-shadow">
+			<h2>{{.Title}}</h2>
+			<p>{{ .Description }}</p>
 		</div>
-	</div>
-	{{- end }}
+	</a>
+	{{- end -}}
 </div>
 {{ partial "footer.html" . -}}

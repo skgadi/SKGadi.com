@@ -1,7 +1,10 @@
 {{- partial "header.html" . -}}
-<div class="w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-white">
-	<button class="w3-btn w3-theme w3-right" onclick="Print()"><i class="fa fa-print"></i> Print</button>
-	<div class="w3-border w3-border-theme w3-padding-small">
+<div class="w3-padding">
+	<div style="text-align: right;">
+		<div class="w3-button w3-theme-l4 w3-hover-theme" onclick="toggleAbstract()"><i class="far fa-check-square"></i> Show/Hide abstract</div>
+		<button class="w3-button w3-theme-l4 w3-hover-theme" onclick="Print()"><i class="fas fa-print"></i> Print</button>
+	</div>
+	<div class="w3-border w3-border-theme w3-padding-small w3-white">
 		<div id="PrintContent">
 			<h1 class="Resume">{{.Params.FirstName}} {{.Params.LastName}}</h1>
 			<p class="SubTitle"><i>{{.Params.SubTitle}}</i></p>
@@ -226,34 +229,113 @@
 			<p><b>{{.Title}}:</b> {{.Description}} </p>
 			{{ end }}
 			<h3 class="Resume">Publications</h3>
-			<div class="bibtex_structure">
-				<div class="group gsktype Resume" extra="ASC string">
-					<div class="sort year Resume" extra="ASC number">
-						<ol class="templates" reversed style="margin: 0px;"></ol>
+
+
+
+
+
+
+
+
+
+			<div id="pubs">
+				<div v-if="!!pubs.entries">
+					<template v-for="(val, idx, ite) in pubTypes">
+						<h4 class="resume" v-if="getSortedItems(idx).length > 0" v-text="(ite + 1) + '. ' + val"></h4>
+						<ol reversed>
+							<template v-for="(val1, idx1, ite1) in getSortedItems(idx)">
+
+								<li>
+									<div>
+										<template v-for="(val2, idx2) in val1.author">
+											<span v-if="!!idx2" v-text="', '"></span>
+											<span v-if="!!idx2 && (idx2 === val1.author.length - 1)"
+												v-text="' and '"></span>
+											<span
+												v-text="(!!val2.first ? val2.first : '') + (!!val2.middle ? ' ' + val2.middle : '')   + (!!val2.last ? ' ' + val2.last : '')"></span>
+										</template>
+										<span
+											v-text="'('+ (!!val1.month ? val1.month + ', ' : '')+val1.year+')'"></span>
+										<span v-if="val1.chapter" v-html="'<b>'+val1.chapter + '</b> in '"></span>
+										<span><b v-text="val1.title"></b></span>
+										<span v-if="val1.journal"> in <i>{[{val1.journal}]}</i>.</span>
+										<span v-if="val1.booktitle">{[{val1.booktitle}]}.</span>
+										<span v-if="val1.publisher">Published by: {[{val1.publisher}]}.</span>
+										<span v-if="val1.isbn">ISBN: {[{val1.isbn}]}.</span>
+										<span v-if="val1.issn">ISSN: {[{val1.issn}]}.</span>
+										<span v-if="val1.volume">Vol. {[{val1.volume}]}.</span>
+										<span v-if="val1.number">No. {[{val1.number}]}.</span>
+										<span v-if="val1.pages">pp: {[{val1.pages}]}.</span>
+										<span v-if="val1.school"> at {[{val1.school}]}.</span>
+										<span v-if="val1.url">URL: <a :href="val1.url" class="resume" target="_blank"
+												:title="val1.url" v-text="val1.url"></a></span>
+										<span v-if="val1.url">DOI: <a :href="val1.doi" class="resume" target="_blank"
+												:title="val1.doi" v-text="val1.doi"></a></span>
+										<span v-if="val1.pdf">PDF: <a :href="val1.pdf" class="resume" target="_blank"
+												:title="val1.pdf" v-text="val1.pdf"></a></span>
+									</div>
+									<div v-if="(!!val1.abstract) && showAbstract">
+										<p><b>Abstract:</b></p>
+										<p v-text="val1.abstract"></p>
+									</div>
+								</li>
+
+							</template>
+						</ol>
+					</template>
+					<div>
+
 					</div>
 				</div>
+				<div v-else>
+					<ol class="grid">
+						{{- range $idx1, $val1 := $.Site.Data.publications.entries  -}}
+						<li class="grid-item">
+							<p class="type" style="display: none;">
+								{{- index $.Site.Data.classifications.pubWeights .gsktype -}}</p>
+							<p class="year" style="display: none;">{{.year}}</p>
+							<div class="" style="margin-left: 8px;">
+								{{if .chapter}}<span><b><i>{{.chapter}}</i></b> in </span>{{end}}
+								<span class="title"><b><i>{{.title}}.</i></b></span>
+								<span>{{- range .author -}} {{.first}} {{.middle}} {{.last}}; {{ end -}}</span>
+								{{if .journal}}<span>{{.journal}}, </span>{{end}}
+								{{if .booktitle}}<span>{{.booktitle}}, </span>{{end}}
+								{{if .volume}}<span>Vol.&nbsp;{{.volume}}, </span>{{end}}
+								{{if .number}}<span>No.&nbsp;{{.number}}, </span>{{end}}
+								{{if .pages}}<span>pp: {{.pages}}, </span>{{end}}
+								{{if .issn}}<span>ISSN: {{.issn}}, </span>{{end}}
+								{{if .isbn}}<span>ISBN: {{.isbn}}, </span>{{end}}
+								{{if .month}}<span>{{.month}}-</span>{{end}}
+								{{if .year}}<span>{{.year}}. </span>{{end}}
+								{{if .doi}}<span><a href="https://doi.org/{{.doi}}" target="_blank"
+										class="dont-break-out"><i class="fas fa-newspaper fa-fw"></i></a></span>{{end}}
+								{{if .url}}<span><a href="{{.url}}" target="_blank" class="dont-break-out"><i
+											class="fas fa-link fa-fw" aria-hidden="true"></i></a></span>{{end}}
+								{{if .pdf}}<span><a href="{{.pdf}}" target="_blank" class="dont-break-out"><i
+											class="far fa-file-pdf fa-fw"></i></a></span>{{end}}
+								{{if .abstract}}
+								<span onclick="toggleDivDisplay('abs-{{$idx1}}')" class="dont-break-out pointer"><i
+										class="fas fa-quote-right fa-fw"></i></span>
+								<div id="abs-{{$idx1}}" class="w3-theme-l3 w3-padding" style="display: none;">
+									{{.abstract}}
+								</div>
+								{{end}}
+								{{if .bibtex}}
+								<span onclick="toggleDivDisplay('bibtex-{{$idx1}}')" class="dont-break-out pointer"><i
+										class="fas fa-copy fa-fw"></i></span>
+								<div id="bibtex-{{$idx1}}" class="w3-theme-l3 w3-padding bibtex" style="display: none;">
+									{{.bibtex}}
+								</div>
+								{{end}}
+							</div>
+
+						</li>
+						{{- end -}}
+					</ol>
+				</div>
 			</div>
-			<div id="bibtex_display">
-				<li class="if bibtex_template" style="display: none; ">
-					<div style="margin-bottom: 8px;">
-						<span class="if author"><span class="author"></span>.</span>
-						<span class="if title">"<span class="title"></span>".</span>
-						<span class="if journal">In: <i><span class="journal"></span></i>.</span>
-						<span class="if booktitle">In: <i><span class="booktitle"></span></i>.</span>
-						<span class="if gskthesislevel"><span class="gskthesislevel"></span> thesis.</span>
-						<span class="if school"><span class="school"></span>,</span>
-						<span class="if organization">Organized by: <i><span class="organization"></span></i>,</span>
-						<span class="if publisher">Published by: <i><span class="publisher"></span></i>,</span>
-						<span class="if month"><span class="month"></span>,</span>
-						<span class="if year"><span class="year"></span>.</span>
-						<span class="if pages">pp. <span class="pages"></span>.</span>
-						<span class="if isbn">ISBN: <span class="isbn"></span>.</span>
-						<span class="if issn">ISSN: <span class="issn"></span>.</span>
-						<span class="if doi">DOI: <span class="doi Resume"></span>.</span>
-						<span class="if url">URL: <span class="url Resume"></span>.</span>
-					</div>
-				</li>
-			</div>
+
+
 
 			<h3 class="Resume">Projects</h3>
 			<table class="Resume">
