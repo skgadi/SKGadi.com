@@ -1,1 +1,1 @@
-hugo server -v
+hugo server -v --disableFastRender

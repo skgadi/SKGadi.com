@@ -3,12 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://skgadi.com/courses/2019-07-12-automatic-control/</loc>
-    <lastmod>2019-07-01T23:12:36-06:00</lastmod>
+    <loc>https://skgadi.com/courses/2020-01-06-automatic-control/</loc>
+    <lastmod>2020-01-01T23:12:36-06:00</lastmod>
   </url>
   
   <url>
     <loc>https://skgadi.com/courses/</loc>
+    <lastmod>2020-01-01T23:12:36-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/courses/2020-01-06-digital-electronics/</loc>
+    <lastmod>2020-01-01T23:12:36-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/</loc>
+    <lastmod>2020-01-01T23:12:36-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/courses/2020-01-06-systems-engineering/</loc>
+    <lastmod>2020-01-01T23:12:36-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/courses/2019-07-12-automatic-control/</loc>
     <lastmod>2019-07-01T23:12:36-06:00</lastmod>
   </url>
   
@@ -24,11 +44,6 @@
   
   <url>
     <loc>https://skgadi.com/courses/2019-07-12-simulation/</loc>
-    <lastmod>2019-07-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/</loc>
     <lastmod>2019-07-01T23:12:36-06:00</lastmod>
   </url>
   
