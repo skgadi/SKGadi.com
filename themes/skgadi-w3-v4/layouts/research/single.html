@@ -96,27 +96,27 @@
                                 <div>
 
 
-                                    <span v-if="val1.url"><a :href="val1.url" target="_blank" :title="val1.url"><i
+                                    <span v-if="val1.url"><a class="w3-button w3-theme-l3 w3-hover-theme" :href="val1.url" target="_blank" :title="val1.url"><i
                                                 class="fas fa-anchor fa-fw"></i></a></span>
-                                    <span v-if="val1.doi"><a :href="'https://doi.org/'+val1.doi" target="_blank"
+                                    <span v-if="val1.doi"><a class="w3-button w3-theme-l3 w3-hover-theme" :href="'https://doi.org/'+val1.doi" target="_blank"
                                             :title="'https://doi.org/'+val1.doi"><i
                                                 class="fas fa-link fa-fw"></i></a></span>
-                                    <span v-if="val1.pdf"><a :href="val1.pdf" target="_blank" :title="val1.pdf"><i
+                                    <span v-if="val1.pdf"><a class="w3-button w3-theme-l3 w3-hover-theme" :href="val1.pdf" target="_blank" :title="val1.pdf"><i
                                                 class="far fa-file-pdf fa-fw"></i></a></span>
-                                    <span v-if="val1.bibtex"><a
+                                    <span v-if="val1.bibtex"><a class="w3-button w3-theme-l3 w3-hover-theme" 
                                             :onclick="'toggleDivDisplay(\'bibtex_' + idx + '_' + idx1 + '\')'"
                                             title="BibTeX" class="pointer"><i class="fas fa-code fa-fw"></i></a>
 
-                                        <span
+                                        <span class="w3-button w3-theme-l3 w3-hover-theme" 
                                             :onclick="'downloadElement( \'' + val1.year + '_' + idx + '_' + idx1 + '_gadi\',\'bibtex_p_' + idx + '_' + idx1 + '\')'"
                                             title="Download BibTeX" class="pointer"><i
                                                 class="fas fa-download fa-fw"></i></span>
-                                        <span
+                                        <span class="w3-button w3-theme-l3 w3-hover-theme" 
                                             :onclick="'copyTextofDOMToClipboard(\'bibtex_p_' + idx + '_' + idx1 + '\')'"
                                             title="Copy BibTeX" class="pointer"><i class="far fa-copy fa-fw"></i></span>
 
                                     </span>
-                                    <span v-if="val1.abstract"><a
+                                    <span v-if="val1.abstract"><a class="w3-button w3-theme-l3 w3-hover-theme" 
                                             :onclick="'toggleDivDisplay(\'abstract_' + idx + '_' + idx1 + '\')'"
                                             title="Abstract" class="pointer"><i
                                                 class="fas fa-paragraph fa-fw"></i></a></span>
