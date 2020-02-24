@@ -82,12 +82,12 @@ unsafe= true
 	pre = "fas fa-book"
 	weight = 3
 
-[[menu.main]]
-    identifier = "Tools"
-    name = "Tools"
-    url = "/tools/"
-	pre = "fas fa-wrench"
-	weight = 4
+#[[menu.main]]
+#    identifier = "Tools"
+#    name = "Tools"
+#    url = "/tools/"
+#	pre = "fas fa-wrench"
+#	weight = 4
 
 [[menu.main]]
     identifier = "Contact"

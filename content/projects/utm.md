@@ -1,37 +1,27 @@
 {
-    "Keywords": ["mathematical models", "uyamak", "educational tool"],
-    "description": "Uyamak is a educational platform to study mathematical models. It also lets to run the models in real time.",
-    "title": "Uyamak",
+    "Keywords": ["Universal testing machine", "data analysis", "material science"],
+    "description": "Data Analyzer for Universal Testing Machine (UTM) generates a detailed report with the data collected from the UTM.",
+    "title": "Data Analyzer for Universal Testing Machine",
     "date": "2019-02-01T00:00:00-06:00",
     "GSKStartDate": "2019-02-01T00:00:00-06:00",
     "GSKEndDate": "",
     "GSKRole": "Leader",
     "GSKTeamSize": "2",
-    "GSKKeySkills": ["JavaScript", "HTML", "CSS", "Embedded systems", "real-time computation"],
+    "GSKKeySkills": ["Web technologies", "Material science"],
     "complete": false,
     "featured": true,
     "GSKFundName": "None",
     "GSKFundURL": "",
     "fButtons": [
         {
-            "btn": "Source code (v0.1)",
-            "icon": "fab fa-github-alt",
-            "url": "https://github.com/skgadi/RTS"
-        },
-        {
-            "btn": "Web-app  (v0.1)",
-            "icon": "far fa-window-maximize",
-            "url": "https://github.skgadi.com/RTS/"
-        },
-        {
             "btn": "Source code",
             "icon": "fab fa-github-alt",
-            "url": "https://github.com/skgadi/Uyamak"
+            "url": "https://github.com/skgadi/utm"
         },
         {
             "btn": "Web-app",
             "icon": "far fa-window-maximize",
-            "url": "https://uyamak.skgadi.com/"
+            "url": "https://utm.skgadi.com/"
         }
     ],
     "team": [
@@ -50,3 +40,4 @@
         }
     ]
 }
+

@@ -4,7 +4,7 @@
     "title": "Control and Identification Toolbox (CIT)",
     "date": "2018-02-01T00:00:00-06:00",
     "GSKStartDate": "2018-02-01T00:00:00-06:00",
-    "GSKEndDate": "2019-03-02T00:00:00-06:00",
+    "GSKEndDate": "",
     "GSKRole": "Leader",
     "GSKTeamSize": "2",
     "GSKKeySkills": ["Web technologies", "Android studio", "Java", "Control theory", "Embedded systems", "real-time"],
