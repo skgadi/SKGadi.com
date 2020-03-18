@@ -1,4 +1,74 @@
 entries:
+    s20061694:
+        type: article
+        title: Recycling and Updating an Educational Robot Manipulator with Open-Hardware-Architecture
+        journal: Sensors
+        volume: '20'
+        year: '2020'
+        number: '6'
+        article-number: '1694'
+        url: https://www.mdpi.com/1424-8220/20/6/1694
+        issn: 1424-8220
+        abstract: This article presents a methodology to recycle and upgrade a 4-DOF
+            educational robot manipulator with a gripper. The robot is upgraded by
+            providing it an artificial vision that allows obtaining the position and
+            shape of objects collected by it. A low-cost and open-source hardware
+            solution is also proposed to achieve motion control of the robot through
+            a decentralized control scheme. The robot joints are actuated through
+            five direct current motors coupled to optical encoders. Each encoder signal
+            is fed to a proportional integral derivative controller with anti-windup
+            that employs the motor velocity provided by a state observer. The motion
+            controller works with only two open-architecture Arduino Mega boards,
+            which carry out data acquisition of the optical encoder signals. MATLAB-Simulink
+            is used to implement the controller as well as a friendly graphical interface,
+            which allows the user to interact with the manipulator. The communication
+            between the Arduino boards and MATLAB-Simulink is performed in real-time
+            utilizing the Arduino IO Toolbox. Through the proposed controller, the
+            robot follows a trajectory to collect a desired object, avoiding its collision
+            with other objects. This fact is verified through a set of experiments
+            presented in the paper.
+        doi: 10.3390/s20061694
+        pdf: https://www.mdpi.com/1424-8220/20/6/1694/pdf
+        gsktype: artJCR
+        bibtex: '@Article{s20061694, AUTHOR = {Concha Sánchez, Antonio and Figueroa-Rodríguez,
+            Juan Felipe and Fuentes-Covarrubias, Andrés Gerardo and Fuentes-Covarrubias,
+            Ricardo and Gadi, Suresh Kumar}, TITLE = {Recycling and Updating an Educational
+            Robot Manipulator with Open-Hardware-Architecture}, JOURNAL = {Sensors},
+            VOLUME = {20}, YEAR = {2020}, NUMBER = {6}, ARTICLE-NUMBER = {1694}, URL
+            = {https://www.mdpi.com/1424-8220/20/6/1694}, ISSN = {1424-8220}, ABSTRACT
+            = {This article presents a methodology to recycle and upgrade a 4-DOF
+            educational robot manipulator with a gripper. The robot is upgraded by
+            providing it an artificial vision that allows obtaining the position and
+            shape of objects collected by it. A low-cost and open-source hardware
+            solution is also proposed to achieve motion control of the robot through
+            a decentralized control scheme. The robot joints are actuated through
+            five direct current motors coupled to optical encoders. Each encoder signal
+            is fed to a proportional integral derivative controller with anti-windup
+            that employs the motor velocity provided by a state observer. The motion
+            controller works with only two open-architecture Arduino Mega boards,
+            which carry out data acquisition of the optical encoder signals. MATLAB-Simulink
+            is used to implement the controller as well as a friendly graphical interface,
+            which allows the user to interact with the manipulator. The communication
+            between the Arduino boards and MATLAB-Simulink is performed in real-time
+            utilizing the Arduino IO Toolbox. Through the proposed controller, the
+            robot follows a trajectory to collect a desired object, avoiding its collision
+            with other objects. This fact is verified through a set of experiments
+            presented in the paper.}, DOI = {10.3390/s20061694}, pdf = {https://www.mdpi.com/1424-8220/20/6/1694/pdf}
+            }'
+        author:
+        -   first: Antonio
+            last: Concha Sánchez
+        -   first: Juan
+            middle: Felipe
+            last: Figueroa-Rodríguez
+        -   first: Andrés
+            middle: Gerardo
+            last: Fuentes-Covarrubias
+        -   first: Ricardo
+            last: Fuentes-Covarrubias
+        -   first: Suresh
+            middle: Kumar
+            last: Gadi
     2019conchaandroid:
         type: article
         title: An android application for system identification and automatic control
