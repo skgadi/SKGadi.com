@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://skgadi.com/courses/2020-01-06-automatic-control/</loc>
-    <lastmod>2020-01-01T23:12:36-06:00</lastmod>
+    <loc>https://skgadi.com/courses/</loc>
+    <lastmod>2020-07-26T23:12:36-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skgadi.com/courses/</loc>
+    <loc>https://skgadi.com/</loc>
+    <lastmod>2020-07-26T23:12:36-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/courses/2020-07-08-adaptive-control/</loc>
+    <lastmod>2020-07-26T23:12:36-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/courses/2020-01-06-automatic-control/</loc>
     <lastmod>2020-01-01T23:12:36-06:00</lastmod>
   </url>
   
@@ -19,11 +29,6 @@
   
   <url>
     <loc>https://skgadi.com/courses/2020-01-06-electrical-technology/</loc>
-    <lastmod>2020-01-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/</loc>
     <lastmod>2020-01-01T23:12:36-06:00</lastmod>
   </url>
   

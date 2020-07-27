@@ -6,10 +6,19 @@
     <description>Recent content in Courses on Suresh Kumar Gadi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jan 2020 23:12:36 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jul 2020 23:12:36 -0600</lastBuildDate>
     
 	<atom:link href="https://skgadi.com/courses/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Virtual workshop on Model Reference Adaprive Control (MARC) for Linear systems</title>
+      <link>https://skgadi.com/courses/2020-07-08-adaptive-control/</link>
+      <pubDate>Sun, 26 Jul 2020 23:12:36 -0600</pubDate>
+      
+      <guid>https://skgadi.com/courses/2020-07-08-adaptive-control/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Automatic control</title>
