@@ -23,3 +23,5 @@ GSKLevel = "UG & PG"
 
 +++
 <div class="w3-center"><iframe style="width: 100%; height: 100%; min-width: 200px;min-height: 315px;"  src="https://www.youtube.com/embed/videoseries?list=PLqBTgI2lXqQKA1RVqM7t9Xl3MZqfYiTvW" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<iframe src="https://drive.google.com/file/d/1fbUEdyOY1Nh5gCsJup7G4OtJxy3xG0Fc/preview" width="100%" height="540"></iframe>
