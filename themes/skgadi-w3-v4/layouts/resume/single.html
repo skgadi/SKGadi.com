@@ -1,370 +1,383 @@
 {{- partial "header.html" . -}}
 <div class="w3-padding">
-	<div style="text-align: right;">
-		<div class="w3-button w3-theme-l4 w3-hover-theme" onclick="toggleAbstract()"><i class="far fa-check-square"></i> Show/Hide abstract</div>
-		<button class="w3-button w3-theme-l4 w3-hover-theme" onclick="Print()"><i class="fas fa-print"></i> Print</button>
-	</div>
-	<div class="w3-border w3-border-theme w3-padding-small w3-white">
-		<div id="PrintContent">
-			<h1 class="Resume">{{.Params.FirstName}} {{.Params.LastName}}</h1>
-			<p class="SubTitle"><i>{{.Params.SubTitle}}</i></p>
-			<hr />
+  <div style="text-align: right;">
+    <div class="w3-button w3-theme-l4 w3-hover-theme" onclick="toggleAbstract()"><i class="far fa-check-square"></i>
+      Show/Hide abstract</div>
+    <button class="w3-button w3-theme-l4 w3-hover-theme" onclick="Print()"><i class="fas fa-print"></i> Print</button>
+  </div>
+  <div class="w3-border w3-border-theme w3-padding-small w3-white">
+    <div id="PrintContent">
+      <h1 class="Resume">{{.Params.FirstName}} {{.Params.LastName}}</h1>
+      <p class="SubTitle"><i>{{.Params.SubTitle}}</i></p>
+      <hr />
 
-			<h3 class="Resume">Summary</h3>
-			<p class="Resume">{{.Description}}</p>
+      <h3 class="Resume">Summary</h3>
+      <p class="Resume">{{.Description}}</p>
 
-			<h3 class="Resume">Personal details</h3>
-			<table class="Resume">
-				<tr>
-					<td style="width: 90px;">
-						First Names
-					</td>
-					<td>
-						{{.Params.FirstName}}
-					</td>
-				</tr>
-				<tr>
-					<td>
-						Last Name
-					</td>
-					<td>
-						{{.Params.LastName}}
-					</td>
-				</tr>
-				<tr>
-					<td>
-						Date of birth
-					</td>
-					<td>
-						{{ (dateFormat "2" .Params.DateOfBirth) }}<sup>{{ if in (slice "1" "21" "31") (dateFormat "2" .Params.DateOfBirth)}}st{{ else if in (slice "2" "22") (dateFormat "2" .Params.DateOfBirth)}}nd{{ else if in (slice "3" "23") (dateFormat "2" .Params.DateOfBirth)}}rd{{ else }}th{{ end }}</sup>
-						of {{ (dateFormat "January 2006" .Params.DateOfBirth) }}
-					</td>
-				</tr>
-				<tr>
-					<td>
-						Languages
-					</td>
-					<td>
-						<b>Reading:</b>
-						{{range .Params.LanguageInfo}}
-						{{if eq .Ability "Reading"}}
-						{{.Language}} ({{.Level}});
-						{{end}}
-						{{end}}<br />
-						<b>Writing:</b>
-						{{range .Params.LanguageInfo}}
-						{{if eq .Ability "Writing"}}
-						{{.Language}} ({{.Level}});
-						{{end}}
-						{{end}}<br />
-						<b>Listening:</b>
-						{{range .Params.LanguageInfo}}
-						{{if eq .Ability "Listening"}}
-						{{.Language}} ({{.Level}});
-						{{end}}
-						{{end}}<br />
-						<b>Talking:</b>
-						{{range .Params.LanguageInfo}}
-						{{if eq .Ability "Talking"}}
-						{{.Language}} ({{.Level}});
-						{{end}}
-						{{end}}
-					</td>
-				</tr>
-				<tr>
-					<td>
-						Mobile
-					</td>
-					<td>
-						{{.Params.Phone}}
-					</td>
-				</tr>
-				<tr>
-					<td>
-						Email
-					</td>
-					<td>
-						{{.Params.Email}}
-					</td>
-				</tr>
-				<tr>
-					<td>
-						Address
-					</td>
-					<td>
-						{{.Params.Address}}
-					</td>
-				</tr>
-				{{if .Params.Email}}
-				{{end}}
-				{{if .Params.WebPage}}
-				<tr>
-					<td>
-						Web-page
-					</td>
-					<td>
-						{{.Params.WebPage}}
-					</td>
-				</tr>
-				{{end}}
-				{{if .Params.Fax}}
-				<tr>
-					<td>
-						Fax
-					</td>
-					<td>
-						{{.Params.Fax}}
-					</td>
-				</tr>
-				{{end}}
-				{{if .Params.WebLinks}}
-				<tr>
-					<td>
-						Online Presence
-					</td>
-					<td>
-						{{range .Params.WebLinks}}
-						<b>
-							{{if .Icon}}<i class="{{.Icon}}"></i>{{end}} {{.Name}}:
-						</b>
-						<a href="{{.URL}}" class="Resume">
-							{{.URL}}
-						</a>
-						<br />
-						{{end}}
-					</td>
-				</tr>
-				{{end}}
-			</table>
+      <h3 class="Resume">Personal details</h3>
+      <table class="Resume">
+        <tr>
+          <td style="width: 90px;">
+            First Names
+          </td>
+          <td>
+            {{.Params.FirstName}}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Last Name
+          </td>
+          <td>
+            {{.Params.LastName}}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Date of birth
+          </td>
+          <td>
+            {{ (dateFormat "2" .Params.DateOfBirth) }}<sup>{{ if in (slice "1" "21" "31") (dateFormat "2" .Params.DateOfBirth)}}st{{ else if in (slice "2" "22") (dateFormat "2" .Params.DateOfBirth)}}nd{{ else if in (slice "3" "23") (dateFormat "2" .Params.DateOfBirth)}}rd{{ else }}th{{ end }}</sup>
+            of {{ (dateFormat "January 2006" .Params.DateOfBirth) }}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Languages
+          </td>
+          <td>
+            <b>Reading:</b>
+            {{range .Params.LanguageInfo}}
+            {{if eq .Ability "Reading"}}
+            {{.Language}} ({{.Level}});
+            {{end}}
+            {{end}}<br />
+            <b>Writing:</b>
+            {{range .Params.LanguageInfo}}
+            {{if eq .Ability "Writing"}}
+            {{.Language}} ({{.Level}});
+            {{end}}
+            {{end}}<br />
+            <b>Listening:</b>
+            {{range .Params.LanguageInfo}}
+            {{if eq .Ability "Listening"}}
+            {{.Language}} ({{.Level}});
+            {{end}}
+            {{end}}<br />
+            <b>Talking:</b>
+            {{range .Params.LanguageInfo}}
+            {{if eq .Ability "Talking"}}
+            {{.Language}} ({{.Level}});
+            {{end}}
+            {{end}}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Mobile
+          </td>
+          <td>
+            {{.Params.Phone}}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Email
+          </td>
+          <td>
+            {{.Params.Email}}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Address
+          </td>
+          <td>
+            {{.Params.Address}}
+          </td>
+        </tr>
+        {{if .Params.Email}}
+        {{end}}
+        {{if .Params.WebPage}}
+        <tr>
+          <td>
+            Web-page
+          </td>
+          <td>
+            {{.Params.WebPage}}
+          </td>
+        </tr>
+        {{end}}
+        {{if .Params.Fax}}
+        <tr>
+          <td>
+            Fax
+          </td>
+          <td>
+            {{.Params.Fax}}
+          </td>
+        </tr>
+        {{end}}
+        {{if .Params.WebLinks}}
+        <tr>
+          <td>
+            Online Presence
+          </td>
+          <td>
+            {{range .Params.WebLinks}}
+            <b>
+              {{if .Icon}}<i class="{{.Icon}}"></i>{{end}} {{.Name}}:
+            </b>
+            <a href="{{.URL}}" class="Resume">
+              {{.URL}}
+            </a>
+            <br />
+            {{end}}
+          </td>
+        </tr>
+        {{end}}
+      </table>
 
-			<h3 class="Resume">Education</h3>
-			<table class="Resume">
-				<tr>
-					<th>Title</th>
-					<th>School</th>
-					<th>Place</th>
-					<th>Grade</th>
-					<th>Period</th>
-				</tr>
-				{{ range where .Site.RegularPages "Section" "education" }}
-				<tr>
-					<td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
-					<td>{{ if .Params.GSKSchoolURL }}<a class="Resume" href="{{ .Params.GSKSchoolURL }}"
-							style="text-decoration: none">{{ end }}{{ .Params.GSKSchool }}{{ if .Params.GSKSchoolURL }}</a>{{ end }}
-					</td>
-					<td>{{ .Params.GSKCity }}</td>
-					<td>{{ .Params.GSKGrade }}</td>
-					<td>{{  dateFormat "Jan 2006" .Params.GSKStartDate }} &mdash; {{ if .Params.GSKEndDate }}
-						{{ dateFormat "Jan 2006" .Params.GSKEndDate }} {{ else }} Till date {{ end }}</td>
-				</tr>
-				{{ end }}
+      <h3 class="Resume">Education</h3>
+      <table class="Resume">
+        <tr>
+          <th>Title</th>
+          <th>School</th>
+          <th>Place</th>
+          <th>Grade</th>
+          <th>Period</th>
+        </tr>
+        {{ range where .Site.RegularPages "Section" "education" }}
+        <tr>
+          <td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
+          <td>{{ if .Params.GSKSchoolURL }}<a class="Resume" href="{{ .Params.GSKSchoolURL }}"
+              style="text-decoration: none">{{ end }}{{ .Params.GSKSchool }}{{ if .Params.GSKSchoolURL }}</a>{{ end }}
+          </td>
+          <td>{{ .Params.GSKCity }}</td>
+          <td>{{ .Params.GSKGrade }}</td>
+          <td>{{  dateFormat "Jan 2006" .Params.GSKStartDate }} &mdash; {{ if .Params.GSKEndDate }}
+            {{ dateFormat "Jan 2006" .Params.GSKEndDate }} {{ else }} Till date {{ end }}</td>
+        </tr>
+        {{ end }}
 
-			</table>
+      </table>
 
-			<h3 class="Resume">Work experience</h3>
-			<table class="Resume">
-				<tr>
-					<th>Designation</th>
-					<th>Employer</th>
-					<th>Place</th>
-					<th>Period</th>
-				</tr>
-				{{ range where .Site.RegularPages "Section" "work-experience" }}
-				<tr>
-					<td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
-					<td>{{ if .Params.GSKEmployerURL }}<a class="Resume" href="{{ .Params.GSKEmployerURL }}"
-							style="text-decoration: none">{{ end }}{{ .Params.GSKEmployer }}{{ if .Params.GSKEmployerURL }}</a>{{ end }}
-					</td>
-					<td>{{ .Params.GSKCity }}</td>
-					<td>{{  dateFormat "Jan 2006" .Params.GSKStartDate }} &mdash; {{ if .Params.GSKEndDate }}
-						{{ dateFormat "Jan 2006" .Params.GSKEndDate }} {{ else }} Till date {{ end }}</td>
-				</tr>
-				{{ end }}
-			</table>
+      <h3 class="Resume">Work experience</h3>
+      <table class="Resume">
+        <tr>
+          <th>Designation</th>
+          <th>Employer</th>
+          <th>Place</th>
+          <th>Period</th>
+        </tr>
+        {{ range where .Site.RegularPages "Section" "work-experience" }}
+        <tr>
+          <td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
+          <td>{{ if .Params.GSKEmployerURL }}<a class="Resume" href="{{ .Params.GSKEmployerURL }}"
+              style="text-decoration: none">{{ end }}{{ .Params.GSKEmployer }}{{ if .Params.GSKEmployerURL }}</a>{{ end }}
+          </td>
+          <td>{{ .Params.GSKCity }}</td>
+          <td>{{  dateFormat "Jan 2006" .Params.GSKStartDate }} &mdash; {{ if .Params.GSKEndDate }}
+            {{ dateFormat "Jan 2006" .Params.GSKEndDate }} {{ else }} Till date {{ end }}</td>
+        </tr>
+        {{ end }}
+      </table>
 
-			<h3 class="Resume">Teaching</h3>
-			<table class="Resume">
-				<tr>
-					<th>Course Name</th>
-					<th>Level</th>
-					<th>School</th>
-					<th>Place</th>
-					<th>Period</th>
-				</tr>
-				{{ $AllCourses := where .Site.RegularPages "Section" "courses" }}
-				{{ $GSKVARFinishedCourses := . }}
-				{{ $GSKVARFinishedCourses := (slice "") }}
-				{{ range $AllCourses }}
-				{{ $GSKVARTitle := .Title }}
-				{{ $GSKVARLevel := (slice "") }}
-				{{ $GSKVARSchool := (slice "") }}
-				{{ $GSKVARCity := (slice "") }}
-				{{ $GSKVARDate := (slice "") }}
-				{{ if not (in $GSKVARFinishedCourses .Title  )}}
-				{{ range $AllCourses }}
-				{{ if eq .Title $GSKVARTitle }}
-				{{ $GSKVARLevel = union $GSKVARLevel (slice .Params.GSKLevel) }}
-				{{ $GSKVARSchoolText :=  printf "<a class='Resume' style='text-decoration: none;' href = '%s'>%s</a>" .Params.GSKSchoolURL .Params.GSKSchool }}
-				{{ $GSKVARSchool = union $GSKVARSchool (slice $GSKVARSchoolText) }}
-				{{ $GSKVARCity = union $GSKVARCity (slice .Params.GSKCity) }}
-				{{ $GSKVARDateText := printf "<a class='Resume' href='%s' style='text-decoration: none;'>[%s, %s]</a>" .Permalink (dateFormat "Jan'06" .Params.GSKStartDate) (dateFormat "Jan'06" .Params.GSKEndDate) }}
-				{{ $GSKVARDate = union $GSKVARDate (slice $GSKVARDateText) }}
-				{{ end }}
-				{{ end }}
-				<tr>
-					<td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
-					<td>{{ delimit (after 1 $GSKVARLevel) "; " }}</td>
-					<td>{{ safeHTML (delimit (after 1 $GSKVARSchool) "; ") }}</td>
-					<td>{{ delimit (after 1 $GSKVARCity) "; " }}</td>
-					<td>{{ delimit (after 1 $GSKVARDate) "; " }}</td>
-				</tr>
-				{{ end }}
-				{{ $GSKVARFinishedCourses = union $GSKVARFinishedCourses (slice .Title)}}
+      <h3 class="Resume">Teaching</h3>
+      <table class="Resume">
+        <tr>
+          <th>Course Name</th>
+          <th>Level</th>
+          <th>School</th>
+          <th>Place</th>
+          <th>Period</th>
+        </tr>
+        {{ $AllCourses := where .Site.RegularPages "Section" "courses" }}
+        {{ $GSKVARFinishedCourses := . }}
+        {{ $GSKVARFinishedCourses := (slice "") }}
+        {{ range $AllCourses }}
+        {{ $GSKVARTitle := .Title }}
+        {{ $GSKVARLevel := (slice "") }}
+        {{ $GSKVARSchool := (slice "") }}
+        {{ $GSKVARCity := (slice "") }}
+        {{ $GSKVARDate := (slice "") }}
+        {{ if not (in $GSKVARFinishedCourses .Title  )}}
+        {{ range $AllCourses }}
+        {{ if eq .Title $GSKVARTitle }}
+        {{ $GSKVARLevel = union $GSKVARLevel (slice .Params.GSKLevel) }}
+        {{ $GSKVARSchoolText :=  printf "<a class='Resume' style='text-decoration: none;' href = '%s'>%s</a>" .Params.GSKSchoolURL .Params.GSKSchool }}
+        {{ $GSKVARSchool = union $GSKVARSchool (slice $GSKVARSchoolText) }}
+        {{ $GSKVARCity = union $GSKVARCity (slice .Params.GSKCity) }}
+        {{ $GSKVARDateText := printf "<a class='Resume' href='%s' style='text-decoration: none;'>[%s, %s]</a>" .Permalink (dateFormat "Jan'06" .Params.GSKStartDate) (dateFormat "Jan'06" .Params.GSKEndDate) }}
+        {{ $GSKVARDate = union $GSKVARDate (slice $GSKVARDateText) }}
+        {{ end }}
+        {{ end }}
+        <tr>
+          <td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
+          <td>{{ delimit (after 1 $GSKVARLevel) "; " }}</td>
+          <td>{{ safeHTML (delimit (after 1 $GSKVARSchool) "; ") }}</td>
+          <td>{{ delimit (after 1 $GSKVARCity) "; " }}</td>
+          <td>{{ delimit (after 1 $GSKVARDate) "; " }}</td>
+        </tr>
+        {{ end }}
+        {{ $GSKVARFinishedCourses = union $GSKVARFinishedCourses (slice .Title)}}
 
-				{{ end }}
-			</table>
+        {{ end }}
+      </table>
 
-			<h3 class="Resume">Achievements</h3>
-			{{ range where .Site.RegularPages "Section" "achievements" }}
-			<p><b>{{.Title}}:</b> {{.Description}} </p>
-			{{ end }}
-			<h3 class="Resume">Publications</h3>
+      <h3 class="Resume">Achievements</h3>
+
+      <table class="Resume">
+        <tr>
+          <th>Title</th>
+          <th>Awarding authority</th>
+          <th>Year</th>
+          <th>Validity period</th>
+        </tr>
+        {{ range where .Site.RegularPages "Section" "achievements" }}
+        <tr>
+          <td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
+          <td><a class="Resume" href="{{ .Params.Authority.URL }}" style="text-decoration: none">{{.Params.Authority.name}}</a></td>
+          <td style="text-align: center;">{{dateFormat "2006" .Params.Dates.recogDate}}</td>
+          <td style="text-align: center;">{{dateFormat "2006" .Params.Dates.validStart}} - {{dateFormat "2006" .Params.Dates.validEnd}}</td>
+        </tr>
+        {{ end }}
+      </table>
 
 
-
-
-
-
-
-
-
-			<div id="pubs">
-				<div v-if="!!pubs.entries">
-					<template v-for="(val, idx, ite) in pubTypes">
-						<h4 class="resume" v-if="getSortedItems(idx).length > 0" v-text="(ite + 1) + '. ' + val"></h4>
-						<ol reversed>
-							<template v-for="(val1, idx1, ite1) in getSortedItems(idx)">
-
-								<li>
-									<div>
-										<template v-for="(val2, idx2) in val1.author">
-											<span v-if="!!idx2" v-text="', '"></span>
-											<span v-if="!!idx2 && (idx2 === val1.author.length - 1)"
-												v-text="' and '"></span>
-											<span
-												v-text="(!!val2.first ? val2.first : '') + (!!val2.middle ? ' ' + val2.middle : '')   + (!!val2.last ? ' ' + val2.last : '')"></span>
-										</template>
-										<span
-											v-text="'('+ (!!val1.month ? val1.month + ', ' : '')+val1.year+')'"></span>
-										<span v-if="val1.chapter" v-html="'<b>'+val1.chapter + '</b> in '"></span>
-										<span><b v-text="val1.title"></b></span>
-										<span v-if="val1.journal"> in <i>{[{val1.journal}]}</i>.</span>
-										<span v-if="val1.booktitle">{[{val1.booktitle}]}.</span>
-										<span v-if="val1.publisher">Published by: {[{val1.publisher}]}.</span>
-										<span v-if="val1.isbn">ISBN: {[{val1.isbn}]}.</span>
-										<span v-if="val1.issn">ISSN: {[{val1.issn}]}.</span>
-										<span v-if="val1.volume">Vol. {[{val1.volume}]}.</span>
-										<span v-if="val1.number">No. {[{val1.number}]}.</span>
-										<span v-if="val1.pages">pp: {[{val1.pages}]}.</span>
-										<span v-if="val1.school"> at {[{val1.school}]}.</span>
-										<span v-if="val1.url">URL: <a :href="val1.url" class="resume" target="_blank"
-												:title="val1.url" v-text="val1.url"></a></span>
-										<span v-if="val1.url">DOI: <a :href="val1.doi" class="resume" target="_blank"
-												:title="val1.doi" v-text="val1.doi"></a></span>
-										<span v-if="val1.pdf">PDF: <a :href="val1.pdf" class="resume" target="_blank"
-												:title="val1.pdf" v-text="val1.pdf"></a></span>
-									</div>
-									<div v-if="(!!val1.abstract) && showAbstract">
-										<p><b>Abstract:</b></p>
-										<p v-text="val1.abstract"></p>
-									</div>
-								</li>
-
-							</template>
-						</ol>
-					</template>
-					<div>
-
-					</div>
-				</div>
-				<div v-else>
-					<ol class="grid">
-						{{- range $idx1, $val1 := $.Site.Data.publications.entries  -}}
-						<li class="grid-item">
-							<p class="type" style="display: none;">
-								{{- index $.Site.Data.classifications.pubWeights .gsktype -}}</p>
-							<p class="year" style="display: none;">{{.year}}</p>
-							<div class="" style="margin-left: 8px;">
-								{{if .chapter}}<span><b><i>{{.chapter}}</i></b> in </span>{{end}}
-								<span class="title"><b><i>{{.title}}.</i></b></span>
-								<span>{{- range .author -}} {{.first}} {{.middle}} {{.last}}; {{ end -}}</span>
-								{{if .journal}}<span>{{.journal}}, </span>{{end}}
-								{{if .booktitle}}<span>{{.booktitle}}, </span>{{end}}
-								{{if .volume}}<span>Vol.&nbsp;{{.volume}}, </span>{{end}}
-								{{if .number}}<span>No.&nbsp;{{.number}}, </span>{{end}}
-								{{if .pages}}<span>pp: {{.pages}}, </span>{{end}}
-								{{if .issn}}<span>ISSN: {{.issn}}, </span>{{end}}
-								{{if .isbn}}<span>ISBN: {{.isbn}}, </span>{{end}}
-								{{if .month}}<span>{{.month}}-</span>{{end}}
-								{{if .year}}<span>{{.year}}. </span>{{end}}
-								{{if .doi}}<span><a href="https://doi.org/{{.doi}}" target="_blank"
-										class="dont-break-out"><i class="fas fa-newspaper fa-fw"></i></a></span>{{end}}
-								{{if .url}}<span><a href="{{.url}}" target="_blank" class="dont-break-out"><i
-											class="fas fa-link fa-fw" aria-hidden="true"></i></a></span>{{end}}
-								{{if .pdf}}<span><a href="{{.pdf}}" target="_blank" class="dont-break-out"><i
-											class="far fa-file-pdf fa-fw"></i></a></span>{{end}}
-								{{if .abstract}}
-								<span onclick="toggleDivDisplay('abs-{{$idx1}}')" class="dont-break-out pointer"><i
-										class="fas fa-quote-right fa-fw"></i></span>
-								<div id="abs-{{$idx1}}" class="w3-theme-l3 w3-padding" style="display: none;">
-									{{.abstract}}
-								</div>
-								{{end}}
-								{{if .bibtex}}
-								<span onclick="toggleDivDisplay('bibtex-{{$idx1}}')" class="dont-break-out pointer"><i
-										class="fas fa-copy fa-fw"></i></span>
-								<div id="bibtex-{{$idx1}}" class="w3-theme-l3 w3-padding bibtex" style="display: none;">
-									{{.bibtex}}
-								</div>
-								{{end}}
-							</div>
-
-						</li>
-						{{- end -}}
-					</ol>
-				</div>
-			</div>
+      <h3 class="Resume">Publications</h3>
 
 
 
-			<h3 class="Resume">Projects</h3>
-			<table class="Resume">
-				<tr>
-					<th>Title</th>
-					<th>Role</th>
-					<th>Team size</th>
-					<th>Skills used</th>
-					<th>Funding</th>
-					<th>Period</th>
-				</tr>
-				{{ range where .Site.RegularPages "Section" "projects" }}
-				<tr>
-					<td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
-					<td>{{.Params.GSKRole}}</td>
-					<td>{{.Params.GSKTeamSize}}</td>
-					<td>{{ delimit .Params.GSKKeySkills ", " }}</td>
-					<td>{{if .Params.GSKFundName}}
-						{{if .Params.GSKFundURL}}<a class="Resume" href="{{.Params.GSKFundURL}}">{{end}}
-							{{.Params.GSKFundName}}
-							{{if .Params.GSKFundURL}}</a>{{end}}
-						{{else}}-{{end}}</td>
-					<td style="width: 90px;">
-						{{-  dateFormat "Jan 2006" .Params.GSKStartDate -}}&ndash;{{- if .Params.GSKEndDate -}}{{- dateFormat "Jan 2006" .Params.GSKEndDate -}}{{- else -}}Till&nbsp;date{{- end -}}
-					</td>
-				</tr>
-				{{ end }}
-			</table>
-		</div>
-	</div>
+
+
+
+
+      <div id="pubs">
+        <div v-if="!!pubs.entries">
+          <template v-for="(val, idx, ite) in pubTypes">
+            <h4 class="resume" v-if="getSortedItems(idx).length > 0" v-text="(ite + 1) + '. ' + val"></h4>
+            <ol reversed>
+              <template v-for="(val1, idx1, ite1) in getSortedItems(idx)">
+
+                <li>
+                  <div>
+                    <template v-for="(val2, idx2) in val1.author">
+                      <span v-if="!!idx2" v-text="', '"></span>
+                      <span v-if="!!idx2 && (idx2 === val1.author.length - 1)" v-text="' and '"></span>
+                      <span
+                        v-text="(!!val2.first ? val2.first : '') + (!!val2.middle ? ' ' + val2.middle : '')   + (!!val2.last ? ' ' + val2.last : '')"></span>
+                    </template>
+                    <span v-text="'('+ (!!val1.month ? val1.month + ', ' : '')+val1.year+')'"></span>
+                    <span v-if="val1.chapter" v-html="'<b>'+val1.chapter + '</b> in '"></span>
+                    <span><b v-text="val1.title"></b></span>
+                    <span v-if="val1.journal"> in <i>{[{val1.journal}]}</i>.</span>
+                    <span v-if="val1.booktitle">{[{val1.booktitle}]}.</span>
+                    <span v-if="val1.publisher">Published by: {[{val1.publisher}]}.</span>
+                    <span v-if="val1.isbn">ISBN: {[{val1.isbn}]}.</span>
+                    <span v-if="val1.issn">ISSN: {[{val1.issn}]}.</span>
+                    <span v-if="val1.volume">Vol. {[{val1.volume}]}.</span>
+                    <span v-if="val1.number">No. {[{val1.number}]}.</span>
+                    <span v-if="val1.pages">pp: {[{val1.pages}]}.</span>
+                    <span v-if="val1.school"> at {[{val1.school}]}.</span>
+                    <span v-if="val1.url">URL: <a :href="val1.url" class="resume" target="_blank" :title="val1.url"
+                        v-text="val1.url"></a></span>
+                    <span v-if="val1.url">DOI: <a :href="val1.doi" class="resume" target="_blank" :title="val1.doi"
+                        v-text="val1.doi"></a></span>
+                    <span v-if="val1.pdf">PDF: <a :href="val1.pdf" class="resume" target="_blank" :title="val1.pdf"
+                        v-text="val1.pdf"></a></span>
+                  </div>
+                  <div v-if="(!!val1.abstract) && showAbstract">
+                    <p><b>Abstract:</b></p>
+                    <p v-text="val1.abstract"></p>
+                  </div>
+                </li>
+
+              </template>
+            </ol>
+          </template>
+          <div>
+
+          </div>
+        </div>
+        <div v-else>
+          <ol class="grid">
+            {{- range $idx1, $val1 := $.Site.Data.publications.entries  -}}
+            <li class="grid-item">
+              <p class="type" style="display: none;">
+                {{- index $.Site.Data.classifications.pubWeights .gsktype -}}</p>
+              <p class="year" style="display: none;">{{.year}}</p>
+              <div class="" style="margin-left: 8px;">
+                {{if .chapter}}<span><b><i>{{.chapter}}</i></b> in </span>{{end}}
+                <span class="title"><b><i>{{.title}}.</i></b></span>
+                <span>{{- range .author -}} {{.first}} {{.middle}} {{.last}}; {{ end -}}</span>
+                {{if .journal}}<span>{{.journal}}, </span>{{end}}
+                {{if .booktitle}}<span>{{.booktitle}}, </span>{{end}}
+                {{if .volume}}<span>Vol.&nbsp;{{.volume}}, </span>{{end}}
+                {{if .number}}<span>No.&nbsp;{{.number}}, </span>{{end}}
+                {{if .pages}}<span>pp: {{.pages}}, </span>{{end}}
+                {{if .issn}}<span>ISSN: {{.issn}}, </span>{{end}}
+                {{if .isbn}}<span>ISBN: {{.isbn}}, </span>{{end}}
+                {{if .month}}<span>{{.month}}-</span>{{end}}
+                {{if .year}}<span>{{.year}}. </span>{{end}}
+                {{if .doi}}<span><a href="https://doi.org/{{.doi}}" target="_blank" class="dont-break-out"><i
+                      class="fas fa-newspaper fa-fw"></i></a></span>{{end}}
+                {{if .url}}<span><a href="{{.url}}" target="_blank" class="dont-break-out"><i class="fas fa-link fa-fw"
+                      aria-hidden="true"></i></a></span>{{end}}
+                {{if .pdf}}<span><a href="{{.pdf}}" target="_blank" class="dont-break-out"><i
+                      class="far fa-file-pdf fa-fw"></i></a></span>{{end}}
+                {{if .abstract}}
+                <span onclick="toggleDivDisplay('abs-{{$idx1}}')" class="dont-break-out pointer"><i
+                    class="fas fa-quote-right fa-fw"></i></span>
+                <div id="abs-{{$idx1}}" class="w3-theme-l3 w3-padding" style="display: none;">
+                  {{.abstract}}
+                </div>
+                {{end}}
+                {{if .bibtex}}
+                <span onclick="toggleDivDisplay('bibtex-{{$idx1}}')" class="dont-break-out pointer"><i
+                    class="fas fa-copy fa-fw"></i></span>
+                <div id="bibtex-{{$idx1}}" class="w3-theme-l3 w3-padding bibtex" style="display: none;">
+                  {{.bibtex}}
+                </div>
+                {{end}}
+              </div>
+
+            </li>
+            {{- end -}}
+          </ol>
+        </div>
+      </div>
+
+
+
+      <h3 class="Resume">Projects</h3>
+      <table class="Resume">
+        <tr>
+          <th>Title</th>
+          <th>Role</th>
+          <th>Team size</th>
+          <th>Skills used</th>
+          <th>Funding</th>
+          <th>Period</th>
+        </tr>
+        {{ range where .Site.RegularPages "Section" "projects" }}
+        <tr>
+          <td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
+          <td>{{.Params.GSKRole}}</td>
+          <td>{{.Params.GSKTeamSize}}</td>
+          <td>{{ delimit .Params.GSKKeySkills ", " }}</td>
+          <td>{{if .Params.GSKFundName}}
+            {{if .Params.GSKFundURL}}<a class="Resume" href="{{.Params.GSKFundURL}}">{{end}}
+              {{.Params.GSKFundName}}
+              {{if .Params.GSKFundURL}}</a>{{end}}
+            {{else}}-{{end}}</td>
+          <td style="width: 90px;">
+            {{-  dateFormat "Jan 2006" .Params.GSKStartDate -}}&ndash;{{- if .Params.GSKEndDate -}}{{- dateFormat "Jan 2006" .Params.GSKEndDate -}}{{- else -}}Till&nbsp;date{{- end -}}
+          </td>
+        </tr>
+        {{ end }}
+      </table>
+    </div>
+  </div>
 </div>
 {{- partial "footer.html" . -}}

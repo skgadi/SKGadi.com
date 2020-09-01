@@ -2,7 +2,7 @@
 #SEO Data
 Keywords = ["course", "control systesms", "adaptive control", "uyamak"]
 description = "Online adaptive control workshop conducted by Suresh Kumar Gadi."
-title = "Virtual workshop on Model Reference Adaprive Control (MARC) for Linear systems"
+title = "Virtual workshop on Model Reference Adaptive Control (MARC) for Linear systems"
 date = "2020-07-26T23:12:36-06:00"
 
 GSKStartDate = "2020-07-27"
