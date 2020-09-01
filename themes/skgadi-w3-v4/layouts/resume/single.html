@@ -128,7 +128,7 @@
             <b>
               {{if .Icon}}<i class="{{.Icon}}"></i>{{end}} {{.Name}}:
             </b>
-            <a href="{{.URL}}" class="Resume">
+            <a target='_blank' href="{{.URL}}" class="Resume">
               {{.URL}}
             </a>
             <br />
@@ -149,8 +149,8 @@
         </tr>
         {{ range where .Site.RegularPages "Section" "education" }}
         <tr>
-          <td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
-          <td>{{ if .Params.GSKSchoolURL }}<a class="Resume" href="{{ .Params.GSKSchoolURL }}"
+          <td><a target='_blank' class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
+          <td>{{ if .Params.GSKSchoolURL }}<a target='_blank' class="Resume" href="{{ .Params.GSKSchoolURL }}"
               style="text-decoration: none">{{ end }}{{ .Params.GSKSchool }}{{ if .Params.GSKSchoolURL }}</a>{{ end }}
           </td>
           <td>{{ .Params.GSKCity }}</td>
@@ -172,8 +172,8 @@
         </tr>
         {{ range where .Site.RegularPages "Section" "work-experience" }}
         <tr>
-          <td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
-          <td>{{ if .Params.GSKEmployerURL }}<a class="Resume" href="{{ .Params.GSKEmployerURL }}"
+          <td><a target='_blank' class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
+          <td>{{ if .Params.GSKEmployerURL }}<a target='_blank' class="Resume" href="{{ .Params.GSKEmployerURL }}"
               style="text-decoration: none">{{ end }}{{ .Params.GSKEmployer }}{{ if .Params.GSKEmployerURL }}</a>{{ end }}
           </td>
           <td>{{ .Params.GSKCity }}</td>
@@ -182,6 +182,30 @@
         </tr>
         {{ end }}
       </table>
+
+
+      <h3 class="Resume">Achievements</h3>
+
+      <table class="Resume">
+        <tr>
+          <th>Title</th>
+          <th>Awarding authority</th>
+          <th>Year</th>
+          <th>Validity period</th>
+        </tr>
+        {{ range where .Site.RegularPages "Section" "achievements" }}
+        <tr>
+          <td><a target='_blank' class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
+          <td><a target='_blank' class="Resume" href="{{ .Params.Authority.URL }}" style="text-decoration: none">{{.Params.Authority.name}}</a></td>
+          <td style="text-align: center;">{{dateFormat "2006" .Params.Dates.recogDate}}</td>
+          <td style="text-align: center;">{{dateFormat "2006" .Params.Dates.validStart}} - {{dateFormat "2006" .Params.Dates.validEnd}}</td>
+        </tr>
+        {{ end }}
+      </table>
+
+
+
+
 
       <h3 class="Resume">Teaching</h3>
       <table class="Resume">
@@ -205,15 +229,15 @@
         {{ range $AllCourses }}
         {{ if eq .Title $GSKVARTitle }}
         {{ $GSKVARLevel = union $GSKVARLevel (slice .Params.GSKLevel) }}
-        {{ $GSKVARSchoolText :=  printf "<a class='Resume' style='text-decoration: none;' href = '%s'>%s</a>" .Params.GSKSchoolURL .Params.GSKSchool }}
+        {{ $GSKVARSchoolText :=  printf "<a target='_blank' class='Resume' style='text-decoration: none;' href = '%s'>%s</a>" .Params.GSKSchoolURL .Params.GSKSchool }}
         {{ $GSKVARSchool = union $GSKVARSchool (slice $GSKVARSchoolText) }}
         {{ $GSKVARCity = union $GSKVARCity (slice .Params.GSKCity) }}
-        {{ $GSKVARDateText := printf "<a class='Resume' href='%s' style='text-decoration: none;'>[%s, %s]</a>" .Permalink (dateFormat "Jan'06" .Params.GSKStartDate) (dateFormat "Jan'06" .Params.GSKEndDate) }}
+        {{ $GSKVARDateText := printf "<a target='_blank' class='Resume' href='%s' style='text-decoration: none;'>[%s, %s]</a>" .Permalink (dateFormat "Jan'06" .Params.GSKStartDate) (dateFormat "Jan'06" .Params.GSKEndDate) }}
         {{ $GSKVARDate = union $GSKVARDate (slice $GSKVARDateText) }}
         {{ end }}
         {{ end }}
         <tr>
-          <td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
+          <td><a target='_blank' class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
           <td>{{ delimit (after 1 $GSKVARLevel) "; " }}</td>
           <td>{{ safeHTML (delimit (after 1 $GSKVARSchool) "; ") }}</td>
           <td>{{ delimit (after 1 $GSKVARCity) "; " }}</td>
@@ -224,26 +248,6 @@
 
         {{ end }}
       </table>
-
-      <h3 class="Resume">Achievements</h3>
-
-      <table class="Resume">
-        <tr>
-          <th>Title</th>
-          <th>Awarding authority</th>
-          <th>Year</th>
-          <th>Validity period</th>
-        </tr>
-        {{ range where .Site.RegularPages "Section" "achievements" }}
-        <tr>
-          <td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
-          <td><a class="Resume" href="{{ .Params.Authority.URL }}" style="text-decoration: none">{{.Params.Authority.name}}</a></td>
-          <td style="text-align: center;">{{dateFormat "2006" .Params.Dates.recogDate}}</td>
-          <td style="text-align: center;">{{dateFormat "2006" .Params.Dates.validStart}} - {{dateFormat "2006" .Params.Dates.validEnd}}</td>
-        </tr>
-        {{ end }}
-      </table>
-
 
       <h3 class="Resume">Publications</h3>
 
@@ -280,11 +284,11 @@
                     <span v-if="val1.number">No. {[{val1.number}]}.</span>
                     <span v-if="val1.pages">pp: {[{val1.pages}]}.</span>
                     <span v-if="val1.school"> at {[{val1.school}]}.</span>
-                    <span v-if="val1.url">URL: <a :href="val1.url" class="resume" target="_blank" :title="val1.url"
+                    <span v-if="val1.url">URL: <a target='_blank' :href="val1.url" class="resume" target='_blank' :title="val1.url"
                         v-text="val1.url"></a></span>
-                    <span v-if="val1.url">DOI: <a :href="val1.doi" class="resume" target="_blank" :title="val1.doi"
+                    <span v-if="val1.url">DOI: <a target='_blank' :href="val1.doi" class="resume" target='_blank' :title="val1.doi"
                         v-text="val1.doi"></a></span>
-                    <span v-if="val1.pdf">PDF: <a :href="val1.pdf" class="resume" target="_blank" :title="val1.pdf"
+                    <span v-if="val1.pdf">PDF: <a target='_blank' :href="val1.pdf" class="resume" target='_blank' :title="val1.pdf"
                         v-text="val1.pdf"></a></span>
                   </div>
                   <div v-if="(!!val1.abstract) && showAbstract">
@@ -320,11 +324,11 @@
                 {{if .isbn}}<span>ISBN: {{.isbn}}, </span>{{end}}
                 {{if .month}}<span>{{.month}}-</span>{{end}}
                 {{if .year}}<span>{{.year}}. </span>{{end}}
-                {{if .doi}}<span><a href="https://doi.org/{{.doi}}" target="_blank" class="dont-break-out"><i
+                {{if .doi}}<span><a target='_blank' href="https://doi.org/{{.doi}}" target='_blank' class="dont-break-out"><i
                       class="fas fa-newspaper fa-fw"></i></a></span>{{end}}
-                {{if .url}}<span><a href="{{.url}}" target="_blank" class="dont-break-out"><i class="fas fa-link fa-fw"
+                {{if .url}}<span><a target='_blank' href="{{.url}}" target='_blank' class="dont-break-out"><i class="fas fa-link fa-fw"
                       aria-hidden="true"></i></a></span>{{end}}
-                {{if .pdf}}<span><a href="{{.pdf}}" target="_blank" class="dont-break-out"><i
+                {{if .pdf}}<span><a target='_blank' href="{{.pdf}}" target='_blank' class="dont-break-out"><i
                       class="far fa-file-pdf fa-fw"></i></a></span>{{end}}
                 {{if .abstract}}
                 <span onclick="toggleDivDisplay('abs-{{$idx1}}')" class="dont-break-out pointer"><i
@@ -362,12 +366,12 @@
         </tr>
         {{ range where .Site.RegularPages "Section" "projects" }}
         <tr>
-          <td><a class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
+          <td><a target='_blank' class="Resume" href="{{ .Permalink }}" style="text-decoration: none">{{.Title}}</a></td>
           <td>{{.Params.GSKRole}}</td>
           <td>{{.Params.GSKTeamSize}}</td>
           <td>{{ delimit .Params.GSKKeySkills ", " }}</td>
           <td>{{if .Params.GSKFundName}}
-            {{if .Params.GSKFundURL}}<a class="Resume" href="{{.Params.GSKFundURL}}">{{end}}
+            {{if .Params.GSKFundURL}}<a target='_blank' class="Resume" href="{{.Params.GSKFundURL}}">{{end}}
               {{.Params.GSKFundName}}
               {{if .Params.GSKFundURL}}</a>{{end}}
             {{else}}-{{end}}</td>

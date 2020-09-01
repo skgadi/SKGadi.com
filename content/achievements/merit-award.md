@@ -8,9 +8,9 @@
         "URL": "https://vit.ac.in/"
     },
     "Dates":{
-        "recogDate": "2018-10-01T00:00:00+05:30",
-        "validStart": "2019-01-01T00:00:00+05:30",
-        "validEnd": "2021-12-31T00:00:00+05:30"
+        "recogDate": "2009-04-06T00:00:00+05:30",
+        "validStart": "2008-06-01T00:00:00+05:30",
+        "validEnd": "2009-05-31T00:00:00+05:30"
     },
     "ExtraDetails": [{
         "Name": "Certificate",

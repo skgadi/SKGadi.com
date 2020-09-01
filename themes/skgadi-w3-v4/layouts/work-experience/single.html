@@ -4,7 +4,7 @@
 		<table class="w3-table">
 			<tr>
 				<td style="text-align: left;">Employer</td>
-				<td style="text-align: right;">{{ if .Params.GSKEmployerURL }}<a
+				<td style="text-align: right;">{{ if .Params.GSKEmployerURL }}<a target='_blank' 
 						href="{{ .Params.GSKEmployerURL }}">{{ end }}{{ .Params.GSKEmployer }}{{ if .Params.GSKEmployerURL }}</a>{{ end }}
 				</td>
 			</tr>

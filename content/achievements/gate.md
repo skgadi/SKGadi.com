@@ -8,9 +8,9 @@
         "URL": "http://www.iitkgp.ac.in/"
     },
     "Dates":{
-        "recogDate": "2018-10-01T00:00:00+05:30",
-        "validStart": "2019-01-01T00:00:00+05:30",
-        "validEnd": "2021-12-31T00:00:00+05:30"
+        "recogDate": "2006-02-12T00:00:00+05:30",
+        "validStart": "2006-02-12T00:00:00+05:30",
+        "validEnd": "2008-03-31T00:00:00+05:30"
     },
     "ExtraDetails": [{
         "Name": "Score card",
