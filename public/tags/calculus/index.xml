@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>calculus on Suresh Kumar Gadi</title>
+    <link>https://skgadi.com/tags/calculus/</link>
+    <description>Recent content in calculus on Suresh Kumar Gadi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Oct 2020 00:00:00 -0600</lastBuildDate>
+    
+	<atom:link href="https://skgadi.com/tags/calculus/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Importance of calculus for Engineers</title>
+      <link>https://skgadi.com/posts/importance-of-calculus-for-engineers/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/posts/importance-of-calculus-for-engineers/</guid>
+      <description>Calculus to an engineer is wind to a sailboat In this post, I want to motivate engineering students to consider calculus as the most important mathematical tool. I will do this by explaining how essential it is for engineers with an analogy.
+An analogy Let us begin the analogy by comparing nuts and bolts with numbers, tools with mathematical operations.
+I would say the household tools such as the screwdrivers, wrenches, and pliers are comparable to the mathematical operations such as addition, multiplication, and division.</description>
+    </item>
+    
+  </channel>
+</rss>

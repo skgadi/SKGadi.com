@@ -6,7 +6,7 @@
     <description>Recent content in Categories on Suresh Kumar Gadi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2020 00:00:00 -0600</lastBuildDate>
     
 	<atom:link href="https://skgadi.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>Academic</title>
       <link>https://skgadi.com/categories/academic/</link>
-      <pubDate>Mon, 01 Apr 2019 00:00:00 -0600</pubDate>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 -0600</pubDate>
       
       <guid>https://skgadi.com/categories/academic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Students</title>
+      <link>https://skgadi.com/categories/students/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/categories/students/</guid>
       <description></description>
     </item>
     

@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Suresh Kumar Gadi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2020 00:00:00 -0600</lastBuildDate>
     
 	<atom:link href="https://skgadi.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>calculus</title>
+      <link>https://skgadi.com/tags/calculus/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/tags/calculus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mathematics</title>
+      <link>https://skgadi.com/tags/mathematics/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 -0600</pubDate>
+      
+      <guid>https://skgadi.com/tags/mathematics/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>CIT</title>
@@ -44,15 +62,6 @@
       <pubDate>Tue, 06 Mar 2018 00:00:00 -0600</pubDate>
       
       <guid>https://skgadi.com/tags/mechanics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mathematics</title>
-      <link>https://skgadi.com/tags/mathematics/</link>
-      <pubDate>Mon, 14 Aug 2017 00:00:00 -0600</pubDate>
-      
-      <guid>https://skgadi.com/tags/mathematics/</guid>
       <description></description>
     </item>
     

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Trocchi');
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 h1,
 h2,
 h3,
@@ -10,8 +10,9 @@ h6,
 .w3-wide,
 body {
 	/*font-family: "Roboto", sans-serif;*/
-	/*font-family:  'Trocchi'; /*Comfortaa, Adamina, Cutive, Trocchi, Corben*/
-	font-family: "Univers 57 Condensed", sans-serif;
+	/*font-family:  'Trocchi'; /*Comfortaa, Adamina, Cutive, Trocchi, Corben;*/
+	/*font-family: "Univers 57 Condensed", sans-serif;*/
+	font-family: "Ubuntu"
 }
 
 html {
@@ -32,10 +33,10 @@ body {
 	max-width: 774px;
 }
 
-body,
+/*body,
 input,
 textarea,
-select,
+select,*/
 button {
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 	/**/

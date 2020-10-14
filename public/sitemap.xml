@@ -3,12 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://skgadi.com/courses/</loc>
-    <lastmod>2020-07-26T23:12:36-06:00</lastmod>
+    <loc>https://skgadi.com/categories/academic/</loc>
+    <lastmod>2020-10-13T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/tags/calculus/</loc>
+    <lastmod>2020-10-13T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/categories/</loc>
+    <lastmod>2020-10-13T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/posts/importance-of-calculus-for-engineers/</loc>
+    <lastmod>2020-10-13T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/tags/mathematics/</loc>
+    <lastmod>2020-10-13T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/posts/</loc>
+    <lastmod>2020-10-13T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/categories/students/</loc>
+    <lastmod>2020-10-13T00:00:00-06:00</lastmod>
   </url>
   
   <url>
     <loc>https://skgadi.com/</loc>
+    <lastmod>2020-10-13T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/tags/</loc>
+    <lastmod>2020-10-13T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skgadi.com/courses/</loc>
     <lastmod>2020-07-26T23:12:36-06:00</lastmod>
   </url>
   
@@ -88,16 +128,6 @@
   </url>
   
   <url>
-    <loc>https://skgadi.com/categories/academic/</loc>
-    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/categories/</loc>
-    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://skgadi.com/tags/cit/</loc>
     <lastmod>2019-04-01T00:00:00-06:00</lastmod>
   </url>
@@ -113,17 +143,7 @@
   </url>
   
   <url>
-    <loc>https://skgadi.com/posts/</loc>
-    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://skgadi.com/tags/real-time/</loc>
-    <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/tags/</loc>
     <lastmod>2019-04-01T00:00:00-06:00</lastmod>
   </url>
   
@@ -250,11 +270,6 @@
   <url>
     <loc>https://skgadi.com/courses/2017-07-12-power-systems/</loc>
     <lastmod>2017-08-14T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/tags/mathematics/</loc>
-    <lastmod>2017-08-14T00:00:00-06:00</lastmod>
   </url>
   
   <url>
