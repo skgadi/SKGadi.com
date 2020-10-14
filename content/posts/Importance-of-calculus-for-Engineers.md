@@ -1,7 +1,7 @@
 +++
 #SEO Data
 Keywords = ["skgadi", "suresh kumar gadi", "calculus", "engineers", "mathematics"]
-description = "CIT manuals helps engineering teachers to conduct workshop with the help of CIT application."
+description = "I want to motivate engineering students to consider calculus as the most important mathematical tool. I will do this by explaining how essential it is for engineers with an analogy."
 
 tags = [ "calculus", "mathematics" ]
 categories = ["Academic", "Students"]
@@ -14,7 +14,7 @@ title = "Importance of calculus for Engineers"
 
 ## Calculus to an engineer is wind to a sailboat
 
-In this post, I want to motivate engineering students to consider calculus as the most important mathematical tool. I will do this by explaining how essential it is for engineers with an analogy.
+I want to motivate engineering students to consider calculus as the most important mathematical tool. I will do this by explaining how essential it is for engineers with an analogy.
 
 ## An analogy
 
