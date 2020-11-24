@@ -18,7 +18,7 @@ GSKPeriodPerWeek = "5"
 GSKCity = "Torreón"
 GSKLevel = "Masters"
 #GSKAttendanceURL = "e/2PACX-1vQn7IM_2ZaXwyBpcI76FThy8uES0vsJIsovK4cV2lqD7aiX6Z8PuP_xqxi2QgJrQKZvB1_EjD3oxnp2"
-#GSKGradeURL = "e/2PACX-1vRW0mLgkghO0wTINWPHaZtHJRz3AFF0Xftey9Ea41o_AhB1W9BoGVvLDHo9fIX7AESPyGIckiw3WHi-"
+GSKGradeURL = "1TLaAWL6px6EkwyVQ9rk2NDOo1sy92-Ln0U18nhsTAIs"
 [[CourseMaterial]]
     Name = "Syllabus"
     URL = "https://drive.google.com/file/d/1OXzfdmrfCKOeBU1xgp8kI7H8Sn9T2z-N6qt-NrfHkQs/view"
