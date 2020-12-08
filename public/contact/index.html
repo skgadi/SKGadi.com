@@ -100,8 +100,10 @@
 			<label>Contact number</label>
 			<input class="w3-input" name="phone" placeholder="Enter your phone number" tabindex="3">
 			<label>Message</label>
-			<textarea name="message" placeholder="Type your message here" style="width: 100%; border: 1px solid black;"
-				tabindex="4"></textarea>
+			<div class="w3-white">
+				<textarea name="message" placeholder="Type your message here" style="min-height: 200px; width: 100%; border: 1px solid black;"
+					tabindex="4"></textarea>
+			</div>
 			<div class="w3-display-container" style="height:80px;">
 				<div class="w3-display-middle" data-netlify-recaptcha></div>
 			</div>
@@ -119,7 +121,12 @@
 
 </div>
 
-<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+<script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>
+<script>
+	nicEditors.allTextAreas();
+</script>
+
+<!--script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 <script>
 	tinymce.init({
 		selector: 'textarea',
@@ -132,7 +139,7 @@
 		],
 		toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link ',
 	});
-</script></div>
+</script--></div>
 <footer class="w3-container w3-theme w3-padding-16"><div class="w3-container zero-padding"><a class="w3-button w3-hover-theme zero-padding  "
 			href="/education/"><i class='fas fa-university fa-fw' aria-hidden='true'></i>
 			</a>&nbsp;<a class="w3-button w3-hover-theme zero-padding  "
