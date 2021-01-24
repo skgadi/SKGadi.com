@@ -1,4 +1,70 @@
 entries:
+    concha2021107539:
+        type: article
+        title: A tuning algorithm for a sliding mode controller of buildings with
+            ATMD
+        journal: Mechanical Systems and Signal Processing
+        volume: '154'
+        pages: '107539'
+        year: '2021'
+        issn: 0888-3270
+        doi: https://doi.org/10.1016/j.ymssp.2020.107539
+        url: http://www.sciencedirect.com/science/article/pii/S0888327020309250
+        keywords: Active vibration control, Sliding mode controller, Automatic controller
+            tuning, ATMD, Filter design
+        abstract: 'This paper proposes an automatic tuning algorithm for a sliding
+            mode controller (SMC) based on the Ackermann’s formula, that attenuates
+            the structural vibrations of a seismically excited building equipped with
+            an Active Tuned Mass Damper (ATMD) mounted on its top floor. The switching
+            gain and sliding surface of the SMC are designed through the proposed
+            tuning algorithm to suppress the structural vibrations by minimizing either
+            the top floor displacement or the control force applied to the ATMD. Moreover,
+            the tuning algorithm selects the SMC parameters to guarantee the following
+            closed-loop characteristics: (1) the transient responses of the structure
+            and the ATMD are sufficiently fast and damped; and (2) the control force,
+            as well as the displacements and velocities of the building and ATMD are
+            within acceptable limits under the frequency band of the earthquake excitation.
+            The proposed SMC shows robustness against the unmodeled dynamics such
+            as the friction of the damper. Experimental results on a reduced scale
+            structure permits demonstrating the efficiency of the tuning algorithm
+            for the SMC, which is compared with the traditional Linear Quadratic Regulator
+            (LQR) and with the Optimal Sliding Mode Controller (OSMC).'
+        gsktype: artJCR
+        bibtex: '@article{CONCHA2021107539, title = "A tuning algorithm for a sliding
+            mode controller of buildings with ATMD", journal = "Mechanical Systems
+            and Signal Processing", volume = "154", pages = "107539", year = "2021",
+            issn = "0888-3270", doi = "https://doi.org/10.1016/j.ymssp.2020.107539",
+            url = "http://www.sciencedirect.com/science/article/pii/S0888327020309250",
+            author = "Antonio Concha and Suresh Thenozhi and Ramón J. Betancourt and
+            S.K. Gadi", keywords = "Active vibration control, Sliding mode controller,
+            Automatic controller tuning, ATMD, Filter design", abstract = "This paper
+            proposes an automatic tuning algorithm for a sliding mode controller (SMC)
+            based on the Ackermann’s formula, that attenuates the structural vibrations
+            of a seismically excited building equipped with an Active Tuned Mass Damper
+            (ATMD) mounted on its top floor. The switching gain and sliding surface
+            of the SMC are designed through the proposed tuning algorithm to suppress
+            the structural vibrations by minimizing either the top floor displacement
+            or the control force applied to the ATMD. Moreover, the tuning algorithm
+            selects the SMC parameters to guarantee the following closed-loop characteristics:
+            (1) the transient responses of the structure and the ATMD are sufficiently
+            fast and damped; and (2) the control force, as well as the displacements
+            and velocities of the building and ATMD are within acceptable limits under
+            the frequency band of the earthquake excitation. The proposed SMC shows
+            robustness against the unmodeled dynamics such as the friction of the
+            damper. Experimental results on a reduced scale structure permits demonstrating
+            the efficiency of the tuning algorithm for the SMC, which is compared
+            with the traditional Linear Quadratic Regulator (LQR) and with the Optimal
+            Sliding Mode Controller (OSMC)." }'
+        author:
+        -   first: Antonio
+            last: Concha
+        -   first: Suresh
+            last: Thenozhi
+        -   first: Ramón
+            middle: J.
+            last: Betancourt
+        -   first: S.K.
+            last: Gadi
     s20061694:
         type: article
         title: Recycling and Updating an Educational Robot Manipulator with Open-Hardware-Architecture
