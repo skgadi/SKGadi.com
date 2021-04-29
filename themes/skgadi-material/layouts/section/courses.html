@@ -1,0 +1,62 @@
+{{ partial "header.html" . }}
+<div class="w3-container">
+{{- range .Data.Pages -}}
+
+<a class="" href="{{ .Permalink }}">
+	<div class="w3-panel w3-theme-l4 w3-card pointer w3-hover-shadow">
+		<h2>{{.Title}}</h2>
+		<div class="w3-panel">
+
+			<table class="w3-table">
+				<tr>
+					<td style="text-align: left;">School</td>
+					<td style="text-align: right;">{{ if .Params.GSKSchoolURL }}<a
+							href="{{ .Params.GSKSchoolURL }}">{{ end }}{{ .Params.GSKSchool }}{{ if .Params.GSKSchoolURL }}</a>{{ end }}
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: left;">Department</td>
+					<td style="text-align: right;">{{ if .Params.GSKDepartmentURL }}<a
+							href="{{ .Params.GSKDepartmentURL }}">{{ end }}{{ .Params.GSKDepartment }}{{ if .Params.GSKDepartmentURL }}</a>{{ end }}
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: left;">Place</td>
+					<td style="text-align: right;">{{ .Params.GSKCity }}</td>
+				</tr>
+				<tr>
+					<td style="text-align: left;">Level</td>
+					<td style="text-align: right;">{{ .Params.GSKLevel }}</td>
+				</tr>
+				<tr>
+					<td style="text-align: left;">Group</td>
+					<td style="text-align: right;">{{ .Params.GSKGroup }}</td>
+				</tr>
+				<tr>
+					{{ if .Params.GSKStrength }}
+					<td style="text-align: left;">Class strength</td>
+					<td style="text-align: right;">{{ .Params.GSKStrength }}</td>
+				</tr>
+				<tr>
+					{{ end }}
+					<td style="text-align: left;">Period</td>
+					<td style="text-align: right;">{{  dateFormat "2/Jan/2006" .Params.GSKStartDate }} &mdash;
+						{{  dateFormat "2/Jan/2006" .Params.GSKEndDate }}</td>
+				</tr>
+				<tr>
+					<td style="text-align: left;">Period</td>
+					<td style="text-align: right;">{{ .Params.GSKTotalPeriod }} Hrs.</td>
+				</tr>
+				<tr>
+					<td style="text-align: left;">Period</td>
+					<td style="text-align: right;">{{ .Params.GSKPeriodPerWeek }} Hrs./Wk.</td>
+				</tr>
+			</table>
+		</div>
+
+	</div>
+</a>
+
+{{- end -}}
+</div>
+{{ partial "footer.html" . -}}

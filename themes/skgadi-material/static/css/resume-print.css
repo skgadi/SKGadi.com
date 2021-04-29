@@ -1,0 +1,85 @@
+.Resume, p, ul, li {
+	font: 12px "Univers 57 Condensed", Sans-serif;
+	color: black;
+}
+
+H1.Resume {
+	font: 36px "Univers 57 Condensed", Serif;
+    padding: 0px;
+	margin: 0px;
+	color: darkblue;
+}
+
+H3.Resume {
+	font: 18px "Univers 57 Condensed", Serif;
+    padding: 5px 2px;
+    margin: 10px 0px;
+	background-color: skyblue;
+}
+
+H4.Resume {
+	font: 14px "Univers 57 Condensed", Serif;
+}
+
+div.Resume>H1 {
+	font: 12px "Univers 57 Condensed", Sans-serif;
+    /*padding: 0px;
+    margin: 0px;*/
+	/*text-decoration: underline;*/
+	padding-left: 5px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+div.Resume>H2 {
+	font: 12px "Univers 57 Condensed", Sans-serif;
+    padding: 0px;
+    margin: 0px;
+	padding-left: 15px;
+	font-weight: bold;
+	/*font-style: italic;*/
+}
+
+table {
+	width: 100%;
+}
+	
+table, th, td {
+	border: 1px solid lightblue;
+	border-collapse: collapse;
+}
+
+th{
+	font-weight: bold;
+}
+
+a.Resume{
+	color: black;
+	text-decoration: none;
+}
+
+p {
+	font: 12px "Univers 57 Condensed", Sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul {
+	margin: 2px 0px;
+}
+
+li {
+	text-align: justify;
+}
+
+.SubTitle {
+	color: teal;
+}
+
+hr {
+	border: 0;
+	height: 25px;
+	background-image: url(../images/hr-resume.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}

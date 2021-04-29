@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+<div class="w3-container">
+	{{- $data := .Data -}}
+	{{- range $key, $value := .Data.Terms -}}
+	<a class="" href="/{{ $data.Plural }}/{{ $key | urlize }}">
+		<div class="w3-panel w3-theme-l4 w3-card pointer w3-hover-shadow">
+			<h2>{{ humanize (replace $key "-" " ") }} ({{ len $value }})</h2>
+		</div>
+	</a>
+	{{- end -}}
+</div>
+{{ partial "footer.html" . -}}

@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+<div class="w3-container">
+	{{- range .Data.Pages -}}
+	<a class="" href="{{ .Permalink }}">
+		<div class="w3-panel w3-theme-l4 w3-card pointer w3-hover-shadow">
+			<h2>{{.Title}}</h2>
+			<p>{{ .Description }}</p>
+		</div>
+	</a>
+	{{- end -}}
+</div>
+{{ partial "footer.html" . -}}

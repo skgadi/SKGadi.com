@@ -1,0 +1,44 @@
+{{- partial "header.html" . -}}
+<div class="w3-container w3-padding-16">
+  <div class="w3-theme-l4">
+    <table class="w3-table">
+      <tr>
+        <td style="text-align: left;">Awarding authority</td>
+        <td style="text-align: right;">{{ if .Params.Authority.URL }}<a target="_blank"
+            href="{{ .Params.Authority.URL }}">{{ end }}{{ .Params.Authority.name }}{{ if .Params.Authority.URL }}</a>{{ end }}
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: left;">Year of award</td>
+        <td style="text-align: right;">{{ dateFormat "2006" .Params.Dates.recogDate }}</td>
+      </tr>
+      <tr>
+        <td style="text-align: left;">Validity period</td>
+        <td style="text-align: right;">{{ dateFormat "2006" .Params.Dates.validStart }} -
+          {{ dateFormat "2006" .Params.Dates.validEnd }}</td>
+      </tr>
+    </table>
+  </div>
+
+  {{- if .Params.ExtraDetails -}}
+  <h2>More information</h2>
+  {{- range .Params.ExtraDetails -}}
+  {{- if .URL -}}
+  <a href="{{- .URL -}}" target="_blank">
+    <div class="w3-panel w3-theme-l4 w3-card pointer w3-hover-shadow">
+      <p>{{- .Name -}}</p>
+    </div>
+  </a>
+  {{- end -}}
+  {{- end -}}
+  {{- end -}}
+
+  {{if .Content}}
+  <h2>Description</h2>
+  <div class="w3-theme-l4 w3-padding">
+    {{ .Content }}
+  </div>
+  {{end}}
+</div>
+{{ partial "nav-to-adj-page.html" . -}}
+{{ partial "footer.html" . -}}
