@@ -2,9 +2,9 @@
 #SEO Data
 Keywords = ["course", "electric machines"]
 description = "The course electric machines 2 given by Suresh Kumar Gadi at UAdeC."
-date = "2016-01-11T23:12:36-06:00"
 title = "Electric machines 2"
 
+date = "2016-01-11T23:12:36-06:00"
 GSKStartDate = "2016-01-11"
 GSKEndDate = "2016-05-27"
 GSKSchool = "Universidad Autónoma de Coahuila"

@@ -3,6 +3,7 @@
 Keywords = ["course", "digital electronics"]
 description = "The digital electronics course given by Suresh Kumar Gadi at UAdeC."
 title = "Digital electronics"
+
 date = "2020-07-01T23:12:36-06:00"
 
 GSKStartDate = "2020-08-10"

@@ -3,6 +3,7 @@
 Keywords = ["course", "automatic control"]
 description = "The course automatic control given by Suresh Kumar Gadi at UAdeC."
 title = "Automatic control"
+
 date = "2020-07-01T23:12:36-06:00"
 
 GSKStartDate = "2020-08-10"

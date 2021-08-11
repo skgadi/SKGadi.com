@@ -1,670 +1,425 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
+    <loc>https://skgadi.com/courses/2021-08-12-algebra/</loc>
+    <lastmod>2021-08-01T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/courses/2021-08-12-calculus/</loc>
+    <lastmod>2021-08-01T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/courses/</loc>
+    <lastmod>2021-08-01T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/</loc>
+    <lastmod>2021-08-01T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/courses/2021-07-12-automatic-control-b/</loc>
+    <lastmod>2021-07-01T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/courses/2021-07-12-automatic-control/</loc>
+    <lastmod>2021-07-01T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/courses/2021-07-12-circuit-analysis-2/</loc>
+    <lastmod>2021-07-01T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/courses/2021-07-12-digital-electronics/</loc>
+    <lastmod>2021-07-01T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/courses/2021-07-12-electric-machines-2/</loc>
+    <lastmod>2021-07-01T23:12:36-06:00</lastmod>
+  </url><url>
     <loc>https://skgadi.com/courses/2021-01-06-automatic-control/</loc>
     <lastmod>2021-01-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2021-02-07-calculus-2/</loc>
     <lastmod>2021-01-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/courses/</loc>
-    <lastmod>2021-01-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2021-01-06-digital-electronics/</loc>
     <lastmod>2021-01-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2021-01-06-electric-machines-2/</loc>
     <lastmod>2021-01-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://skgadi.com/</loc>
-    <lastmod>2021-01-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2021-01-06-systems-engineering/</loc>
     <lastmod>2021-01-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/categories/academic/</loc>
     <lastmod>2020-10-13T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tags/calculus/</loc>
     <lastmod>2020-10-13T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/categories/</loc>
     <lastmod>2020-10-13T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/posts/importance-of-calculus-for-engineers/</loc>
     <lastmod>2020-10-13T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tags/mathematics/</loc>
     <lastmod>2020-10-13T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/posts/</loc>
     <lastmod>2020-10-13T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/categories/students/</loc>
     <lastmod>2020-10-13T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tags/</loc>
     <lastmod>2020-10-13T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2020-09-02-calculus/</loc>
     <lastmod>2020-10-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2020-07-08-adaptive-control/</loc>
     <lastmod>2020-07-26T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2020-07-12-automatic-control/</loc>
     <lastmod>2020-07-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2020-07-12-circuit-analysis-2/</loc>
     <lastmod>2020-07-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2020-07-12-digital-electronics/</loc>
     <lastmod>2020-07-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2020-07-12-electrical-technology/</loc>
     <lastmod>2020-07-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2020-07-12-energy-efficiency/</loc>
     <lastmod>2020-07-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2020-07-12-systems-engineering/</loc>
     <lastmod>2020-07-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2020-01-06-automatic-control/</loc>
     <lastmod>2020-01-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2020-01-06-digital-electronics/</loc>
     <lastmod>2020-01-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2020-01-06-electrical-technology/</loc>
     <lastmod>2020-01-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2020-01-06-systems-engineering/</loc>
     <lastmod>2020-01-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2019-07-12-automatic-control/</loc>
     <lastmod>2019-07-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2019-07-12-digital-electronics/</loc>
     <lastmod>2019-07-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2019-07-12-practical-optimization/</loc>
     <lastmod>2019-07-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2019-07-12-simulation/</loc>
     <lastmod>2019-07-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tags/cit/</loc>
     <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/posts/cit-manuals/</loc>
     <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tags/manuals/</loc>
     <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tags/real-time/</loc>
     <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/categories/workshop/</loc>
     <lastmod>2019-04-01T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/utm/</loc>
     <lastmod>2019-02-01T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/</loc>
     <lastmod>2019-02-01T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/uyamak/</loc>
     <lastmod>2019-02-01T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2019-01-06-automatic-control/</loc>
     <lastmod>2019-01-08T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2019-01-06-digital-electronics/</loc>
     <lastmod>2019-01-08T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2019-01-06-energy-efficiency/</loc>
     <lastmod>2019-01-08T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2019-01-06-power-systems/</loc>
     <lastmod>2019-01-08T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/achievements/</loc>
     <lastmod>2019-01-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/achievements/sni-2019-2021/</loc>
     <lastmod>2019-01-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2018-07-12-digital-control/</loc>
     <lastmod>2018-08-06T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2018-07-12-digital-electronics/</loc>
     <lastmod>2018-08-06T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2018-07-12-electrical-technology/</loc>
     <lastmod>2018-08-06T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2018-07-12-instrumentation-and-control/</loc>
     <lastmod>2018-08-06T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2018-07-12-power-systems/</loc>
     <lastmod>2018-08-06T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/achievements/perfil-deseable-2018-2021/</loc>
     <lastmod>2018-07-23T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tags/mechanics/</loc>
     <lastmod>2018-03-06T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tools/</loc>
     <lastmod>2018-03-06T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tools/material-charactrization/</loc>
     <lastmod>2018-03-06T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/cit/</loc>
     <lastmod>2018-02-01T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2018-01-06-automatic-control/</loc>
     <lastmod>2018-01-08T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2018-01-06-power-systems/</loc>
     <lastmod>2018-01-08T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2017-07-12-mathematics/</loc>
     <lastmod>2017-08-28T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2017-07-12-automatic-control/</loc>
     <lastmod>2017-08-14T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2017-07-12-power-systems/</loc>
     <lastmod>2017-08-14T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tools/stringing-chart/</loc>
     <lastmod>2017-08-14T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/categories/family/</loc>
     <lastmod>2017-06-18T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/posts/father-day-2017/</loc>
     <lastmod>2017-06-18T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/posts/basic-waveforms/</loc>
     <lastmod>2017-06-18T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tags/programming/</loc>
     <lastmod>2017-06-18T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tags/tishya/</loc>
     <lastmod>2017-06-18T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/categories/voice-recording/</loc>
     <lastmod>2017-06-18T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tags/optimization/</loc>
     <lastmod>2017-06-08T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/posts/sacs-2017/</loc>
     <lastmod>2017-06-08T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tags/python/</loc>
     <lastmod>2017-06-08T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/resume/</loc>
     <lastmod>2017-05-02T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tags/bibtex/</loc>
     <lastmod>2017-03-31T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tags/library/</loc>
     <lastmod>2017-03-31T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tools/private-books/</loc>
     <lastmod>2017-03-31T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tags/calculator/</loc>
     <lastmod>2017-03-24T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tools/calculator-for-electrical-engineering/</loc>
     <lastmod>2017-03-24T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tags/electrical-engineering/</loc>
     <lastmod>2017-03-24T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tags/compiler/</loc>
     <lastmod>2017-03-23T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tools/python-compiler/</loc>
     <lastmod>2017-03-23T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tags/design-of-experiments/</loc>
     <lastmod>2017-02-25T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/mes/</loc>
     <lastmod>2017-02-25T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tools/multifactorial-experiment-simulator/</loc>
     <lastmod>2017-02-25T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/work-experience/uadec/</loc>
     <lastmod>2017-02-22T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/work-experience/</loc>
     <lastmod>2017-02-22T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2017-01-06-industrial-electronics/</loc>
     <lastmod>2017-01-09T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2017-01-06-optimization-of-bioprocesses/</loc>
     <lastmod>2017-01-09T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2017-01-06-semiconductor-physics/</loc>
     <lastmod>2017-01-09T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/contact/</loc>
     <lastmod>2017-01-07T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/research/</loc>
     <lastmod>2018-10-05T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/achievements/nptc-2016-2017/</loc>
     <lastmod>2016-08-25T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2016-07-12-circuit-analysis-2/</loc>
     <lastmod>2016-08-08T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2016-07-12-digital-control/</loc>
     <lastmod>2016-08-08T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/tags/latex/</loc>
     <lastmod>2016-06-16T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/posts/one-day-workshop-on-latex/</loc>
     <lastmod>2016-06-16T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/gps-information/</loc>
     <lastmod>2016-05-01T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/moving-circles/</loc>
     <lastmod>2016-04-01T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2016-01-06-automatic-control/</loc>
     <lastmod>2016-01-11T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2016-01-06-electric-machines-2/</loc>
     <lastmod>2016-01-11T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/capacitor-bank-calculations/</loc>
     <lastmod>2016-01-01T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2015-07-12-control-theory/</loc>
     <lastmod>2015-09-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2015-07-12-digital-control/</loc>
     <lastmod>2015-09-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/work-experience/upa/</loc>
     <lastmod>2015-08-30T23:12:36+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2015-05-08-probability-and-statistics/</loc>
     <lastmod>2015-05-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2015-01-04-analog-and-digital-control-systems/</loc>
     <lastmod>2015-01-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2015-01-04-industrical-robotics/</loc>
     <lastmod>2015-01-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/courses/2014-09-12-electronics/</loc>
     <lastmod>2014-09-01T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/education/</loc>
     <lastmod>2014-05-20T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/education/phd/</loc>
     <lastmod>2014-05-20T23:12:36-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/modeling-and-control-of-fad/</loc>
     <lastmod>2009-09-01T00:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/work-experience/htsl/</loc>
     <lastmod>2009-07-30T23:12:36+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/education/mtech/</loc>
     <lastmod>2009-05-31T23:12:36+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/achievements/merit-award/</loc>
     <lastmod>2009-04-06T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/system-identifaction-via-frequency-analysis/</loc>
     <lastmod>2009-02-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/design-of-fft/</loc>
     <lastmod>2008-09-22T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/a-star-for-puzzle-8/</loc>
     <lastmod>2008-08-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/character-recognition/</loc>
     <lastmod>2008-04-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/implementation-of-transducer-electronic-data-sheet/</loc>
     <lastmod>2008-04-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/tilt-measurement/</loc>
     <lastmod>2008-02-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/graphical-tool-for-signal-processing/</loc>
     <lastmod>2007-11-06T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/fourier-series-tool/</loc>
     <lastmod>2007-11-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/work-experience/slb/</loc>
     <lastmod>2007-07-30T23:12:36+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/education/amie/</loc>
     <lastmod>2006-06-30T23:12:36+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/ready-box-tool/</loc>
     <lastmod>2006-05-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/achievements/gate/</loc>
     <lastmod>2006-02-12T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/surface-well-testing/</loc>
     <lastmod>2005-12-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/work-experience/lnt/</loc>
     <lastmod>2005-11-30T23:12:36+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/66-kv-double-circuit-transmission-lines/</loc>
     <lastmod>2003-11-16T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/railway-electrification-punjab/</loc>
     <lastmod>2003-08-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/site-management-tool/</loc>
     <lastmod>2003-01-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/132-kv-double-circuit-transmission-lines/</loc>
     <lastmod>2002-07-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/education/deee/</loc>
     <lastmod>2002-04-30T23:12:36+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/projects/microprocessor-based-water-level-controller/</loc>
     <lastmod>2001-09-01T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://skgadi.com/education/ssc/</loc>
     <lastmod>1999-06-30T23:12:36+05:30</lastmod>
   </url>
-  
 </urlset>

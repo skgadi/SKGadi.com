@@ -6,11 +6,7 @@
     <description>Recent content in Programming on Suresh Kumar Gadi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Jun 2017 00:00:00 -0600</lastBuildDate>
-    
-	<atom:link href="https://skgadi.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 18 Jun 2017 00:00:00 -0600</lastBuildDate><atom:link href="https://skgadi.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Implementation of basic waveforms used in control systems</title>
       <link>https://skgadi.com/posts/basic-waveforms/</link>
