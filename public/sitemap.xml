@@ -2,16 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://skgadi.com/courses/2022-01-06-automatic-control/</loc>
+    <lastmod>2022-01-01T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/courses/</loc>
+    <lastmod>2022-01-01T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/courses/2022-01-06-electric-machines-2/</loc>
+    <lastmod>2022-01-01T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/courses/2022-01-03-statistics/</loc>
+    <lastmod>2022-01-01T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/</loc>
+    <lastmod>2022-01-01T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/courses/2022-01-06-systems-engineering/</loc>
+    <lastmod>2022-01-01T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/courses/2021-10-12-statistics/</loc>
+    <lastmod>2021-10-01T23:12:36-06:00</lastmod>
+  </url><url>
     <loc>https://skgadi.com/courses/2021-08-12-algebra/</loc>
     <lastmod>2021-08-01T23:12:36-06:00</lastmod>
   </url><url>
     <loc>https://skgadi.com/courses/2021-08-12-calculus/</loc>
-    <lastmod>2021-08-01T23:12:36-06:00</lastmod>
-  </url><url>
-    <loc>https://skgadi.com/courses/</loc>
-    <lastmod>2021-08-01T23:12:36-06:00</lastmod>
-  </url><url>
-    <loc>https://skgadi.com/</loc>
     <lastmod>2021-08-01T23:12:36-06:00</lastmod>
   </url><url>
     <loc>https://skgadi.com/courses/2021-07-12-automatic-control-b/</loc>
