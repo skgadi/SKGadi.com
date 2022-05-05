@@ -2,7 +2,7 @@
 #SEO Data
 Keywords = ["course", "automatic control"]
 description = "The course automatic control given by Suresh Kumar Gadi at UAdeC."
-title = "Automatic control (Morning batch)"
+title = "Automatic control"
 
 date = "2021-07-01T23:12:36-06:00"
 
@@ -12,7 +12,7 @@ GSKSchool = "Universidad Autónoma de Coahuila"
 GSKSchoolURL = "http://uadec.mx/"
 GSKDepartment = "Facultad de Ingeniería Mecánica y Eléctrica"
 GSKDepartmentURL = "http://uadec.mx/"
-GSKGroup = "7B"
+GSKGroup = "7B(Morning)"
 GSKStrength = "??"
 GSKTotalPeriod = "40"
 GSKPeriodPerWeek = "3"

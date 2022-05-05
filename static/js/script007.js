@@ -16,6 +16,7 @@ var app = new Vue({
 		pubTypes: {
 			"artJCR": "Articles published in the indexed journals",
 			"bChapter": "Book chapters",
+      "bTGuide": "Bachelor's thesis guide",
 			"artNJCR": "Other articles",
 			"iCProceedings": "International conference proceedings",
 			"nCProceedings": "National conference proceedings",
