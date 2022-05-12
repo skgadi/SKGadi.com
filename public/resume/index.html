@@ -4489,10 +4489,10 @@
         <div v-if="!!pubs.entries">
           <template v-for="(val, idx, ite) in pubTypes">
             <h4 class="resume" v-if="getSortedItems(idx).length > 0" v-text="(ite + 1) + '. ' + val"></h4>
-            <ol reversed>
+            <ol>
               <template v-for="(val1, idx1, ite1) in getSortedItems(idx)">
 
-                <li>
+                <li :value="getSortedItems(idx).length-idx1"> 
                   <div>
                     <template v-for="(val2, idx2) in val1.author">
                       <span v-if="!!idx2" v-text="', '"></span>
