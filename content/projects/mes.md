@@ -7,7 +7,7 @@
     "GSKEndDate": "2017-12-25T00:00:00-06:00",
     "GSKRole": "Leader",
     "GSKTeamSize": "2",
-    "GSKKeySkills": ["Web technologies", "Android studio", "Java", "Mathematics"],
+    "GSKKeySkills": ["HTML", "CSS", "JavaScript", "Web technologies", "Android studio", "Java", "Mathematics"],
     "complete": true,
     "featured": true,
     "GSKFundName": "None",

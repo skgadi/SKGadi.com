@@ -9,7 +9,7 @@ GSKStartDate	=	"2008-04-01T00:00:00+05:30"
 GSKEndDate		=	"2008-06-15T00:00:00+05:30"
 GSKRole = "Participant"
 GSKTeamSize = "5 students"
-GSKKeySkills = ["Electronic design", "Embedded systems", "Assembly language"]
+GSKKeySkills = ["Analog circuit design", "Embedded systems", "Assembly language"]
 description = "Transducer electronic data sheet (TEDS) is implemented with the help of a 8052 microcontroller"
 
 [[ExtraDetails]]

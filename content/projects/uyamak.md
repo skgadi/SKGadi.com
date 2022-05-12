@@ -7,7 +7,7 @@
     "GSKEndDate": "2021-05-01T00:00:00-06:00",
     "GSKRole": "Leader",
     "GSKTeamSize": "2",
-    "GSKKeySkills": ["JavaScript", "HTML", "CSS", "Embedded systems", "real-time computation"],
+    "GSKKeySkills": ["JavaScript", "HTML", "CSS", "Embedded systems", "Real-time computation"],
     "complete": true,
     "featured": true,
     "GSKFundName": "None",

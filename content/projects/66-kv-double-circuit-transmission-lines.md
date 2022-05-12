@@ -10,7 +10,7 @@ GSKStartDate = "2003-11-16T00:00:00+05:30"
 GSKEndDate = "2005-11-30T00:00:00+05:30"
 GSKRole = "Site cum planning engineer"
 GSKTeamSize = "1 Project manager, 1 engineer and work force"
-GSKKeySkills = ["Foundation", "Erection of metal structures", "Stringing", "Testing and Commissioning", "Planning", "Material Acquisition", "Inventory Control"]
+GSKKeySkills = ["Foundation", "Erection of metal structures", "Stringing", "Testing and Commissioning", "Project planning", "Material Acquisition", "Inventory Control", "Site management"]
 
 [[ExtraDetails]]
     Name = "Bachelor's thesis"

@@ -10,6 +10,6 @@ GSKStartDate = "2001-09-01T00:00:00+05:30"
 GSKEndDate = "2002-02-02T00:00:00+05:30"
 GSKRole = "Student participant"
 GSKTeamSize = "5 students and 1 professor"
-GSKKeySkills = ["Embedded systems", "electronic design"]
+GSKKeySkills = ["Embedded systems", "Analog circuit design"]
 +++
 This work is part of the thesis for obtaining the grade of Diploma in Electrical and Electronics Engineering.

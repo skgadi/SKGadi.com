@@ -9,7 +9,7 @@ GSKStartDate	=	"2009-02-01T00:00:00+05:30"
 GSKEndDate		=	"2009-03-31T00:00:00+05:30"
 GSKRole = "Student"
 GSKTeamSize = "1"
-GSKKeySkills = ["LabVIEW", "frequency domain", "real-time", "hardware integration", "communication ports"]
+GSKKeySkills = ["LabVIEW", "Frequency domain", "Real-time computation", "Analog circuit design", "Digital communication"]
 description = "In this project, a system is excited at various frequencies and its response is captured to calculate an approximate transfer function for the system in real-time."
 
 [[ExtraDetails]]

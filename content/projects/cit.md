@@ -7,7 +7,7 @@
     "GSKEndDate": "",
     "GSKRole": "Leader",
     "GSKTeamSize": "2",
-    "GSKKeySkills": ["Web technologies", "Android studio", "Java", "Control theory", "Embedded systems", "real-time"],
+    "GSKKeySkills": ["HTML", "CSS", "JavaScript", "Web technologies", "Android studio", "Java", "Control theory", "Embedded systems", "Real-time computation"],
     "complete": false,
     "featured": true,
     "GSKFundName": "None",

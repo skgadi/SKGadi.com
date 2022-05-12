@@ -9,7 +9,7 @@ GSKStartDate	=	"2009-09-01T00:00:00-06:00"
 GSKEndDate		=	"2014-05-20T00:00:00-06:00"
 GSKRole = "Student"
 GSKTeamSize = "3 professors + 1 student"
-GSKKeySkills = ["Control theory", "Electrical and electronics design", "Mechanical design", "MATLAB", "Simulink", "real-time"]
+GSKKeySkills = ["Control theory", "Analog circuit design", "Mechanical design", "MATLAB", "Simulink", "Real-time computation"]
 description = "Modeling and control of a Force Augmenting Device (FAD) is part of the PhD thesis."
 [[ExtraDetails]]
     Name = "PhD Thesis"

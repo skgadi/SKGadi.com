@@ -7,7 +7,7 @@
     "GSKEndDate": "",
     "GSKRole": "Leader",
     "GSKTeamSize": "2",
-    "GSKKeySkills": ["Android studio", "Embedded systems", "PCB design", "real-time computation"],
+    "GSKKeySkills": ["Android studio", "Embedded systems", "PCB design", "Digital circuit design", "Real-time computation", "Analog circuit design"],
     "complete": false,
     "featured": false,
     "GSKFundName": "Industria Sigrama",

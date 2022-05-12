@@ -1,7 +1,7 @@
 {
     "Keywords": ["mine", "safety equipment testing", "testing"],
     "description": "Vending machine for cleaning products is designed to help local smallscale industry.",
-    "title": "Sentinel's tester (probador de Centinela)",
+    "title": "Vending machine for cleaning product's ",
     "date": "2021-12-01T00:00:00-06:00",
     "GSKStartDate": "2021-04-01T00:00:00-06:00",
     "GSKEndDate": "2021-12-31T00:00:00-06:00",

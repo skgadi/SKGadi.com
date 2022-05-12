@@ -9,7 +9,7 @@ GSKStartDate	=	"2008-02-01T00:00:00+05:30"
 GSKEndDate		=	"2008-03-31T00:00:00+05:30"
 GSKRole = "Participant"
 GSKTeamSize = "5 students"
-GSKKeySkills = ["LabVIEW", "Electronic design", "Knowledge of MEMS"]
+GSKKeySkills = ["LabVIEW", "Analog circuit design", "MEMS"]
 description = "In this project two MEMS chips were used to measure the angle of a device with respect to the earth gravitation."
 
 [[ExtraDetails]]

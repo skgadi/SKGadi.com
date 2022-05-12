@@ -7,7 +7,7 @@
     "GSKEndDate": "",
     "GSKRole": "Leader",
     "GSKTeamSize": "2",
-    "GSKKeySkills": ["Web technologies", "Material science"],
+    "GSKKeySkills": ["HTML", "CSS", "JavaScript", "Web technologies", "Material science"],
     "complete": false,
     "featured": true,
     "GSKFundName": "None",

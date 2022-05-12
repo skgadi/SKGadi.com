@@ -9,7 +9,7 @@ GSKStartDate	=	"2008-09-22T00:00:00+05:30"
 GSKEndDate		=	"2009-07-31T00:00:00+05:30"
 GSKRole = "Project trainee"
 GSKTeamSize = "1 in-charge, 1 engineer and 1 trainee"
-GSKKeySkills = ["LabVIEW", "Electronic design", "hardware testing", "calibration"]
+GSKKeySkills = ["LabVIEW", "Analog circuit design", "Digital circuit design", "Hardware testing", "Calibration"]
 description = "This project Designing a factory floor tester for a heating ventilation and air conditioning (HVAC) controller and a remote monitoring unit (RMU) is carried out by Honeywell to test its products on the production line."
 
 [[ExtraDetails]]
