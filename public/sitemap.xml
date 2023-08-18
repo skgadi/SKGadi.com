@@ -2,8 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://skgadi.com/courses/2023-08-12-bio-inspired-algorithms/</loc>
+    <lastmod>2023-08-15T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/courses/2023-08-12-control-theroy-iii/</loc>
+    <lastmod>2023-08-15T23:12:36-06:00</lastmod>
+  </url><url>
     <loc>https://skgadi.com/courses/</loc>
-    <lastmod>2023-01-01T23:12:36-06:00</lastmod>
+    <lastmod>2023-08-15T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/</loc>
+    <lastmod>2023-08-15T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/courses/2023-07-12-automatic-control/</loc>
+    <lastmod>2023-07-01T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/courses/2023-07-12-circuit-analysis-2/</loc>
+    <lastmod>2023-07-01T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/courses/2023-07-12-control-theroy-1/</loc>
+    <lastmod>2023-07-01T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/courses/2023-07-12-simulation/</loc>
+    <lastmod>2023-07-01T23:12:36-06:00</lastmod>
+  </url><url>
+    <loc>https://skgadi.com/courses/2023-02-07-transmission-and-control/</loc>
+    <lastmod>2023-01-31T23:12:36-06:00</lastmod>
   </url><url>
     <loc>https://skgadi.com/courses/2023-01-06-electric-machines-2-evening/</loc>
     <lastmod>2023-01-01T23:12:36-06:00</lastmod>
@@ -12,9 +36,6 @@
     <lastmod>2023-01-01T23:12:36-06:00</lastmod>
   </url><url>
     <loc>https://skgadi.com/courses/2023-01-06-power-plants-and-substations/</loc>
-    <lastmod>2023-01-01T23:12:36-06:00</lastmod>
-  </url><url>
-    <loc>https://skgadi.com/</loc>
     <lastmod>2023-01-01T23:12:36-06:00</lastmod>
   </url><url>
     <loc>https://skgadi.com/courses/2023-01-06-systems-engineering/</loc>
