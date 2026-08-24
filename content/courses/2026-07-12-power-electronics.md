@@ -2,7 +2,7 @@
 #SEO Data
 Keywords = ["course", "power electronics"]
 description = "The course power electronics given by Suresh Kumar Gadi at UAdeC."
-title = "Electric machines 2"
+title = "Power Electronics"
 
 date = "2026-07-01T23:12:36-06:00"
 
